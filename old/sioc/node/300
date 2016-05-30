@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/300"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/300">
+  <dc:title>Stats of SIOC-Dev - the list is growing (100+)</dc:title>
+  <sioc:content>Dear All,
+July has arrived and it reminds of something we wanted to write about
+earlier - SIOC-Dev list has grown to 100+ members. Thank you for your
+interest in SIOC and we hope to have many interesting and useful
+discussions here.
+Actually, 100+ is old news.
+Currenly there are 119 members who have created a total of 696
+messages. 100th member of SIOC-Dev is Steve Cayzer [1] and some of
+recent SIOC-Dev message authors joined just before that (e.g., Keith
+Alexander and John Hoogstrate). If you joined just recently (maybe you
+even know you&#039;re 119th? :), welcome to let yourself known and
+introduce yourself.
+[1] http://www.hpl.hp.com/personal/Steve_Cayzer/index.html
+The most active thread of the recent month was: &quot;Ontology suggestions
+needed&quot; [2], started by John Breslin with 8 messages in total, the
+last by Alexandre Passant. Due to the way Google Groups shows messages
+(by the date of the last reply) it falls within the archive of this
+month even though was started a bit earlier.
+[2] http://groups.google.com/group/sioc-dev/browse_thread/thread/225a9b684c5495db
+If someone wants to do a more detailed analysis of SIOC-Dev stats and
+dynamics that would be great. There sure is more that can be done -
+highlighting the messages which you see as the most interesting, or
+those which need to be followed up, etc... Please do your thing and
+share with others. ;-D
+The previous report of SIOC-Dev stats [3] raised a question by [GNU] -
+where is the RDF version? If by this you mean something derived from
+mailing list posts (e.g., a community of posters) then you will have
+to create it. But as Sergio pointed out in another reply to [3] - all
+the data needed (SIOC-Dev posts in SIOC RDF) are available at [4] and
+the derived information can be acquired via a simple SPARQL query.
+[3] http://groups.google.com/group/sioc-dev/browse_thread/thread/b8ec744d3ab12374
+[4] http://swaml.berlios.de/demos/sioc-dev/
+Of particular importance to SIOC-Dev is a post titled &quot; ANN: New
+documents - (1) SIOC Implementations list; (2) Relations w. other
+ontologies; (3) Update to the SIOC Specification&quot; [5]. It announces
+the results of joint work of everyone here in coming up with a new and
+solid SIOC specification and two other documents (they&#039;re well worth
+exploring). Now it&#039;s time to build more applications that put SIOC
+data to some good use! :)
+[5] http://groups.google.com/group/sioc-dev/browse_thread/thread/cd2bccb43487c402
+P.S. And soon, i hope, we will have some more news regarding the
+documents mentioned in [5]. Stay tuned for more.
+Uldis
+[ http://captsolo.net/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:54+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/300" rdfs:label="Stats of SIOC-Dev - the list is growing (100+)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

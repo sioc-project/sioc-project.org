@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/233"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Issue #1: - subclass sioc:Community from sioc:Container | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Issue #1: - subclass sioc:Community from sioc:Container</h2>                                                  <div class="clear-block">
+            <div id="node-233" class="node">
+
+
+
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  <div class="content clear-block">
+    <p>Issue #1: subclass sioc:Community from ...</p>
+<p>Proposal: subclass sioc:Cummunity from sioc:Container</p>
+<p>Consequences: property names sioc:has_part / sioc:part_of can be reused.</p>
+<p>Decision: ...</p>
+<p>Discussion:<br />
+>  - subclass sioc:Community from sioc:Container (or sioc:Space?) or<br />
+> make it use the same has_container / container_of properties as<br />
+> Container does (or "bump" its has_part and part_of properties one<br />
+> level up to sioc:Container).</p>
+<p>> the idea of sioc:Community was to act as a container for any kind of resources which are parts of a community.</p>
+<p>Now there is a nice hierarchy of things in SIOC:<br />
+[ sioc:Space -> sioc:Container -> ... -> sioc:Item -> (contents &amp;<br />
+parts of item) ]</p>
+<p>sioc:Community should be able to fit into one of these categories.<br />
+Since it is a container [for any kind of resources] it can be either<br />
+sioc:Container or sioc:Space.</p>
+<p>Main question is - what things can be a part of a Container or Space?<br />
+sioc:Community can contain any resource (URI).</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="230.html" class="topic-previous" title="Go to previous forum topic">‹ SIOC ontology revisions</a>
+              <a href="232.html" class="topic-next" title="Go to next forum topic">SIOC, IRC logs, instant messaging ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-374"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-374" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>I don't think Community should be subclassed from Space or Container.  I<br />
+think a Community can be a collection of Spaces, Sites, Containers, etc.<br />
+so it is something bigger than all of them...</p>
+<p>But looking forward to other opinions.</p>
+<p>I understand that has_part might be a nice term for describing parts in<br />
+a Post however :)  Maybe just removing the domain will fix that...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-380"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/54.html" title="View user profile.">Benja Fallenstein</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-380" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>2007/3/15, John Breslin <john.breslin@deri.org>:<br />
+> I don't think Community should be subclassed from Space or Container.  I<br />
+> think a Community can be a collection of Spaces, Sites, Containers, etc.<br />
+> so it is something bigger than all of them...</john.breslin@deri.org></p>
+<p>I don't really see these as conflicting -- a Container is a subclass<br />
+of Resource, and yet it contains things of type Resource :-)</p>
+<p>(I don't really have an opinion on Uldis' issue.)</p>
+<p>- Benja</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-375"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-375" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>On 3/15/07, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> I don't think Community should be subclassed from Space or Container.  I<br />
+> think a Community can be a collection of Spaces, Sites, Containers, etc.<br />
+> so it is something bigger than all of them...<br />
+><br />
+> But looking forward to other opinions.</john.breslin@deri.org></p>
+<p>That depends on what a "Space" is. And what do we need a "Space" for.</p>
+<p>Alex writes:<br />
+> * Maybe I missed something about Container / Space, but I can't see<br />
+> what - still in this scope - what brings to the model ? Or maybe a top<br />
+> class besides Forum / Site is enought if we want to say "A space that<br />
+> contains Web 2.0 things" ?</p>
+<p>Currently the only subclass of sioc:Space is a sioc:Site.</p>
+<p>If you look at a Community and Site they are very similar, with the<br />
+main difference that a Community can contain any resources, and that a<br />
+Site assumes that all its contents is located on a single site.</p>
+<p>Maybe we need to allow anything to be a part of a sioc:Space.</p>
+<p>Question 1: if we allow containers to be parents (= to contain) of<br />
+other containers how is sioc:Space different from a sioc:Container<br />
+(which contains all these other containers)?</p>
+<p>> I understand that has_part might be a nice term for describing parts in<br />
+> a Post however :)  Maybe just removing the domain will fix that...</p>
+<p>:)</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-376"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-376" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>It's partially my fault for not clearly defining it in the spec.</p>
+<p>Space is a place where data is stored.  At the moment we just have<br />
+Sites, but could also be desktops, flash drives, fileshares, etc.</p>
+<p>In my head at least :) a Community is a grouping of SIOC things related<br />
+to a particular community.  Could be Sites, Users, foaf:People,<br />
+Documents, Posts, Containers, etc...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-377"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-377" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>On 3/15/07, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> Space is a place where data is stored.  At the moment we just have<br />
+> Sites, but could also be desktops, flash drives, fileshares, etc.<br />
+><br />
+> In my head at least :) a Community is a grouping of SIOC things related<br />
+> to a particular community.  Could be Sites, Users, foaf:People,<br />
+> Documents, Posts, Containers, etc...</john.breslin@deri.org></p>
+<p>We may want to ask Kingsley to give some comments and help clarify the<br />
+meaning and use cases for sioc:Space. He was the one who first talked<br />
+about a need for the concept of data spaces.</p>
+<p>There is a potential to improve this model. Ask a question what<br />
+sub/super-classes we need and do we really need them.</p>
+<p>As sioc:Space stands now I can hardly see why sioc:Site is a subclass<br />
+of sioc:Space. The idea of Space is cool, but the definition which you<br />
+just quoted is too restrictive (in my opinion). How important it is to<br />
+the concept of Space that things are physically together? What would<br />
+we gain by dropping this restriction? If sioc:Item and sioc:Container<br />
+are very generic, what is the generic class at the level of sioc:Site?</p>
+<p>Let's see what can be a part of each of them:<br />
+sioc:Space - ( ??? )<br />
+sioc:Site - Usergroups, Forums, Containers, (anything else?)<br />
+sioc:Community - Sites, Users, foaf:People, Documents, Posts, Containers, etc..</p>
+<p>Suggestion:<br />
+ - to make sioc:Space a generic class which other classes can specialise<br />
+ - subclass sioc:Site, sioc:Community, ... from it and add their<br />
+specific properties<br />
+ - if sioc:Space is not a good candicate for a generic class, add a<br />
+new generic class</p>
+<p>Guys, please add your opinions.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-382"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-382" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>
+On 15 Mar 2007, at 18:46, Uldis Bojars wrote:<br />
+> Let's see what can be a part of each of them:<br />
+> sioc:Space - ( ??? )<br />
+> sioc:Site - Usergroups, Forums, Containers, (anything else?)<br />
+> sioc:Community - Sites, Users, foaf:People, Documents, Posts,<br />
+> Containers, etc..<br />
+><br />
+> Suggestion:<br />
+>  - to make sioc:Space a generic class which other classes can<br />
+> specialise<br />
+>  - subclass sioc:Site, sioc:Community, ... from it and add their<br />
+> specific properties<br />
+>  - if sioc:Space is not a good candicate for a generic class, add a<br />
+> new generic class<br />
+><br />
+> Guys, please add your opinions.</p>
+<p>(I haven't read the whole thread)</p>
+<p>I think that this kind of upper-level ontology modelling is not<br />
+helpful. Whatever you come up with, some people will disagree with it.</p>
+<p>A community is not a container! It's a network! No, it's a<br />
+conversation! A site is a product, not a space! No, it's a<br />
+project! Or is it a document?</p>
+<p>Requiring people to buy into an upper-level ontology if they want to<br />
+use SIOC would make SIOC less re-usable and doesn't seem to add much<br />
+to SIOC's core mission of describing online communities.</p>
+<p>So my 0.02 would be to avoid these contrived artificial concepts and<br />
+keep it simple. Stick to terms from everyday language. If you need a<br />
+generic superclass, use rdfs:Resource.</p>
+<p>Richard</p>
+<p>><br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-381"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-381" class="active">What&#039;s a Space (Was subclass sioc:Community from sioc:Container)</a></h3>
+
+    <div class="content">
+      <p>
+> We may want to ask Kingsley to give some comments and help clarify the<br />
+> meaning and use cases for sioc:Space. He was the one who first talked<br />
+> about a need for the concept of data spaces.<br />
+><br />
+><br />
+I know the conversation has moved on since this but here were some ideas<br />
+from a message to Kingsley / Uldis:</p>
+<p> > Actually when I was thinking about superclassing Space over Site I<br />
+meant that Space is a more generic place where data is stored, over a Site.</p>
+<p> > Space could be desktop, a fileshare, a mobile phone flash drive,<br />
+whatever.  But to be more semantically correct, I think you still need a<br />
+Site and maybe other subtypes to say where things are stored...</p>
+<p> > Yes, things are becoming more transparent, and it doesn't matter to<br />
+the end user where the data is stored, but there will still be a need to<br />
+define this...  For (1) some people may see the fact that data is stored<br />
+on a Site or not as a boon or a problem [for certain scenarios, a<br />
+centralised site-based system may be advantageous, for others, the<br />
+distribution of data across peers' desktops may be preferred] and (2)<br />
+backwards compatability.  You can still say whatever you want, that<br />
+Containers are on Spaces or Sites (or Desktops if that was added)...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-378"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-378" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>On 3/15/07, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> On 3/15/07, John Breslin <john.breslin@deri.org> wrote:<br />
+> ><br />
+> > Space is a place where data is stored.  At the moment we just have<br />
+> > Sites, but could also be desktops, flash drives, fileshares, etc.<br />
+> ><br />
+> > In my head at least :) a Community is a grouping of SIOC things related<br />
+> > to a particular community.  Could be Sites, Users, foaf:People,<br />
+> > Documents, Posts, Containers, etc...<br />
+><br />
+> We may want to ask Kingsley to give some comments and help clarify the<br />
+> meaning and use cases for sioc:Space. He was the one who first talked<br />
+> about a need for the concept of data spaces.</john.breslin@deri.org></captsolo@gmail.com></p>
+<p>Had a conversation about this on #sioc [1] and we agreed that both<br />
+sioc:Community and sioc:Site can be subclasses of sioc:Space (provided<br />
+that sioc:Space can contain anything, not only sioc:Containers and<br />
+sioc:Items).</p>
+<p>[1] http://tuukka.iki.fi/tmp/sioc-2007-03-15#20:28:23</p>
+<p>If this is a case then we may also want to keep sioc:has_part /<br />
+sioc:part_of to indicate things that are parts of a dataspace. As for<br />
+describing parts of Posts / Items some new property names were<br />
+proposed: has_segment, has_enclosure, has_component.</p>
+<p>P.S. One confusion which I can expect with this is - if both are<br />
+dataspaces, can a Site be a part of a Community according to this<br />
+model. That is - can a dataspace be a part of another dataspace. (I<br />
+don't see why not.)</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-383"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-383" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>
+> Had a conversation about this on #sioc [1] and we agreed that both<br />
+> sioc:Community and sioc:Site can be subclasses of sioc:Space (provided<br />
+> that sioc:Space can contain anything, not only sioc:Containers and<br />
+> sioc:Items).<br />
+><br />
+><br />
+Sounds okay, but as Richard pointed out ("Whatever you come up with,<br />
+some people will disagree with it."), I have some worries :) - in short,<br />
+that a Community = People + Spaces.</p>
+<p>As I mentioned, I think a Community is more than a Space (if a Space is<br />
+where data is stored), because the data that a Community forms is of<br />
+course residing somewhere, but also the Community is more than the data<br />
+if you include People in the notion of a Community (and they could have<br />
+profiles residing on a Space, but not sure if it is the same thing)...</p>
+<p>Having said that, if people are happy for Community to be a type of<br />
+Space, I can live with it.</p>
+<p>Either way, the range of space_of could be opened up to allow any<br />
+resource to fit into a Space.</p>
+<p>As regards properties, part_of / has_part would seem to fit better for<br />
+Post than Community.</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-384"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-384" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>On 3/16/07, John Breslin <john.breslin@deri.org> wrote:</john.breslin@deri.org></p>
+<p>> Sounds okay, but as Richard pointed out ("Whatever you come up with,<br />
+> some people will disagree with it."), I have some worries :) - in short,<br />
+> that a Community = People + Spaces.</p>
+<p>> As I mentioned, I think a Community is more than a Space (if a Space is<br />
+> where data is stored), because the data that a Community forms is of<br />
+> course residing somewhere, but also the Community is more than the data<br />
+> if you include People in the notion of a Community (and they could have<br />
+> profiles residing on a Space, but not sure if it is the same thing)...</p>
+<p>What falls within a Space depends on its definition. Kingsley said on<br />
+IRC the Community does (after some discussion).</p>
+<p>Site and a Community are similar in structure (as I see them). Site is<br />
+more constrained, but it can also contain groups of people (though it<br />
+has a separate property for this) and both can contain Items directly<br />
+(e.g., as your home drive can cotain files and directories). If one is<br />
+not a Space the other is probably not either.</p>
+<p>> Either way, the range of space_of could be opened up to allow any<br />
+> resource to fit into a Space.</p>
+<p>What concerns me - a name "space_of" is quite specific. For sioc:Forum<br />
+we have a sioc:has_container / sioc:container_of and that can be used<br />
+with sioc:Container as well. We had a generic property names<br />
+previously, but this name is very tied to the name of the class.</p>
+<p>Will we be using sioc:has_space with a sioc:Site instead of host_of / has_host?</p>
+<p>> As regards properties, part_of / has_part would seem to fit better for<br />
+> Post than Community.</p>
+<p>OK</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-385"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-385" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p> > Site and a Community are similar in structure (as I see them). Site is<br />
+ > more constrained, but it can also contain groups of people (though it<br />
+ > has a separate property for this) and both can contain Items directly<br />
+ > (e.g., as your home drive can cotain files and directories). If one is<br />
+ > not a Space the other is probably not either.<br />
+ ></p>
+<p>If you're happy, as I said I won't complain (for a change :)).</p>
+<p> > What concerns me - a name "space_of" is quite specific. For sioc:Forum<br />
+ > we have a sioc:has_container / sioc:container_of and that can be used<br />
+ > with sioc:Container as well. We had a generic property names<br />
+ > previously, but this name is very tied to the name of the class.</p>
+<p>So we need a new property to say what a Space consists of? (eek -<br />
+constituent_of!)   If we can come up with something better than<br />
+space_of, let's go for it.  Previously, all our property names were not<br />
+tied to the class name, but this has become impossible recently<br />
+(thinking of trying to find property names to link to Usergroup,<br />
+Service, etc.).  And I think it will continue to be hard to find<br />
+independent property names, so can't use that legacy use as a reason any<br />
+more (much and all as I preferred it).</p>
+<p> > Will we be using sioc:has_space with a sioc:Site instead of host_of /<br />
+has_host?</p>
+<p>At the moment, host_of is subclassed from space_of - I don't think we<br />
+should drop the host properties as a lot of use is already being made of<br />
+them...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-386"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, April 2 - 09:54 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="233.html#comment-386" class="active">Issue #1: - subclass sioc:Community from sioc:Container</a></h3>
+
+    <div class="content">
+      <p>Updated the ontology with changes for this issue:</p>
+<p>1) Community made a subclass of Space<br />
+2) removed range/domain constraints on sioc:has_space/space_of so that<br />
+any resource can be a part of a data Space (without automatically<br />
+becoming a Container)<br />
+3) removed range/domain from sioc:has_part/part_of which will be used<br />
+to point to resources that are parts of an Item/Post</p>
+<p>Also changed descriptions of the classes and properties mentioned above.</p>
+<p>Still needed to do / decide:</p>
+<p>- need a better description for sioc:Space, one which allows<br />
+non-containers to be a part of it. anyone has a good definition?</p>
+<p>- add range/domain to sioc:has_part/part_of to reflect the fact that<br />
+it is to be used with sioc:Item(s). left this out for a moment to<br />
+allow to change existing data (Alex's SIOC community exporter) that<br />
+use them together with a sioc:Community.</p>
+<p>On 3/16/07, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> So we need a new property to say what a Space consists of? (eek -<br />
+> constituent_of!)   If we can come up with something better than<br />
+> space_of, let's go for it.  Previously, all our property names were not</john.breslin@deri.org></p>
+<p>Let's see how has_space / space_of will look for a community:</p>
+<p>com1 a sioc:Community .<br />
+com1 sioc:space_of person_A .<br />
+com1 sioc:space_of site_X .</p>
+<p>person_A a foaf:Person .<br />
+site_X a sioc:Site .</p>
+<p>You can imagine using the reverse property has_space with a person and<br />
+a site in this example. If all are happy with it we can leave them as<br />
+is.</p>
+<p>> tied to the class name, but this has become impossible recently<br />
+> (thinking of trying to find property names to link to Usergroup,<br />
+> Service, etc.).  And I think it will continue to be hard to find<br />
+> independent property names, so can't use that legacy use as a reason any<br />
+> more (much and all as I preferred it).</p>
+<p>Having a generic meaning for terms is a good thing. It can allow for a<br />
+wider (and possibly unexpected) use than originally planned. E.g.,<br />
+rss:item is an example of a description that allows for a wider use of<br />
+this class - anything can be an rss:item.</p>
+<p>Coming up with good names is becoming harder, and possibly we can<br />
+leave has_space/space_of as is. But if we are thinking about names,<br />
+our efforts are best spent keeping the descriptions general enough and<br />
+not restricting them without necessity.</p>
+<p>An example in SIOC where a description is maybe too specific is<br />
+sioc:Post which says "An article or message posted to a Forum.".</p>
+<p>This is understood by people that there _must_ be a sioc:Forum even<br />
+when they don't need it. I think it was bblfish who said on #sioc that<br />
+a sioc:Post would fit for describing bugzilla error report comments<br />
+(see his post on SIOC-Dev) but that he does not need a sioc:Forum (and<br />
+hence asking if sioc:Post can be used).</p>
+<p>>  > Will we be using sioc:has_space with a sioc:Site instead of host_of /<br />
+> has_host?<br />
+><br />
+> At the moment, host_of is subclassed from space_of - I don't think we<br />
+> should drop the host properties as a lot of use is already being made of<br />
+> them...</p>
+<p>OK.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F233%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div></div></div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/233?destination=node%2F233"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-qaCcaUvoYL6id0bGoqtlCrOXL-A2BI9aZUf7r_AVDaM" value="form-qaCcaUvoYL6id0bGoqtlCrOXL-A2BI9aZUf7r_AVDaM"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

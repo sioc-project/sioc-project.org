@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/285"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/285">
+  <dc:title>Request to change group_of / has_group to usergroup_of / has_usergroup</dc:title>
+  <sioc:content>Dear all -
+I put my case to you to change the properties group_of to usergroup_of
+(and the inverses) which currently links a Usergroup to a Site.
+Why?
+* To be more consistent with SIOC naming.
+* To distinguish from foaf:Group.
+* As it slightly reduces confusion between it and member_of (I think at
+least).
+* It makes it clearer in the Site definition what the property will link to.
+* (I actually changed this during the discussion on SIOC Types some time
+back, but the list of changes was in a screenshot posted to the list
+that not all may have seen.)
+This will involve updating the WP plugin, deprecating the old property,
+and notifying GNU to update his blogroll application.
+Let me know if you have any objections?
+John.
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/285" rdfs:label="Request to change group_of / has_group to usergroup_of / has_usergroup" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

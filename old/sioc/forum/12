@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/forum/12"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Forum rdf:about="http://sioc-project.org/forum/12">
+  <dc:title>Exporters Forum</dc:title>
+  <dc:description>Exporters Forum at sioc-project.org</dc:description>
+  <sioc:link rdf:resource="http://sioc-project.org/forum/12" rdfs:label="Exporters Forum" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/333">
+      <rdfs:label><![CDATA[wordpress plugins directory]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/333" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/332">
+      <rdfs:label><![CDATA[add has_reply and reply_of to sioc exporter for drupal]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/332" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/331">
+      <rdfs:label><![CDATA[SIOC WordPress exporter bug!]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/331" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/47">
+      <rdfs:label><![CDATA[Remarks about WP SIOC exporter]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/47" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/41">
+      <rdfs:label><![CDATA[Updated Drupal exporter]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/41" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/35">
+      <rdfs:label><![CDATA[WordPress Exporter]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/35" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/34">
+      <rdfs:label><![CDATA[Feature request for the Drupal sioc.module]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/34" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/33">
+      <rdfs:label><![CDATA[Some things to fix in the WordPress plugin...]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/33" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/23">
+      <rdfs:label><![CDATA[sioc.inc]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/23" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/22">
+      <rdfs:label><![CDATA[SIOC module here?]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/22" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/20">
+      <rdfs:label><![CDATA[Fixed paths in the CVS repository]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/20" />
+    </sioc:Post>
+  </sioc:container_of>
+</sioc:Forum>
+</rdf:RDF>

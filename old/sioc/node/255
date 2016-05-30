@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/255"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/255">
+  <dc:title>Word-count in SIOC data</dc:title>
+  <sioc:content>Someone on Twitter asked for a way to get a total wordcount of all
+posts on a blog. Sound like word-count of a post is a type of metadata
+people may want to know (there can be other metadata that&#039;s not
+exported yet and may be cool to export).
+Posting the idea here so we can find (and do) it later. Note that SIOC
+already exports text of a post so this information can be retrieved by
+a filters further in the food-chain - no need to do specific count for
+each exporter, just take a &quot;sioc:content&quot; or &quot;content:encoded&quot; and
+count words for any SIOC data.
+Still, if the wordcount was exported we would need to count the total
+wordcount of all the posts. Does SPARQL support data aggregation (SUM,
+AVERAGE, ...)?
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-05-17T09:38:39+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:39+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/255" rdfs:label="Word-count in SIOC data" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

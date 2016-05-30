@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/108"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/108">
+  <dc:title>Comments  About SIOC concepts / properties</dc:title>
+  <sioc:content>On 7/19/06, John Breslin &amp;lt;john.breslin@deri.org&amp;gt; wrote:&amp;gt;&amp;nbsp;&amp;nbsp;&amp;gt; 2) sioc:Comment&amp;gt; &amp;gt; This would need to be moved to a types module, to keep the core SIOC
+&amp;gt; ontology simple.&amp;nbsp;&amp;nbsp;We can then add other subtypes of Post later like&amp;gt; Sticky, Announcement, etc.Attaching here a nice drawing by [GNU] showing proposed relations between SIOC, SKOS and IBIS.The IBIS part formalizes the part about SIOC and argumented discussions mentioned earlier.
+Not sure if [GNU] has a particular vocabulary in mind, but there is one made by Danny Ayers [1].[1] http://www.schemaweb.info/schema/SchemaDetails.aspx?id=4
+Regarding how to express Comments in SIOC:The best place to express different types of posts (comments, ...) as well as different types of other SIOC concepts (forums, etc.) is in modules outside the core SIOC ontology. That helps the ontology stay clean yet flexible and extensible.
+With this clarification, now there is a question - what do we need SKOS for in this situation? There is already a tool in RDFS to define hierarchies - rdfs:subClassOf - is there something it does not allow to do that SKOS does? SKOS would be useful to express category hierarchies for online community sites, but I do not see the value added by it in this particular case.
+In terms of implementation we could define the Post types module as a hierarchy of subclasses of SIOC:Post. To held existing consumers of RDF data that maybe are not capable of reasoning over schemas we can define both classes explicitly in the export of SIOC data for now:
+[ &amp;lt;post&amp;gt; a sioc:Post .&amp;nbsp; &amp;lt;post&amp;gt; a sioc_type:Comment . ]If it is true that [ sioc_type:Comment rdfs:subClassOf sioc:Type . ] then in the future we will be able to drop the line [ &amp;lt;post&amp;gt; a sioc:Post . ] and consumers will infer this from knowing it&#039;s a sioc_type:Comment (although then it looks a bit awkward to have to use a different namespace when defining a Comment).
+Note: RDF allows to assign a number of types at the same time - there are no problems to define a &amp;quot;Sticky + Announcement&amp;quot; or &amp;quot;Sticky + Comment&amp;quot; using the terms John mentions above.Uldis
+[ http://captsolo.net/info/ ]
+
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group.  To post to this group, send email to sioc-dev@googlegroups.com  To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com  For more options, visit this group at http://groups.google.com/group/sioc-dev  -~----------~----~----~----~------~----~------~--~---
+
+</sioc:content>
+  <dcterms:created>2006-07-19T11:33:33+01:00</dcterms:created>
+  <dcterms:modified>2006-07-19T11:33:33+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/108" rdfs:label="Comments  About SIOC concepts / properties" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

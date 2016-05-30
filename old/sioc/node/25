@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/roadmap"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/roadmap">
+  <dc:title>SIOC Roadmap</dc:title>
+  <sioc:content>Edit: The SIOC to do list will also give you a good idea of some things that need to be done with SIOC.
+Here are some future plans for SIOC development:
+
+SIOC Drupal/CivicSpace: Complete export and begin import part.  This will involve looking at parsing methods for RDF in PHP.  This is currently a priority of CivicSpace research and the task that John Breslin will be leading.
+SIOC WordPress/WordPress MU: Complete the exporters for WP and WPMU.  This task is being carried out by Uldis Bojars.
+SIOC b2evolution: Also to be done by Uldis.
+SIOC phpBB: Produce a SIOC exporter for phpBB.  This is relatively straightforward and can use the sioc.module from Drupal.
+SIOC Planet-PHP: This will be a useful exporter to make use of the data already aggregated by Planet Of The Blogs and Generation Blog.  There will also be links inferred between posts.  Later on, this can include work by Martin Feeney to produce information on which blogs link to which.
+SIOC Explorer: This could be a web-based/desktop-based explorer for SIOC data, either aggregrated or remotely fetched.
+
+</sioc:content>
+  <dcterms:created>2005-10-26T11:23:21+01:00</dcterms:created>
+  <dcterms:modified>2008-01-07T16:57:53+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/roadmap" rdfs:label="SIOC Roadmap" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

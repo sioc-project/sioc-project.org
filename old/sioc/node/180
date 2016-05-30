@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/180"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/180">
+  <dc:title>Contd: AtomOWL and SIOC Integration</dc:title>
+  <sioc:content>A continuation of the discussion from
+:
+Atom is clearly a more detailed specification for Web Content and its
+wide adoption is inevitable (IMHO). Thus, I would like to suggest that
+we consider a term change re. sioc:content since it currently refers to
+the Text Content of a &quot;Post&quot; rather than the actual Content of a &quot;Post&quot;
+which AtomOWL covers very well. My replacement term suggestions are any
+of the following:
+sioc:text
+sioc:plain_text
+I think we have a great opportunity to connect SIOC and AtomOWL via
+sioc:content especially as SIOC is very much in its early days.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-23T18:35:05+01:00</dcterms:created>
+  <dcterms:modified>2006-11-07T14:57:38+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/180" rdfs:label="Contd: AtomOWL and SIOC Integration" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/56%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/56" />
+</sioc:Post>
+</rdf:RDF>

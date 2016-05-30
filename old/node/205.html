@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/205"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>OpenLink SIOC Enhancement Suggestions (3) | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>OpenLink SIOC Enhancement Suggestions (3)</h2>                                                  <div class="clear-block">
+            <div id="node-205" class="node">
+
+
+
+      <span class="submitted">2006, December 18 - 18:47 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  <div class="content clear-block">
+    <p>All,</p>
+<p>As I am sure you know, I believe SIOC is a great mechanism for bridging<br />
+the Web 2.0 and more traditional Semantic Web communities. Thus, we<br />
+need to be able to use SIOC and existing shared Ontologies to<br />
+unobtrusively model distributed collaborative application profiles such<br />
+as Blogs, Wikis, Discussion Forums, Aggregated Feeds (Bloglines,<br />
+TechMeme, Digg, Talk Digger) Platforms, Shared Bookmarks (del.icio.us<br />
+etc.), and other popular Web 2.0 solution profiles.</p>
+<p>I suggest we use resurrect the deprecated sioc:type property and then<br />
+use this to link a sioc:Forum to a skos:Concept.</p>
+<p>Property: sioc:type<br />
+OWL Type:  	ObjectProperty<br />
+Range: 	http://www.w3.org/2000/01/rdf-schema#Resource</p>
+<p>We then use the skos:prefLabel property of skos:Concept to denote types<br />
+of Online Forums along the following lines:</p>
+<p>http://www.openlinksw.com/dataspace#weblog,<br />
+http://www.openlinksw.com/dataspace#wiki,<br />
+http://www.openlinksw.com/dataspace#feeds,<br />
+http://www.openlinksw.com/dataspace#discussion etc..</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="204.html" class="topic-previous" title="Go to previous forum topic">‹ System for semantic annotation and retrieving of audio</a>
+              <a href="203.html" class="topic-next" title="Go to next forum topic">Like Semantic Radar, but for Microformats Fwd: [uf-discuss] Operator: Microformat detection for Firefox 2 ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-319"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-319" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>Kingsley,</p>
+<p>Why not use rdf:type and make weblog, wiki etc. subclasses of<br />
+sioc:Forum?</p>
+<p>Cheers,<br />
+Richard</p>
+<p>On 18 Dec 2006, at 19:47, kidehen wrote:</p>
+<p>><br />
+> All,<br />
+><br />
+> As I am sure you know, I believe SIOC is a great mechanism for<br />
+> bridging<br />
+> the Web 2.0 and more traditional Semantic Web communities. Thus, we<br />
+> need to be able to use SIOC and existing shared Ontologies to<br />
+> unobtrusively model distributed collaborative application profiles<br />
+> such<br />
+> as Blogs, Wikis, Discussion Forums, Aggregated Feeds (Bloglines,<br />
+> TechMeme, Digg, Talk Digger) Platforms, Shared Bookmarks (del.icio.us<br />
+> etc.), and other popular Web 2.0 solution profiles.<br />
+><br />
+> I suggest we use resurrect the deprecated sioc:type property and then<br />
+> use this to link a sioc:Forum to a skos:Concept.<br />
+><br />
+> Property: sioc:type<br />
+> OWL Type:  	ObjectProperty<br />
+> Range: 	http://www.w3.org/2000/01/rdf-schema#Resource<br />
+><br />
+> We then use the skos:prefLabel property of skos:Concept to denote<br />
+> types<br />
+> of Online Forums along the following lines:<br />
+><br />
+> http://www.openlinksw.com/dataspace#weblog,<br />
+> http://www.openlinksw.com/dataspace#wiki,<br />
+> http://www.openlinksw.com/dataspace#feeds,<br />
+> http://www.openlinksw.com/dataspace#discussion etc..<br />
+><br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-320"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-320" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>Hi Richard,</p>
+<p>On 12/18/06, Richard Cyganiak <richard@cyganiak.de> wrote:<br />
+><br />
+> Kingsley,<br />
+><br />
+> Why not use rdf:type and make weblog, wiki etc. subclasses of<br />
+> sioc:Forum?</richard@cyganiak.de></p>
+<p>Precisely - all the tools needed to express types of forums are already there:<br />
+ - rdf:type<br />
+ - SIOC types module [ http://rdfs.org/sioc/types ]</p>
+<p>The only thing that needs to be done is add forum subtypes to the types module.<br />
+Currently it only has Comment - a subclass of Post.</p>
+<p>You could argue if subtypes of sioc:Forum should be in the main<br />
+ontology or in a separate module. The motivation for a separate module<br />
+is to keep the ontology generic enough and to have specific type<br />
+hierarchies separate. Open to suggestions how to best do it.</p>
+<p>Speaking of being generic - some even argued that we should not have<br />
+Comment at all because comments are just Posts that are replied to<br />
+other posts.</p>
+<p>P.S. A suggestion for implementations: In order to help reasoners (or<br />
+rather the fact that they are not yet widely used) let's do the job<br />
+for them and specify that a forum is both sioc:Forum and its<br />
+appropriate subtype (e.g. sioc_types:Weblog), even if there is a<br />
+subclass relationship between them.</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-322"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-322" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 12/18/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+> Hi Richard,<br />
+><br />
+> On 12/18/06, Richard Cyganiak <richard@cyganiak.de> wrote:<br />
+> ><br />
+> > Kingsley,<br />
+> ><br />
+> > Why not use rdf:type and make weblog, wiki etc. subclasses of<br />
+> > sioc:Forum?<br />
+><br />
+> Precisely - all the tools needed to express types of forums are already there:<br />
+>  - rdf:type<br />
+>  - SIOC types module [ http://rdfs.org/sioc/types ]<br />
+><br />
+> The only thing that needs to be done is add forum subtypes to the types module.<br />
+> Currently it only has Comment - a subclass of Post.<br />
+></richard@cyganiak.de></captsolo@gmail.com></p>
+<p>I also agree with the use of subclasses of sioc:Forum to create wiki,<br />
+weblog, mailing-list ... (rather than sioc:type) than can be in the<br />
+SIOC types module.<br />
+We can also create subclasses of sioc:Post like: sioc:BlogPost,<br />
+sioc:WikiPage, sioc:EMail ... (I currently use some of them, and let a<br />
+unique sioc:Forum property).</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-325"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/67.html" title="View user profile.">Wikier</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-325" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>
+> I also agree with the use of subclasses of sioc:Forum to create wiki,<br />
+> weblog, mailing-list ... (rather than sioc:type) than can be in the<br />
+> SIOC types module.</p>
+<p>Good idea! Now I can't, but tomorrow I'll write my ideas on the wiki.</p>
+<p>Regards,</p>
+<p>--<br />
+__      ___ _   _<br />
+\ \    / (_) |_(_)___ _ _   Sergio Fdez<br />
+ \ \/\/ /| | / / / -_) '_|  GNU/LiNUX User: #298803<br />
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-324"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-324" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>I think the best thing to do in this case is to use the wiki.</p>
+<p>I'll start with a list of proposed types and please add to this list as<br />
+appropriate.</p>
+<p>http://wiki.sioc-project.org/index.php/TypesModule</p>
+<p>Then we can deploy to the /sioc/types file.</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-321"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="205.html#comment-321" class="active">OpenLink SIOC Enhancement Suggestions (3)</a></h3>
+
+    <div class="content">
+      <p>
+Uldis Bojars wrote:<br />
+> Hi Richard,<br />
+><br />
+> On 12/18/06, Richard Cyganiak <richard@cyganiak.de> wrote:<br />
+> ><br />
+> > Kingsley,<br />
+> ><br />
+> > Why not use rdf:type and make weblog, wiki etc. subclasses of<br />
+> > sioc:Forum?<br />
+><br />
+> Precisely - all the tools needed to express types of forums are already there:<br />
+>  - rdf:type<br />
+>  - SIOC types module [ http://rdfs.org/sioc/types ]<br />
+><br />
+> The only thing that needs to be done is add forum subtypes to the types module.<br />
+> Currently it only has Comment - a subclass of Post.<br />
+><br />
+> You could argue if subtypes of sioc:Forum should be in the main<br />
+> ontology or in a separate module. The motivation for a separate module<br />
+> is to keep the ontology generic enough and to have specific type<br />
+> hierarchies separate. Open to suggestions how to best do it.<br />
+><br />
+> Speaking of being generic - some even argued that we should not have<br />
+> Comment at all because comments are just Posts that are replied to<br />
+> other posts.<br />
+><br />
+> P.S. A suggestion for implementations: In order to help reasoners (or<br />
+> rather the fact that they are not yet widely used) let's do the job<br />
+> for them and specify that a forum is both sioc:Forum and its<br />
+> appropriate subtype (e.g. sioc_types:Weblog), even if there is a<br />
+> subclass relationship between them.<br />
+><br />
+> Best,<br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]</richard@cyganiak.de></p>
+<p>Richard,</p>
+<p>Somehow (I don't know how) I completely overlooked SIOC subclasses :-(</p>
+<p>Uldis has indicated to me that they will flesh this part of the<br />
+Ontology out so that others don't end up down my path :-)</p>
+<p>Kingsley</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F205%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/205?destination=node%2F205"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-4V2EyMyQt2rvlepUT2wkVZEznlfC8_P4-vdy3zUAD_Q" value="form-4V2EyMyQt2rvlepUT2wkVZEznlfC8_P4-vdy3zUAD_Q"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

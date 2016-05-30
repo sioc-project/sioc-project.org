@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/229"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/229">
+  <dc:title>SIOC in Opera</dc:title>
+  <sioc:content>
+Hi all,
+browsing the archives of SWD WG public mailing list, I found great news
+about plans to support SIOC in Opera:
+ http://lists.w3.org/Archives/Public/public-swd-wg/2007Mar/0057.html
+Regards,
+--
+__      ___ _   _
+\ \    / (_) |_(_)___ _ _   Sergio Fdez
+ \ \/\/ /| | / / / -_) &#039;_|  GNU/LiNUX User: #298803
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-12T21:26:18+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:19+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/229" rdfs:label="SIOC in Opera" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/67%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/67" />
+</sioc:Post>
+</rdf:RDF>

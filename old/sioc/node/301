@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/301"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/301">
+  <dc:title>Fwd: [wiki-standards] Wiki Profile Vocabulary</dc:title>
+  <sioc:content>---------- Forwarded message ----------
+From: Earle Martin 
+Date: Jul 6, 2007 2:03 PM
+Subject: [wiki-standards] Wiki Profile Vocabulary
+To: The discussion list for wiki standards 
+Hi all,
+Thanks to everyone who attended Tuesday&#039;s IRC meeting
+(http://wikiohana.net/cgi-bin/wiki.pl/IrcMeetingJuly2007) - it was
+productive. For those who weren&#039;t there, I was inviting discussion on
+a project I&#039;ve been working on called the Wiki Profile Vocabulary,
+which is essentially an RDF vocabulary for describing wikis and
+aspects of wikis. (The idea was originally suggested by Ward; thanks.)
+You can find the latest version at
+http://wikirdf.org/vocabulary/profile/ . There&#039;s also an article I
+wrote about what a &quot;profile document&quot; is and how to make one, at
+http://wikirdf.org/docs/creating-wiki-profiles.html .
+What I&#039;m hoping that wiki authors will do is add support for producing
+these profile documents to their wiki engines, complete with
+autodiscovery tags in the  sections of their HTML pages, in
+order for robots and other mechanisms to find the information. In
+theory, it would be possible to write code to automatically generate
+sister site links from one wiki to another, just by entering the URI
+of the other wiki.
+Two main points were discussed:
+The current version of the spec has a naive expectation that wiki URIs
+are roughly of the form
+http://example.com/scriptname?args=whatever;page=[page name here].
+However some wiki engines use URIs of the form
+http://example.com/scriptname/[page name here]/args. Chris Dent
+suggested using URI Templates
+(http://bitworking.org/projects/URI-Templates/) to define the form of
+URIs, and this was generally agreed to be a good idea.
+The other point was how to specify an autodiscovery method in page
+HTML that points to a wiki&#039;s profile document. Suggestions were (note,
+examples only; your engine&#039;s URI for producing a profile doesn&#039;t
+matter):
+A la Dublin Core (suggested by Reini Urban):
+
+A la FOAF (http://rdfweb.org/topic/Autodiscovery):
+
+Hybrid:
+
+Hybrid, n3 version:
+
+Also, the possibility of having a &quot;standard location&quot; like robots.txt
+(http://www.robotstxt.org/) was mentioned, but was thought to be too
+inflexible.
+Out of all of these, I very much prefer the second, FOAF-style option,
+because the profile is very much an example of metadata, and I&#039;m not
+too sure about how the &quot;x.y&quot; syntax works.
+On the other hand, reading through the W3C specs, it is apparently
+legal to have any QName (XML qualified name - see
+http://www.w3.org/TR/xmlschema-2/#QName) as the value of a &quot;link rel&quot;,
+and a XML prefix can be used as long as it&#039;s been defined in an xmlns
+attribute (http://www.w3.org/TR/xhtml2/mod-metaAttributes.html#adef_metaAttributes_rel).
+So I guess it would be possible to do
+
+...but that seems a little over the top.
+ is a
+well-known style and shouldn&#039;t cause any problems.
+Cheers,
+Earle.
+ --
+Earle Martin
+            http://downlode.org/
+http://purl.org/net/earlemartin/
+_______________________________________________
+wiki-standards mailing list. wiki-standards@wikisym.org
+http://www.wikisym.org/cgi-bin/mailman/listinfo/wiki-standards
+For the wiki-research, wiki-standards, wikisym-announce mailing lists,
+please see:
+http://www.wikisym.org/cgi-bin/mailman/listinfo
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:54+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/301" rdfs:label="Fwd: [wiki-standards] Wiki Profile Vocabulary" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

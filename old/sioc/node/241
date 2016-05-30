@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/explorer"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/explorer">
+  <dc:title>A SIOC Explorer</dc:title>
+  <sioc:content>Eyal and Benjamin have produced an explorer for SIOC forums.  It&#039;s written using Ruby on Rails and their ActiveRDF / SWORD Semantic Web application framework for Rails.  You can get it from the SIOC explorer page, which says:
+
+SIOC is a Semantic Web format for online social communities such as forums, blogs, or mailing lists. SIOC feeds are already offered by many blogs (similar but much richer than RSS feeds). The SIOC explorer is a web application similar to a feed-reader: it allows people to subscribe to SIOC feeds and read their content. Because SIOC data is very rich, people can filter the content based on e.g. authors, topics, creation date, or any other properties.
+
+The explorer begins by showing a list of blogs or forums that can be browsed and explored.   Then, you can choose any particular blog, or filter by the properties associated with a post, e.g. show all posts by a particular creator, by tag, by date, and even by expanded properties associated with a particular FOAF maker (e.g. homepage or whatever is defined for that foaf:Person).
+By crawling SIOC comment posts, and getting data from forums, blogs, mailing lists, etc., tools like the SIOC explorer can provide a nice overall view of a person&#039;s contributions to various ongoing or past discussions, or can provide very specific views of what a group of people have been saying during a certain timeframe (something that is not easily done with current feed readers or aggregators).
+More information and a download link is available from the SIOC explorer page.
+</sioc:content>
+  <dcterms:created>2007-04-02T10:56:48+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:56:51+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/explorer" rdfs:label="A SIOC Explorer" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/14" rdfs:label="Applications" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

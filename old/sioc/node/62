@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/62"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/62">
+  <dc:title>how to describe a whole Community?</dc:title>
+  <sioc:content>Hello all,
+  I&#039;ve been playing with different SIOC things and have a question
+how a Community is defined? SIOC assumes that a Site hosts different
+Forums , which may be derived from blogs or mailingslists. All that
+is held in a RDF store. From my understanding, a linkage (which
+defines two or more sources of SIOC data as &quot;the same Community&quot;)
+between a Google mailinglist and a blog is missing. How could that be
+linked up?
+  Using a rdf:Collection like in http://www.w3.org/TR/rdf-primer/
+#example17 still needs to type the Collection, requiring a
+sioc:Community.
+  Any other ideas for linkage of SIOC source to form a community?
+	Christoph
+--
+Christoph Görn 
+http://B4mad.Net/FOAF/goern.rdf#goern
+Usability schmusability... where&#039;s the part where we talk about how
+this helps users kick ass?
+</sioc:content>
+  <dcterms:created>2006-05-30T10:46:00+01:00</dcterms:created>
+  <dcterms:modified>2006-05-19T10:48:24+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/62" rdfs:label="how to describe a whole Community?" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/28%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/28" />
+</sioc:Post>
+</rdf:RDF>

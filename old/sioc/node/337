@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/337"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/337">
+  <dc:title>Obama Administration Using Technology Developed at NUI Galway</dc:title>
+  <sioc:content>
+An internet technology developed at NUI Galway is to be used by President Obama&#039;s administration in its new website devoted to the $800 billion economic stimulus package. The administration&#039;s &#039;Recovery.gov&#039; site will employ a web standard, created at NUI Galway&#039;s Digital Enterprise Research Institute (DERI), to bring an unprecedented level of transparency to the US Government.
+Researchers at DERI focus on the Semantic Web, which is the next incarnation of the internet which will be more intuitive because data will be defined and linked. One of the outputs of DERI&#039;s research is called Semantically-Interlinked Online Communities or SIOC. Aimed at connecting online community sites and internet-based discussions, SIOC is set to be utilised by &#039;Recovery.gov&#039;.
+Creator of SIOC and lecturer in Electronic Engineering at NUI Galway, Dr John Breslin, said: &quot;The possibilities afforded by deploying semantic technologies such as SIOC for government transparency are very exciting. Semantic technology allows the linking of government funding data, fed in from spreadsheets or forms, to contributions from the public, private organisations or the government themselves. This can be done not just within a single site but with external linked data from other public sources. You could imagine using this to discover the effect of how and where tax dollars and Euros are being spent on statistics for crime, education or innovation in a set of geographic regions”.
+As announced by George Thomas, Chief Architect with the US General Services Administration, the Recovery.gov effort will bring transparency to the government towards allowing citizens and activists to access semantic data about everything from contracts and schedules to training and infrastructure costs.
+Since 2003, DERI has been supported by Science Foundation Ireland with a Centre for Science, Engineering and Technology grant. During this time, DERI has grown to over 120 members.
+Professor Stefan Decker, Director of DERI, says: “This is another example showing that investment in science and research has truly propelled Ireland into the forefront of technology. Our technology can bring a greater level of transparency and trust to governments as well as financial institutions - something that becomes increasingly important. The US Government has recognised this already&quot;.
+The SIOC project from DERI at NUI Galway is already being used by a range of applications including Yahoo! SearchMonkey and Drupal.
+</sioc:content>
+  <dcterms:created>2009-04-02T20:47:50+01:00</dcterms:created>
+  <dcterms:modified>2009-04-07T17:14:08+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/337" rdfs:label="Obama Administration Using Technology Developed at NUI Galway" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

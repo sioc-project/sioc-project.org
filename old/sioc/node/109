@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/109"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/109">
+  <dc:title>Important Circular for useful Company Intelligence</dc:title>
+  <sioc:content>
+
+
+
+
+Important Circular for useful Company Intelligence
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+FINANCIALS OF PRIVATE AND PUBLIC LIMITED COMPANIES – A UNIQUE COMPANY INTELLIGENCE SERVICE
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+Dear Sirs :
+
+&amp;nbsp;
+
+We have pleasure in offering you subject services for any private limited, public limited and closely held, besides listed companies in India. [In brief, any commercial organization having word/s PRIVATE LIMITED and LIMITED, alongwith their names].
+
+&amp;nbsp;
+
+Whatever may be your business ! 
+
+&amp;nbsp;
+
+Such financials can be of immense help to you for
+
+&amp;nbsp;
+
+а knowing working of fellow-players
+
+а knowing profit margin and sales of fellow-players as well as industry
+
+а knowing financial strength of fellow-players
+
+а designing your pricing and marketing strategy
+
+а comparing and minimizing your various costs and enhancing your operational efficiencies
+
+а knowing market penetration (and sometimes knowing suppliers and customers, too)
+
+&amp;nbsp;
+
+Such cost effective and very specialized services may accelerate your SALES, PROFITS and ultimately FINANCIAL STRENGTH.
+
+&amp;nbsp;
+
+We charge Rs.900/- (+ Service Tax) per company financials only. (Overseas – USD 20). We may try for atleast 2 financials in each case.
+
+&amp;nbsp;
+
+All the reports would be sent by e-mail.
+
+&amp;nbsp;
+
+You may simply provide us list of companies and shall start working on them - instantly and complete within 1-6 working days.
+
+&amp;nbsp;
+
+Hurry ! Try with few cases !
+
+&amp;nbsp;
+
+In short, you have a win-win situation while using latest financials to your benefits !
+
+&amp;nbsp;
+
+Sincerely yours,
+
+for Mira Inform Private Limited
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+Company Intelligence Service Division
+
+==============================================================
+MIRA INFORM PRIVATE LIMITED
+1-A, Ground Floor, Neelambuj,
+Kamal Apartments, Shankar Lane,
+Kandivli (West), Mumbai - 400 067.
+INDIA
+Tel. No.: 91-22-28081714, 28079467
+Mobiles : 91-9892278558, 9821163446, 9821095632
+Fax No.: 91-22-28074108, 28079691
+E-Mails : mira@mirainform.com, info@mirainform.com, enquiry@mirainform.com
+Website : http://www.mirainform.com
+==============================================================
+DISCLAIMER
+The information in this email is confidential and intended solely for the addressee. Access to this email by anyone else is unauthorised. Any use, distribution, copying or disclosure by any other person is strictly prohibited and may be illegal. If you received this in error, please notify the sender by reply email and then destroy the message. Opinions expressed in this email are those of the individual, unless specifically indicated
+
+
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group.  To post to this group, send email to sioc-dev@googlegroups.com  To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com  For more options, visit this group at http://groups.google.com/group/sioc-dev  -~----------~----~----~----~------~----~------~--~---
+
+
+</sioc:content>
+  <dcterms:created>2006-09-02T18:57:11+01:00</dcterms:created>
+  <dcterms:modified>2006-07-19T13:00:28+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/109" rdfs:label="Important Circular for useful Company Intelligence" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/49%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/49" />
+</sioc:Post>
+</rdf:RDF>

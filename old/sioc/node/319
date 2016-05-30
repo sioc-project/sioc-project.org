@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/319"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/319">
+  <dc:title>sioc:reply_of in flat threads</dc:title>
+  <sioc:content>Hi!
+I&#039;m currently working on a SIOC exporter for vBulletin using Alex&#039;s
+SIOC PHP API.
+As vBulletin uses flat threads, I was thinking about the correct way
+to use the sioc:has_reply and sioc:reply_of properties for posts.
+The problem here is that we can&#039;t know for sure which post the author
+of a follow-up post is replying to:
+It could be a reply to the previous post in the thread, to the thread
+starting post or even to multiple posts in the thread.
+So how can we use the sioc:reply_of property for a post in a flat
+thread - should it point to the immediately previous or the thread
+starting post - or even all or none of previous posts? [1]
+In a discussion [2] on #sioc irc channel it was proposed to use
+sioc:Thread [3] to indicate that sioc:Posts are part of a discussion.
+It was then suggested to either have
+* each post marked as a reply to the first post or
+* something like a linked list of posts using sioc:next_by_date and/or
+sioc:previous_by_date
+and maybe add a property like sioc:first_post to sioc:Thread so that a
+query is able to find the first post of a thread (sioc:first_post
+being a subproperty of sioc:container_of)
+Then rules could be used to deduce more knowledge about the thread and
+its reply structure later.
+Any comments and suggestions are very welcomed.
+Regards,
+Thomas
+[1] Ideally a web forum application would store the IDs of posts that
+are quoted in a reply, but vBulletin doesn&#039;t do that in a useful way.
+[2] irc logs: http://tuukka.iki.fi/tmp/sioc-2007-11-05.html#12:52:10
+[3] sioc:Thread is discussed here:
+http://groups.google.com/group/sioc-dev/browse_thread/thread/e474ee9f0b964ba2/2c5b07a4bbb49361
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-11-13T08:46:29+00:00</dcterms:created>
+  <dcterms:modified>2007-12-12T10:57:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/319" rdfs:label="sioc:reply_of in flat threads" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/24%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/24" />
+</sioc:Post>
+</rdf:RDF>

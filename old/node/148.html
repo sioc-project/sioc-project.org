@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/148"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>SIOC &amp; encoding spatial features. | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>SIOC &amp; encoding spatial features.</h2>                                                  <div class="clear-block">
+            <div id="node-148" class="node">
+
+
+
+      <span class="submitted">2006, September 13 - 16:27 — <a href="http://sioc-project.org/user/60" title="View user profile.">Patrick Maué</a></span>
+  
+  <div class="content clear-block">
+    <p>Hello there,<br />
+Uldis introduced me to SIOC and we had some discussions about it. Due<br />
+to my geoinformatics background I was thinking a bit about the<br />
+possibilities to add geospatial information to<br />
+sioc concepts.</p>
+<p>The currently most used approach is GeoRSS. OGC (which makes the<br />
+standards in our domain)<br />
+has published a white paper [1] about it. It is built on top the W3C<br />
+geo vocubalary, but extended it to support more complex geometries than<br />
+a simple point. It's big advantage is the upwards compatibility to GML,<br />
+which allows for encoding also complex spatial features (take a<br />
+collection of bike routes as example). An introduction to GeoRSS and<br />
+the model are available at [2].</p>
+<p>Let's take an example of an Event encoded in SIOC. Tagging it with a<br />
+location by using GeoRSS could look like this:</p>
+<p><sioc:Event rdf:about="http://rdfs.org/blog/2005/03/24/sioc-ontology/"><br />
+        ...</sioc:event></p>
+<p>        <georss:where relationshipTag="takes-place-in"<br />
+featuretypeTag="location"><br />
+         <gml:Point><br />
+            <gml:pos>45.256 -110.45</gml:pos><br />
+         </gml:point><br />
+        </georss:where></p>
+<p></p>
+<p>The relationshipTag would be used to clarify the relation between the<br />
+sioc element and the associated geometry. A person "lives-in", a post<br />
+"talks-about", an event "take-place-in" a location. Using tags here is<br />
+a neat way to clarify the specific relationship between the used<br />
+concept and the location without the need to extend the sioc<br />
+vocabulary.</p>
+<p>The support of GeoRSS is not too bad, Wordpress and Drupal have both<br />
+plugins which make adding locations to posts possible. The SIOC browser<br />
+could simply take the location and generate a link to a google map. Or<br />
+provide a spatial browser itself which allows to browse through<br />
+spatially related posts, for example showing all events which<br />
+"takes-place-in" in specific location. How cool would that be? ;)</p>
+<p>Regards,<br />
+ Patrick Maué</p>
+<p>[1] http://www.opengeospatial.org/pt/06-050r3<br />
+[2] http://georss.org/overview.html</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="154.html" class="topic-previous" title="Go to previous forum topic">‹ Blog data translation project</a>
+              <a href="128.html" class="topic-next" title="Go to next forum topic">AtomOWL usage within SIOC ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F148%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-196"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="148.html#comment-196" class="active">SIOC &amp; encoding spatial features.</a></h3>
+
+    <div class="content">
+      <p>Hi,<br /><br />I think they could be different geo properties that apply to posts.<br /><br />1) First, regarding the location of the post creator - if needed - this should be done with his FOAF profile, using based_near property.<br />
+<br /><br />2) For the post itself, and using GeoRSS or other geo vocabularies, I think about 2 usages:<br />- The location where the post have been written<br />- The location(s) involved in the post content<br /><br />For the first one, we could directly add GeoRSS information as a property of the post, as you mention in your example.<br />
+<br />BTW, the syntax you gave is not RDF compliant, do you have any timeline for RDF-ization of GeoRSS ? [1]<br /><br />For second one, instead of linking the location to the post itself, I think it would be better to link it to the topic.<br />
+<br />Eg:<br />&lt;sioc:Post rdf:about=&quot;...&quot;&gt;<br />&nbsp; &lt;sioc:topic&gt;<br />&nbsp;&nbsp;&nbsp; &lt;skos:Concept rdf:about=&quot;...&quot;&gt;<br />&nbsp;&nbsp;&nbsp; &nbsp; &lt;georss:where&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gml:Point&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;gml:pos&gt;45.256<br />
+ -110.45&lt;/gml:pos&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gml:Point&gt; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/georss:where&gt;<br />&nbsp;&nbsp;&nbsp; &lt;/skos:Concept&gt;<br />&nbsp; &lt;/sioc:topic&gt;<br />&lt;/sioc:Post&gt; &nbsp;&nbsp;&nbsp;  <br /><br />Imagine you've got a set of defined Concepts (with URIs) and geo information for each of them, then anyone could use it and directly get the coordinates of posts topics, if any.<br />
+<br />I already use something similar in a &quot;linking posts to ontology concepts&quot; approach [1] (difference is that topics are not skos:Concepts but resources from a given ontology) and indeed, that's really nice to display posts on a googlemap :)<br />
+<br /><br />Alex.<br /><br />[1] <a href="http://www.georss.org/model.html">http://www.georss.org/model.html</a><br />[2] &quot;Folksonomies, Ontologies and Corporate Blogging&quot; @ BlogTalk reloaded<br /><br />
+<div><span class="gmail_quote"><br />
+On 9/13/06, <b class="gmail_sendername">Patrick Maué</b> &lt;<a href="mailto:pajoma@gmail.com">pajoma@gmail.com</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />Hello there,<br />Uldis introduced me to SIOC and we had some discussions about it. Due<br />to my geoinformatics background I was thinking a bit about the<br />possibilities to add geospatial information to<br />sioc concepts.<br />
+<br /><br />The currently most used approach is GeoRSS. OGC (which makes the<br />standards in our domain)<br />has published a white paper [1] about it. It is built on top the W3C<br />geo vocubalary, but extended it to support more complex geometries than<br />
+<br />a simple point. It's big advantage is the upwards compatibility to GML,<br />which allows for encoding also complex spatial features (take a<br />collection of bike routes as example). An introduction to GeoRSS and<br />the model are available at [2].<br />
+<br /><br />Let's take an example of an Event encoded in SIOC. Tagging it with a<br />location by using GeoRSS could look like this:<br /><br />&lt;sioc:Event rdf:about=&quot;<a href="http://rdfs.org/blog/2005/03/24/sioc-ontology/"><br />
+http://rdfs.org/blog/2005/03/24/sioc-ontology/</a>&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;georss:where relationshipTag=&quot;takes-place-in&quot;<br />featuretypeTag=&quot;location&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;gml:Point&gt;<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;gml:pos&gt;45.256 -110.45&lt;/gml:pos&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/gml:Point&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/georss:where&gt;<br /><br />&lt;/sioc:Event&gt;<br /><br />The relationshipTag would be used to clarify the relation between the<br />
+<br />sioc element and the associated geometry. A person &quot;lives-in&quot;, a post<br />&quot;talks-about&quot;, an event &quot;take-place-in&quot; a location. Using tags here is<br />a neat way to clarify the specific relationship between the used<br />
+<br />concept and the location without the need to extend the sioc<br />vocabulary.<br /><br />The support of GeoRSS is not too bad, Wordpress and Drupal have both<br />plugins which make adding locations to posts possible. The SIOC browser<br />
+<br />could simply take the location and generate a link to a google map. Or<br />provide a spatial browser itself which allows to browse through<br />spatially related posts, for example showing all events which<br />&quot;takes-place-in&quot; in specific location. How cool would that be? ;)<br />
+<br /><br />Regards,<br /> Patrick Maué<br /><br /><br />[1] <a href="http://www.opengeospatial.org/pt/06-050r3">http://www.opengeospatial.org/pt/06-050r3</a><br />[2] <a href="http://georss.org/overview.html">http://georss.org/overview.html<br />
+</a><br /><br /><br /><br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></div></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F148%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-204"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 15 - 08:55 — <a href="http://sioc-project.org/user/60" title="View user profile.">Patrick Maué</a></span>
+  
+  
+  
+    <h3><a href="148.html#comment-204" class="active">SIOC &amp; encoding spatial features.</a></h3>
+
+    <div class="content">
+      <p>Hi,<br />
+using only GeoRSS simple, the encoding based on XML would be:<br />
+<georss:point>45.256 -71.92</georss:point><br />
+The example given in the "GeoRSS in RDF" [1] documentation, shows no<br />
+difference, so I assumed the example in my mail would be also valid<br />
+RDF. But simple GeoRSS should be sufficient anyway.</p>
+<p>My specific interest is an aggregator which takes different sources as<br />
+input to display them on a map. This includes, until now, the GeoRSS<br />
+feeds provided by Flickr [2] and SIOC enabled blogs. The SIOC data<br />
+could be querried with SPARQL, there are even extensions for GeoRSS<br />
+which include spatial operations (allows for example to show all posts<br />
+which have content about locations close to my current location) [3]</p>
+<p>Regards,<br />
+ Patrick Maué</p>
+<p>[1] http://www.georss.org/rdf_rss1.html<br />
+[2]<br />
+http://api.flickr.com/services/feeds/photos_public.gne?tags=geotagged&amp;format=rss_200&amp;georss=1<br />
+[3] http://xmlarmyknife.org/blog/archives/000281.html</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F148%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/148?destination=node%2F148"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-QY589Zcp2p8-umKV2-8aF4tj94bXSrv1rn6SGXf5Gao" value="form-QY589Zcp2p8-umKV2-8aF4tj94bXSrv1rn6SGXf5Gao"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/284"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>[Fwd:  Ontology suggestions needed] | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>[Fwd:  Ontology suggestions needed]</h2>                                                  <div class="clear-block">
+            <div id="node-284" class="node">
+
+
+
+      <span class="submitted">2007, June 5 - 13:46 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi Kingsley -</p>
+<p>Thanks for the responses, CCing to list...</p>
+<p>Talk soon,</p>
+<p>John.</p>
+<p>-------- Original Message --------<br />
+Subject: 	Re: Ontology suggestions needed<br />
+Date: 	Mon, 28 May 2007 11:48:28 -0700<br />
+From: 	kidehen <kidehen@openlinksw.com><br />
+To: 	John Breslin <john.breslin@deri.org><br />
+References: 	&lt;465B09F4.7070400@deri.org></john.breslin@deri.org></kidehen@openlinksw.com></p>
+<p>John,</p>
+<p>On May 28, 12:57 pm, John Breslin <john.bres...@deri.org> wrote:<br />
+> Hi all -<br />
+><br />
+> Thanks for all your recent comments both on and offlist.<br />
+><br />
+> A few more ontology suggestions we need your help with.<br />
+><br />
+> (1)<br />
+><br />
+> We have sioc:topic which can link Sites, Forums, Posts etc. to resources<br />
+> that are topics of those documents or containers...  (Also,<br />
+> unfortunately we did not use foaf:topic as the domain is a Document,<br />
+> which some of the SIOC classes are not).  We can also use dc:subject for<br />
+> free text.  But what if we want to say that a particular Post describes<br />
+> a book or is about two books, perhaps something like sioc:about or<br />
+> sioc:describes is needed.</john.bres...@deri.org></p>
+<p>Why not Tag (via SKOS) the post for this purpose? The rest of the<br />
+specificity should be in the content of the post (i.e. content<br />
+structure).</p>
+<p>A Post about a book could be a "Book Review" or a Post that mentions<br />
+the Book. If it is a "Book Review" then a sioc:Item subclass for<br />
+"Reviews" should be adequate. If it's a Post that mentions a book then<br />
+"sioc:related" should suffice. Otherwise, just Tag the post.</p>
+<p>><br />
+> (2)<br />
+><br />
+> We plan to add Category and Tag classes to the sioc:types module to help<br />
+> with classifying the above sioc:topics for import/export.  Suggestions<br />
+> welcome.<br />
+></p>
+<p>Exactly!</p>
+<p>> (3)<br />
+><br />
+> We want to add has_part/part_of as subproperties of the corresponding<br />
+> DCMI terms (hasPart/isPartOf AFAIR).<br />
+><br />
+> (4)<br />
+><br />
+> I am of the opinion that a Community is NOT a subclass of Space.  A<br />
+> Space is where data resides, but a community extends beyond mere data.<br />
+><br />
+Community is Data.<br />
+Data is atomic when dealing with Networks, really.<br />
+A Community is one representation of Data in specific context (be it<br />
+your AddressBook, Blogroll, Boardscape etc..). A Community is a type<br />
+of Data Space.<br />
+The conceptual partitioning here ultimately aids and simplifies URI<br />
+dereferencing. If you don't have a conceptual starting point for<br />
+traversing graphs you end up with an extremely expensive graph route<br />
+traversal and route construction.</p>
+<p>A single URI should expose:<br />
+1. Communities<br />
+2. Conversations across communities<br />
+3. Types of conversations (Blog Posts &amp; Post Comments, Mailing List<br />
+Posts, Wiki Articles and Talk Pages etc..).</p>
+<p>If a Community isn't a Data Space then what does it become? How does<br />
+this make the cost of URI dereferencing (aka Graph Traversal) more<br />
+effective etc?</p>
+<p>Note, the depth and breadth of URIs is what ultimately determines the<br />
+value of a URI. There will be URIs and URIs on the Semantic Data Web.<br />
+I hope SIOC provides a mechanism for coherent construction of rich<br />
+URIs (rich is expressed in depth and breadth of Linked Data).</p>
+<p>> (5)<br />
+><br />
+> We still need a way to recommend to people looking at the SIOC Types<br />
+> module what kind of vocabularies can be used for Items contained in<br />
+> particular Container subclasses.  For example, to say that in a<br />
+> sioct:AddressBook - that you could use JohnsAddressBook (of type<br />
+> sioct:AddressBook) container_of John (of type foaf:Person or foaf:Agent)<br />
+> - without having to define millions of subproperties of container_of to<br />
+> link things, because these are only suggestions (someone may choose to<br />
+> put something else into their AddressBook).  Ideas needed :-)  This is<br />
+> related to an idea we had for a Related Ontologies ontology [1].<br />
+></p>
+<p>I think being able to dereference the Schema / Ontology is a starting<br />
+point. Ultimately, RDF Authors (direct or indirect) will lookup<br />
+dereferencable ontologies and use this as an unobtrusive mechanism for<br />
+"Term ReUse". If I can dereference the SIOC Types Modules I can<br />
+actually demonstrate the point by adding it to:</p>
+<p>http://www.openlinksw.com/blog/~kidehen/index.vspx?page=&amp;id=1203 .<br />
+Which also means it would play well in our SPARQL QBE Tool (which will<br />
+ultimately include RDF Authoring capability since it is actually<br />
+inspired by RDF Author: http://rdfweb.org/people/damian/RDFAuthor/Tutorial/Tutorial1/).</p>
+<p>Kingsley</p>
+<p>> [1]http://wiki.sioc-project.org/index.php/SuggestedOntologiesOntology<br />
+><br />
+> At the moment we'll just have something like:<br />
+><br />
+> <rdfs:Class rdf:about="http://rdfs.org/sioc/types#AddressBook"<br />
+>      rdfs:label="Address Book"><br />
+>     <rdfs:comment>Describes a collection of personal or organisational<br />
+> addresses.</rdfs:comment><br />
+>     <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/><br />
+>     <rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+>     <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/Agent"/<br />
+> rdfs:label="Describes a single person, group or organisation."/><br />
+> </rdfs:seealso></rdfs:isdefinedby></rdfs:subclassof></rdfs:class><br />
+><br />
+> That seeAlso could be replaced by something more descriptive like...<br />
+><br />
+> <so:suggestedUsage><br />
+>   <so:useAsDomain rdf:about="#AddressBookUsage"><br />
+>     <so:suggestedProperty<br />
+> rdf:resource="http://rdfs.org/sioc/ns#container_of"/><br />
+>     <so:suggestedRange rdf:resource="http://xmlns.com/foaf/0.1/Agent"/><br />
+>   </so:suggestedrange></so:suggestedproperty<br></so:useasdomain><br />
+> </so:suggestedusage><br />
+><br />
+> or:<br />
+><br />
+> <so:suggestedUsage><br />
+>   <so:useAsRange rdf:about="#AddressBookUsage2"><br />
+>     <so:suggestedProperty<br />
+> rdf:resource="http://rdfs.org/sioc/ns#has_container"/><br />
+>     <so:suggestedDomain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/><br />
+>   <br />
+> </so:suggesteddomain></so:suggestedproperty<br></so:useasrange></so:suggestedusage><br />
+><br />
+> Something similar could exist for properties that you want to use to<br />
+> relate to classes ("useAsProperty" with a suggestedDomain and a<br />
+> suggestedRange).<br />
+><br />
+> Thanks, looking forward to hearing from you,<br />
+><br />
+> John.<br />
+><br />
+> --<br />
+> </p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="303.html" class="topic-previous" title="Go to previous forum topic">‹ ANN:  UMBEL Subject Reference Project</a>
+              <a href="286.html" class="topic-next" title="Go to next forum topic">Modularisation - Types and now Services ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F284%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-468"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, June 5 - 13:46 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="284.html#comment-468" class="active">[Fwd:  Ontology suggestions needed]</a></h3>
+
+    <div class="content">
+      <p>On 5/29/07, Kingsley via proxy of John Breslin wrote:<br />
+> > free text.  But what if we want to say that a particular Post describes<br />
+> > a book or is about two books, perhaps something like sioc:about or<br />
+> > sioc:describes is needed.<br />
+><br />
+> Why not Tag (via SKOS) the post for this purpose? The rest of the<br />
+> specificity should be in the content of the post (i.e. content<br />
+> structure).<br />
+><br />
+> A Post about a book could be a "Book Review" or a Post that mentions<br />
+> the Book. If it is a "Book Review" then a sioc:Item subclass for<br />
+> "Reviews" should be adequate. If it's a Post that mentions a book then<br />
+> "sioc:related" should suffice. Otherwise, just Tag the post.</p>
+<p>Tagging alone will not help here. For the same reason why people came<br />
+up with the structured blogging or microformats while they could have<br />
+used simple tags "business card", "review", ...</p>
+<p>Two reasons:</p>
+<p>1.1) Tags are often local to the site. SKOS or not matching tags from<br />
+different sites is going to be a difficult task. And since tags are<br />
+text-based you will have different names for book reviews in many<br />
+languages. Does not sound like a place for tags or SKOS when you can<br />
+define facts like this very precisely with RDF.</p>
+<p>1.2) Even if you knew that this is a book review, you need to point to<br />
+the Book it describes, or to a Review the post contains which point to<br />
+the Book itself. We need a property that will link a post to one or<br />
+more objects (e.g., a Book) it is about. Once we have this linking<br />
+property, we can explicitly define the type of its object [ _a a<br />
+publications:Book ].</p>
+<p>The suggestion about tagging is applicable in another situation -<br />
+tagging something as a "Book review" can be a simple way for end users<br />
+to indicate it is a review. The application (SIOC plugins, ODS, ...)<br />
+will take this hint and extract all the detailed RDF from the post. It<br />
+will still need to be supplied with the information about the object<br />
+(e.g., a Book), possibly supplied in the post.</p>
+<p>> > (4)<br />
+> ><br />
+> > I am of the opinion that a Community is NOT a subclass of Space.  A<br />
+> > Space is where data resides, but a community extends beyond mere data.<br />
+> ><br />
+> Community is Data.<br />
+> Data is atomic when dealing with Networks, really.<br />
+> A Community is one representation of Data in specific context (be it<br />
+> your AddressBook, Blogroll, Boardscape etc..). A Community is a type<br />
+> of Data Space.</p>
+<p>The root of these problems is that both classes are new and not<br />
+applied in SIOC data in practice. That means they are not grounded in<br />
+real implementations and the only thing how we can determine their<br />
+meaning is by how they are described in the ontology and its<br />
+specification.</p>
+<p>How can you tell if "Something A" is a subclass of "Something B" if we<br />
+have not really tested either. All depends on the definition then (and<br />
+we are free to change the definition in the ontology before we<br />
+finalise the specification).</p>
+<p>If the definition of a Space is a "space where data reside", then<br />
+community is not a Space because people (foaf:Persons) can also be<br />
+part of a Community and they sure are not data (in the common<br />
+understanding). From this point we have a question - what is easier? -<br />
+(a) to leave out the subclass, and add it later if needed; or (b) to<br />
+add it now and try to remove it if we find it not suitable. It is hard<br />
+to take a statement away, so in my view (a) is a better chioce now.</p>
+<p>What we can do is: revise definitions for both classes, coming up with<br />
+more precise definitions if needed. And build implementations that use<br />
+this data, which (how it is used) determine in the end real meaning of<br />
+the data.</p>
+<p>> I hope SIOC provides a mechanism for coherent construction of rich<br />
+> URIs (rich is expressed in depth and breadth of Linked Data).</p>
+<p>It is not a part of the ontology specification, but SIOC plugins for<br />
+WordPress, etc. have implicit rules how the URL to request some data<br />
+can be formed. Currently it is not explicitly defined in the documents<br />
+of SIOC project, but we may think about it and work on the SIOC<br />
+protocol description as a way to construct rich URIs to request SIOC<br />
+data.</p>
+<p>> > (5)<br />
+> ><br />
+> > We still need a way to recommend to people looking at the SIOC Types<br />
+> > module what kind of vocabularies can be used for Items contained in<br />
+> > particular Container subclasses.  For example, to say that in a<br />
+><br />
+> I think being able to dereference the Schema / Ontology is a starting<br />
+> point. Ultimately, RDF Authors (direct or indirect) will lookup<br />
+> dereferencable ontologies and use this as an unobtrusive mechanism for<br />
+> "Term ReUse". If I can dereference the SIOC Types Modules I can</p>
+<p>What we need before that is a way how to point to other ontologies.</p>
+<p>Your initial approach was to subclass those external classes form<br />
+sioc:Item thus indicating they all (doap:Project, image:IFD, ...) are<br />
+items. This makes sense from the business point of view, but is<br />
+intrusive into those other ontologies.</p>
+<p>We need to find a way that is less intrusive (does not change<br />
+definitions of the external ontologies, if possible) and at the same<br />
+time hint that these ontologies can be used to represent a particular<br />
+type of objects.</p>
+<p>rdfs:seeAlso is probably the weakest / less instructive possible way<br />
+to indicate this.</p>
+<p>Which may be good for start, unless we find something that is good,<br />
+stronger than seeAlso and weaker than subclassing external things from<br />
+sioc:Item. In the future we can use related ontologies schema to link<br />
+different schemas, but we have to materialise this schema first.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F284%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/284?destination=node%2F284"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-DoT43Mdgss35Q7EvZhWnCREj_GCcU4YGptISoiOUTKQ" value="form-DoT43Mdgss35Q7EvZhWnCREj_GCcU4YGptISoiOUTKQ"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

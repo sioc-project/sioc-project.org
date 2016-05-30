@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/268"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/268">
+  <dc:title>eHealth Ontology Project Latest Contributions</dc:title>
+  <sioc:content>Infectious Disease: A Challenge for Biomedical Informatics
+Cold Spring Harbor Laboratory, New York
+Speakers: Michael Ashburner, Vance Fowler, Steven Gordon, Ronald
+Veazey
+September 21, 2007
+In association with a two day Workshop on Infectious Disease Ontology
+September 19 - 20, 2007
+Workshop Application deadline: June 15, 2007
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=26&amp;amp;Itemid=1
+Classes versus Individuals: Fundamental Design Issues for Ontologies
+on the Biomedical Semantic Web
+We can distinguish two general strategies for knowledge representation
+in biomedicine: the linguistic approach (which is focused on
+describing term meanings) and the realist ontological approach (which
+is focused on describing things in reality itself). The former
+approach is increasingly disregarded in favour of the latter, mainly
+because the ontological approach is more intuitive and self-
+consistent.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=25&amp;amp;Itemid=1
+What is eHealth?
+Everybody talks about e-health these days, but few people have come up
+with a clear definition of this comparatively new term. Barely in use
+before 1999, this term now seems to serve as a general &quot;buzzword,&quot;
+used to characterize not only &quot;Internet medicine&quot;, but also virtually
+everything related to computers and medicine. The term was apparently
+first used by industry leaders and marketing people rather than
+academics. They created and used this term in line with other &quot;e-
+words&quot; such as e-commerce, e-business, e-solutions, and so on, in an
+attempt to convey the promises, principles, excitement (and hype)
+around e-commerce (electronic commerce) to the health arena, and to
+give an account of the new possibilities the Internet is opening up to
+the area of health care.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=24&amp;amp;Itemid=1
+10th Intl. Protégé Conference - July 15-18, 2007 - Budapest, Hungary
+The 10th International Protégé Conference will take place at the Hotel
+Benczúr in Budapest, Hungary from July 15-18, 2007.
+The conference brings together researchers developing or using Protégé
+methodologies and tools and is the premier forum for discussion about
+current and future applications of the Protégé approach.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=23&amp;amp;Itemid=1
+1st International WORKSHOP on Ontologies and Information Systems for
+the Semantic Web (ONISW 2007)
+The emergence of the World Wide Web made massive amounts of data
+available. Data exists in many scattered electronic data sources (e-
+sources) over the Web. Even though some of the data is in well-
+organized data sources, interoperability and integration with data
+from other sources, semantic coordination and conflict resolution are
+required for its full exploitation. Semantic Web enabled applications
+can potentially produce better results for semantic integration,
+interoperability and search. In particular, ontologies are widely
+regarded as the best solution to global information integration and
+semantic interoperability.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=22&amp;amp;Itemid=1
+SemanticMining - a Network of Excellence in the field of Biomedical
+Informatics
+The objective of the Network of Excellence entitled Semantic
+Interoperability and Data Mining in Biomedicine SemanticMining funded
+by the European Sixth Framework Programme, is to establish Europe as
+the international scientific leader in medical and biomedical
+informatics. The long-term goal of the network will be the development
+of generic methods and tools supporting the critical tasks of the
+field; data mining, knowledge discovery, knowledge representation,
+abstraction and indexing of information, semantic-based information
+retrieval in a complex and high-dimensional information space, and
+knowledge-based adaptive systems for provision of decision support for
+dissemination of evidence based medicine.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=21&amp;amp;Itemid=1
+College of American Pathologists Introduces SNOMED Terminology
+Solutions
+The College of American Pathologists (CAP) is renaming its SNOMED
+International division. The division will now be called SNOMED
+Terminology Solutions and follows last week&#039;s announcement regarding
+the formation of the International Health Terminology Standards
+Development Organisation (IHTSDO) that acquired the intellectual
+property rights of SNOMED Clinical Terms® (SNOMED CT®) and its
+antecedents from the CAP.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=20&amp;amp;Itemid=1
+The Derives_From Relation in Biomedical Ontologies
+In recent years the use of ontologies for the development of medical
+information systems has witnessed an explosive growth. However,
+initial attempts to use ontologies to support information management
+in biomedicine have focused primarily on the formulation and
+definition of terms. In ontologies and terminologies such as the Gene
+Ontology, SNOMED the formal treatment of the relations which would
+link these terms has been neglected.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=19&amp;amp;Itemid=1
+An Ontology-Based Methodology for the Migration of Biomedical
+Terminologies to EHR
+Biomedical terminologies are focused on what is general, Electronic
+Health Records (EHRs) on what is particular, and it is commonly
+assumed that the step from the one to the other is unproblematic. We
+argue that this is not so, and that, if the EHR of the future is to
+fulfill its promise, then the foundations of both EHR architectures
+and biomedical terminologies need to be reconceived.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=16&amp;amp;Itemid=1
+Key Issues of Technical Interoperability Solutions in eHealth and the
+RIDE Project
+One of the key problems in healthcare informatics is the lack of
+interoperability among different healthcare information systems.
+Interoperability can be investigated in different categories in the
+eHealth domain, such as the interoperability of the messages exchanged
+between healthcare applications, interoperability of Electronic
+Healthcare Records (EHRs), interoperability of patient identifiers,
+coding terms, clinical guidelines and healthcare business processes.
+Read more...
+http://www.ehealthserver.com/ontology/index.php?option=com_content&amp;amp;task=view&amp;amp;id=14&amp;amp;Itemid=1
+Sincerely,
+Ruslan David, MD
+IFOMIS
+eHealth Ontology Project
+http://www.ehealthserver.com/ontology/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-05-15T13:29:32+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:42+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/268" rdfs:label="eHealth Ontology Project Latest Contributions" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/285%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/285" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/226"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/226">
+  <dc:title>SIOC types and posts with embedded/attached content</dc:title>
+  <sioc:content>Hi all -
+I&#039;m just kicking off a discussion to try and finalise some additions we
+are trying to make to SIOC to allow it to cover many other &quot;Web 2.0&quot;
+community sites where content is posted in a forum or container area of
+a site and then may also be commented on (like in a discussion thread).
+Some examples are Flickr, Upcoming.org, YouTube, SlideShare, etc.
+For a picture of what we have in mind, see:
+http://www.johnbreslin.com/blog/2007/03/01/linking-personal-posted-content-across-communities/
+The inner layer is a person (in FOAF), the next layer is their user
+accounts (FOAF, SIOC) and the outer stuff is the posted content (text,
+files, associated metadata) in SIOC.
+--------------------------------------------------------------------------------
+(1) SIOC types
+Kingsley created a nice list of SIOC types, i.e. types of various forums
+/ containers and the posted content therein.  I am going through this
+list, adding some new types and trying to choose generic names where
+possible.  Note that these types are totally optional, and could be used
+as an additional rdf:type so that tools that use sioc:Forum / Post would
+still work okay.
+The current list is at http://wiki.sioc-project.org/index.php/TypesModule
+Ideas can be added to the page.
+--------------------------------------------------------------------------------
+(2) Posts and connected content (linked or embedded files or metadata)
+So far, sioc:Posts have content, attachment and links_to properties
+which cover a lot of discussion content scenarios.
+It seems that we may still need a few more properties, e.g.
+content_enhanced, embeds, etc.
+The content_enhanced could be HTML-enhanced text, text with BB / wiki
+codes, or maybe even a series of chunks of plain text and RDF metadata.
+This property could also link to an AtomOWL Content object.  Uldis
+proposed sioc:body for this property some time back.
+The embeds property could allow files to be viewed (e.g. remote video
+files) or embedded metadata to be incorporated (e.g. in some structured
+/ semantic blog posts, so that embeds -&gt; object with metadata) in a
+post.  There may be a distinction between something that is attached and
+something that is embedded - the former may not be displayed in the post
+whereas the latter is - and something that is attached may also be embedded.
+Another alternative is to use something instead of attachment / embeds
+that can be used interchangeably, e.g. includes or contains (although
+the latter confuses with sioc:has_container).  This would remove
+ambiguity over which to use (if someone won&#039;t use both).
+Myself and Uldis have been wracking our heads trying to come up with the
+best way to do this, so it&#039;d be good to have your ideas on this.  The
+names content_enhanced or embeds are just ideas, better ones are welcome.
+--------------------------------------------------------------------------------
+(3) &gt; Forums, Posts
+Another suggestion from Kingsley was to have something greater than the
+concept of a Forum so that posted content could be grouped together
+(e.g. book reviews in a review channel, etc.).  This would involve
+superclasses of Forum and Post (and maybe Site), e.g. Container and
+Content (and Space) or something like that.  I&#039;m almost afraid to
+introduce such terms as we are perhaps creating something that can
+describe anything, rather than online communities.  For now, I&#039;d hope
+that solutions for (1) and (2) will suffice, and may also be more
+semantically constrained.
+--------------------------------------------------------------------------------
+That&#039;s it so far, opinions welcome!
+John.
+--
+See Uldis&#039; earlier post to SWEO:
+http://lists.w3.org/Archives/Public/public-sweo-ig/2007Feb/0180.html
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T10:54:18+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/226" rdfs:label="SIOC types and posts with embedded/attached content" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

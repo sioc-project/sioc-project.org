@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/175"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/175">
+  <dc:title>SWAML 0.0.1</dc:title>
+  <sioc:content>
+Hi all,
+It is my great pleasure and privilege to announce the availability of
+SWAML 0.0.1. This first release is an important step to represent a
+mailing list in RDF, but it&#039;s only the starting point.
+SWAML reads a collection of email messages stored in a mailbox (from a
+mailing list compatible with RFC 4155) and generates an RDF description.
+It is written in Python using SIOC as the main ontology to represent in
+RDF a mailing list. There is still such much work to do; then, we would
+be very grateful of any feature request or any bug report.
+Release donwload: http://prdownload.berlios.de/swaml/swaml-0.0.1.tar.gz
+Best regards
+--
+__      ___ _   _
+\ \    / (_) |_(_)___ _ _   Sergio Fdez
+ \ \/\/ /| | / / / -_) &#039;_|  GNU/LiNUX User: #298803
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-02T22:54:56+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:16+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/175" rdfs:label="SWAML 0.0.1" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/67%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/67" />
+</sioc:Post>
+</rdf:RDF>

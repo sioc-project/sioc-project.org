@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/105"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/105">
+  <dc:title>About SIOC concepts / properties</dc:title>
+  <sioc:content>To summarise about proposed ontology additions / changes:
+= Decided:
+1) Add sioc:Community
++ properties sioc:has_part and sioc:part_of pointing to and from it.
+We are quite sure that a Community concept is needed.
+There can still be some discussion about the property names and alternatives.
+= Almost there:
+2) sioc:Comment
+Initially we thought &quot;let&#039;s make all posts generic - comments are same
+as posts&quot;, but there&#039;s a need to distinguish between comments and
+posts.
+Proposal: create a [ sioc:Comment rdfs:subClassOf sioc:Post . ]
+Comment is also a post, but a specific type of. That should solve the problem.
+= Need your input:
+3) Properties linking Site to Usergroup
+We need a property to link sioc:Site to sioc:Usergroup (and inverse of it).
+Proposals:
+ - sioc:has_base / sioc:base_of
+ - sioc:has_group / (name for inverse?)
+Former proposed as a neutral name by John, later used in WordPress
+exporter but undocumented in the ontology .
+4) Property linking Site to Sub-Sites
+sioc:Site may consist of a number of different subsites.
+How do we express that?
+Note: this is needed if a site consists of a number of heterogenous parts.
+If a site consists of a number of forums (in a bulletin board) or
+blogs (multi-user blog site), there already is a [ sioc:Site
+sioc:host_of sioc:Forum . ] construct for that.
+5) Subtypes of Forums ?
+Same as for Posts/Comments we may want to express / search for a
+specific type of [container of sioc:Posts].
+Currently such a container is sioc:Forum, which is used to express all
+types of community site &quot;containers&quot; - in practice most instance data
+describe either blogs or boards/forums.
+Proposal: subclasses of sioc:Forum:
+ - Blog (Weblog?)
+ - MailingList
+ - NewsGroup
+ - ... (Forum?! / Board / BulletinBoard)
+Issue:
+ - if we use sioc:Forum for generic container (would be consistent
+with existing data), how do we name a particular subclass talking
+about a board/forum ?
+ - if we call it sioc:Forum (warning! redefining sioc:Forum now is
+BAD), how do we can the generic container?
+----
+That&#039;s it. If there are more additions, will write about them in a
+separate post. Things planned to write about: threads, roles
+(moderator, admin), expressing that a user subscribes to a thread, ...
+If there are no objections, I will add points (1) and (2) to the ontology.
+For (3), (4) and (5) we need to decide.
+They may be described in the issues list, but first I wrote them up
+here in the email and let&#039;s see - some can be solved quickly and acted
+upon, those that require more discussion will be added to IssuesList.
+(If you want to add them to the IssuesList now, go ahead and do it!)
+Best,
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-07-14T14:32:33+01:00</dcterms:created>
+  <dcterms:modified>2006-07-14T14:32:33+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/105" rdfs:label="About SIOC concepts / properties" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

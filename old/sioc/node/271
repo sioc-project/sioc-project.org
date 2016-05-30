@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/271"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/271">
+  <dc:title>State of the SIOC-o-sphere (number 3)</dc:title>
+  <sioc:content>Since my last &quot;SIOC-o-sphere&quot; summaries (see 1 and 2), there&#039;ve been quite a few developments!
+I&#039;ll begin by ripping off Alex Passant&#039;s summary from last month...
+
+A first version of the API documentation is online. It explains the different classes and methods of the API, which are designed to create SIOC data without any knowledge of SIOC nor RDF.
+Drupal exporter has been updated. It now exports data according the latest version of the specs (1.08), and is ready for FOAF mappings. There are still adjustements to be done about the FOAF module, but you can apply a patch that can be found and explained here to make it work - you need to install FOAF module for Drupal first of course;
+Some bugs have also been fixed in b2evo exporter (see SVN) and DotClear one (release 1.4.2 (src | pkg)). As things seems now quite stable in PHP, is there any volunteer for coding Perl or RoR exporters for SIOC ?
+SIOC export in ODS is now compliant with SIOC crawler, so it can be crawled and put in any triple-store, as Kingley&#039;s one which is now here among other blogs from various engines;
+John wrote 3 different SIOC pdf guides, and also designed a shema about FOAF / SIOC / SKOS, to help people to get rid of ambiguity between foaf:User and sioc:User;
+Wikier mentionned on #sioc that SWAML, a project he&#039;s involved in to translate mailing lists in RDF, will use SIOC;
+Finally, SIOC will be exposed at BlogTalk, with a SIOCYourBlog experiment.
+
+
+And since then there&#039;ve been more happenings...
+
+As Alex Passant mentioned, SWAML, the Semantic Web Archive of Mailing Lists, is now using SIOC as its base ontology.  Last week, the developers also announced that SWAML now incorporates Buxon, a sioc:Forum visor written in PyGTK (see screenshot).  Excellent stuff...
+Fred Giasson&#039;s TalkDigger   is now serialising its SIOC documents using N3, and PingtheSemanticWeb can also detect and index these documents - cool!
+Kingsley Idehen details that you can view the RDF graph of SIOC data from OpenLink Data Spaces, and that all of the SIOCRef demos can be run via the SPARQL endpoint.
+
+A Semantic Web activist called Alex Piner was to give a talk referencing the SIOC project at CommerceNet in California.
+OpenLink Software and Fred Giasson have come together to form ZitGist LLC, a company that will implement ODS&#039; Virtuoso in the TalkDigger and PingtheSemanticWeb projects.  WRT to ZitGist, Fred has also been writing about the three dimensions of the Web - there are some interesting followup posts on his blog about these dimensions.  I&#039;m happy to see that this new venture has been made possible through their common membership of the SIOC community, and look forward to their results...
+
+</sioc:content>
+  <dcterms:created>2006-11-07T13:42:00+00:00</dcterms:created>
+  <dcterms:modified>2009-04-06T21:57:35+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/271" rdfs:label="State of the SIOC-o-sphere (number 3)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

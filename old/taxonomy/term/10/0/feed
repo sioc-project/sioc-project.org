@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://sioc-project.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>sioc-project.org - General</title>
+ <link>http://sioc-project.org/taxonomy/term/10/0</link>
+ <description>General SIOC discussions.</description>
+ <language>en</language>
+<item>
+ <title>DERI “SIOC” Research Wins Seven-Year Influential Paper Award</title>
+ <link>http://sioc-project.org/node/343</link>
+ <description>&lt;p&gt;&lt;b&gt;A paper on the &lt;a href=&quot;http://sioc-project.org&quot;&gt;SIOC&lt;/a&gt; framework from the &lt;a href=&quot;http://www.deri.ie&quot;&gt;Digital Enterprise Research Institute&lt;/a&gt; at &lt;a href=&quot;http://www.nuigalway.ie&quot;&gt;NUI Galway&lt;/a&gt;, funded by &lt;a href=&quot;http://www.sfi.ie&quot;&gt;Science Foundation Ireland&lt;/a&gt;, has just been announced as the winner of the seven-year influential paper award from the &lt;a href=&quot;http://eswc-conferences.org&quot;&gt;Extended Semantic Web Conference&lt;/a&gt; (ESWC), an annual conference held in Europe that focuses on next-generation web technologies.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The paper, entitled “&lt;a href=&quot;http://bit.ly/KQ2iK4&quot;&gt;Towards Semantically-Interlinked Online Communities&lt;/a&gt;”, was published in 2005, and has been cited over 170 times. The paper received glowing praise from the award reviewers in terms of impact, community, tool availability and sustainability.&lt;/p&gt;
+&lt;p&gt;SIOC provides methods for interconnecting Social Web platforms such as forums, blogs and microblogs to each other. It consists of the SIOC ontology, an open-standard machine readable format for expressing the structure of Internet discussion methods, of SIOC metadata producers for a number of popular social platforms and content management systems, and of storage and browsing/searching systems for leveraging this SIOC data. SIOC has since been deployed in hundreds of platforms on thousands of websites including Yahoo! SearchMonkey, the Newsweek website, and various US Government agencies powered by Drupal 7.&lt;/p&gt;
+&lt;p&gt;The paper authors are John Breslin, social software team leader at DERI and lecturer in Engineering and Informatics at NUI Galway; Andreas Harth, former researcher at DERI and now a postdoctoral researcher at the Karlsruhe Institute of Technology; Uldis Bojars, a PhD graduate from DERI, NUI Galway and now a researcher at the National Library of Latvia, and Stefan Decker, director of DERI, NUI Galway.&lt;/p&gt;
+&lt;p&gt;Judging the competition were Asunción Gómez-Pérez, Artificial Intelligence (AI) director from UPM Madrid, Spain; James Hendler, an AI researcher at Rensselaer Polytechnic Institute, USA, and one of the originators of the Semantic Web; and Frank van Harmelen, Professor of Knowledge Representation and Reasoning at the VU University Amsterdam, The Netherlands.&lt;/p&gt;
+&lt;p&gt;The paper can be downloaded at: &lt;a href=&quot;http://bit.ly/KQ2iK4&quot;&gt;http://bit.ly/KQ2iK4&lt;/a&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/343#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 13 Jun 2012 11:57:21 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">343 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Obama Administration Using Technology Developed at NUI Galway</title>
+ <link>http://sioc-project.org/node/337</link>
+ <description>&lt;p&gt;&lt;img src=&quot;http://sioc-project.org/files/barack_obama.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;An internet technology developed at NUI Galway is to be used by President Obama&#039;s administration in its new website devoted to the $800 billion economic stimulus package. The administration&#039;s &#039;Recovery.gov&#039; site will employ a web standard, created at NUI Galway&#039;s Digital Enterprise Research Institute (DERI), to bring an unprecedented level of transparency to the US Government.&lt;/p&gt;
+&lt;p&gt;Researchers at DERI focus on the Semantic Web, which is the next incarnation of the internet which will be more intuitive because data will be defined and linked. One of the outputs of DERI&#039;s research is called Semantically-Interlinked Online Communities or SIOC. Aimed at connecting online community sites and internet-based discussions, SIOC is set to be utilised by &#039;Recovery.gov&#039;.&lt;/p&gt;
+&lt;p&gt;Creator of SIOC and lecturer in Electronic Engineering at NUI Galway, Dr John Breslin, said: &quot;The possibilities afforded by deploying semantic technologies such as SIOC for government transparency are very exciting. Semantic technology allows the linking of government funding data, fed in from spreadsheets or forms, to contributions from the public, private organisations or the government themselves. This can be done not just within a single site but with external linked data from other public sources. You could imagine using this to discover the effect of how and where tax dollars and Euros are being spent on statistics for crime, education or innovation in a set of geographic regions”.&lt;/p&gt;
+&lt;p&gt;As announced by George Thomas, Chief Architect with the US General Services Administration, the Recovery.gov effort will bring transparency to the government towards allowing citizens and activists to access semantic data about everything from contracts and schedules to training and infrastructure costs.&lt;/p&gt;
+&lt;p&gt;Since 2003, DERI has been supported by Science Foundation Ireland with a Centre for Science, Engineering and Technology grant. During this time, DERI has grown to over 120 members.&lt;/p&gt;
+&lt;p&gt;Professor Stefan Decker, Director of DERI, says: “This is another example showing that investment in science and research has truly propelled Ireland into the forefront of technology. Our technology can bring a greater level of transparency and trust to governments as well as financial institutions - something that becomes increasingly important. The US Government has recognised this already&quot;.&lt;/p&gt;
+&lt;p&gt;The SIOC project from DERI at NUI Galway is already being used by a range of applications including Yahoo! SearchMonkey and Drupal.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/337#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 02 Apr 2009 19:47:50 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">337 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tales from the SIOC-o-sphere #9</title>
+ <link>http://sioc-project.org/node/336</link>
+ <description>&lt;p&gt;It&#039;s been another exciting six months in terms of &lt;a href=&quot;http://www.sioc-project.org/&quot;&gt;SIOC&lt;/a&gt;-related developments.  Here&#039;s a summary:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In today&#039;s blog post entitled &quot;&lt;a href=&quot;http://www.sitepoint.com/blogs/2009/03/19/obama-groundbreaking-use-semantic-web/&quot;&gt;Obama’s Groundbreaking use of the Semantic Web&lt;/a&gt;&quot;, &lt;a href=&quot;http://www.sitepoint.com/articlelist/497/&quot;&gt;David Peterson&lt;/a&gt; references a recent &lt;a href=&quot;http://www.slideshare.net/george.thomas.name/recoverygov-1118057&quot;&gt;presentation by George Thomas about recovery.gov at Transparency Camp where he details a variety of Semantic Web technologies (including SIOC)&lt;/a&gt; that will be used.  The presentation also &lt;a href=&quot;http://www.slideshare.net/george.thomas.name/recoverygov-1118057/8&quot;&gt;includes the SIOC ontology model&lt;/a&gt; as an illustration.&lt;/li&gt;
+&lt;li&gt;As mentioned in a &lt;a href=&quot;http://www.johnbreslin.com/blog/2008/10/16/rdfa-searchmonkey-and-drupal/&quot;&gt;previous message&lt;/a&gt;, &lt;a href=&quot;http://developer.yahoo.com/searchmonkey/&quot;&gt;Yahoo! SearchMonkey&lt;/a&gt; has published a list of &lt;a href=&quot;http://developer.yahoo.com/searchmonkey/smguide/profile_vocab.html&quot;&gt;recommended vocabularies&lt;/a&gt; for developers of SearchMonkey applications.  &lt;a class=&quot;zem_slink&quot; href=&quot;http://en.wikipedia.org/wiki/SIOC&quot; title=&quot;SIOC&quot; rel=&quot;wikipedia&quot;&gt;SIOC&lt;/a&gt; has been chosen as a suitable reference vocabulary to describe the activities of online communities, e.g. “blogs, discussion forums, Q&amp;amp;A sites&quot;, and can be used along with &lt;a class=&quot;zem_slink&quot; href=&quot;http://en.wikipedia.org/wiki/FOAF_%28software%29&quot; title=&quot;FOAF (software)&quot; rel=&quot;wikipedia&quot;&gt;FOAF&lt;/a&gt; to describe the &lt;a class=&quot;zem_slink&quot; href=&quot;http://en.wikipedia.org/wiki/Social_network_service&quot; title=&quot;Social network service&quot; rel=&quot;wikipedia&quot;&gt;social networking&lt;/a&gt; stack.  This &lt;a href=&quot;http://ebiquity.umbc.edu/blogger/2009/02/12/yahoo-adds-rdf-support-to-searchmonkey-and-boss/&quot;&gt;article from UMBC Ebiquity&lt;/a&gt; also discusses the &lt;a href=&quot;http://developer.yahoo.com/search/boss/structureddata.html&quot;&gt;recently-announced support for RDF in Yahoo! Search BOSS&lt;/a&gt; (Build your Own Search System).&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;zem_slink&quot; href=&quot;http://drupal.org&quot; title=&quot;Drupal&quot; rel=&quot;homepage&quot;&gt;Drupal&lt;/a&gt; creator &lt;a href=&quot;http://buytaert.net/&quot;&gt;Dries Buytaert&lt;/a&gt; wrote a very interesting and encouraging post last October entitled &quot;&lt;a href=&quot;http://buytaert.net/drupal-the-semantic-web-and-search&quot;&gt;Drupal, the Semantic Web and Search&lt;/a&gt;&quot; in which he said: &quot;On a social networking site built with Drupal, [semantic technology] opens up the possibility to do all sorts of deep social searches - searching by types and levels of relationships while simultaneously filtering by other criteria [...] and if Drupal core supported FOAF and SIOC out of the box, you could search within your network of friends or colleagues. This would be a fundamentally new way to take advantage of your network or significantly increase the relevance of certain searches.&quot;  This was followed up with &lt;a href=&quot;http://www.buytaert.net/rdfa-and-drupal&quot;&gt;another post&lt;/a&gt; on Monday where Dries talked about some exciting possibilities for exposing the structured data that is available in many Drupal deployments, and the work that is ongoing to have RDFa available in Drupal 7 (read more in &lt;a href=&quot;http://www.johnbreslin.com/blog/2009/03/18/nice-video-shows-how-hidden-structured-data-from-the-drupal-content-management-system-can-lead-to-semantic-search/&quot;&gt;my RDFa and Drupal blog post&lt;/a&gt; from yesterday).  There is also a &lt;a href=&quot;http://www.youtube.com/watch?v=r4WgTRIRoa0&quot;&gt;great video which shows some use cases and examples for RDFa in Drupal&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://drupal.org/project/views_datasource&quot;&gt;Views Datasource&lt;/a&gt; is a set of plugins for the Drupal Views module for rendering node content in a number of shareable, reusable formats including &lt;a class=&quot;zem_slink&quot; href=&quot;http://en.wikipedia.org/wiki/Resource_Description_Framework&quot; title=&quot;Resource Description Framework&quot; rel=&quot;wikipedia&quot;&gt;RDF&lt;/a&gt; (FOAF, SIOC, and DOAP).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.clauwa.info/&quot;&gt;Claudia Wagner&lt;/a&gt; has published an &lt;a href=&quot;http://www.clauwa.info/2009/02/16/extended-wp-sioc-exporter/&quot;&gt;extended version of the WordPress SIOC Exporter&lt;/a&gt; that also exports any semantic metadata embedded within the content of a blog post.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.thewebsemantic.com/&quot;&gt;The Web Semantic&lt;/a&gt; blog has described how to &lt;a href=&quot;http://www.thewebsemantic.com/2009/02/26/processing-sioc-feeds-with-jenabean/&quot;&gt;process SIOC feeds with Jenabean&lt;/a&gt;.  This was followed up by a nice description of how to &lt;a href=&quot;http://www.thewebsemantic.com/2009/03/10/writing-out-sioc-triples-using-jena-jenabean/&quot;&gt;write out SIOC triples using Jenabean&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://users.ecs.soton.ac.uk/drn05r/&quot;&gt;David Newman&lt;/a&gt; has published the &lt;a href=&quot;http://users.ecs.soton.ac.uk/drn05r/release/stable/myexp.owl&quot;&gt;myExperiment ontology&lt;/a&gt;, reusing concepts from &lt;a class=&quot;zem_slink&quot; href=&quot;http://dublincore.org/&quot; title=&quot;Dublin Core&quot; rel=&quot;homepage&quot;&gt;Dublin Core&lt;/a&gt;, FOAF and SIOC since they are closely related to the two main functions of &lt;a href=&quot;http://users.ecs.soton.ac.uk/drn05r/myexperiment/&quot;&gt;myExperiment&lt;/a&gt; (i.e. a social networking framework and a metadata registry).&lt;/li&gt;
+&lt;li&gt;Chris Clarke from &lt;a href=&quot;http://www.talis.com/&quot;&gt;Talis&lt;/a&gt; and Fiona Greig from the University of Plymouth have written an interesting case study for the &lt;a href=&quot;http://www.w3.org/2001/sw/sweo/&quot;&gt;W3C SWEO IG&lt;/a&gt; entitled &quot;&lt;a href=&quot;http://www.w3.org/2001/sw/sweo/public/UseCases/Talis/&quot;&gt;A Linked Open Data Resource List Management Tool for Undergraduate Students&lt;/a&gt;&quot;, where FOAF and SIOC are being used for data appropriation in other contexts.&lt;/li&gt;
+&lt;li&gt;Founder of &lt;a href=&quot;http://www.hyperweek.com/&quot;&gt;HyperWeek&lt;/a&gt; &lt;a href=&quot;http://www.hyperweek.com/member/raphael/&quot;&gt;Raphael Briner&lt;/a&gt; and others have been discussing &lt;a href=&quot;http://www.hyperweek.com/article/view/230/&quot;&gt;how FOAF and SIOC could be used to (semantically) describe a HyperWeek group&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tagcrumbs.com/&quot;&gt;TagCrumbs&lt;/a&gt;, a social placemarking service, have &lt;a href=&quot;http://groups.google.com/group/tagcrumbs-api/browse_thread/thread/0ae079de71afad4a&quot;&gt;announced&lt;/a&gt; that they are now making placemark data available in RDF.  Here is an example of a &lt;a href=&quot;http://www.tagcrumbs.com/cornelius/placemarks/twestival-galway-feb-12th-2009.rdf&quot;&gt;placemark for the Twestival in Galway&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.vu.nl/%7Efrankh&quot;&gt;Frank Van Harmelan&lt;/a&gt; has &lt;a href=&quot;http://blog.larkc.eu/?p=1061&quot;&gt;posted on the LarKC weblog&lt;/a&gt; about how SIOC data could be used by early adopters of LarKC-type technologies.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://floss.syr.edu/&quot;&gt;FLOSS&lt;/a&gt; (&lt;a class=&quot;zem_slink&quot; href=&quot;http://en.wikipedia.org/wiki/Free_and_open_source_software&quot; title=&quot;Free and open source software&quot; rel=&quot;wikipedia&quot;&gt;Free/Libre Open Source Software&lt;/a&gt;) project is looking at effective work practices and dynamics in free and open source software development (teams).  They are trying to &lt;a href=&quot;http://floss.syr.edu/ontologies/2008/&quot;&gt;use SIOC to model e-mail lists and threads&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://identi.ca/&quot;&gt;Identi.ca&lt;/a&gt;, an open-source microblogging platform based on &lt;a href=&quot;http://laconi.ca/&quot;&gt;Laconi.ca&lt;/a&gt;, is now publishing both FOAF and SIOC data.  For example, here is an &lt;a href=&quot;http://identi.ca/johnbreslin/foaf&quot;&gt;Identi.ca user in FOAF&lt;/a&gt; and a &lt;a href=&quot;http://identi.ca/johnbreslin/rss&quot;&gt;SIOC-augmented RSS feed for that user&lt;/a&gt;, and here is a feed from an &lt;a href=&quot;http://identi.ca/group/sioc/rss&quot;&gt;Identi.ca group about SIOC&lt;/a&gt;.  &lt;a href=&quot;http://captsolo.net/&quot;&gt;Uldis Bojars&lt;/a&gt; (Happy Birthday to you today!) has started a collection of known minor issues &lt;a href=&quot;http://wiki.sioc-project.org/index.php?title=IdenticaSiocData&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.deri.ie/about/team/member/fabrizio_orlandi/&quot;&gt;Fabrizio Orlandi&lt;/a&gt; and &lt;a href=&quot;http://apassant.net/&quot;&gt;Alex Passant&lt;/a&gt; have created a new &lt;a href=&quot;http://ws.sioc-project.org/mediawiki/&quot;&gt;SIOC Semantic Web data exporter for MediaWiki-based wikis&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://eye48.com/&quot;&gt;Michael Haschke&lt;/a&gt; has written a &lt;a href=&quot;http://www.dokuwiki.org/plugin:sioc&quot;&gt;SIOC plugin for DokuWiki&lt;/a&gt; called &quot;&lt;a href=&quot;http://eye48.com/dokuwiki/doku.php?id=en:dokuwiki:sioc-plugin&quot;&gt;DokuSIOC&lt;/a&gt;&quot;.  The plugin creates metadata with auto-discovery links and content negotiation, pings PingTheSemanticWeb.com on updates, and provides linked data.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://creativecommons.org/press-releases/entry/10061&quot;&gt;Creative Commons Network has been launched&lt;/a&gt;, with &lt;a href=&quot;http://creativecommons.org/&quot;&gt;CC&lt;/a&gt; CTO Nathan Yergler saying: &quot;The CC Network is where the semantic rubber meets the web road.  With the CC Network we&#039;re leveraging everything we&#039;ve learned over the past five years about metadata on the web, including the new &lt;a class=&quot;zem_slink&quot; href=&quot;http://www.w3.org/TR/xhtml-rdfa-primer/&quot; title=&quot;RDFa&quot; rel=&quot;homepage&quot;&gt;RDFa&lt;/a&gt; standard, along with the work of many other groups, including FOAF, POWDER, and SIOC.&quot;&lt;/li&gt;
+&lt;li&gt;Metadata from the &lt;a href=&quot;http://iswc2008.semanticweb.org/&quot;&gt;7th International Semantic Web Conference&lt;/a&gt; is being &lt;a href=&quot;http://iswc2008.semanticweb.org/2008/10/17/iswc-2008-metadata-available/&quot;&gt;published in RDF, including SIOC&lt;/a&gt; for the comments.  The related &lt;a href=&quot;http://data.semanticweb.org/&quot;&gt;Semantic Web Dog Food&lt;/a&gt; service was also &lt;a href=&quot;http://kantenwerk.org/2008/10/16/semantic-web-dog-food/&quot;&gt;announced&lt;/a&gt; by Moeller et al. as a central repository for Semantic Web conference metadata.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://apassant.net/blog/2008/10/14/sioc-goes-owl-dl/&quot;&gt;SIOC is now OWL-DL compliant&lt;/a&gt;.  This change was motivated by the SWANSIOC initiative in the W3C HLCSIG (Semantic Web for Health Care and Life Sciences Interest Group), which uses the &lt;a href=&quot;http://sciencecollaboration.org/&quot;&gt;Science Collaboration Framework&lt;/a&gt; based on Drupal.&lt;/li&gt;
+&lt;li&gt;A recent article from &lt;a href=&quot;http://blog.jokevn.com/&quot;&gt;Joke van Niekerk&lt;/a&gt; discusses &lt;a href=&quot;http://blog.jokevn.com/2009/03/advancing-health-care-management-with.html&quot;&gt;how health care management can be advanced with the (Social) Semantic Web&lt;/a&gt;, including SIOC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/336#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 19 Mar 2009 04:04:33 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">336 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Prize winners visualise Irish online life in the boards.ie SIOC Data Competition</title>
+ <link>http://sioc-project.org/node/335</link>
+ <description>&lt;p&gt;The winners of the &lt;a href=&quot;http://sioc-project.org/&quot;&gt;SIOC (pronounced &quot;shock&quot;) &lt;/a&gt;&lt;a href=&quot;http://data.sioc-project.org/&quot;&gt;data competition&lt;/a&gt; being run by &lt;a href=&quot;http://www.deri.ie/&quot;&gt;DERI&lt;/a&gt; at the &lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;National University of Ireland, Galway&lt;/a&gt; have been announced.  The competition ran from September to October 2008, and the brief was to produce an interesting creation based on a data set of discussion posts reflecting ten years of Irish online life from boards.ie, Ireland&#039;s largest community website.  The competition had about sixty registrants and there were eight final submissions of very high quality.&lt;/p&gt;
+&lt;p&gt;The top winning submission was entitled &quot;&lt;a href=&quot;http://sioc.me/&quot;&gt;SIOC.ME&lt;/a&gt;: A Real-Time Interactive Visualisation of boards.ie Semantic Data within a 3-D Space&quot;.  The entry illustrates how 3-D visualisations may be harnessed to not only provide an interactive means of presenting or browsing data but also to create useful data analysis tools, especially for manipulating the &quot;semantic&quot; (meaningful) data from online communities and social networking sites.  The entry was submitted by Darren Geraghty, a user interface and interaction designer, and it was praised by the judges for the huge amount of effort that went into creating it.  A video of the application may be viewed &lt;a href=&quot;http://www.vimeo.com/2147943&quot;&gt;here&lt;/a&gt; and a demonstration of the tool can be seen at &lt;a href=&quot;http://go.sioc.me&quot;&gt;go.sioc.me&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In second place was a visualisation application called &quot;boardsview&quot; by &lt;a href=&quot;http://www.netsoc.tcd.ie/~mu/&quot;&gt;Stephen Dolan&lt;/a&gt; of Trinity College Dublin.  This is an interactive, real-time animation where one can watch the historical content from many discussion forums changing in real or compressed time.  In this application, you can zoom into a particular forum to see individual users posting messages or to see threads being created and destroyed.&lt;/p&gt;
+&lt;p&gt;Third prize was awarded to the &quot;&lt;a href=&quot;http://bigasterisk.com/boardsie/&quot;&gt;Forum Activity Graph&lt;/a&gt;&quot; by Drew Perttula from California.  This entry was a visualisation showing the popularity of forums on boards.ie as represented by coloured rivers of information, which were then rendered and displayed using Google Maps.&lt;/p&gt;
+&lt;p&gt;Other final submissions included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http://jena.hpl.hp.com:8070/&quot;&gt;Forum Map Demonstration&lt;/a&gt;&quot; by Tristan Webb and Ian Dickinson of HP Labs Bristol, a demonstration of self-organising maps applied to an information navigation problem in a big community site,&lt;/li&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http://sioc.webthere.us&quot;&gt;WebThere: Semantic APML Profiles&lt;/a&gt;&quot; by Brian MacKay from Pennsylvania, a service for creating and maintaining profiles of user interests and attention preferences in social websites,&lt;/li&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http://micromobi.com/FSI&quot;&gt;Find Something Interesting&lt;/a&gt;&quot; by ITT Dublin&#039;s Alexandra Roshchina and Aleksey Kharkov, an application to provide recommendations of the most interesting posts and threads based on interest-matching and graph-mining techniques,&lt;/li&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http://www.martinharrigan.ie/boards&quot;&gt;ChartBoards&lt;/a&gt;&quot; by Martin Harrigan of TCD, a tool for examining community trends via term frequencies, and,&lt;/li&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http://www.netsoc.tcd.ie/~eoinmcl/boardies/&quot;&gt;Visualising the boards.ie Community Culture with Charts&lt;/a&gt;&quot; by Eoin McLoughlin of TCD, where various graph types were used to simplify the huge amount of available community data to something that could allow someone to easily grasp its size and depth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The competition was judged by an independent panel of three experts: &lt;a href=&quot;http://iandavis.com/blog/&quot;&gt;Ian Davis&lt;/a&gt;, Chief Technology Officer with Talis; &lt;a href=&quot;http://www.ibiblio.org/hhalpin/&quot;&gt;Harry Halpin&lt;/a&gt;, researcher at the University of Edinburgh and chair of the W3C GRDDL working group; and &lt;a href=&quot;http://research.yahoo.com/Peter_Mika&quot;&gt;Peter Mika&lt;/a&gt;, researcher at Yahoo! Research Barcelona and author of the book &quot;Social Networks and the Semantic Web&quot;.  The first prize is an Amazon voucher for $4000; second prize is a voucher for $2000; third prize is a voucher for $1000.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/335#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 26 Nov 2008 09:45:14 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">335 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tales from the SIOC-o-sphere #8</title>
+ <link>http://sioc-project.org/node/334</link>
+ <description>&lt;p&gt;&lt;img src=&#039;http://sioc-project.org/files/20080403a.png&#039; alt=&#039;20080403a.png&#039; align=&#039;right&#039; /&gt; It&#039;s time for another installment from the world of SIOC!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the news in May that &lt;a href=&quot;http://www.betanews.com/article/Digg_makes_official_its_adoption_of_a_semantic_Web_standard/1209743762&quot;&gt;Digg were incorporating RDFa in their pages&lt;/a&gt;, &lt;a href=&quot;http://www.digitalbazaar.com/&quot;&gt;Digital Bazaar&lt;/a&gt; CEO Manu Sporny (in Blacksburg, where I lived for some time in 1996 and 2000) has written an excellent three-part guide on the &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdfa/&quot;&gt;public-rdfa list&lt;/a&gt; about how more semantic information can be incorporated into Digg pages using SIOC RDFa (parts &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdfa/2008Sep/0014.html&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdfa/2008Sep/0015.html&quot;&gt;2&lt;/a&gt; and &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdfa/2008Sep/0017.html&quot;&gt;3&lt;/a&gt;).  You can view the result (as validating XHTML) &lt;a href=&quot;http://rdfa.digitalbazaar.com/demos/digg/stemcells.html&quot;&gt;here&lt;/a&gt;.  See also this interesting &lt;a href=&quot;http://blog.digitalbazaar.com/2008/08/23/html5-rdfa-and-microformats/&quot;&gt;related blog post on RDFa&lt;/a&gt; by Manu.&lt;/li&gt;
+&lt;li&gt;As part of their data portability drive, the mobile phonebook service &lt;a href=&quot;http://www.zyb.com/&quot;&gt;ZYB&lt;/a&gt; (recently acquired by Vodafone) &lt;a href=&quot;http://pimpmy.zyb.com/post/2008/06/23/FOAF-and-SIOC-are-now-available.aspx&quot;&gt;announced on their blog in June&lt;/a&gt; that their latest release introduced FOAF and SIOC exports from user&#039;s profile pages (with the full export only available to the users themselves at zyb.com/profilename.foaf and zyb.com/profilename.sioc respectively).  SIOC is being used to describe actions performed by ZYB users such as shouting, writing comments or updating status messages on Facebook.  You can also read more about their new &lt;a href=&quot;http://pimpmy.zyb.com/post/2008/08/25/OpenID-public-API-and-better-performance.aspx&quot;&gt;public feeds API for ZYB&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://blog.madskristensen.dk/post/Introducing-SemanticEngineNET.aspx&quot;&gt;SemanticEngine.NET&lt;/a&gt; class library has just been released by &lt;a href=&quot;http://blog.madskristensen.dk/&quot;&gt;Mads Kristensen&lt;/a&gt;, which supports various different formats ready to use in .NET (currently APML, FOAF, XFN, and soon SIOC and microformats).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lespetitescases.net/&quot;&gt;Gautier Poupeau&lt;/a&gt; has written an &lt;a href=&quot;http://groups.google.com/group/sioc-dev/browse_frm/thread/d290949d91189c1f?hl=en#&quot;&gt;Operator user script that checks if a SIOC-enabled post is referenced in del.icio.us&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://xml.lt/&quot;&gt;Martynas Jusevičius&lt;/a&gt; talks about how &lt;a href=&quot;http://www.xml.lt/Blog/2008/04/02/Semantic+social+networks&quot;&gt;technologies including SIOC can enable semantic social networks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Brad Fallon gives SIOC a namecheck in his &lt;a href=&quot;http://www.freelinereport.com/freeline-2-5-08/&quot;&gt;Freeline Report&lt;/a&gt; video podcast.  Thanks Brad!&lt;/li&gt;
+&lt;li&gt;On the &lt;a href=&quot;http://www.ibm.com/developerworks/&quot;&gt;IBM Developer Works site, &lt;/a&gt;&lt;a href=&quot;http://www.boogdesign.com/b2evo/&quot;&gt;Rob Crowther&lt;/a&gt; mentions SIOC in his description of &lt;a href=&quot;http://www.ibm.com/developerworks/xml/library/x-plansemantic/index.html?ca=drs-&quot;&gt;how to plan a Semantic Web site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://oxfordrepo.blogspot.com/&quot;&gt;Ben O&#039;Steen&lt;/a&gt; describes how he plans to &lt;a href=&quot;http://oxfordrepo.blogspot.com/2008/04/ditching-db-based-blog-for-semantic-one.html&quot;&gt;ditch his database-based blog for a semantic one&lt;/a&gt;, using terms from SIOC.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.aksw.org/2008/triplify-04/&quot;&gt;Triplify 0.4&lt;/a&gt; has been released which uses &lt;a href=&quot;http://triplify.org/Documentation#h47-7&quot;&gt;SIOC and other vocabularies&lt;/a&gt; to &lt;a href=&quot;http://triplify.org/Overview&quot;&gt;expose instance data as RDF from a variety of web applications&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openlinksw.com/blog/~kidehen/&quot;&gt;Kingsley Idehen&lt;/a&gt; describes how &lt;a href=&quot;http://www.openlinksw.com/blog/~kidehen/?id=1333&quot;&gt;WordPress blogs can be incorporated into the Linked Data Web using Virtuoso&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vanirsystems.com/&quot;&gt;Daniel Lewis&lt;/a&gt; talks about a &lt;a href=&quot;http://vanirsystems.com/danielsblog/2008/04/10/universe-of-discourse/&quot;&gt;Universe of Discourse / Discussion&lt;/a&gt; and SIOC.  He has also developed a WordPress theme called &lt;a href=&quot;http://vanirsystems.com/danielsblog/2008/05/09/introducing-straightwalker/&quot;&gt;StraightWalker&lt;/a&gt; that links into the SIOC vocabulary.&lt;/li&gt;
+&lt;li&gt;I mentioned &lt;a href=&quot;http://www.johnbreslin.com/blog/2008/04/05/tales-from-the-sioc-o-sphere-7/&quot;&gt;last time&lt;/a&gt; that the &lt;a href=&quot;http://www.sindice.com/&quot;&gt;Sindice&lt;/a&gt; group would soon release the SWPop widget for WordPress.  It&#039;s now available as the &lt;a href=&quot;http://sindice.com/developers/siocwidget&quot;&gt;SIOC Widget&lt;/a&gt; and it allows you to view posts, comments, topics, etc. made by any blog commenter across the SIOC-o-sphere (as indexed by Sindice).  They&#039;ve also created a &lt;a href=&quot;http://sindice.com/developers/siocapi&quot;&gt;SIOC API&lt;/a&gt; for Sindice.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://apassant.net/blog/&quot;&gt;Alex Passant&lt;/a&gt; has led work on a prototype system called &lt;a href=&quot;http://smob.sioc-project.org/&quot;&gt;SMOB&lt;/a&gt; (Semantic Microblogging) for distributed / decentralised microblogging, that uses FOAF and SIOC to model microbloggers, services and microblog posts.  You can read more in &lt;a href=&quot;http://www.johnbreslin.com/blog/2008/05/09/prototype-for-distributed-decentralised-microblogging-using-semantics/&quot;&gt;my blog post about SMOB&lt;/a&gt; or in &lt;a href=&quot;http://apassant.net/blog/2008/05/13/sioc-based-microblogging/&quot;&gt;Alex&#039;s blog post&lt;/a&gt;.  You can also try the &lt;a href=&quot;http://smob.sioc-project.org/client&quot;&gt;anonymous client&lt;/a&gt; and see a &lt;a href=&quot;http://smob.sioc-project.org/server&quot;&gt;server view&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;From IRC (&lt;a href=&quot;http://tuukka.iki.fi/tmp/sioc-2008-05-27#21:44:02&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;http://tuukka.iki.fi/tmp/sioc-2008-05-29#12:54:54&quot;&gt;2&lt;/a&gt;), we found out about a French wiki system called WikiNi that has been adapted by &lt;a href=&quot;http://rn7.net/b/&quot;&gt;Charles Nepote&lt;/a&gt; to allow publishing to SMOB.  You can &lt;a href=&quot;http://websemantique.org/VotreMicroBlogSurCeWiki&quot;&gt;get the client&lt;/a&gt; here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lespetitescases.net/smob-twitter-version-web-semantique&quot;&gt;This SMOB post from Gautier Poupeau&lt;/a&gt; links to his &lt;a href=&quot;http://www.lespetitescases.net/files/smob.zip&quot;&gt;Drupal 5 widget that shows the latest SIOC postings on a given SMOB server&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.flinter.com/&quot;&gt;Steve Flinter&lt;/a&gt; has written a blog post entitled &quot;&lt;a href=&quot;http://blog.flinter.com/2008/07/08/tangler-versus-sioc/&quot;&gt;Tangler versus SIOC&lt;/a&gt;&quot;, referring to the &lt;a href=&quot;http://blog.programmableweb.com/2008/07/08/tangler-an-api-for-discussion-forums/&quot;&gt;ProgrammableWeb&lt;/a&gt; announcement about Tangler, an API for discussion forums.  I think it&#039;d be great if SIOC could be used by Tangler, and I&#039;m glad to see that &lt;a href=&quot;http://www.tangler.com/forum/semantic-web/topic/3704&quot;&gt;others think so too&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tcd.ie/&quot;&gt;TCD&lt;/a&gt; student &lt;a href=&quot;http://www.davelangley.com/&quot;&gt;Dave Langley&lt;/a&gt; has created the &lt;a href=&quot;http://oscf.davelangley.com/&quot;&gt;Online Semantic Community Framework&lt;/a&gt; (OSCF), a platform for managing online communities based on semantic technologies including SIOC.  It uses a SPARQL endpoint as its data source.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.boab.info/people/david/index.html&quot;&gt;David Peterson&lt;/a&gt; has been discussing on the &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/&quot;&gt;public-rdf-in-html-tf list&lt;/a&gt; about &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/2008Sep/0176.html&quot;&gt;which vocabularies should be used in Drupal core&lt;/a&gt;, and Manu Sporny replies with some &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/2008Sep/0180.html&quot;&gt;reasons for using FOAF and SIOC independently or together&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.deri.ie/about/team/member/deirdre_lee/&quot;&gt;Deirdre Lee&lt;/a&gt;, &lt;a href=&quot;http://www.deri.ie/about/team/member/?uid=234&quot;&gt;Vassilios Peristeras&lt;/a&gt; et al. have been working on a very nice enterprise application for SIOC, where it is being used in collaborative work environments (CWEs) as an interoperable format to share workspaces and documents between different CWE systems (e.g. BSCW and Business Collaborator).  This work was carried out as part of the ECOSPACE integrated project, and you can find out more from &lt;a href=&quot;http://www.ami-communities.eu/wiki/ECOSPACE_Newsletter_No_6#SIOC.2C_the_Social_Communication_Protocol&quot;&gt;their newsletter wiki&lt;/a&gt;, our &lt;a href=&quot;http://doi.ieeecomputersociety.org/10.1109/MIS.2008.50&quot;&gt;IEEE IS publication&lt;/a&gt; or attend the presentation at &lt;a href=&quot;http://www.cs.rmit.edu.au/fedconf/index.html?page=accepted_submissions&amp;amp;event=odbase2008&quot;&gt;ODBASE 2008&lt;/a&gt; in November.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://smwforum.ontoprise.com/smwforum/index.php/Main_Page&quot;&gt;Semantic MediaWiki Plus User Group&lt;/a&gt; has been set up, and they are investigating how SMW templates can support FOAF and SIOC.&lt;/li&gt;
+&lt;li&gt;I&#039;m very pleased to announce that our SIOC &quot;partner-in-crime&quot; &lt;a href=&quot;http://apassant.net/&quot;&gt;Alex Passant&lt;/a&gt; has joined DERI.  Alex recently gave an interesting presentation at the &lt;a href=&quot;http://www.elec.qmul.ac.uk/digitalmusic/&quot;&gt;Centre for Digital Music&lt;/a&gt; (repeated here in DERI) about where &quot;&lt;a href=&quot;http://apassant.net/blog/2008/07/23/social-music-meets-the-semantic-web/&quot;&gt;Social Music Meets the Semantic Web&lt;/a&gt;&quot;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mikeaxelrod.com/wp/2008/06/01/sioc-joining-the-semantically-interlinked-online-community&quot;&gt;Mike Alexrod has blogged about joining the SIOC-o-sphere&lt;/a&gt;, along with the unexpected SEO benefits that he experienced as a result!&lt;/li&gt;
+&lt;li&gt;Over 60 competitors have signed up for the &lt;a href=&quot;http://data.sioc-project.org/&quot;&gt;boards.ie SIOC Data Competition&lt;/a&gt; and there’s still one month left...&lt;/li&gt;
+&lt;li&gt;Finally, the &lt;a href=&quot;http://sdow2008.semanticweb.org/&quot;&gt;1st Social Data on the Web Workshop&lt;/a&gt; (or what we like to call the &quot;SIOC Workshop&quot;!) will be held at the &lt;a href=&quot;http://iswc2008.semanticweb.org/&quot;&gt;7th International Semantic Web Conference&lt;/a&gt; in Karlsruhe this October.  The list of &lt;a href=&quot;http://sdow2008.semanticweb.org/#program&quot;&gt;accepted papers&lt;/a&gt; is now available; it&#039;s going to be a very interesting event.  We hope that you can attend!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous SIOC-o-sphere articles:&lt;/p&gt;
+&lt;p&gt;#7 &lt;a href=&quot;http://sioc-project.org/node/328&quot;&gt;http://sioc-project.org/node/328&lt;/a&gt;&lt;br /&gt;
+#6 &lt;a href=&quot;http://sioc-project.org/node/310&quot;&gt;http://sioc-project.org/node/310&lt;/a&gt;&lt;br /&gt;
+#5 &lt;a href=&quot;http://sioc-project.org/node/294&quot;&gt;http://sioc-project.org/node/294&lt;/a&gt;&lt;br /&gt;
+#4 &lt;a href=&quot;http://sioc-project.org/node/272&quot;&gt;http://sioc-project.org/node/272&lt;/a&gt;&lt;br /&gt;
+#3 &lt;a href=&quot;http://sioc-project.org/node/271&quot;&gt;http://sioc-project.org/node/271&lt;/a&gt;&lt;br /&gt;
+#2 &lt;a href=&quot;http://sioc-project.org/node/138&quot;&gt;http://sioc-project.org/node/138&lt;/a&gt;&lt;br /&gt;
+#1 &lt;a href=&quot;http://sioc-project.org/node/79&quot;&gt;http://sioc-project.org/node/79&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you wish to contribute to the next article, join the &lt;a href=&quot;http://www.twine.com/twine/1rz6jr8b-h0/sioc-semantically-interlinked-online-communities&quot;&gt;SIOC Twine&lt;/a&gt; and use the tag &quot;&lt;a href=&quot;http://www.twine.com/twine/1rz6jr8b-h0/sioc-semantically-interlinked-online-communities/items?tag=siocosphere9&quot;&gt;siocosphere9&lt;/a&gt;&quot; when you add items.&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/334#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Sat, 27 Sep 2008 18:43:45 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">334 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tutorial at the Semantic Technology 2008 Conference</title>
+ <link>http://sioc-project.org/node/330</link>
+ <description>&lt;p&gt;DERI team (&lt;a href=&quot;http://www.stefandecker.org/&quot;&gt;Stefan&lt;/a&gt;, &lt;a href=&quot;http://www.johnbreslin.com&quot;&gt;John&lt;/a&gt; and &lt;a href=&quot;http://captsolo.net/&quot;&gt;Uldis&lt;/a&gt;) was presenting a tutorial &lt;a href=&quot;http://www.semantic-conference.com/session/569/&quot;&gt;&quot;The Future of Social Networks: The Need for Semantics&quot;&lt;/a&gt; at the Semantic Technology 2008 conference in San Jose, CA. &lt;/p&gt;
+&lt;p&gt;Here are the tutorial slides (you can also download them from SlideShare):&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_415320&quot;&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=placeholder-1211208151820041-9&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=placeholder-1211208151820041-9&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/?src=embed&quot;&gt;&lt;img src=&quot;http://static.slideshare.net/swf/logo_embd.png&quot; style=&quot;border:0px none;margin-bottom:-5px&quot; alt=&quot;SlideShare&quot; /&gt;&lt;/a&gt; | &lt;a href=&quot;http://www.slideshare.net/Cloud/the-future-of-social-networks-on-the-internet-the-need-for-semantics?src=embed&quot; title=&quot;View &#039;The Future of Social Networks on the Internet: The Need for Semantics&#039; on SlideShare&quot;&gt;View&lt;/a&gt; | &lt;a href=&quot;http://www.slideshare.net/upload?src=embed&quot;&gt;Upload your own&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Related:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/CaptSolo/data-portability-with-sioc-and-foaf&quot;&gt;&quot;Data Portability with SIOC and FOAF&quot; slides&lt;/a&gt; from the XTech 2008 talk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/330#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Tue, 20 May 2008 18:37:11 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">330 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tales from the SIOC-o-sphere #7</title>
+ <link>http://sioc-project.org/node/328</link>
+ <description>&lt;p&gt;&lt;img src=&#039;http://sioc-project.org/files/20080403a.png&#039; alt=&#039;20080403a.png&#039; align=&#039;right&#039; /&gt; It&#039;s been three months since my last round-up of all things SIOC-ed, so here is entry number seven in the series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 1.0 of a SIOC API for Perl has been released on CPAN!  The CPAN page for the SIOC API is &lt;a href=&quot;http://search.cpan.org/~geewiz/SIOC-v1.0.0/&quot;&gt;here&lt;/a&gt;.  A description of the project itself is available &lt;a href=&quot;http://sioc.socialware.at&quot;&gt;here&lt;/a&gt;.  Thanks to &lt;a href=&quot;http://www.jochen-lillich.de/&quot;&gt;Jochen Lillich&lt;/a&gt;, &lt;a href=&quot;http://randgaenge.net/&quot;&gt;Thomas N. Burg&lt;/a&gt;, and also to &lt;a href=&quot;http://netidee.at/&quot;&gt;Internet Privatstiftung Austria (IPA)&lt;/a&gt; for funding this work.&lt;/li&gt;
+&lt;li&gt;A new &lt;a href=&quot;http://drupal.org/node/222788&quot;&gt;RDF API module for Drupal&lt;/a&gt; has been &lt;a href=&quot;http://groups.drupal.org/node/8930&quot;&gt;announced&lt;/a&gt; that will include &lt;a href=&quot;http://groups.drupal.org/node/9311#comment-30373&quot;&gt;sub-classes / sub-properties of popular terms from SIOC, DC, etc.&lt;/a&gt;  (Drupal creator Dries Buytaert has also said that an RDF API will appear in the core of Drupal 7; see this &lt;a href=&quot;http://video.google.com/videoplay?docid=8487255297768440860&quot;&gt;video&lt;/a&gt;.)  &lt;a href=&quot;http://openspring.net/&quot;&gt;Stephane Corlosquet&lt;/a&gt; has &lt;a href=&quot;http://openspring.net/blog/2008/03/06/first-rdf-schema-for-a-semantic-web-enabled-drupal&quot;&gt;also made&lt;/a&gt; an &lt;a href=&quot;http://groups.drupal.org/node/9311&quot;&gt;RDF Schema proposal for Drupal&lt;/a&gt; (which includes SIOC) and has received very positive feedback.  Some &lt;a href=&quot;http://groups.drupal.org/node/9010&quot;&gt;potential RDF use cases for Drupal&lt;/a&gt; have also been described.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lespetitescases.net/&quot;&gt;Gautier Poupeau&lt;/a&gt; has written a useful guide (en Français) on how to RDF-ise your blog in two parts: &lt;a href=&quot;http://www.lespetitescases.net/rdfaiser-votre-blog-1-la-theorie&quot;&gt;the theory&lt;/a&gt; and &lt;a href=&quot;http://www.lespetitescases.net/rdfaiser-votre-blog-2-la-pratique&quot;&gt;the practice&lt;/a&gt;.  It uses RDFa and vocabularies including SIOC, SIOC Types, DC Elements, DC Refinements and XSD.&lt;/li&gt;
+&lt;li&gt;SIOC data is now being produced by &lt;a href=&quot;http://memoq.semanticweb.org/&quot;&gt;memoQ&lt;/a&gt; by Yuki Matsuoka and &lt;a href=&quot;http://www-kasm.nii.ac.jp/~takeda/&quot;&gt;Hideaki Takeda&lt;/a&gt; of the &lt;a href=&quot;http://www.nii.ac.jp/&quot;&gt;National Institute of Informatics, Japan&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://semwebdev.keithalexander.co.uk/blog/&quot;&gt;Keith Alexander&lt;/a&gt; at Talis has &lt;a href=&quot;http://blogs.talis.com/n2/archives/17&quot;&gt;described&lt;/a&gt; (and &lt;a href=&quot;http://kwijibo.talis.com/experiments/jsonp/comments.test.html#Post&quot;&gt;shown&lt;/a&gt;) how it is possible to create client-side Semantic Web applications using their &lt;a href=&quot;http://convert.test.talis.com/&quot;&gt;Convert&lt;/a&gt; service.  For example, on &lt;a href=&quot;http://kwijibo.talis.com/experiments/jsonp/comments.test.html&quot;&gt;this page&lt;/a&gt; comments functionality is added to a section identified with a &quot;sioc:has_reply&quot; property using a short piece of embedded widget code.&lt;/li&gt;
+&lt;li&gt;ASP.net developer John Dyer has written a nice post on &lt;a href=&quot;http://johndyer.name/post/2008/02/Introduction-to-the-state-of-DataPortability-and-its-standards.aspx&quot;&gt;DataPortability and its standards&lt;/a&gt;, talking about OpenID, FOAF, SIOC, APML, etc.  &lt;a href=&quot;http://vanirsystems.com/&quot;&gt;Daniel Lewis&lt;/a&gt; has also written &lt;a href=&quot;http://vanirsystems.com/danielsblog/2008/02/14/my-view-of-dataportability/&quot;&gt;a good overview of DP&lt;/a&gt;.  More recently, John announced the &lt;a href=&quot;http://johndyer.name/post/2008/02/Data-Portability-Pack-for-BlogEngineNET.aspx&quot;&gt;DataPortability pack for BlogEngine.NET&lt;/a&gt; that produces SIOC, APML and FOAF.  &lt;a href=&quot;http://www.dotnetblogengine.net/&quot;&gt;BlogEngine.NET&lt;/a&gt; founder &lt;a href=&quot;http://blog.madskristensen.dk/&quot;&gt;Mads Kristensen&lt;/a&gt; has also written about data portability and &lt;a href=&quot;http://blog.madskristensen.dk/post/Make-an-API-of-your-website.aspx&quot;&gt;making an API to your website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openlinksw.com/&quot;&gt;OpenLink&lt;/a&gt;&#039;s &lt;a href=&quot;http://myopenlink.net/dataspace/&quot;&gt;Personal Data Space Explorer&lt;/a&gt; now also exposes &lt;a href=&quot;http://myopenlink.net/dataspace/kidehen&quot;&gt;SIOC&lt;/a&gt;, &lt;a href=&quot;http://myopenlink.net/dataspace/person/kidehen&quot;&gt;FOAF&lt;/a&gt; and other RDF data.  See &lt;a href=&quot;http://kidehen.typepad.com/kingsley_idehens_typepad/2008/01/foaf-ing-linked.html&quot;&gt;Kingsley&#039;s post on linked data via FOAF and SIOC&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://captsolo.net/info/&quot;&gt;Uldis Bojars&lt;/a&gt;, &lt;a href=&quot;http://apassant.net/blog/&quot;&gt;Alex Passant&lt;/a&gt; and &lt;a href=&quot;http://www.johnbreslin.com/&quot;&gt;I&lt;/a&gt; will present a tutorial entitled &quot;&lt;a href=&quot;http://www2008.org/program/program-tutorials-TP3.html&quot;&gt;Interlinking Online Communities and Enriching Social Software with the Semantic Web&lt;/a&gt;&quot; at the 14th International World Wide Web Conference (&lt;a href=&quot;http://www2008.org/&quot;&gt;WWW2008&lt;/a&gt;) in Beijing this month.&lt;/li&gt;
+&lt;li&gt;I did an interview with &lt;a href=&quot;http://www.semanticweb.com/&quot;&gt;SemanticWeb.com&lt;/a&gt; called &quot;&lt;a href=&quot;http://www.semanticweb.com/insight/article.php/3721111&quot;&gt;SIOC-ing the Semantic Web&lt;/a&gt;&quot; in January, and talked to &lt;a href=&quot;http://www.pcworld.com/&quot;&gt;PCWorld&lt;/a&gt; about &lt;a href=&quot;http://www.pcworld.com/businesscenter/article/141541/data_portability_reasonable_goal_or_impossible_dream.html&quot;&gt;data portability and SIOC&lt;/a&gt;. &lt;a href=&quot;http://captsolo.net/info/&quot;&gt;Uldis&lt;/a&gt; recorded a &lt;a href=&quot;http://blogs.talis.com/nodalities/2008/02/a_chat_with_uldis_bojars.php&quot;&gt;podcast with Talis&lt;/a&gt; in February with SIOC as one of the main topics. (&lt;a href=&quot;http://zepheira.com/team/eric/&quot;&gt;Eric Miller&lt;/a&gt; also described in &lt;a href=&quot;http://talk.talis.com/archives/2008/03/eric_miller_tal_1.html&quot;&gt;another Talis podcast&lt;/a&gt; how FOAF and SIOC are useful not only for getting at historical content, but for providing fine-tuned content-delivery systems connecting people interested in various aspects of a particular domain.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://apassant.net/&quot;&gt;Alex&lt;/a&gt; has produced a &lt;a href=&quot;http://apassant.net/blog/2008/01/30/sioc-reader-universal-widget/&quot;&gt;universal SIOC reader widget&lt;/a&gt;.  The widget can query for SIOC data from any SPARQL endpoint that provides a JSON output for SELECT queries.  (Alex has also &lt;a href=&quot;http://apassant.net/blog/tag/moat/&quot;&gt;released&lt;/a&gt; the &lt;a href=&quot;http://moat-project.org/&quot;&gt;Meaning of a Tag&lt;/a&gt; ontology which links with SIOC and &lt;a href=&quot;http://scot-project.org/&quot;&gt;SCOT&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;Phillip Rhodes &lt;a href=&quot;http://www.jroller.com/openqabal/entry/so_what_is_openqabal_and&quot;&gt;has been working&lt;/a&gt; on the &lt;a href=&quot;http://openqabal.dev.java.net/&quot;&gt;OpenQabal&lt;/a&gt; &quot;social software operating system&quot; which integrates a set of applications (including &lt;a href=&quot;http://rollerweblogger.org/&quot;&gt;Roller&lt;/a&gt; and &lt;a href=&quot;http://www.javabb.org/&quot;&gt;JavaBB&lt;/a&gt; ) via single sign-on (SSO), a common look-and-feel, and SIOC.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://inamidst.com/sbp/&quot;&gt;Sean Palmer&lt;/a&gt; has written an interesting article entitled &quot;&lt;a href=&quot;http://inamidst.com/whits/2008/omniui&quot;&gt;One Semantic Application, One UI?&lt;/a&gt;&quot; in which he talks about &lt;a href=&quot;http://www.w3.org/2005/ajar/tab&quot;&gt;Tabulator&lt;/a&gt; and its interfaces, including application specific panes for FOAF, SIOC and DOAP.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3.org/People/Berners-Lee/&quot;&gt;Tim Berners-Lee&lt;/a&gt; talked about FOAF and SIOC in an interview with Marie Boran from &lt;a href=&quot;http://www.siliconrepublic.com/news/news.nv?storyid=single10386&quot;&gt;Silicon Republic&lt;/a&gt; for the &lt;a href=&quot;http://www.independent.ie/business/technology/the-man-who-wove-the-web-1301437.html&quot;&gt;Irish Independent&lt;/a&gt;: &lt;i&gt;&quot;A project that started back in 2000 called Friend-of-a-Friend (FOAF) represents relationships between people, as well as basic contact details.  SIOC does this for groups: it extends the FOAF idea to being able to talk about whole groups of people.  Groups are a very important part of the Web because online communities are where we form our trust.  It is very useful to build tools that apply to all the online communities so they can all generate this social trust information.  I am excited about SIOC because you can use that information to determine trust, to let people in.  If someone is in a group that a friend of mine is part of, I can create another relationship based on that.&quot;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;Uldis, &lt;a href=&quot;http://tuukka.iki.fi/&quot;&gt;Tuukka Hastrup&lt;/a&gt; and &lt;a href=&quot;http://www.deri.ie/about/team/member/thomas_schandl/&quot;&gt;Thomas Schandl&lt;/a&gt; are updating Uldis&#039; &lt;a href=&quot;http://wiki.sioc-project.org/w/SIOC_Import_Plugin&quot;&gt;WordPress SIOC Importer&lt;/a&gt;, which allows you to create blog posts based on SIOC data ported from weblogs, mailing lists, forums, IRC, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.bizer.de/&quot;&gt;Chris Bizer&lt;/a&gt;, &lt;a href=&quot;http://richard.cyganiak.de/&quot;&gt;Richard Cyganiak&lt;/a&gt; and &lt;a href=&quot;http://kmi.open.ac.uk/people/tom/&quot;&gt;Tom Heath&lt;/a&gt; have published a very useful document called &quot;&lt;a href=&quot;http://www4.wiwiss.fu-berlin.de/bizer/pub/LinkedDataTutorial/&quot;&gt;How to Publish Linked Data on the Web&lt;/a&gt;&quot; (mentions vocabularies to use like FOAF, DC, SIOC, DOAP, SKOS, MO, Rev and CC).  See also Leo Sauermann and Richard&#039;s &quot;&lt;a href=&quot;http://www.w3.org/TR/cooluris/&quot;&gt;Cool URIs for the Semantic Web&lt;/a&gt;&quot;.&lt;/li&gt;
+&lt;li&gt;In the area of collaborative work environments, SIOC is being used in the &lt;a href=&quot;http://www.ip-ecospace.org/&quot;&gt;Ecospace&lt;/a&gt; project to export metadata from both &lt;a href=&quot;http://public.bscw.de/&quot;&gt;BSCW&lt;/a&gt; and &lt;a href=&quot;http://www.groupbc.com/&quot;&gt;BC&lt;/a&gt;.  Here is a &lt;a href=&quot;http://vmecos01.deri.ie:8081/bscw2sioc/&quot;&gt;BSCW SIOC export service&lt;/a&gt;, and there is also a &lt;a href=&quot;http://www.activerdf.org:8043/&quot;&gt;CWE version of the SIOC Explorer&lt;/a&gt; (which includes data from both BSCW and BC).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.informatik.uni-leipzig.de/~auer/&quot;&gt;Sören Auer&lt;/a&gt;&#039;s team have produced &lt;a href=&quot;http://triplify.org/&quot;&gt;Triplify&lt;/a&gt;, which enables simple mapping of RDB to RDF data in a variety of web applications.  Using Triplify, SIOC and FOAF data can be produced from &lt;a href=&quot;http://drupal.org/&quot;&gt;Drupal 5&lt;/a&gt;, &lt;a href=&quot;http://wordpress.org/&quot;&gt;WordPress&lt;/a&gt;, &lt;a href=&quot;http://wackowiki.com/&quot;&gt;WackoWiki&lt;/a&gt;, and &lt;a href=&quot;http://pkp.sfu.ca/ojs/&quot;&gt;Open Journal Systems&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The new version of &lt;a href=&quot;http://www.boardtracker.com/&quot;&gt;BoardTracker&lt;/a&gt; will have an API to export data using SIOC.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://www.sindice.com/&quot;&gt;Sindice&lt;/a&gt; group will soon release the SWPop widget for WordPress that allows you to view posts, comments, topics, etc. made by any blog commenter across the SIOC-o-sphere (as indexed by Sindice).  You can see a preview &lt;a href=&quot;http://140.203.154.234/swpop/blog/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;This is an &lt;a href=&quot;http://andrewapeterson.wordpress.com/2008/03/14/semantic-standards-are-sustainable-seo-for-you-your-business-website/&quot;&gt;interesting post&lt;/a&gt; by &lt;a href=&quot;http://andrewapeterson.wordpress.com/&quot;&gt;Andrew A. Peterson&lt;/a&gt; on how semantic standards like RSS, FOAF and SIOC (&lt;a href=&quot;http://andrewapeterson.wordpress.com/2008/02/10/sioc-should-be-called-siod-discussions-not-communities-right/&quot;&gt;SIOD&lt;/a&gt;!) can provide sustainable SEO for websites, referencing the &lt;a href=&quot;http://www.ysearchblog.com/archives/000527.html&quot;&gt;Yahoo! Search announcement regarding support for RDF and microformats&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://oxfordrepo.blogspot.com/&quot;&gt;Ben O&#039;Steen&lt;/a&gt; describes a Pylons interface to carry out &lt;a href=&quot;http://en.wikipedia.org/wiki/Create,_read,_update_and_delete&quot;&gt;CRUD&lt;/a&gt; functionality where items are linked together semantically using SIOC.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ldodds.com/&quot;&gt;Leigh Dodds&lt;/a&gt; has a fun &lt;a href=&quot;http://www.ldodds.com/blog/archives/000321.html&quot;&gt;FOAF (and SIOC) tale&lt;/a&gt; about Bee Node (told using SPARQL)!&lt;/li&gt;
+&lt;li&gt;I&#039;ve presented at WebCamp on &lt;a href=&quot;http://www.slideshare.net/Cloud/dataportabilityorg-web-standards-sioc-and-foaf&quot;&gt;DataPortability, web standards, SIOC and FOAF&lt;/a&gt; and recorded a related video on &lt;a href=&quot;http://www.youtube.com/watch?v=Zh-4bRDmTd0&quot;&gt;DataPortability and me&lt;/a&gt;.  It pales in comparison to &lt;a href=&quot;http://www.youtube.com/watch?v=6eGcsGPgUTw&quot;&gt;this one&lt;/a&gt; from Danny Ayers!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous SIOC-o-sphere articles:&lt;/p&gt;
+&lt;p&gt;#6 &lt;a href=&quot;http://sioc-project.org/node/310&quot;&gt;http://sioc-project.org/node/310&lt;/a&gt;&lt;br /&gt;
+#5 &lt;a href=&quot;http://sioc-project.org/node/294&quot;&gt;http://sioc-project.org/node/294&lt;/a&gt;&lt;br /&gt;
+#4 &lt;a href=&quot;http://sioc-project.org/node/272&quot;&gt;http://sioc-project.org/node/272&lt;/a&gt;&lt;br /&gt;
+#3 &lt;a href=&quot;http://sioc-project.org/node/271&quot;&gt;http://sioc-project.org/node/271&lt;/a&gt;&lt;br /&gt;
+#2 &lt;a href=&quot;http://sioc-project.org/node/138&quot;&gt;http://sioc-project.org/node/138&lt;/a&gt;&lt;br /&gt;
+#1 &lt;a href=&quot;http://sioc-project.org/node/79&quot;&gt;http://sioc-project.org/node/79&lt;/a&gt;&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/328#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 04 Apr 2008 13:47:26 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">328 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Semantic Radar for Firefox</title>
+ <link>http://sioc-project.org/firefox</link>
+ <description>&lt;p&gt;Semantic Radar is a semantic metadata detector for Mozilla Firefox.&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+function installExtension(anEvent, extensionName, iconURL) {
+  var params = new Object();
+  params[extensionName] =
+           {
+               URL: anEvent.target.href,
+               IconURL: iconURL,
+               toString: function () { return this.URL; }
+           };
+
+  var res = InstallTrigger.install(params);
+  if (!res) {
+       alert(&quot;If you see an error bar appear at the top of your browser, follow these instructions:\n\n&quot; +
+               &quot;1. Click the \&quot;Edit Options...\&quot; button on the error bar.\n&quot; +
+               &quot;2. Click the \&quot;Allow\&quot; button in the dialog box that appears.\n&quot; +
+               &quot;3. Click \&quot;OK\&quot; to confirm and close the dialog box.\n\n&quot; +
+               &quot;Now you can install extensions from this site.\n&quot; +
+               &quot;Click the \&quot;Install Semantic Radar\&quot; link again to install the extension.&quot;
+               );
+  }
+
+  return false;
+// a href=&quot;http://rdfs.org/semradar/semradar.xpi&quot; onclick=&quot;return installExtension(event, &#039;Semantic Radar&#039;, &#039;http://www.w3.org/RDF/icons/rdf_flyer.48&#039;);&quot;
+}
+--&gt;&lt;!--
+function installExtension(anEvent, extensionName, iconURL) {
+  var params = new Object();
+  params[extensionName] =
+           {
+               URL: anEvent.target.href,
+               IconURL: iconURL,
+               toString: function () { return this.URL; }
+           };
+
+  var res = InstallTrigger.install(params);
+  if (!res) {
+       alert(&quot;If you see an error bar appear at the top of your browser, follow these instructions:\n\n&quot; +
+               &quot;1. Click the \&quot;Edit Options...\&quot; button on the error bar.\n&quot; +
+               &quot;2. Click the \&quot;Allow\&quot; button in the dialog box that appears.\n&quot; +
+               &quot;3. Click \&quot;OK\&quot; to confirm and close the dialog box.\n\n&quot; +
+               &quot;Now you can install extensions from this site.\n&quot; +
+               &quot;Click the \&quot;Install Semantic Radar\&quot; link again to install the extension.&quot;
+               );
+  }
+
+  return false;
+// a href=&quot;http://rdfs.org/semradar/semradar.xpi&quot; onclick=&quot;return installExtension(event, &#039;Semantic Radar&#039;, &#039;http://www.w3.org/RDF/icons/rdf_flyer.48&#039;);&quot;
+}
+--&gt;
+&lt;/script&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/downloads/latest/3886/addon-3886-latest.xpi&quot;&gt;Install Semantic Radar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Available &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/3886&quot;&gt;at Mozilla Add-ons site&lt;/a&gt;. It is a browser extension which inspects web pages for links to Semantic Web metadata and informs about presence of it by showing an icon in browser&#039;s status bar. Currently it supports &lt;a href=&quot;http://www.w3.org/TR/rdf-syntax-grammar/#section-rdf-in-HTML&quot;&gt;RDF autodiscovery&lt;/a&gt; (SIOC, FOAF, DOAP and any type) and RDFa metadata detection.&lt;/p&gt;
+&lt;p&gt;New: Semantic Radar can now ping the &lt;a href=&quot;http://pingthesemanticweb.com&quot; title=&quot;Semantic Web Ping Service&quot;&gt;Semantic Web Ping Service&lt;/a&gt; when metadata are detected. This allows for a community based discovery of the Semantic Web data.&lt;/p&gt;
+&lt;p&gt;Written by &lt;a href=&quot;http://captsolo.net/info/&quot; title=&quot;Uldis Bojārs - CaptSolo Weblog&quot;&gt;Uldis Bojārs&lt;/a&gt; and &lt;a href=&quot;http://www.wikier.org/&quot; title=&quot;Sergio Fernández, aka Wikier&quot;&gt;Sergio Fernández&lt;/a&gt;. If you have comments or bug reports please write to the &lt;a href=&quot;http://groups.google.com/group/sioc-dev&quot; title=&quot;SIOC Development mailing list&quot;&gt;SIOC-Dev mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://captsolo.net/semweb/foaf-captsolo.rdf&quot; type=&quot;application/rdf+xml&quot; title=&quot;FOAF&quot;&gt;...&lt;/a&gt;&lt;/p&gt;
+</description>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 21 Feb 2008 13:38:12 +0000</pubDate>
+ <dc:creator>Wikier</dc:creator>
+ <guid isPermaLink="false">77 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC tutorial accepted for WWW2008</title>
+ <link>http://sioc-project.org/node/311</link>
+ <description>&lt;p&gt;I&#039;m happy to announce that our tutorial proposal on &lt;a href=&quot;http://sioc-project.org/&quot;&gt;SIOC&lt;/a&gt; entitled &quot;Interlinking Online Communities and Enriching Social Software with the Semantic Web&quot; (&lt;a href=&quot;http://captsolo.net/info/&quot;&gt;Uldis Bojars&lt;/a&gt; and &lt;a href=&quot;http://www.johnbreslin.com/&quot;&gt;John Breslin&lt;/a&gt; of &lt;a href=&quot;http://www.deri.ie/&quot;&gt;DERI&lt;/a&gt;, &lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;NUI Galway&lt;/a&gt;, &lt;a href=&quot;http://apassant.net/blog/&quot;&gt;Alexandre Passant&lt;/a&gt; of EDF R&amp;amp;D / LaLICC, Université Paris 4) has been accepted for &lt;a href=&quot;http://www2008.org/&quot;&gt;WWW2008&lt;/a&gt;, the 14th International World Wide Web Conference to be held in Beijing, China in April.  The abstract is as follows:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;This tutorial will give an overview of current research issues and solutions for using Semantic Web technologies in order to enrich social software and to interlink online communities.   We will discuss current standardisation activities as well as research prototypes, focusing on the work of the Semantically-Interlinked Online Communities (SIOC) project.  This initiative recently produced the W3C Member Submission for the SIOC Ontology, which describes a standard way to represent rich data from online community sites and Web 2.0 tools in an interoperable form using RDF.&lt;/p&gt;
+&lt;p&gt;On a larger extent, we will cover additional topics such as search and browsing based on community metadata, large-scale data integration in decentralised communities, and linking social media contributions to the social graph.  We will also focus on implementations of tools that work with SIOC data, providing the audience with the know-how to build such systems using open-source APIs and frameworks.  We will also discuss how the technologies described in this tutorial can be applied to enterprise scenarios, and we will detail some commercial applications that are now using SIOC.&lt;/p&gt;
+&lt;p&gt;Finally, we will describe how a network of interlinked communities powered by semantic social software can lead towards the creation of Social Semantic Information Spaces.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A full list of the accepted tutorials is available &lt;a href=&quot;http://wiki.cse.cuhk.edu.hk/WWW2008/tutorials&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/311#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 07 Dec 2007 11:53:30 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">311 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tales from the SIOC-o-sphere, part 6</title>
+ <link>http://sioc-project.org/node/310</link>
+ <description>&lt;p&gt;Here are the latest happenings from the world of &lt;a href=&quot;http://sioc-project.org/&quot;&gt;SIOC&lt;/a&gt; during the past few months, with thanks to all involved in supporting the initiative!  (Note to new readers that SIOC is an open data format for community description.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.talis.com/engage/&quot;&gt;Engage&lt;/a&gt;, the community information application from &lt;a href=&quot;http://www.talis.com/&quot;&gt;Talis&lt;/a&gt;, is &lt;a href=&quot;http://blogs.talis.com/engage/2007/11/15/engage-and-sioc/&quot;&gt;using SIOC&lt;/a&gt;, SKOS and FOAF.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://loiclemeur.com/&quot;&gt;Loic Le Meur&lt;/a&gt;&#039;s &lt;a href=&quot;http://www.seesmic.com/&quot;&gt;Seesmic&lt;/a&gt; microvlogging service (&quot;the video Twitter&quot;) has decided to adopt the SIOC ontology as one of their open platform formats (along with FOAF and DC; see &lt;a href=&quot;http://blogs.zdnet.com/Howlett/?p=194&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;http://dannyayers.com/2007/10/09/another-mainstream-online&quot;&gt;2&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openlinksw.com/&quot;&gt;OpenLink&lt;/a&gt; have released an EC2 / S3 Amazon Image-version of their Virtuoso product, which includes SIOC support: &quot;your blogs, wikis, bookmarks, etc. are based on the SIOC ontology (think open social graph++)&quot;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pingthesemanticweb.com/stats/namespaces.php&quot;&gt;PTSW&#039;s namespace statistics&lt;/a&gt; page lists SIOC as their fourth most used namespace out of 423.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://planet.semanticfocus.com/&quot;&gt;Planet Semantic Focus&lt;/a&gt; has launched, and plans to &lt;a href=&quot;http://www.semanticfocus.com/blog/entry/title/planet-semantic-focus-aggregating-semantic-web-buzz/&quot;&gt;expose PSF community member discussions using SIOC&lt;/a&gt; and to &lt;a href=&quot;http://www.semanticfocus.com/blog/entry/title/update-on-planet-semantic-focus/&quot;&gt;interlink these with comments from the original blogs&lt;/a&gt; themselves shortly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://danbri.org/&quot;&gt;Dan Brickley&lt;/a&gt; has published a nifty &lt;a href=&quot;http://danbri.org/words/2007/11/04/223&quot;&gt;FOAF classes and properties diagram&lt;/a&gt; which shows the internal and external links (to SIOC, DOAP, Geo, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://randgaenge.net/&quot;&gt;Thomas Burg&lt;/a&gt; has received a grant from &lt;a href=&quot;http://www.netidee.at/die_ipa/&quot;&gt;IPA&lt;/a&gt;&#039;s &quot;netidee&quot; funding call which will be used to develop a &lt;a href=&quot;http://randgaenge.net/2007/10/01/sioc-for-perl/&quot;&gt;SIOC API for Perl&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://oskar.twoday.net/&quot;&gt;Oskar Welzl&lt;/a&gt; has &lt;a href=&quot;http://oskar.twoday.net/stories/4376752/&quot;&gt;SIOC-enabled&lt;/a&gt; the skin on his &lt;a href=&quot;http://oskar.twoday.net/&quot;&gt;own blog&lt;/a&gt; and &lt;a href=&quot;http://warmekueche.twoday.net/&quot;&gt;a friend&#039;s&lt;/a&gt; to produce &lt;a href=&quot;http://oskar.twoday.net/comments.rdf&quot;&gt;combined RSS and SIOC descriptions&lt;/a&gt; (with an &lt;a href=&quot;http://www.welzl.info/id/sioc2005.rdf&quot;&gt;aggregate archive&lt;/a&gt;).  You can view this in &lt;a href=&quot;http://www.w3.org/2005/ajar/tab&quot;&gt;Tabulator&lt;/a&gt; starting at &lt;a href=&quot;http://www.welzl.info/id/twoday&quot;&gt;this URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dorai.wordpress.com/&quot;&gt;Dorai Thodla&lt;/a&gt; has written about &lt;a href=&quot;http://en.wikipedia.org/wiki/Douglas_Engelbart&quot;&gt;Doug Englebart&lt;/a&gt;&#039;s &quot;&lt;a href=&quot;http://dorai.wordpress.com/2006/01/26/a-nic/&quot;&gt;Networked Improvement Community&lt;/a&gt;&quot; idea, and he discusses the overlap between improvement communities and the interlinked communities created via SIOC.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jroller.com/openqabal/entry/so_what_is_openqabal_and&quot;&gt;Phillip Rhodes tells us&lt;/a&gt; about &lt;a href=&quot;https://openqabal.dev.java.net/&quot;&gt;OpenQabal&lt;/a&gt;, an open source social networking and collaboration platform that will include SIOC support, allowing Roller, JavaBB and other component applications to become part of the SIOC-o-sphere.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://imagemattersllc.com/&quot;&gt;ImageMatters&lt;/a&gt; have announced a new open source social bookmarking and mashup application called &lt;a href=&quot;http://gnizr.googlecode.com/&quot;&gt;gnizr&lt;/a&gt;, that &lt;a href=&quot;http://www.flickr.com/photos/14804582@N08/2038128741/in/photostream/&quot;&gt;exports saved bookmarks&lt;/a&gt; using SIOC and a &lt;a href=&quot;http://www.holygoat.co.uk/projects/tags/&quot;&gt;tag ontology&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Finally, the forthcoming &lt;a href=&quot;http://www.semantic-conference.com/&quot;&gt;Semantic Technologies Conference 2008&lt;/a&gt; has listed SIOC among their &lt;a href=&quot;http://www.semantic-conference.com/CFP_Topics.html&quot;&gt;appropriate topic areas&lt;/a&gt; in their &lt;a href=&quot;http://www.semantic-conference.com/cfp.html&quot;&gt;call for proposals&lt;/a&gt;.  Start writing now, the deadline has been extended to 10th December!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/310#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Sat, 01 Dec 2007 10:05:19 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">310 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>State of the SIOC-o-sphere (#5)</title>
+ <link>http://sioc-project.org/node/294</link>
+ <description>&lt;p&gt;It&#039;s that random time of the year again where I summarise what&#039;s been going on in the world of &lt;a href=&quot;http://www.sioc-project.org/&quot;&gt;SIOC&lt;/a&gt;...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We now have a &lt;a href=&quot;http://www.w3.org/Submission/2007/02/&quot;&gt;SIOC W3C Member Submission&lt;/a&gt;!  Along with W3C members Asemantics, DFKI, FZI, Fraunhofer, Fundación CTIC, OpenLink, Opera, STFC, UPM, University of Trento and other co-authors, Uldis and I edited three main documents as part of the submission describing the &lt;a href=&quot;http://www.w3.org/Submission/2007/SUBM-sioc-spec-20070612/&quot;&gt;SIOC core ontology specification&lt;/a&gt;, &lt;a href=&quot;http://www.w3.org/Submission/2007/SUBM-sioc-applications-20070612/&quot;&gt;SIOC applications and implementation status&lt;/a&gt;, and some &lt;a href=&quot;http://www.w3.org/Submission/2007/SUBM-sioc-related-20070612/&quot;&gt;ontologies and RDF vocabularies related to SIOC&lt;/a&gt;.  You can also read the &lt;a href=&quot;http://www.w3.org/Submission/2007/02/Comment&quot;&gt;W3C Team Comment&lt;/a&gt; for our submission.  Thanks again to everyone involved!&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://neuroscientific.net/sisc/sisc_introduction.htm&quot;&gt;Semantically-Interlinked Scientific Communities&lt;/a&gt; project aims to improve how scientific data and knowledge is represented and communicated.  It will use SIOC, FOAF, DC, Creative and Science Commons, OBO and HCLS ontologies and technologies as its basis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ldap.com/1/commentary/wahl/&quot;&gt;Mark Wahl&lt;/a&gt; has written a useful article entitled &quot;&lt;a href=&quot;http://www.ldap.com/1/commentary/wahl/20070725_01.shtml&quot;&gt;organizing principles for identity systems: embedding SIOC in XHTML with RDFa&lt;/a&gt;&quot; which details how to describe blog post structures using SIOC and RDFa.&lt;/li&gt;
+&lt;li&gt;There is a &lt;a href=&quot;http://code.google.com/soc/2007/asf/appinfo.html?csaid=5B17CB63EC1B0C7B&quot;&gt;Google Summer of Code project from the Apache Software Foundation&lt;/a&gt; on creating plugins for embedding/producing RDF/XML and microformats in &lt;a href=&quot;http://forrest.apache.org/&quot;&gt;Forrest&lt;/a&gt; content objects, and SIOC is one of the target vocabularies.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://activerain.com/jwubbel&quot;&gt;John Wubbel&lt;/a&gt; has an interesting post about &lt;a href=&quot;http://activerain.com/blogsview/91099/Semantically-Interlinked-Online-Communities&quot;&gt;how SIOC and semantic technologies can connect real estate networks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://rubyforge.org/users/ronin_warrior/&quot;&gt;Lee Faus&lt;/a&gt; has been telling us on the &lt;a href=&quot;irc://irc.freenode.net/sioc/&quot;&gt;#sioc IRC channel&lt;/a&gt; how the forthcoming &lt;a href=&quot;http://rubyforge.org/projects/stuff/&quot;&gt;Stuff&lt;/a&gt; project will use SIOC to facilitate searching, creating, and maintaining all kinds of &#039;stuff&#039; online (from wikis, forums, knowledge bases, IM, support tickets, e-mails, etc.).&lt;/li&gt;
+&lt;li&gt;SIOC metadata is being used in a very cool demonstrator from &lt;a href=&quot;http://www.openlinksw.com/&quot;&gt;OpenLink&lt;/a&gt; on &lt;a href=&quot;http://www.openlinksw.com/dataspace/kidehen@openlinksw.com/weblog/kidehen@openlinksw.com&#039;s+BLOG+%5B127%5D/1237&quot;&gt;how to inject Facebook data into the Semantic Web&lt;/a&gt;.  This is something I had been waiting for, so nice work!&lt;/li&gt;
+&lt;li&gt;There are also a number of modules for the &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/OdsIndex/&quot;&gt;OpenLink Data Spaces&lt;/a&gt; (ODS) platform that each export SIOC metadata, including ODS-Blog, ODS-Wiki, ODS-Bookmarks, ODS-AddressBook, ODS-Calendar, ODS-Polls, ODS-Gallery (for photos), ODS-Feeds (for feed aggregation and exposure via SIOC), and ODS-Discussion (for comments across blogs, wikis or any other data space that supports some form of commenting).&lt;/li&gt;
+&lt;li&gt;Another interesting SIOC-enabled application is the &lt;a href=&quot;http://sw.joanneum.at/mle/xplore.php&quot;&gt;Mailing List Explorer&lt;/a&gt;.  MLE is a tool that allows the exploration of mailing lists via query, timeline view, etc.  It provides RDF representations (including SIOC metadata) for any valid W3C public mailing list archive.&lt;/li&gt;
+&lt;li&gt;On the wiki front, &lt;a href=&quot;http://ikewiki.salzburgresearch.at/&quot;&gt;IkeWiki&lt;/a&gt; is a semantic wiki for knowledge engineering. IkeWiki allows discussions (following a forum style with threaded views) to be attached to wiki pages. These discussions are &lt;a href=&quot;http://sourceforge.net/mailarchive/forum.php?thread_name=4682C52A.5020307%40salzburgresearch.at&amp;amp;forum_name=ikewiki-users&quot;&gt;represented using the SIOC ontology&lt;/a&gt;, which allows one to use semantic queries to investigate the structure of any discussion.&lt;/li&gt;
+&lt;li&gt;SIOC is being &lt;a href=&quot;http://www.disabiledoc.it/it/?p=502&quot;&gt;discussed for use&lt;/a&gt; by the &lt;a href=&quot;http://www.ielite.eu/&quot;&gt;Italian workgroup for internet and web technologies&lt;/a&gt;.  The group already produces metadata in FOAF and OPML.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.geospatialsemanticweb.com/&quot;&gt;Harry Chen&lt;/a&gt; has written an interesting post about how ontologies like FOAF and SIOC can play important roles in the &lt;a href=&quot;http://www.geospatialsemanticweb.com/2007/07/23/few2007-find-people-on-the-semantic-web&quot;&gt;development of a people search engine&lt;/a&gt;.  This post was made in relation to the forthcoming &lt;a href=&quot;http://fews.semanticweb.org/&quot;&gt;Finding Experts on the Web with Semantics&lt;/a&gt; workshop at ISWC 2007, for which SIOC is a major topic of interest.&lt;/li&gt;
+&lt;li&gt;SIOC gets referenced in Mark Canter&#039;s blog post about &lt;a href=&quot;http://blog.broadbandmechanics.com/2007/07/greetings-from-trieste-italy-blog-links-2&quot;&gt;posting to multiple social media sites&lt;/a&gt;, and this time it isn&#039;t referred to as &lt;a href=&quot;http://blog.broadbandmechanics.com/2006/07/people-must-think-im-made-of-money-or-vc-funded&quot;&gt;STOIC&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;For Russian speakers, here&#039;s a &lt;a href=&quot;http://www.habrahabr.ru/blog/sw/21795.html&quot;&gt;blog conversation in Russian about the SIOC discussion clouds picture&lt;/a&gt;.  SIOC has also received coverage in Korean (&lt;a href=&quot;http://www.zdnet.co.kr/news/internet/etc/0,39031281,39155413,00.htm&quot;&gt;ZDnet&lt;/a&gt;), Austrian (&lt;a href=&quot;http://futurezone.orf.at/hardcore/stories/155677/&quot;&gt;ORF&lt;/a&gt;, &lt;a href=&quot;http://www.computerwelt.at/detailArticle.asp?a=108202&amp;amp;n=1&quot;&gt;Computerwelt&lt;/a&gt;), and German (&lt;a href=&quot;http://computerzeitung.de/article.html?thes=&amp;amp;art=/articles/2006050/30904421_ha_CZ.html&quot;&gt;Computer Zeitung&lt;/a&gt;) media following talks by &lt;a href=&quot;http://www.stefandecker.org/&quot;&gt;Stefan&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Tom Morris has created a &lt;a href=&quot;http://blogs.opml.org/tommorris/2007/02/14#myspaceParserUpdated&quot;&gt;MySpace parser&lt;/a&gt; that produces SIOC data; unfortunately due to some web hosting issues, this is currently offline.&lt;/li&gt;
+&lt;li&gt;In a joint collaboration between &lt;a href=&quot;http://www.deri.ie/&quot;&gt;DERI, NUI Galway&lt;/a&gt; and &lt;a href=&quot;http://bike.snu.ac.kr/&quot;&gt;BiKE, Seoul National University&lt;/a&gt;, &lt;a href=&quot;http://int.ere.st/&quot;&gt;int.ere.st&lt;/a&gt; provides metadata creation and sharing support across online communities that use tag data. int.ere.st aims to build a tag-mediated society based on Semantic Web technologies, and resources in the site are based on RDF vocabularies including SIOC, FOAF, and &lt;a href=&quot;http://www.scot-project.org/&quot;&gt;SCOT&lt;/a&gt;.  You can view a &lt;a href=&quot;http://www.youtube.com/watch?v=Z2QCd1PzIZM&quot;&gt;demonstration video for int.ere.st&lt;/a&gt; at YouTube.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/294#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 09 Aug 2007 12:20:39 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">294 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC is a W3C Submission</title>
+ <link>http://sioc-project.org/node/293</link>
+ <description>&lt;p&gt;I am happy to announce that &lt;a href=&quot;http://www.w3.org/Submission/2007/02/&quot;&gt;SIOC is now a W3C Member Submission&lt;/a&gt;, as mentioned today on the &lt;a href=&quot;http://www.w3.org/blog/SW/2007/08/01/sioc_is_a_w3c_submission&quot;&gt;W3C SW blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.w3.org/Submission/2007/02/&quot;&gt;SIOC Ontology Submission&lt;/a&gt; is composed of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3.org/Submission/sioc-spec/&quot;&gt;SIOC Core Ontology Specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3.org/Submission/sioc-applications/&quot;&gt;SIOC Ontology: Applications and Implementation Status&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3.org/Submission/sioc-related/&quot;&gt;SIOC Ontology: Related Ontologies and RDF Vocabularies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3.org/Submission/2007/02/namespaces.zip&quot;&gt;Snapshots of Namespace Documents&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;http://captsolo.net/&quot;&gt;Uldis&lt;/a&gt; for all his work, and to all our authors, contributors and supporters!  More information about SIOC is available from &lt;a href=&quot;http://www.sioc-project.org/&quot;&gt;sioc-project.org&lt;/a&gt;.  Our SIOC work in &lt;a href=&quot;http://www.deri.ie/&quot;&gt;DERI&lt;/a&gt;, &lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;NUI Galway&lt;/a&gt; is funded by &lt;a href=&quot;http://www.sfi.ie/&quot;&gt;Science Foundation Ireland&lt;/a&gt;.&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/293#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 01 Aug 2007 11:08:57 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">293 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Crawler for RDF Data</title>
+ <link>http://sioc-project.org/crawler</link>
+ <description>&lt;p&gt;SIOC Crawler: http://sw.deri.org/svn/sw/2005/08/sioc/crawler/&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/crawler#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 01 Jun 2007 16:27:40 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">274 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>State of the SIOC-o-sphere (#4)</title>
+ <link>http://sioc-project.org/node/272</link>
+ <description>&lt;p&gt;Since my &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/11/07/state-of-the-sioc-o-sphere-number-3/&quot;&gt;last SIOC update in November&lt;/a&gt;, here are some of the latest happenings from the SIOC-o-sphere:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Update!&lt;/b&gt; Adam Gzella has reminded me of the integration of &lt;a href=&quot;http://wiki.corrib.org/index.php/S3B/SSCF/SIOCSupport&quot;&gt;SIOC support within both Social Semantic Collaborative Filtering (SSCF) and JeromeDL&lt;/a&gt;.  To see SSCF in action, try out &lt;a href=&quot;http://notitio.us/bookmarks&quot;&gt;notitio.us/bookmarks&lt;/a&gt;, which can also display SIOC data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dobrzanski.net/&quot;&gt;Jaroslaw Dobrzanski&lt;/a&gt; reported on his &lt;a href=&quot;http://dobrzanski.net/2007/04/13/ikharvester/&quot;&gt;use of SIOC in IKHarvester&lt;/a&gt;, a component for &lt;a href=&quot;http://dobrzanski.net/2007/03/19/didaskon/&quot;&gt;Didaskon&lt;/a&gt;.  He has since produced a &lt;a href=&quot;http://dobrzanski.net/2007/05/17/ikharvester-2/&quot;&gt;longer description of what IKHarvester does&lt;/a&gt;.  IKHarvester collects data from semantic social spaces (wikis, blogs, etc.) and provides it to Didaskon as informal Learning Objects (LOs).&lt;/li&gt;
+&lt;li&gt;I&#039;ve written the first version of a &lt;a href=&quot;http://sioc-project.org/phpbb&quot;&gt;SIOC exporter for phpBB 2.0.x&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.eyaloren.org/&quot;&gt;Eyal&lt;/a&gt; and &lt;a href=&quot;http://www.deri.ie/about/team/member/benjamin_heitmann/&quot;&gt;Benjamin&lt;/a&gt; have produced an explorer for SIOC forums.  It&#039;s written using Ruby on Rails and their &lt;a href=&quot;http://www.activerdf.org/&quot;&gt;ActiveRDF&lt;/a&gt; / &lt;a href=&quot;http://wiki.activerdf.org/SWORD/&quot;&gt;SWORD&lt;/a&gt; Semantic Web application framework for Rails.  You can get it from the &lt;a href=&quot;https://launchpad.net/sioc-ex&quot;&gt;SIOC explorer&lt;/a&gt; page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://swaml.berlios.de/&quot;&gt;SWAML&lt;/a&gt; has moved from Debian unstable to testing, and also &lt;a href=&quot;http://concurso-softwarelibre.us.es/&quot;&gt;won a Spanish free software contest for universities&lt;/a&gt;.  Congratulations!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/OdsIndex/&quot;&gt;OpenLink Data Spaces&lt;/a&gt; (ODS) SPARQL endpoints now provide access to SIOC instance data from a range of ODS application instances including &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Weblog%20Data%20Space&quot;&gt;blogs&lt;/a&gt;, &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Wiki%20Data%20Space&quot;&gt;wikis&lt;/a&gt;, &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Bookmarks%20Data%20Space&quot;&gt;aggregated feeds&lt;/a&gt; (RSS 1.0, 2.0 and Atom), &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Bookmarks%20Data%20Space&quot;&gt;shared bookmarks&lt;/a&gt;, &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Discussion%20/%20Conversation%20Data%20Space&quot;&gt;discussions&lt;/a&gt; (i.e. comment threads), &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Photo%20Gallery%20Data%20Space&quot;&gt;photo galleries&lt;/a&gt;, &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef#Briefcase%20Applications%20Data%20Space&quot;&gt;briefcases&lt;/a&gt; (e.g. WebDAV file servers), etc.  The live &lt;a href=&quot;http://demo.openlinksw.com/sparql/&quot;&gt;ODS demo server&lt;/a&gt; and &lt;a href=&quot;http://myopenlink.net:8890/sparql/&quot;&gt;MyOpenLink.net (alpha) service&lt;/a&gt; are examples of ODS instances that can expose SIOC instance data to SPARQL query service clients, also in the form of real and virtual RDF graphs.  The &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef&quot;&gt;ODS SIOC reference guide&lt;/a&gt; describes how each application realm is mapped to SIOC alongside SPARQL query examples for interacting with the SIOC instance data.&lt;/li&gt;
+&lt;li&gt;To help describe other application areas for online communities (e.g. as described via ODS above), a lot of new terms have been added to the separate &lt;a href=&quot;http://rdfs.org/sioc/types&quot;&gt;SIOC types module (T-SIOC)&lt;/a&gt;.  New types of Container include AddressBook, AnnotationSet, AudioChannel, BookmarkFolder, Briefcase, EventCalendar, ImageGallery, ProjectDirectory, ResumeBank, ReviewArea, SubscriptionList, SurveyCollection, VideoChannel, and Wiki.  New types of Forum include ArgumentativeDiscussion, ChatChannel, MailingList, MessageBoard, and Weblog.  Poll has been created as a type of Item, and new types of Post include BoardPost, Comment, InstantMessage, and MailMessage.  I&#039;ve also drawn a picture of &lt;a href=&quot;http://www.johnbreslin.com/blog/2007/04/23/t-sioc-object-centred-sociality/&quot;&gt;how T-SIOC and FOAF can create networks of object-centred sociality&lt;/a&gt; through the content that people create.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blogs.opml.org/tommorris&quot;&gt;Tom Morris&lt;/a&gt; has written an &lt;a href=&quot;http://chatlogs.planetrdf.com/swig/2007-05-04.html#T14-49-31&quot;&gt;RDF-iser for Twitter&lt;/a&gt; that uses SIOC and FOAF.  You can see an RDF version of a person&#039;s twitterings by using their username instead of these examples: &lt;a href=&quot;http://tools.opiumfield.com/twitter/johnbreslin/rdf&quot;&gt;johnbreslin&lt;/a&gt;, &lt;a href=&quot;http://tools.opiumfield.com/twitter/captsolo/rdf&quot;&gt;captsolo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Mike Bergman has written an interesting post called &quot;&lt;a href=&quot;http://www.mkbergman.com/index.php?p=374&quot;&gt;An Intrepid Guide to Ontologies&lt;/a&gt;&quot;.  This follows on nicely from his recent &quot;&lt;a href=&quot;http://www.mkbergman.com/index.php?p=372&quot;&gt;Eat Your Greens: FOAF and SIOC are Good for You&lt;/a&gt;&quot;.  Thanks Mike!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.patrickgmj.net/&quot;&gt;Patrick Gosetti Murray-John&lt;/a&gt; talks about &lt;a href=&quot;http://www.patrickgmj.net/node/71&quot;&gt;SIOC descriptions of fora for teaching and learning&lt;/a&gt;, and &lt;a href=&quot;http://www.patrickgmj.net/node/90&quot;&gt;uses some SIOC&lt;/a&gt; in the &lt;a href=&quot;http://facultyacademy.org/blog07/faculty-academy-bloggers/&quot;&gt;Fishtank&lt;/a&gt; for &lt;a href=&quot;http://facultyacademy.org/blog07/&quot;&gt;Faculty Academy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Patrick and &lt;a href=&quot;http://bavatuesdays.com/&quot;&gt;Jim Groom&lt;/a&gt; have also &lt;a href=&quot;http://www.patrickgmj.net/node/84&quot;&gt;demonstrated how to use the structure and searching power of RDF to fully utilise tags and feeds on blogs&lt;/a&gt;.  They combined RSS feeds from about ten people with SIOC data using RAP and &lt;a href=&quot;http://www.dajobe.org/&quot;&gt;Dave Beckett&lt;/a&gt;’s &lt;a href=&quot;http://triplr.org/&quot;&gt;Triplr&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Mary McKnight from &lt;a href=&quot;http://www.rsspieces.com/&quot;&gt;RSS Pieces&lt;/a&gt; (guesting on the &lt;a href=&quot;http://www.futureofrealestatemarketing.com/&quot;&gt;Future of Real Estate Marketing&lt;/a&gt; blog) talks about how SIOC and FOAF can be applied to the application domain of real estate.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://captsolo.net/&quot;&gt;Uldis Bojars&lt;/a&gt; gave a very well-received presentation on SIOC entitled &quot;&lt;a href=&quot;http://captsolo.net/info/blog_a.php/2007/05/05/sioc_semantic_web_for_social_media_sites&quot;&gt;The Semantic Web for Social Media Sites&lt;/a&gt;&quot; at &lt;a href=&quot;http://barcamp.org/BarCampIreland3&quot;&gt;BarCamp Ireland 3&lt;/a&gt;.  He also presented a paper about SIOC and &lt;a href=&quot;http://www.klostu.com/&quot;&gt;Klostu&lt;/a&gt; called &quot;&lt;a href=&quot;http://www.icwsm.org/papers/paper28.html&quot;&gt;The Boardscape: Creating a Super Social Network of Message Boards&lt;/a&gt;&quot;, written with Ron Kass for &lt;a href=&quot;http://www.icwsm.org/&quot;&gt;ICWSM&lt;/a&gt;.  Alex Passant presented a paper about &lt;a href=&quot;http://www.icwsm.org/papers/paper15.html&quot;&gt;strengthening folksonomies using ontologies (including SIOC)&lt;/a&gt; at the same conference.&lt;/li&gt;
+&lt;li&gt;There are plans to support &lt;a href=&quot;http://lists.w3.org/Archives/Public/public-swd-wg/2007Mar/0057.html&quot;&gt;SIOC&lt;/a&gt; and &lt;a href=&quot;http://groups.google.com/group/sioc-dev/browse_frm/thread/45133f17ef4e2c81/5f5a0041d94f0b1d#5f5a0041d94f0b1d&quot;&gt;POWDER content labels&lt;/a&gt; on &lt;a href=&quot;http://my.opera.com/&quot;&gt;my.opera.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;http://www.w3.org/2001/sw/SW-FAQ&quot;&gt;Semantic Web FAQ&lt;/a&gt; is published (SIOC gets a mention in the &lt;a href=&quot;http://www.w3.org/2001/sw/SW-FAQ#community&quot;&gt;community&lt;/a&gt; topic).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tuukka.iki.fi/&quot;&gt;Tuukka Hastrup&lt;/a&gt; is &lt;a href=&quot;http://tuukka.iki.fi/tmp/logindex&quot;&gt;logging some IRC channels&lt;/a&gt; in both &lt;a href=&quot;http://tuukka.iki.fi/tmp/logindex.html&quot;&gt;HTML&lt;/a&gt; and &lt;a href=&quot;http://tuukka.iki.fi/tmp/logindex.turtle&quot;&gt;Turtle&lt;/a&gt; RDF, and SIOC is being used as one of the representation formats.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blogweb.co.kr/&quot;&gt;Hak-Lae Kim&lt;/a&gt; has launched an ontology and framework for sharing &lt;a href=&quot;http://scot-project.org/&quot;&gt;social semantic clouds of tags&lt;/a&gt; (SCOT) that works with FOAF, SIOC and SKOS.  Let&#039;s share tags!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blogs.technet.com/eileen_brown/default.aspx&quot;&gt;Eileen Brown&lt;/a&gt; references SIOC in an article entitled &quot;&lt;a href=&quot;http://blogs.technet.com/eileen_brown/archive/2007/03/23/beyond-web-2-0.aspx&quot;&gt;Beyond Web 2.0&lt;/a&gt;&quot;.&lt;/li&gt;
+&lt;li&gt;For our DERI Research Day in December, I gave a SIOC overview talk entitled &quot;&lt;a href=&quot;http://sw.deri.org/%7Ejbreslin/presentations/20061123a.pdf&quot;&gt;Information Centric Access: The Case of SIOC&lt;/a&gt;&quot; (lots of attendees from academia, industry and state organisations), and I also gave a brief presentation in January on &lt;a href=&quot;http://sw.deri.org/%7Ejbreslin/presentations/20070116a.pdf&quot;&gt;how to use SIOC for expert finding&lt;/a&gt; at the first &lt;a href=&quot;http://lsdis.cs.uga.edu/%7Ealeman/efw2007/&quot;&gt;ExpertFinder Workshop&lt;/a&gt; in Berlin.  (I am an organiser for the follow-on workshop &quot;&lt;a href=&quot;http://fews.semanticweb.org/&quot;&gt;Finding Experts on the Web with Semantics&lt;/a&gt;&quot; to be held at &lt;a href=&quot;http://iswc2007.semanticweb.org/&quot;&gt;ISWC 2007&lt;/a&gt;, and SIOC will be a relevant topic.)&lt;/li&gt;
+&lt;li&gt;Matthias Samwald &lt;a href=&quot;http://groups.google.com/group/sioc-dev/browse_frm/thread/db72b7c2a267c900/82585b7e378cb543#82585b7e378cb543&quot;&gt;told us&lt;/a&gt; about the &lt;a href=&quot;http://neuroscientific.net/index.php?id=43&quot;&gt;bio-zen ontology framework&lt;/a&gt;, which includes SIOC as one of its base ontologies since it &quot;is an excellent tool to describe scientific discourse in a practical, web-centric manner&quot;.&lt;/li&gt;
+&lt;li&gt;John Hoogstrate has written some &lt;a href=&quot;http://jongerenraadborsele.nl/forum/sioc.rdf&quot;&gt;SIOC data producers&lt;/a&gt; for a &lt;a href=&quot;http://jongerenraadborsele.nl/forum/&quot;&gt;forum he runs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;SIOC is being used by &lt;a href=&quot;http://bblfish.net/&quot;&gt;Henry Story&lt;/a&gt; et al. in &lt;a href=&quot;http://code.google.com/p/baetle/&quot;&gt;BAETLE&lt;/a&gt; (Bug And Enhancement Tracking LanguagE).  See &lt;a href=&quot;http://blogs.sun.com/bblfish/entry/baetle_bug_and_enhancement_tracking&quot;&gt;Henry&#039;s blog post on BAETLE&lt;/a&gt; for more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/272#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 18 May 2007 12:42:25 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">272 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Publications</title>
+ <link>http://sioc-project.org/publications</link>
+ <description>&lt;ul&gt;
+&lt;li&gt;
+J.G. Breslin, S. Decker, &quot;&lt;em&gt;The Future of Social Networks on the Internet: The Need for Semantics &lt;/em&gt;&quot;, IEEE Internet Computing magazine, November 2007.&lt;br /&gt;
+&lt;a href=&quot;http://doi.ieeecomputersociety.org/10.1109/MIC.2007.138&quot;&gt;DOI&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+S. Fernández, D. Berrueta, J.E. Labra, &quot;&lt;em&gt;A semantic web approach to publish and consume mailing lists&lt;/em&gt;&quot;, IADIS  International Journal on WWW/Internet (to appear).
+&lt;/li&gt;
+&lt;li&gt;
+M. Hausenblas, H. Rehatschek, &quot;&lt;em&gt;mle: Enhancing the Exploration of Mailing List Archives Through Making Semantics Explicit&lt;/em&gt;&quot;, Semantic Web Challenge 2007, 6th International Semantic Web Conference (ISWC2007), Busan, Korea, November 11-15, 2007.
+&lt;/li&gt;
+&lt;li&gt;
+B Heitmann, E Oren, &quot;&lt;em&gt;Leveraging existing Web frameworks for a SIOC explorer to browse online so cial communities&lt;/em&gt;&quot;, Proceedings of 3rd workshop on Scripting for the Semantic Web (SFSW2007),  ISSN 1613-0073, Innsbruck, Austria, June 6, 2007.&lt;br /&gt;
+&lt;a href=&quot;http://ftp.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-248/paper6.pdf&quot;&gt;[PDF]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+S. Fernández, D. Berrueta, J.E. Labra, &quot;&lt;em&gt;Mailing lists meet the Semantic Web&lt;/em&gt;&quot;, Proceedings of workshop on Social Aspects of the Web (SAW 2007), ISBN 83-916842-4-2, pp. 45-52, Poznan, Poland, April 27, 2007.&lt;br /&gt;
+&lt;a href=&quot;http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS//Vol-245/paper4.pdf&quot;&gt;[PDF]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+U Bojars, J Breslin, A Passant , &quot;&lt;em&gt;SIOC Browser-Towards A Richer Blog Browsing Experience&lt;/em&gt;&quot;, Proceedings of 4th Blogtalk Conference (Blogtalk Reloaded), Vienna, Austria, 2006.&lt;br /&gt;
+&lt;a href=&quot;http://sw.deri.org/~jbreslin/publications/20061003_btr_2006.pdf&quot;&gt;[PDF]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+J.G. Breslin, A. Harth, U. Bojars, S. Decker, &quot;&lt;em&gt;Towards Semantically-Interlinked Online Communities&lt;/em&gt;&quot;, Proceedings of the 2nd European Semantic Web Conference (ESWC &#039;05), LNCS vol. 3532, pp. 500-514, Heraklion, Greece, 2005.&lt;br /&gt;
+&lt;a class=small href=&quot;http://www.springerlink.com/openurl.asp?genre=article&amp;amp;issn=0302-9743&amp;amp;volume=3532&amp;amp;spage=500&quot;&gt;[SpringerLink]&lt;/a&gt; &lt;a class=small href=&quot;http://sw.deri.org/2004/12/sioc/index.pdf&quot;&gt;[PDF]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+J.G. Breslin, S. Decker, A. Harth, &quot;&lt;em&gt;An Approach to Connect Web-Based Communities&lt;/em&gt;&quot;, Proceedings of the 2nd IADIS International Conference on Web Based Communities (WBC 2005), pp. 272-275, Carvoeiro, Portugal, 2005.
+&lt;/li&gt;
+&lt;li&gt;
+A. Harth, J.G. Breslin, I. O&#039;Murchu, S. Decker, &quot;&lt;em&gt;Linking Semantically-Enabled Online Community Sites&lt;/em&gt;&quot;, Proceedings of the 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway), Galway, Ireland, pp. 19-29, September 2004.&lt;br /&gt;
+&lt;a class=small href=&quot;http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/fp/linking_semantically_enabled_online_community_sites/&quot;&gt;[HTML]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But probably there are &lt;a href=&quot;http://www.google.com/scholar?q=semantic+sioc&quot;&gt;more publications&lt;/a&gt;...&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/publications#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Tue, 06 Feb 2007 10:54:10 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">197 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Microformats and SIOC</title>
+ <link>http://sioc-project.org/node/185</link>
+ <description>&lt;p&gt;(Copied from &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/10/02/microformats-and-sioc/&quot;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;It&#039;s been a year since I last took a &lt;a href=&quot;http://microformats.org/discuss/mail/microformats-discuss/2005-November/001866.html&quot;&gt;look at the overlap&lt;/a&gt; between the &lt;a href=&quot;http://sioc-project.org/&quot;&gt;SIOC Project&lt;/a&gt; and &lt;a href=&quot;http://microformats.org/&quot;&gt;Microformats&lt;/a&gt; (mf).  I&#039;ve been trying to catch up with recent developments, especially the &lt;a href=&quot;http://microformats.org/wiki/cite-rel&quot;&gt;cite-rel&lt;/a&gt; draft by Ryan King and Eran Globen.&lt;/p&gt;
+&lt;p&gt;I admire the &lt;a href=&quot;http://microformats.org/&quot;&gt;Microformats&lt;/a&gt; resolve to &quot;solve problems&quot;, rather than provide generic things that may in the future be used for X or Y (even though I believe that too is important, or else I wouldn&#039;t be a Semantic Web researcher!).  I also think that there is no good reason that both the Semantic Web and Microformats communities can&#039;t work together (despite arguments like &lt;a href=&quot;http://chatlogs.planetrdf.com/swig/2006-09-04.html#T09-46-58&quot;&gt;this&lt;/a&gt;).  There are people on both sides who strongly feel that the other is going in the wrong direction, but it would be a mistake to let any such voices dominate.  Both communities are trying to add semantics in the Web, and using things like GRDDL and &lt;a href=&quot;http://micromodels.org/&quot;&gt;Micromodels&lt;/a&gt; / mf RDF representations, the existing work from both sides can be reused.&lt;/p&gt;
+&lt;p&gt;So, with this in mind and in terms of SIOC, I hope that we can use Microformats to help create closer interlinks between the objects that make up online communities - I&#039;m talking mainly about posts, forums / blogs, communities and user profiles.  I&#039;m going to start with three or four things I want SIOC to do for Microformats and vice versa, and then we can go from there.  These correspond to some of the links shown in my &quot;&lt;a href=&quot;http://www.johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/&quot;&gt;connecting discussion clouds&lt;/a&gt;&quot; picture.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One User, Many User Accounts&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At the moment, it is quite difficult to identify all the posts made by a particular person through their various user personas or profiles on different sites - e.g. find all the blog posts and comments and forum threads I&#039;ve created in the past year.  In the SIOC and FOAF vocabularies, there are two properties linking people to user profiles: a Person is linked to a User using a &quot;hasOnlineAccount&quot; link, and a User is linked to a Person using an &quot;account_of&quot; relationship.  Using a mf for sioc:account_of / foaf:hasOnlineAccount would help with the &quot;One Person, Many User Accounts&quot; issue - e.g. these links could be created from a user signature or other public profile field.  For example, I have an account on boards.ie, and I want to say that I am the same person described by a FOAF profile on my own site, or that I hold another account on boards.jp.  Maybe links are required in both directions to confirm that I am really am who I claim I am, but this can be done at least (even if it is tedious).  This may also require some BBCodes for forums that translate to the appropriate HTML.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;br /&gt;
+&amp;lt;div class=&quot;User&quot;&amp;gt;&lt;br /&gt;
+I am &amp;lt;a rel=&quot;account_of&quot; href=&quot;http://johnbreslin.com/&quot;&amp;gt;John Breslin&amp;lt;/a&amp;gt;, and I also have another account, &amp;lt;a rel=&quot;hasOnlineAccount&quot; href=&quot;http://microformats.org/wiki/User:Cloud&quot;&amp;gt;Cloud on microformats.org&amp;lt;/a&amp;gt;.&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Virtual Forums&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wouldn&#039;t it be nice if you could have a virtual forum of all your posts on blogs, forums, mailing lists, whatever?  Apart from going around to all of your favourite sites and linking to your posts from a page, another option would be to do it in reverse - when you create your post, link back to your own post aggregation resource.  From the user side, this could be achieved by creating a mf for sioc:has_container that allows linking to &quot;Virtual Forums&quot; from the post creator side, e.g. from the post content.  Also, virtual forums could be created that list all the posts by people in a restricted social network, or constructed for posts / threads that refer to a certain resource or topic.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;br /&gt;
+&amp;lt;div class=&quot;Post&quot;&amp;gt;&lt;br /&gt;
+Another post that is related to my love of &amp;lt;a rel=&quot;has_container&quot; href=&quot;http://www.johnbreslin.com/forums/electronicmusic/&quot;&amp;gt;electronic music&amp;lt;/a&amp;gt;, Tangerine Dream are releasing five previously unreleased albums next week...&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Unified Communities&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This kind of corresponds to Eran&#039;s idea of &quot;&lt;a href=&quot;http://hellonline.com/blog/?p=69&quot;&gt;distributed social anything&lt;/a&gt;&quot;.  In SIOC, we use has_part and part_of to link any object to a particular community.  The concept of Community in SIOC is very generic - but the idea is that you should have a structured way to link different things (forums, people, etc.) to a community object.  Let&#039;s say that there&#039;s a community talking about the TV series Lost, and they have a blog, a mailing list, an aggregation of Lost-related blogs, or just a news website - these could be linked to an identified central community resource through part_of / has_part relation.  Similarly, I could identify myself or my user profile on a particular site as being part of that Lost community.  From forums, a mf for has_part / part_of would allow one to link a forum or blog or any discussion channel to a larger community, e.g. this could be done from a forum description.  Also, a mf for has_part / part_of would help to link a user to a community, e.g. by creating a typed link from a user signature.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;br /&gt;
+&amp;lt;div class=&quot;Forum&quot;&amp;gt;&lt;br /&gt;
+Welcome to the &amp;lt;a href=&quot;http://sioc-project.org/forum/&quot;&amp;gt;SIOC forums&amp;lt;/a&amp;gt;, where we talk about the &amp;lt;a rel=&quot;part_of&quot; href=&quot;http://www.semanticweb.org/&quot;&amp;gt;Semantic Web&amp;lt;/a&amp;gt; and internet discussions.&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Distributed Conversations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ryan and Eran have already done a lot towards this idea with the cite-rel draft. In terms of SIOC, we already have the has_reply and reply_of relationships, which match up to their proposals: rel-reply corresponds to sioc:has_reply, and rev-reply corresponds to sioc:reply_of. Using the mf cite-rel versions of has_reply / reply_of would allow these distributed threads to form, e.g. if used from the post content. cite-rel brings the reply idea a step further by introducing rel-forward and rev-forward (basically, has_reply and reply_of with quoted content). Ultimately, we need ways to say that a post is in agreement or disagreement with a previous post or even with specific parts of a previous post (see picture below). Also, we may need to describe other reply types that are needed, as with IBIS. (Note: rev-update and rel-update may correspond to sioc: previous_version and sioc:next_version respectively, and via may be compared with sioc:related_to.)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;br /&gt;
+&amp;lt;div class=&quot;Post&quot;&amp;gt;&lt;br /&gt;
+As a follow up to my previous post about &amp;lt;a rel=&quot;reply_of&quot; href=&quot;http://www.johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/&quot;&amp;gt;connecting discussion clouds&amp;lt;/a&amp;gt;, I have realised that I need to say more about people and topics, especially as discussed &amp;lt;a rel=&quot;related_to&quot; href=&quot;http://www.johnbreslin.com/blog/2005/11/11/iswc-2005-over-won-an-ipod-aligning-sioc-with-foaf-and-skos/&quot;&amp;gt;here&amp;lt;/a&amp;gt;.  Edit: I&#039;ve since posted about how &amp;lt;a rel=&quot;has_reply&quot; href=&quot;http://www.johnbreslin.com/blog/2006/09/27/sioc-foaf-skos/&quot;&amp;gt;FOAF and SKOS can be used to describe people and topics&amp;lt;/a&amp;gt;.&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(Edit: Eran has &lt;a href=&quot;http://hellonline.com/blog/?p=91&quot;&gt;replied&lt;/a&gt; to my original post - thanks!)&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/185#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Tue, 07 Nov 2006 17:44:48 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">185 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>State of the SIOC-o-sphere (number 3)</title>
+ <link>http://sioc-project.org/node/271</link>
+ <description>&lt;p&gt;Since my last &quot;&lt;a href=&quot;http://sioc-project.org/&quot;&gt;SIOC&lt;/a&gt;-o-sphere&quot; summaries (see &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/06/08/all-the-latest-sioc-stuff/&quot;&gt;1&lt;/a&gt; and &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/09/11/latest-developments-in-the-sioc-o-sphere/&quot;&gt;2&lt;/a&gt;), there&#039;ve been quite a few developments!&lt;/p&gt;
+&lt;p&gt;I&#039;ll begin by ripping off &lt;a href=&quot;http://apassant.net/blog/2006/10/01/sioc-news/&quot;&gt;Alex Passant&#039;s summary from last month&lt;/a&gt;...&lt;/p&gt;
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;A first version of the &lt;a href=&quot;http://esw.w3.org/topic/SIOC/PHPExportAPI&quot; hreflang=&quot;en&quot;&gt;API documentation&lt;/a&gt; is online. It explains the different classes and methods of the &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/phpapi/&quot; hreflang=&quot;en&quot;&gt;API&lt;/a&gt;, which are designed to create SIOC data without any knowledge of SIOC nor RDF.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/phpapi/&quot; hreflang=&quot;en&quot;&gt;Drupal exporter&lt;/a&gt; has been updated. It now exports data according the latest version of the specs (1.08), and is ready for FOAF mappings. There are still adjustements to be done about the FOAF module, but you can apply a patch that can be found and explained &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/phpapi/&quot; hreflang=&quot;en&quot;&gt;here&lt;/a&gt; to make it work - you need to install &lt;a href=&quot;http://drupal.org/project/foaf&quot; hreflang=&quot;en&quot;&gt;FOAF module for Drupal&lt;/a&gt; first of course;&lt;/li&gt;
+&lt;li&gt;Some bugs have also been fixed in b2evo exporter (see &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/b2evolution/&quot; hreflang=&quot;en&quot;&gt;SVN&lt;/a&gt;) and DotClear one (release 1.4.2 (&lt;a href=&quot;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.2.tgz&quot;&gt;src&lt;/a&gt; | &lt;a href=&quot;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.2.pkg.gz&quot;&gt;pkg&lt;/a&gt;)). As things seems now quite stable in PHP, is there any volunteer for coding Perl or RoR exporters for SIOC ?&lt;/li&gt;
+&lt;li&gt;SIOC export in &lt;a href=&quot;http://www.openlinksw.com/virtuoso/&quot; hreflang=&quot;en&quot;&gt;ODS&lt;/a&gt; is now compliant with SIOC &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/crawler/&quot; hreflang=&quot;en&quot;&gt;crawler&lt;/a&gt;, so it can be crawled and put in any triple-store, as &lt;a href=&quot;http://www.openlinksw.com/blog/~kidehen/&quot; hreflang=&quot;en&quot;&gt;Kingley&#039;s one&lt;/a&gt; which is now &lt;a href=&quot;http://apassant.net/home/2006/06/sioc-browser/index.php/list&quot; hreflang=&quot;en&quot;&gt;here&lt;/a&gt; among other blogs from various engines;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://johnbreslin.com&quot; hreflang=&quot;en&quot;&gt;John&lt;/a&gt; wrote 3 different &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/09/29/sioc-one-page-guides-in-pdf-format/&quot; hreflang=&quot;en&quot;&gt;SIOC pdf guides&lt;/a&gt;, and also designed a &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/09/27/sioc-foaf-skos/&quot; hreflang=&quot;en&quot;&gt;shema&lt;/a&gt; about FOAF / SIOC / SKOS, to help people to get rid of &lt;a href=&quot;http://groups.google.com/group/sioc-dev/browse_thread/thread/b6a9a0b677195eed/50e7e4aad791d257#50e7e4aad791d257&quot; hreflang=&quot;en&quot;&gt;ambiguity&lt;/a&gt; between foaf:User and sioc:User;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.wikier.org/&quot; hreflang=&quot;en&quot;&gt;Wikier&lt;/a&gt; mentionned on #sioc that &lt;a href=&quot;http://swaml.berlios.de/&quot; hreflang=&quot;en&quot;&gt;SWAML&lt;/a&gt;, a project he&#039;s involved in to translate mailing lists in RDF, will use SIOC;&lt;/li&gt;
+&lt;li&gt;Finally, SIOC will be exposed at &lt;a href=&quot;http://blogtalk.net&quot; hreflang=&quot;en&quot;&gt;BlogTalk&lt;/a&gt;, with a &lt;a href=&quot;http://blogtalk.net/Main/SIOCYourBlog&quot; hreflang=&quot;en&quot;&gt;SIOCYourBlog&lt;/a&gt; experiment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And since then there&#039;ve been more happenings...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As Alex Passant mentioned, &lt;a href=&quot;http://swaml.berlios.de/&quot;&gt;SWAML&lt;/a&gt;, the Semantic Web Archive of Mailing Lists, is now using SIOC as its base ontology.  Last week, the developers also announced that SWAML now incorporates Buxon, a sioc:Forum visor written in PyGTK (see &lt;a href=&quot;http://swaml.berlios.de/images/screenshots/buxon_02.png&quot;&gt;screenshot&lt;/a&gt;).  Excellent stuff...&lt;/li&gt;
+&lt;li&gt;Fred Giasson&#039;s &lt;a href=&quot;http://fgiasson.com/blog/index.php?title=talk_digger_now_serialize_its_sioc_and_f&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;TalkDigger   is now serialising its SIOC documents using N3&lt;/a&gt;, and &lt;a href=&quot;http://pingthesemanticweb.com/&quot;&gt;PingtheSemanticWeb&lt;/a&gt; can also detect and index these documents - cool!&lt;/li&gt;
+&lt;li&gt;Kingsley Idehen details that you can view the &lt;a href=&quot;http://myopenlink.net/dataspace&quot;&gt;RDF graph of SIOC data from OpenLink Data Spaces&lt;/a&gt;, and that all of the &lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef&quot;&gt;SIOCRef&lt;/a&gt; demos can be run via the &lt;a href=&quot;http://myopenlink.net:8890/sparql/&quot;&gt;SPARQL endpoint&lt;/a&gt;.
+&lt;/li&gt;
+&lt;li&gt;A Semantic Web activist called Alex Piner was to give a &lt;a href=&quot;http://www.commerce.net/events/?post=/2006/10/261600.2a38a4a9316c49e5a833517c45d31070.html&quot;&gt;talk referencing the SIOC project at CommerceNet&lt;/a&gt; in California.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fgiasson.com/blog/index.php?title=talk_digger_and_ping_the_semantic_web_be&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;OpenLink Software and Fred Giasson have come together to form ZitGist LLC&lt;/a&gt;, a company that will implement ODS&#039; Virtuoso in the TalkDigger and PingtheSemanticWeb projects.  WRT to ZitGist, Fred has also been writing about the &lt;a href=&quot;http://fgiasson.com/blog/index.php?title=the_first_three_dimensions_of_the_web_in&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;three dimensions of the Web&lt;/a&gt; - there are some interesting followup posts on his &lt;a href=&quot;http://fgiasson.com/blog&quot;&gt;blog&lt;/a&gt; about these dimensions.  I&#039;m happy to see that this new venture has been made possible through their common membership of the SIOC community, and look forward to their results...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/271#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Tue, 07 Nov 2006 13:42:00 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">271 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC One Page Guides in PDF Format</title>
+ <link>http://sioc-project.org/pdfs</link>
+ <description>&lt;p&gt;We&#039;ve created a series of three one-page summaries for those new to SIOC:&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td width=&quot;33%&quot;&gt;&lt;a href=&quot;http://sioc-project.org/files/1_a_sioc_executive_summary.pdf&quot;&gt;&lt;img src=&quot;http://sioc-project.org/files/1_a_sioc_executive_summary.png&quot; border=&quot;0&quot; alt=&quot;&quot; width=&quot;124&quot; height=&quot;175&quot; /&gt;&lt;br /&gt;1: Executive Summary&lt;/a&gt;&lt;/td&gt;
+&lt;td width=&quot;33%&quot;&gt;&lt;a href=&quot;http://sioc-project.org/files/2_a_sioc_users_guide.pdf&quot;&gt;&lt;img src=&quot;http://sioc-project.org/files/2_a_sioc_users_guide.png&quot; border=&quot;0&quot; alt=&quot;&quot; width=&quot;124&quot; height=&quot;175&quot; /&gt;&lt;br /&gt;2: User&#039;s Guide&lt;/a&gt;&lt;/td&gt;
+&lt;td width=&quot;33%&quot;&gt;&lt;a href=&quot;http://sioc-project.org/files/3_a_sioc_developers_guide.pdf&quot;&gt;&lt;img src=&quot;http://sioc-project.org/files/3_a_sioc_developers_guide.png&quot; border=&quot;0&quot; alt=&quot;&quot; width=&quot;124&quot; height=&quot;175&quot; /&gt;&lt;br /&gt;3: Developer&#039;s Guide&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/pdfs#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 28 Sep 2006 14:29:28 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">159 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>FAQ</title>
+ <link>http://sioc-project.org/faq</link>
+ <description>&lt;p&gt;&lt;b&gt;What is the vision for SIOC?&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To create an ontology that fully describes the content and structure of most online community sites - including not limited to weblogs, bulletin boards, mailing lists, newsgroups, etc.
+&lt;/li&gt;&lt;li&gt;To create new connections between discussion channels and posts, and to allow users to browse discussion data in interesting ways using these connections.
+&lt;/li&gt;&lt;li&gt;To overcome a &quot;chicken-and-egg&quot; problem with the Semantic Web (no applications without data, and no data without applications) by making it easy to generate and use SIOC data.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;How does it work?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;SIOC provides methods for interconnecting discussion methods such as blogs, forums and mailing lists to each other. It consists of the SIOC ontology, an open-standard machine readable format for expressing the information contained both explicitly and implicitly in internet discussion methods, of SIOC metadata producers for a number of popular blogging platforms and content management systems, and of storage and browsing / searching systems for leveraging this SIOC data.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Where did the name SIOC come from?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The acronym SIOC came into use during April 2004 for a workshop paper draft (see &lt;a href=&quot;http://www.johnbreslin.com/blog/2006/09/20/origins-of-sioc/&quot;&gt;origins of SIOC&lt;/a&gt;).  It also corresponds to &lt;i&gt;sioc&lt;/i&gt; (the Irish word for frost) and was inspired by a sister social networking project called &lt;i&gt;sneachta&lt;/i&gt; (the Irish word for snow).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;How does a UserAccount in SIOC correspond to a Person in FOAF?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully a picture speaks a thousand words: have a read of this forum post on &lt;a href=&quot;http://sioc-project.org/node/158&quot;&gt;SIOC, FOAF and SKOS&lt;/a&gt;.  A FOAF Person can be the owner of many SIOC UserAccount profiles.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/faq#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 27 Sep 2006 06:39:26 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">157 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Media</title>
+ <link>http://sioc-project.org/media</link>
+ <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/presentations&quot;&gt;Presentations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/publications&quot;&gt;Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/videos&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+ <comments>http://sioc-project.org/media#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 15 Sep 2006 09:02:09 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">155 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Discussion</title>
+ <link>http://sioc-project.org/discussion</link>
+ <description>&lt;p&gt;If you wish to discuss SIOC, the primary channel is our mailing list at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://groups.google.com/group/sioc-dev&quot;&gt;http://groups.google.com/group/sioc-dev&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;A &lt;a href=&quot;irc://irc.freenode.net/sioc&quot;&gt;#sioc irc channel&lt;/a&gt; exists on irc.freenode.net.&lt;/p&gt;
+&lt;p&gt;Our &lt;a href=&quot;/forum&quot;&gt;discussion forums on sioc-project.org&lt;/a&gt; can also be used; the sioc-dev mailing list is linked to the SIOC Developers forum in Drupal.&lt;/p&gt;
+&lt;p&gt;Finally, to further connect SIOC to other Semantic Web topics, we have moved our wiki section to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.sioc-project.org/&quot;&gt;http://wiki.sioc-project.org/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+</description>
+ <comments>http://sioc-project.org/discussion#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 15 Sep 2006 08:54:58 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">152 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Vision</title>
+ <link>http://sioc-project.org/vision</link>
+ <description>&lt;p&gt;The visions of SIOC (Semantically-Interlinked Online Communities) are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To create an ontology that fully describes the content and structure of most online community sites - including not limited to weblogs, bulletin boards, mailing lists, newsgroups, etc.
+&lt;/li&gt;&lt;li&gt;To create new connections between discussion channels and posts, and to allow users to browse discussion data in interesting ways using these connections.
+&lt;/li&gt;&lt;li&gt;To overcome a &quot;chicken-and-egg&quot; problem with the Semantic Web (no applications without data, and no data without applications) by making it easy to generate and use SIOC data.
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Please view our proposed &lt;a href=&quot;/architecture&quot;&gt;architecture&lt;/a&gt; for SIOC-enabled sites, and a preliminary &lt;a href=&quot;/roadmap&quot;&gt;roadmap&lt;/a&gt; of tasks for the future.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/vision#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 14 Sep 2006 14:45:55 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">146 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Thanks</title>
+ <link>http://sioc-project.org/thanks</link>
+ <description>&lt;p&gt;This resource is being funded by &lt;a href=&quot;http://www.sfi.ie/&quot;&gt;Science Foundation Ireland&lt;/a&gt; under grant number SFI/02/CE1/I131 at the &lt;a href=&quot;http://www.deri.ie/&quot;&gt;Digital Enterprise Research Institute&lt;/a&gt;, &lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;National University of Ireland, Galway&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We would like to thank and acknowledge the following for their support and/or inspiration:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.sfi.ie/&quot;&gt;&lt;img alt=&quot;SFI&quot; src=&quot;/files/sfi.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;&lt;img alt=&quot;NUI Galway&quot; src=&quot;/files/nuigalway.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.deri.ie/&quot;&gt;&lt;img alt=&quot;DERI Galway&quot; src=&quot;/files/derigalway.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.foaf-project.org/&quot;&gt;&lt;img alt=&quot;FOAF Project&quot; src=&quot;/files/foafproject.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our site content and metadata are provided using these technologies:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.debian.org/&quot;&gt;&lt;img alt=&quot;Debian&quot; src=&quot;/files/debian.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.apache.org/&quot;&gt;&lt;img alt=&quot;Apache&quot; src=&quot;/files/apache.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.php.net/&quot;&gt;&lt;img alt=&quot;PHP&quot; src=&quot;/files/php.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.mysql.com/&quot;&gt;&lt;img alt=&quot;MySQL&quot; src=&quot;/files/mysql.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.drupal.org/&quot;&gt;&lt;img alt=&quot;Drupal&quot; src=&quot;/files/drupal.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.w3.org/RDF/&quot;&gt;&lt;img alt=&quot;RDF&quot; src=&quot;/files/rdf.gif&quot; border=&quot;0&quot; width=&quot;80&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We would also like to thank all of our &lt;a href=&quot;http://sioc-project.org/profile&quot;&gt;community members&lt;/a&gt; for supporting the development of SIOC.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/thanks#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 14 Sep 2006 10:56:30 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">140 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Creating Connections Between Discussion Clouds with SIOC</title>
+ <link>http://sioc-project.org/node/139</link>
+ <description>&lt;p&gt;(Extract from our forthcoming &lt;a href=&quot;http://blogtalk.net/Main/Program&quot;&gt; BlogTalk&lt;/a&gt; paper about browsers for SIOC.)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://sioc-project.org/files/discussion_clouds_big.png&quot;&gt;&lt;img src=&quot;http://sioc-project.org/files/discussion_clouds_small.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SIOC provides a unified vocabulary for content and interaction description: a semantic layer that can co-exist with existing discussion platforms. Using SIOC, various linkages are created between the aforementioned concepts, which allow new methods of accessing this linked data, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Virtual Forums&lt;/strong&gt;. These may be a gathering of posts or threads which are distributed across discussion platforms, for example, where a user has found posts from a number of blogs that can be associated with a particular category of interest, or an agent identifies relevant posts across a certain timeframe.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distributed Conversations&lt;/strong&gt;. Trackbacks are commonly used to link blog posts to previous posts on a related topic. By creating links in both directions, not only across blogs but across all types of internet discussions, conversations can be followed regardless of what point or URI fragment a browser enters at.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unified Communities&lt;/strong&gt;. Apart from creating a web page with a number of relevant links to the blogs or forums or people involved in a particular community, there is no standard way to define what makes up an online community (apart from grouping the people who are members of that community using FOAF or OPML). SIOC allows one to simply define what objects are constituent parts of a community, or to say to what community an object belongs (using sioc:has_part / part_of): users, groups, forums, blogs, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shared Topics&lt;/strong&gt;. Technorati (a search engine for blogs) and BoardTracker (for bulletin boards) have been leveraging the free-text tags that people associate with their posts for some time now. SIOC allows the definition of such tags (using the subject property), but also enables hierarchial or non-hierarchial topic definition of posts using sioc:topic when a topic is ambiguous or more information on a topic is required. Combining with other Semantic Web vocabularies, tags and topics can be further described using the SKOS organisation system.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One Person, Many User Accounts&lt;/strong&gt;. SIOC also aims to help the issue of multiple identities by allowing users to define that they hold other accounts or that their accounts belong to a particular personal identity (via foaf:holdsOnlineAccount or sioc:account_of). Therefore, all the posts or comments made by a particular person using their various associated user accounts across platforms could be identified.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Edit: Here&#039;s SIOC acting as middleware.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://sioc-project.org/files/middleware_big.png&quot;&gt;&lt;img src=&quot;http://sioc-project.org/files/middleware_small.png&quot; &lt;/p /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://sioc-project.org/node/139#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 13 Sep 2006 13:13:38 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">139 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Latest Developments in the SIOC-o-Sphere</title>
+ <link>http://sioc-project.org/node/138</link>
+ <description>&lt;p&gt;The latest bits and pieces people have been saying and doing related to SIOC:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mkbergman.com/?p=260&quot;&gt;Enabling SIOC for AI3 - Adaptive Information&lt;/a&gt; - Mike Bergman installs the SIOC WordPress exporter and describes his experiences&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/08/21/sioc-and-atomowl-a-new-way-to-describe-content/&quot;&gt;SIOC and AtomOWL: a new way to describe content…&lt;/a&gt; - [GNU] remarks on bblfish&#039;s proposal to use AtomOWL&#039;s content:encoded to describe enhanced sioc:Post content&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/07/22/using-skos-to-describe-communication-structures/&quot;&gt;Using SKOS to describe communication structures&lt;/a&gt; -  [GNU] shows us that we don&#039;t need all these sub-types of sioc:Role, sioc:Post,  sioc:Forum if we use SKOS...&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/06/27/sioc-data-i-use-to-crawl/trackback/&quot;&gt;SIOC data I use to crawl&lt;/a&gt; - [GNU] creates a plan file for scuttering SIOC data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/06/07/seealso-for-sioc-hooked-in-page-via-rdfa/&quot;&gt;seeAlso for SIOC hooked in page via RDFa&lt;/a&gt; - [GNU] shows how to help with SIOC autodiscovery using RDFa&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fgiasson.com/blog/index.php?title=semantic_radar_for_firefox_and_the_seman&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;Semantic Radar for FireFox and the Semantic Web Services environment&lt;/a&gt; - fgiasson talks about CaptSolo&#039;s Semantic Radar plugin for autodetecting SIOC data in Firefox (as well as FOAF and DOAP)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fgiasson.com/blog/index.php?title=ping_the_semantic_web_com_a_pinging_serv&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;Ping the Semantic Web.com: a pinging service for the Semantic Web&lt;/a&gt; - fgiasson&#039;s excellent web service for notifying TalkDigger of new Semantic Web data, including SIOC instances&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef&quot;&gt;ODS SIOC Reference&lt;/a&gt; - Overview of how OpenLink Data Spaces allows SPARQL queries to be performed on ODS data via SIOC ontology mappings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/138#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 13 Sep 2006 13:06:50 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">138 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>All the Latest SIOC Stuff</title>
+ <link>http://sioc-project.org/node/79</link>
+ <description>&lt;p&gt;There&#039;s been quite a few happenings in the &quot;siocosphere&quot; during the past month:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/&quot;&gt;Christoph Goern&lt;/a&gt; posted some details about how to &lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/05/22/sioc-from-foafroll/&quot;&gt;enable SIOC output for a community site such as a planet aggregator&lt;/a&gt;; I hope to work on this myself WRT &lt;a href=&quot;http://svn.bitflux.ch/repos/public/planet-php/trunk/&quot;&gt;Planet PHP&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Again, Christoph has detailed how to &lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/05/30/generating-sioc-data-out-of-mailing-list-archives/&quot;&gt;generate SIOC data from mailing list archives&lt;/a&gt;.  Next, we could look at systems like MailMan and MHonArc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://apassant.net/blog/&quot;&gt;Alex Passant&lt;/a&gt; visited us in DERI last week, and together with &lt;a href=&quot;http://captsolo.net/info&quot;&gt;Uldis Bojars&lt;/a&gt; he worked on both a &lt;a href=&quot;http://sw.deri.org/svn/uldis/2006/05/browser/&quot;&gt;SIOC browser&lt;/a&gt; and also a &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/phpapi/&quot;&gt;SIOC module for PEAR and PHP5&lt;/a&gt;.  It was great to have Alex visiting, and he did amazing stuff during the few short days he was here...  Thanks Alex!&lt;/li&gt;
+&lt;li&gt;Christoph has also done some &lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/06/05/sioc-live-query/&quot;&gt;SIOC live query&lt;/a&gt; work, in parallel with #3, as well as describing how &lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/06/07/seealso-for-sioc-hooked-in-page-via-rdfa/&quot;&gt;SIOC can be autodiscovered using RDFa&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fgiasson.com/blog/&quot;&gt;Fred Giasson&lt;/a&gt; has produced a detailed post on how he has made use of &lt;a href=&quot;http://fgiasson.com/blog/index.php?title=using_sioc_ontology_to_connect_talk_digg&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;SIOC to connect stuff within the TalkDigger community&lt;/a&gt;...  Nice one Fred - love this!&lt;/li&gt;
+&lt;li&gt;More people are installing SIOC plugins on their blogs, including &lt;a href=&quot;http://www.geospatialsemanticweb.com/&quot;&gt;Christoph Goern&lt;/a&gt;, &lt;a href=&quot;http://www.geospatialsemanticweb.com/&quot;&gt;Harry Chen&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wow!  I am blown away by all this...  I hope to contribute more myself now that I&#039;m back.
+&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/79#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Fri, 09 Jun 2006 11:27:53 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">79 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Roadmap</title>
+ <link>http://sioc-project.org/roadmap</link>
+ <description>&lt;p&gt;&lt;b&gt;Edit: The &lt;a href=&quot;http://wiki.sioc-project.org/index.php/PHPExportAPI&quot;&gt;SIOC to do list&lt;/a&gt; will also give you a good idea of some things that need to be done with SIOC.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Here are some future plans for SIOC development:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SIOC Drupal/CivicSpace: Complete export and begin import part.  This will involve looking at parsing methods for RDF in PHP.  This is currently a priority of CivicSpace research and the task that John Breslin will be leading.
+&lt;/li&gt;&lt;li&gt;SIOC WordPress/WordPress MU: Complete the exporters for WP and WPMU.  This task is being carried out by Uldis Bojars.
+&lt;/li&gt;&lt;li&gt;SIOC b2evolution: Also to be done by Uldis.
+&lt;/li&gt;&lt;li&gt;SIOC phpBB: Produce a SIOC exporter for phpBB.  This is relatively straightforward and can use the sioc.module from Drupal.
+&lt;/li&gt;&lt;li&gt;SIOC Planet-PHP: This will be a useful exporter to make use of the data already aggregated by Planet Of The Blogs and Generation Blog.  There will also be links inferred between posts.  Later on, this can include work by Martin Feeney to produce information on which blogs link to which.
+&lt;/li&gt;&lt;li&gt;SIOC Explorer: This could be a web-based/desktop-based explorer for SIOC data, either aggregrated or remotely fetched.
+&lt;/li&gt;&lt;/ul&gt;
+</description>
+ <comments>http://sioc-project.org/roadmap#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 26 Oct 2005 10:23:21 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">25 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Architecture</title>
+ <link>http://sioc-project.org/architecture</link>
+ <description>&lt;p&gt;The attachments below show the proposed SIOC architecture and a typical query to the system.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/architecture#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Thu, 20 Oct 2005 10:19:24 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">24 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Forums?</title>
+ <link>http://sioc-project.org/node/21</link>
+ <description>&lt;p&gt;I&#039;m just wondering why forums aren&#039;t available for authenticated users here? This type of post would seem more appropriate in a forum.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/21#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 24 Aug 2005 11:18:36 +0000</pubDate>
+ <dc:creator>robertDouglass</dc:creator>
+ <guid isPermaLink="false">21 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Get your buttons!</title>
+ <link>http://sioc-project.org/node/18</link>
+ <description>&lt;p&gt;A little button for SIOC developers and implementers:&lt;/p&gt;
+&lt;p&gt;[http://rdfs.org/sioc/button]&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/18#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Wed, 24 Aug 2005 09:49:01 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">18 at http://sioc-project.org</guid>
+</item>
+</channel>
+</rss>

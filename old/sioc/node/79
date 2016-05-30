@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/79"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/79">
+  <dc:title>All the Latest SIOC Stuff</dc:title>
+  <sioc:content>There&#039;s been quite a few happenings in the &quot;siocosphere&quot; during the past month:
+
+Christoph Goern posted some details about how to enable SIOC output for a community site such as a planet aggregator; I hope to work on this myself WRT Planet PHP.
+Again, Christoph has detailed how to generate SIOC data from mailing list archives.  Next, we could look at systems like MailMan and MHonArc.
+Alex Passant visited us in DERI last week, and together with Uldis Bojars he worked on both a SIOC browser and also a SIOC module for PEAR and PHP5.  It was great to have Alex visiting, and he did amazing stuff during the few short days he was here...  Thanks Alex!
+Christoph has also done some SIOC live query work, in parallel with #3, as well as describing how SIOC can be autodiscovered using RDFa.
+Fred Giasson has produced a detailed post on how he has made use of SIOC to connect stuff within the TalkDigger community...  Nice one Fred - love this!
+More people are installing SIOC plugins on their blogs, including Christoph Goern, Harry Chen.
+
+Wow!  I am blown away by all this...  I hope to contribute more myself now that I&#039;m back.
+
+</sioc:content>
+  <dcterms:created>2006-06-09T12:27:53+01:00</dcterms:created>
+  <dcterms:modified>2008-01-07T17:02:03+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/79" rdfs:label="All the Latest SIOC Stuff" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

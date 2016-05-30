@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/134"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/134">
+  <dc:title>User vs. Person complexity</dc:title>
+  <sioc:content>Hi all!
+The Captn has chased me around at #foaf for an extended period, and I
+know that you have a deadline for submission coming up RSN.
+I&#039;m the one who has done the semweb stuff at my.opera.com, and I&#039;d like
+to express my support for what you&#039;re doing. Also, I think we will
+implement SIOC at my.opera.com as time allows, and I think we will
+support your W3C submission.
+Now, I have to realize that I will not have the time to write the more
+elaborate discussion of the spec before your deadline, but I guess a
+not-very well thought out post is better than none, so here we go, and
+please bear over with me if I address issues that have allready been
+beaten to death earlier.
+I can certainly see the value of the sioc:User/foaf:Person distinction
+in SIOC. It is the nature of community sites that we do not really know
+too much about the user who&#039;s publishing things, &quot;on the Internet,
+nobody knows you&#039;re a dog&quot; thus making foaf:Person alltogether rather
+inappropriate for community sites ;-) Also, it is difficult verify that
+a user isn&#039;t two or more persons or just a bot.
+Now, I&#039;m not arguing that we shouldn&#039;t use foaf:Person, quite the
+contrary. Using sioc:User as a wrapper around foaf:Person introduces
+some additional complexity, and I&#039;m not sure it is worth it. Instead
+agents may just need to be a little more careful when making inferences
+based on data from a community site.
+Also, I think it becomes quite difficult to know when to use the SIOC
+mbox and when to use the FOAF mbox, or both. Do I really need to use
+verify that the user is a person to use the FOAF properties, or?
+So, that&#039;s my main concern, have you guys thought about it?
+Now, I suppose that the specification is not set in stone with the
+submission to the W3C, so this is perhaps a discussion that could
+proceed after the submission?
+Cheers,
+Kjetil
+--
+Kjetil Kjernsmo
+Information Systems Developer
+Opera Software ASA
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-12T10:00:46+01:00</dcterms:created>
+  <dcterms:modified>2006-09-11T16:25:21+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/134" rdfs:label="User vs. Person complexity" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/58%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/58" />
+</sioc:Post>
+</rdf:RDF>

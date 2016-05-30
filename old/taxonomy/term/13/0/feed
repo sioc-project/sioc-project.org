@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://sioc-project.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>sioc-project.org - Developers</title>
+ <link>http://sioc-project.org/taxonomy/term/13/0</link>
+ <description>Linked to the sioc-dev mailing list on Google Groups.</description>
+ <language>en</language>
+<item>
+ <title>CfP: 2nd Workshop on Social Aspects of the Web</title>
+ <link>http://sioc-project.org/node/326</link>
+ <description>&lt;p&gt;
+[Apologies if you receive this more than once]&lt;/p&gt;
+&lt;p&gt;================================================================================&lt;/p&gt;
+&lt;p&gt;                   2nd Workshop on Social Aspects of the Web&lt;br /&gt;
+                              in conjunction with&lt;br /&gt;
+    11th International Conference on Business Information Systems (BIS 2008)&lt;/p&gt;
+&lt;p&gt;                               Innsbruck, Austria&lt;br /&gt;
+                              May 5, 6 or 7, 2008&lt;/p&gt;
+&lt;p&gt;================================================================================&lt;/p&gt;
+&lt;p&gt;                   Deadline for submissions: January 12, 2008&lt;/p&gt;
+&lt;p&gt;================================================================================&lt;/p&gt;
+&lt;p&gt;In recent years, the Web has moved from a simple one-way communication channel&lt;br /&gt;
+extending traditional media, to a complex &quot;peer-to-peer&quot; communication space&lt;br /&gt;
+with a blurred author/audience distinction and new ways to create, share and&lt;br /&gt;
+use knowledge in a social way.&lt;br /&gt;
+This change of paradigm is currently profoundly transforming most areas of our&lt;br /&gt;
+life: our interactions with other people, our relationships, ways of gathering&lt;br /&gt;
+informations, ways of developing social norms, opinions, attitudes and even&lt;br /&gt;
+legal aspects as well as ways of working and doing business.&lt;br /&gt;
+That change also raises a strong need for theoretical, empirical and applied&lt;br /&gt;
+studies related to how people may interact on the Web, how they actually do so&lt;br /&gt;
+and what new possibilities and challenges are emerging in the social, business&lt;br /&gt;
+and technology dimensions. &lt;/p&gt;
+&lt;p&gt;The goal of this workshop is to bring researchers and practitioners together to&lt;br /&gt;
+explore the issues and challenges related to social aspects of the Web. We want&lt;br /&gt;
+to facilitate discussion on topics including theoretical, empirical and applied&lt;br /&gt;
+studies related to:  &lt;/p&gt;
+&lt;p&gt;TOPICS OF INTEREST&lt;/p&gt;
+&lt;p&gt;* Users in the social Web&lt;br /&gt;
+    * User identity/identities on the Web&lt;br /&gt;
+    * Activity patterns&lt;br /&gt;
+    * Privacy / intimacy in the social Web&lt;br /&gt;
+    * Psychological aspects of acting in social Web&lt;br /&gt;
+    * Analysis and reduction of the socio-technical gap in social software&lt;br /&gt;
+* Communities on the Web&lt;br /&gt;
+    * Users roles, leadership and interactions&lt;br /&gt;
+    * Conflicts and their resolution&lt;br /&gt;
+    * Social norms and their enforcement&lt;br /&gt;
+    * Trust and its propagation&lt;br /&gt;
+    * Relations of on-line and off-line communities&lt;br /&gt;
+    * Social discourse and decission-taking on the Web&lt;br /&gt;
+* Large-scale social Web mining and empirical studies&lt;br /&gt;
+    * Social network analysis&lt;br /&gt;
+    * Associations mining from social network&lt;br /&gt;
+    * Large-scale behaviour patterns and anomalies&#039; mining&lt;br /&gt;
+    * Moods&#039; / opinions&#039; / social problems&#039; analysis&lt;br /&gt;
+    * Experts finding in social Web sources&lt;br /&gt;
+    * Mining formal semantics from social sources&lt;br /&gt;
+    * Methodologies of Web-based social macro and micro studies&lt;br /&gt;
+* Social Web and business&lt;br /&gt;
+    * Social Web as a source of business information&lt;br /&gt;
+    * Social Web as a business communication channel&lt;br /&gt;
+    * Business models for social software and services&lt;br /&gt;
+    * Specific types of social software on the Web (bookmarking, social networks&lt;br /&gt;
+      etc.)&lt;br /&gt;
+    * Use cases and best practicies&lt;br /&gt;
+* Applications of Web-based social software&lt;br /&gt;
+    * Social software architectures&lt;br /&gt;
+    * Strategies for bootstrapping social software systems and bypassing the&lt;br /&gt;
+      critical mass problem&lt;br /&gt;
+    * Social software in information processing and retrieval&lt;br /&gt;
+    * Social software in collaborative maintenance of content and data&lt;/p&gt;
+&lt;p&gt;SUBMISSION&lt;/p&gt;
+&lt;p&gt;* Long papers: max. 5000 words&lt;br /&gt;
+* Work-in-progress rep.: max. 2500 words&lt;br /&gt;
+* Position papers: max. 2500 words&lt;br /&gt;
+* Demo papers: max. 2500 words&lt;/p&gt;
+&lt;p&gt;Papers must be submitted in PDF format according to Springer LNBIP template&lt;br /&gt;
+available from&lt;br /&gt;
+http://www.springer.com/east/home/computer/lncs?SGWID=5-164-7-487211-0.&lt;/p&gt;
+&lt;p&gt;Submission system is available on-line at&lt;br /&gt;
+http://www.easychair.org/conferences/?conf=SAW2008.&lt;/p&gt;
+&lt;p&gt;The proceedings will be published jointly with proceedings of other BIS&lt;br /&gt;
+workshops as a book or CD with ISBN number, and on-line at CEUR WS.org workshop&lt;br /&gt;
+proceedings publication service (open content).&lt;br /&gt;
+Extended version of selected papers submited to the workshop will be published&lt;br /&gt;
+as special issue of International Journal on WWW/Internet&lt;br /&gt;
+(http://www.iadis.org/ijwi/, ISSN: 1645-7641).&lt;/p&gt;
+&lt;p&gt;WORKSHOP FORMAT&lt;/p&gt;
+&lt;p&gt;All authors of accepted papers as well as other participants will be asked to&lt;br /&gt;
+read accepted papers abtracts before the workshop (papers will be available&lt;br /&gt;
+on-line in advance) to facilitate discussion. The workshop will consist in two&lt;br /&gt;
+parts: first (more formal) devoted to presentation and discussion of accepted&lt;br /&gt;
+papers and second (less formal) devoted to discussion of several issues related&lt;br /&gt;
+to present and future of the social Web.&lt;br /&gt;
+Workshop participants will be also invited to take part in the BIS conference&lt;br /&gt;
+and topically related BIS workshops on Mashups, Enterprise Mashups, and&lt;br /&gt;
+Lightweight Composition on the Web (M&amp;amp;LCW 2008) and Advances in Accessing the&lt;br /&gt;
+Deep Web (ADW 2008).&lt;/p&gt;
+&lt;p&gt;IMPORTANT DATES&lt;/p&gt;
+&lt;p&gt;* January 12, 2008 - submission deadline for papers&lt;br /&gt;
+* February 12, 2008 - notification of acceptance/rejection&lt;br /&gt;
+* March 12, 2008 - submission of final papers&lt;br /&gt;
+* May 5, 6 or 7, 2008 - the workshop&lt;/p&gt;
+&lt;p&gt;ORGANIZERS&lt;/p&gt;
+&lt;p&gt;* Poznan University of Economics, Departament of Information Systems&lt;br /&gt;
+  (http://kie.ae.poznan.pl/)&lt;/p&gt;
+&lt;p&gt;CHAIRS&lt;/p&gt;
+&lt;p&gt;* Dominik Flejter&lt;br /&gt;
+* Tomasz Kaczmarek&lt;br /&gt;
+* Marek Kowalkiewicz&lt;/p&gt;
+&lt;p&gt;PROGRAM COMMITTEE&lt;/p&gt;
+&lt;p&gt;* Krisztian Balog, Univeristy of Amsterdam, the Netherlands&lt;br /&gt;
+* Simone Braun, FZI Kralsruhe, Germany&lt;br /&gt;
+* John Breslin, DERI, NUI Galway, Ireland&lt;br /&gt;
+* Tanguy Coenen, Vrije Universiteit Brussel, Belgium&lt;br /&gt;
+* Jon Dron, Athabasca University, Canada&lt;br /&gt;
+* Davide Eynard, Politecnico di Milano, Italy&lt;br /&gt;
+* Andrew T. Fiore, University of California, Berkeley, the USA&lt;br /&gt;
+* Dominik Flejter, Poznan University of Economics, Poland&lt;br /&gt;
+* Tomasz Kaczmarek, Poznan University of Economics, Poland&lt;br /&gt;
+* Marek Kowalkiewicz, SAP Research Brisbane, Australia&lt;br /&gt;
+* Sebastian Kruk, DERI, NUI Galway, Ireland&lt;br /&gt;
+* Marcin Paprzycki, Warsaw School of Social Psychology, Poland&lt;br /&gt;
+* Katharina Siorpaes, University of Innsbruck, Austria&lt;br /&gt;
+* Marcin Sydow, Polish-Japanese Institute of Information Technology, Poland&lt;br /&gt;
+* Jie Tang, Tshingua Univeristy, China&lt;br /&gt;
+* Celine van Damme, Vrije Universiteit Brussel, Belgium&lt;br /&gt;
+* Valentin Zacharias, FZI Kralsruhe, Germany&lt;/p&gt;
+&lt;p&gt;================================================================================&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+__      ___ _   _&lt;br /&gt;
+\ \    / (_) |_(_)___ _ _&lt;br /&gt;
+ \ \/\/ /| | / / / -_) &#039;_|  Sergio Fernández&lt;br /&gt;
+  \_/\_/ |_|_\_\_\___|_|    http://www.wikier.org/&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/326#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:16 +0000</pubDate>
+ <dc:creator>Wikier</dc:creator>
+ <guid isPermaLink="false">326 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Semantic Technologies Conference</title>
+ <link>http://sioc-project.org/node/325</link>
+ <description>&lt;p&gt;Dear all -&lt;/p&gt;
+&lt;p&gt;The CFP for the Semantic Technologies Conference explicitly mentions&lt;br /&gt;
+SIOC as a topic area.&lt;/p&gt;
+&lt;p&gt;We should organise some proposal submissions from the SIOC community&lt;br /&gt;
+before the 10th December 2007 deadline, and if you want any advice, let&lt;br /&gt;
+me know.&lt;/p&gt;
+&lt;p&gt;http://www.semantic-conference.com/CFP_Topics.html&lt;/p&gt;
+&lt;p&gt;&quot;Collaboration and Social Networks&lt;br /&gt;
+Leveraging Web 2.0 in semantic systems. FOAF, Semantically-Interlinked&lt;br /&gt;
+Online Communities (SIOC), wikis, tagging, folksonomies.&quot;&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;/p&gt;
+&lt;p&gt;John.&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Dr. John Breslin&lt;br /&gt;
+DERI, NUI Galway&lt;br /&gt;
+http://sw.deri.org/~jbreslin/&lt;br /&gt;
+john.breslin@deri.org&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/325#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:15 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">325 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Gnizr - social bookmarking application exporting SIOC</title>
+ <link>http://sioc-project.org/node/321</link>
+ <description>&lt;p&gt;http://www.geospatialsemanticweb.com/2007/11/16/gnizr-open-source&lt;/p&gt;
+&lt;p&gt;&quot; The gnizr design is heavily influenced by Web 2.0 and the Semantic&lt;br /&gt;
+Web. It features a del.icio.us-like user interface for tagging and&lt;br /&gt;
+bookmarking. Users can create tag relations using SKOS vocabularies&lt;br /&gt;
+(broader, narrower, and related) and export their saved bookmarks in&lt;br /&gt;
+RDF (in SIOC and Tag Ontology). Saved bookmarks can be viewed in&lt;br /&gt;
+different mashup API (Google Maps, MIT SIMILE Timeline and Aduna&lt;br /&gt;
+Clustermap). &quot;&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/321#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:14 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">321 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>JEvent</title>
+ <link>http://sioc-project.org/node/320</link>
+ <description>&lt;p&gt;Danny Ayers has spotted JEvent:&lt;br /&gt;
+http://dannyayers.com/2007/11/01/jevent&lt;/p&gt;
+&lt;p&gt;This can be interesting to the SIOC community too as its slides&lt;br /&gt;
+mention &quot;Standardized message format based on RDF&quot; as one of the&lt;br /&gt;
+things that are planned to do next.&lt;/p&gt;
+&lt;p&gt;Uldis&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/320#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:13 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">320 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Semantic Web ideas from the DrupalCon Barcelona 2007</title>
+ <link>http://sioc-project.org/node/315</link>
+ <description>&lt;p&gt;[1] is a webpage containing ideas about combining Drupal and Semantic&lt;br /&gt;
+Web. An excerpt follows. Perhaps this is something the SIOC community&lt;br /&gt;
+is interested to take part in.&lt;/p&gt;
+&lt;p&gt;&quot; What Drupal already offers:&lt;br /&gt;
+   Relationship  - need to contact dman and see if he plan to work&lt;br /&gt;
+more on this topic. If that&#039;s the case, we need to join forces.&lt;br /&gt;
+   FOAF - not up to date (4.6), walkah plans to work on it in the next months&lt;br /&gt;
+   SIOC - not up to date (4.7)&lt;br /&gt;
+   Semantic Search - alpha in Drupal 5 - would be nice to have 1.0&lt;br /&gt;
+release for Drupal 5/6/7 . 4 should not be supported since it doesn&#039;t&lt;br /&gt;
+support PHP5 (maybe I&#039;m wrong?) (- hendler) Everything Drupal needs is&lt;br /&gt;
+there as a proof of concept, but needs API, cleanup, and better&lt;br /&gt;
+community.&lt;/p&gt;
+&lt;p&gt;What Drupal needs: a centralized and easy way of storing RDF data to&lt;br /&gt;
+an optimized storage. An RDF storage abstraction layer would allow to&lt;br /&gt;
+use any RDF store:&lt;br /&gt;
+- internal RDF store implemented into Drupal database (semantic search&lt;br /&gt;
+has this via ARC)&lt;br /&gt;
+- external RDF store such as Yars,Sesame, Jena, Virtuoso etc. for&lt;br /&gt;
+better performance and scalability (semantic search has this with&lt;br /&gt;
+Sesame and others - see quick UML diagram here.)&quot;&lt;/p&gt;
+&lt;p&gt;[1] http://groups.drupal.org/node/6279&lt;/p&gt;
+&lt;p&gt;P.S. You may search this groups for &quot;Drupal&quot; to find more info related&lt;br /&gt;
+to the Drupal SIOC module.&lt;/p&gt;
+&lt;p&gt;Uldis&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/315#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:10 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">315 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Call for Proposals: BlogTalk 2008 - The 5th Int&#039;l Conf. on Social Software - Cork, Ireland - 3-4 March 2008</title>
+ <link>http://sioc-project.org/node/317</link>
+ <description>&lt;p&gt;BlogTalk 2008&lt;/p&gt;
+&lt;p&gt;The 5th International Conference on Social Software&lt;br /&gt;
+Cork, Ireland - 3-4 March 2008&lt;/p&gt;
+&lt;p&gt;http://blogtalk.net/&lt;/p&gt;
+&lt;p&gt;= Overview =&lt;/p&gt;
+&lt;p&gt;Following the international success of previous BlogTalk events in 2003,&lt;br /&gt;
+2004, 2005 and 2006, the next BlogTalk - to be held in Cork, Ireland on&lt;br /&gt;
+3-4 March 2008 - is continuing with its focus on social software, while&lt;br /&gt;
+remaining committed to the diverse cultures, practices and tools of our&lt;br /&gt;
+emerging networked society. The conference is designed to maintain a&lt;br /&gt;
+sustainable dialog between developers, innovative academics and scholars&lt;br /&gt;
+who study social software, practitioners and administrators in corporate&lt;br /&gt;
+and educational settings, and other general members of the social&lt;br /&gt;
+software community.&lt;/p&gt;
+&lt;p&gt;We invite you to submit a proposal for presentation at the BlogTalk 2008&lt;br /&gt;
+conference. Possible areas include, but are not limited to:&lt;/p&gt;
+&lt;p&gt;   * Forms and consequences of emerging social software practices&lt;br /&gt;
+   * Social software in enterprise and educational environments&lt;br /&gt;
+   * The political impact of social software&lt;br /&gt;
+   * Applications, prototypes, concepts and standards&lt;/p&gt;
+&lt;p&gt;= Participants and proposal categories =&lt;/p&gt;
+&lt;p&gt;Due to the interdisciplinary nature of the conference, audiences will&lt;br /&gt;
+come from different fields of practice and will have different&lt;br /&gt;
+professional backgrounds. We strongly encourage proposals to bridge&lt;br /&gt;
+these cultural differences and to be understandable for all groups&lt;br /&gt;
+alike. Along those lines, we will offer three different submission&lt;br /&gt;
+categories:&lt;/p&gt;
+&lt;p&gt;   * Academic&lt;br /&gt;
+   * Developer&lt;br /&gt;
+   * Practitioner&lt;/p&gt;
+&lt;p&gt;For academics, BlogTalk is an ideal conference for presenting and&lt;br /&gt;
+exchanging research work from current and future social software&lt;br /&gt;
+projects at an international level. For developers, the conference is a&lt;br /&gt;
+great opportunity to fly ideas, visions and prototypes in front of a&lt;br /&gt;
+distinguished audience of peers, to discuss, to link-up and to learn&lt;br /&gt;
+(developers may choose to give a practical demonstration rather than a&lt;br /&gt;
+formal presentation if they so wish). For practitioners, this is a venue&lt;br /&gt;
+to discuss use cases for social software and to report on any results&lt;br /&gt;
+you may have with like-minded individuals.&lt;/p&gt;
+&lt;p&gt;= Submitting your proposals =&lt;/p&gt;
+&lt;p&gt;Please upload your submission along with some personal information at&lt;br /&gt;
+the http://www.easychair.org/blogtalk2008/ site. You will receive a&lt;br /&gt;
+confirmation of the arrival of your submission within three working&lt;br /&gt;
+days. The submission deadline is November 16th, 2007. The length of the&lt;br /&gt;
+proposal should be between two and four pages. BlogTalk is a&lt;br /&gt;
+peer-reviewed conference.&lt;/p&gt;
+&lt;p&gt;= Timeline and important dates =&lt;/p&gt;
+&lt;p&gt;Proposal submission deadline: November 16th, 2007&lt;/p&gt;
+&lt;p&gt;Notification of acceptance or rejection: December 7th, 2007&lt;/p&gt;
+&lt;p&gt;Paper version due: January 7th, 2008&lt;/p&gt;
+&lt;p&gt;Presentations and abstracts on website due: February 7th, 2008&lt;/p&gt;
+&lt;p&gt;(We will work hard to endow a fund for supporting travel costs. As soon&lt;br /&gt;
+as we review all of the papers we will be able to announce more details.)&lt;/p&gt;
+&lt;p&gt;= Chairs =&lt;/p&gt;
+&lt;p&gt;   * John Breslin&lt;br /&gt;
+   * Thomas N. Burg&lt;br /&gt;
+   * Tom Raftery&lt;br /&gt;
+   * Jan Schmidt&lt;/p&gt;
+&lt;p&gt;= Programme Committee =&lt;/p&gt;
+&lt;p&gt;   * Stowe Boyd&lt;br /&gt;
+   * Dan Brickley&lt;br /&gt;
+   * Jyri Engeström&lt;br /&gt;
+   * Jen Golbeck&lt;br /&gt;
+   * Eugene Eric Kim&lt;br /&gt;
+   * Kevin Marks&lt;br /&gt;
+   * Peter Mika&lt;br /&gt;
+   * José Luis Orihuela&lt;br /&gt;
+   * Jeremy Ruston&lt;br /&gt;
+   * Paolo Valdemarin&lt;br /&gt;
+   * David Weinberger&lt;/p&gt;
+&lt;p&gt;Please visit our website at http://blogtalk.net for more information.&lt;/p&gt;
+&lt;p&gt;-- &lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/317#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:10 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">317 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Internships at DERI on SIOC</title>
+ <link>http://sioc-project.org/node/314</link>
+ <description>&lt;p&gt;Dear all -&lt;/p&gt;
+&lt;p&gt;We currently have funding for some internships at DERI working on SIOC.&lt;/p&gt;
+&lt;p&gt;If you are interested, please send me on your CV.&lt;/p&gt;
+&lt;p&gt;The duration would be for a number of months any time from now until May&lt;br /&gt;
+2008, thanks.&lt;/p&gt;
+&lt;p&gt;John.&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Dr. John Breslin&lt;br /&gt;
+DERI, NUI Galway&lt;br /&gt;
+http://sw.deri.org/~jbreslin/&lt;br /&gt;
+john.breslin@deri.org&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/314#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 12 Dec 2007 10:57:09 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">314 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>ARC2 in preview release shipping with SPARQL+</title>
+ <link>http://sioc-project.org/node/324</link>
+ <description>&lt;p&gt;Hi,&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://bnode.org/&quot;&gt;Benjamin Nowack&lt;/a&gt; has been working the new version of ARC, a RDF store and SPARQL engine in PHP.&lt;br /&gt;Currently in preview release, ARC2 uses &lt;a href=&quot;http://bnode.org/blog/2007/11/26/load-insert-and-delete-in-arc2-via-sparql-plus&quot;&gt;&lt;br /&gt;
+SPARQL+ to load, insert and delete data&lt;/a&gt;.&lt;br /&gt;See the &lt;a href=&quot;http://arc.semsol.org/docs&quot;&gt;documentation&lt;/a&gt; for more details.&lt;br /&gt;&lt;br /&gt;regards,&lt;br /&gt;Stéphane.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group. &lt;br /&gt; To post to this group, send email to sioc-dev@googlegroups.com &lt;br /&gt; To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com &lt;br /&gt; For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en &lt;br /&gt; -~----------~----~----~----~------~----~------~--~---&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/324#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Tue, 27 Nov 2007 17:57:10 +0000</pubDate>
+ <dc:creator>Stephane Corlosquet</dc:creator>
+ <guid isPermaLink="false">324 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Check out my blog</title>
+ <link>http://sioc-project.org/node/323</link>
+ <description>&lt;p&gt;http://gregboutin.typepad.com/greg_boutin_weblog/&lt;/p&gt;
+&lt;p&gt;Relevant suggestions and comments welcome&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/323#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Tue, 27 Nov 2007 03:30:08 +0000</pubDate>
+ <dc:creator>GregBoutin</dc:creator>
+ <guid isPermaLink="false">323 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Potluck - a tool for mixing data</title>
+ <link>http://sioc-project.org/node/322</link>
+ <description>&lt;p&gt;Potluck demo and screencast:&lt;br /&gt;
+http://simile.mit.edu/potluck/&lt;/p&gt;
+&lt;p&gt;Potluck: Semi-Ontology Alignment for Casual Users:&lt;br /&gt;
+http://www.cs.vu.nl/~pmika/swc-2007/Potluck.pdf&lt;/p&gt;
+&lt;p&gt;&quot;Potluck is a web user interface that lets casual users--those without&lt;br /&gt;
+programming skills and data modeling expertise--merge and repurpose&lt;br /&gt;
+heterogeneous Semantic Web data. It lets users merge, navigate,&lt;br /&gt;
+visualize, and clean up data all at the same time, using direct visual&lt;br /&gt;
+manipulation.&lt;br /&gt;
+This iterative process of integrating the data while constructing&lt;br /&gt;
+useful&lt;br /&gt;
+visualizations is desirable when the user is unfamiliar with the data&lt;br /&gt;
+at the beginning--&lt;br /&gt;
+a common case--and wishes to get immediate value out of the data&lt;br /&gt;
+without having to spend the overhead of completely and perfectly&lt;br /&gt;
+integrating the data first&quot;&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/322#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 19 Nov 2007 11:37:24 +0000</pubDate>
+ <dc:creator>Thomas Schandl</dc:creator>
+ <guid isPermaLink="false">322 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>sioc:reply_of in flat threads</title>
+ <link>http://sioc-project.org/node/319</link>
+ <description>&lt;p&gt;Hi!&lt;/p&gt;
+&lt;p&gt;I&#039;m currently working on a SIOC exporter for vBulletin using Alex&#039;s&lt;br /&gt;
+SIOC PHP API.&lt;br /&gt;
+As vBulletin uses flat threads, I was thinking about the correct way&lt;br /&gt;
+to use the sioc:has_reply and sioc:reply_of properties for posts.&lt;/p&gt;
+&lt;p&gt;The problem here is that we can&#039;t know for sure which post the author&lt;br /&gt;
+of a follow-up post is replying to:&lt;br /&gt;
+It could be a reply to the previous post in the thread, to the thread&lt;br /&gt;
+starting post or even to multiple posts in the thread.&lt;br /&gt;
+So how can we use the sioc:reply_of property for a post in a flat&lt;br /&gt;
+thread - should it point to the immediately previous or the thread&lt;br /&gt;
+starting post - or even all or none of previous posts? [1]&lt;/p&gt;
+&lt;p&gt;In a discussion [2] on #sioc irc channel it was proposed to use&lt;br /&gt;
+sioc:Thread [3] to indicate that sioc:Posts are part of a discussion.&lt;br /&gt;
+It was then suggested to either have&lt;br /&gt;
+* each post marked as a reply to the first post or&lt;br /&gt;
+* something like a linked list of posts using sioc:next_by_date and/or&lt;br /&gt;
+sioc:previous_by_date&lt;br /&gt;
+and maybe add a property like sioc:first_post to sioc:Thread so that a&lt;br /&gt;
+query is able to find the first post of a thread (sioc:first_post&lt;br /&gt;
+being a subproperty of sioc:container_of)&lt;/p&gt;
+&lt;p&gt;Then rules could be used to deduce more knowledge about the thread and&lt;br /&gt;
+its reply structure later.&lt;/p&gt;
+&lt;p&gt;Any comments and suggestions are very welcomed.&lt;/p&gt;
+&lt;p&gt;Regards,&lt;br /&gt;
+Thomas&lt;/p&gt;
+&lt;p&gt;[1] Ideally a web forum application would store the IDs of posts that&lt;br /&gt;
+are quoted in a reply, but vBulletin doesn&#039;t do that in a useful way.&lt;/p&gt;
+&lt;p&gt;[2] irc logs: http://tuukka.iki.fi/tmp/sioc-2007-11-05.html#12:52:10&lt;/p&gt;
+&lt;p&gt;[3] sioc:Thread is discussed here:&lt;br /&gt;
+http://groups.google.com/group/sioc-dev/browse_thread/thread/e474ee9f0b964ba2/2c5b07a4bbb49361&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/319#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Tue, 13 Nov 2007 08:46:29 +0000</pubDate>
+ <dc:creator>Thomas Schandl</dc:creator>
+ <guid isPermaLink="false">319 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC, IRC and events</title>
+ <link>http://sioc-project.org/node/318</link>
+ <description>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;Having some thoughts this afternoon on how to represent a user&lt;br /&gt;
+connecting / disconnecting channels on IRC, I thaught a sioc:Event&lt;br /&gt;
+class might be useful.&lt;br /&gt;
+More generally, it can help to represent subscription to&lt;br /&gt;
+sioc:Containers, as IRC join / quit, RSS subscribing, starting&lt;br /&gt;
+membership in a forum ...&lt;/p&gt;
+&lt;p&gt;This Event class could be defined in the SIOC core itself, but we may&lt;br /&gt;
+also reuse (or subclass) existing Event classes from other ontologies&lt;br /&gt;
+(I didn&#039;t look yet, but I think that iCal / music ontology Events may&lt;br /&gt;
+fit there), and use&lt;br /&gt;
+- sioc:has_creator&lt;br /&gt;
+- sioc:has_container&lt;br /&gt;
+- dcterms:created&lt;br /&gt;
+- dc:description&lt;br /&gt;
+to define event property and link it to associated Container / User&lt;/p&gt;
+&lt;p&gt;More specific event types could be then defined in SIOC core or in&lt;br /&gt;
+external module, as, JoinEvent / QuitEvent and AwayEvent / BackEvent.&lt;br /&gt;
+(And even some types specific to the container (as IRCJoinEvent), but&lt;br /&gt;
+I&#039;m afraid it will lead to a lot of event types, while the 4 first&lt;br /&gt;
+ones should be enough to describe almost everything, combined with the&lt;br /&gt;
+sioctypes module to define container type (IRC, Forum ...))&lt;/p&gt;
+&lt;p&gt;Eg:&lt;/p&gt;
+&lt;p&gt;&lt;http://example.org/freenode/channels#sioc&gt; a sioct:ChatChannel.&lt;/http://example.org/freenode/channels#sioc&gt;&lt;/p&gt;
+&lt;p&gt;&lt;http://example.org/freenode/events#200611031215_terraces&gt; a sioc:JoinEvent ;&lt;br /&gt;
+  sioc:has_container &lt;http://example.org/freenode/channels#sioc&gt; ;&lt;br /&gt;
+  sioc:has_creator &lt;http://example.org/freenode/user#terraces&gt; ;&lt;br /&gt;
+  dcterms:created &quot;2006-11-03T12:05:00Z&quot;^^xsd:dateTime .&lt;/http://example.org/freenode/user#terraces&gt;&lt;/http://example.org/freenode/channels#sioc&gt;&lt;/http://example.org/freenode/events#200611031215_terraces&gt;&lt;/p&gt;
+&lt;p&gt;&lt;http://example.org/freenode/events#200611031210_terraces&gt; a sioc:QuitEvent ;&lt;br /&gt;
+  sioc:has_container &lt;http://example.org/freenode/channels#sioc&gt; ;&lt;br /&gt;
+  sioc:has_creator &lt;http://example.org/freenode/user#terraces&gt; ;&lt;br /&gt;
+  dc:description &quot;Leaving&quot; ;&lt;br /&gt;
+  dcterms:created &quot;2006-11-03T12:10:00Z&quot;^^xsd:dateTime .&lt;/http://example.org/freenode/user#terraces&gt;&lt;/http://example.org/freenode/channels#sioc&gt;&lt;/http://example.org/freenode/events#200611031210_terraces&gt;&lt;/p&gt;
+&lt;p&gt;Any comments ?&lt;/p&gt;
+&lt;p&gt;Best,&lt;/p&gt;
+&lt;p&gt;Alex.&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/318#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Sat, 03 Nov 2007 17:02:47 +0000</pubDate>
+ <dc:creator>Alexandre Passant</dc:creator>
+ <guid isPermaLink="false">318 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>RDFa support in SemRadar</title>
+ <link>http://sioc-project.org/node/316</link>
+ <description>&lt;p&gt;
+Hi,&lt;/p&gt;
+&lt;p&gt;as I already announced in RDFa mailing list [1], I&#039;ve written a concept&lt;br /&gt;
+test to detect RDFa in Firefox [2].&lt;/p&gt;
+&lt;p&gt;I think that could be interesting add RDFa support in SemRadar [3].&lt;br /&gt;
+What&#039;s your opinion about it?&lt;/p&gt;
+&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;[1]&lt;br /&gt;
+http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/2007Oct/0044.html&lt;br /&gt;
+[2] http://www.wikier.org/wiki/RDFa&lt;br /&gt;
+[3] http://sioc-project.org/firefox&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Sergio Fernández - sergio.fernandez@fundacionctic.org&lt;br /&gt;
+R&amp;amp;D Deparment&lt;br /&gt;
+CTIC Foundation - www.fundacionctic.org&lt;br /&gt;
+Phone: +34 984 29 12 12&lt;br /&gt;
+Fax:  +34 984 39 06 12&lt;br /&gt;
+Edificio Centros Tecnológicos&lt;br /&gt;
+Parque Científico Tecnológico&lt;br /&gt;
+33203 Cabueñes - Gijón - Asturias - Spain&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/316#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 08 Oct 2007 07:47:29 +0000</pubDate>
+ <dc:creator>Sergio Fernández</dc:creator>
+ <guid isPermaLink="false">316 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>URIs in SIOC</title>
+ <link>http://sioc-project.org/node/313</link>
+ <description>&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;first I have to apologize if this posting floods your inbox; there&lt;br /&gt;
+seem to be problems with google groups and I keep getting error&lt;br /&gt;
+messages about not being allowed to post here... Seems I lost control of&lt;br /&gt;
+what gets posted and how often.&lt;/p&gt;
+&lt;p&gt;My question is about the use of URIs in SIOC:&lt;/p&gt;
+&lt;p&gt;In the few examples on your project homepage and in the sioc-files&lt;br /&gt;
+floating around in the wild it seems that there is a common (and, as&lt;br /&gt;
+far as this mailing list goes, undisputed) practice of using document-&lt;br /&gt;
+URIs for non-document resources. sioc:user, for example, is almost&lt;br /&gt;
+always identified as some HTML-document, same for sioc:site and,&lt;br /&gt;
+sometimes, sioc:container/sioc:forum.&lt;/p&gt;
+&lt;p&gt;Is this by design? Is sioc:user something like a hidden&lt;br /&gt;
+sioc:userHomepage, the way FOAF uses a workplaceHomepage rather than a&lt;br /&gt;
+URI for the company I work at? If so, wouldn&#039;t this break the concept&lt;br /&gt;
+of sioc:user being a sub-property of foaf:Account?&lt;/p&gt;
+&lt;p&gt;In other words: If I use a non-document URI for a sioc:user or a&lt;br /&gt;
+sioc:forum (which a thought would be more elegant), do I break things&lt;br /&gt;
+or is it just a matter of preference?&lt;/p&gt;
+&lt;p&gt;Thank you for your support,&lt;/p&gt;
+&lt;p&gt;Oskar&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/313#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 27 Aug 2007 08:12:23 +0000</pubDate>
+ <dc:creator>Oskar</dc:creator>
+ <guid isPermaLink="false">313 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Wordpress Plugin</title>
+ <link>http://sioc-project.org/node/312</link>
+ <description>&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;Trying to download the SIOC Exporter for Wordpress at&lt;br /&gt;
+http://sioc-project.org/wordpress but am being asked for login details&lt;br /&gt;
+to DERI subversion repository. How can I go about this?&lt;/p&gt;
+&lt;p&gt;Thanks&lt;br /&gt;
+-Simon&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/312#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 16 Aug 2007 12:17:00 +0000</pubDate>
+ <dc:creator>breadman</dc:creator>
+ <guid isPermaLink="false">312 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>CfP: 2nd International ExpertFinder Workshop: FEWS2007 (Finding Experts on the Web with Semantics)</title>
+ <link>http://sioc-project.org/node/307</link>
+ <description>&lt;p&gt;Call for Papers&lt;/p&gt;
+&lt;p&gt;2nd International ExpertFinder Workshop:&lt;br /&gt;
+FEWS2007 (Finding Experts on the Web with Semantics)&lt;br /&gt;
+http://fews.semanticweb.org/&lt;/p&gt;
+&lt;p&gt;Busan, Korea, 12th November 2007&lt;/p&gt;
+&lt;p&gt;co-located with the 6th International Semantic Web Conference (ISWC&lt;br /&gt;
+2007) and 2nd Asian Semantic Web Conference (ASWC 2007)&lt;br /&gt;
+=============================================&lt;/p&gt;
+&lt;p&gt;ExpertFinder (http://rdfweb.org/topic/ExpertFinder) is an emerging&lt;br /&gt;
+collaborative initiative with the aim of devising vocabulary, rule&lt;br /&gt;
+extensions (for e.g. FOAF and SIOC) and best practices to annotate&lt;br /&gt;
+personal home pages, as well as web pages of institutions, conferences,&lt;br /&gt;
+publication indexes, etc. with adequate metadata to enable computer&lt;br /&gt;
+agents to find experts on particular topics.&lt;/p&gt;
+&lt;p&gt;Following the 1st ExpertFinder workshop&lt;br /&gt;
+(http://lsdis.cs.uga.edu/~aleman/efw2007) during the Knowledge Web NoE&lt;br /&gt;
+general assembly in January 2007, the ExpertFinder initiative would like&lt;br /&gt;
+to solicit research contributions from the wider Semantic Web expert&lt;br /&gt;
+community.&lt;/p&gt;
+&lt;p&gt;ExpertFinder&#039;s goal is to enable a Web-scale infrastructure for the&lt;br /&gt;
+creation, publication and use of experts&#039; semantic descriptions to&lt;br /&gt;
+support expert finding scenarios such as group management, disaster&lt;br /&gt;
+response, recruitment, team building, problem solving and on-the-fly&lt;br /&gt;
+consultation. Descriptions of such scenarios can be found at&lt;br /&gt;
+http://rdfweb.org/topic/ExpertFinderUseCases. We welcome all submissions&lt;br /&gt;
+which describe original research contributing to this goal.&lt;/p&gt;
+&lt;p&gt;Topics of Interest&lt;br /&gt;
+==================&lt;/p&gt;
+&lt;p&gt;We welcome all research contributions that address one or more of the&lt;br /&gt;
+following topics:&lt;br /&gt;
+* Specification of vocabularies to describe experts&lt;br /&gt;
+* Reuse of existing standards and taxonomies to describe experts&lt;br /&gt;
+* Extraction of expert descriptions from legacy (meta)data&lt;br /&gt;
+* Use of microformat data to locate experts&lt;br /&gt;
+* International and cross-organisational heterogeneity issues in the&lt;br /&gt;
+expert descriptions&lt;br /&gt;
+* Algorithms for expert finding and recommendation (e.g., mining of&lt;br /&gt;
+social networks)&lt;br /&gt;
+* Expressivity extensions (in logics, rules) to support expert finding&lt;br /&gt;
+processes&lt;br /&gt;
+* Tools for the intuitive creation and maintenance of expert&lt;br /&gt;
+descriptions and associated rules&lt;br /&gt;
+* Web infrastructures for the publication and sharing of expert&lt;br /&gt;
+descriptions (storage, access, querying, rule execution, coordination,&lt;br /&gt;
+communication)&lt;br /&gt;
+* Security, trust and privacy aspects of expert finding&lt;br /&gt;
+* Scalability to the Web level&lt;br /&gt;
+* Integrating expert finding research into legacy systems to support&lt;br /&gt;
+industrial uptake&lt;/p&gt;
+&lt;p&gt;Event Information&lt;br /&gt;
+=================&lt;/p&gt;
+&lt;p&gt;The workshop will take place during the 6th International Semantic Web&lt;br /&gt;
+Conference (ISWC2007) and 2nd Asian Semantic Web Conference (ASWC2007)&lt;/p&gt;
+&lt;p&gt;For every accepted paper at least one of the authors must attend the&lt;br /&gt;
+workshop and must register for the workshop and the main conference.&lt;/p&gt;
+&lt;p&gt;Submission Information&lt;br /&gt;
+=================&lt;/p&gt;
+&lt;p&gt;We invite submissions of papers no longer than 14 pages (including&lt;br /&gt;
+figures, references and appendices). Paper submissions must be formatted&lt;br /&gt;
+in the style of the Springer Publications format for Lecture Notes in&lt;br /&gt;
+Computer Science (LNCS). Guidelines and templates are available at&lt;br /&gt;
+http://www.springer.de/comp/lncs/authors.html.&lt;/p&gt;
+&lt;p&gt;Papers need to be submitted electronically through the conference&lt;br /&gt;
+submission site: https://cmt.research.microsoft.com/ISWC2007/. Papers&lt;br /&gt;
+will be published in accompanying online proceedings (CEUR) as well as&lt;br /&gt;
+in hardcopy which will be available to all workshop attendees.&lt;/p&gt;
+&lt;p&gt;Important Dates&lt;br /&gt;
+================&lt;/p&gt;
+&lt;p&gt;August 13, 2007: Submission of papers&lt;br /&gt;
+September 10, 2007: Notification of acceptance&lt;br /&gt;
+September 30, 2007: Camera - ready versions due&lt;br /&gt;
+November 12, 2007: Workshop&lt;/p&gt;
+&lt;p&gt;Program Committee&lt;br /&gt;
+=================&lt;/p&gt;
+&lt;p&gt;Witold Abramowicz, The Poznan University of Ecomonics, Poland&lt;br /&gt;
+Diego Berrueta, CTIC Foundation, Spain&lt;br /&gt;
+Chris Bizer, Free University of Berlin, Germany&lt;br /&gt;
+Uldis Bojars, DERI, NUI Galway, Ireland&lt;br /&gt;
+Aleman - Meza Boanerges, LSDIS Lab, University of Georgia, USA&lt;br /&gt;
+Irene Celino, CERIEL Politecnico di Milano, Italy&lt;br /&gt;
+Tom Heath, KMI, Open University, UK&lt;br /&gt;
+Tomasz Kaczmarek, The Poznan University of Ecomonics, Poland&lt;br /&gt;
+Uwe Keller, DERI Innsbruck, Austria&lt;br /&gt;
+Alain Leger, France Telekom, France&lt;br /&gt;
+Ning Li, University of Surrey, UK&lt;br /&gt;
+Benjamin Nowack, semsol web semantics, Germany&lt;br /&gt;
+Charles Petrie, Stanford Unviersity, USA&lt;br /&gt;
+Axel Polleres, DERI, NUI Galway, Ireland&lt;br /&gt;
+Leo Sauermann, DFKI, Germany&lt;br /&gt;
+Robert Tolksdorf, Free University of Berlin, Germany&lt;br /&gt;
+Holger Wache, University of Applied Sciences Northwestern Switzerland&lt;br /&gt;
+(FHNW), Switzerland&lt;/p&gt;
+&lt;p&gt;Organizing Committee&lt;br /&gt;
+====================&lt;/p&gt;
+&lt;p&gt;Anna V. Zhdanova, ftw. Forschungszentrum Telekommunikation Wien, Austria&lt;br /&gt;
+Lyndon J. B. Nixon, Free University of Berlin, Germany&lt;br /&gt;
+Malgorzata Mochol, Free University of Berlin, Germany&lt;br /&gt;
+John Breslin, DERI, NUI Galway, Ireland&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/307#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:55 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">307 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Stats of SIOC-Dev - the list is growing (100+)</title>
+ <link>http://sioc-project.org/node/300</link>
+ <description>&lt;p&gt;Dear All,&lt;/p&gt;
+&lt;p&gt;July has arrived and it reminds of something we wanted to write about&lt;br /&gt;
+earlier - SIOC-Dev list has grown to 100+ members. Thank you for your&lt;br /&gt;
+interest in SIOC and we hope to have many interesting and useful&lt;br /&gt;
+discussions here.&lt;/p&gt;
+&lt;p&gt;Actually, 100+ is old news.&lt;/p&gt;
+&lt;p&gt;Currenly there are 119 members who have created a total of 696&lt;br /&gt;
+messages. 100th member of SIOC-Dev is Steve Cayzer [1] and some of&lt;br /&gt;
+recent SIOC-Dev message authors joined just before that (e.g., Keith&lt;br /&gt;
+Alexander and John Hoogstrate). If you joined just recently (maybe you&lt;br /&gt;
+even know you&#039;re 119th? :), welcome to let yourself known and&lt;br /&gt;
+introduce yourself.&lt;/p&gt;
+&lt;p&gt;[1] http://www.hpl.hp.com/personal/Steve_Cayzer/index.html&lt;/p&gt;
+&lt;p&gt;The most active thread of the recent month was: &quot;Ontology suggestions&lt;br /&gt;
+needed&quot; [2], started by John Breslin with 8 messages in total, the&lt;br /&gt;
+last by Alexandre Passant. Due to the way Google Groups shows messages&lt;br /&gt;
+(by the date of the last reply) it falls within the archive of this&lt;br /&gt;
+month even though was started a bit earlier.&lt;/p&gt;
+&lt;p&gt;[2] http://groups.google.com/group/sioc-dev/browse_thread/thread/225a9b684c5495db&lt;/p&gt;
+&lt;p&gt;If someone wants to do a more detailed analysis of SIOC-Dev stats and&lt;br /&gt;
+dynamics that would be great. There sure is more that can be done -&lt;br /&gt;
+highlighting the messages which you see as the most interesting, or&lt;br /&gt;
+those which need to be followed up, etc... Please do your thing and&lt;br /&gt;
+share with others. ;-D&lt;/p&gt;
+&lt;p&gt;The previous report of SIOC-Dev stats [3] raised a question by [GNU] -&lt;br /&gt;
+where is the RDF version? If by this you mean something derived from&lt;br /&gt;
+mailing list posts (e.g., a community of posters) then you will have&lt;br /&gt;
+to create it. But as Sergio pointed out in another reply to [3] - all&lt;br /&gt;
+the data needed (SIOC-Dev posts in SIOC RDF) are available at [4] and&lt;br /&gt;
+the derived information can be acquired via a simple SPARQL query.&lt;/p&gt;
+&lt;p&gt;[3] http://groups.google.com/group/sioc-dev/browse_thread/thread/b8ec744d3ab12374&lt;br /&gt;
+[4] http://swaml.berlios.de/demos/sioc-dev/&lt;/p&gt;
+&lt;p&gt;Of particular importance to SIOC-Dev is a post titled &quot; ANN: New&lt;br /&gt;
+documents - (1) SIOC Implementations list; (2) Relations w. other&lt;br /&gt;
+ontologies; (3) Update to the SIOC Specification&quot; [5]. It announces&lt;br /&gt;
+the results of joint work of everyone here in coming up with a new and&lt;br /&gt;
+solid SIOC specification and two other documents (they&#039;re well worth&lt;br /&gt;
+exploring). Now it&#039;s time to build more applications that put SIOC&lt;br /&gt;
+data to some good use! :)&lt;/p&gt;
+&lt;p&gt;[5] http://groups.google.com/group/sioc-dev/browse_thread/thread/cd2bccb43487c402&lt;/p&gt;
+&lt;p&gt;P.S. And soon, i hope, we will have some more news regarding the&lt;br /&gt;
+documents mentioned in [5]. Stay tuned for more.&lt;/p&gt;
+&lt;p&gt;Uldis&lt;/p&gt;
+&lt;p&gt;[ http://captsolo.net/ ]&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/300#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:54 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">300 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Fwd: [wiki-standards] Wiki Profile Vocabulary</title>
+ <link>http://sioc-project.org/node/301</link>
+ <description>&lt;p&gt;---------- Forwarded message ----------&lt;br /&gt;
+From: Earle Martin &lt;wiki-standards@downlode.org&gt;&lt;br /&gt;
+Date: Jul 6, 2007 2:03 PM&lt;br /&gt;
+Subject: [wiki-standards] Wiki Profile Vocabulary&lt;br /&gt;
+To: The discussion list for wiki standards &lt;wiki-standards@wikisym.org&gt;&lt;/wiki-standards@wikisym.org&gt;&lt;/wiki-standards@downlode.org&gt;&lt;/p&gt;
+&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who attended Tuesday&#039;s IRC meeting&lt;br /&gt;
+(http://wikiohana.net/cgi-bin/wiki.pl/IrcMeetingJuly2007) - it was&lt;br /&gt;
+productive. For those who weren&#039;t there, I was inviting discussion on&lt;br /&gt;
+a project I&#039;ve been working on called the Wiki Profile Vocabulary,&lt;br /&gt;
+which is essentially an RDF vocabulary for describing wikis and&lt;br /&gt;
+aspects of wikis. (The idea was originally suggested by Ward; thanks.)&lt;br /&gt;
+You can find the latest version at&lt;br /&gt;
+http://wikirdf.org/vocabulary/profile/ . There&#039;s also an article I&lt;br /&gt;
+wrote about what a &quot;profile document&quot; is and how to make one, at&lt;br /&gt;
+http://wikirdf.org/docs/creating-wiki-profiles.html .&lt;/p&gt;
+&lt;p&gt;What I&#039;m hoping that wiki authors will do is add support for producing&lt;br /&gt;
+these profile documents to their wiki engines, complete with&lt;br /&gt;
+autodiscovery tags in the &lt;head&gt; sections of their HTML pages, in&lt;br /&gt;
+order for robots and other mechanisms to find the information. In&lt;br /&gt;
+theory, it would be possible to write code to automatically generate&lt;br /&gt;
+sister site links from one wiki to another, just by entering the URI&lt;br /&gt;
+of the other wiki.&lt;/head&gt;&lt;/p&gt;
+&lt;p&gt;Two main points were discussed:&lt;/p&gt;
+&lt;p&gt;The current version of the spec has a naive expectation that wiki URIs&lt;br /&gt;
+are roughly of the form&lt;br /&gt;
+http://example.com/scriptname?args=whatever;page=[page name here].&lt;br /&gt;
+However some wiki engines use URIs of the form&lt;br /&gt;
+http://example.com/scriptname/[page name here]/args. Chris Dent&lt;br /&gt;
+suggested using URI Templates&lt;br /&gt;
+(http://bitworking.org/projects/URI-Templates/) to define the form of&lt;br /&gt;
+URIs, and this was generally agreed to be a good idea.&lt;/p&gt;
+&lt;p&gt;The other point was how to specify an autodiscovery method in page&lt;br /&gt;
+HTML that points to a wiki&#039;s profile document. Suggestions were (note,&lt;br /&gt;
+examples only; your engine&#039;s URI for producing a profile doesn&#039;t&lt;br /&gt;
+matter):&lt;/p&gt;
+&lt;p&gt;A la Dublin Core (suggested by Reini Urban):&lt;br /&gt;
+&lt;meta name=&quot;wiki.profile&quot; type=&quot;application/rdf+xml&quot;&lt;br /&gt;
+link=&quot;/wiki?action=profile&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A la FOAF (http://rdfweb.org/topic/Autodiscovery):&lt;/p&gt;
+&lt;link rel=&quot;meta&quot; type=&quot;application/rdf+xml&quot; href=&quot;/wiki?action=profile&quot; /&gt;
+&lt;p&gt;Hybrid:&lt;/p&gt;
+&lt;link rel=&quot;wiki.profile&quot; type=&quot;application/rdf+xml&quot;&lt;br /&gt;
+href=&quot;/wiki?action=profile&quot;&gt;
+&lt;p&gt;Hybrid, n3 version:&lt;/p&gt;
+&lt;link rel=&quot;wiki.profile&quot; type=&quot;text/rdf+n3&quot;&lt;br /&gt;
+href=&quot;/wiki?action=profile&amp;amp;format=n3&quot;&gt;
+&lt;p&gt;Also, the possibility of having a &quot;standard location&quot; like robots.txt&lt;br /&gt;
+(http://www.robotstxt.org/) was mentioned, but was thought to be too&lt;br /&gt;
+inflexible.&lt;/p&gt;
+&lt;p&gt;Out of all of these, I very much prefer the second, FOAF-style option,&lt;br /&gt;
+because the profile is very much an example of metadata, and I&#039;m not&lt;br /&gt;
+too sure about how the &quot;x.y&quot; syntax works.&lt;/p&gt;
+&lt;p&gt;On the other hand, reading through the W3C specs, it is apparently&lt;br /&gt;
+legal to have any QName (XML qualified name - see&lt;br /&gt;
+http://www.w3.org/TR/xmlschema-2/#QName) as the value of a &quot;link rel&quot;,&lt;br /&gt;
+and a XML prefix can be used as long as it&#039;s been defined in an xmlns&lt;br /&gt;
+attribute (http://www.w3.org/TR/xhtml2/mod-metaAttributes.html#adef_metaAttributes_rel).&lt;/p&gt;
+&lt;p&gt;So I guess it would be possible to do&lt;/p&gt;
+&lt;link rel=&quot;rdfs:isDefinedBy&quot;  type=&quot;application/rdf+xml&quot;&lt;br /&gt;
+href=&quot;/wiki?action=profile#Wiki&quot;&gt;
+&lt;p&gt;...but that seems a little over the top.&lt;br /&gt;
+&lt;link rel=meta /&gt; is a&lt;br /&gt;
+well-known style and shouldn&#039;t cause any problems.&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;/p&gt;
+&lt;p&gt;Earle.&lt;/p&gt;
+&lt;p&gt; --&lt;br /&gt;
+Earle Martin&lt;br /&gt;
+            http://downlode.org/&lt;br /&gt;
+http://purl.org/net/earlemartin/&lt;br /&gt;
+_______________________________________________&lt;/p&gt;
+&lt;p&gt;wiki-standards mailing list. wiki-standards@wikisym.org&lt;br /&gt;
+http://www.wikisym.org/cgi-bin/mailman/listinfo/wiki-standards&lt;/p&gt;
+&lt;p&gt;For the wiki-research, wiki-standards, wikisym-announce mailing lists,&lt;br /&gt;
+please see:&lt;br /&gt;
+http://www.wikisym.org/cgi-bin/mailman/listinfo&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/301#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:54 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">301 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Multi-linguality in SIOC</title>
+ <link>http://sioc-project.org/node/302</link>
+ <description>&lt;p&gt;Hi All,&lt;/p&gt;
+&lt;p&gt;Multi-linguality in SIOC is something we need to think about. Summer&lt;br /&gt;
+is a bit quieter season than usual on SIOC-Dev, but there&#039;s a lot to&lt;br /&gt;
+do and I hope this message will raise us all to some constructive&lt;br /&gt;
+discussion.&lt;/p&gt;
+&lt;p&gt;Immediate reasons that made me write this post:&lt;br /&gt;
+ - SSSW 2007 summer school, which I am at now. It brings together an&lt;br /&gt;
+interesting and very multi-cultural groups of students, tutors and&lt;br /&gt;
+organisers (and you realise English is not the only language in the&lt;br /&gt;
+world);&lt;br /&gt;
+ - Stehanie Booth giving a talk today at Google about languages on the&lt;br /&gt;
+Internet [1].&lt;/p&gt;
+&lt;p&gt;There are 2 main directions for multi-language support in SIOC:&lt;/p&gt;
+&lt;p&gt;1) Ontology&lt;/p&gt;
+&lt;p&gt;We can translate the ontology (labels and comments for all classes and&lt;br /&gt;
+properties) into other languages, similarly as it&#039;s done with DOAP.&lt;br /&gt;
+End-users could benefit from this, but mainly if they use generic RDF&lt;br /&gt;
+browsers which make use of these labels and comments.&lt;/p&gt;
+&lt;p&gt;All the term comments and labels have xml:lang=&quot;en&quot; (thanks for the&lt;br /&gt;
+suggestion to add it!) and hence translations in other languages can&lt;br /&gt;
+be simply added. All we need is those translations. :)&lt;/p&gt;
+&lt;p&gt;2) Data&lt;/p&gt;
+&lt;p&gt;Establish how to express multi-language content in SIOC RDF. This&lt;br /&gt;
+should be entirely possible with the existing SIOC ontology, just need&lt;br /&gt;
+to add a property (dc:lang) to specify what language a post/item is&lt;br /&gt;
+in. This possibly has a larger impact than 1) but a question is how to&lt;br /&gt;
+get those data? Do blog engines (say, WordPress or MovableType) always&lt;br /&gt;
+know what language a post is in?&lt;/p&gt;
+&lt;p&gt;Of course, it depends on our requirements. If we find out that a&lt;br /&gt;
+post/content can have multi-language content inside it (= there is &gt;1&lt;br /&gt;
+language per post) and we want to model these fragments, that may&lt;br /&gt;
+require a somewhat more complex solution.&lt;/p&gt;
+&lt;p&gt;What do you think about it? What are the best approaches to solve&lt;br /&gt;
+this, what are the challenges?&lt;/p&gt;
+&lt;p&gt;[1] http://climbtothestars.org/archives/2007/07/10/talk-languages-on-the-internet-at-google-tomorrow/&lt;/p&gt;
+&lt;p&gt;Uldis&lt;/p&gt;
+&lt;p&gt;[ http://captsolo.net/info/ | http://twitter.com/CaptSolo ]&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/302#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:54 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">302 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>ANN: New documents - (1) SIOC Implementations list; (2) Relations w. other ontologies; (3) Update to the SIOC Specification</title>
+ <link>http://sioc-project.org/node/297</link>
+ <description>&lt;p&gt;Dear All,&lt;/p&gt;
+&lt;p&gt;New SIOC-related documents are here:&lt;/p&gt;
+&lt;p&gt;1) SIOC Ontology: Applications and Implementation Status&lt;/p&gt;
+&lt;p&gt;http://rdfs.org/sioc/applications/&lt;/p&gt;
+&lt;p&gt;Describes all the applications which use and implement SIOC, or are&lt;br /&gt;
+related to this project. (Of course there can be more applications&lt;br /&gt;
+which we are not aware of. If you know of any, please write.)&lt;/p&gt;
+&lt;p&gt; 2) SIOC Ontology: Related Ontologies and RDF Vocabularies&lt;/p&gt;
+&lt;p&gt;http://rdfs.org/sioc/related/&lt;/p&gt;
+&lt;p&gt;Describes vocabularies / ontologies which are related to SIOC, along&lt;br /&gt;
+with details on what these relations are and some examples.&lt;/p&gt;
+&lt;p&gt;---&lt;/p&gt;
+&lt;p&gt;Also published a new version of the SIOC specification:&lt;/p&gt;
+&lt;p&gt;3) SIOC Core Ontology Specification - 12 June 2007 - v1.26&lt;/p&gt;
+&lt;p&gt;http://rdfs.org/sioc/spec/&lt;/p&gt;
+&lt;p&gt;We went over the specification and improved it where possible - better&lt;br /&gt;
+descriptions for terms, improved SIOC ontology figure and all other&lt;br /&gt;
+things that could be made better. sioc:Service related properties&lt;br /&gt;
+moved to a separate module.&lt;/p&gt;
+&lt;p&gt;Detailed term definitions in the specification now properly abbreviate&lt;br /&gt;
+all the namespaces referenced, and also include rdfs:subClassOf and&lt;br /&gt;
+rdfs:subPropertyOf relationships (a result of improvements to the&lt;br /&gt;
+SpecGen4 script).&lt;/p&gt;
+&lt;p&gt;Renamed the main document to the &quot;SIOC Core Ontology Specification&quot; to&lt;br /&gt;
+account for the fact that there are also &quot;SIOC Types module&quot; and &quot;SIOC&lt;br /&gt;
+Services module&quot;.&lt;/p&gt;
+&lt;p&gt;---&lt;/p&gt;
+&lt;p&gt;This feeds into the preparation work for the SIOC member submission,&lt;br /&gt;
+which is now finished.&lt;/p&gt;
+&lt;p&gt;Thanks a lot to all who contributed. Special thanks to John Breslin&lt;br /&gt;
+for co-ordination, to Axel Polleres and Alexandre Passant for creating&lt;br /&gt;
+the intial versions of the related ontologies and the implementations&lt;br /&gt;
+list documents respectively.&lt;/p&gt;
+&lt;p&gt;If you have any questions, ideas or comments please write to the list&lt;br /&gt;
+or to the editors of these documents.&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;br /&gt;
+Uldis&lt;/p&gt;
+&lt;p&gt;[ http://sioc-project.org/ ]&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/297#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:53 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">297 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>ActiveRDF for Python ?</title>
+ <link>http://sioc-project.org/node/299</link>
+ <description>&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;Is there a framework for Python which implements the ActiveRecord&lt;br /&gt;
+model for RDF data, similar as ActiveRDF does for RoR ?&lt;/p&gt;
+&lt;p&gt;Apologies if this is a bit of offtopic. :)&lt;/p&gt;
+&lt;p&gt;P.S. Thanks for the SIOC Explorer [1], it is a great tool for&lt;br /&gt;
+exploring SIOC data. Congratulations for the 2nd place at the&lt;br /&gt;
+Scripting for the Semantic Web challenge!&lt;/p&gt;
+&lt;p&gt;[1] https://launchpad.net/sioc-ex&lt;/p&gt;
+&lt;p&gt;Thanks,&lt;br /&gt;
+Uldis&lt;/p&gt;
+&lt;p&gt;[ http://captsolo.net/ | http://sioc-project.org/ ]&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/299#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:53 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">299 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Nice quote about SIOC</title>
+ <link>http://sioc-project.org/node/295</link>
+ <description>&lt;p&gt;&quot;Unfortunately, MySpace, the most popular social networking service, which houses the biggest social network ever, makes its money by NON-distribution of that data. They sell eyeballs to advertisers, so distributed networking is inherently contrary to their business model.&lt;/p&gt;
+&lt;p&gt;An approach like what SIOC is aiming for, “Semantically Interlinking Online Communities,” is probably what will induce the big shift to Semantic Web practices. What is needed is users, so there will be a place for the next wave to take place.&quot;&lt;/p&gt;
+&lt;p&gt;http://iandavis.com/blog/2007/02/make-or-break-for-the-semantic-web#comment-2620&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/295#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 09 Aug 2007 12:24:50 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">295 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC is a W3C Submission</title>
+ <link>http://sioc-project.org/node/309</link>
+ <description>&lt;p&gt;&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2//EN&quot;&gt;&lt;br /&gt;
+&lt;HTML&gt;&lt;br /&gt;
+&lt;HEAD&gt;&lt;br /&gt;
+&lt;META HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html; charset=iso-8859-1&quot; /&gt;&lt;br /&gt;
+&lt;META NAME=&quot;Generator&quot; CONTENT=&quot;MS Exchange Server version 6.5.7638.1&quot; /&gt;&lt;br /&gt;
+&lt;TITLE&gt;SIOC is a W3C Submission&lt;/title&gt;&lt;br /&gt;
+&lt;/head&gt;&lt;br /&gt;
+&lt;BODY&gt;&lt;/body&gt;&lt;/html&gt;&lt;/!doctype&gt;&lt;/p&gt;
+&lt;!-- Converted from text/plain format --&gt;&lt;!-- Converted from text/plain format --&gt;&lt;p&gt;&lt;BR /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;P&gt;&lt;FONT SIZE=2&gt;Hi,&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+excellent news for all SIOC community: SIOC is now an official member&lt;BR /&gt;&lt;br /&gt;
+submission of W3C:&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;A HREF=&quot;http://www.w3.org/blog/SW/2007/08/01/sioc_is_a_w3c_submission&quot;&gt;http://www.w3.org/blog/SW/2007/08/01/sioc_is_a_w3c_submission&lt;/a&gt;&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+Thank for all submitters, specially John and Uldis, who have made most&lt;BR /&gt;&lt;br /&gt;
+of the work.&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+Best regards,&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+--&lt;BR /&gt;&lt;br /&gt;
+Sergio Fernández López&lt;BR /&gt;&lt;br /&gt;
+Departamento de I+D+i&amp;nbsp; -&amp;nbsp; Fundación CTIC&lt;BR /&gt;&lt;br /&gt;
+E-mail: sergio.fernandez@fundacionctic.org&lt;BR /&gt;&lt;br /&gt;
+Tfno:+34 984 29 12 12&lt;BR /&gt;&lt;br /&gt;
+Parque Científico Tecnológico Gijón-Asturias-Spain&lt;BR /&gt;&lt;br /&gt;
+www.fundacionctic.org&lt;BR /&gt;&lt;br /&gt;
+&lt;BR /&gt;&lt;br /&gt;
+&lt;/font&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group. &lt;br /&gt; To post to this group, send email to sioc-dev@googlegroups.com &lt;br /&gt; To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com &lt;br /&gt; For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en &lt;br /&gt; -~----------~----~----~----~------~----~------~--~---&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/309#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 01 Aug 2007 10:31:50 +0000</pubDate>
+ <dc:creator>Sergio Fernández</dc:creator>
+ <guid isPermaLink="false">309 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Great Technology Stuff!</title>
+ <link>http://sioc-project.org/node/308</link>
+ <description>&lt;p&gt;
+Hey, I found this great resource of technology articles and technology&lt;br /&gt;
+news, there is also a link to a technology and development blog in the&lt;br /&gt;
+links section, where you can post great stuff and share your knowledge&lt;br /&gt;
+http://www.itsmyfunspot.com/techtalk.asp&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/308#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 30 Jul 2007 17:00:36 +0000</pubDate>
+ <dc:creator>Starry</dc:creator>
+ <guid isPermaLink="false">308 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Human Readable &lt;rdfs:label&gt;s</title>
+ <link>http://sioc-project.org/node/306</link>
+ <description>&lt;p&gt;
+Hi all,&lt;/p&gt;
+&lt;p&gt;I notice that the rdfs:label of http://rdfs.org/sioc/ns#creator_of is just&lt;br /&gt;
+&#039;creator_of&#039; which I don&#039;t think is very useful.&lt;/p&gt;
+&lt;p&gt;It makes it harder to build friendly looking public-facing RDF browser&lt;br /&gt;
+applications.&lt;/p&gt;
+&lt;p&gt;I think it would be good to change sioc&#039;s labels to be actually human&lt;br /&gt;
+readable (rather than human decipherable). So &quot;Creator of&quot; rather than&lt;br /&gt;
+&quot;creator_of&quot;&lt;/p&gt;
+&lt;p&gt;It would also be good to add plural/singular labels as appropriate, using&lt;br /&gt;
+Morten Frederikson&#039;s label vocabulary:&lt;br /&gt;
+http://www.wasab.dk/morten/2004/03/label&lt;/p&gt;
+&lt;p&gt;What do you think?&lt;/p&gt;
+&lt;p&gt;Keith&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Keith Alexander&lt;br /&gt;
+http://semwebdev.keithalexander.co.uk/blog/&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/306#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 23 Jul 2007 13:03:01 +0000</pubDate>
+ <dc:creator>keith alexander</dc:creator>
+ <guid isPermaLink="false">306 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>ANN: int.ere.st is lauching!</title>
+ <link>http://sioc-project.org/node/305</link>
+ <description>&lt;p&gt;Hi all,&lt;br /&gt;
+I am happy to inform that http://int.ere.st is launching. The main&lt;br /&gt;
+objective of int.ere.st is to demonstrate how Semantic Web and Web2.0&lt;br /&gt;
+technologies can be combined to provide better metadata creating and&lt;br /&gt;
+sharing support across online communities. With int.ere.st, you can&lt;br /&gt;
+save, tag and bookmark your own as well as others&#039; SCOT ontologies.&lt;br /&gt;
+The tag meta search allows you to look for similar patterns of tagging&lt;br /&gt;
+of persons with their interest based on tags. Various functionalities&lt;br /&gt;
+are given as following:&lt;br /&gt;
+-	various tag search: and(&amp;amp;), or(space), co-occurrence(+), broader(&gt;),&lt;br /&gt;
+and narrower(&amp;lt;)&lt;br /&gt;
+-	User search&lt;br /&gt;
+-	Meta tagging&lt;br /&gt;
+-	Resource search&lt;br /&gt;
+-	Ontology bookmark&lt;br /&gt;
+-	Integrate tagged data across communities&lt;br /&gt;
+-	Share FOAF, SIOC, and SCOT ontologies&lt;br /&gt;
+You can try it at http://int.ere.st&lt;br /&gt;
+And you can get more detailed information about SCOT ontology in&lt;br /&gt;
+http://scot-project.org&lt;br /&gt;
+I will release a next version of the SCOT exporter as soon as&lt;br /&gt;
+possible.&lt;/p&gt;
+&lt;p&gt;Best Regards,&lt;br /&gt;
+haklae&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/305#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 19 Jul 2007 08:47:28 +0000</pubDate>
+ <dc:creator>sonagi.kim</dc:creator>
+ <guid isPermaLink="false">305 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Fwd: [RDFa application] MLE - mailing list archives explorer</title>
+ <link>http://sioc-project.org/node/304</link>
+ <description>&lt;p&gt;
+Hi,&lt;/p&gt;
+&lt;p&gt;here is an interesting new application using SIOC, via RDFa mailing&lt;br /&gt;
+list.&lt;/p&gt;
+&lt;p&gt;--------- Forwarded message --------&lt;br /&gt;
+De: Hausenblas, Michael &lt;michael.hausenblas@joanneum.at&gt;&lt;br /&gt;
+Para: RDFa&lt;br /&gt;
+&lt;public-rdf-in-xhtml-tf@w3.org&gt;
+Cc: SWD WG&lt;br /&gt;
+&lt;public-swd-wg@w3.org&gt;
+Asunto: [RDFa application] MLE - mailing list archives explorer&lt;br /&gt;
+Fecha: Wed, 18 Jul 2007 09:01:16 +0200&lt;/public-swd-wg@w3.org&gt;&lt;/public-rdf-in-xhtml-tf@w3.org&gt;&lt;/michael.hausenblas@joanneum.at&gt;&lt;/p&gt;
+&lt;p&gt;Dear RDFa folks,&lt;/p&gt;
+&lt;p&gt;I&#039;m delighted to announce the availability of MLE (pronounce: Melly)&lt;br /&gt;
+[1]. MLE is the &#039;mailing list archives explorer&#039;, and basically&lt;br /&gt;
+enhances (W3C) mailing list archives with SIOC metadata, deployed&lt;br /&gt;
+with RDFa -as a result, SPARQL queries can be executed on top of it.&lt;/p&gt;
+&lt;p&gt;With MLE it is demonstrated, how existing data sources can be&lt;br /&gt;
+enriched/augmented with RDF, to finally enter the Semantic Web. &lt;/p&gt;
+&lt;p&gt;Any feedback welcome!&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br /&gt;
+	Michael&lt;/p&gt;
+&lt;p&gt;BTW: I recently submitted MLE to the ISWC 2007 challenge [2].&lt;/p&gt;
+&lt;p&gt;[1] http://sw.joanneum.at/mle/xplore.php&lt;br /&gt;
+[2] http://challenge.semanticweb.org/&lt;/p&gt;
+&lt;p&gt;----------------------------------------------------------&lt;br /&gt;
+ Michael Hausenblas, MSc.&lt;br /&gt;
+ Institute of Information Systems &amp;amp; Information Management&lt;br /&gt;
+ JOANNEUM RESEARCH Forschungsgesellschaft mbH&lt;br /&gt;
+ Steyrergasse 17, A-8010 Graz, AUSTRIA&lt;/p&gt;
+&lt;p&gt; &lt;office&gt;&lt;br /&gt;
+    phone: +43-316-876-1193 (fax:-1191)&lt;br /&gt;
+   e-mail: michael.hausenblas@joanneum.at&lt;br /&gt;
+      web: http://www.joanneum.at/iis/ &lt;/office&gt;&lt;/p&gt;
+&lt;private&gt;
+   mobile: +43-660-7621761&lt;br /&gt;
+      web: http://www.sw-app.org/&lt;br /&gt;
+----------------------------------------------------------
+&lt;p&gt;--------- End forwarded message --------&lt;/p&gt;
+&lt;p&gt;Read the thread at:&lt;/p&gt;
+&lt;p&gt;http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/2007Jul/0140.html&lt;/p&gt;
+&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Sergio Fernández - sergio.fernandez@fundacionctic.org&lt;br /&gt;
+R&amp;amp;D Deparment&lt;br /&gt;
+CTIC Foundation - www.fundacionctic.org&lt;br /&gt;
+Phone: +34 984 29 12 12&lt;br /&gt;
+Fax:  +34 984 39 06 12&lt;br /&gt;
+Edificio Centros Tecnológicos&lt;br /&gt;
+Parque Científico Tecnológico&lt;br /&gt;
+33203 Cabueñes - Gijón - Asturias - Spain&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+&lt;/private&gt;</description>
+ <comments>http://sioc-project.org/node/304#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Wed, 18 Jul 2007 12:46:31 +0000</pubDate>
+ <dc:creator>Sergio Fernández</dc:creator>
+ <guid isPermaLink="false">304 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>ANN:  UMBEL Subject Reference Project</title>
+ <link>http://sioc-project.org/node/303</link>
+ <description>&lt;p&gt;Hi All,&lt;/p&gt;
+&lt;p&gt;You are cordially invited to comment or participate in the UMBEL&lt;br /&gt;
+(Upper Mapping and Binding Exchange Layer) project.  I think it will&lt;br /&gt;
+be a very nice complement to SIOC.&lt;/p&gt;
+&lt;p&gt;UMBEL is a lightweight way to describe the subject(s) of Web content,&lt;br /&gt;
+akin to the relationship &quot;isAbout&quot;. It is meant to work universally&lt;br /&gt;
+with HTML, tagging, microformats or other standard practices,&lt;br /&gt;
+including various RDF schemas and more formal ontologies.  Its&lt;br /&gt;
+reference subject &#039;backbone&#039; is derived from the intersection of&lt;br /&gt;
+common subjects found on popularly used Web sites and other accepted&lt;br /&gt;
+subject references.&lt;/p&gt;
+&lt;p&gt;UMBEL is very simple with few ambitions.  It is merely a reference&lt;br /&gt;
+&#039;bag of subjects&#039; to help relate Web data sets to one another.&lt;/p&gt;
+&lt;p&gt;UMBEL makes no presumptions to replace formal domain or upper&lt;br /&gt;
+ontologies, has little or no inferential power, and makes no&lt;br /&gt;
+assumptions about the means to describe or serialize the underlying&lt;br /&gt;
+data.  UMBEL is meant to work with data sets ranging from RSS and Atom&lt;br /&gt;
+feeds to tagging, microformats, RDF, existing schema and other data&lt;br /&gt;
+and metadata models.  UMBEL&#039;s development is being backed by a number&lt;br /&gt;
+of leading open data efforts and entities.&lt;/p&gt;
+&lt;p&gt;In addition to its core reference subjects, the UMBEL project will be&lt;br /&gt;
+providing look up, query, registration, pinging, and related services.&lt;br /&gt;
+The project is completely open under a community process with all&lt;br /&gt;
+products available via Creative Commons licenses.&lt;/p&gt;
+&lt;p&gt;The initial project site is at http://www.umbel.org, including an&lt;br /&gt;
+introduction (http://www.umbel.org/intro.xhtml) (the best place to&lt;br /&gt;
+start!) and the draft project specification (http://www.umbel.org/&lt;br /&gt;
+proposal.xhtml).&lt;/p&gt;
+&lt;p&gt;A mailing list you can monitor or join is at http://groups.google.com/group/umbel-ontology.&lt;/p&gt;
+&lt;p&gt;We welcome and invite your participation!&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;p&gt;Mike Bergman&lt;/p&gt;
+&lt;p&gt;* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *&lt;br /&gt;
+*&lt;br /&gt;
+Please accept apologies in advance if you receive duplicate&lt;br /&gt;
+announcements; this was posted to a few appropriate mailing lists.&lt;/p&gt;
+&lt;p&gt;In future, all announcements will be made directly from the UMBEL Web&lt;br /&gt;
+site.&lt;br /&gt;
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/303#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Thu, 12 Jul 2007 21:26:42 +0000</pubDate>
+ <dc:creator>mkbergman</dc:creator>
+ <guid isPermaLink="false">303 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Tying identity information together?</title>
+ <link>http://sioc-project.org/node/298</link>
+ <description>&lt;p&gt;&lt;basefont&gt;Getting data from multiple sources is great but how in practice is the &amp;quot;digital identity&amp;quot; aspect handled; how do you know the user MrDoe on forum X is MrSmith on forum Y, and user MrJones on Drupal CMS system Z etc? I mean how can you tie these identities together? Ideas on a postcard welcome :)&lt;br /&gt;&lt;br /&gt;
+--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group. &lt;br /&gt; To post to this group, send email to sioc-dev@googlegroups.com &lt;br /&gt; To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com &lt;br /&gt; For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en &lt;br /&gt; -~----------~----~----~----~------~----~------~--~---&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/basefont&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/298#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Fri, 22 Jun 2007 14:17:34 +0000</pubDate>
+ <dc:creator>dryburghl@gmail.com</dc:creator>
+ <guid isPermaLink="false">298 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>WikiRDF</title>
+ <link>http://sioc-project.org/node/296</link>
+ <description>&lt;p&gt;
+Hi,&lt;/p&gt;
+&lt;p&gt;via SWIG [1] I have found the existence of WikiRDF [2], a project with a&lt;br /&gt;
+vocabulary [3] to describe wikis. Probably it&#039;s very related with SIOC&lt;br /&gt;
+Types Module [4].&lt;/p&gt;
+&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;[1] http://swig.xmlhack.com/2007/06/08/2007-06-08.html#1181309672.183875&lt;br /&gt;
+[2] http://wikirdf.org/&lt;br /&gt;
+[3] http://wikirdf.org/vocabularies/wikiprofile/&lt;br /&gt;
+[4] http://rdfs.org/sioc/spec/#sec-modules-types&lt;/p&gt;
+&lt;p&gt;--&lt;br /&gt;
+Sergio Fernández - sergio.fernandez@fundacionctic.org&lt;br /&gt;
+R&amp;amp;D Deparment&lt;br /&gt;
+CTIC Foundation - www.fundacionctic.org&lt;br /&gt;
+Phone: +34 984 29 12 12&lt;br /&gt;
+Fax:  +34 984 39 06 12&lt;br /&gt;
+Edificio Centros Tecnológicos&lt;br /&gt;
+Parque Científico Tecnológico&lt;br /&gt;
+33203 Cabueñes - Gijón - Asturias - Spain&lt;/p&gt;
+&lt;p&gt;--~--~---------~--~----~------------~-------~--~----~&lt;br /&gt;
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.&lt;br /&gt;
+To post to this group, send email to sioc-dev@googlegroups.com&lt;br /&gt;
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com&lt;br /&gt;
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en&lt;br /&gt;
+-~----------~----~----~----~------~----~------~--~---&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/296#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/13">Developers</category>
+ <pubDate>Mon, 11 Jun 2007 10:52:12 +0000</pubDate>
+ <dc:creator>Sergio Fernández</dc:creator>
+ <guid isPermaLink="false">296 at http://sioc-project.org</guid>
+</item>
+</channel>
+</rss>

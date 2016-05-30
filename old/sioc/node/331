@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/331"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/331">
+  <dc:title>SIOC WordPress exporter bug!</dc:title>
+  <sioc:content>The sioc exporter gives a different rdf:about to a foaf:person and a sioc:user. so far so good.
+when the exporter adds a foaf:maker node to a sioc:post, it puts the wrong rdf:about in the foaf:person -
+it gives it the rdf:about of the sioc:user instead of the foaf:person!
+this is a stealth bug but a critical one.
+see for example:
+foaf:person: http://www.adamtibi.net/sioc.axd?sioc_type=user&amp;amp;sioc_id=Adam+Tibi
+sioc:post: http://www.adamtibi.net/sioc.axd?sioc_type=post&amp;amp;sioc_id=81867dd9-ba89-447b-928d-124c6df4a957
+notice the foaf:person-&gt;rdf:about in the first comparing to the second&#039;s foaf:maker-&gt;foaf:person-&gt; rdf:about 
+rock on
+rackoon
+</sioc:content>
+  <dcterms:created>2008-08-24T21:42:53+01:00</dcterms:created>
+  <dcterms:modified>2008-08-24T21:42:53+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/331" rdfs:label="SIOC WordPress exporter bug!" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1916%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1916" />
+</sioc:Post>
+</rdf:RDF>

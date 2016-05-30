@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/311"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/311">
+  <dc:title>SIOC tutorial accepted for WWW2008</dc:title>
+  <sioc:content>I&#039;m happy to announce that our tutorial proposal on SIOC entitled &quot;Interlinking Online Communities and Enriching Social Software with the Semantic Web&quot; (Uldis Bojars and John Breslin of DERI, NUI Galway, Alexandre Passant of EDF R&amp;amp;D / LaLICC, Université Paris 4) has been accepted for WWW2008, the 14th International World Wide Web Conference to be held in Beijing, China in April.  The abstract is as follows:
+This tutorial will give an overview of current research issues and solutions for using Semantic Web technologies in order to enrich social software and to interlink online communities.   We will discuss current standardisation activities as well as research prototypes, focusing on the work of the Semantically-Interlinked Online Communities (SIOC) project.  This initiative recently produced the W3C Member Submission for the SIOC Ontology, which describes a standard way to represent rich data from online community sites and Web 2.0 tools in an interoperable form using RDF.
+On a larger extent, we will cover additional topics such as search and browsing based on community metadata, large-scale data integration in decentralised communities, and linking social media contributions to the social graph.  We will also focus on implementations of tools that work with SIOC data, providing the audience with the know-how to build such systems using open-source APIs and frameworks.  We will also discuss how the technologies described in this tutorial can be applied to enterprise scenarios, and we will detail some commercial applications that are now using SIOC.
+Finally, we will describe how a network of interlinked communities powered by semantic social software can lead towards the creation of Social Semantic Information Spaces.
+
+A full list of the accepted tutorials is available here.
+</sioc:content>
+  <dcterms:created>2007-12-07T11:53:30+00:00</dcterms:created>
+  <dcterms:modified>2008-04-04T17:29:23+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/311" rdfs:label="SIOC tutorial accepted for WWW2008" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

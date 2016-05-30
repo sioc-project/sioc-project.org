@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/exporters"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/exporters">
+  <dc:title>SIOC Exporters</dc:title>
+  <sioc:content>The power of discussion methods via online community sites such as weblogs, bulletin boards and mailing lists lies in their number and the large amount of data that is available for harvesting. Most blog engines already have RSS export functionality, and some boards are beginning to export RSS as well. Since the majority of these discussion engines are based on open source software or can be extended by using plugins, it is straightforward to modify existing export functions or to create plugins to generate metadata conforming to the SIOC ontology. A SIOC API for PHP makes the development of such SIOC plugins and exporters as easy as possible.
+So far, exporters have been developed for:
+
+Aggregators
+Bulletin Boards
+
+Drupal
+phpBB
+
+Mailing Lists
+Weblogs
+
+DotClear
+WordPress
+Drupal
+
+
+A SIOC export API for PHP has also been created. It enables developers to create SIOC export tools without the need to get into technical details about how information is represented in RDF/XML – they are operating at the level of SIOC concepts instead. Thus, developers only have to deal with extracting content from their discussion system databases and then passing it to the API that will render SIOC data. 
+If you wish to create or have created your own exporter, let us know on the SIOC mailing list.
+
+You can view more nodes matching the topic exporters.
+
+</sioc:content>
+  <dcterms:created>2006-09-15T09:00:28+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:57:16+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/exporters" rdfs:label="SIOC Exporters" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

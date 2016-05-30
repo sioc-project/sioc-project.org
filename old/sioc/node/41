@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/41"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/41">
+  <dc:title>Updated Drupal exporter</dc:title>
+  <sioc:content>Hi,
+After submitting a bug and a some requests to SIOC exporter for Drupal, I took the liberty to update the module, as John suggested me.
+Changelog:
+Fix
+- Fixed bug in relative URLs
+  see http://drupal.org/node/40542
+Features
+- Added ability to set queries LIMIT
+  see http://drupal.org/node/40544
+- Added sioc:content_encoded for sioc:Post
+  see http://drupal.org/node/40543
+It should be available in CVS archive soon.
+Cheers,
+Alex.
+(nb: I didn&#039;t tag anything in CVS)
+</sioc:content>
+  <dcterms:created>2005-12-20T22:39:30+00:00</dcterms:created>
+  <dcterms:modified>2006-01-08T19:00:41+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/41" rdfs:label="Updated Drupal exporter" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/12%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/12" />
+</sioc:Post>
+</rdf:RDF>

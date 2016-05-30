@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/88"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/88">
+  <dc:title>more SIOC Ontology changes?</dc:title>
+  <sioc:content>Hello, I just read thru the current version of the SIOC Ontology at
+http://sw.deri.org/svn/2005/08/sioc/spec/sioc.html and have a few
+comments and question:
+1) what is sioc:id for? it is supposed to hold an identifier for a
+instance of a thing? So, it is a IRI/URI ? Feels redundant...
+2) sioc:link to be deprecated... good, fells redundant too :) so it
+should be marked as owl:DeprecatedProperty
+3) created_at, modified_at, description, subject, title are those
+going to be subProperties of DCMI equivalents?
+4) sioc:ip_address this property seems to belong to a &quot;administrative
+domain&quot; of SIOC, I dont see why the ip address is useful to note down
+with the sioc:Post. In contrast, I would like to see my privacy saved
+and I think especially in Germany it may be a legal problem to note
+down the ip of the editor and publish it somehow (via a sioc:Post
+publically accessable).
+5) sioc:next_version/previous_version needs some more annotation.
+6) maybe there should be two new SIOC Modules:
+6.1) SIOC Statistics for things like sioc:views and
+6.2) SIOC Versions for prev/next_version and related properties
+That&#039;s all for today, thanks for the current state of SIOC! :)
+	Christoph
+--
+blogging at: http://B4mad.Net/datenbrei
+info at: http://B4mad.Net/datenbrei/index.php?author=2/foaf.rdf
+gpg key: http://pgpkeys.pca.dfn.de:11371/pks/lookup?
+op=get&amp;amp;search=0xB10DFF8D88FD746C
+x509 root ca certificate: http://b4mad.net/CA/
+</sioc:content>
+  <dcterms:created>2006-06-19T15:47:31+01:00</dcterms:created>
+  <dcterms:modified>2006-06-16T15:46:55+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/88" rdfs:label="more SIOC Ontology changes?" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/28%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/28" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/193"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/193">
+  <dc:title>CfP 1st ExpertFinder Workshop, Berlin, Germany</dc:title>
+  <sioc:content>*apologies if you get multiple copies*
+-------------------------------------------
+                        Call for Position Papers:
+                        1st ExpertFinder Workshop
+                        Berlin, January 16, 2007
+               co-located with the KnowledgeWeb General Assembly
+  ===========================================================
+  The ExpertFinder initiative is pleased to announce its first workshop focusing
+  on research issues and application in the area of devising
+vocabulary extensions
+  and best practices to annotate personal home pages, pages of institutions,
+  conferences, publication indexes, etc. with adequate semantic metadata to find
+  experts on particular topics.
+  We consider this area a highly relevant application field in the
+middle ground of
+  Social Networking and Semantic Web technologies. Many efforts have
+already been put
+  into devising related vocabularies and enabling technologies. In order
+  to get closer to real-world applications and industrial uptake, alignment
+  of these efforts is necessary, which is the mission of the ExpertFinder
+  initiative, see also:
+                http://www.rdfweb.org/topic/ExpertFinder
+  Introduction:
+  -------------
+  ExpertFinder is an international collaborative initiative with the aim of
+  devising vocabulary and rule extensions (for e.g. FOAF and SIOC) and best
+  practices and recommendations towards standardization in order to annotate
+  personal home pages, pages of institutions, conferences, publication indexes,
+  etc. with adequate metadata to enable computer agents to find experts on
+  particular topics.
+  With the present workshop we are seeking position papers from
+various organisations
+  engaged in this area. In particular, we are looking for research contributions
+  and practical applications which can address social and industrial needs by
+  facilitating computer agents in the identification of and communication with
+  relevant expertise and socially interlinking individuals, companies and public
+  institutions.
+  Use cases for such technologies cover a wide range: generation and maintenance
+  of institutional websites and metadata, human resource management, reviewer
+  selection in scientific events, trust and security, enhancing technology
+  platforms such as for instance CORDIS with metadata, topic-based email
+  addressing with intelligent filtering, etc.
+  (see also http://rdfweb.org/topic/ExpertFinderUseCases )
+  Submission Information:
+  -----------------------
+  We encourage the submission of Position Papers which should describe your
+  organisation and interests or overlaps of interest with at least one of the
+  following topics:
+   * Collaborative expert finding with semantic web technologies
+   * RDF vocabularies and Ontologies for social networking
+   * Enabling technologies such as rules extensions for interlinking metadata,
+     recommendation algorithms, semantic search engines, etc. and their use
+     in present projects and use cases (ideally related to the use cases
+     mentioned above)
+   * Best practices and standardization for Semantic Web metadata annotation
+     or enriched Web content in general (e.g. microformats, etc.).
+   * Possible impact of Social Networking and Semantic Web Technologies
+     to Industry.
+  Papers should try to answer the following three questions:
+   * What current research or applications relevant to the ExpertFinder
+     idea are you pursuing?
+   * What future plans or vision do you share with ExpertFinder?
+   * What practical obstacles or research challenges are to be
+     overcome to make ExpertFinder vision come real?
+  Full references should be provided as well as the names and email addresses
+  of all authors. Submissions will be evaluated by the workshop organisers
+  for relevance.
+  Registration and Important Dates:
+  ---------------------------------
+  For every accepted position paper at least one of the authors is expected
+  to attend the workshop. A position paper is not required for participation,
+  however due to limited space, registration will be required. Registration
+  information will be announced on the workshop website once the number of
+  accepted position papers is known.
+  Papers should be crisp (no more than three pages at 12pt text) and can be
+  submitted in PDF or HTML format.
+  The presenters of position papers will be asked to give a 10 min presentation
+  highlighting their ideas.  Both position papers and presentation slides will
+  be published on the public website of the initiative.
+  Position papers are due by December 15, 2006 and should be submitted
+per email to
+         expertfinderworkshop@ag-nbi.de
+  Notification of acceptance will be made by December 19, 2006.
+  Goals of the Workshop:
+  ----------------------
+  The aim of the workshop is for participants to present their work and ideas in
+  the area and to discuss and agree on future directions and cooperations:
+  Initiative members will present the background to the ExpertFinder initiative,
+  an overview of the state of the art and propose directions for joint
+alignment of
+  research, development and standardization efforts in the area to
+maximize value
+  and achieve a critical mass.
+  Each accepted proposal will make a short presentation of their ideas
+and we will
+  try to interactively gather relations and collect missing pieces to
+make the ExpertFinder
+  vision become real. This means that most of the time will be
+allocated for open discussion
+  among all participants or split into subgroups in order to work out
+a concrete research
+  agenda and to consolidate and align current efforts.
+  Venue and Date:
+  ---------------
+  The workshop will take place in Berlin, Germany on Tuesday, January
+16 2007 parallel
+  to the General Assembly of the EU Network of Excellence
+KnowledgeWeb. All    KnowledgeWeb partners and Industry Board members
+will have the opportunity to attend the workshop. For travel
+information, see the General Assembly website:
+http://www.ag-nbi.de/conf/KWEB07/
+  Organizers:
+  -----------
+  Dr Axel Polleres, Universidad Rey Juan Carlos, Spain
+  Dr Anna V. Zhdanova, University of Surrey, UK
+  Lyndon J B Nixon, FU Berlin, Germany
+  Malgorzata Mochol, FU Berlin, Germany
+  The organizers are grateful for sponsorship by the EU NoE Knowledge Web and
+  the Knowledge Nets project, which is part of the InterVal-Berlin
+Research Centre
+  for the Internet Economy, funded by the German Ministry of Research (BMBF).
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-11-22T09:44:32+00:00</dcterms:created>
+  <dcterms:modified>2006-11-21T08:15:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/193" rdfs:label="CfP 1st ExpertFinder Workshop, Berlin, Germany" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/86%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/86" />
+</sioc:Post>
+</rdf:RDF>

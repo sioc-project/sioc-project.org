@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/202"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/202">
+  <dc:title>SIOC for the representation of scientific discourse on the Semantic Web</dc:title>
+  <sioc:content>Hello everyone,
+My name is Matthias Samwald and I am new to this Group. I am the main
+developer of an ontology framework called &#039;bio-zen&#039;, which uses
+established foundational ontologies and metadata standards for
+information representation in the domain of life science and health
+care. bio-zen uses SIOC for the representation of scientific discourse.
+You can get an overview of the recent status of the project here:
+http://esw.w3.org/topic/MatthiasSamwald/DOLCE_bio-zen_patient-record_proposal
+http://neuroscientific.net/index.php?id=43
+These developments will soon be part of the W3C Semantic Web in Health
+Care and Life Science Interest Group:
+http://www.w3.org/2001/sw/hcls/
+If you want to see how SIOC is currently embedded in bio-zen, you can
+import
+http://neuroscientific.net/bio-zen-plus.owl
+into the ontology editor (note that this ontology owl:imports another
+ontology).
+The SIOC classes are a bit hidden in the hierarchy of the foundational
+ontology, most of them are at dol:particular &gt;
+dol:spatio-temporal-particular &gt; dol:endurant &gt;
+dol:non-physical-endurant. I have made some minor changes, mostly I
+have changed some constructs so that the whole ontology is OWL DL, and
+I have removed unnecessary inverse properties. Most or all of these
+changes should be backwards-compatible with the official version of
+SIOC.
+I will soon submit a grant application for bio-zen. If anyone is
+interested in cooperation, please contact me or reply here.
+Matthias Samwald
+Medical University of Vienna, Austria
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-12-13T17:26:10+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:09+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/202" rdfs:label="SIOC for the representation of scientific discourse on the Semantic Web" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/138%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/138" />
+</sioc:Post>
+</rdf:RDF>

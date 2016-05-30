@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/162"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/162">
+  <dc:title>Fwd: [Fwd: RDF Validator moved to new server - graph issues gone]</dc:title>
+  <sioc:content>---------- Forwarded message ----------From: Dan Brickley Date: Sep 20, 2006 10:31 AMSubject: [Fwd: RDF Validator moved to new server - graph issues gone]
+To: semantic-web@w3.orgI&#039;m forwarding this to a wider audience, as I know the RDF Validatorgraphing facility was used and appreciated by many on the SWIG
+discussion list. Thanks to the W3C folks for keeping it running andmoving it to a better server!For those who don&#039;t know what I&#039;m talking about:&amp;nbsp;&amp;nbsp;http://www.w3.org/RDF/Validator/
+The RDF validator there checks your RDF syntax (using ARP, the RDFparser from Jena). If you select &#039;Triples and Graph&#039; it generates agraphical view of your data (using GraphViz for layout).cheers,
+Danps. I have a bookmarklet at http://danbri.org/words/2005/07/30/114 (plusa long tract on various different interpretations of &#039;rdf validator&#039;);
+the bookmarklet defaults to not generating graphs btw.---------- Forwarded message ----------From: olivier Thereaux &amp;lt;ot@w3.org&amp;gt;To: www-rdf-validator &amp;lt;
+www-rdf-validator@w3.org&amp;gt;Date: Wed, 20 Sep 2006 16:28:01 +0900Subject: RDF Validator moved to new server - graph issues goneDear all,Regular users of the RDF validator may have noticed that, over the
+past few months, the service sometimes had some trouble processingand displaying graphs of validated RDF documents. This was due to aprotection mechanism preventing the already overloaded server to spinentirely out of control.
+The RDF validator now happily sits on a newer, puchier and lessloaded machine. As a result, the issue of graphs now showing shouldbecome extremely rare.Many thanks to all for your patience.olivier
+--olivier Thereaux - W3C - http://www.w3.org/People/olivier/W3C Open Source Software: http://www.w3.org/Status
+
+
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group.  To post to this group, send email to sioc-dev@googlegroups.com  To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com  For more options, visit this group at http://groups.google.com/group/sioc-dev  -~----------~----~----~----~------~----~------~--~---
+
+</sioc:content>
+  <dcterms:created>2006-10-06T11:35:04+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:04+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/162" rdfs:label="Fwd: [Fwd: RDF Validator moved to new server - graph issues gone]" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

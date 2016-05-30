@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/82"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/82">
+  <dc:title>RDFa pointing towards SIOC data</dc:title>
+  <sioc:content>Hello mailing list part of the SIOC Community,
+  I have research the RDFa fragments that need to be present on e.g.
+blog postings to link to SIOC data (which should represent the SIOC
+data for the blog posting.
+  After discussion with CaptSolo (and help from EliasT) there is only
+RDFa in the posting that links to (via rdfs:seeAlso) the SIOC data.
+Alternatively a full representation of SIOC data embedded as RDFa in
+the postings XHTML could be done. This clearly introduces a lot of
+redundancy, thus this approach was skipped.
+  As RDFa is GRDDL compatible one may write a XSLT (and link to it
+from the XHMTL head) to retrieve the same rdfs:seeAlso fragment. This
+task  is still open and has a low priority.
+	Happy siocing! [GNU]
+--
+Christoph Görn 
+http://B4mad.Net/FOAF/goern.rdf#goern
+Usability schmusability... where&#039;s the part where we talk about how
+this helps users kick ass?
+</sioc:content>
+  <dcterms:created>2006-06-09T12:28:47+01:00</dcterms:created>
+  <dcterms:modified>2006-06-07T18:27:45+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/82" rdfs:label="RDFa pointing towards SIOC data" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/28%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/28" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/132"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/132">
+  <dc:title>Contribution from UMU to SIOC Ontology</dc:title>
+  <sioc:content>These are the comments, questions and suggestions that have come up as
+a result of our analysis of the SIOC ontology. We have generated
+comments for a number of main concepts in the ontology. The following
+is a list of the concepts which received some comments from our side:
+·Forum
+      -    It is declared that a forum will have a moderator or
+administrator, but how is this relation represented in the model? Does
+it come implicitly by a concrete role played by a subscriber of the
+forum?
+      -    The meaning of  &quot;scope_of&quot;  property is not quite clear.
+Does it mean that a forum is only visible to a fixed type of role? Or
+is it interesting to a specific type of role?
+Another possibility that we have thought of is that this property tries
+to represent the administration relation that we have mentioned in the
+previous point, but it seems a bit weird, because is a user who
+moderates a Forum, not a role.
+      -    A forum could be devoted to a certain group of users, but
+how is represented the relation among forums and groups of users, that
+is to say, how do you associate a group of user with a forum? It seems
+that neither a direct relation nor an indirect one model this fact.
+·Post
+      -    &quot;Content&quot; and &quot;description&quot; properties have got the same
+semantic meaning; it seems that there is no difference between them. We
+have read in [1] that currently it is being considered the idea of
+inserting AtomOWL to represent the content of a post, which sounds to
+be a good choice. So we suppose that these two properties will be
+reduced to one of this AtomOWL type.
+·User
+      -    As in Forum class, we can&#039;t see a relation that allows
+representing that a user is moderator of a forum or site, as is stated
+in the specification. That is to say, we miss a property that relates a
+user with the administrator role with a forum, and its inverse (a forum
+that is administrated by a user), like &quot;subscriber_of&quot;  property does.
+·Usergroup
+      -    Should &quot;usergroups&quot; have a role? It is not explicitly
+mentioned in the specifications, and there isn&#039;t any relation between
+this class and the &quot;Role&quot; class that could state this situation. For
+example, a group of users could be defined as banned users or as
+administrator of a site. Then, users could be added to these groups
+without the necessity of specifying their roles, as they could be
+inferred from the group where they belong to.
+·About  &quot;topic&quot; property
+        We think that &quot;topic&quot; property should be modelled as a class
+and not as a property, since topic is a sufficiently important entity
+to having its own properties: category, description, keywords, impact
+factor, etc.
+[1] http://rdfs.org/node/128
+Best Regards,
+Andrés Muñoz
+University of Murcia, Spain
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-12T10:00:46+01:00</dcterms:created>
+  <dcterms:modified>2006-09-11T08:25:12+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/132" rdfs:label="Contribution from UMU to SIOC Ontology" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/57%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/57" />
+</sioc:Post>
+</rdf:RDF>

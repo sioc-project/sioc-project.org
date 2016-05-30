@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/42"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/42">
+  <dc:title>Announcing SKOS Core 2nd Public Working Drafts</dc:title>
+  <sioc:content>  W3C Semantic Web Best Practices and Deployment Working Group 
+We are pleased to announce the publication of the following technical reports as
+second W3C Public Working Drafts:
+  SKOS Core Guide
+  http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20051102/
+  SKOS Core Vocabulary Specification
+  http://www.w3.org/TR/2005/WD-swbp-skos-core-spec-20051102/
+For a summary of revisions since first Working Draft publication see:
+http://www.w3.org/TR/2005/WD-swbp-skos-core-spec-20051102/#secchanges
+SKOS Core is a simple, flexible and extensible language for expressing in a
+machine-understandable form the structure and content of concept schemes such as
+thesauri, classification schemes, subject heading lists, taxonomies,
+&#039;folksonomies&#039;, other types of controlled vocabulary, and also concept schemes
+embedded in glossaries and terminologies.
+For links to tutorials, presentations, development information, version history,
+translations, proposals, datasets and more see the SKOS Core home page:
+http://www.w3.org/2004/02/skos/core/
+The SKOS Core Vocabulary is an application of the Resource Description Framework
+(RDF).  Using RDF allows data to be linked to and/or merged with other data. In
+practice, this means that distributed sources of data can be meaningfully
+composed and integrated.
+For more information about RDF and related specifications, see the Semantic Web
+Activity home page:
+http://www.w3.org/2001/sw/
+The &#039;SKOS Core Guide&#039; is a guide to the recommended usage of the SKOS Core
+Vocabulary, for readers who already have a basic understanding of RDF concepts.
+The &#039;SKOS Core Vocabulary Specification&#039; gives a reference-style overview of the
+SKOS Core Vocabulary, and describes policies for ownership, naming, persistence
+and change management.
+These reports are second public Working Drafts, and are work in progress.  We
+ask at this stage for feedback from anyone with a potential interest in using
+these specifications, or with relevant expertise.  Please send comments and
+suggestions on these drafts to public-esw-thes@w3.org and begin the subject line
+of the message with &#039;comment:&#039;.  If possible, please send comments before 31st
+January 2006. 
+The Semantic Web Best Practices and Deployment Working Group is committed to a
+public, consensus-driven design environment for SKOS Core, and to this end
+conducts all SKOS-related discussion in public, in particular drawing on
+feedback from the Semantic Web Interest Group mailing list:
+  public-esw-thes@w3.org
+This work has benefited greatly from contributions made
+by the members of this mailing list, and their feedback, suggestions and
+encouragement are gratefully acknowledged.  The public-esw-thes@w3.org mailing
+list is open, and anyone is welcome to subscribe or to post messages.  To
+subscribe, send an email to public-esw-thes-request@w3.org with the subject line
+&#039;subscribe&#039;, or activate the following link:
+  mailto:public-esw-thes-request@w3.org?subject=subscribe
+Yours on behalf of W3C Semantic Web Best Practices and Deployment Working Group,
+Alistair Miles
+---
+Alistair Miles
+Research Associate
+CCLRC - Rutherford Appleton Laboratory
+Building R1 Room 1.60
+Fermi Avenue
+Chilton
+Didcot
+Oxfordshire OX11 0QX
+United Kingdom
+Email: a.j.miles@rl.ac.uk
+Tel: +44 (0)1235 445440
+</sioc:content>
+  <dcterms:created>2006-01-10T11:35:01+00:00</dcterms:created>
+  <dcterms:modified>2005-11-30T10:36:49+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/42" rdfs:label="Announcing SKOS Core 2nd Public Working Drafts" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/16%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/16" />
+</sioc:Post>
+</rdf:RDF>

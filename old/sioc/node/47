@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/47"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/47">
+  <dc:title>Remarks about WP SIOC exporter</dc:title>
+  <sioc:content>Maybe you&#039;re already aware of this, but I&#039;ve just noticed that the WordPress exporter uses 2 relations that are not listed in the specs:
+* sioc:title, instead of dc:title or sioc:subject ?
+* sioc:made, instead of sioc:creator_of ?
+Were these properties in previous specs versions ? or will be ? Or just a mistake :) ?
+</sioc:content>
+  <dcterms:created>2006-03-13T00:47:07+00:00</dcterms:created>
+  <dcterms:modified>2006-03-13T00:47:07+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/47" rdfs:label="Remarks about WP SIOC exporter" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/12%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/12" />
+</sioc:Post>
+</rdf:RDF>

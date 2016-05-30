@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/59"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/59">
+  <dc:title>Revisions to the SIOC Ontology</dc:title>
+  <sioc:content>Hi, All !
+Below is information about proposed changes to the SIOC ontology. John
+Breslin and me have made a summary of them which I am posting here to
+collect your feedback.
+General info about SIOC: http://rdfs.org/sioc/
+The actual changes to RDFS/OWL &quot;code&quot; can be seen as the difference
+between current ontology [1] and the version with proposed changes
+implemented [2]. A part of these changes have been discussed on
+SIOC-Dev and RDF-Web mailing lists before.
+In particular we will be grateful if those of you who have experience
+in designing and improving the FOAF ontology would help improve SIOC.
+[1] http://rdfs.org/sioc/ns
+[2] http://sw.deri.org/svn/sw/2005/08/sioc/ns/sioc
+A detailed list of changes:
+http://sw.deri.org/svn/sw/2005/08/sioc/ns/CHANGES
+=1= Use foaf:Person instead of sioc:User for person&#039;s data
+Name, surname and other personal data will be described via a
+foaf:Person, which will point to the sioc:User (person&#039;s account on the
+community site) using foaf:holdsAccount property.
+Actions:
+ - deprecate sioc:first_name and sioc:last_name
+Open questions:
+ - how to keep the information that this _particular_ account is
+associated with a given e-mail address (or hash of it)? we might also
+deprecate foaf:email and foaf:email_sha1 and use FOAF properties, but
+shall we not worry that when person&#039;s data are smushed together we
+loose a link between OnlineAccount and an e-mail address?
+ - same can be true of name (e.g., if the person has a different name
+specified for each site)
+=2= Changes to properties representing plain/rich content
+sioc:content is redundant - SIOC has sioc:description (subclass of
+dc:description) using which is more consistent.
+sioc:content_encoded - there is already content:encoded module for RSS
+1.0 that can be used to describe encoded content (e.g., HTML). let&#039;s
+leave it out of SIOC ontology for now as encoding and describing rich
+content can be a complex task.
+Actions:
+ - deprecate sioc:content (use sioc:description instead) and
+sioc:content_encoded (use content:encoded instead)
+ - change rdfs:comment for sioc:description accordingly (TODO)
+=3= Cleanup
+Remove:
+- commented out events related properties (starts_at, finished_at,
+event) - events are outside scope
+- sioc:is_category and sioc:is_closed
+- sioc:location
+Change property name / fix description:
+ - sioc:has_revisor to :has_modifier (modification better describes
+changing the Post)
+ - sioc:reference to :links_to (reference has vague meaning, also does
+not fit out naming convention)
+ - sioc:revisor_of to :modifier_of
+Change range:
+ - sioc:type - range to rdfs:Resource
+=4= Change roles / permissions properties
+Change description and domain/range:
+ - sioc:function_of - range to sioc:user (removes Usergroup from its
+range)
+ - sioc:has_scope - range to sioc:Forum
+ - sioc:scope_of - range to Resource
+=5= Changes to subject, topic, title
+Separate subject information into:
+ - text (e.g., keywords) described by sioc:subject
+ - resources (e.g., SKOS concepts) described by sioc:topic
+Actions:
+ - change description of sioc:subject + remove domain of sioc:Post +
+subclass from dc:subject
+ - change description of sioc:topic + change range to rdfs:Resource
+ - add sioc:title property (take former description of sioc:subject) +
+subclass from dc:title
+=6= Names, IDs
+add sioc:id - a new property to represent the ID of the SIOC object
+(e.g., user ID, post ID, ...)
+change description of sioc:name to use it to represent user / account
+names for sioc:User(s) and sioc:Usergroup(s)
+=Open Questions=
+-?- Shall we subclass sioc:created_at and sioc:modified_at from dc:date
+or dc_terms:issued and dc_terms:modified ?
+-?- Shall we subclass sioc:link (used to describe link to a web page
+about the SIOC object - Post, User, ...) from dc:identifier ?
+-?- Shall we change the way we represent modifications / different
+versions of the data? Currently we have rather simple next_version,
+previous_version and has_modifier, modifier_of. Another option is to
+introduce &quot;modification events&quot; that we can add more information to [at
+a cost of the complexity of data/ontology]
+CHANGES file has slightly more details, though I&#039;ve covered 95% of them
+in this post.
+Note to developers: some of the proposed changes will have impact on
+the SIOC export tools. Please come to the SIOC-Dev mailing list,
+discuss and ask for more information if needed.
+Best regards,
+Uldis
+[ http://captsolo.net/info/ ]
+[ CaptSolo @ #foaf and #swig ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-05-12T05:04:27+01:00</dcterms:created>
+  <dcterms:modified>2006-06-15T17:28:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/59" rdfs:label="Revisions to the SIOC Ontology" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

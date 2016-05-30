@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/234"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/234">
+  <dc:title>Special Issue on Web 2.0 and the Semantic Web, Journal of Web Semantics</dc:title>
+  <sioc:content>
+Call for Contributions:
+Journal of Web Semantics
+SPECIAL ISSUE ON
+WEB 2.0 AND THE SEMANTIC WEB
+Submission Deadline: 1 June 2007
+Guest Editors:
+Mark Greaves, Vulcan Inc.
+Peter Mika, Yahoo! Research Barcelona
+The cluster of technologies and design patterns known as Web 2.0 has now
+emerged as the leading contender for the next evolution of the Web.
+Researchers, developers, and venture capitalists are all flocking toward
+the banner of Web 2.0, based on its promise of massively increased
+sharing and participation among web users. At the same time, the
+technologies of the Semantic Web have been quietly maturing and
+spreading, and now provide a clear way to apply a basic level of formal
+semantics to a web infrastructure. In their own way, both of these
+technologies address the fundamental semantic concepts of shared meaning.
+The Journal of Web Semantics solicits high quality papers on the impact
+of the Web 2.0 revolution and the technology, deployment, and vision of
+the Semantic Web. We are interested comparative papers that address both
+directions of the impact:
+1. Semantic Web technologies were initially designed before the rise of
+the Web 2.0 methods for large-scale socially-contributed content. What
+lessons should Semantic Web technologies draw from the popularity of tag
+systems, social networks, mashups, and other Web 2.0 techniques? Does
+the success of the social, user-oriented contribution models of Web 2.0
+impact the way that Semantic Web data should be created, deployed,
+exploited, managed, and shared? In short, should particular aspects of
+the Semantic Web be reconsidered in the light of Web 2.0? For example:
+ How can we exploit the wisdom of crowds to extend and maintain
+ontologies and instance information? Could social software provide the
+missing mechanisms for sharing ontologies and metadata? Are there
+implications for existing family of web ontology languages?
+ Is the existing work on Semantic Web Services adequate to support the
+Web 2.0 world&#039;s practice of creating mashups?
+ Are there particular extensions to the Semantic Web base architecture,
+such as privacy, trust, and provenance, that could provide elegant and
+economical solutions to Web 2.0 issues?
+2. Web 2.0 applications always depend on some type of shared semantics
+-- for example, between the software components of a mashup, or within
+the user community that contributes to a particular tagging system. Can
+the relative precision and rigor of Semantic Web representations and
+inference add significant value to Web 2.0 applications?
+ Are the various Semantic Web &quot;bridge&quot; technologies (like RDFa, GRDDL,
+and SPARQL) adequate to the semantic demands of Web 2.0 applications?
+ Can Semantic Web techniques be used to substantially enhance perceived
+user value in Web 2.0 social networks, for example by linking across
+communities?
+ How could we leverage commercial Web 2.0 applications and design
+patterns to increase the traction and uptake of the Semantic Web?
+Topics of interest range from theoretical issues, methods, tools, system
+descriptions and applications. We are also interested in high-quality,
+carefully-argued discussion papers on the possibilities for convergence
+between these two technologies.
+Important Dates:
+Deadline for submission: 1 June 2007
+Notification of acceptance: 20 July 2007
+Final Papers due: 10 August 2007
+Special issue&#039;s publication: December 2007
+Submissions:
+We are interested in shorter (~10 pages), highly-targeted papers, which
+may include concurrent publication (via the Journal of Web Semantics
+Preprint Server) of companion ontologies, folksonomies, open-source
+code, and the like. On-line paper submission is required, via Elseviers
+Authors Portal for the Journal of Web Semantics. Elsevier has requested
+that we remind authors to select Special Issue: Socio-Semantic Web
+when they reach the Article Type step in the on-line submission process.
+Key URLs and Contact Info:
+Elsevier &quot;Journal of Web Semantics&quot; home page and Author Portal:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/671322/description#description
+Journal of Web Semantics Preprint Server:
+http://www.websemanticsjournal.org/
+For any questions, please contact the guest editors:
+Mark Greaves
+Vulcan Inc.
+505 Fifth Ave S., Suite 900
+Seattle, WA 98104 USA
+markg@vulcan.com
++1 (206) 342 2276
+Peter Mika
+Yahoo! Research Barcelona
+Ocata 1, 1st floor
+08003 Barcelona
+Catalunya, Spain
+pmika@yahoo-inc.com
++34 935 421 165
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-15T12:28:56+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:20+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/234" rdfs:label="Special Issue on Web 2.0 and the Semantic Web, Journal of Web Semantics" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/202%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/202" />
+</sioc:Post>
+</rdf:RDF>

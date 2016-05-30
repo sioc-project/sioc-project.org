@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/206"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/206">
+  <dc:title>[doap-interest] doap:user?</dc:title>
+  <sioc:content>On 12/19/06, Benjamin Nowack  wrote:
+&gt; any chance I could talk you into adding a &quot;user&quot; property
+&gt; to DOAP? I&#039;m building an RDFy social networking system
+&gt; where members will be able to list the tools they are using
+&gt; (for community building bla). As the software descriptions
+&gt; are DOAP-based, it would be great to have such a property
+&gt; in the core vocab as well, e.g.
+&gt;
+&gt; [[
+&gt; 
+&gt;   
+&gt;   user
+&gt;   User of the software of the
+&gt; project.
+&gt;   
+&gt;   
+&gt; 
+&gt; ]]
+We discussed a similar idea on #sioc IRC channel. I would suggest to
+start with the other direction for this relation first - software
+which a foaf:Person is using.
+A DOAP profile can&#039;t possibly list all users of a software tool or
+keep it up-to-date but if information on software used by people is
+attached to their FOAF profiles you can always aggregate them and
+discover who is using what.
+That&#039;d be good use case - to see what tools your friends are using.
+As an experiment in this direction Christoph Gorn added a new property
+to his FOAF-X vocabulary which would allow to describe this relation
+(what software is somebody using). He also added an example
+description to his FOAF profile (one this I remember is that he&#039;s
+using VIM :), but I don&#039;t see it now.
+Christoph, could you tell a bit more about it?
+Best,
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-23T10:00:11+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:11+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/206" rdfs:label="[doap-interest] doap:user?" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/343"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/343">
+  <dc:title>DERI “SIOC” Research Wins Seven-Year Influential Paper Award</dc:title>
+  <sioc:content>A paper on the SIOC framework from the Digital Enterprise Research Institute at NUI Galway, funded by Science Foundation Ireland, has just been announced as the winner of the seven-year influential paper award from the Extended Semantic Web Conference (ESWC), an annual conference held in Europe that focuses on next-generation web technologies.
+The paper, entitled “Towards Semantically-Interlinked Online Communities”, was published in 2005, and has been cited over 170 times. The paper received glowing praise from the award reviewers in terms of impact, community, tool availability and sustainability.
+SIOC provides methods for interconnecting Social Web platforms such as forums, blogs and microblogs to each other. It consists of the SIOC ontology, an open-standard machine readable format for expressing the structure of Internet discussion methods, of SIOC metadata producers for a number of popular social platforms and content management systems, and of storage and browsing/searching systems for leveraging this SIOC data. SIOC has since been deployed in hundreds of platforms on thousands of websites including Yahoo! SearchMonkey, the Newsweek website, and various US Government agencies powered by Drupal 7.
+The paper authors are John Breslin, social software team leader at DERI and lecturer in Engineering and Informatics at NUI Galway; Andreas Harth, former researcher at DERI and now a postdoctoral researcher at the Karlsruhe Institute of Technology; Uldis Bojars, a PhD graduate from DERI, NUI Galway and now a researcher at the National Library of Latvia, and Stefan Decker, director of DERI, NUI Galway.
+Judging the competition were Asunción Gómez-Pérez, Artificial Intelligence (AI) director from UPM Madrid, Spain; James Hendler, an AI researcher at Rensselaer Polytechnic Institute, USA, and one of the originators of the Semantic Web; and Frank van Harmelen, Professor of Knowledge Representation and Reasoning at the VU University Amsterdam, The Netherlands.
+The paper can be downloaded at: http://bit.ly/KQ2iK4
+</sioc:content>
+  <dcterms:created>2012-06-13T12:57:21+01:00</dcterms:created>
+  <dcterms:modified>2012-07-10T17:54:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/343" rdfs:label="DERI “SIOC” Research Wins Seven-Year Influential Paper Award" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

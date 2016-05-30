@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/160"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/160">
+  <dc:title>[Fwd: [Expertfinder-dev] Call for ExpertFinder-Telecon Wed, September 20 5pm CET,]</dc:title>
+  <sioc:content>&gt; Now it is time to get things going, gather your comments and start
+&gt; implementing! In order to kick off the whole effort and discuss
+&gt; strategies in which form to proceed we invite you all for a conference
+&gt; call on
+&gt;
+&gt;    Wed, September 20, 5pm-6pm CET / 11am-12noon EDT
+&gt;
+[...]
+&gt; * Alignment with overlapping efforts (e.g. SIOC)
+[...]
+I hope there are SIOC developers who will participate in the telco.
+Unfortunately I will not be able to join, but John Breslin will be
+there.
+Axel, could you please inform this list about SIOC releveant things
+there were discussed in the telecon once it&#039;s finished?
+Thanks,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-06T11:35:02+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:02+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/160" rdfs:label="[Fwd: [Expertfinder-dev] Call for ExpertFinder-Telecon Wed, September 20 5pm CET,]" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

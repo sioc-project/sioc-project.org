@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/thanks"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/thanks">
+  <dc:title>SIOC Thanks</dc:title>
+  <sioc:content>This resource is being funded by Science Foundation Ireland under grant number SFI/02/CE1/I131 at the Digital Enterprise Research Institute, National University of Ireland, Galway.
+We would like to thank and acknowledge the following for their support and/or inspiration:
+
+Our site content and metadata are provided using these technologies:
+
+We would also like to thank all of our community members for supporting the development of SIOC.
+</sioc:content>
+  <dcterms:created>2006-09-14T11:56:30+01:00</dcterms:created>
+  <dcterms:modified>2006-09-15T12:02:22+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/thanks" rdfs:label="SIOC Thanks" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/251"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/251">
+  <dc:title>Experiences with SIOC data</dc:title>
+  <sioc:content>Hello there.
+As Eyal Oren has announced on this list a few days ago, we developed a
+SIOC explorer web application, which usually can be found at:
+http://www.activerdf.org/sioc/
+The new version of the SIOC explorer, allows you to see all posts in
+the database from all forums for one day, week or month. You can
+browse all posts written by one author.
+If more then one forum in the database use topics with the same label,
+then you can also view all posts with that topic label.
+The SIOC explorer has been submitted to the Semantic Web scripting
+challenge,
+(http://www.semanticscripting.org/SFSW2007/)
+and I have written a short 2 page description of it.
+During the development of the SIOC explorer I had a few insights and
+ideas regarding SIOC data and how it is currently used by some
+exporters:
+phpBB export:
+========
+When using the SIOC data from http://sioc-project.org/forum , I could
+not help but notice, that the sioc:posts do not have any content.
+Is this by design? I would strongly encourage exporting the content of
+the posts by the phpBB exporter.
+use of inverse properties:
+==============
+Currently the output of the wordpress exporter often only uses one
+direction in cases in which a property is available in both
+directions, like: sioc:container_of and sioc:has_container.
+Most non-java RDF libraries current don&#039;t support inferring of inverse
+properties (AFAIK).
+It has been explained to me, that the decision to export only one
+direction has been made on the side of the wordpress exporter, but now
+imagine that every exporter chooses a different way to treat bi-
+directional properties.
+The application developer cant make any assumption about which
+direction of the property will be used, and has to handle both cases
+in his application logic.
+I would advocate using both directions in every exporter. In the end,
+humans neither create nor read or process the rdf data, and this makes
+it easier for the currently sometimes primitive rdf inferencing
+support of various scripting languages.
+use of dc:created
+==========
+Again, this is due to non inferencing triple stores:
+In order to provide the basic functionality of every RSS aggregator,
+the user has to be able to view the posts sorted temporaly, and he
+will want to see posts which where created during a specific time
+span.
+Currently most triple stores, even advanced ones dont support finding
+dates by time period. So we had to materialize the dc:created
+timestamp, like this:
+siocex:month, siocex:day, siocex:year, siocex:week.
+I think there is no easy solution for this, except to wait for triple
+stores to support xsd:date.
+creator of &quot;real posts&quot; and &quot;replies&quot; is different:
+===========================
+In the output of the wordpress exporter, &quot;real posts&quot; have the
+sioc:creator property and &quot;comments for posts&quot; have the foaf:maker
+property, if I recall correctly.
+I am not sure of the motivation for this, but it might be useful to
+consider using the same type of entity for both.
+That would enable object consolidation for creators of posts: I could
+click on the creator of a post, and then see als his posts but also
+all the comments he wrote.
+Of course the real reason for this, is the one, which I will discuss
+at the end of this email.
+sioc:topic is always site specific:
+==================
+Reusing sioc:topic right now across site borders is extremely
+difficult.
+The wordpress exporter prepends the site url in front of the category/
+tag used on the blog.
+Currently in the SIOC explorer, we consolidate topics if their labels
+are downcased similar.
+Of course, there is no easy solution to consolidate topics, or to come
+up with shared URIs for topics.
+URLs in general are not shared
+==================
+In general, the data from the wordpress exporter exhibits the problem
+that all instances of concepts have global URIs, but almost no URIs
+are reused between sites.
+To state it in a provocative manner:
+The only benefit of using SIOC right now compared to RSS, is that the
+modelling focus is not so much on articles/posts but also on users/
+authors and their connections.
+Advocates of RSS can counter the argument &quot;SIOC data enables different
+types of sites to publish their content in a unified format&quot; with the
+simple argument &quot;a lof of different sites currently also just use
+RSS&quot;.
+So what needs to change in order for SIOC data to be useful in a way
+that RSS data will never be:
+URIs of concept instances have to be created in a unified way, and
+should be reused between sites.
+This of curse is one of the problems on the Semantic Web, for which no
+consensus solution exists.
+But as this is one of the important challenges of Semantic Web
+adoption on a wide scale, and because SIOC could demonstrate the
+potential of the Semantic Web, I would advocate that SIOC be one of
+the first Ontologies to provide for a unified naming and sharing
+approach.
+Other ontology efforts will encounter the same problem sooner or
+later, and SIOC could be a precedence here and provide a good example/
+best practice.
+Possible Solutions:
+==========
+Currently I can imagine two pragramatic approaches to this problem, as
+far as
+the wordpress exporter is concerned:
+a) ask the user for more information:
+- what is the real foaf profile of a blog author, and if he has none,
+of some simple links to sites which let the user create one.
+- ask comment posters for their foaf profile
+- during post creation, check if URIs for the used tags/catgeories/
+topics exist, e.g. by asking technorati or a similiar site, and if
+none are found, give the user some choices to create good URIs for the
+categories
+b.) do automatic discovery:
+- try to find the foaf file of the user in an autonomic way and then
+ask him if the found one is the right one
+- try to find URIs for the topics automatically, and ask if they
+should be used
+(This might surpass the capabilities of wordpress plugins, but they
+are non the less first tiny steps to adress this huge and important
+problem.)
+So to close this: I hope these comments and experiences can be of use
+to the SIOC community, and I hope that I did not step on anybodys
+toes :)
+cheers, Benjamin.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-12T19:34:31+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/251" rdfs:label="Experiences with SIOC data" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/281%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/281" />
+</sioc:Post>
+</rdf:RDF>

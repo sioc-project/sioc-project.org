@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/242"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/242">
+  <dc:title>Publications around SIOC</dc:title>
+  <sioc:content>
+Hi,
+this afternoon Uldis has commented on #sioc the idea to start writing on
+this list about publications that were accepted or presented related
+with SIOC ontology. Obviously the next step will be to join all on the
+Web page [1].
+Ok, I will be first: a few days ago we receive the notification [2]
+telling us that a paper about SWAML [3], titled &quot;Mailing lists meet the
+Semantic Web&quot;, has been accepted for workshop on Social Aspects of the
+Web (SAW 2007 [4]) that will celebrate on April in Poznan (Poland). SAW
+2007 is organised in conjunction with 10th International Conference on
+Business Information Systems (BIS2007 [5]), in co-operation with ACM
+SIGMIS. We&#039;ll publish the final paper in the next weeks.
+Well, I&#039;m sure that there are more scientific work around SIOC on last
+months. Please, tell us.
+Regards,
+[1] http://sioc-project.org/publications
+[2] http://swaml.berlios.de/news/24862
+[3] http://swaml.berlios.de/
+[4] http://bis.kie.ae.poznan.pl/10th_bis/cfp-saw.shtml
+[5] http://bis.kie.ae.poznan.pl/10th_bis
+--
+__      ___ _   _
+\ \    / (_) |_(_)___ _ _   Sergio Fdez
+ \ \/\/ /| | / / / -_) &#039;_|  GNU/LiNUX User: #298803
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T22:12:37+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/242" rdfs:label="Publications around SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/67%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/67" />
+</sioc:Post>
+</rdf:RDF>

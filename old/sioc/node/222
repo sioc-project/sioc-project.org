@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/network"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/network">
+  <dc:title>Investigation of Social Networks in the Blogosphere</dc:title>
+  <sioc:content>We seek out to investigate the social networks manifested in weblogs. Our dataset, derived from an initial list of URIs, consists of 3.9M files in XML or RDF format, totalling over 400M statements in RDF. We continue by applying well- known network analysis algorithm to parts of the derived network. Our experiments show that links analysis algorithms benefit from input in a common, structured data model.
+Paper in PDF
+More information will be added on March 28, 2007
+</sioc:content>
+  <dcterms:created>2007-03-27T16:45:52+01:00</dcterms:created>
+  <dcterms:modified>2007-03-27T22:23:26+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/network" rdfs:label="Investigation of Social Networks in the Blogosphere" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/14" rdfs:label="Applications" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

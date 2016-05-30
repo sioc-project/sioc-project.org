@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/firefox"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/firefox">
+  <dc:title>Semantic Radar for Firefox</dc:title>
+  <sioc:content>Semantic Radar is a semantic metadata detector for Mozilla Firefox.
+
+
+
+Install Semantic Radar
+
+Available at Mozilla Add-ons site. It is a browser extension which inspects web pages for links to Semantic Web metadata and informs about presence of it by showing an icon in browser&#039;s status bar. Currently it supports RDF autodiscovery (SIOC, FOAF, DOAP and any type) and RDFa metadata detection.
+New: Semantic Radar can now ping the Semantic Web Ping Service when metadata are detected. This allows for a community based discovery of the Semantic Web data.
+Written by Uldis Bojārs and Sergio Fernández. If you have comments or bug reports please write to the SIOC-Dev mailing list.
+...
+</sioc:content>
+  <dcterms:created>2008-02-21T13:38:12+00:00</dcterms:created>
+  <dcterms:modified>2009-08-01T14:44:17+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/firefox" rdfs:label="Semantic Radar for Firefox" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/67%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/67" />
+</sioc:Post>
+</rdf:RDF>

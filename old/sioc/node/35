@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/35"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/35">
+  <dc:title>WordPress Exporter</dc:title>
+  <sioc:content>The plugin looks good - I see something we don&#039;t have in our specification / namespace yet:
+From the Site concept:
+ &amp;lt;sioc:has_group rdf:nodeID=&quot;authors&quot;/&amp;gt;
+I need to think about this again, as before we were using a distinct property name to link two concepts, so that the property isn&#039;t biased towards either concept.  For example, Forums are a &quot;container_of&quot; Posts (rather than a Forum &quot;has_post&quot; which is a Post), and Sites host Forums, etc.
+So what is the relationship between Site and Group? :)  Nothing obvious pops into my head just now, but there is something.
+Maybe Group is linked to Site via a Role, Group -&gt; has_function -&gt; Role -&gt; has_scope -&gt; Site.
+</sioc:content>
+  <dcterms:created>2005-11-09T15:11:22+00:00</dcterms:created>
+  <dcterms:modified>2005-11-09T15:12:15+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/35" rdfs:label="WordPress Exporter" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/295"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/295">
+  <dc:title>Nice quote about SIOC</dc:title>
+  <sioc:content>&quot;Unfortunately, MySpace, the most popular social networking service, which houses the biggest social network ever, makes its money by NON-distribution of that data. They sell eyeballs to advertisers, so distributed networking is inherently contrary to their business model.
+An approach like what SIOC is aiming for, “Semantically Interlinking Online Communities,” is probably what will induce the big shift to Semantic Web practices. What is needed is users, so there will be a place for the next wave to take place.&quot;
+http://iandavis.com/blog/2007/02/make-or-break-for-the-semantic-web#comment-2620
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:50+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:50+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/295" rdfs:label="Nice quote about SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

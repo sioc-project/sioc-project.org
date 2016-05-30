@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/170"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/170">
+  <dc:title>SIOC extensions proposal</dc:title>
+  <sioc:content>Hi All,
+The following are some ideas we want to propose for extensions to SIOC
+ontology.
+Best Regards,
+--
+Mitko Iliev
+Developer Virtuoso Team
+OpenLink Software
+http://www.openlinksw.com/virtuoso
+Cross Platform Web Services Middleware
+SIOC extensions
+Class sioc:Forum
+Suggested additions:
+In domain of
+sioc:topic  - The topic tags can be inferred from the content.
+sioc:feed range uri.  This occurs once per each type of aggregation
+resource containing data from the forum.  Examples are RSS feeds, ATOM,
+OPML etc.  The URI can be used for differentiating the format and
+reading the feed itself provides final certainty.  We do not create a
+separate node for all this information here.
+sioc:related_feed  range uri / This represents links to related feed
+files which do not themselves contain data from the forum.  Links in a
+blog roll are examples.
+sioc:membership_model one of sioc:private, sioc:public, sioc:moderated.
+ Many social applications such as Yahoo groups have policies for
+accepting new members/subscribers.  This can represent the model
+applicable there.
+Subclasses of sioc:Forum
+Class sioc:Weblog
+In domain of:
+Class sioc:Wiki
+In domain of:
+sioc:markup range string  - Name of the markup used, e.g. twiki.
+Class sioc:Bookmarks
+Class sioc:News_reader
+This is intended for an RSS/ATOM aggregator.
+In domain of
+sioc:links_to range uri
+This references the feed URI&#039;s which are being aggregated  by this
+reader.
+Class sioc:Newsgroup
+This is intended for a NNTP newsgroup, a Yahoo groups type forum etc.
+In domain of
+sioc:posting one of sioc:public, sioc:moderated, sioc:read_only.
+Class sioc:Photo_album
+This is intended for both a photo archive site and an individual album,
+where album is analogous with a file system directory.
+Subcllasses of sioc:Post
+Class sioc:Photo
+In domain of:
+Any attributes from  EXIF in the namespace
+http://www.w3.org/2003/12/exif/ns  .
+Further Possibilities
+The items discussed so far are typically public.  If we extend  the
+ontology to managing a desktop or user workspace, we can also model
+email and file system content.   This would be a RDF version of Apple&#039;s
+Spotlight, so to speak.  Acdcess privileges and full text search will
+be significant there, ODS will experiment with these things.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-15T12:40:21+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:11+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/170" rdfs:label="SIOC extensions proposal" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/65%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/65" />
+</sioc:Post>
+</rdf:RDF>

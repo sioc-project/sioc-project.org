@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/wordpress"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/wordpress">
+  <dc:title>SIOC Exporter for WordPress</dc:title>
+  <sioc:content>Uldis Bojars has written a SIOC exporter plugin for WordPress 1.5+. This allows the production of SIOC metadata from your weblog.
+The plugin can be found at http://sw.deri.org/svn/sw/2005/08/sioc/wordpress/
+To install save plugin files [sioc.php + sioc-include.php] to the WordPress plugin directory (located in ./wp-content/plugins) and enable this plugin in the Admin-&gt;Plugins menu.
+Data created by plugin can be accessed by following autodiscovery links that are added to the blog&#039;s main page and all blog posts. Main SIOC page can be found at your.host.here/wordpress-folder/?sioc_type=site.
+Semantic Radar and SIOC
+You may use Semantic Radar to detect presence of SIOC data on web pages. It is a Firefox extension that detects links to RDF metadata (SIOC, FOAF, DOAP, ...) and informs about them via a browser status bar icon. Clicking on the icon will provide a user-friendly view of RDF data.
+News: Content negotiation added (in v1.21).
+Point RDF content regotiation aware tool such as Tabulator to a blog post and it will get back RDF data, avoiding the need to find and follow autodiscovery links in HTML.
+</sioc:content>
+  <dcterms:created>2006-05-24T17:56:00+01:00</dcterms:created>
+  <dcterms:modified>2006-11-08T11:01:04+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/wordpress" rdfs:label="SIOC Exporter for WordPress" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/272"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/272">
+  <dc:title>State of the SIOC-o-sphere (#4)</dc:title>
+  <sioc:content>Since my last SIOC update in November, here are some of the latest happenings from the SIOC-o-sphere:
+
+Update! Adam Gzella has reminded me of the integration of SIOC support within both Social Semantic Collaborative Filtering (SSCF) and JeromeDL.  To see SSCF in action, try out notitio.us/bookmarks, which can also display SIOC data.
+Jaroslaw Dobrzanski reported on his use of SIOC in IKHarvester, a component for Didaskon.  He has since produced a longer description of what IKHarvester does.  IKHarvester collects data from semantic social spaces (wikis, blogs, etc.) and provides it to Didaskon as informal Learning Objects (LOs).
+I&#039;ve written the first version of a SIOC exporter for phpBB 2.0.x.
+Eyal and Benjamin have produced an explorer for SIOC forums.  It&#039;s written using Ruby on Rails and their ActiveRDF / SWORD Semantic Web application framework for Rails.  You can get it from the SIOC explorer page.
+SWAML has moved from Debian unstable to testing, and also won a Spanish free software contest for universities.  Congratulations!
+OpenLink Data Spaces (ODS) SPARQL endpoints now provide access to SIOC instance data from a range of ODS application instances including blogs, wikis, aggregated feeds (RSS 1.0, 2.0 and Atom), shared bookmarks, discussions (i.e. comment threads), photo galleries, briefcases (e.g. WebDAV file servers), etc.  The live ODS demo server and MyOpenLink.net (alpha) service are examples of ODS instances that can expose SIOC instance data to SPARQL query service clients, also in the form of real and virtual RDF graphs.  The ODS SIOC reference guide describes how each application realm is mapped to SIOC alongside SPARQL query examples for interacting with the SIOC instance data.
+To help describe other application areas for online communities (e.g. as described via ODS above), a lot of new terms have been added to the separate SIOC types module (T-SIOC).  New types of Container include AddressBook, AnnotationSet, AudioChannel, BookmarkFolder, Briefcase, EventCalendar, ImageGallery, ProjectDirectory, ResumeBank, ReviewArea, SubscriptionList, SurveyCollection, VideoChannel, and Wiki.  New types of Forum include ArgumentativeDiscussion, ChatChannel, MailingList, MessageBoard, and Weblog.  Poll has been created as a type of Item, and new types of Post include BoardPost, Comment, InstantMessage, and MailMessage.  I&#039;ve also drawn a picture of how T-SIOC and FOAF can create networks of object-centred sociality through the content that people create.
+Tom Morris has written an RDF-iser for Twitter that uses SIOC and FOAF.  You can see an RDF version of a person&#039;s twitterings by using their username instead of these examples: johnbreslin, captsolo.
+Mike Bergman has written an interesting post called &quot;An Intrepid Guide to Ontologies&quot;.  This follows on nicely from his recent &quot;Eat Your Greens: FOAF and SIOC are Good for You&quot;.  Thanks Mike!
+Patrick Gosetti Murray-John talks about SIOC descriptions of fora for teaching and learning, and uses some SIOC in the Fishtank for Faculty Academy.
+Patrick and Jim Groom have also demonstrated how to use the structure and searching power of RDF to fully utilise tags and feeds on blogs.  They combined RSS feeds from about ten people with SIOC data using RAP and Dave Beckett’s Triplr.
+Mary McKnight from RSS Pieces (guesting on the Future of Real Estate Marketing blog) talks about how SIOC and FOAF can be applied to the application domain of real estate.
+Uldis Bojars gave a very well-received presentation on SIOC entitled &quot;The Semantic Web for Social Media Sites&quot; at BarCamp Ireland 3.  He also presented a paper about SIOC and Klostu called &quot;The Boardscape: Creating a Super Social Network of Message Boards&quot;, written with Ron Kass for ICWSM.  Alex Passant presented a paper about strengthening folksonomies using ontologies (including SIOC) at the same conference.
+There are plans to support SIOC and POWDER content labels on my.opera.com.
+The Semantic Web FAQ is published (SIOC gets a mention in the community topic).
+Tuukka Hastrup is logging some IRC channels in both HTML and Turtle RDF, and SIOC is being used as one of the representation formats.
+Hak-Lae Kim has launched an ontology and framework for sharing social semantic clouds of tags (SCOT) that works with FOAF, SIOC and SKOS.  Let&#039;s share tags!
+Eileen Brown references SIOC in an article entitled &quot;Beyond Web 2.0&quot;.
+For our DERI Research Day in December, I gave a SIOC overview talk entitled &quot;Information Centric Access: The Case of SIOC&quot; (lots of attendees from academia, industry and state organisations), and I also gave a brief presentation in January on how to use SIOC for expert finding at the first ExpertFinder Workshop in Berlin.  (I am an organiser for the follow-on workshop &quot;Finding Experts on the Web with Semantics&quot; to be held at ISWC 2007, and SIOC will be a relevant topic.)
+Matthias Samwald told us about the bio-zen ontology framework, which includes SIOC as one of its base ontologies since it &quot;is an excellent tool to describe scientific discourse in a practical, web-centric manner&quot;.
+John Hoogstrate has written some SIOC data producers for a forum he runs.
+SIOC is being used by Henry Story et al. in BAETLE (Bug And Enhancement Tracking LanguagE).  See Henry&#039;s blog post on BAETLE for more.
+
+</sioc:content>
+  <dcterms:created>2007-05-18T13:42:25+01:00</dcterms:created>
+  <dcterms:modified>2007-05-18T13:42:26+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/272" rdfs:label="State of the SIOC-o-sphere (#4)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

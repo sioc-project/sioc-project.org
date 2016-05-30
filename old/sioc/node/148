@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/148"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/148">
+  <dc:title>SIOC &amp;amp; encoding spatial features.</dc:title>
+  <sioc:content>Hello there,
+Uldis introduced me to SIOC and we had some discussions about it. Due
+to my geoinformatics background I was thinking a bit about the
+possibilities to add geospatial information to
+sioc concepts.
+The currently most used approach is GeoRSS. OGC (which makes the
+standards in our domain)
+has published a white paper [1] about it. It is built on top the W3C
+geo vocubalary, but extended it to support more complex geometries than
+a simple point. It&#039;s big advantage is the upwards compatibility to GML,
+which allows for encoding also complex spatial features (take a
+collection of bike routes as example). An introduction to GeoRSS and
+the model are available at [2].
+Let&#039;s take an example of an Event encoded in SIOC. Tagging it with a
+location by using GeoRSS could look like this:
+
+        ...
+        
+         
+            45.256 -110.45
+         
+        
+
+The relationshipTag would be used to clarify the relation between the
+sioc element and the associated geometry. A person &quot;lives-in&quot;, a post
+&quot;talks-about&quot;, an event &quot;take-place-in&quot; a location. Using tags here is
+a neat way to clarify the specific relationship between the used
+concept and the location without the need to extend the sioc
+vocabulary.
+The support of GeoRSS is not too bad, Wordpress and Drupal have both
+plugins which make adding locations to posts possible. The SIOC browser
+could simply take the location and generate a link to a google map. Or
+provide a spatial browser itself which allows to browse through
+spatially related posts, for example showing all events which
+&quot;takes-place-in&quot; in specific location. How cool would that be? ;)
+Regards,
+ Patrick Maué
+[1] http://www.opengeospatial.org/pt/06-050r3
+[2] http://georss.org/overview.html
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-13T17:27:43+01:00</dcterms:created>
+  <dcterms:modified>2006-09-14T17:39:36+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/148" rdfs:label="SIOC &amp; encoding spatial features." />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/60%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/60" />
+</sioc:Post>
+</rdf:RDF>

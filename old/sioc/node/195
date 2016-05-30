@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/195"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/195">
+  <dc:title>General rambling, plus a challenge</dc:title>
+  <sioc:content>Challenge first:
+Ben Hammersley had a lovely setup with Lazyweb.org. You write some
+idea on your own blog, do a trackback ping to a particular URI, your
+idea is collected and republished there. Over here you felt like you
+might reach someone that might make your idea a reality, over there
+you saw a stream of bright ideas (and a fair number of answers).
+It died because of the maintenance problem of trackback spam.
+The single point of failure was the URI which got pinged. Get rid of
+that, maybe it might work again. SIOC can capture all the relevant
+bits of information - the challenge is to deploy it in way that&#039;s
+maintainable.
+The ramble I had planned starts like this:
+* Mailing lists suck.
+* Forums suck.
+* IM/IRC channels suck.
+* Blogs suck.
+* Wikis suck.
+- but I&#039;ve run out of steam.
+I can tell you what provoked the intended ramble: my annoyance with
+the tech we&#039;re looking at - simply trying to find good information
+about electric guitar bodies. An arbitrary end-user application of the
+Web. The information and the people you need to talk to are there and
+willing, but you spend more time...oh, you know what I mean. I think
+SIOC has a lot of what is needed. Now fix it, will you..?
+(One domain-specifc site could lead the way. Not that I&#039;m hinting.)
+Cheers,
+Danny.
+-- 
+http://dannyayers.com
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-11-24T05:01:50+00:00</dcterms:created>
+  <dcterms:modified>2006-11-21T08:15:13+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/195" rdfs:label="General rambling, plus a challenge" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/43%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/43" />
+</sioc:Post>
+</rdf:RDF>

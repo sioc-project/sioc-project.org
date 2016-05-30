@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/280"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/280">
+  <dc:title>New version of drupal sioc module</dc:title>
+  <sioc:content>On 5/22/07, aidanf wrote:
+&gt;
+&gt; There is a new version of the drupal sioc plugin available. The main
+&gt; change is added support for using the drupal story module to run a
+&gt; single-user blog.
+&gt;
+&gt; The project page is
+&gt;
+&gt; http://drupal.org/project/sioc
+Thanks a lot for fixing &amp;amp; improvements!
+You can see a sample of SIOC data exported by Drupal at:
+ - http://tinyurl.com/32226j (Aidan&#039;s site, using Drupal&#039;s story module)
+ - http://tinyurl.com/3cw7ok (SIOC Project site, using Drupal&#039;s blog module)
+Here are notes on some future improvements needed:
+ - to export HTML content in content:encoded
+ - to export comments that users have created
+ - re. sioc:topic (e.g. ) - SIOC modules does not export RDF about
+taxonomies yet. It would be a good idea to do that. And when we do
+that let&#039;s add rdfs:seeAlso link from sioc:topic to the relevant SIOC
+URL.
+- ... add your suggestions &amp;amp; ideas here ...</sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/280" rdfs:label="New version of drupal sioc module" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

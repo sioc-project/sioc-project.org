@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/212"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/212">
+  <dc:title>Survey: Semantic Radar</dc:title>
+  <sioc:content>Hi All,
+Many of you have tried the Semantic Radar [
+http://sioc-project.org/firefox/ ] and are using it to detect FOAF,
+DOAP and SIOC profiles in web pages. Now I would like to ask you for
+some feedback to make it better.
+Firstly, please send all wishes, comments or bug reports to the
+SIOC-Dev mailing list. You can also record them at the SIOC ToDoList
+wiki page [1], especially if there are some webpages you want to
+reference to.
+Secondly, please respond to this short survery on where would you like
+the information about [FOAF | SIOC | DOAP] profile appear when you
+press appropriate status bar icon:
+  a) in the same window (as is now);
+  b) in a new window;
+  c) in a new tab.
+This was prompted by Wikier&#039;s idea to open rendered RDF pages in new
+tabs. Many thanks to him for the suggestion and implementation. But
+other users may have different preferences - if so, please tell us.
+Thirdly, what else do you want the Semantic Radar do in the future? Or
+what additional browser platforms do you wish it supported, etc...
+----
+Please note that there is also Semantic Radar / JS [2] - a lightweight
+version of SemRadar implemented as user JavaScript. It works with
+Opera and Greasemonkey. With some help we could make it run with
+alternatives of Greasemonkey for Internet Explorer as well.
+[1] http://esw.w3.org/topic/SIOC/ToDoList
+[2] http://userscripts.org/scripts/show/6361
+Thanks,
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-23T10:00:12+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/212" rdfs:label="Survey: Semantic Radar" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

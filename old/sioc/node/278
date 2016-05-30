@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/278"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/278">
+  <dc:title>FW: [uf-discuss] Proposal: hArgument Microformat</dc:title>
+  <sioc:content>
+FYI, sounds like it is related to SIOC+IBIS/RDF.
+J.
+-----Original Message-----
+From: microformats-discuss-bounces@microformats.org on behalf of Costello, Roger L.
+Sent: Sun 20/05/2007 22:37
+To: microformats-discuss@microformats.org
+Subject: [uf-discuss] Proposal: hArgument Microformat
+Hi Folks,
+Michael Crichton says: &quot;The greatest challenge facing mankind is the
+challenge of distinguishing reality from fantasy, truth from
+propaganda. Perceiving the truth has always been a challenge to
+mankind, but in the information age (or as I think of it, the
+disinformation age) it takes on a special urgency and importance.&quot; 
+One of the keys to distinguishing information from disinformation is to
+have a clear understanding of the assumptions an author is making.
+Typically, it takes a great deal of effort to distill an author&#039;s
+assumptions.  Bring clearly to light the assumptions being made would
+go a long way towards facilitating a web of trust.
+I propose an hArgument Microformat with two properties:
+hArgument
+   assumption (repeatable): a statement of what the author assumes to
+be true,
+       and upon which his/her conclusion follows. [If it can be
+demonstrated that
+       the assumption is false, then the conclusion is invalid]
+   conclusion (repeatable): a statement that derives from the
+assumption(s)
+Example: below is an example of an argument.  The argument can be
+immediately discredited because the assumptions can be shown to be
+fallacious:
+
+   Microformats are a disruptive
+technology
+   Microformats are attempting to supplant XML
+       documents with HTML and XHTML documents
+   The main benefit of Microformats is that it
+       allows graceful degradation
+   Microformats go too far.
+   It&#039;s almost better to use a more suited
+       format in such cases
+
+The advantage of this is that there is no need to &quot;guess&quot; what are the
+author&#039;s assumptions.  They are clearly identified.
+Use Cases: any web page that tries to convince you of something.  The
+examples are endless.
+Comments?
+/Roger 
+_______________________________________________
+microformats-discuss mailing list
+microformats-discuss@microformats.org
+http://microformats.org/mailman/listinfo/microformats-discuss
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/278" rdfs:label="FW: [uf-discuss] Proposal: hArgument Microformat" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

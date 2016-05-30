@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/98"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/98">
+  <dc:title>News: SIOC Paper for BlogTalk Reloaded</dc:title>
+  <sioc:content>&gt; Good news for SIOC developers:
+Our paper titled &quot;SIOC Browser - Towards a Richer Blog Browsing
+Experience&quot; has been accepted for the BlogTalk Reloaded conference.
+You can find the abstract below.
+http://blogtalk.net/Main/Program
+&gt; SIOC Browser - Towards a Richer Blog Browsing Experience
+&gt;&gt; Uldis Bojars, John G.Breslin and Alexandre Passant
+Semantically Interlinked Online Communities (SIOC)
+http://rdfs.org/sioc/ is a framework for expressing information
+contained within weblogs and online community sites in a machine
+readable form. It consists of a SIOC ontology that defines the
+vocabulary used to express this information and SIOC data exporters
+that provide SIOC data from these sites.
+Now that SIOC data export plugins are available for popular blogging
+and CMS platforms (e.g., Drupal, Wordpress, DotClear) we can use this
+information to provide users with better and more interesting
+services. This talk describes the SIOC browser
+http://rdfs.org/sioc/browser - a tool, currently in development, that
+allows to browse the information extracted from weblogs. It can be
+considered the first generation of consumers of SIOC data.
+Two features that distinguish SIOC are: (1) that all the entries of a
+weblog are exported; and (2) that all this information is in a machine
+readable form. This allows to make queries over the information
+exported from a blog or set of blogs - such as retrieving last post
+from a user on a given topic, identifying &quot;hot topics&quot;, and so on.
+The browser works in two modes - on-the-fly mode and crawler mode. The
+former displays the SIOC data received from a weblog (thus providing a
+uniform interface to all SIOC-enabled weblogs) while the later stores
+SIOC data in the RDF data store allowing to make more complicated
+queries via the use of SPARQL query language.
+Since the information is published in SIOC - an open and public
+standard - the same information source (a weblog or a multi-user blog
+site) can be interpreted by many different users in a number of
+different ways. This enables to develop a whole kind of browsers
+similar to what happened with the emergence of RSS feed aggregators.
+The browser presented here is one of the first in this group.
+&gt; ... end of the abstract ...
+John Breslin just wrote this and other interesting news at
+http://johnbreslin.com/blog/.
+We can also congratulate Alex with yet another paper accepted to the
+BlogTalk Reloaded titled &quot;Adopting Folksonomies in a corporate
+context&quot;. Hopefully he will post his abstract as well.
+For the acceptance rate of 16 out of 70 this is quite good! :)
+Looking forward to participating in the BlogTalk.
+Should be very interesting and it is a good place to present SIOC.
+Best,
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-07-07T14:08:42+01:00</dcterms:created>
+  <dcterms:modified>2006-07-14T14:04:43+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/98" rdfs:label="News: SIOC Paper for BlogTalk Reloaded" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

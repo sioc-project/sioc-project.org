@@ -1,0 +1,1298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/132"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Contribution from UMU to SIOC Ontology | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Contribution from UMU to SIOC Ontology</h2>                                                  <div class="clear-block">
+            <div id="node-132" class="node">
+
+
+
+      <span class="submitted">2006, September 12 - 09:00 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  <div class="content clear-block">
+    <p>These are the comments, questions and suggestions that have come up as<br />
+a result of our analysis of the SIOC ontology. We have generated<br />
+comments for a number of main concepts in the ontology. The following<br />
+is a list of the concepts which received some comments from our side:</p>
+<p>·Forum<br />
+      -    It is declared that a forum will have a moderator or<br />
+administrator, but how is this relation represented in the model? Does<br />
+it come implicitly by a concrete role played by a subscriber of the<br />
+forum?</p>
+<p>      -    The meaning of  "scope_of"  property is not quite clear.<br />
+Does it mean that a forum is only visible to a fixed type of role? Or<br />
+is it interesting to a specific type of role?<br />
+Another possibility that we have thought of is that this property tries<br />
+to represent the administration relation that we have mentioned in the<br />
+previous point, but it seems a bit weird, because is a user who<br />
+moderates a Forum, not a role.</p>
+<p>      -    A forum could be devoted to a certain group of users, but<br />
+how is represented the relation among forums and groups of users, that<br />
+is to say, how do you associate a group of user with a forum? It seems<br />
+that neither a direct relation nor an indirect one model this fact.</p>
+<p>·Post<br />
+      -    "Content" and "description" properties have got the same<br />
+semantic meaning; it seems that there is no difference between them. We<br />
+have read in [1] that currently it is being considered the idea of<br />
+inserting AtomOWL to represent the content of a post, which sounds to<br />
+be a good choice. So we suppose that these two properties will be<br />
+reduced to one of this AtomOWL type.</p>
+<p>·User<br />
+      -    As in Forum class, we can't see a relation that allows<br />
+representing that a user is moderator of a forum or site, as is stated<br />
+in the specification. That is to say, we miss a property that relates a<br />
+user with the administrator role with a forum, and its inverse (a forum<br />
+that is administrated by a user), like "subscriber_of"  property does.</p>
+<p>·Usergroup<br />
+      -    Should "usergroups" have a role? It is not explicitly<br />
+mentioned in the specifications, and there isn't any relation between<br />
+this class and the "Role" class that could state this situation. For<br />
+example, a group of users could be defined as banned users or as<br />
+administrator of a site. Then, users could be added to these groups<br />
+without the necessity of specifying their roles, as they could be<br />
+inferred from the group where they belong to.</p>
+<p>·About  "topic" property<br />
+        We think that "topic" property should be modelled as a class<br />
+and not as a property, since topic is a sufficiently important entity<br />
+to having its own properties: category, description, keywords, impact<br />
+factor, etc.</p>
+<p>[1] http://rdfs.org/node/128</p>
+<p>Best Regards,<br />
+Andrés Muñoz<br />
+University of Murcia, Spain</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="149.html" class="topic-previous" title="Go to previous forum topic">‹ SIOC Specification update - v1.08</a>
+              <a href="171.html" class="topic-next" title="Go to next forum topic">Making Content into Literals in AtomOWL ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-189"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 13 - 07:56 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-189" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Dear all,</p>
+<p>Here some comments on the current version of the SIOC document at</p>
+<p>http://rdfs.org/sioc/spec/<br />
+I start with editorial comments and then give more fundamental<br />
+issues/questions:</p>
+<p>Editorial:</p>
+<p>1) First of all, the link http://rdfs.org/sioc/ which is mentioned<br />
+several times seems to be broken!</p>
+<p>2) "The specific contents of the SIOC ontology are detailed in the SIOC<br />
+namespace document."</p>
+<p>You mean SIOC project page or http://rdfs.org/sioc/ns here? (that is one<br />
+of the broken links).</p>
+<p>makeing -> making</p>
+<p>3) "an attribute of an sioc:Post"<br />
+--> "an attribute of a sioc:Post"</p>
+<p>====================================</p>
+<p>1) I am not sure whether I understand the *Role* concept correctly, but:</p>
+<p>  Obviously a role is a ternary relation which is something nasty to<br />
+express in OWL and RDF. One could mention that the complete<br />
+axiomatization of this concept is not expressible in OWL.<br />
+In particular there seems to be a problem with the current Role definition:</p>
+<p>A role might be available in several forums (scope_of), a user might<br />
+play several roles (function_of), but, as for the current ontology, it<br />
+does not seem you can express that a user plays a particular role in a<br />
+particular forum (for this you'd need to reify the "roleplay" e.g. with<br />
+a bnode</p>
+<p>Otherwise, if you want to restrict roles to belong to exactly one forum,<br />
+then you need to declare scope_of functional.</p>
+<p>2) maybe stupid question: What is 'vanilla' XML?</p>
+<p>3) Reuse: I can go through this later in more detail, (actually, I<br />
+suggested to Stefan/Uldis already to add an own section which clarifies<br />
+the relation to other vocabularies), but obviously there are many<br />
+overlaps with existing vocabularies:<br />
+sioc:User vs foaf:Agent (which is probably more appropriate than<br />
+foaf:Person) is already being discussed on this list, but also<br />
+foaf:depiciton, foaf:mbox, etc. all seem to be reinvented in a sense.</p>
+<p>4) Probably, there are also some overlaps with the RDF-version of RSS?<br />
+  So, I think it would really be nice to have such an overlap section,<br />
+which justifies the reinvention or at least add<br />
+equivalence/subclass/subproperty axioms in a related ontologies part of<br />
+the spec.</p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-197"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-197" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi all,<br /><br />
+<div><span class="gmail_quote">On 9/12/06, <b class="gmail_sendername">Axel Polleres</b> &lt;<a href="mailto:droxel@gmail.com">droxel@gmail.com</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br /><br />1) I am not sure whether I understand the *Role* concept correctly, but:<br /><br />&nbsp;&nbsp;Obviously a role is a ternary relation which is something nasty to<br />express in OWL and RDF. One could mention that the complete<br /><br />
+axiomatization of this concept is not expressible in OWL.<br />In particular there seems to be a problem with the current Role definition:<br /><br />A role might be available in several forums (scope_of), a user might<br />play several roles (function_of), but, as for the current ontology, it<br />
+<br />does not seem you can express that a user plays a particular role in a<br />particular forum (for this you'd need to reify the &quot;roleplay&quot; e.g. with<br />a bnode<br /><br />Otherwise, if you want to restrict roles to belong to exactly one forum,<br />
+<br />then you need to declare scope_of functional.</blockquote></div></p>
+<div><br />I think it could be nice at the moment to remove Role from SIOC core and add in the specs a section about SIOC extensions, mentionning that SIOC aims to be a modular ontologies, with Role, Versionning ... extensions.  Role is a complex approach as you mention, so I think it would be nice to get it in a separate way - which also will let us think more deeply on it, and that could evolve while the core of SIOC won't change.<br />
+<br /></div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><br />3) Reuse: I can go through this later in more detail, (actually, I<br />suggested to Stefan/Uldis already to add an own section which clarifies<br />
+<br />the relation to other vocabularies), but obviously there are many<br />overlaps with existing vocabularies:<br />sioc:User vs foaf:Agent (which is probably more appropriate than<br />foaf:Person) is already being discussed on this list, but also<br />
+<br />foaf:depiciton, foaf:mbox, etc. all seem to be reinvented in a sense.</blockquote></p>
+<div><br /></div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+4) Probably, there are also some overlaps with the RDF-version of RSS?<br />&nbsp;&nbsp;So, I think it would really be nice to have such an overlap section,<br />which justifies the reinvention or at least add<br />equivalence/subclass/subproperty axioms in a related ontologies part of<br />
+<br />the spec.</blockquote></p>
+<div><br /><br /><br />
+Such a section, with mappings, could be interesting. Yet, most of the<br />
+foaf properties have been removed from SIOC, and indeed put<br />
+back in the FOAF Person which holds the sioc:User.<br /><br />
+(BTW, User and Agent are not the same kind of object. There's a holdsAccount relationship between them, so sioc:User is not an foaf:Agent, but a foaf:Account)<br /><br />
+<br />Best,<br /><br />Alex.<br /><br />
+&nbsp;</div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">--<br />Dr. Axel Polleres<br />email: <a href="mailto:axel@polleres.net">axel@polleres.net<br />
+</a>&nbsp;&nbsp;url: <a href="http://www.polleres.net/">http://www.polleres.net/</a><br /><br /><br /><br /><br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-199"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-199" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Alexandre Passant wrote:<br />
+> Hi all,<br />
+><br />
+> On 9/12/06, *Axel Polleres* <droxel@gmail.com <mailto:droxel@gmail.com>><br />
+> wrote:<br />
+><br />
+><br />
+>     1) I am not sure whether I understand the *Role* concept correctly, but:<br />
+><br />
+>       Obviously a role is a ternary relation which is something nasty to<br />
+>     express in OWL and RDF. One could mention that the complete<br />
+>     axiomatization of this concept is not expressible in OWL.<br />
+>     In particular there seems to be a problem with the current Role<br />
+>     definition:<br />
+><br />
+>     A role might be available in several forums (scope_of), a user might<br />
+>     play several roles (function_of), but, as for the current ontology, it<br />
+>     does not seem you can express that a user plays a particular role in a<br />
+>     particular forum (for this you'd need to reify the "roleplay" e.g. with<br />
+>     a bnode<br />
+><br />
+>     Otherwise, if you want to restrict roles to belong to exactly one<br />
+>     forum,<br />
+>     then you need to declare scope_of functional.<br />
+><br />
+> I think it could be nice at the moment to remove Role from SIOC core and<br />
+> add in the specs a section about SIOC extensions, mentionning that SIOC<br />
+> aims to be a modular ontologies, with Role, Versionning ... extensions.<br />
+> Role is a complex approach as you mention, so I think it would be nice<br />
+> to get it in a separate way - which also will let us think more deeply<br />
+> on it, and that could evolve while the core of SIOC won't change.</droxel@gmail.com></p>
+<p>I think it is not necessary to remove it, but it wouldbe nice to have<br />
+the issue resolved in a clean way.</p>
+<p>>     3) Reuse: I can go through this later in more detail, (actually, I<br />
+>     suggested to Stefan/Uldis already to add an own section which clarifies<br />
+>     the relation to other vocabularies), but obviously there are many<br />
+>     overlaps with existing vocabularies:<br />
+>     sioc:User vs foaf:Agent (which is probably more appropriate than<br />
+>     foaf:Person) is already being discussed on this list, but also<br />
+>     foaf:depiciton, foaf:mbox, etc. all seem to be reinvented in a sense.<br />
+><br />
+><br />
+><br />
+>     4) Probably, there are also some overlaps with the RDF-version of RSS?<br />
+>       So, I think it would really be nice to have such an overlap section,<br />
+>     which justifies the reinvention or at least add<br />
+>     equivalence/subclass/subproperty axioms in a related ontologies part of<br />
+>     the spec.<br />
+><br />
+><br />
+><br />
+> Such a section, with mappings, could be interesting. Yet, most of the<br />
+> foaf properties have been removed from SIOC, and indeed put back in the<br />
+> FOAF Person which holds the sioc:User.<br />
+> (BTW, User and Agent are not the same kind of object. There's a<br />
+> holdsAccount relationship between them, so sioc:User is not an<br />
+> foaf:Agent, but a foaf:Account)</p>
+<p>Any volunteer to join me to give it a go?</p>
+<p>axel</p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-190"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 13 - 07:56 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-190" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Dear all -</p>
+<p>Just on the URL point, we've just the pages to a new server today so<br />
+expect some redirects!</p>
+<p>John.<br />
+--<br />
+Axel Polleres wrote:<br />
+> Dear all,<br />
+><br />
+> Here some comments on the current version of the SIOC document at<br />
+><br />
+> http://rdfs.org/sioc/spec/<br />
+> I start with editorial comments and then give more fundamental<br />
+> issues/questions:<br />
+><br />
+> Editorial:<br />
+><br />
+> 1) First of all, the link http://rdfs.org/sioc/ which is mentioned<br />
+> several times seems to be broken!<br />
+><br />
+> 2)<br />
+.<br />
+.<br />
+.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-191"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-191" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi John,</p>
+<p>Thank you very much for your interest in our comments and for your<br />
+quick answer. I think that your comments about our ideas are quite<br />
+good, and give us food for thought in these issues. So, these are our<br />
+opinions about your comments:</p>
+<p>> 1.  Removing the domain / range constraints on Role (at the moment the<br />
+> domain is User and the range is Forum).  This would allow the range to<br />
+> be User, Usergroup and the range to be Forum, Site, Community etc.)</p>
+<p>I agree with this point, if we think that a group of users needs to<br />
+have a Role (for example, if we only want to give access to a forum to<br />
+a user who belongs to a specific group).<br />
+What I'm thinking about is whether to remove the domain/range<br />
+constraints of Role completely, or create two new superclasses, one for<br />
+objects that are able to "manage" other objects (e.g. "Manager"<br />
+class) and the other for objects that are managed (e.g. "Managed<br />
+Element").<br />
+Consequently, the range of "function_of" would be Manager and for<br />
+"has_scope" would be Managed_Element. Obviously, User and Usergroup<br />
+would be subclasses of Manager and Forum, Site, etc. would be<br />
+subclasses of Managed_Element.</p>
+<p>The latter choice would maintain some constraints on Role, but perhaps<br />
+may introduce some confusion, because a "normal" user that is not<br />
+managing any element belongs (indirectly) to the Manager class, so this<br />
+idea may be refined. What do you think about it?</p>
+<p>> 2.  Adding has_moderator and has_administrator properties to Forums and<br />
+> Sites respectively.</p>
+<p>Right, because the relation</p>
+<p>      User -> has_function -> Role (of whatever type, e.g.<br />
+Moderator) -> has_scope -><br />
+      Forum</p>
+<p>now has sense to me, but the opposite relation seems a bit tricky,<br />
+because to determine the forum's moderator, first you have to find<br />
+out if this role applies to the forum, and then look for the user that<br />
+has got that function in that forum (a bit long path, perhaps).</p>
+<p>So the shortcuts give an instant access to the moderator or<br />
+administrator. The problem may be how to state that the previous<br />
+relation User->Role->Forum has its inverse in these shortcuts.</p>
+<p>And finally, taking up again the topic issue, we would like to see an<br />
+example of this property working with the SKOS concepts, so that we can<br />
+clarify ourselves if this mechanism is enough to fulfil our ideas. So,<br />
+if you could suggest some example of this, it would come to help us.</p>
+<p>Best Regards,<br />
+Andrés</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-192"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-192" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi again -<br />
+> Consequently, the range of "function_of" would be Manager and for<br />
+> "has_scope" would be Managed_Element. Obviously, User and Usergroup<br />
+> would be subclasses of Manager and Forum, Site, etc. would be<br />
+> subclasses of Managed_Element.<br />
+><br />
+><br />
+The only problem I see here (a good idea by the way) is that some roles<br />
+will be more passive than active, i.e. you may have a role that you are<br />
+a member of a community or a forum, without actually managing anything...</p>
+<p>> So the shortcuts give an instant access to the moderator or<br />
+> administrator. The problem may be how to state that the previous<br />
+> relation User->Role->Forum has its inverse in these shortcuts.<br />
+><br />
+><br />
+Yes, really the Role can describe the extra shortcut properties we don't<br />
+(or won't) include in the ontology.<br />
+><br />
+><br />
+> And finally, taking up again the topic issue, we would like to see an<br />
+> example of this property working with the SKOS concepts, so that we can<br />
+> clarify ourselves if this mechanism is enough to fulfil our ideas. So,<br />
+> if you could suggest some example of this, it would come to help us.<br />
+><br />
+><br />
+I hope Uldis can do this :)</p>
+<p>Thanks again,</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-193"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-193" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>John Breslin wrote:<br />
+> Hi again -<br />
+><br />
+>>Consequently, the range of "function_of" would be Manager and for<br />
+>>"has_scope" would be Managed_Element. Obviously, User and Usergroup<br />
+>>would be subclasses of Manager and Forum, Site, etc. would be<br />
+>>subclasses of Managed_Element.<br />
+><br />
+> The only problem I see here (a good idea by the way) is that some roles<br />
+> will be more passive than active, i.e. you may have a role that you are<br />
+> a member of a community or a forum, without actually managing anything...</p>
+<p>I am not sure whether I understand this correctly... does this solve the<br />
+roleplay issue I raised in my previous mail. Still I don't see how you<br />
+model the ternary relation:</p>
+<p>A plays role R in forum F</p>
+<p>without reifying this ternary relation (over a bnode, for instance...)</p>
+<p>thanks for clarification,</p>
+<p>axel</p>
+<p>>>So the shortcuts give an instant access to the moderator or<br />
+>>administrator. The problem may be how to state that the previous<br />
+>>relation User->Role->Forum has its inverse in these shortcuts.<br />
+>><br />
+>><br />
+><br />
+> Yes, really the Role can describe the extra shortcut properties we don't<br />
+> (or won't) include in the ontology.<br />
+><br />
+>><br />
+>>And finally, taking up again the topic issue, we would like to see an<br />
+>>example of this property working with the SKOS concepts, so that we can<br />
+>>clarify ourselves if this mechanism is enough to fulfil our ideas. So,<br />
+>>if you could suggest some example of this, it would come to help us.<br />
+>><br />
+>><br />
+><br />
+> I hope Uldis can do this :)<br />
+><br />
+> Thanks again,<br />
+><br />
+> John.<br />
+> --<br />
+><br />
+> ><br />
+> </p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-194"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-194" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>
+Hi Axel</p>
+<p>> >>Consequently, the range of "function_of" would be Manager and for<br />
+> >>"has_scope" would be Managed_Element. Obviously, User and Usergroup<br />
+> >>would be subclasses of Manager and Forum, Site, etc. would be<br />
+> >>subclasses of Managed_Element.<br />
+> ><br />
+> > The only problem I see here (a good idea by the way) is that some roles<br />
+> > will be more passive than active, i.e. you may have a role that you are<br />
+> > a member of a community or a forum, without actually managing anything...<br />
+><br />
+> I am not sure whether I understand this correctly... does this solve the<br />
+> roleplay issue I raised in my previous mail. Still I don't see how you<br />
+> model the ternary relation:<br />
+><br />
+> A plays role R in forum F<br />
+><br />
+> without reifying this ternary relation (over a bnode, for instance...)<br />
+></p>
+<p>I think that you don't need to use a bnode to represent this relation.<br />
+For example, suppose two instances of User class, "Andres" and "Axel".<br />
+Now, we have two Forum instances, "The Beatles Forum" and "Axel_Blog".<br />
+Suppose that you want to state that "Andres" is admnistrator of the<br />
+"The Beatles Forum" and Axel administrates "Axel_Blog".</p>
+<p>So, you may create one instance of Role class, called "Admin1", which<br />
+"function_of" property has the value "Andres" and "has_scope" is "The<br />
+Beatles Forum". On the other hand, another Role instance called<br />
+"Admin2" would have "Axel" as "function_of" and "Axel_Blog" as<br />
+"has_scope".</p>
+<p>Finally, these relations are represented without using a bnode.</p>
+<p>Hoping this helps,</p>
+<p>Andrés</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-195"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-195" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>andresmo wrote:<br />
+><br />
+> Hi Axel<br />
+><br />
+><br />
+><br />
+>>>>Consequently, the range of "function_of" would be Manager and for<br />
+>>>>"has_scope" would be Managed_Element. Obviously, User and Usergroup<br />
+>>>>would be subclasses of Manager and Forum, Site, etc. would be<br />
+>>>>subclasses of Managed_Element.<br />
+>>><br />
+>>>The only problem I see here (a good idea by the way) is that some roles<br />
+>>>will be more passive than active, i.e. you may have a role that you are<br />
+>>>a member of a community or a forum, without actually managing anything...<br />
+>><br />
+>>I am not sure whether I understand this correctly... does this solve the<br />
+>>roleplay issue I raised in my previous mail. Still I don't see how you<br />
+>>model the ternary relation:<br />
+>><br />
+>>A plays role R in forum F<br />
+>><br />
+>>without reifying this ternary relation (over a bnode, for instance...)<br />
+>><br />
+><br />
+><br />
+> I think that you don't need to use a bnode to represent this relation.<br />
+> For example, suppose two instances of User class, "Andres" and "Axel".<br />
+> Now, we have two Forum instances, "The Beatles Forum" and "Axel_Blog".<br />
+> Suppose that you want to state that "Andres" is admnistrator of the<br />
+> "The Beatles Forum" and Axel administrates "Axel_Blog".<br />
+><br />
+> So, you may create one instance of Role class, called "Admin1", which<br />
+> "function_of" property has the value "Andres" and "has_scope" is "The<br />
+> Beatles Forum". On the other hand, another Role instance called<br />
+> "Admin2" would have "Axel" as "function_of" and "Axel_Blog" as<br />
+> "has_scope".<br />
+><br />
+> Finally, these relations are represented without using a bnode.<br />
+><br />
+> Hoping this helps,<br />
+><br />
+> Andrés</p>
+<p>Yes, andrés, that was my point: If this is what you suggest as a<br />
+solution (roles are forum specific) then you need to declare the<br />
+property "scope_of" functional in the OWL ontology, in order to disallow<br />
+that the same role is used in several forums. Otherwise, you loose the<br />
+distiction of who plays which role in which forum. Or, if you reuse the<br />
+same role in several forums, it means that each user who plays a certain<br />
+role, plays it in all forums which declare this role.</p>
+<p>cheers,<br />
+axel</p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-198"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-198" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi Axel,</p>
+<p>><br />
+> Yes, andrés, that was my point: If this is what you suggest as a<br />
+> solution (roles are forum specific) then you need to declare the<br />
+> property "scope_of" functional in the OWL ontology, in order to disallow<br />
+> that the same role is used in several forums. Otherwise, you loose the<br />
+> distiction of who plays which role in which forum. Or, if you reuse the<br />
+> same role in several forums, it means that each user who plays a certain<br />
+> role, plays it in all forums which declare this role.<br />
+></p>
+<p>Well, in fact I think that roles are not only forum specific, but also<br />
+could be used in Site, Community, etc, those that I call<br />
+"Managed_Element". Moreover, I think that there is no problem in using<br />
+the same role in different forums.</p>
+<p>For example, and going on with the previous example, suppose that we<br />
+have a new Forum instance, "BulletinSportNews". Now imagine that I want<br />
+to be administrator of that forum, so I create the instance "Admin3"<br />
+that have "Andres" as "function_of" property value and<br />
+"BulletinSportNews" as "has_scope" value.</p>
+<p>As a result, now I'm using the same role (Administrator) in several<br />
+Forums ("The Beatles Forum" and "BulletinSportNews"), but I'm not<br />
+administrator of the "Alex_Blog" forum, although this forum declares<br />
+that it has an administrator (who is "Alex").</p>
+<p>What do you think about it?</p>
+<p>Regards,<br />
+Andrés</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-200"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-200" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>andresmo wrote:<br />
+> Hi Axel,<br />
+><br />
+><br />
+>>Yes, andrés, that was my point: If this is what you suggest as a<br />
+>>solution (roles are forum specific) then you need to declare the<br />
+>>property "scope_of" functional in the OWL ontology, in order to disallow<br />
+>>that the same role is used in several forums. Otherwise, you loose the<br />
+>>distiction of who plays which role in which forum. Or, if you reuse the<br />
+>>same role in several forums, it means that each user who plays a certain<br />
+>>role, plays it in all forums which declare this role.<br />
+><br />
+> Well, in fact I think that roles are not only forum specific, but also<br />
+> could be used in Site, Community, etc, those that I call<br />
+> "Managed_Element". Moreover, I think that there is no problem in using<br />
+> the same role in different forums.<br />
+ ><br />
+> For example, and going on with the previous example, suppose that we<br />
+> have a new Forum instance, "BulletinSportNews". Now imagine that I want<br />
+> to be administrator of that forum, so I create the instance "Admin3"<br />
+> that have "Andres" as "function_of" property value and<br />
+> "BulletinSportNews" as "has_scope" value.</p>
+<p>ok, so you say that the class "Administrator" is a subclass of<br />
+sioc:role? And the role played by a certain person in a particular forum<br />
+("Admin3") is an instance of this class, correct?</p>
+<p>Looks ok (hmmm, it mixes a bit what is a class and what is an instance,<br />
+doesn't it? One would naturally expect that "Administrator" is an<br />
+instance of the class "Role", or no? But well.), Hovever...</p>
+<p>...what I meant to ask is: what prevents me to say:</p>
+<p>Admin3 sioc:has_scope BulletinSportNews<br />
+Admin3 sioc:has_scope Alex_Blog</p>
+<p>Do you want to allow a particular role *instance* to span several forums?</p>
+<p>> As a result, now I'm using the same role (Administrator) in several<br />
+> Forums ("The Beatles Forum" and "BulletinSportNews"), </p>
+<p>you are using the same *subclass* but not the same *instance*.<br />
+Correct?</p>
+<p>cheers,<br />
+axel</p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-201"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-201" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi Alex!! Nice to discuss with you these issues!!</p>
+<p>> > For example, and going on with the previous example, suppose that we<br />
+> > have a new Forum instance, "BulletinSportNews". Now imagine that I want<br />
+> > to be administrator of that forum, so I create the instance "Admin3"<br />
+> > that have "Andres" as "function_of" property value and<br />
+> > "BulletinSportNews" as "has_scope" value.<br />
+><br />
+> ok, so you say that the class "Administrator" is a subclass of<br />
+> sioc:role? And the role played by a certain person in a particular forum<br />
+> ("Admin3") is an instance of this class, correct?</p>
+<p>Right, it's like that.</p>
+<p>> Looks ok (hmmm, it mixes a bit what is a class and what is an instance,<br />
+> doesn't it? One would naturally expect that "Administrator" is an<br />
+> instance of the class "Role", or no? But well.), Hovever...</p>
+<p>Well, suppose that together with "Administrator", you want to express<br />
+other specific roles as "Moderator", "Registered_User", "Banned_User",<br />
+etc. Perhaps it is better designed using subclasses, each one with its<br />
+own properties.</p>
+<p>By the way, I think that the "Role" concept is necessary in the SIOC<br />
+ontology's core, but as you've pointed, a module containing these<br />
+specific roles modelled as subclasses<br />
+could be also a good idea.</p>
+<p>> ...what I meant to ask is: what prevents me to say:<br />
+><br />
+> Admin3 sioc:has_scope BulletinSportNews<br />
+> Admin3 sioc:has_scope Alex_Blog<br />
+><br />
+> Do you want to allow a particular role *instance* to span several forums?</p>
+<p>Ok, now I've got your point. Well, it could be a ontology designer's<br />
+choice to allow spanning several forums, I mean, it is possible that<br />
+the same user with a given role could manage several forums.  I think<br />
+we need to discuss this issue.</p>
+<p>><br />
+> > As a result, now I'm using the same role (Administrator) in several<br />
+> > Forums ("The Beatles Forum" and "BulletinSportNews"),<br />
+><br />
+> you are using the same *subclass* but not the same *instance*.<br />
+> Correct?<br />
+></p>
+<p>Yes, but as you've pointed above, you can use the same instance also,<br />
+if the ontology's design allows it.</p>
+<p>Regards,<br />
+Andrés</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-202"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-202" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi all -</p>
+<p>I think it still works, even if you need to go and find who the<br />
+moderators are for a particular forum.  It depends on how your forum is<br />
+set up - i.e. can all moderators moderate all forums (1) or do they have<br />
+a specific role for a specific forum (2)?</p>
+<p>(1)</p>
+<p>Instance John (type User) -> has_function -> Instance Moderator (type<br />
+Role) -> has_scope -> TV (type Forum)<br />
+Instance Mary (type User) -> has_function -> Instance Moderator (type<br />
+Role) -> has_scope -> Radio (type Forum)<br />
+Instance Jane (type User) -> has_function -> Instance Moderator (type<br />
+Role) -> has_scope -> Radio (type Forum)</p>
+<p>(2)</p>
+<p>Instance John (type User) -> has_function -> Instance TVModerator (type<br />
+Role) -> has_scope -> TV (type Forum)<br />
+Instance Mary (type User) -> has_function -> Instance RadioModerator<br />
+(type Role) -> has_scope -> Radio (type Forum)<br />
+Instance Jane (type User) -> has_function -> Instance RadioModerator<br />
+(type Role) -> has_scope -> Radio (type Forum)</p>
+<p>In case (2), you can still find out who moderates the Radio forum.</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-203"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 14 - 16:39 — <a href="../user/50.html" title="View user profile.">Jack Park</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-203" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Lots of really thoughtful comments in this thread. Let me toss in my take on it, one that, I think, amplifies some earlier statements, and possibly contradicts others.<br /><br />My view is that roles are core to any social modeling exercise. They can, indeed, be extensible, but there should be an &quot;upper&quot; notion of roles. The mathematician Stan Ulam was once asked (by Giancarlo Rotta) what he thought about ai (artificial intelligence). Ulam's response, highly condensed, was that ai would arrive when it found a way to model the notion of &quot;as&quot;, as in, seeing as, cast in the role as, etc. Roles, it would seem, are important. Ulam's example: when you watch two people drive by in a car, you see one person as the driver and one person as the passenger. Seems you need to model that as a central capability.<br />
+<br /><br />So, having Administrator as a subclass of sioc:Role makes plenty of sense. sioc:Role seems core, Administrator is just one way to model folks who do administrative things. The trick, it seems to me, will be to have the ability to capture all the many ways to model the administrator role, and to recognize when those different models are actually the same thing. I say that because, in the end, it strikes me that SIOC will want to be able to &quot;learn&quot; new information by merging with heterogeneous resources that are not SIOC bound.<br />
+<br /><br />Back to modeling roles.<br />Admin3 is properly an instance of Administrator. There is no mixing going on here. To see what I mean, consider this example.<br /><br />Joe is the administrator of the XYZ forum.<br />That's a statement of fact. (fictional, of course)<br />
+<br /><br />To model it, I need to create an instance of a role, and, thinking about things in a broader sense than SIOC presently appear to do (unless I missed something), I need to model the role of the forum (administratedForum) and I need to model the relationship made here, the administrator-forum relationship. I could create that as a class, subclass of, say (making this up now) sioc:Relationship. Then instantiate it with identifiers that say, in essence, joe-administrator-forum-xyz.<br />
+<br /><br />Thus, there would, in this particular world view, be a model that looks something like this:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; joe-administrator-role&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xyz-administratedForum-role<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />Joe------------------------&nbsp; --------joe-administrator-forum-xyz---------------------&nbsp; --------------XYZ<br /><br /><br />
+A reason for doing this (your mileage may vary) is that you might want to be able to model things about the relationship itself, like, when the relationship started, ended, etc. You might want to say, e.g.<br />Joe became administrator of XYZ forum on xxx date.<br />
+<br />or<br />The XYZ forum is now co-administrated by Sue.<br />That statement affects the original assertion in a temporal sense, among other things.<br />A side benefit is that you now provide more dimensions along which people can perform searches and inferences on an SIOC-based knowledge base. When you look at &quot;delicious&quot; (social bookmarking site<br />
+<a href="http://del.icio.us/">http://del.icio.us/</a> ), there are three dimensions around which you can &quot;pivot&quot;, the pivot point being a &quot;bookmark&quot; -- those dimensions are user, tag, and bookmarked resource. By modeling SIOC relationships in the broader sense I am suggesting here, you provide more ways to &quot;pivot&quot; around central ideas. More concepts become pivot centers.<br />
+<br /><br />Point of fact, this is the topic maps perspective on what you are trying to model. A fair question is: does it add value to SIOC? Answers to that question will derive from the statements you make regarding the full Monty goals of SIOC itself.<br />
+<br /><br />Just a few centavos.<br />Cheers<br />Jack<br /><br />
+<div><span class="gmail_quote">On 9/14/06, <b class="gmail_sendername">John Breslin</b> &lt;<a href="mailto:john.breslin@deri.org">john.breslin@deri.org</a>&gt; wrote:<br />
+</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><br />Hi all -<br /><br />I think it still works, even if you need to go and find who the<br /><br />
+moderators are for a particular forum.&nbsp;&nbsp;It depends on how your forum is<br />set up - i.e. can all moderators moderate all forums (1) or do they have<br />a specific role for a specific forum (2)?<br /><br />(1)<br /><br />Instance John (type User) -&gt; has_function -&gt; Instance Moderator (type<br />
+<br />Role) -&gt; has_scope -&gt; TV (type Forum)<br />Instance Mary (type User) -&gt; has_function -&gt; Instance Moderator (type<br />Role) -&gt; has_scope -&gt; Radio (type Forum)<br />Instance Jane (type User) -&gt; has_function -&gt; Instance Moderator (type<br />
+<br />Role) -&gt; has_scope -&gt; Radio (type Forum)<br /><br />(2)<br /><br /><br />Instance John (type User) -&gt; has_function -&gt; Instance TVModerator (type<br />Role) -&gt; has_scope -&gt; TV (type Forum)<br />Instance Mary (type User) -&gt; has_function -&gt; Instance RadioModerator<br />
+<br />(type Role) -&gt; has_scope -&gt; Radio (type Forum)<br />Instance Jane (type User) -&gt; has_function -&gt; Instance RadioModerator<br />(type Role) -&gt; has_scope -&gt; Radio (type Forum)<br /><br />In case (2), you can still find out who moderates the Radio forum.<br />
+<br /><br />J.<br />--<br /><br /><br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></div></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-207"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 15 - 08:55 — <a href="../user/57.html" title="View user profile.">andresmo</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-207" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Hi all, we are building a very interesting thread!!!</p>
+<p>These are my comments about Jack's ideas...</p>
+<p>> So, having Administrator as a subclass of sioc:Role makes plenty of sense.<br />
+> sioc:Role seems core, Administrator is just one way to model folks who do<br />
+> administrative things. The trick, it seems to me, will be to have the<br />
+> ability to capture all the many ways to model the administrator role, and to<br />
+> recognize when those different models are actually the same thing. I say<br />
+> that because, in the end, it strikes me that SIOC will want to be able to<br />
+> "learn" new information by merging with heterogeneous resources that are not<br />
+> SIOC bound.</p>
+<p>Totally agree</p>
+<p>><br />
+> Back to modeling roles.<br />
+> Admin3 is properly an instance of Administrator. There is no mixing going on<br />
+> here. To see what I mean, consider this example.<br />
+><br />
+> Joe is the administrator of the XYZ forum.<br />
+> That's a statement of fact. (fictional, of course)<br />
+><br />
+> To model it, I need to create an instance of a role, and, thinking about<br />
+> things in a broader sense than SIOC presently appear to do (unless I missed<br />
+> something), I need to model the role of the forum (administratedForum) and I<br />
+> need to model the relationship made here, the administrator-forum<br />
+> relationship. I could create that as a class, subclass of, say (making this<br />
+> up now) sioc:Relationship. Then instantiate it with identifiers that say, in<br />
+> essence, joe-administrator-forum-xyz.<br />
+><br />
+> Thus, there would, in this particular world view, be a model that looks<br />
+> something like this:<br />
+><br />
+>                    joe-administrator-role<br />
+> xyz-administratedForum-role<br />
+><br />
+> |                                                                     |<br />
+> Joe------------------------<br />
+> --------joe-administrator-forum-xyz---------------------  --------------XYZ<br />
+></p>
+<p>So, if I've understood correctly your example, we've got the following<br />
+model:</p>
+<p>- Joe, instance of sioc:User<br />
+- XYZ forum, instance of sioc:Forum<br />
+- Joe-admin-role, instance of sioc:Administrator (subclass of<br />
+sioc:Role)<br />
+- XYZ-administratedForum-role ????? , instance of sioc:Role, trying to<br />
+model the role of a forum????<br />
+- Joe-administrator-forum-XYZ, instance of sioc:Relationship (or some<br />
+subclassess of this)</p>
+<p>Then, the relations among these instances would be something like</p>
+<p>  Joe ---> (hasRelation, a new property) --><br />
+Joe-administrator-forum-XYZ --> (relatedTo, new property) --> XYZ_Forum</p>
+<p>But, what is the 'role' of the "role instances" (sorry for that) used<br />
+for? I mean, I can't see how do you add the role instances in these<br />
+relations.</p>
+<p>I consider that "Relationship" concept is a good idea, but I would<br />
+model it like this:</p>
+<p>Class --> sioc:Relationship</p>
+<p>   Properties--> -sioc:owner, range: User, Usergroup  (Person or group<br />
+from whom the relation starts, flows towards another object)</p>
+<p>       -sioc:mode, range: Role (Type of relation)</p>
+<p>       -sioc:target, range: Forum, Site, etc (Object that is 'owned' or<br />
+'controlled' in the relation)</p>
+<p>        -... Other properties, as started_at, ended_at, notes, etc</p>
+<p>So, the previous example would be something like (keeping the same<br />
+names)</p>
+<p>Joe-->(sioc:owner)-->Joe-administror-forum-XYZ-->(sioc:target)-->XYZForum<br />
+                                      ^<br />
+                                      |<br />
+                                      |<br />
+                               (sioc:mode)<br />
+                                      ^<br />
+                                      |<br />
+                                      |<br />
+                              Joe-admin-Role</p>
+<p>But, as Jake says, I also have doubts about if it is necessary or it is<br />
+what we really are looking for...</p>
+<p>Hoping to hear from you soon,</p>
+<p>best regards,<br />
+Andrés</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-209"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/50.html" title="View user profile.">Jack Park</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-209" class="active">comments on the current submission document...</a></h3>
+
+    <div class="content">
+      <p>Andrés<br /><br />Your last sentence says it all: &quot; also have doubts about if it is necessary or it is<br />what we really are looking for...&quot;<br />Recall that my last sentence &quot;Answers to that question will derive from the statements you make regarding the full Monty goals of SIOC itself.<br />
+&quot; allowed as to how the goals of SIOC may not call for the level of detail in domain modeling that I suggest.<br /><br />Indeed, I've been looking around, albeit a bit fragmented, for some statements that clearly articulate those requirements for SIOC that would allow me to understand to what granularity SIOC models should satisfy. Perhaps I missed those, or misinterpreted what I have seen thus far. It's up to the SIOC tribe to decide, not me.<br />
+<br /><br />An idea central to the semantic web is answering questions. Some questions will require inferencing, others can be satisfied by simple keyword search. Sometimes, inferencing requires looking up the the semantic closure of some class or instance to find an answer, other times, you just query the object that represents the class or instance.<br />
+<br /><br />But, which object is it that represents *the* class or instance about which you seek answers? Suppose, for instance, you ask &quot;did Jack Park author a book on baseball?&quot; The correct answer for this Jack Park (moi) is &quot;nope.&quot; In fact, you need to disambiguate the name Jack Park from more than a dozen of them that pop up in google. The guy who wrote the baseball book lives in Ohio. This Jack Park wrote a book about wind energy, and edited and coauthored one about XML Topic Maps. I am making the case that name-based modeling is problematic. I am also making the case that, sometimes, to disambiguate subject references, you need a rather finely-grained model.<br />
+<br /><br />It's the SIOC tribe's choice what questions it chooses to answer with what level of precision and reliability. What I sketched is a rather finer-grained approach than that taken with SKOS. I am, in no way, suggesting that SKOS is inadequate. Indeed, it represents a kind of simplification over XTM. I don't model to either these days; rather, I believe that the topic maps reference model (TMRM) gives me a greater degree of liberty to model the way I see fit and still satisfy the major premises of topic mapping. Is SIOC about topic mapping? Is the semantic web about topic mapping? That's a rather presumptuous question, but in the large, in theory, all knowledge modeling is about answering questions.<br />
+<br /><br />It's your call.<br />Cheers<br />Jack<br /><br />
+<div><span class="gmail_quote">On 9/15/06, <b class="gmail_sendername">andresmo</b> &lt;<a href="mailto:amunoz@um.es">amunoz@um.es</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />Hi all, we are building a very interesting thread!!!<br /><br />These are my comments about Jack's ideas...<br /><br /><br />&gt; So, having Administrator as a subclass of sioc:Role makes plenty of sense.<br />&gt; sioc:Role seems core, Administrator is just one way to model folks who do<br />
+<br />&gt; administrative things. The trick, it seems to me, will be to have the<br />&gt; ability to capture all the many ways to model the administrator role, and to<br />&gt; recognize when those different models are actually the same thing. I say<br />
+<br />&gt; that because, in the end, it strikes me that SIOC will want to be able to<br />&gt; &quot;learn&quot; new information by merging with heterogeneous resources that are not<br />&gt; SIOC bound.<br /><br /><br />Totally agree<br />
+<br /><br /><br /><br />&gt;<br />&gt; Back to modeling roles.<br />&gt; Admin3 is properly an instance of Administrator. There is no mixing going on<br />&gt; here. To see what I mean, consider this example.<br />&gt;<br />&gt; Joe is the administrator of the XYZ forum.<br />
+<br />&gt; That's a statement of fact. (fictional, of course)<br />&gt;<br />&gt; To model it, I need to create an instance of a role, and, thinking about<br />&gt; things in a broader sense than SIOC presently appear to do (unless I missed<br />
+<br />&gt; something), I need to model the role of the forum (administratedForum) and I<br />&gt; need to model the relationship made here, the administrator-forum<br />&gt; relationship. I could create that as a class, subclass of, say (making this<br />
+<br />&gt; up now) sioc:Relationship. Then instantiate it with identifiers that say, in<br />&gt; essence, joe-administrator-forum-xyz.<br />&gt;<br />&gt; Thus, there would, in this particular world view, be a model that looks<br /><br />
+&gt; something like this:<br />&gt;<br />&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;joe-administrator-role<br />&gt; xyz-administratedForum-role<br />&gt;<br />&gt; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />&gt; Joe------------------------<br />
+<br />&gt; --------joe-administrator-forum-xyz---------------------&nbsp;&nbsp;--------------XYZ<br />&gt;<br /><br /><br />So, if I've understood correctly your example, we've got the following<br />model:<br /><br />- Joe, instance of sioc:User<br /><br />
+- XYZ forum, instance of sioc:Forum<br />- Joe-admin-role, instance of sioc:Administrator (subclass of<br />sioc:Role)<br />- XYZ-administratedForum-role ????? , instance of sioc:Role, trying to<br />model the role of a forum????<br />
+<br />- Joe-administrator-forum-XYZ, instance of sioc:Relationship (or some<br />subclassess of this)<br /><br />Then, the relations among these instances would be something like<br /><br />&nbsp;&nbsp;Joe ---&gt; (hasRelation, a new property) --&gt;<br />
+<br />Joe-administrator-forum-XYZ --&gt; (relatedTo, new property) --&gt; XYZ_Forum<br /><br />But, what is the 'role' of the &quot;role instances&quot; (sorry for that) used<br />for? I mean, I can't see how do you add the role instances in these<br />
+<br />relations.<br /><br />I consider that &quot;Relationship&quot; concept is a good idea, but I would<br />model it like this:<br /><br /><br />Class --&gt; sioc:Relationship<br /><br />&nbsp;&nbsp; Properties--&gt; -sioc:owner, range: User, Usergroup&nbsp;&nbsp;(Person or group<br />
+<br />from whom the relation starts, flows towards another object)<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -sioc:mode, range: Role (Type of relation)<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -sioc:target, range: Forum, Site, etc (Object that is 'owned' or<br />'controlled' in the relation)<br />
+<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-... Other properties, as started_at, ended_at, notes, etc<br /><br /><br /><br />So, the previous example would be something like (keeping the same<br />names)<br /><br /><br /><br />Joe--&gt;(sioc:owner)--&gt;Joe-administror-forum-XYZ--&gt;(sioc:target)--&gt;XYZForum<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (sioc:mode)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joe-admin-Role<br /><br /><br /><br />But, as Jake says, I also have doubts about if it is necessary or it is<br /><br />
+what we really are looking for...<br /><br />Hoping to hear from you soon,<br /><br />best regards,<br />Andrés<br /><br /><br /><br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></div></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div><a id="comment-188"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 12 - 09:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="132.html#comment-188" class="active">Contribution from UMU to SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>Dear Andres -</p>
+<p>These are very valuable comments, and I think we will have to revise the<br />
+Role concept as a result and also think about your Topic idea.</p>
+<p>andresmo wrote:<br />
+ > ·Forum<br />
+ >       -    It is declared that a forum will have a moderator or<br />
+ > administrator, but how is this relation represented in the model? Does<br />
+ > it come implicitly by a concrete role played by a subscriber of the<br />
+ > forum?</p>
+<p>Will talk about this under User.</p>
+<p> >       -    The meaning of  "scope_of"  property is not quite clear.<br />
+ > Does it mean that a forum is only visible to a fixed type of role? Or<br />
+ > is it interesting to a specific type of role?</p>
+<p>The latter, so if the Role links a User to a Forum, and the Role is of<br />
+type Moderator let's say, then this would be:</p>
+<p>  User -> has_function -> Role (of whatever type, e.g. Moderator) -><br />
+has_scope -> Forum</p>
+<p>Think of has_scope as where the Role applies to...</p>
+<p> > Another possibility that we have thought of is that this property tries<br />
+ > to represent the administration relation that we have mentioned in the<br />
+ > previous point, but it seems a bit weird, because is a user who<br />
+ > moderates a Forum, not a role.</p>
+<p>This is true, but having multiple Roles means that a user can have<br />
+different Roles for different objects, and these Roles can be futher<br />
+refined (e.g. I may be able to moderate forums A and B, but on forum B I<br />
+can also see a user's IP address whereas on A i cannot).</p>
+<p> >       -    A forum could be devoted to a certain group of users, but<br />
+ > how is represented the relation among forums and groups of users, that<br />
+ > is to say, how do you associate a group of user with a forum? It seems<br />
+ > that neither a direct relation nor an indirect one model this fact.</p>
+<p>Good idea.  This could be addressed by opening up the Role to Usergroups<br />
+as well as Users.  e.g.</p>
+<p>  Forum -> scope_of -> Role (Private Member) -> function_of -> Usergroup<br />
+or Set of Users</p>
+<p> > ·Post<br />
+ >       -    "Content" and "description" properties have got the same<br />
+ > semantic meaning; it seems that there is no difference between them. We<br />
+ > have read in [1] that currently it is being considered the idea of<br />
+ > inserting AtomOWL to represent the content of a post, which sounds to<br />
+ > be a good choice. So we suppose that these two properties will be<br />
+ > reduced to one of this AtomOWL type.</p>
+<p>Actually, description is like an abstract, whereas content is the full<br />
+posted message.  We propose to continue to use description for the short<br />
+version, content for the long version, content:encoded from Atom for the<br />
+encoded long version.</p>
+<p> > ·User<br />
+ >       -    As in Forum class, we can't see a relation that allows<br />
+ > representing that a user is moderator of a forum or site, as is stated<br />
+ > in the specification. That is to say, we miss a property that relates a<br />
+ > user with the administrator role with a forum, and its inverse (a forum<br />
+ > that is administrated by a user), like "subscriber_of"  property does.</p>
+<p>What you would do is say that User -> has_function -> Role (of subtype<br />
+Administrator or Moderator) -> has_scope -> Forum.  The inverse is then<br />
+Forum -> scope_of -> Role (of subtype whatever) -> function_of -> User.</p>
+<p>Since we added a has_subscriber shortcut for User -> has_fn -> Role<br />
+(Subscriber) -> has_scope -> Forum, similarly, I think we could add a<br />
+has_moderator or has_administrator shortcut...</p>
+<p>But at the moment, the range of Role means that this can't be applied to<br />
+Site, when maybe it should (or even to Community).</p>
+<p> > ·Usergroup<br />
+ >       -    Should "usergroups" have a role?</p>
+<p>Yes, and this was the intent at the beginning but having multiple<br />
+domains for a concept seems to be a problem.  We could probably just<br />
+open up the domain and range of Role to solve this.</p>
+<p> > ·About  "topic" property<br />
+ >         We think that "topic" property should be modelled as a class<br />
+ > and not as a property, since topic is a sufficiently important entity<br />
+ > to having its own properties: category, description, keywords, impact<br />
+ > factor, etc.</p>
+<p>I think that SKOS sufficiently describes this class, see skos:Concept<br />
+[1].  But if you think not, let us know!</p>
+<p>[1]  http://www.w3.org/2004/02/skos/core/spec/#Concept</p>
+<p>Again, many thanks!</p>
+<p>To summarise, the above issues could be solved by:</p>
+<p>1.  Removing the domain / range constraints on Role (at the moment the<br />
+domain is User and the range is Forum).  This would allow the range to<br />
+be User, Usergroup and the range to be Forum, Site, Community etc.)</p>
+<p>2.  Adding has_moderator and has_administrator properties to Forums and<br />
+Sites respectively.</p>
+<p>Please let us know your opinions on 1 and 2.</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F132%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/132?destination=node%2F132"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-PN5OTIhbkG3j4XdNC3kN8MxZAvAHXxtlLHynwREX6Zk" value="form-PN5OTIhbkG3j4XdNC3kN8MxZAvAHXxtlLHynwREX6Zk"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

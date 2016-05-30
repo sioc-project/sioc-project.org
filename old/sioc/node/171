@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/171"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/171">
+  <dc:title>Making Content into Literals in AtomOWL</dc:title>
+  <sioc:content>I am sending this to sioc-dev too, as sioc was thinking of using
+the :Content element from atom-owl.
+As I am thinking of changing this, I thought you should know.
+-------
+Hi, my previous post was a little long, which may not have made it
+clear that I am thinking of changing the ontology.
+The idea is to use literals wherever they seem obviously suited. This
+requires us to use create the following new literal types:
+    - :xhtml
+    - :html
+    - :xml
+I had thought of doing this before but was help up by two things
+(that I can remember)
+    1. I had not seen literals used widely with special types
+    2. This would then mean that the :content relation would point
+sometimes to a literal, sometimes to a object, which would not be OWL-DL
+    3. It seemed more flexible to not use literals
+To take these points one by one:
+1. Special Literals
+-------------------
+I have just discovered that Fresnel uses its own Literal types such
+as fresnel:styleClass.
+So for example in http://simile.mit.edu/repository/longwell-demos/
+atom/fresnel.n3 one can find
+:generatorFormat rdf:type fresnel:Format ;
+          fresnel:propertyFormatDomain atom:generator ;
+          fresnel:propertyStyle &quot;atom-generator&quot;^^fresnel:styleClass ;
+          fresnel:valueStyle &quot;atom-generator-
+value&quot;^^fresnel:styleClass ;
+          fresnel:group :atomgr .
+2. The :content relation
+------------------------
+If we think of a  element with a source as below
+
+          Atom-Powered Robots Run Amok
+
+          urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a
+          2003-12-13T18:30:02Z
+          
+
+as being equivalent to a
+ as below
+
+          Atom-Powered Robots Run Amok
+
+          urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a
+          2003-12-13T18:30:02Z
+
+
+Then we can convert the above rdf to the following N3
+[] a :Entry;
+     :title &quot;Atom-Powered Robots Run Amok&quot;^^:text
+     :link [ :href 
+             :rel iana:alternate ];
+     :id &quot;urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a&quot;^^xsd:anyURI;
+     :updated &quot;2003-12-13T18:30:02Z&quot;^^xsd:dateTime;
+     :link [ :href 
+             :rel :content;
+           ] .
+In accord with the following UML diagram.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-28T15:07:55+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:12+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/171" rdfs:label="Making Content into Literals in AtomOWL" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/66%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/66" />
+</sioc:Post>
+</rdf:RDF>

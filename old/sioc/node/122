@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/122"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/122">
+  <dc:title>Interaction between SIOC browsers and Talk Digger&amp;#039;s SIOC data exporter</dc:title>
+  <sioc:content>Hi guys,
+Recently I talked with Alex to ask him if he could be interested in making his
+SIOC Browser interacting with Talk Digger. In fact, the next version of Talk
+Digger, currently in alpha testing, will generate a SIOC document for each
+conversation page.
+Currently Alex&amp;#8217;s SIOC explorer is crawling and indexing some blogs that
+has the
+Wordpress (b2Evolution too?) SIOC exporter plugin.
+What I suggested him was to let his browser crawl Talk Digger&amp;#8217;s SIOC data
+as
+well.
+A couple of days ago, Uldis received the acceptance of his speech at the
+BlogTalk Reloaded conference. Their job (because he is not alone in the boat)
+is to merge all the current SIOC browsers into a unique one for the
+presentation (at least it is what I understood).
+As people know, the idea behind the SIOC ontology is to link online communities
+together. So the idea is the present information, in the same environment (a
+SIOC browser in the present case), from many different sources/types of
+communities.
+So what I would suggest is to start thinking about a way to let Talk Digger
+ping the SIOC browser when new SIOC data is available from Talk Digger for the
+browser.
+By example: a new conversation is tracked by Talk Digger. Once it is tracked,
+Talk Digger would ping the SIOC browser to let him know that at the URL
+&amp;#8220;X&amp;#8221;
+there are new SIOC data ready to be crawled. Then the SIOC crawler would crawl
+the URL, index the results, and present it into the browser, along with the
+other sources of information (blog, forums, IRC chat logs, etc).
+At first, I could create a list of links where data could be crawled, and later
+we could think about a more automatic/permanent way to let them interact
+together. At first I thought about a simple pinging system using XML-RPC (like
+all the new search engines pinging systems). But any other methods could work
+as well.
+So let me know if you could be interested, if it is a good idea, and how/when
+it could be done.
+Salutations,
+Fred
+http://fgiasson.com
+http://talkdigger.com
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-02T18:57:21+01:00</dcterms:created>
+  <dcterms:modified>2006-08-03T20:27:45+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/122" rdfs:label="Interaction between SIOC browsers and Talk Digger&#039;s SIOC data exporter" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/29%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/29" />
+</sioc:Post>
+</rdf:RDF>

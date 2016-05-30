@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/304"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/304">
+  <dc:title>Fwd: [RDFa application] MLE - mailing list archives explorer</dc:title>
+  <sioc:content>
+Hi,
+here is an interesting new application using SIOC, via RDFa mailing
+list.
+--------- Forwarded message --------
+De: Hausenblas, Michael 
+Para: RDFa
+
+Cc: SWD WG
+
+Asunto: [RDFa application] MLE - mailing list archives explorer
+Fecha: Wed, 18 Jul 2007 09:01:16 +0200
+Dear RDFa folks,
+I&#039;m delighted to announce the availability of MLE (pronounce: Melly)
+[1]. MLE is the &#039;mailing list archives explorer&#039;, and basically
+enhances (W3C) mailing list archives with SIOC metadata, deployed
+with RDFa -as a result, SPARQL queries can be executed on top of it.
+With MLE it is demonstrated, how existing data sources can be
+enriched/augmented with RDF, to finally enter the Semantic Web. 
+Any feedback welcome!
+Cheers,
+	Michael
+BTW: I recently submitted MLE to the ISWC 2007 challenge [2].
+[1] http://sw.joanneum.at/mle/xplore.php
+[2] http://challenge.semanticweb.org/
+----------------------------------------------------------
+ Michael Hausenblas, MSc.
+ Institute of Information Systems &amp;amp; Information Management
+ JOANNEUM RESEARCH Forschungsgesellschaft mbH
+ Steyrergasse 17, A-8010 Graz, AUSTRIA
+ 
+    phone: +43-316-876-1193 (fax:-1191)
+   e-mail: michael.hausenblas@joanneum.at
+      web: http://www.joanneum.at/iis/ 
+
+   mobile: +43-660-7621761
+      web: http://www.sw-app.org/
+----------------------------------------------------------
+--------- End forwarded message --------
+Read the thread at:
+http://lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/2007Jul/0140.html
+Regards,
+--
+Sergio Fernández - sergio.fernandez@fundacionctic.org
+R&amp;amp;D Deparment
+CTIC Foundation - www.fundacionctic.org
+Phone: +34 984 29 12 12
+Fax:  +34 984 39 06 12
+Edificio Centros Tecnológicos
+Parque Científico Tecnológico
+33203 Cabueñes - Gijón - Asturias - Spain
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-07-18T13:46:31+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/304" rdfs:label="Fwd: [RDFa application] MLE - mailing list archives explorer" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/322%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/322" />
+</sioc:Post>
+</rdf:RDF>

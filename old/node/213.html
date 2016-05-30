@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/213"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Update: SIOC Type Modules Additions | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Update: SIOC Type Modules Additions</h2>                                                  <div class="clear-block">
+            <div id="node-213" class="node">
+
+
+
+      <span class="submitted">2007, January 31 - 20:57 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  <div class="content clear-block">
+    <p>All,</p>
+<p>I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to<br />
+the mix re. SIOC. At first glance you might find this a little<br />
+confusing, but it isn't when you factor in the following:</p>
+<p>1. Online Communities are a Distributed Collaborative Application<br />
+Profile in Internet and Web Space<br />
+2. Microformats are going to generate a lot of Calendar, Review,<br />
+Resume, and Contact data on the Web in traditional Microformat and RDF<br />
+based Microformat forms (e.g RDF/A)<br />
+3. We need to make it nice and easy for SPARQL Query Processors (for<br />
+instance)  to perform "on the fly" transformation (via GRDDL/XSLT) of<br />
+said data sources (which are RDF Data Sources that SPARQL Processors<br />
+treat as Graph URIs)<br />
+4. These subclasses also provide unobtrusive extension of SIOC meaning<br />
+that you can use SIOC in its current form without any confusion.</p>
+<p>Here is RDF/N3 dump of our suggestions:<br />
+#Processed by Id: cwm.py,v 1.144 2003/09/14 20:20:20 timbl Exp<br />
+        #    using base file:/tmp/tmpU7ROYZ-rdfconverter</p>
+<p>#  Notation3 generation by<br />
+#       notation3.py,v 1.148 2003/12/04 21:20:17 timbl Exp</p>
+<p>#   Base was: file:/tmp/tmpU7ROYZ-rdfconverter<br />
+     @prefix : <http://rdfs.org/sioc/types#> .<br />
+     @prefix annotea: <http://www.w3.org/2002/01/bookmark#> .<br />
+     @prefix atom: <http://bblfish.net/work/atom-owl/2006-06-06/<br />
+AtomOwl.html#> .<br />
+     @prefix calendar: <http://www.w3.org/2002/12/cal/icaltzd#> .<br />
+     @prefix dc: <http://purl.org/dc/elements/1.1/> .<br />
+     @prefix exif: <http://www.w3.org/2003/12/exif/ns/> .<br />
+     @prefix foaf: <http://xmlns.com/foaf/0.1/> .<br />
+     @prefix owl: <http://www.w3.org/2002/07/owl#> .<br />
+     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .<br />
+     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .<br />
+     @prefix resume: <http://captsolo.net/semweb/resume/cv.rdfs#> .<br />
+     @prefix review: <http://www.isi.edu/webscripter/communityreview/<br />
+abstract-review-o#> .<br />
+     @prefix sioc: <http://rdfs.org/sioc/ns#> .<br />
+     @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .<br />
+     @prefix wot: <http://xmlns.com/wot/0.1/> .</http://xmlns.com/wot/0.1/></http://www.w3.org/2003/06/sw-vocab-status/ns#></http://rdfs.org/sioc/ns#></http://www.isi.edu/webscripter/communityreview/<br></http://captsolo.net/semweb/resume/cv.rdfs#></http://www.w3.org/2000/01/rdf-schema#></http://www.w3.org/1999/02/22-rdf-syntax-ns#></http://www.w3.org/2002/07/owl#></http://xmlns.com/foaf/0.1/></http://www.w3.org/2003/12/exif/ns/></http://purl.org/dc/elements/1.1/></http://www.w3.org/2002/12/cal/icaltzd#></http://bblfish.net/work/atom-owl/2006-06-06/<br></http://www.w3.org/2002/01/bookmark#></http://rdfs.org/sioc/types#></p>
+<p>    atom:Entry     rdfs:isDefinedBy atom:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    resume:Resume     rdfs:isDefinedBy resume:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    :     a owl:Ontology;<br />
+         dc:description "Extends SIOC (Semantically Interlinked Online<br />
+Communities) core ontology by defining subtypes and subproperties of<br />
+SIOC concepts.";<br />
+         dc:title "SIOC Types Module";<br />
+         rdfs:seeAlso <http://rdfs.org/sioc/spec/#sec-modules>;<br />
+         owl:import sioc: .</http://rdfs.org/sioc/spec/#sec-modules></p>
+<p>    :Addressbook     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Addressbook";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Bookmark     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Bookmark";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Briefcase     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Briefcase";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Calendar     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Calendar";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Community     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Community";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Discussion     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Discussion";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Feed     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Feed";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Mail     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Mail";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Photo     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Photo";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Poll     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Poll";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :ResumeCollection     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "ResumeCollection";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :ReviewCollection     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "ReviewCollection";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Weblog     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Weblog";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    :Wiki     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Wiki";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>    review:Review     rdfs:isDefinedBy review:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    annotea:Bookmark     rdfs:isDefinedBy annotea:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    calendar:VEVENT     rdfs:isDefinedBy calendar:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    exif:IFD     rdfs:isDefinedBy exif:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>    foaf:Person     rdfs:isDefinedBy foaf:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>Here is the RDF/XML dump:</p>
+<p>&lt;?xml version='1.0' encoding='UTF-8'?></p>
+<p><rdf:RDF<br />
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"<br />
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"<br />
+	xmlns:owl="http://www.w3.org/2002/07/owl#"<br />
+	xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"<br />
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"<br />
+	xmlns:wot="http://xmlns.com/wot/0.1/"<br />
+	xmlns:dc="http://purl.org/dc/elements/1.1/"<br />
+	xmlns:sioc="http://rdfs.org/sioc/ns#"<br />
+	xmlns:atom="http://bblfish.net/work/atom-owl/2006-06-06/<br />
+AtomOwl.html#"<br />
+	xmlns:exif="http://www.w3.org/2003/12/exif/ns/"<br />
+	xmlns:annotea="http://www.w3.org/2002/01/bookmark#"<br />
+	xmlns:resume="http://captsolo.net/semweb/resume/cv.rdfs#"<br />
+	xmlns:review="http://www.isi.edu/webscripter/communityreview/abstract-<br />
+review-o#"<br />
+	xmlns:calendar="http://www.w3.org/2002/12/cal/icaltzd#"</rdf:rdf<br></p>
+<p>></p>
+<!-- SIOC Types Module --><!-- SIOC Types Module --><!-- Used to extend the SIOC core ontology. For more detail see http://
+rdfs.org/sioc/spec/#sec-modules --><!-- Used to extend the SIOC core ontology. For more detail see http://
+rdfs.org/sioc/spec/#sec-modules --><p>
+<owl:Ontology rdf:about="http://rdfs.org/sioc/types#"><br />
+	<dc:title>SIOC Types Module</dc:title><br />
+	<dc:description>Extends SIOC (Semantically Interlinked Online<br />
+Communities) core ontology by defining subtypes and subproperties of<br />
+SIOC concepts.</dc:description><br />
+	<rdfs:seeAlso rdf:resource="http://rdfs.org/sioc/spec/#sec-modules"/><br />
+	<owl:import rdf:resource="http://rdfs.org/sioc/ns#"/><br />
+</owl:import></rdfs:seealso></owl:ontology></p>
+<!-- Classes --><!-- Classes --><!-- Describes a Weblog Data Space  --><!-- Describes a Weblog Data Space  --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Weblog"<br />
+	 rdfs:label="Weblog"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes Shared Feed Subscriptions Data Space --><!-- Describes Shared Feed Subscriptions Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Feed"<br />
+	 rdfs:label="Feed"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Decribes a Wiki Data Space --><!-- Decribes a Wiki Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Wiki"<br />
+	 rdfs:label="Wiki"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Decribes a Briefcase or File Service Data Space --><!-- Decribes a Briefcase or File Service Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Briefcase"<br />
+	 rdfs:label="Briefcase"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Decribes a Mail / Mailing List Data Space --><!-- Decribes a Mail / Mailing List Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Mail"<br />
+	 rdfs:label="Mail"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Decribes a Photo Gallery or Shared Images Data Space --><!-- Decribes a Photo Gallery or Shared Images Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Photo"<br />
+	 rdfs:label="Photo"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Decribes a Shared Bookmark Data Space --><!-- Decribes a Shared Bookmark Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Bookmark"<br />
+	 rdfs:label="Bookmark"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Discussion Forum Data Space --><!-- Describes a Discussion Forum Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Discussion"<br />
+	 rdfs:label="Discussion"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes Polls & Surveys Data Space --><!-- Describes Polls & Surveys Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Poll"<br />
+	 rdfs:label="Poll"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Resume Collection Data Space  --><!-- Describes a Resume Collection Data Space  --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#ResumeCollection"<br />
+	 rdfs:label="ResumeCollection"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Reviews Collection Data Space  --><!-- Describes a Reviews Collection Data Space  --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#ReviewCollection"<br />
+	 rdfs:label="ReviewCollection"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Calendar Data Space  --><!-- Describes a Calendar Data Space  --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Calendar"<br />
+	 rdfs:label="Calendar"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Address Book / Cantact / Social Network Data Space  --
+>
+<rdfs:Class rdf:about="http://rdfs.org/sioc/types#Addressbook"
+	 rdfs:label="Addressbook">
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/>
+</rdfs:Class>
+
+<!-- Describes any of the above when operating in Community / Group
+Mode (multiple contributors) --><!-- Describes a Address Book / Cantact / Social Network Data Space  --
+>
+<rdfs:Class rdf:about="http://rdfs.org/sioc/types#Addressbook"
+	 rdfs:label="Addressbook">
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/>
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/>
+</rdfs:Class>
+
+<!-- Describes any of the above when operating in Community / Group
+Mode (multiple contributors) --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Community"<br />
+	 rdfs:label="Community"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<!-- Describes a Bookmark Entry as an Annotea Bookmark object --><!-- Describes a Bookmark Entry as an Annotea Bookmark object --><p><rdf:Description rdf:about="http://www.w3.org/2002/01/<br />
+bookmark#Bookmark"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/01/bookmark#"/<br />
+><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a Photo or Image Gallery Items as an EXIF object --><!-- Describes a Photo or Image Gallery Items as an EXIF object --><p><rdf:Description rdf:about="http://www.w3.org/2003/12/exif/ns/IFD"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/12/exif/ns/"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a single Wikiword, Weblog Post, or Subscribed Feeds
+Entry as an Atomowl Entry object --><!-- Describes a single Wikiword, Weblog Post, or Subscribed Feeds
+Entry as an Atomowl Entry object --><p><rdf:Description rdf:about="http://bblfish.net/work/atom-owl/<br />
+2006-06-06/AtomOwl.html#Entry"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://bblfish.net/work/atom-owl/<br />
+2006-06-06/AtomOwl.html#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a single Resume as a ResumeCollection object --><!-- Describes a single Resume as a ResumeCollection object --><p><rdf:Description rdf:about="http://captsolo.net/semweb/resume/<br />
+cv.rdfs#Resume"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://captsolo.net/semweb/resume/<br />
+cv.rdfs#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a single Review as ReviewCollection object --><!-- Describes a single Review as ReviewCollection object --><p><rdf:Description rdf:about="http://www.isi.edu/webscripter/<br />
+communityreview/abstract-review-o#Review"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://www.isi.edu/webscripter/<br />
+communityreview/abstract-review-o#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a single Calender Item as a Calendar Event object --><!-- Describes a single Calender Item as a Calendar Event object --><p><rdf:Description rdf:about="http://www.w3.org/2002/12/cal/<br />
+icaltzd#VEVENT"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/12/cal/<br />
+icaltzd#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<!-- Describes a single Contact Network (Social Network) or Shared
+Address Book entry as a FOAF Person object --><!-- Describes a single Contact Network (Social Network) or Shared
+Address Book entry as a FOAF Person object --><p><rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"><br />
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/><br />
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdf:description></p>
+<p></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="212.html" class="topic-previous" title="Go to previous forum topic">‹ Survey: Semantic Radar</a>
+              <a href="214.html" class="topic-next" title="Go to next forum topic">vCard in RDF ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-337"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/43.html" title="View user profile.">Danny Ayers</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-337" class="active">Update: SIOC Type Modules Additions</a></h3>
+
+    <div class="content">
+      <p>On 31/01/07, kidehen <kidehen@openlinksw.com> wrote:<br />
+><br />
+> All,<br />
+><br />
+> I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to<br />
+> the mix re. SIOC. At first glance you might find this a little<br />
+> confusing,</kidehen@openlinksw.com></p>
+<p>Afraid I haven't been following developments recently, and I did get<br />
+confused when I saw :</p>
+<p>   :Photo     a rdfs:Class;<br />
+        rdfs:isDefinedBy :;<br />
+        rdfs:label "Photo";<br />
+        rdfs:subClassOf sioc:Forum .</p>
+<p>A photo is a forum?!</p>
+<p>Then I saw what you were getting at:</p>
+<!-- Decribes a Photo Gallery or Shared Images Data Space --><!-- Decribes a Photo Gallery or Shared Images Data Space --><p><rdfs:Class rdf:about="http://rdfs.org/sioc/types#Photo"<br />
+         rdfs:label="Photo"><br />
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Forum"/><br />
+        <rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/types#"/><br />
+</rdfs:isdefinedby></rdfs:subclassof></rdfs:class></p>
+<p>Is this kind of naming convention already in place? It does seem<br />
+confusing - surely at least at least a label or description should<br />
+explain?</p>
+<p>Also, it might not be an issue, but it'd probably be worth checking<br />
+the output of the various microformat2rdf XSLTs [1], just to make sure<br />
+there aren't any mismatches in the modelling (hCard in particular is<br />
+tricky - there was scheduled chat a few days ago, but I'm still not<br />
+sure whether a vCard in RDF is going to be a card or a person...).</p>
+<p>Cheers,<br />
+Danny.</p>
+<p>[1] http://esw.w3.org/topic/CustomRdfDialects<br />
+(DanC's migrating them there from http://esw.w3.org/topic/MicroModels )</p>
+<p>-- </p>
+<p>http://dannyayers.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-340"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-340" class="active">Update: SIOC Type Modules Additions</a></h3>
+
+    <div class="content">
+      <p>Hi,<br /><br />
+<div><span class="gmail_quote">On 1/31/07, <b class="gmail_sendername">Danny Ayers</b> &lt;<a href="mailto:danny.ayers@gmail.com">danny.ayers@gmail.com</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />On 31/01/07, kidehen &lt;<a href="mailto:kidehen@openlinksw.com">kidehen@openlinksw.com</a>&gt; wrote:<br />&gt;<br />&gt; All,<br />&gt;<br />&gt; I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to<br />&gt; the mix re. SIOC. At first glance you might find this a little<br />
+<br />&gt; confusing,<br /><br />Afraid I haven&#39;t been following developments recently, and I did get<br />confused when I saw :<br /><br />&nbsp;&nbsp; :Photo&nbsp;&nbsp;&nbsp;&nbsp; a rdfs:Class;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:isDefinedBy :;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:label &quot;Photo&quot;;<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:subClassOf sioc:Forum .<br /><br />A photo is a forum?!</blockquote></div></p>
+<div><br />I think it would be better to keep some things out of subclassing them from sioc:Forum.<br />If you want to say that a thread is linked to a photo (eg to map flickr discussions), I think it would be more appropriate to have<br />
+<br />[] a sioc:Forum<br />&nbsp;&nbsp; sioc:topic [<br />&nbsp;&nbsp;&nbsp;&nbsp; a xxx:Photo<br />&nbsp;&nbsp; ]<br />rather that considering the Photo as the forum itself. <br /><br />Or maybe think of photo as a subclass of sioc:Post if you consider it will have some reply and is the starting point of the discussion ?<br />
+<br />[] a sioc:Forum<br /><br />
+&nbsp;&nbsp; sioc:container_of [<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp; a sioc:Photo<br /><br />
+&nbsp;&nbsp; ]<br /><br />
+<br />Yet, we could have:<br />MailingDiscussion, Wikis, ... as sioc:Forum<br />Mail, WikiPage, ... as sioc:Post<br /><br />BTW I think that:<br />foaf:Person rdfs:subClassOf sioc:Post <br />will lead to strange things, ie<br />foaf:Person made foaf:Person<br />
+<br />and also breaks the idea that foaf:Person is &quot;real&quot; while sioc:Post is &quot;virtual&quot;<br /><br />Best,<br /><br />Alex.<br /><br /><br /></div>
+
+<p><br /><br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-343"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-343" class="active">Update: SIOC Type Modules Additions</a></h3>
+
+    <div class="content">
+      <p>
+On Feb 1, 4:42 am, "Alexandre Passant" <a...@passant.org> wrote:<br />
+> Hi,<br />
+><br />
+> On 1/31/07, Danny Ayers <danny.ay...@gmail.com> wrote:<br />
+><br />
+><br />
+><br />
+><br />
+><br />
+> > On 31/01/07, kidehen <kide...@openlinksw.com> wrote:<br />
+><br />
+> > > All,<br />
+><br />
+> > > I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to<br />
+> > > the mix re. SIOC. At first glance you might find this a little<br />
+> > > confusing,<br />
+><br />
+> > Afraid I haven't been following developments recently, and I did get<br />
+> > confused when I saw :<br />
+><br />
+> >    :Photo     a rdfs:Class;<br />
+> >         rdfs:isDefinedBy :;<br />
+> >         rdfs:label "Photo";<br />
+> >         rdfs:subClassOf sioc:Forum .<br />
+><br />
+> > A photo is a forum?!<br />
+><br />
+> I think it would be better to keep some things out of subclassing them from<br />
+> sioc:Forum.<br />
+> If you want to say that a thread is linked to a photo (eg to map flickr<br />
+> discussions), I think it would be more appropriate to have<br />
+> [] a sioc:Forum<br />
+>    sioc:topic [<br />
+>      a xxx:Photo<br />
+>    ]<br />
+> rather that considering the Photo as the forum itself.<br />
+></kide...@openlinksw.com></danny.ay...@gmail.com></a...@passant.org></p>
+<p>Ah! My bad! I meant Photo Gallery (Album):<br />
+ :PhotoGallery     a rdfs:Class;<br />
+         rdfs:isDefinedBy :;<br />
+         rdfs:label "Photo Gallery";<br />
+         rdfs:subClassOf sioc:Forum .</p>
+<p>I am trying to Model a Shared Photo Album (Photo) collection in the<br />
+Context of SIOC.</p>
+<p>Although SIOC started out initially as interpreting Online Communities<br />
+as those of the discussion variety, it is clear to me that this model<br />
+is flexible enough to address shared data in general (Data Spaces).<br />
+This is what I am trying to expose via these extensions.</p>
+<p>The models I am presenting have been verified with Insance Data which<br />
+really helps unravell what I am trying to unveil here.</p>
+<p>> Or maybe think of photo as a subclass of sioc:Post if you consider it will<br />
+> have some reply and is the starting point of the discussion ?<br />
+> [] a sioc:Forum<br />
+>    sioc:container_of [<br />
+>      a sioc:Photo<br />
+>    ]<br />
+></p>
+<p>This is exactly what the Model does i.e. Photo metadata via:</p>
+<p> exif:IFD     rdfs:isDefinedBy exif:;<br />
+         rdfs:subClassOf sioc:Post .</p>
+<p>> Yet, we could have:<br />
+> MailingDiscussion, Wikis, ... as sioc:Forum<br />
+> Mail, WikiPage, ... as sioc:Post<br />
+><br />
+> BTW I think that:<br />
+> foaf:Person rdfs:subClassOf sioc:Post<br />
+> will lead to strange things, ie<br />
+> foaf:Person made foaf:Person<br />
+> and also breaks the idea that foaf:Person is "real" while sioc:Post is<br />
+> "virtual"</p>
+<p>Hmmm.. I'll look at this again since this came from the desire to<br />
+expose a social network from a Share Address Book. Which brings us<br />
+back to vCard in RDF etc..</p>
+<p>I'll post an update..</p>
+<p>Thanks.</p>
+<p>Kingsley<br />
+><br />
+> Best,<br />
+><br />
+> Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-344"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-344" class="active">Update: SIOC Type Modules Additions</a></h3>
+
+    <div class="content">
+      <p>Alexandre,</p>
+<p>To further reduce / eliminate confusion. I am moving away from<br />
+sioct:PhotoGallery to sioct:ImageGallery since sioct:Images for the<br />
+actual images..</p>
+<p>I will send an update later today.</p>
+<p>Kingsley</p>
+<p>On Feb 1, 11:01 am, "kidehen" <kide...@openlinksw.com> wrote:<br />
+> On Feb 1, 4:42 am, "Alexandre Passant" <a...@passant.org> wrote:<br />
+><br />
+><br />
+><br />
+> > Hi,<br />
+><br />
+> > On 1/31/07, Danny Ayers <danny.ay...@gmail.com> wrote:<br />
+><br />
+> > > On 31/01/07, kidehen <kide...@openlinksw.com> wrote:<br />
+><br />
+> > > > All,<br />
+><br />
+> > > > I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to<br />
+> > > > the mix re. SIOC. At first glance you might find this a little<br />
+> > > > confusing,<br />
+><br />
+> > > Afraid I haven't been following developments recently, and I did get<br />
+> > > confused when I saw :<br />
+><br />
+> > >    :Photo     a rdfs:Class;<br />
+> > >         rdfs:isDefinedBy :;<br />
+> > >         rdfs:label "Photo";<br />
+> > >         rdfs:subClassOf sioc:Forum .<br />
+><br />
+> > > A photo is a forum?!<br />
+><br />
+> > I think it would be better to keep some things out of subclassing them from<br />
+> > sioc:Forum.<br />
+> > If you want to say that a thread is linked to a photo (eg to map flickr<br />
+> > discussions), I think it would be more appropriate to have<br />
+> > [] a sioc:Forum<br />
+> >    sioc:topic [<br />
+> >      a xxx:Photo<br />
+> >    ]<br />
+> > rather that considering the Photo as the forum itself.<br />
+><br />
+> Ah! My bad! I meant Photo Gallery (Album):<br />
+>  :PhotoGallery     a rdfs:Class;<br />
+>          rdfs:isDefinedBy :;<br />
+>          rdfs:label "Photo Gallery";<br />
+>          rdfs:subClassOf sioc:Forum .<br />
+><br />
+> I am trying to Model a Shared Photo Album (Photo) collection in the<br />
+> Context of SIOC.<br />
+><br />
+> Although SIOC started out initially as interpreting Online Communities<br />
+> as those of the discussion variety, it is clear to me that this model<br />
+> is flexible enough to address shared data in general (Data Spaces).<br />
+> This is what I am trying to expose via these extensions.<br />
+><br />
+> The models I am presenting have been verified with Insance Data which<br />
+> really helps unravell what I am trying to unveil here.<br />
+><br />
+> > Or maybe think of photo as a subclass of sioc:Post if you consider it will<br />
+> > have some reply and is the starting point of the discussion ?<br />
+> > [] a sioc:Forum<br />
+> >    sioc:container_of [<br />
+> >      a sioc:Photo<br />
+> >    ]<br />
+><br />
+> This is exactly what the Model does i.e. Photo metadata via:<br />
+><br />
+>  exif:IFD     rdfs:isDefinedBy exif:;<br />
+>          rdfs:subClassOf sioc:Post .<br />
+><br />
+> > Yet, we could have:<br />
+> > MailingDiscussion, Wikis, ... as sioc:Forum<br />
+> > Mail, WikiPage, ... as sioc:Post<br />
+><br />
+> > BTW I think that:<br />
+> > foaf:Person rdfs:subClassOf sioc:Post<br />
+> > will lead to strange things, ie<br />
+> > foaf:Person made foaf:Person<br />
+> > and also breaks the idea that foaf:Person is "real" while sioc:Post is<br />
+> > "virtual"<br />
+><br />
+> Hmmm.. I'll look at this again since this came from the desire to<br />
+> expose a social network from a Share Address Book. Which brings us<br />
+> back to vCard in RDF etc..<br />
+><br />
+> I'll post an update..<br />
+><br />
+> Thanks.<br />
+><br />
+> Kingsley<br />
+><br />
+><br />
+><br />
+> > Best,<br />
+><br />
+> > Alex.</kide...@openlinksw.com></danny.ay...@gmail.com></a...@passant.org></kide...@openlinksw.com></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-338"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/58.html" title="View user profile.">Kjetil Kjernsmo</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-338" class="active">vCard in RDF</a></h3>
+
+    <div class="content">
+      <p>On Wednesday 31 January 2007 22:20, Danny Ayers wrote:<br />
+> but I'm still not<br />
+> sure whether a vCard in RDF is going to be a card or a person...).</p>
+<p>Timbl, Harry and I had a F2F in Boston last week, and we resolved that<br />
+most of the vCard properties should be of domain foaf:Person. There are<br />
+certain complicating issues, though. Harry is writing up a W3C note, to<br />
+be published RSN. </p>
+<p>Cheers,</p>
+<p>Kjetil<br />
+--<br />
+Kjetil Kjernsmo<br />
+Semantic Web Specialist<br />
+Opera Software ASA</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-339"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/43.html" title="View user profile.">Danny Ayers</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-339" class="active">vCard in RDF</a></h3>
+
+    <div class="content">
+      <p>On 01/02/07, Kjetil Kjernsmo <kjetilk@opera.com> wrote:<br />
+><br />
+> On Wednesday 31 January 2007 22:20, Danny Ayers wrote:<br />
+> > but I'm still not<br />
+> > sure whether a vCard in RDF is going to be a card or a person...).<br />
+><br />
+> Timbl, Harry and I had a F2F in Boston last week, and we resolved that<br />
+> most of the vCard properties should be of domain foaf:Person. There are<br />
+> certain complicating issues, though. Harry is writing up a W3C note, to<br />
+> be published RSN.</kjetilk@opera.com></p>
+<p>Many thanks Kjetil, nice to hear something's been sorted.</p>
+<p>-- </p>
+<p>http://dannyayers.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-341"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="213.html#comment-341" class="active">vCard in RDF</a></h3>
+
+    <div class="content">
+      <p>Danny Ayers wrote:<br />
+> On 01/02/07, Kjetil Kjernsmo <kjetilk@opera.com> wrote:<br />
+><br />
+>>On Wednesday 31 January 2007 22:20, Danny Ayers wrote:<br />
+>><br />
+>>>but I'm still not<br />
+>>>sure whether a vCard in RDF is going to be a card or a person...).<br />
+>><br />
+>>Timbl, Harry and I had a F2F in Boston last week, and we resolved that<br />
+>>most of the vCard properties should be of domain foaf:Person. There are<br />
+>>certain complicating issues, though. Harry is writing up a W3C note, to<br />
+>>be published RSN.<br />
+><br />
+><br />
+> Many thanks Kjetil, nice to hear something's been sorted.</kjetilk@opera.com></p>
+<p>Interesting! May I ask whethr also overlaps between vCard and Foaf were<br />
+discussed?</p>
+<p>I did some very initial draft work on nailing down these these overlaps<br />
+with SPARQL CONSTRUCT snippets [1]</p>
+<p>but probabvly people can give me more pointers. Fact is that some<br />
+properties of vCard and FOAF overlap and it is not clear to me for all<br />
+how to define proper mappings between them. It would also be good to<br />
+make a decicsion which ones to use preferably.</p>
+<p>e.g. "prefer vCard where defined and more specific" would be a perfect<br />
+such decision in my opinion.</p>
+<p>best,<br />
+axel</p>
+<p>1. http://rdfweb.org/topic/ExpertFinder_2fmappings</p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F213%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/213?destination=node%2F213"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-jHdJ5qNPpRWeZ2quoO4GWDfxWZ7znWYH6tRLIczVcZI" value="form-jHdJ5qNPpRWeZ2quoO4GWDfxWZ7znWYH6tRLIczVcZI"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/284"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/284">
+  <dc:title>[Fwd:  Ontology suggestions needed]</dc:title>
+  <sioc:content>Hi Kingsley -
+Thanks for the responses, CCing to list...
+Talk soon,
+John.
+-------- Original Message --------
+Subject: 	Re: Ontology suggestions needed
+Date: 	Mon, 28 May 2007 11:48:28 -0700
+From: 	kidehen 
+To: 	John Breslin 
+References: 	&amp;lt;465B09F4.7070400@deri.org&gt;
+John,
+On May 28, 12:57 pm, John Breslin  wrote:
+&gt; Hi all -
+&gt;
+&gt; Thanks for all your recent comments both on and offlist.
+&gt;
+&gt; A few more ontology suggestions we need your help with.
+&gt;
+&gt; (1)
+&gt;
+&gt; We have sioc:topic which can link Sites, Forums, Posts etc. to resources
+&gt; that are topics of those documents or containers...  (Also,
+&gt; unfortunately we did not use foaf:topic as the domain is a Document,
+&gt; which some of the SIOC classes are not).  We can also use dc:subject for
+&gt; free text.  But what if we want to say that a particular Post describes
+&gt; a book or is about two books, perhaps something like sioc:about or
+&gt; sioc:describes is needed.
+Why not Tag (via SKOS) the post for this purpose? The rest of the
+specificity should be in the content of the post (i.e. content
+structure).
+A Post about a book could be a &quot;Book Review&quot; or a Post that mentions
+the Book. If it is a &quot;Book Review&quot; then a sioc:Item subclass for
+&quot;Reviews&quot; should be adequate. If it&#039;s a Post that mentions a book then
+&quot;sioc:related&quot; should suffice. Otherwise, just Tag the post.
+&gt;
+&gt; (2)
+&gt;
+&gt; We plan to add Category and Tag classes to the sioc:types module to help
+&gt; with classifying the above sioc:topics for import/export.  Suggestions
+&gt; welcome.
+&gt;
+Exactly!
+&gt; (3)
+&gt;
+&gt; We want to add has_part/part_of as subproperties of the corresponding
+&gt; DCMI terms (hasPart/isPartOf AFAIR).
+&gt;
+&gt; (4)
+&gt;
+&gt; I am of the opinion that a Community is NOT a subclass of Space.  A
+&gt; Space is where data resides, but a community extends beyond mere data.
+&gt;
+Community is Data.
+Data is atomic when dealing with Networks, really.
+A Community is one representation of Data in specific context (be it
+your AddressBook, Blogroll, Boardscape etc..). A Community is a type
+of Data Space.
+The conceptual partitioning here ultimately aids and simplifies URI
+dereferencing. If you don&#039;t have a conceptual starting point for
+traversing graphs you end up with an extremely expensive graph route
+traversal and route construction.
+A single URI should expose:
+1. Communities
+2. Conversations across communities
+3. Types of conversations (Blog Posts &amp;amp; Post Comments, Mailing List
+Posts, Wiki Articles and Talk Pages etc..).
+If a Community isn&#039;t a Data Space then what does it become? How does
+this make the cost of URI dereferencing (aka Graph Traversal) more
+effective etc?
+Note, the depth and breadth of URIs is what ultimately determines the
+value of a URI. There will be URIs and URIs on the Semantic Data Web.
+I hope SIOC provides a mechanism for coherent construction of rich
+URIs (rich is expressed in depth and breadth of Linked Data).
+&gt; (5)
+&gt;
+&gt; We still need a way to recommend to people looking at the SIOC Types
+&gt; module what kind of vocabularies can be used for Items contained in
+&gt; particular Container subclasses.  For example, to say that in a
+&gt; sioct:AddressBook - that you could use JohnsAddressBook (of type
+&gt; sioct:AddressBook) container_of John (of type foaf:Person or foaf:Agent)
+&gt; - without having to define millions of subproperties of container_of to
+&gt; link things, because these are only suggestions (someone may choose to
+&gt; put something else into their AddressBook).  Ideas needed :-)  This is
+&gt; related to an idea we had for a Related Ontologies ontology [1].
+&gt;
+I think being able to dereference the Schema / Ontology is a starting
+point. Ultimately, RDF Authors (direct or indirect) will lookup
+dereferencable ontologies and use this as an unobtrusive mechanism for
+&quot;Term ReUse&quot;. If I can dereference the SIOC Types Modules I can
+actually demonstrate the point by adding it to:
+http://www.openlinksw.com/blog/~kidehen/index.vspx?page=&amp;amp;id=1203 .
+Which also means it would play well in our SPARQL QBE Tool (which will
+ultimately include RDF Authoring capability since it is actually
+inspired by RDF Author: http://rdfweb.org/people/damian/RDFAuthor/Tutorial/Tutorial1/).
+Kingsley
+&gt; [1]http://wiki.sioc-project.org/index.php/SuggestedOntologiesOntology
+&gt;
+&gt; At the moment we&#039;ll just have something like:
+&gt;
+&gt;       rdfs:label=&quot;Address Book&quot;&gt;
+&gt;     Describes a collection of personal or organisational
+&gt; addresses.
+&gt;     
+&gt;     
+&gt;      rdfs:label=&quot;Describes a single person, group or organisation.&quot;/&gt;
+&gt; 
+&gt;
+&gt; That seeAlso could be replaced by something more descriptive like...
+&gt;
+&gt; 
+&gt;   
+&gt;      rdf:resource=&quot;http://rdfs.org/sioc/ns#container_of&quot;/&gt;
+&gt;     
+&gt;    
+&gt;
+&gt; or:
+&gt;
+&gt; 
+&gt;   
+&gt;      rdf:resource=&quot;http://rdfs.org/sioc/ns#has_container&quot;/&gt;
+&gt;     
+&gt;   
+&gt; 
+&gt; Something similar could exist for properties that you want to use to
+&gt; relate to classes (&quot;useAsProperty&quot; with a suggestedDomain and a
+&gt; suggestedRange).
+&gt;
+&gt; Thanks, looking forward to hearing from you,
+&gt;
+&gt; John.
+&gt;
+&gt; --
+&gt; 
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/284" rdfs:label="[Fwd:  Ontology suggestions needed]" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

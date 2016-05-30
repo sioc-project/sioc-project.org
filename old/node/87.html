@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/87"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Another SIOC browser | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Another SIOC browser</h2>                                                  <div class="clear-block">
+            <div id="node-87" class="node">
+
+
+
+      <span class="submitted">2006, June 14 - 22:29 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi all,<br /><br />Here's a first version of my SIOC browser / explorer:<br /><br />The idea, as discussed with Uldis when I was in Galway, is:<br />- Crawl different SIOC blogs<br />- Put data in a 3store<br />- Query this data w/SPARQL over HTTP<br />
+<br />- Get some clean interfaces to view results <br /><br />The browser is available here: <a href="http://apassant.net/hack/2006/06/sioc-browser/tags.php">http://apassant.net/hack/2006/06/sioc-browser/tags.php</a><br /><br />I'll explain the concepts and the implementation later as I'd like to improve / redesign some parts of the code first - will do that next week -, but you still can try it now. (In a few words, it uses JSON / AJAX / PHP)<br />
+<br />Unfortunately, Joseki - the 3store used at the moment - crashes sometimes (seems to be a MySQL jdbc driver problem), so I hope you can have a look at it before it's down :)<br /><br />Cheers,<br /><br />Alex.<br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="86.html" class="topic-previous" title="Go to previous forum topic">‹ Ontology editing - and other tools for SIOC community</a>
+              <a href="85.html" class="topic-next" title="Go to next forum topic">Advatages and Disadvantages of SIOC ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-71"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 19 - 14:47 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-71" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>Hi all,<br /><br />Here's a first version of my SIOC browser / explorer:<br /><br />The idea, as discussed with Uldis when I was in Galway, is:<br />- Crawl different SIOC blogs<br />- Put data in a 3store<br />- Query this data w/SPARQL over HTTP<br />
+<br />- Get some clean interfaces to view results <br /><br />The browser is available here: <a href="http://apassant.net/hack/2006/06/sioc-browser/tags.php">http://apassant.net/hack/2006/06/sioc-browser/tags.php</a><br /><br />I'll explain the concepts and the implementation later as I'd like to improve / redesign some parts of the code first - will do that next week -, but you still can try it now. (In a few words, it uses JSON / AJAX / PHP)<br />
+<br />Unfortunately, Joseki - the 3store used at the moment - crashes sometimes (seems to be a MySQL jdbc driver problem), so I hope you can have a look at it before it's down :)<br /><br />Cheers,<br /><br />Alex.<br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-60"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/28.html" title="View user profile.">Christoph Görn</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-60" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>Alex, there is a acknowledged and CVS-fixed problem with MySQL<br />
+disconnection Joseki after 8 hourse (default), even with ?<br />
+autoreconnect=true in the jdbc url.</p>
+<p>The fix made by AndyS tries to reconnect Joseki once if a query failed.</p>
+<p>  CaptSolo seems to have another problem with joseki...</p>
+<p>	Christoph</p>
+<p>Am 15.06.2006 um 00:29 schrieb Alexandre Passant:</p>
+<p>> Unfortunately, Joseki - the 3store used at the moment - crashes<br />
+> sometimes (seems to be a MySQL jdbc driver problem), so I hope you<br />
+> can have a look at it before it's down :)</p>
+<p>--<br />
+Christoph Görn <goern@B4mad.Net><br />
+http://B4mad.Net/FOAF/goern.rdf#goern</goern@b4mad.net></p>
+<p>Usability schmusability... where's the part where we talk about how<br />
+this helps users kick ass?</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-57"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-57" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>> Here's a first version of my SIOC browser / explorer:<br />
+><br />
+> The idea, as discussed with Uldis when I was in Galway, is:<br />
+> - Crawl different SIOC blogs<br />
+> - Put data in a 3store<br />
+> - Query this data w/SPARQL over HTTP<br />
+> - Get some clean interfaces to view results<br />
+><br />
+> The browser is available here:<br />
+> http://apassant.net/hack/2006/06/sioc-browser/tags.php</p>
+<p>Amazing! It looks great! :)<br />
+[GNU] started with the first AJAX SIOC browser and this now is another<br />
+step forward.</p>
+<p>Seeing that you and your viewers also use my "on-the-fly" viewer to<br />
+see individual posts - please give me some feedback what needs to be<br />
+improved.</p>
+<p>Do you have any ideas how to implement the 2nd part we talked about -<br />
+graphical link / relation browser?</p>
+<p>> Unfortunately, Joseki - the 3store used at the moment - crashes sometimes<br />
+> (seems to be a MySQL jdbc driver problem), so I hope you can have a look at<br />
+> it before it's down :)</p>
+<p>Hmm. Are you still experiencing problems? My store (also Joseki, as<br />
+you know) seems to be more stable now. Maybe what we can do is have 2<br />
+(or more) stores with mirrored content - and build into your<br />
+application switching from one store to another in case if the first<br />
+is down.</p>
+<p>The store's SPARQL endpoint is at http://sparql.captsolo.net/joseki/query.html.<br />
+Only thing needed is to load it with new data - the data now in are quite old.</p>
+<p>Keep up the good work! :)</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-64"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-64" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>Hi,<br /><br />
+<div><span class="gmail_quote">On 6/15/06, <b class="gmail_sendername">CaptSolo</b> &lt;<a href="mailto:captsolo@gmail.com">captsolo@gmail.com</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />&gt; Here's a first version of my SIOC browser / explorer:<br />&gt;<br />&gt; The idea, as discussed with Uldis when I was in Galway, is:<br />&gt; - Crawl different SIOC blogs<br />&gt; - Put data in a 3store<br />&gt; - Query this data w/SPARQL over HTTP<br />
+<br />&gt; - Get some clean interfaces to view results<br />&gt;<br />&gt; The browser is available here:<br />&gt; <a href="http://apassant.net/hack/2006/06/sioc-browser/tags.php">http://apassant.net/hack/2006/06/sioc-browser/tags.php<br />
+</a><br /><br />Amazing! It looks great! :)<br />[GNU] started with the first AJAX SIOC browser and this now is another<br />step forward.</blockquote></div></p>
+<div><br />Thanks :)<br />Indeed, It's the first time I play with AJAX / SPARQL and it's really powerful.<br />
+<br /><br /> </div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">Seeing that you and your viewers also use my &quot;on-the-fly&quot; viewer to<br />
+<br />see individual posts - please give me some feedback what needs to be<br />improved.<br /><br />Do you have any ideas how to implement the 2nd part we talked about -<br />graphical link / relation browser?</blockquote></p>
+<div><br /><br />
+Not yet. We've got a flah graph tool here in my company, I'll see if we can release it so that it could be used in SIOC Browser.<br />But I've found a nice API if wa want to make graphs about the data:<br /><a href="http://www.maani.us/charts/index.php"><br />
+http://www.maani.us/charts/index.php</a><br />&nbsp;<br /></div>
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><p>&gt; Unfortunately, Joseki - the 3store used at the moment - crashes sometimes<br />
+<br />&gt; (seems to be a MySQL jdbc driver problem), so I hope you can have a look at<br />&gt; it before it's down :)<br /><br />Hmm. Are you still experiencing problems? My store (also Joseki, as<br />you know) seems to be more stable now. Maybe what we can do is have 2<br />
+<br />(or more) stores with mirrored content - and build into your<br />application switching from one store to another in case if the first<br />is down.</p></blockquote>
+<div><br />One of the feature I'll setup up is allowing users to choose the store they wan to query. So indeed, we could have mirrored 3stores. (or even if they're not mirrored, we can use different SIOC stores, eg: one for personal weblogs, one for irishblogs, and even one for the whole data<br />
+<br /></div>
+<p><br />Regarding the crash problems, I'll check CVS as Christoph mentionned in of his reply.<br /><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+The store's SPARQL endpoint is at <a href="http://sparql.captsolo.net/joseki/query.html">http://sparql.captsolo.net/joseki/query.html</a>.<br />Only thing needed is to load it with new data - the data now in are quite old.</blockquote></p>
+<div><br />Yes, we also have to find a way to update the data. But since we can do that, I'll try to setup a weekly tarball or SIOC data on my server, so that we can update the stores without crawling the data each other.<br /><br />
+<br />Alex<br /></div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">Keep up the good work! :)<br /><br />Uldis<br /><br />[ <a href="http://captsolo.net/info/"><br />
+http://captsolo.net/info/</a> ]<br /><br /><br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-61"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/28.html" title="View user profile.">Christoph Görn</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-61" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>This is cool!! From a visual point of view what I really want to do.<br />
+Even on Safari (MacOSX it produced good (not perfect jet) visual<br />
+results)</p>
+<p>Feels like the time is right for a first consolidation of work isnt it?</p>
+<p>	Christoph</p>
+<p>Am 15.06.2006 um 00:48 schrieb CaptSolo:</p>
+<p>>> The browser is available here:<br />
+>> http://apassant.net/hack/2006/06/sioc-browser/tags.php</p>
+<p>--<br />
+blogging at: http://B4mad.Net/datenbrei<br />
+info at: http://B4mad.Net/datenbrei/index.php?author=2/foaf.rdf<br />
+gpg key: http://pgpkeys.pca.dfn.de:11371/pks/lookup?<br />
+op=get&amp;search=0xB10DFF8D88FD746C<br />
+x509 root ca certificate: http://b4mad.net/CA/</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-65"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-65" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p><br /><br />
+<div><span class="gmail_quote">On 6/15/06, <b class="gmail_sendername">Christoph Görn</b> &lt;<a href="mailto:goern@b4mad.net">goern@b4mad.net</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+This is cool!! From a visual point of view what I really want to do.<br />Even on Safari (MacOSX it produced good (not perfect jet) visual<br />results)<br /><br />Feels like the time is right for a first consolidation of work isnt it?
+</blockquote></div></p>
+<div><br />Yep !<br />I didn't test it on Safari yet, but I experienced some stylesheet problems on IE. <br />I planned to release its code anyway, so maybe I can put it on <a href="http://gna.org">gna.org</a> ot other management system so that we can work together on it.<br />
+<br /><br />Oh, and BTW, I made a mistake in my first post, the browser base URL is <a href="http://apassant.net/hack/2006/06/sioc-browser">http://apassant.net/hack/2006/06/sioc-browser</a><br /></div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Christoph<br /><br />Am 15.06.2006 um 00:48 schrieb CaptSolo:<br /><br />&gt;&gt; The browser is available here:<br />&gt;&gt; <a href="http://apassant.net/hack/2006/06/sioc-browser/tags.php">http://apassant.net/hack/2006/06/sioc-browser/tags.php<br />
+</a><br /><br />--<br />blogging at: <a href="http://B4mad.Net/datenbrei">http://B4mad.Net/datenbrei</a><br />info at: <a href="http://B4mad.Net/datenbrei/index.php?author=2/foaf.rdf">http://B4mad.Net/datenbrei/index.php?author=2/foaf.rdf<br />
+</a><br />gpg key: <a href="http://pgpkeys.pca.dfn.de:11371/pks/lookup">http://pgpkeys.pca.dfn.de:11371/pks/lookup</a>?<br />op=get&amp;search=0xB10DFF8D88FD746C<br />x509 root ca certificate: <a href="http://b4mad.net/CA/">http://b4mad.net/CA/<br />
+</a><br /><br /><br /><br /></blockquote></p>
+
+<p><br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-58"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-58" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>Hi Guys!</p>
+<p>> > The browser is available here:<br />
+> > http://apassant.net/hack/2006/06/sioc-browser/tags.php</p>
+<p>Alex: Wow really good work! I really like it.</p>
+<p>When using it I found that I make a mistake (not really a mistake but<br />
+I forgot something in my implementation): all the Talk Digger "<br />
+conversations" are tagged by users when they start tracking them. So,<br />
+why don't I use the most common tags and use them as sioc:Topics?<br />
+Dunno, but I'll fix that "problem" over the week end.</p>
+<p>That way, your SIOC explorer could be able to index them and<br />
+aggregate them in the "topic-browser" section.</p>
+<p>I also thought about something else. If you wish, we could think<br />
+about implementing some type of "pinging" system between your SIOC<br />
+browser and Talk Digger. That way, each time a new "conversation"<br />
+start to be tracked by Talk Digger, it could ping your server and<br />
+then it could crawl Talk Digger to index the new content.</p>
+<p>It could be interesting because you could prove the concept of cross-<br />
+community interaction of the SIOC ontology.</p>
+<p>There is good XML-RPC server/client vailable for PHP, so it would not<br />
+be hard and time expensive to develop such a pinging system.</p>
+<p>> Amazing! It looks great! :)</p>
+<p>Uldis, just a little suggestion for your SIOC browser: would it be<br />
+possible to add a link to the raw RDF data from your interface? Or it<br />
+would only clutter it?</p>
+<p>Keep up the good work guys!</p>
+<p>Salutations,</p>
+<p>--<br />
+Frederick Giasson</p>
+<p>www.fgiasson.com<br />
+www.talkdigger.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-66"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-66" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p><br />
+<div><span class="gmail_quote">On 6/15/06, <b class="gmail_sendername">Frederick Giasson</b> &lt;<a href="mailto:fred@fgiasson.com">fred@fgiasson.com</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />I also thought about something else. If you wish, we could think<br />about implementing some type of &quot;pinging&quot; system between your SIOC<br />browser and Talk Digger. That way, each time a new &quot;conversation&quot;<br />
+<br />start to be tracked by Talk Digger, it could ping your server and<br />then it could crawl Talk Digger to index the new content.<br /><br />It could be interesting because you could prove the concept of cross-<br />community interaction of the SIOC ontology.<br />
+<br /><br />There is good XML-RPC server/client vailable for PHP, so it would not<br />be hard and time expensive to develop such a pinging system.</blockquote></div></p>
+<div><br />Indeed, I wish we could have a way to easilly update the stores for all the sioc:Site it contains.<br />
+<br /><br />The first idea I got was to use RSS feed of each blog (comments + posts) to see what have changed, and then to crawl the new data.<br />Pb: we won't get information about new users, we must be sure we won't lost any information (crawl every 30 minutes ?), and how can we deal with removed posts/comments ?<br />
+<br /><br />Another idea could be, as you also suggested, to implement a ping feature in any SIOC site, with params as &quot;NEW&quot;, &quot;DEL&quot;, &quot;UPDATE&quot;, followed by the URI of the post/comment/user... to consider.<br />
+<br />Then the store/browser could ping different services - if the service ping the browser, he has to know every store that use its data (?)&nbsp; - to know what's new since last crawl.<br />But it's a bit more tricky regarding the implementation,especially for people who want to write export plugins actually, as they'll also have to write some ping parameters.<br />
+<br /><br />What do you think about this ? <br /></div>
+<p><br />Alex.<br /><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">&gt; Amazing! It looks great! :)<br />
+<br /><br />Uldis, just a little suggestion for your SIOC browser: would it be<br />possible to add a link to the raw RDF data from your interface? Or it<br />would only clutter it?<br /><br /><br />Keep up the good work guys!<br /><br /><br /><br />
+Salutations,<br /><br /><br /><br />--<br />Frederick Giasson<br /><br /><a href="http://www.fgiasson.com">www.fgiasson.com</a><br /><a href="http://www.talkdigger.com">www.talkdigger.com</a><br /><br /><br /><br /><br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-68"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="87.html#comment-68" class="active">Another SIOC browser</a></h3>
+
+    <div class="content">
+      <p>Hi Alex,</p>
+<p>> The first idea I got was to use RSS feed of each blog (comments +<br />
+posts) to<br />
+> see what have changed, and then to crawl the new data.<br />
+> Pb: we won't get information about new users, we must be sure we won<br />
+'t lost<br />
+> any information (crawl every 30 minutes ?), and how can we deal<br />
+with removed<br />
+> posts/comments ?</p>
+<p>Not sure that it is a good idea. First the SIOC content publisher<br />
+will have to create/manage such feeds (we have to keep it as simple<br />
+as possible for adoption) and as you said: will you have to crawl it<br />
+every 30 minutes to make sure that you don't loose anything?</p>
+<p>> Another idea could be, as you also suggested, to implement a ping<br />
+feature in<br />
+> any SIOC site, with params as "NEW", "DEL", "UPDATE", followed by<br />
+the URI of<br />
+> the post/comment/user... to consider.<br />
+> Then the store/browser could ping different services - if the<br />
+service ping<br />
+> the browser, he has to know every store that use its data (?)  - to<br />
+know<br />
+> what's new since last crawl.<br />
+> But it's a bit more tricky regarding the implementation,especially<br />
+for<br />
+> people who want to write export plugins actually, as they'll also<br />
+have to<br />
+> write some ping parameters.<br />
+><br />
+> What do you think about this ?</p>
+<p>Right now I was thinking about a way to make Talk Digger (and<br />
+possibly a couple of other websites) communicating with your SIOC<br />
+browser. Considering that, we have much more flexibility to implement<br />
+a working solution.</p>
+<p>What I propose is that we agree on a method to communicate and that<br />
+we implement it. I think we have to do that so we will be able to<br />
+find out what could and couldn't work in the *real* world (in a world<br />
+of large adoption).</p>
+<p>What I was proposing is the *Technorati way*:</p>
+<p>1- Something changed on Talk Digger (update, delete, creation), so I<br />
+Ping (XML-RPC) you SIOC browser. It tell him: He, something changed<br />
+at that URL, could you take a look and update your databases<br />
+accordingly?</p>
+<p>2- Your browser receive the ping, check the URL and crawl it.</p>
+<p>3- It change its story accordingly to the new information.</p>
+<p>4- each week or so (everything depends on your available bandwidth),<br />
+you could re-crawl the pings URL you received to check if any changes<br />
+have been made. What we could also do is to create a simple pinging<br />
+protocol, as you suggested, to let me tell you if something have been<br />
+added, deleted or updated.</p>
+<p>You can check my blog (my last posts) to see some simple SIOC<br />
+document created by Talk Digger.</p>
+<p>Thanks,</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--<br />
+Frederick Giasson</p>
+<p>www.fgiasson.com<br />
+www.talkdigger.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F87%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/87?destination=node%2F87"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-heP5eDPkCrc2HPFVgpx4hGkzxVoT7WNuHxqnmhgWjfY" value="form-heP5eDPkCrc2HPFVgpx4hGkzxVoT7WNuHxqnmhgWjfY"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

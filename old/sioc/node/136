@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/136"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/136">
+  <dc:title>ANN: WordPress SIOC plugin - v1.19</dc:title>
+  <sioc:content>Version 1.19 of the WordPress SIOC plugin is available now. Please
+upgrade.
+WordPress SIOC plugin [1] allows to make full blog contents available
+on the Semantic Web (in a machine readable form) using SIOC, FOAF and
+Dublin Core.
+Changed:
+ + improved export of FOAF and SIOC information about authors of posts
+and comments
+ + added FOAF information to the SIOC user profile pages
+ + added post titles (dc:title) to the list of posts
+[1] http://sioc-project.org/wordpress
+See it in action:
+ - site info: http://test.rdfs.org/blog/index.php?sioc_type=site
+ - user: http://test.rdfs.org/blog/index.php?sioc_type=user&amp;amp;sioc_id=2
+ - post: http://test.rdfs.org/blog/index.php?sioc_type=post&amp;amp;sioc_id=6
+ - comment (by registered user) :
+http://test.rdfs.org/blog/index.php?sioc_type=comment&amp;amp;sioc_id=13
+ - comment (by guest) :
+http://test.rdfs.org/blog/index.php?sioc_type=comment&amp;amp;sioc_id=14
+Best,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-13T08:56:39+01:00</dcterms:created>
+  <dcterms:modified>2006-09-13T08:56:39+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/136" rdfs:label="ANN: WordPress SIOC plugin - v1.19" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

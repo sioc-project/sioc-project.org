@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/117"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/117">
+  <dc:title>SIOC - Incremental crawling</dc:title>
+  <sioc:content>In a recent blog post [1] I described a SIMILE Timeline based on SIOC
+data.
+[1]
+http://captsolo.net/info/blog_a.php/2006/07/14/sioc_sparql_and_timeline
+The post contains more information about the timeline (e.g., scripts
+used) and on problems encountered. One of the problems - once crawled
+SIOC data get old quickly. An obvious solution is incremental crawling
+- download only the new data.
+Now incremental crawling is available in our SIOC / RDF crawler [2].
+Other features:
+ - can limit to the same domain (default:on)
+ - can exclude comments / replies (default:off)
+How it works:
+ - run the crawler ( ./run ) and it&#039;s crawling results are saved to
+&#039;result.rdf&#039;
+ - for incremental crawling copy result file &#039;result.rdf&#039; into
+&#039;input.rdf&#039;
+ - do crawling again and only new posts should be crawled.
+( incremental crawling is on by default, but only has effect if
+&#039;input.rdf&#039; is present )
+Please try it out. :)
+If you want to know more about how it works and what are its
+limitations, please write or look at the code. Bugs can be recorded at:
+http://esw.w3.org/topic/SIOC/ToDoList#crawler
+[2]
+http://sw.deri.org/svn/sw/2005/08/sioc/crawler/releases/crawler_v0.7.tar.gz
+(requires Python and Redland)
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-07-25T19:02:31+01:00</dcterms:created>
+  <dcterms:modified>2006-07-25T19:02:31+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/117" rdfs:label="SIOC - Incremental crawling" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

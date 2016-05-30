@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/75"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/75">
+  <dc:title>SIOC ontology to describe the incoming Talk Digger community</dc:title>
+  <sioc:content>Hi everybody,
+I just published a blog post that describes how the SIOC ontology will be
+implemented into the next version of Talk Digger (talkdigger.com).
+&quot;Using SIOC ontology to connect Talk Digger with other online communities&quot;
+    http://fgiasson.com/blog/index.php?
+title=using_sioc_ontology_to_connect_talk_digg&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1
+I post it there because I think that you could be interested in it, and I would
+like to have your opinions on what I wrote and how I will proceed (errors,
+improvements, etc).
+- So, what is Talk Digger (currently)?
+    http://www.talkdigger.com)
+- What is the next version of Talk Digger all about?
+    - &quot;TalkDigger ... towards community interaction&quot;
+        http://fgiasson.com/blog/index.php?
+title=talkdigger_towards_community_interaction&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1
+    - &quot;Some screenshots of the next generation of Talk Digger&quot;
+        http://fgiasson.com/blog/index.php?
+title=some_screenshots_of_the_next_generation&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1
+    - &quot;Communities&#039; websites should use FOAF profiles to help users managing
+their online persona&quot;
+        http://fgiasson.com/blog/index.php?
+title=communities_websites_should_use_foaf_pro&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1
+I hope that what I am currently doing with Talk Digger will help to spread the
+use of SIOC by other communities.
+I wait for you feedbacks (good or bad), if any.
+Thanks!
+Salutations,
+Frederick Giasson
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-06-02T17:37:17+01:00</dcterms:created>
+  <dcterms:modified>2006-06-01T18:27:21+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/75" rdfs:label="SIOC ontology to describe the incoming Talk Digger community" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/29%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/29" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/185"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/185">
+  <dc:title>Microformats and SIOC</dc:title>
+  <sioc:content>(Copied from here.)
+It&#039;s been a year since I last took a look at the overlap between the SIOC Project and Microformats (mf).  I&#039;ve been trying to catch up with recent developments, especially the cite-rel draft by Ryan King and Eran Globen.
+I admire the Microformats resolve to &quot;solve problems&quot;, rather than provide generic things that may in the future be used for X or Y (even though I believe that too is important, or else I wouldn&#039;t be a Semantic Web researcher!).  I also think that there is no good reason that both the Semantic Web and Microformats communities can&#039;t work together (despite arguments like this).  There are people on both sides who strongly feel that the other is going in the wrong direction, but it would be a mistake to let any such voices dominate.  Both communities are trying to add semantics in the Web, and using things like GRDDL and Micromodels / mf RDF representations, the existing work from both sides can be reused.
+So, with this in mind and in terms of SIOC, I hope that we can use Microformats to help create closer interlinks between the objects that make up online communities - I&#039;m talking mainly about posts, forums / blogs, communities and user profiles.  I&#039;m going to start with three or four things I want SIOC to do for Microformats and vice versa, and then we can go from there.  These correspond to some of the links shown in my &quot;connecting discussion clouds&quot; picture.
+One User, Many User Accounts
+At the moment, it is quite difficult to identify all the posts made by a particular person through their various user personas or profiles on different sites - e.g. find all the blog posts and comments and forum threads I&#039;ve created in the past year.  In the SIOC and FOAF vocabularies, there are two properties linking people to user profiles: a Person is linked to a User using a &quot;hasOnlineAccount&quot; link, and a User is linked to a Person using an &quot;account_of&quot; relationship.  Using a mf for sioc:account_of / foaf:hasOnlineAccount would help with the &quot;One Person, Many User Accounts&quot; issue - e.g. these links could be created from a user signature or other public profile field.  For example, I have an account on boards.ie, and I want to say that I am the same person described by a FOAF profile on my own site, or that I hold another account on boards.jp.  Maybe links are required in both directions to confirm that I am really am who I claim I am, but this can be done at least (even if it is tedious).  This may also require some BBCodes for forums that translate to the appropriate HTML.
+Example
+
+&amp;lt;div class=&quot;User&quot;&amp;gt;
+I am &amp;lt;a rel=&quot;account_of&quot; href=&quot;http://johnbreslin.com/&quot;&amp;gt;John Breslin&amp;lt;/a&amp;gt;, and I also have another account, &amp;lt;a rel=&quot;hasOnlineAccount&quot; href=&quot;http://microformats.org/wiki/User:Cloud&quot;&amp;gt;Cloud on microformats.org&amp;lt;/a&amp;gt;.
+&amp;lt;/div&amp;gt;
+
+Virtual Forums
+Wouldn&#039;t it be nice if you could have a virtual forum of all your posts on blogs, forums, mailing lists, whatever?  Apart from going around to all of your favourite sites and linking to your posts from a page, another option would be to do it in reverse - when you create your post, link back to your own post aggregation resource.  From the user side, this could be achieved by creating a mf for sioc:has_container that allows linking to &quot;Virtual Forums&quot; from the post creator side, e.g. from the post content.  Also, virtual forums could be created that list all the posts by people in a restricted social network, or constructed for posts / threads that refer to a certain resource or topic.
+Example
+
+&amp;lt;div class=&quot;Post&quot;&amp;gt;
+Another post that is related to my love of &amp;lt;a rel=&quot;has_container&quot; href=&quot;http://www.johnbreslin.com/forums/electronicmusic/&quot;&amp;gt;electronic music&amp;lt;/a&amp;gt;, Tangerine Dream are releasing five previously unreleased albums next week...
+&amp;lt;/div&amp;gt;
+
+Unified Communities
+This kind of corresponds to Eran&#039;s idea of &quot;distributed social anything&quot;.  In SIOC, we use has_part and part_of to link any object to a particular community.  The concept of Community in SIOC is very generic - but the idea is that you should have a structured way to link different things (forums, people, etc.) to a community object.  Let&#039;s say that there&#039;s a community talking about the TV series Lost, and they have a blog, a mailing list, an aggregation of Lost-related blogs, or just a news website - these could be linked to an identified central community resource through part_of / has_part relation.  Similarly, I could identify myself or my user profile on a particular site as being part of that Lost community.  From forums, a mf for has_part / part_of would allow one to link a forum or blog or any discussion channel to a larger community, e.g. this could be done from a forum description.  Also, a mf for has_part / part_of would help to link a user to a community, e.g. by creating a typed link from a user signature.
+Example
+
+&amp;lt;div class=&quot;Forum&quot;&amp;gt;
+Welcome to the &amp;lt;a href=&quot;http://sioc-project.org/forum/&quot;&amp;gt;SIOC forums&amp;lt;/a&amp;gt;, where we talk about the &amp;lt;a rel=&quot;part_of&quot; href=&quot;http://www.semanticweb.org/&quot;&amp;gt;Semantic Web&amp;lt;/a&amp;gt; and internet discussions.
+&amp;lt;/div&amp;gt;
+
+Distributed Conversations
+Ryan and Eran have already done a lot towards this idea with the cite-rel draft. In terms of SIOC, we already have the has_reply and reply_of relationships, which match up to their proposals: rel-reply corresponds to sioc:has_reply, and rev-reply corresponds to sioc:reply_of. Using the mf cite-rel versions of has_reply / reply_of would allow these distributed threads to form, e.g. if used from the post content. cite-rel brings the reply idea a step further by introducing rel-forward and rev-forward (basically, has_reply and reply_of with quoted content). Ultimately, we need ways to say that a post is in agreement or disagreement with a previous post or even with specific parts of a previous post (see picture below). Also, we may need to describe other reply types that are needed, as with IBIS. (Note: rev-update and rel-update may correspond to sioc: previous_version and sioc:next_version respectively, and via may be compared with sioc:related_to.)
+Example
+
+&amp;lt;div class=&quot;Post&quot;&amp;gt;
+As a follow up to my previous post about &amp;lt;a rel=&quot;reply_of&quot; href=&quot;http://www.johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/&quot;&amp;gt;connecting discussion clouds&amp;lt;/a&amp;gt;, I have realised that I need to say more about people and topics, especially as discussed &amp;lt;a rel=&quot;related_to&quot; href=&quot;http://www.johnbreslin.com/blog/2005/11/11/iswc-2005-over-won-an-ipod-aligning-sioc-with-foaf-and-skos/&quot;&amp;gt;here&amp;lt;/a&amp;gt;.  Edit: I&#039;ve since posted about how &amp;lt;a rel=&quot;has_reply&quot; href=&quot;http://www.johnbreslin.com/blog/2006/09/27/sioc-foaf-skos/&quot;&amp;gt;FOAF and SKOS can be used to describe people and topics&amp;lt;/a&amp;gt;.
+&amp;lt;/div&amp;gt;
+
+(Edit: Eran has replied to my original post - thanks!)
+</sioc:content>
+  <dcterms:created>2006-11-07T17:44:48+00:00</dcterms:created>
+  <dcterms:modified>2006-11-07T17:44:48+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/185" rdfs:label="Microformats and SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

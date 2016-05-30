@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://sioc-project.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>sioc-project.org - Exporters</title>
+ <link>http://sioc-project.org/taxonomy/term/12/0</link>
+ <description>Discussing exporters for SIOC, e.g. WordPress MU, Drupal, phpBB and vBulletin.</description>
+ <language>en</language>
+<item>
+ <title>wordpress plugins directory</title>
+ <link>http://sioc-project.org/node/333</link>
+ <description>&lt;p&gt;hello again,&lt;br /&gt;
+why is the wordpress sioc exporter isn&#039;t in the wordpress plugins directory (http://wordpress.org/extend/plugins/) ?&lt;br /&gt;
+i mean, it would be a good way to encourage people to sue it, wouldn&#039;t it?&lt;/p&gt;
+&lt;p&gt;keep on rocking in the free code&lt;br /&gt;
+rocky&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/333#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Sun, 24 Aug 2008 20:59:43 +0000</pubDate>
+ <dc:creator>rockyrackoon@drupal.org</dc:creator>
+ <guid isPermaLink="false">333 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>add has_reply and reply_of to sioc exporter for drupal</title>
+ <link>http://sioc-project.org/node/332</link>
+ <description>&lt;p&gt;hi&lt;br /&gt;
+since both nodes and comments are exported through sioc,&lt;br /&gt;
+why not add the has_reply property to nodes and reply_of to comment?&lt;/p&gt;
+&lt;p&gt;this should be handled in way that a comment of a comment (comment thread) should point to it&#039;s parent comment of course.&lt;/p&gt;
+&lt;p&gt;have a blast&lt;br /&gt;
+rackoon&lt;/p&gt;
+&lt;p&gt;p.s.&lt;br /&gt;
+also posted on drupal.org - http://www.adamtibi.net/sioc.axd?sioc_type=post&amp;amp;sioc_id=81867dd9-ba89-447b-928d-124c6df4a957&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/332#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Sun, 24 Aug 2008 20:44:07 +0000</pubDate>
+ <dc:creator>rockyrackoon@drupal.org</dc:creator>
+ <guid isPermaLink="false">332 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC WordPress exporter bug!</title>
+ <link>http://sioc-project.org/node/331</link>
+ <description>&lt;p&gt;The sioc exporter gives a different rdf:about to a foaf:person and a sioc:user. so far so good.&lt;br /&gt;
+when the exporter adds a foaf:maker node to a sioc:post, it puts the wrong rdf:about in the foaf:person -&lt;br /&gt;
+it gives it the rdf:about of the sioc:user instead of the foaf:person!&lt;br /&gt;
+this is a stealth bug but a critical one.&lt;br /&gt;
+see for example:&lt;br /&gt;
+foaf:person: http://www.adamtibi.net/sioc.axd?sioc_type=user&amp;amp;sioc_id=Adam+Tibi&lt;br /&gt;
+sioc:post: http://www.adamtibi.net/sioc.axd?sioc_type=post&amp;amp;sioc_id=81867dd9-ba89-447b-928d-124c6df4a957&lt;br /&gt;
+notice the foaf:person-&gt;rdf:about in the first comparing to the second&#039;s foaf:maker-&gt;foaf:person-&gt; rdf:about &lt;/p&gt;
+&lt;p&gt;rock on&lt;br /&gt;
+rackoon&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/331#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Sun, 24 Aug 2008 20:42:53 +0000</pubDate>
+ <dc:creator>rockyrackoon@drupal.org</dc:creator>
+ <guid isPermaLink="false">331 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Export API for Perl</title>
+ <link>http://sioc-project.org/perlapi</link>
+ <description>&lt;p&gt;Version 1.0 of an API for Perl has been released on CPAN!&lt;/p&gt;
+&lt;p&gt;The CPAN page for the SIOC API is at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://search.cpan.org/~geewiz/SIOC-v1.0.0/&quot;&gt;http://search.cpan.org/~geewiz/SIOC-v1.0.0/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A description of the project itself is available at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://sioc.socialware.at&quot;&gt;http://sioc.socialware.at&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;http://www.jochen-lillich.de/&quot;&gt;Jochen Lillich&lt;/a&gt;, &lt;a href=&quot;http://randgaenge.net/&quot;&gt;Thomas N. Burg&lt;/a&gt;, and also to &lt;a href=&quot;http://netidee.at/&quot;&gt;Internet Privatstiftung Austria (IPA)&lt;/a&gt; for funding this work.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/perlapi#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Thu, 03 Apr 2008 12:29:15 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">327 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporter for phpBB</title>
+ <link>http://sioc-project.org/phpbb</link>
+ <description>&lt;p&gt;The first version of a SIOC exporter for phpBB 2.0.x is now available.  You can download it from DERI&#039;s &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/phpbb/&quot;&gt;subversion&lt;/a&gt; repository.&lt;/p&gt;
+&lt;p&gt;I&#039;ve performed two test installs of the plugin at &lt;a href=&quot;http://www.boards.co.nz/forums/sioc.php&quot;&gt;boards.co.nz&lt;/a&gt; and &lt;a href=&quot;http://www.boards.com.cn/forums/sioc.php&quot;&gt;boards.com.cn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Do let us know of any issues or comments either here or on the &lt;a href=&quot;http://groups.google.com/group/sioc-dev&quot;&gt;sioc-dev&lt;/a&gt; mailing list.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/phpbb#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Mon, 02 Apr 2007 09:55:15 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">240 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporters</title>
+ <link>http://sioc-project.org/exporters</link>
+ <description>&lt;p&gt;The power of discussion methods via online community sites such as weblogs, bulletin boards and mailing lists lies in their number and the large amount of data that is available for harvesting. Most blog engines already have RSS export functionality, and some boards are beginning to export RSS as well. Since the majority of these discussion engines are based on open source software or can be extended by using plugins, it is straightforward to modify existing export functions or to create plugins to generate metadata conforming to the SIOC ontology. A SIOC API for PHP makes the development of such SIOC plugins and exporters as easy as possible.&lt;/p&gt;
+&lt;p&gt;So far, exporters have been developed for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/aggregators&quot;&gt;Aggregators&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;i&gt;Bulletin Boards&lt;/i&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/drupal&quot;&gt;Drupal&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/phpbb/&quot;&gt;phpBB&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/mailinglists&quot;&gt;Mailing Lists&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;i&gt;Weblogs&lt;/i&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/dotclear&quot;&gt;DotClear&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/wordpress&quot;&gt;WordPress&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/drupal&quot;&gt;Drupal&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;A &lt;a href=&quot;/phpapi&quot;&gt;SIOC export API for PHP&lt;/a&gt; has also been created. It enables developers to create SIOC export tools without the need to get into technical details about how information is represented in RDF/XML – they are operating at the level of SIOC concepts instead. Thus, developers only have to deal with extracting content from their discussion system databases and then passing it to the API that will render SIOC data. &lt;/p&gt;
+&lt;p&gt;If you wish to create or have created your own exporter, let us know on the &lt;a href=&quot;http://groups.google.com/group/sioc-dev&quot;&gt;SIOC mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;You can view more nodes matching the topic &lt;a href=&quot;http://sioc-project.org/taxonomy/term/11&quot;&gt;exporters&lt;/a&gt;.&lt;/b&gt;
+&lt;/li&gt;&lt;/ul&gt;
+</description>
+ <comments>http://sioc-project.org/exporters#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Fri, 15 Sep 2006 08:00:28 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">151 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>PHP Export API</title>
+ <link>http://sioc-project.org/phpapi</link>
+ <description>&lt;p&gt;
+The PHP Export API provides an easy way for developers to create SIOC exporters, as it maps SIOC Classes to PHP objects, with simple functions to export the created data.
+&lt;/p&gt;
+&lt;p&gt;
+More informations about the API are available on &lt;a href=&quot;http://wiki.sioc-project.org/index.php/PHPExportAPI&quot;&gt;this wiki page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+API is currently used in &lt;a href=&quot;/dotclear&quot;&gt;DotClear&lt;/a&gt; and B2evo exporters
+&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/phpapi#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Thu, 14 Sep 2006 15:54:00 +0000</pubDate>
+ <dc:creator>terraces</dc:creator>
+ <guid isPermaLink="false">147 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporter for Aggregators</title>
+ <link>http://sioc-project.org/aggregators</link>
+ <description>&lt;p&gt;Chrisoph Goern AKA &lt;a href=&quot;http://b4mad.net/datenbrei&quot;&gt;[GNU]&lt;/a&gt; has published details of how to add SIOC content to a blog aggregator or &quot;planet&quot;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/05/22/sioc-from-foafroll/&quot;&gt;SIOC enabling a community site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+ <comments>http://sioc-project.org/aggregators#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Tue, 30 May 2006 09:11:02 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">56 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporter for Mailing Lists</title>
+ <link>http://sioc-project.org/mailinglists</link>
+ <description>&lt;p&gt;&lt;b&gt;SWAML&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;SWAML, or Semantic Web Archives of a Mailing List, can be used to provide an archive of mailing list posts in SIOC format.&lt;/p&gt;
+&lt;p&gt;For more information, please visit the SWAML page at &lt;a href=&quot;http://swaml.berlios.de/&quot;&gt;swaml.berlios.de&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Mailing List RSS Conversion&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Chrisoph Goern AKA &lt;a href=&quot;http://b4mad.net/datenbrei&quot;&gt;[GNU]&lt;/a&gt; has published details of how to convert a mailing list to SIOC format:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://b4mad.net/datenbrei/archives/2006/05/30/generating-sioc-data-out-of-mailing-list-archives/&quot;&gt;Generating SIOC data out of mailing list archives&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://rdfs.org/files/sioc_mailinglist.png&quot; /&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/mailinglists#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Tue, 30 May 2006 08:56:37 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">55 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporter for WordPress</title>
+ <link>http://sioc-project.org/wordpress</link>
+ <description>&lt;p&gt;Uldis Bojars has written a SIOC exporter plugin for WordPress 1.5+. This allows the production of SIOC metadata from your weblog.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;The plugin can be found at &lt;a href=&quot;http://sw.deri.org/svn/sw/2005/08/sioc/wordpress/&quot;&gt;http://sw.deri.org/svn/sw/2005/08/sioc/wordpress/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To install save plugin files [sioc.php + sioc-include.php] to the WordPress plugin directory (located in ./wp-content/plugins) and enable this plugin in the Admin-&gt;Plugins menu.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Data created by plugin can be accessed by following autodiscovery links that are added to the blog&#039;s main page and all blog posts. Main SIOC page can be found at your.host.here/wordpress-folder/?sioc_type=site.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Semantic Radar and SIOC&lt;/b&gt;&lt;br /&gt;
+You may use &lt;a href=&quot;http://sioc-project.org/firefox&quot; title=&quot;Semantic Radar&quot;&gt;Semantic Radar&lt;/a&gt; to detect presence of SIOC data on web pages. It is a Firefox extension that detects links to RDF metadata (SIOC, FOAF, DOAP, ...) and informs about them via a browser status bar icon. Clicking on the icon will provide a user-friendly view of RDF data.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;News: Content negotiation added (in v1.21).&lt;/b&gt;&lt;br /&gt;
+Point RDF content regotiation aware tool such as &lt;a href=&quot;http://www.w3.org/2005/ajar/tab&quot;&gt;Tabulator&lt;/a&gt; to a blog post and it will get back RDF data, avoiding the need to find and follow autodiscovery links in HTML.&lt;/p&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/wordpress#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 24 May 2006 16:56:00 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">7 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Remarks about WP SIOC exporter</title>
+ <link>http://sioc-project.org/node/47</link>
+ <description>&lt;p&gt;Maybe you&#039;re already aware of this, but I&#039;ve just noticed that the WordPress exporter uses 2 relations that are not listed in the specs:&lt;/p&gt;
+&lt;p&gt;* sioc:title, instead of dc:title or sioc:subject ?&lt;br /&gt;
+* sioc:made, instead of sioc:creator_of ?&lt;/p&gt;
+&lt;p&gt;Were these properties in previous specs versions ? or will be ? Or just a mistake :) ?&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/47#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Mon, 13 Mar 2006 00:47:07 +0000</pubDate>
+ <dc:creator>terraces</dc:creator>
+ <guid isPermaLink="false">47 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Dotclear exporter</title>
+ <link>http://sioc-project.org/dotclear</link>
+ <description>&lt;p&gt;A SIOC exporter for &lt;a href=&quot;http://dotclear.net&quot;&gt;dotclear&lt;/a&gt; (a widely-used french blogging software) is available.&lt;/p&gt;
+&lt;p&gt;
+The plugin is based on the API and exports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;weblog&lt;/li&gt;
+&lt;li&gt;users&lt;/li&gt;
+&lt;li&gt;posts&lt;/li&gt;
+&lt;li&gt;comments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+For each posts, related links and categories will be extracted, using respectively sioc:links_to and sioc:topic.
+&lt;/p&gt;
+&lt;p&gt;
+Latest version of the plugin available at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a href=&quot;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.1.pkg.gz&quot;&gt;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.1.tgz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plugin: &lt;a href=&quot;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.1.pkg.gz&quot;&gt;http://apassant.net/home/2006/02/dotclear-sioc/dotclear-sioc-1.4.1.pkg.gz&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;/ul&gt;
+
+</description>
+ <comments>http://sioc-project.org/dotclear#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Mon, 13 Mar 2006 00:41:13 +0000</pubDate>
+ <dc:creator>terraces</dc:creator>
+ <guid isPermaLink="false">46 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Updated Drupal exporter</title>
+ <link>http://sioc-project.org/node/41</link>
+ <description>&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;After submitting a bug and a some requests to SIOC exporter for Drupal, I took the liberty to update the module, as John suggested me.&lt;/p&gt;
+&lt;p&gt;Changelog:&lt;/p&gt;
+&lt;p&gt;Fix&lt;br /&gt;
+- Fixed bug in relative URLs&lt;br /&gt;
+  see http://drupal.org/node/40542&lt;/p&gt;
+&lt;p&gt;Features&lt;br /&gt;
+- Added ability to set queries LIMIT&lt;br /&gt;
+  see http://drupal.org/node/40544&lt;br /&gt;
+- Added sioc:content_encoded for sioc:Post&lt;br /&gt;
+  see http://drupal.org/node/40543&lt;/p&gt;
+&lt;p&gt;It should be available in CVS archive soon.&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;/p&gt;
+&lt;p&gt;Alex.&lt;/p&gt;
+&lt;p&gt;(nb: I didn&#039;t tag anything in CVS)&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/41#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Tue, 20 Dec 2005 22:39:30 +0000</pubDate>
+ <dc:creator>terraces</dc:creator>
+ <guid isPermaLink="false">41 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>WordPress Exporter</title>
+ <link>http://sioc-project.org/node/35</link>
+ <description>&lt;p&gt;The plugin looks good - I see something we don&#039;t have in our specification / namespace yet:&lt;/p&gt;
+&lt;p&gt;From the Site concept:&lt;/p&gt;
+&lt;p&gt; &amp;lt;sioc:has_group rdf:nodeID=&quot;authors&quot;/&amp;gt;&lt;/p&gt;
+&lt;p&gt;I need to think about this again, as before we were using a distinct property name to link two concepts, so that the property isn&#039;t biased towards either concept.  For example, Forums are a &quot;container_of&quot; Posts (rather than a Forum &quot;has_post&quot; which is a Post), and Sites host Forums, etc.&lt;/p&gt;
+&lt;p&gt;So what is the relationship between Site and Group? :)  Nothing obvious pops into my head just now, but there is something.&lt;/p&gt;
+&lt;p&gt;Maybe Group is linked to Site via a Role, Group -&gt; has_function -&gt; Role -&gt; has_scope -&gt; Site.&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/35#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 09 Nov 2005 15:11:22 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">35 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Feature request for the Drupal sioc.module</title>
+ <link>http://sioc-project.org/node/34</link>
+ <description>&lt;p&gt;It&#039;d be good if all site pages / stories were exported as SIOC posts with the Forum being something like $site_name . &quot; Pages&quot; or &quot; Stories&quot;.  We could look into exporting the poll information as well...&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/34#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Fri, 28 Oct 2005 22:01:56 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">34 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Some things to fix in the WordPress plugin...</title>
+ <link>http://sioc-project.org/node/33</link>
+ <description>&lt;p&gt;Maybe it&#039;s just my installation but I can&#039;t see any information on the Post or User &lt;a href=&quot;http://www.johnbreslin.com/blog/wp-sioc.php?sioc_type=post&amp;amp;sioc_id=332&quot;&gt;Post&lt;/a&gt; or &lt;a href=&quot;http://www.johnbreslin.com/blog/wp-sioc.php?sioc_type=user&amp;amp;sioc_id=1&quot;&gt;User&lt;/a&gt; pages...&lt;/p&gt;
+&lt;p&gt;Any ideas Uldis?&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/33#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Fri, 28 Oct 2005 21:57:43 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">33 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>sioc.inc</title>
+ <link>http://sioc-project.org/node/23</link>
+ <description>&lt;p&gt;Some more thoughts. From looking at the two exporters, it seems that the WP/Drupal logic is pretty well mixed in with the SIOC logic. Perhaps it would be more useful to make an sioc.inc file that had a well-defined API for doing import/export functions? For example, the function export_sioc_forum in the Drupal module could easily be abstracted to take a set of input parameters and return the RDF excerpt needed. It would be up to the Drupal module to build the paramters and variables, but the SIOC generation code would be external. In this way both WP and Drupal and XYZ could all depend on the same code. Perhaps you could even turn the API file into a PEAR project or something similar to elevate its status.&lt;/p&gt;
+&lt;p&gt;cheers,&lt;/p&gt;
+&lt;p&gt;Robert &lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/23#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 24 Aug 2005 11:32:37 +0000</pubDate>
+ <dc:creator>robertDouglass</dc:creator>
+ <guid isPermaLink="false">23 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC module here?</title>
+ <link>http://sioc-project.org/node/22</link>
+ <description>&lt;p&gt;Since you&#039;re using both forums and blogs for this site it would seem natural to have the SIOC module enabled here. Are there plans for such in the works?&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/22#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 24 Aug 2005 11:19:34 +0000</pubDate>
+ <dc:creator>robertDouglass</dc:creator>
+ <guid isPermaLink="false">22 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>Fixed paths in the CVS repository</title>
+ <link>http://sioc-project.org/node/20</link>
+ <description>&lt;p&gt;I took the very forward liberty of fixing a bug in the Drupal exporter concerning the paths in the menu definitions. It isn&#039;t necessary to prefix the paths (Linux style) with ./ and I removed these. The module now works nicely on CVS Drupal. Hope I haven&#039;t overstepped my bounds. Here&#039;s the &lt;a href=&quot;http://drupal.org/cvs?commit=18639&quot;&gt;link to the commit&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;cheers,&lt;/p&gt;
+&lt;p&gt;Robert&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/node/20#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 24 Aug 2005 11:16:59 +0000</pubDate>
+ <dc:creator>robertDouglass</dc:creator>
+ <guid isPermaLink="false">20 at http://sioc-project.org</guid>
+</item>
+<item>
+ <title>SIOC Exporter for Drupal</title>
+ <link>http://sioc-project.org/drupal</link>
+ <description>&lt;p&gt;The SIOC exporter for Drupal 4.6 is available from:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://drupal.org/files/projects/sioc-HEAD.tar.gz&quot;&gt;http://drupal.org/files/projects/sioc-HEAD.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Simply install the sioc.module file in your modules directory.&lt;/p&gt;
+&lt;p&gt;The project page at drupal.org is:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://drupal.org/project/sioc&quot;&gt;http://drupal.org/project/sioc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Edit: This module has been written for Drupal 4.6.0 and upwards.  It will not work correctly in Drupal 4.5 due to some changes in the way forums are linked to taxonomies.&lt;/b&gt;&lt;/p&gt;
+</description>
+ <comments>http://sioc-project.org/drupal#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/12">Exporters</category>
+ <pubDate>Wed, 08 Jun 2005 11:03:00 +0000</pubDate>
+ <dc:creator>Cloud</dc:creator>
+ <guid isPermaLink="false">8 at http://sioc-project.org</guid>
+</item>
+</channel>
+</rss>

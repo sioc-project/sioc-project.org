@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/287"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/287">
+  <dc:title>Fwd: [Activerdf] RDFa On Rails</dc:title>
+  <sioc:content>FYI. This will be of interest for anyone working with SIOC and RoR.
+Thanks, Cédric! :)
+One more thing which would be good to have if you produce embedded
+SIOC RDF (in RDFa or eRDF) is to add RDF autodiscovery links (e.g.,
+pointing to RDF extracted by a service like triplr) in pages created.
+That would aid the users of Semantic Radar and increate the number of
+people who see this information.
+P.S. Is there something similar to RDFa on Rails in PHP?
+Uldis
+---------- Forwarded message ----------
+From: Cédric Mesnage 
+Date: May 29, 2007 11:48 PM
+Subject: [Activerdf] RDFa On Rails
+To: ActiveRDF users 
+Hi all,
+I just released the early version of RDFa on Rails, a library of
+helper methods to help rails developers producing RDFa data. The focus
+is on building an API with common stuff such as resources, label,
+title, creator, person, tags and blog posts etc. and let the
+possibility to extend easily the API. Making it a central point for
+developers to find the classes or predicates they need...
+The gem package also includes a typo rdfa theme which produces rdfa data.
+Here are a few resources:
+ * a blog post ,
+http://myunderstanding.wordpress.com/2007/05/29/rdfa-on-rails-the-semantic-web-made-simple/
+ * the project website, http://rdfa.rubyforge.org/
+Help and comment is welcome, especially from you guys working with
+ruby and rdf for a long time :-) I am quite sure we can find
+interactions between ActiveRDF, SWAF in general and RDFa on Rails.
+Let the show begin!
+---
+Cédric Mesnage
+PhD Student
+cedric.mesnage@lu.unisi.ch
+http://www.inf.unisi.ch/phd/mesnage/
+http://myunderstanding.wordpress.com/
+_______________________________________________
+ActiveRDF mailing list
+ActiveRDF@lists.deri.org
+http://lists.deri.org/mailman/listinfo/activerdf
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:46:02+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:02+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/287" rdfs:label="Fwd: [Activerdf] RDFa On Rails" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

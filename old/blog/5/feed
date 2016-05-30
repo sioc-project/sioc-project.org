@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://sioc-project.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>CaptSolo&#039;s blog</title>
+ <link>http://sioc-project.org/blog/5</link>
+ <description>
+
+The SIOC initiative (Semantically-Interlinked Online Communities) aims to enable the integration of online community information.  SIOC provides a Semantic Web ontology for representing rich data from the Social Web in RDF.  It has recently achieved significant adoption through its usage in a variety of commercial and open-source software applications, and is commonly used in conjunction with the FOAF vocabulary for expressing personal profile and social networking information.  By becoming a standard way for expressing user-generated content from such sites, SIOC enables new kinds of usage scenarios for online community site data, and allows innovative semantic applications to be built on top of the existing Social Web.  The SIOC ontology was recently published as a W3C Member Submission, which was submitted by 16 organisations.</description>
+ <language>en</language>
+<item>
+ <title>Tutorial at the Semantic Technology 2008 Conference</title>
+ <link>http://sioc-project.org/node/330</link>
+ <description>&lt;p&gt;DERI team (&lt;a href=&quot;http://www.stefandecker.org/&quot;&gt;Stefan&lt;/a&gt;, &lt;a href=&quot;http://www.johnbreslin.com&quot;&gt;John&lt;/a&gt; and &lt;a href=&quot;http://captsolo.net/&quot;&gt;Uldis&lt;/a&gt;) was presenting a tutorial &lt;a href=&quot;http://www.semantic-conference.com/session/569/&quot;&gt;&quot;The Future of Social Networks: The Need for Semantics&quot;&lt;/a&gt; at the Semantic Technology 2008 conference in San Jose, CA. &lt;/p&gt;
+&lt;p&gt;Here are the tutorial slides (you can also download them from SlideShare):&lt;/p&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_415320&quot;&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=placeholder-1211208151820041-9&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://static.slideshare.net/swf/ssplayer2.swf?doc=placeholder-1211208151820041-9&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;div style=&quot;font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;&quot;&gt;&lt;a href=&quot;http://www.slideshare.net/?src=embed&quot;&gt;&lt;img src=&quot;http://static.slideshare.net/swf/logo_embd.png&quot; style=&quot;border:0px none;margin-bottom:-5px&quot; alt=&quot;SlideShare&quot; /&gt;&lt;/a&gt; | &lt;a href=&quot;http://www.slideshare.net/Cloud/the-future-of-social-networks-on-the-internet-the-need-for-semantics?src=embed&quot; title=&quot;View &#039;The Future of Social Networks on the Internet: The Need for Semantics&#039; on SlideShare&quot;&gt;View&lt;/a&gt; | &lt;a href=&quot;http://www.slideshare.net/upload?src=embed&quot;&gt;Upload your own&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Related:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/CaptSolo/data-portability-with-sioc-and-foaf&quot;&gt;&quot;Data Portability with SIOC and FOAF&quot; slides&lt;/a&gt; from the XTech 2008 talk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--break--&gt;&lt;!--break--&gt;</description>
+ <comments>http://sioc-project.org/node/330#comments</comments>
+ <category domain="http://sioc-project.org/taxonomy/term/10">General</category>
+ <pubDate>Tue, 20 May 2008 18:37:11 +0000</pubDate>
+ <dc:creator>CaptSolo</dc:creator>
+ <guid isPermaLink="false">330 at http://sioc-project.org</guid>
+</item>
+</channel>
+</rss>

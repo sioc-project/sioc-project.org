@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/267"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/267">
+  <dc:title>CfP: Web Scale Infrastructures for Semantic Mashup, Search and Retrieval</dc:title>
+  <sioc:content>This might be interesting.
+---------- Forwarded message ----------
+From: Andreas Harth
+Date: May 11, 2007 4:36 PM
+Subject: CfP: Web Scale Infrastructures for Semantic Mashup,  Search
+and Retrieval
+To: semantic-web@w3.org
+CALL FOR PAPERS
+First Workshop on Web Scale Infrastructures for
+Semantic Mashup, Search and Retrieval
+http://sw.deri.org/2007/05/infrascale/
+Co-located with the First IEEE International Conference on
+Semantic Computing
+September 17-19, 2007
+Hyatt Regency Irvine
+Irvine, California
+Aims and Topic of Interest
+The amount of semantically structured data available on the Web has
+recently grown considerably. Semantic Web languages such as RDF and OWL
+and protocols like SPARQL are finding their way from researchers to
+advanced web developers and integrators. Large and important data
+collections, e.g. DBLP, Wikipedia, CiteSeer, SwissProt, Geonames, are
+now available as retrievable RDF datasets or SPARQL query endpoints.
+Popular social networking sites (e.g. LiveJournal, Vox, Tribe, Ecademy)
+are producing RDF representation of user interests and acquaintances.
+Moreover, there is a clear trend toward embedding more semantic information
+in conventional web pages. Microformats are increasing popular, Flickr has
+introduced RDF-like &quot;machine tags&quot;, and the W3C is close to finalising RDFa
+and GRDDL as recommendations for embedding RDF data into ordinary XHTML
+pages. These developments may enable a considerable change in the
+availability and significance of semantic data for Web search engines.
+While the trend towards publishing data is clearly a prerequisite for the
+Semantic Web to take off, benefits from such data availability have not
+yet been delivered to the end user.
+For developers to efficiently implement applications dealing with such
+ata, Web Scale infrastructures for Semantic Mashups, Search and Retrieval
+will be needed.
+The First Workshop on Web Scale Infrastructures for Semantic Mashup, Search
+and Retrieval will be a highly specialised venue to discuss the latest
+developments in Web scale infrastructures for semantic data processing.
+In detail this workshop will focus on
+ * Web scale Semantic Web searching
+ * Web crawling for structured and semi structured data
+ * Integration of unstructured data into the Semantic Web
+ * Entity consolidation and global identification issues
+ * Web scale ontology mapping, matching and merging
+ * Distributed and Grid algorithms for large scale semantic processing
+ * Integrating trust aspects in large distributed semantic architectures
+ * Ranking of semantic sources
+ * Interaction models for end users and APIs for software clients
+Important Dates
+ * Paper submission due: June 10, 2007
+ * Notification of acceptance: July 1, 2007
+ * Camera-ready version due: July 15, 2007
+Accepted workshop papers will be included in ICSC proceedings.
+Papers will be included in IEEExplore and the index will appear in EI.
+Workshop Chairs
+ * Tim Finin, University of Maryland Baltimore County, USA
+ * Andreas Harth, DERI NUI, Galway, Ireland
+ * Giovanni Tummarello, DERI NUI, Galway, Ireland
+Program Committee
+ * Jose Luis Ambite, USC Information Sciences Instititute, USA
+ * Melliyal Annamalai, Oracle, USA
+ * Soeren Auer, University of Leipzig, Germany
+ * Danny Ayers, Independent Developer, Italy
+ * Dave Beckett, Yahoo, USA
+ * Chris Bizer, Free University of Berlin, Germany
+ * Harry Chen, Image Matters, USA
+ * Roberto Garcia Gonzalez, Universitat de Lleida, Spain
+ * Thomas Fanghaenel, IBM Silicon Valley Lab, USA
+ * Martin Hepp, DERI Innsbruck, Austria
+ * Pascal Hitzler, University of Karlsruhe, Germany
+ * Eser Kandogan, IBM Almaden, USA
+ * Michael Kassoff, Stanford University, USA
+ * Uwe Keller, DERI Innsbruck, Austria
+ * Atanas Kiryakov, Ontotext, Bulgaria
+ * Jianqiang Li, NEC, China
+ * Boris Motik, University of Manchester, UK
+ * Daniel Olmedilla, L3S Research Center and Hanover University, Germany
+ * Leo Sauermann, DFKI, Germany
+ * Daniel Schwabe, PUC Rio, Brazil
+ * Giovanni Semeraro, University of Bari, Italy
+ * Heiko Stoermer, University of Trento, Italy
+ * Heiner Stuckenschmidt, University of Mannheim, Germany
+ * Raphael Volz, FZI Karlsruhe, Germany
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-05-17T09:38:42+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:42+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/267" rdfs:label="CfP: Web Scale Infrastructures for Semantic Mashup, Search and Retrieval" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/336"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/336">
+  <dc:title>Tales from the SIOC-o-sphere #9</dc:title>
+  <sioc:content>It&#039;s been another exciting six months in terms of SIOC-related developments.  Here&#039;s a summary:
+
+In today&#039;s blog post entitled &quot;Obama’s Groundbreaking use of the Semantic Web&quot;, David Peterson references a recent presentation by George Thomas about recovery.gov at Transparency Camp where he details a variety of Semantic Web technologies (including SIOC) that will be used.  The presentation also includes the SIOC ontology model as an illustration.
+As mentioned in a previous message, Yahoo! SearchMonkey has published a list of recommended vocabularies for developers of SearchMonkey applications.  SIOC has been chosen as a suitable reference vocabulary to describe the activities of online communities, e.g. “blogs, discussion forums, Q&amp;amp;A sites&quot;, and can be used along with FOAF to describe the social networking stack.  This article from UMBC Ebiquity also discusses the recently-announced support for RDF in Yahoo! Search BOSS (Build your Own Search System).
+Drupal creator Dries Buytaert wrote a very interesting and encouraging post last October entitled &quot;Drupal, the Semantic Web and Search&quot; in which he said: &quot;On a social networking site built with Drupal, [semantic technology] opens up the possibility to do all sorts of deep social searches - searching by types and levels of relationships while simultaneously filtering by other criteria [...] and if Drupal core supported FOAF and SIOC out of the box, you could search within your network of friends or colleagues. This would be a fundamentally new way to take advantage of your network or significantly increase the relevance of certain searches.&quot;  This was followed up with another post on Monday where Dries talked about some exciting possibilities for exposing the structured data that is available in many Drupal deployments, and the work that is ongoing to have RDFa available in Drupal 7 (read more in my RDFa and Drupal blog post from yesterday).  There is also a great video which shows some use cases and examples for RDFa in Drupal.
+Views Datasource is a set of plugins for the Drupal Views module for rendering node content in a number of shareable, reusable formats including RDF (FOAF, SIOC, and DOAP).
+Claudia Wagner has published an extended version of the WordPress SIOC Exporter that also exports any semantic metadata embedded within the content of a blog post.
+The Web Semantic blog has described how to process SIOC feeds with Jenabean.  This was followed up by a nice description of how to write out SIOC triples using Jenabean.
+David Newman has published the myExperiment ontology, reusing concepts from Dublin Core, FOAF and SIOC since they are closely related to the two main functions of myExperiment (i.e. a social networking framework and a metadata registry).
+Chris Clarke from Talis and Fiona Greig from the University of Plymouth have written an interesting case study for the W3C SWEO IG entitled &quot;A Linked Open Data Resource List Management Tool for Undergraduate Students&quot;, where FOAF and SIOC are being used for data appropriation in other contexts.
+Founder of HyperWeek Raphael Briner and others have been discussing how FOAF and SIOC could be used to (semantically) describe a HyperWeek group.
+TagCrumbs, a social placemarking service, have announced that they are now making placemark data available in RDF.  Here is an example of a placemark for the Twestival in Galway.
+Frank Van Harmelan has posted on the LarKC weblog about how SIOC data could be used by early adopters of LarKC-type technologies.
+The FLOSS (Free/Libre Open Source Software) project is looking at effective work practices and dynamics in free and open source software development (teams).  They are trying to use SIOC to model e-mail lists and threads.
+Identi.ca, an open-source microblogging platform based on Laconi.ca, is now publishing both FOAF and SIOC data.  For example, here is an Identi.ca user in FOAF and a SIOC-augmented RSS feed for that user, and here is a feed from an Identi.ca group about SIOC.  Uldis Bojars (Happy Birthday to you today!) has started a collection of known minor issues here.
+Fabrizio Orlandi and Alex Passant have created a new SIOC Semantic Web data exporter for MediaWiki-based wikis.
+Michael Haschke has written a SIOC plugin for DokuWiki called &quot;DokuSIOC&quot;.  The plugin creates metadata with auto-discovery links and content negotiation, pings PingTheSemanticWeb.com on updates, and provides linked data.
+The Creative Commons Network has been launched, with CC CTO Nathan Yergler saying: &quot;The CC Network is where the semantic rubber meets the web road.  With the CC Network we&#039;re leveraging everything we&#039;ve learned over the past five years about metadata on the web, including the new RDFa standard, along with the work of many other groups, including FOAF, POWDER, and SIOC.&quot;
+Metadata from the 7th International Semantic Web Conference is being published in RDF, including SIOC for the comments.  The related Semantic Web Dog Food service was also announced by Moeller et al. as a central repository for Semantic Web conference metadata.
+SIOC is now OWL-DL compliant.  This change was motivated by the SWANSIOC initiative in the W3C HLCSIG (Semantic Web for Health Care and Life Sciences Interest Group), which uses the Science Collaboration Framework based on Drupal.
+A recent article from Joke van Niekerk discusses how health care management can be advanced with the (Social) Semantic Web, including SIOC.
+
+</sioc:content>
+  <dcterms:created>2009-03-19T04:04:33+00:00</dcterms:created>
+  <dcterms:modified>2009-04-02T20:46:19+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/336" rdfs:label="Tales from the SIOC-o-sphere #9" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

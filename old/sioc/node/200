@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/200"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/200">
+  <dc:title>Ontology update: sioc:WebService, etc.</dc:title>
+  <sioc:content>Hi All,
+There&#039;s a new version (v1.11) of SIOC specification online at
+http://rdfs.org/sioc/spec/ .
+It contains definition for sioc:WebService discussed in [1].
+[1] http://groups.google.com/group/sioc-dev/browse_thread/thread/63c1000e086ed370
+There are some comments in the last posts of the thread that I am
+implementing now and will have those online tomorrow.
+One of things to clarify is the service protocol / type / access_level
+stuff. I get a feeling that we are going into too much detail in some
+parts - at least when it comes to specifying read/write/delete
+capabilities.
+Propose we use sioc:service_protocol for the transport  protocol (SOAP
+/ XML-RPC / REST). If we use this property to say if its SPARQL /
+GData / etc. we risk confusion between SPARQL query language and
+protocol itself.
+Could we use sioc:query_language to specify SPARQL / GData /
+OpenSearch / ... ? Or sioc:application_protocol for this and
+sioc:transport_protocol for [ SOAP / XML-RPC / REST ] ?
+Best,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-23T10:00:09+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:09+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/200" rdfs:label="Ontology update: sioc:WebService, etc." />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

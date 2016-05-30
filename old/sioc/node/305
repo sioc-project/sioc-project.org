@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/305"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/305">
+  <dc:title>ANN: int.ere.st is lauching!</dc:title>
+  <sioc:content>Hi all,
+I am happy to inform that http://int.ere.st is launching. The main
+objective of int.ere.st is to demonstrate how Semantic Web and Web2.0
+technologies can be combined to provide better metadata creating and
+sharing support across online communities. With int.ere.st, you can
+save, tag and bookmark your own as well as others&#039; SCOT ontologies.
+The tag meta search allows you to look for similar patterns of tagging
+of persons with their interest based on tags. Various functionalities
+are given as following:
+-	various tag search: and(&amp;amp;), or(space), co-occurrence(+), broader(&gt;),
+and narrower(&amp;lt;)
+-	User search
+-	Meta tagging
+-	Resource search
+-	Ontology bookmark
+-	Integrate tagged data across communities
+-	Share FOAF, SIOC, and SCOT ontologies
+You can try it at http://int.ere.st
+And you can get more detailed information about SCOT ontology in
+http://scot-project.org
+I will release a next version of the SCOT exporter as soon as
+possible.
+Best Regards,
+haklae
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-07-19T09:47:28+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/305" rdfs:label="ANN: int.ere.st is lauching!" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/447%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/447" />
+</sioc:Post>
+</rdf:RDF>

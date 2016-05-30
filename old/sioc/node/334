@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/334"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/334">
+  <dc:title>Tales from the SIOC-o-sphere #8</dc:title>
+  <sioc:content> It&#039;s time for another installment from the world of SIOC!
+
+After the news in May that Digg were incorporating RDFa in their pages, Digital Bazaar CEO Manu Sporny (in Blacksburg, where I lived for some time in 1996 and 2000) has written an excellent three-part guide on the public-rdfa list about how more semantic information can be incorporated into Digg pages using SIOC RDFa (parts 1, 2 and 3).  You can view the result (as validating XHTML) here.  See also this interesting related blog post on RDFa by Manu.
+As part of their data portability drive, the mobile phonebook service ZYB (recently acquired by Vodafone) announced on their blog in June that their latest release introduced FOAF and SIOC exports from user&#039;s profile pages (with the full export only available to the users themselves at zyb.com/profilename.foaf and zyb.com/profilename.sioc respectively).  SIOC is being used to describe actions performed by ZYB users such as shouting, writing comments or updating status messages on Facebook.  You can also read more about their new public feeds API for ZYB.
+The SemanticEngine.NET class library has just been released by Mads Kristensen, which supports various different formats ready to use in .NET (currently APML, FOAF, XFN, and soon SIOC and microformats).
+Gautier Poupeau has written an Operator user script that checks if a SIOC-enabled post is referenced in del.icio.us.
+Martynas Jusevičius talks about how technologies including SIOC can enable semantic social networks.
+Brad Fallon gives SIOC a namecheck in his Freeline Report video podcast.  Thanks Brad!
+On the IBM Developer Works site, Rob Crowther mentions SIOC in his description of how to plan a Semantic Web site.
+Ben O&#039;Steen describes how he plans to ditch his database-based blog for a semantic one, using terms from SIOC.
+Triplify 0.4 has been released which uses SIOC and other vocabularies to expose instance data as RDF from a variety of web applications.
+Kingsley Idehen describes how WordPress blogs can be incorporated into the Linked Data Web using Virtuoso.
+Daniel Lewis talks about a Universe of Discourse / Discussion and SIOC.  He has also developed a WordPress theme called StraightWalker that links into the SIOC vocabulary.
+I mentioned last time that the Sindice group would soon release the SWPop widget for WordPress.  It&#039;s now available as the SIOC Widget and it allows you to view posts, comments, topics, etc. made by any blog commenter across the SIOC-o-sphere (as indexed by Sindice).  They&#039;ve also created a SIOC API for Sindice.
+Alex Passant has led work on a prototype system called SMOB (Semantic Microblogging) for distributed / decentralised microblogging, that uses FOAF and SIOC to model microbloggers, services and microblog posts.  You can read more in my blog post about SMOB or in Alex&#039;s blog post.  You can also try the anonymous client and see a server view.
+From IRC (1, 2), we found out about a French wiki system called WikiNi that has been adapted by Charles Nepote to allow publishing to SMOB.  You can get the client here.
+This SMOB post from Gautier Poupeau links to his Drupal 5 widget that shows the latest SIOC postings on a given SMOB server.
+Steve Flinter has written a blog post entitled &quot;Tangler versus SIOC&quot;, referring to the ProgrammableWeb announcement about Tangler, an API for discussion forums.  I think it&#039;d be great if SIOC could be used by Tangler, and I&#039;m glad to see that others think so too.
+TCD student Dave Langley has created the Online Semantic Community Framework (OSCF), a platform for managing online communities based on semantic technologies including SIOC.  It uses a SPARQL endpoint as its data source.
+David Peterson has been discussing on the public-rdf-in-html-tf list about which vocabularies should be used in Drupal core, and Manu Sporny replies with some reasons for using FOAF and SIOC independently or together.
+Deirdre Lee, Vassilios Peristeras et al. have been working on a very nice enterprise application for SIOC, where it is being used in collaborative work environments (CWEs) as an interoperable format to share workspaces and documents between different CWE systems (e.g. BSCW and Business Collaborator).  This work was carried out as part of the ECOSPACE integrated project, and you can find out more from their newsletter wiki, our IEEE IS publication or attend the presentation at ODBASE 2008 in November.
+The Semantic MediaWiki Plus User Group has been set up, and they are investigating how SMW templates can support FOAF and SIOC.
+I&#039;m very pleased to announce that our SIOC &quot;partner-in-crime&quot; Alex Passant has joined DERI.  Alex recently gave an interesting presentation at the Centre for Digital Music (repeated here in DERI) about where &quot;Social Music Meets the Semantic Web&quot;.
+Mike Alexrod has blogged about joining the SIOC-o-sphere, along with the unexpected SEO benefits that he experienced as a result!
+Over 60 competitors have signed up for the boards.ie SIOC Data Competition and there’s still one month left...
+Finally, the 1st Social Data on the Web Workshop (or what we like to call the &quot;SIOC Workshop&quot;!) will be held at the 7th International Semantic Web Conference in Karlsruhe this October.  The list of accepted papers is now available; it&#039;s going to be a very interesting event.  We hope that you can attend!
+
+Previous SIOC-o-sphere articles:
+#7 http://sioc-project.org/node/328
+#6 http://sioc-project.org/node/310
+#5 http://sioc-project.org/node/294
+#4 http://sioc-project.org/node/272
+#3 http://sioc-project.org/node/271
+#2 http://sioc-project.org/node/138
+#1 http://sioc-project.org/node/79
+If you wish to contribute to the next article, join the SIOC Twine and use the tag &quot;siocosphere9&quot; when you add items.
+</sioc:content>
+  <dcterms:created>2008-09-27T19:43:45+01:00</dcterms:created>
+  <dcterms:modified>2008-09-27T22:56:43+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/334" rdfs:label="Tales from the SIOC-o-sphere #8" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

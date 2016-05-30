@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/presentations"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/presentations">
+  <dc:title>SIOC Presentations</dc:title>
+  <sioc:content>Recommended Presentations
+
+More Presentations
+
+J.G. Breslin, &quot;The Social Semantic Web&quot;, IET Ireland Network and NUI Galway CompSoc Talk, DERI, NUI Galway, 27th November 2008. [Slides]
+J.G. Breslin, S. Decker, U. Bojars, &quot;The Future of Social Networks: The Need for Semantics&quot;, Tutorial at the Semantic Technologies Conference, San Jose, USA, 19th May 2008. [Slides]
+U. Bojars, J.G. Breslin, A. Passant, &quot;Interlinking Online Communities and Enriching Social Software with the Semantic Web&quot;, Tutorial at the 17th International World Wide Web Conference (WWW 2008), Beijing, China, 21st April 2008. [Slides]
+J.G. Breslin, &quot;DataPortability and Me Introducing SIOC, FOAF and the Semantic Web&quot;, DataPortability London Meetup, London, 6th April 2008. [Slides]
+J.G. Breslin, &quot;DataPortability.org, web standards, SIOC and FOAF&quot;, WebCamp Workshop on Social Network Portability, 2nd March 2008. [Slides] [Video]
+J.G. Breslin, &quot;The Future of Social Networks on the Internet: The Need for Semantics&quot;, BarCamp Galway Workshop, DERI, NUI Galway, 22nd September 2007. [Slides]
+J.G. Breslin, &quot;Finding Experts Using Internet-Based Discussions in Online Communities and Associated Social Networks&quot;, Invited Talk to the ExpertFinder Workshop, Knowledge Web Assembly, Berlin, Germany, 16th January 2007. [Slides]
+J.G. Breslin, &quot;Drupal SIOC Module&quot;, Drupal Ireland Meetup and Workshop, DERI, NUI Galway, 13th January 2007. [Slides]
+J.G. Breslin, &quot;Semantic Web 2.0: Creating Social Semantic Information Spaces&quot;, Invited Talk for TTI and ITAG, DERI, NUI Galway, 30th November 2006. [Slides]
+J.G. Breslin, &quot;Information Centric Access: The Case of SIOC&quot;, Research Day, DERI, NUI Galway, 23rd November 2006. [Slides] [Video 1, 2, 3]
+J.G. Breslin, &quot;Semantically-Interlinked Online Communities&quot;, BarCamp Ireland Workshop, Webworks, Cork, 30th September 2006. [Slides]
+U. Bojars, &quot;SIOC Browser: Towards a Richer Blog Browsing Experience&quot;, BlogTalk Reloaded, 3rd October 2006. [Slides] [Video]
+J.G. Breslin, S. Decker, &quot;Semantic Web 2.0: Creating Social Semantic Information Spaces&quot;, Tutorial at the 15th International World Wide Web Conference (WWW 2006), Edinburgh, Scotland, 26th May 2006. [Slides]
+A. Harth, &quot;Semantically Interlinking Online Community Sites&quot;, Semantic Web Interest Group Face to Face Meeting, 2005. [Slides]
+
+</sioc:content>
+  <dcterms:created>2005-06-24T17:03:00+01:00</dcterms:created>
+  <dcterms:modified>2009-04-07T22:46:53+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/presentations" rdfs:label="SIOC Presentations" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

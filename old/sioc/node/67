@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/67"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/67">
+  <dc:title>Stuctured Blogging and SIOC</dc:title>
+  <sioc:content>Hi guys -
+Uldis (or anyone else interested!) - maybe can I ask you to send a quick
+e-mail to Raju detailing SIOC open source work to date / future?  They
+are in the political participation domain.
+Sorry Raju, I&#039;ll get back to you myself when back from leave...
+Original message from the Structured Blogging list below.
+Thanks a million -
+John.
+-------- Original Message --------
+Subject: 	RE: [Structuredblogging-discuss] Stuctured Blogging and SIOC
+Date: 	Thu, 25 May 2006 13:40:14 +0200
+From: 	Raju Bitter 
+To: 	
+Hi John,
+I read the article &quot;Towards Semantically-interlinked Online Communities&quot;.
+Very interesting. That&#039;s totally the thing we want to do for enabling
+distributed online discussion in the area of political participation. Next
+week we have a meeting with some experts to discuss the technical concept
+for such a system. If you are doing any open source development of the code
+we could think about joining forces with you. Some other people in the
+mailing list would be interested in that, too.
+Best regards,
+Raju
+&gt; -----Ursprüngliche Nachricht-----
+&gt; Von:
+&gt; structuredblogging-discuss-bounces@structuredblogging.org
+&gt; [mailto:structuredblogging-discuss-bounces@structuredblogging.
+org] Im Auftrag von Raju Bitter
+&gt; Gesendet: Mittwoch, 24. Mai 2006 13:48
+&gt; An: structuredblogging-discuss@structuredblogging.org
+&gt; Betreff: RE: [Structuredblogging-discuss] Stuctured Blogging and SIOC
+&gt;
+&gt; Hi John,
+&gt;
+&gt; That sounds interesting. We are currently working in Berlin
+&gt; on plans for implementing internconnected online discussions
+&gt; to realize &quot;distributed conversations&quot;. I&#039;ll take a look at
+&gt; your website and check out if we can base any of our
+&gt; development on your work. Thanks for the hint.
+&gt;
+&gt; - Raju
+&gt;
+&gt; &gt; -----Ursprüngliche Nachricht-----
+&gt; &gt; Von:
+&gt; &gt; structuredblogging-discuss-bounces@structuredblogging.org
+&gt; &gt; [mailto:structuredblogging-discuss-bounces@structuredblogging.
+&gt; org] Im Auftrag von John Breslin
+&gt; &gt; Gesendet: Mittwoch, 24. Mai 2006 13:13
+&gt; &gt; An: structuredblogging-discuss@structuredblogging.org
+&gt; &gt; Cc: Uldis Bojars
+&gt; &gt; Betreff: [Structuredblogging-discuss] Stuctured Blogging and SIOC
+&gt; &gt;
+&gt; &gt; Hi all -
+&gt; &gt;
+&gt; &gt; I&#039;ve just joined the list.  My name is John and I&#039;m a researcher in
+&gt; &gt; the area of the Semantic Web at DERI in NUI Galway, Ireland.  In my
+&gt; &gt; spare time, I also run a number of blog sites (journals.ie,
+&gt; &gt; planet.journals.ie, planet.journals.co.nz).
+&gt; &gt;
+&gt; &gt; You may already have heard of our SIOC (Semantically-Interconnected
+&gt; &gt; Online Communities) project.
+&gt; &gt; Basically, what it is is an open specification for describing
+&gt; &gt; communities using online discussion forums or blogs,
+&gt; leading to what
+&gt; &gt; some may term &quot;distributed conversations&quot;.  At the moment, online
+&gt; &gt; communities are islands that are not interlinked, and the SIOC
+&gt; &gt; ontology has been proposed to not only link these
+&gt; communities but to
+&gt; &gt; leverage data in ways that were previously unknown.
+&gt; &gt;
+&gt; &gt; A revised version of our SIOC specification has recently been
+&gt; &gt; published.
+&gt; &gt; It can be used in on its own (having a complete set of terms) or in
+&gt; &gt; conjunction with other RDF formats such as RSS 1.0 (and 1.1).  In
+&gt; &gt; terms of producing metadata, we&#039;ve started with SIOC exporters for
+&gt; &gt; open-source discussion systems such as WordPress, Drupal, and
+&gt; &gt; dotClear.
+&gt; &gt;
+&gt; &gt; More info is available from:
+&gt; &gt;
+&gt; &gt; http://rdfs.org/sioc/
+&gt; &gt;
+&gt; &gt; While there are many (useful) classes and properties in
+&gt; SIOC, it can
+&gt; &gt; essentially be boiled down to: Users create Posts that are
+&gt; contained
+&gt; &gt; in Forums that are hosted on Sites, e.g.
+&gt; &gt;
+&gt; &gt;    Site -&gt; host_of -&gt; Forum -&gt; container_of -&gt; Post -&gt;
+&gt; has_creator -&gt;
+&gt; &gt; User
+&gt; &gt;
+&gt; &gt; Posts have reply Posts, and Forums can be parents of other Forums.
+&gt; &gt; We&#039;re also considering introducing a term called Community, since a
+&gt; &gt; distributed community can consist of several parts of other sites
+&gt; &gt; (e.g.
+&gt; &gt; a Drupal forum, a Google Group mailing list and a blog may all form
+&gt; &gt; part of a single community), and we are beginning to
+&gt; develop a browser
+&gt; &gt; for exploring SIOC data.
+&gt; &gt;
+&gt; &gt; So why is this relevant to Structured Blogging?  Well, SIOC
+&gt; metadata
+&gt; &gt; is mainly about describing the structure of discussion posts and
+&gt; &gt; forums (that may or may not be interconnected), while Structured
+&gt; &gt; Blogging complements this by providing more information about the
+&gt; &gt; internal content of the post.  I will also be talking about
+&gt; this at a
+&gt; &gt; tutorial I&#039;m giving at WWW2006 on Friday...
+&gt; &gt;
+&gt; &gt; Looking forward to some interesting discussions on Structured
+&gt; &gt; Blogging, and also on how to integrate SB with both SIOC and the
+&gt; &gt; WordPress Multiuser system (see
+&gt; &gt; http://www.johnbreslin.com/blog/2006/05/17/how-to-make-stuctur
+&gt; ed-blogging-popular/
+&gt; &gt; for my thought on this).
+&gt; &gt;
+&gt; &gt; Thanks,
+&gt; &gt;
+&gt; &gt; John.
+&gt; &gt;
+&gt; &gt; --
+&gt; &gt; Dr. John Breslin
+&gt; &gt; DERI, NUI Galway
+&gt; &gt; http://sw.deri.org/~jbreslin/
+&gt; &gt; john.breslin@deri.org
+&gt; &gt;
+&gt; &gt; _______________________________________________
+&gt; &gt; Structuredblogging-discuss mailing list
+&gt; &gt; Structuredblogging-discuss@structuredblogging.org
+&gt; &gt; http://mail.structuredblogging.org/mailman/listinfo/structured
+&gt; &gt; blogging-discuss
+&gt; &gt;
+&gt;
+&gt;
+&gt; _______________________________________________
+&gt; Structuredblogging-discuss mailing list
+&gt; Structuredblogging-discuss@structuredblogging.org
+&gt; http://mail.structuredblogging.org/mailman/listinfo/structured
+&gt; blogging-discuss
+&gt; 
+_______________________________________________
+Structuredblogging-discuss mailing list
+Structuredblogging-discuss@structuredblogging.org
+http://mail.structuredblogging.org/mailman/listinfo/structuredblogging-discuss
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-05-25T16:18:12+01:00</dcterms:created>
+  <dcterms:modified>2006-05-25T16:18:12+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/67" rdfs:label="Stuctured Blogging and SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

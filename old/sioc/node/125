@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/125"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/125">
+  <dc:title>Fwd: Tabulator issue</dc:title>
+  <sioc:content>FYI: Reply from David Sheets about viewing WP SIOC data in Tabulator.
+---------- Forwarded message ----------
+From: David Sheets
+Date: Aug 16, 2006 6:25 PM
+Subject: Re: Tabulator issue
+To: Uldis Bojars
+Hi Uldis,
+The first point you bring up is a design feature. Resource [1] does
+not contain any triples describing itself and thus we can make no
+statements about it when you load it into the tabulator. We do provide
+a convenience, however, in the form of triples describing what classes
+a resource mentions. In this way, you can navigate down from your
+resource to the data that it contains but that may not necessarily be
+about itself.
+The two instance adding bug was resolved. See [2].
+I&#039;m not sure I understand or can replicate your third bug but I can
+say that double-clicking has the special meaning of &#039;refocus&#039; in the
+outliner context. Try single clicking or giving us instructions so we
+can replicate it.
+Thank you very much for using the Tabulator. We will be releasing 0.8
+soon. If you have any more questions or bug reports, please don&#039;t
+hesitate to contact me, tabulator@csail.mit.edu, or our issue tracker
+at [3].
+Thank you,
+David Sheets
+[1] http://b4mad.net/datenbrei/index.php?sioc_type=post&amp;amp;sioc_id=329
+[2] http://dig.csail.mit.edu/issues/tabulator/issue22
+[3] http://dig.csail.mit.edu/issues/tabulator/
+On 8/16/06, Uldis Bojars  wrote:
+&gt; Hi David,
+&gt;
+&gt; Found this issue when trying out the Tabulator.
+&gt;
+&gt; When loading RDF data [1] from a blog the Tabulator behaves quite strange:
+&gt;  - it only shows information about the class (Post) mentioned in RDF,
+&gt; but does not display the RDF instance data.
+&gt;  - it adds 2 instances of this RDF data when asked to add to the outliner
+&gt;  - after expanding the content once (and showing only reference to a
+&gt; Post class) it does not react to next requests to expand this item. if
+&gt; double-clicking on the triangle that&#039;d expand the item, it just adds
+&gt; another copy of the same URL to the source list.
+&gt;
+&gt; For some more test data you can look at [2] and [3].
+&gt;
+&gt; [1] http://b4mad.net/datenbrei/index.php?sioc_type=post&amp;amp;sioc_id=329
+&gt;
+&gt; [2] http://esw.w3.org/topic/SIOC/EnabledSites
+&gt; [3] http://www.geospatialsemanticweb.com/index.php?sioc_type=post&amp;amp;sioc_id=108
+&gt;
+&gt; Tried this with Tabulator 0.7 in Firefox.
+&gt; Also tried the same with the development version of Tabulator, but
+&gt; that did not help.
+&gt;
+&gt; Could you please let me know what is wrong?
+&gt;
+&gt; Best,
+&gt; Uldis
+&gt;
+&gt; [ http://captsolo.net/info/ ]
+&gt;
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-08-17T00:07:25+01:00</dcterms:created>
+  <dcterms:modified>2006-08-17T00:07:25+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/125" rdfs:label="Fwd: Tabulator issue" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

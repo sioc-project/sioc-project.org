@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/161"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>FW: SIOC specification (CTIC) | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>FW: SIOC specification (CTIC)</h2>                                                  <div class="clear-block">
+            <div id="node-161" class="node">
+
+
+
+      <span class="submitted">2006, September 19 - 16:33 — <a href="http://sioc-project.org/user/63" title="View user profile.">Uldis Bojars</a></span>
+  
+  <div class="content clear-block">
+    <p>Comments from Fundación CTIC.<br />
+________________________________</p>
+<p>From: Luis Polo<br />
+Subject: SIOC specification (CTIC)</p>
+<p>Dear Uldis,</p>
+<p>I am Luis Polo from CTIC Foundation (Spain). We have received the invitation<br />
+to participate in the SIOC Ontology specification to submit it to the W3C.<br />
+We have analyzed the initiative and we consider it is a useful idea to<br />
+interlink Web Communities. We would like to support the W3C member<br />
+submission. We have two comments: </p>
+<p>1) Fisrt of all, Sergio Fernandez, a researcher of our department, has<br />
+developped an application, as a research project around the semantic web<br />
+technologies, to publish mailing lists´s archives into an RDF format. This<br />
+project is called SWAML. The SWAML vocabulary is built upon FOAF and Dublin<br />
+Core and is completely compatible with SIOC specification, as you can see it<br />
+as a subset of SIOC elements. If you consider it could be a useful<br />
+application of SIOC, we can adapt quickly SWAML vocabulary to SIOC and<br />
+include the software application as an actual implementation of SIOC. For<br />
+more details, you can see http://swaml.berlios.de.</p>
+<p>2) About SIOC specification, we have one comment. SIOC is a RDF vocabulary<br />
+to describe Online Communities. It has a lot of links with FOAF (and Dublin<br />
+Core), so the domain or range of some properties is for example foaf:Person.<br />
+Also, the class sioc:User is subclass of foaf:Person. We think this is a<br />
+good idea: reusing concepts for another vocabularies. The problem is that<br />
+there are some SIOC elements that are semantically identical to some FOAF<br />
+and Dublin Core elements but with another URI. So for example, SIOC rewrites<br />
+the property dc:creator as sioc:has_creator or foaf:mbox_sha1sum as<br />
+sioc:email_sha1. This could be a problem, so you have two syntactic<br />
+different elements with the same associated semantics. In SIOC, as sioc:User<br />
+is subclass of foaf:Agent, it is also a subclass of foaf:Agent (by<br />
+transitivity), so sioc:User would have the property foaf:mbox_sha1sum. Of<br />
+course, it will have also sioc:email_sha1. In RDF Universe it is not<br />
+contradictory, but redundant (like reinventing the wheel). </p>
+<p>We suggest to identify these conflictive elements, eliminate them and then<br />
+add their FOAF and Dublin Core counterparts. If you have any comments, feel<br />
+free to contact us.</p>
+<p>Best Regards,</p>
+<p>p.</p>
+<p>Luis Polo Paredes<br />
+Departamento I+D+i<br />
+Fundación CTIC<br />
+-Centro Tecnológico de la Información y la Comunicación-<br />
+Parque Científico Tecnológico Gijón-Asturias-Spain www.fundacionctic.org</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="167.html" class="topic-previous" title="Go to previous forum topic">‹ SIOC Types module, specification format changes</a>
+              <a href="166.html" class="topic-next" title="Go to next forum topic">[Fwd: Pathway - A vision for an RDF  browsing/editing tool] ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-215"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-215" class="active">FW: SIOC specification (CTIC)</a></h3>
+
+    <div class="content">
+      <p>Hi all,</p>
+<p>These comments made me realize there's still some confusion between<br />
+sioc:User and foaf:People, as some users think sioc:User is a "user",<br />
+not an account.(cf point 2 of original e-mail). I also noticed today<br />
+that ODS made the confusion in their SIOC export.</p>
+<p>We already mentionned this issue earlier on the list, but as W3C<br />
+submission is coming soon, I think we should solve this, especially<br />
+when bringing SIOC to a wider audience with less confusion as possible<br />
+in people's mind.<br />
+Discussing with some on #sioc, it appears sioc:UserAccount could be nice.</p>
+<p>What do you think of it ? John, Uldis ?</p>
+<p>Alex.</p>
+<p>On 9/19/06, Uldis Bojars<br />
+<uldis.bojars@deri.org> wrote:<br />
+><br />
+> Comments from Fundación CTIC.<br />
+> ________________________________<br />
+><br />
+> From: Luis Polo<br />
+> Subject: SIOC specification (CTIC)<br />
+><br />
+><br />
+> Dear Uldis,<br />
+><br />
+> I am Luis Polo from CTIC Foundation (Spain). We have received the invitation<br />
+> to participate in the SIOC Ontology specification to submit it to the W3C.<br />
+> We have analyzed the initiative and we consider it is a useful idea to<br />
+> interlink Web Communities. We would like to support the W3C member<br />
+> submission. We have two comments:<br />
+><br />
+> 1) Fisrt of all, Sergio Fernandez, a researcher of our department, has<br />
+> developped an application, as a research project around the semantic web<br />
+> technologies, to publish mailing lists´s archives into an RDF format. This<br />
+> project is called SWAML. The SWAML vocabulary is built upon FOAF and Dublin<br />
+> Core and is completely compatible with SIOC specification, as you can see it<br />
+> as a subset of SIOC elements. If you consider it could be a useful<br />
+> application of SIOC, we can adapt quickly SWAML vocabulary to SIOC and<br />
+> include the software application as an actual implementation of SIOC. For<br />
+> more details, you can see http://swaml.berlios.de.<br />
+><br />
+> 2) About SIOC specification, we have one comment. SIOC is a RDF vocabulary<br />
+> to describe Online Communities. It has a lot of links with FOAF (and Dublin<br />
+> Core), so the domain or range of some properties is for example foaf:Person.<br />
+> Also, the class sioc:User is subclass of foaf:Person. We think this is a<br />
+> good idea: reusing concepts for another vocabularies. The problem is that<br />
+> there are some SIOC elements that are semantically identical to some FOAF<br />
+> and Dublin Core elements but with another URI. So for example, SIOC rewrites<br />
+> the property dc:creator as sioc:has_creator or foaf:mbox_sha1sum as<br />
+> sioc:email_sha1. This could be a problem, so you have two syntactic<br />
+> different elements with the same associated semantics. In SIOC, as sioc:User<br />
+> is subclass of foaf:Agent, it is also a subclass of foaf:Agent (by<br />
+> transitivity), so sioc:User would have the property foaf:mbox_sha1sum. Of<br />
+> course, it will have also sioc:email_sha1. In RDF Universe it is not<br />
+> contradictory, but redundant (like reinventing the wheel).<br />
+><br />
+> We suggest to identify these conflictive elements, eliminate them and then<br />
+> add their FOAF and Dublin Core counterparts. If you have any comments, feel<br />
+> free to contact us.<br />
+><br />
+><br />
+> Best Regards,<br />
+><br />
+> p.<br />
+><br />
+> Luis Polo Paredes<br />
+> Departamento I+D+i<br />
+> Fundación CTIC<br />
+> -Centro Tecnológico de la Información y la Comunicación-<br />
+> Parque Científico Tecnológico Gijón-Asturias-Spain www.fundacionctic.org<br />
+><br />
+><br />
+><br />
+><br />
+> ><br />
+></uldis.bojars@deri.org></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-218"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-218" class="active">FW: SIOC specification (CTIC)</a></h3>
+
+    <div class="content">
+      <p>Hullo :)</p>
+<p> > These comments made me realize there's still some confusion between<br />
+ > sioc:User and foaf:People, as some users think sioc:User is a "user",<br />
+ > not an account.(cf point 2 of original e-mail). I also noticed today<br />
+ > that ODS made the confusion in their SIOC export.<br />
+ ><br />
+ > Discussing with some on #sioc, it appears sioc:UserAccount could be nice.</p>
+<p>I can understand the reasons alright, and don't have a major problem<br />
+with it.  But maybe the problem is that we haven't explained what a User<br />
+is properly in SIOC - that's why I've drawn up this picture.</p>
+<p>http://sioc-project.org/node/158</p>
+<p>I think that saying User instead of UserAccount also says more about<br />
+what a Person does AS a User rather than that the UserAccount or profile<br />
+does something - e.g. User -> creator_of -> Post seems more appropriate<br />
+to me than UserAccount (although you could argue that a Person did<br />
+create the post via their UserAccount access to a site rather than as a<br />
+User)...</p>
+<p>Regarding this as well, I'd like to propose that the Range of account_of<br />
+be changed from foaf:Person to foaf:Agent.</p>
+<p>I've created a new FAQ section on sioc-project.org where I hope we can<br />
+answer these and other common questions/problems.</p>
+<p>Thanks,</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-221"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-221" class="active">FW: SIOC specification (CTIC)</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 9/27/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> Hullo :)<br />
+><br />
+>  > These comments made me realize there's still some confusion between<br />
+>  > sioc:User and foaf:People, as some users think sioc:User is a "user",<br />
+>  > not an account.(cf point 2 of original e-mail). I also noticed today<br />
+>  > that ODS made the confusion in their SIOC export.<br />
+>  ><br />
+>  > Discussing with some on #sioc, it appears sioc:UserAccount could be nice.<br />
+><br />
+> I can understand the reasons alright, and don't have a major problem<br />
+> with it.  But maybe the problem is that we haven't explained what a User<br />
+> is properly in SIOC - that's why I've drawn up this picture.<br />
+><br />
+> http://sioc-project.org/node/158<br />
+><br />
+> I think that saying User instead of UserAccount also says more about<br />
+> what a Person does AS a User rather than that the UserAccount or profile<br />
+> does something - e.g. User -> creator_of -> Post seems more appropriate<br />
+> to me than UserAccount (although you could argue that a Person did<br />
+> create the post via their UserAccount access to a site rather than as a<br />
+> User)...<br />
+Indeed thinking of User as a Person is better, but when using<br />
+foaf:holdsAccount, I expect getting a user account, not 'the person as<br />
+a user'.</john.breslin@deri.org></p>
+<p>So it seems it depends if we look at it from the SIOC point of view<br />
+(i.e. that's not an account that creates a post, that's a User<br />
+(Person) with this account - but is it not the role of foaf:maker to<br />
+add the person level behind the account one ?) or FOAF one (when<br />
+holdsAccount leads to an online account).</p>
+<p>But your schema and mentionning that User is a virtual user / profile<br />
+might be enough to get rid of this ambiguity.</p>
+<p>> Regarding this as well, I'd like to propose that the Range of account_of<br />
+> be changed from foaf:Person to foaf:Agent.<br />
++1<br />
+And as foaf:holdsAccount domain is foaf:Agent, it makes sense to do it<br />
+Thus, we can have sioc:User for a foaf:Group</p>
+<p>> I've created a new FAQ section on sioc-project.org where I hope we can<br />
+> answer these and other common questions/problems.<br />
+Good idea, (and I've finally got the Irish meaning of sioc :)</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>> Thanks,<br />
+><br />
+> John.<br />
+> --<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-222"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-222" class="active">FW: SIOC specification (CTIC)</a></h3>
+
+    <div class="content">
+      <p>Alexandre Passant wrote:<br />
+> Hi,<br />
+><br />
+> On 9/27/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+>>Hullo :)<br />
+>><br />
+>> > These comments made me realize there's still some confusion between<br />
+>> > sioc:User and foaf:People, as some users think sioc:User is a "user",<br />
+>> > not an account.(cf point 2 of original e-mail). I also noticed today<br />
+>> > that ODS made the confusion in their SIOC export.<br />
+>> ><br />
+>> > Discussing with some on #sioc, it appears sioc:UserAccount could be nice.<br />
+>><br />
+>>I can understand the reasons alright, and don't have a major problem<br />
+>>with it.  But maybe the problem is that we haven't explained what a User<br />
+>>is properly in SIOC - that's why I've drawn up this picture.<br />
+>><br />
+>>http://sioc-project.org/node/158<br />
+>><br />
+>>I think that saying User instead of UserAccount also says more about<br />
+>>what a Person does AS a User rather than that the UserAccount or profile<br />
+>>does something - e.g. User -> creator_of -> Post seems more appropriate<br />
+>>to me than UserAccount (although you could argue that a Person did<br />
+>>create the post via their UserAccount access to a site rather than as a<br />
+>>User)...<br />
+><br />
+> Indeed thinking of User as a Person is better, but when using<br />
+> foaf:holdsAccount, I expect getting a user account, not 'the person as<br />
+> a user'.</john.breslin@deri.org></p>
+<p>I guess I agree, see my last post.</p>
+<p>> So it seems it depends if we look at it from the SIOC point of view<br />
+> (i.e. that's not an account that creates a post, that's a User<br />
+> (Person) with this account - but is it not the role of foaf:maker to<br />
+> add the person level behind the account one ?) or FOAF one (when<br />
+> holdsAccount leads to an online account).<br />
+><br />
+> But your schema and mentionning that User is a virtual user / profile<br />
+> might be enough to get rid of this ambiguity.<br />
+><br />
+><br />
+>>Regarding this as well, I'd like to propose that the Range of account_of<br />
+>>be changed from foaf:Person to foaf:Agent.<br />
+><br />
+> +1</p>
+<p>this is definitly a good idea!</p>
+<p>> And as foaf:holdsAccount domain is foaf:Agent, it makes sense to do it<br />
+> Thus, we can have sioc:User for a foaf:Group<br />
+><br />
+><br />
+>>I've created a new FAQ section on sioc-project.org where I hope we can<br />
+>>answer these and other common questions/problems.</p>
+<p>hmmm, canm/shall we merge this somehow with the related ontologies<br />
+document? (I'd still be gald to recieve ocmments on the first draft on<br />
+the wiki! ;-) )</p>
+<p>axel</p>
+<p>><br />
+> ><br />
+> </p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-216"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-216" class="active">SIOC v1.08 integration into Talk Digger.</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>I just published the document about the integration of the SIOC<br />
+ontology in Talk Digger [1]. </p>
+<p>Please tell me what you think about the integration if you have the<br />
+time to read it. Any comments a more than welcome.</p>
+<p>Also, Uldis, remind me to put it on the wiki tomorrow (in prevision<br />
+of the W3 submission).</p>
+<p>[1] http://tinyurl.com/oyhb2</p>
+<p>Take care,</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-214"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, October 6 - 10:35 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="161.html#comment-214" class="active">FW: SIOC specification (CTIC)</a></h3>
+
+    <div class="content">
+      <p>Hi Uldis!</p>
+<p>Great, good news! :)</p>
+<p>Felicitation, and thank you for puting so much time in SIOC's development. It<br />
+has a bright future I think!</p>
+<p>Take care,</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F161%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/161?destination=node%2F161"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-VTqDR_Kt-dyFmjjA2e1ZFXaXL14Wu6S4ju3IeHcW96I" value="form-VTqDR_Kt-dyFmjjA2e1ZFXaXL14Wu6S4ju3IeHcW96I"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

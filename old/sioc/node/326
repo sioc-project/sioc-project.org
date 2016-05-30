@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/326"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/326">
+  <dc:title>CfP: 2nd Workshop on Social Aspects of the Web</dc:title>
+  <sioc:content>
+[Apologies if you receive this more than once]
+================================================================================
+                   2nd Workshop on Social Aspects of the Web
+                              in conjunction with
+    11th International Conference on Business Information Systems (BIS 2008)
+                               Innsbruck, Austria
+                              May 5, 6 or 7, 2008
+================================================================================
+                   Deadline for submissions: January 12, 2008
+================================================================================
+In recent years, the Web has moved from a simple one-way communication channel
+extending traditional media, to a complex &quot;peer-to-peer&quot; communication space
+with a blurred author/audience distinction and new ways to create, share and
+use knowledge in a social way.
+This change of paradigm is currently profoundly transforming most areas of our
+life: our interactions with other people, our relationships, ways of gathering
+informations, ways of developing social norms, opinions, attitudes and even
+legal aspects as well as ways of working and doing business.
+That change also raises a strong need for theoretical, empirical and applied
+studies related to how people may interact on the Web, how they actually do so
+and what new possibilities and challenges are emerging in the social, business
+and technology dimensions. 
+The goal of this workshop is to bring researchers and practitioners together to
+explore the issues and challenges related to social aspects of the Web. We want
+to facilitate discussion on topics including theoretical, empirical and applied
+studies related to:  
+TOPICS OF INTEREST
+* Users in the social Web
+    * User identity/identities on the Web
+    * Activity patterns
+    * Privacy / intimacy in the social Web
+    * Psychological aspects of acting in social Web
+    * Analysis and reduction of the socio-technical gap in social software
+* Communities on the Web
+    * Users roles, leadership and interactions
+    * Conflicts and their resolution
+    * Social norms and their enforcement
+    * Trust and its propagation
+    * Relations of on-line and off-line communities
+    * Social discourse and decission-taking on the Web
+* Large-scale social Web mining and empirical studies
+    * Social network analysis
+    * Associations mining from social network
+    * Large-scale behaviour patterns and anomalies&#039; mining
+    * Moods&#039; / opinions&#039; / social problems&#039; analysis
+    * Experts finding in social Web sources
+    * Mining formal semantics from social sources
+    * Methodologies of Web-based social macro and micro studies
+* Social Web and business
+    * Social Web as a source of business information
+    * Social Web as a business communication channel
+    * Business models for social software and services
+    * Specific types of social software on the Web (bookmarking, social networks
+      etc.)
+    * Use cases and best practicies
+* Applications of Web-based social software
+    * Social software architectures
+    * Strategies for bootstrapping social software systems and bypassing the
+      critical mass problem
+    * Social software in information processing and retrieval
+    * Social software in collaborative maintenance of content and data
+SUBMISSION
+* Long papers: max. 5000 words
+* Work-in-progress rep.: max. 2500 words
+* Position papers: max. 2500 words
+* Demo papers: max. 2500 words
+Papers must be submitted in PDF format according to Springer LNBIP template
+available from
+http://www.springer.com/east/home/computer/lncs?SGWID=5-164-7-487211-0.
+Submission system is available on-line at
+http://www.easychair.org/conferences/?conf=SAW2008.
+The proceedings will be published jointly with proceedings of other BIS
+workshops as a book or CD with ISBN number, and on-line at CEUR WS.org workshop
+proceedings publication service (open content).
+Extended version of selected papers submited to the workshop will be published
+as special issue of International Journal on WWW/Internet
+(http://www.iadis.org/ijwi/, ISSN: 1645-7641).
+WORKSHOP FORMAT
+All authors of accepted papers as well as other participants will be asked to
+read accepted papers abtracts before the workshop (papers will be available
+on-line in advance) to facilitate discussion. The workshop will consist in two
+parts: first (more formal) devoted to presentation and discussion of accepted
+papers and second (less formal) devoted to discussion of several issues related
+to present and future of the social Web.
+Workshop participants will be also invited to take part in the BIS conference
+and topically related BIS workshops on Mashups, Enterprise Mashups, and
+Lightweight Composition on the Web (M&amp;amp;LCW 2008) and Advances in Accessing the
+Deep Web (ADW 2008).
+IMPORTANT DATES
+* January 12, 2008 - submission deadline for papers
+* February 12, 2008 - notification of acceptance/rejection
+* March 12, 2008 - submission of final papers
+* May 5, 6 or 7, 2008 - the workshop
+ORGANIZERS
+* Poznan University of Economics, Departament of Information Systems
+  (http://kie.ae.poznan.pl/)
+CHAIRS
+* Dominik Flejter
+* Tomasz Kaczmarek
+* Marek Kowalkiewicz
+PROGRAM COMMITTEE
+* Krisztian Balog, Univeristy of Amsterdam, the Netherlands
+* Simone Braun, FZI Kralsruhe, Germany
+* John Breslin, DERI, NUI Galway, Ireland
+* Tanguy Coenen, Vrije Universiteit Brussel, Belgium
+* Jon Dron, Athabasca University, Canada
+* Davide Eynard, Politecnico di Milano, Italy
+* Andrew T. Fiore, University of California, Berkeley, the USA
+* Dominik Flejter, Poznan University of Economics, Poland
+* Tomasz Kaczmarek, Poznan University of Economics, Poland
+* Marek Kowalkiewicz, SAP Research Brisbane, Australia
+* Sebastian Kruk, DERI, NUI Galway, Ireland
+* Marcin Paprzycki, Warsaw School of Social Psychology, Poland
+* Katharina Siorpaes, University of Innsbruck, Austria
+* Marcin Sydow, Polish-Japanese Institute of Information Technology, Poland
+* Jie Tang, Tshingua Univeristy, China
+* Celine van Damme, Vrije Universiteit Brussel, Belgium
+* Valentin Zacharias, FZI Kralsruhe, Germany
+================================================================================
+--
+__      ___ _   _
+\ \    / (_) |_(_)___ _ _
+ \ \/\/ /| | / / / -_) &#039;_|  Sergio Fernández
+  \_/\_/ |_|_\_\_\___|_|    http://www.wikier.org/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-12-12T10:57:16+00:00</dcterms:created>
+  <dcterms:modified>2007-12-12T10:57:16+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/326" rdfs:label="CfP: 2nd Workshop on Social Aspects of the Web" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/67%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/67" />
+</sioc:Post>
+</rdf:RDF>

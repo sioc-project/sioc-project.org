@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/207"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/207">
+  <dc:title>Tool for Semantic MPEG-7 annotation using ontologies</dc:title>
+  <sioc:content>Hi,I&#039;ve just read the post of the boy that ask for a &quot;tool for semantic
+annotation of audio&quot;....but i have not found anything for my problem in
+this post!!!
+I need a tool for semantic annotation of audio that uses MPEG-7 format
+but above all the Ontologies...but I don&#039;t find anything!!!!
+Someone knows a tool like this? Please,it serve me to study....but I
+don&#039;t find anything!!!!
+Thank you so much,bye.
+Claudio
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-12-20T11:07:59+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:11+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/207" rdfs:label="Tool for Semantic MPEG-7 annotation using ontologies" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/148%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/148" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/260"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/260">
+  <dc:title>Code Needed: Drupal, MovableType</dc:title>
+  <sioc:content>There are [many] tasks that need to be done in SIOC and would move
+applications of SIOC forward, but which nobody is currently working
+on.
+It would be great if we list them and look at this list - maybe there
+is something that you would enjoy doing or can do very easily. This is
+in line with the previous email on LazyWeb in SIOC - call it &quot;LazyWeb&quot;
+or &quot;Code Needed&quot;.
+Here are some of coding tasks that would bring immediage benefit:
+(1) SIOC plugin for MovableType
+Most of the blogs on PlanetRDF use either WordPress or MovableType.
+WordPress users can use the SIOC plugin which we already have (and
+which covers most of the information contained within WordPress), but
+MovableType has no SIOC support yet.
+I am not a Perl hacker and will not be very efficient at creating such
+a plugin. Are you?
+(2) Improve SIOC export for Drupal
+AidanF writes [1] in answer to a question on status of Drupal SIOC plugin [2]:
+&quot;The drupal SIOC plugin currently assumes that you are using the blog
+module for posting whereas if you are running a single-user site like
+yours or mine you are probably using the story module. There are many
+ways to use and organize content with Drupal and not all of them are
+covered by the current module.&quot;
+This shows that there is some way to go before Drupal plugin covers as
+much as WordPress&#039;s does. It directly depends on if you are using
+Drupal and are willing to experiment with SIOC data they can get out
+of it (and improve the plugin according to your needs).
+[1] http://captsolo.net/info/blog_a.php/2007/04/21/can_i_crash_in_dublin#c96523
+[2] http://sioc-project.org/drupal
+P.S. Could just concentrate on a single platform - WordPress - and
+possibly cover the majority of bloggers (a quick survey at BarCamp
+showed that most of bloggers there are using WordPress), but that
+would be quite a boring world and if sticking to a single platform we
+may overlook the full potential of SIOC.
+There must be more ideas / wishes that needs to be done, but these are
+the most immediate or what have been around for quite some time. If
+you are willing / interested to do some of these tasks or want to
+propose new tasks, please reply.
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-05-17T09:38:40+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:40+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/260" rdfs:label="Code Needed: Drupal, MovableType" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

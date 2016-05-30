@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/250"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/250">
+  <dc:title>Using tags for POWDER content labels</dc:title>
+  <sioc:content>Hi all!
+Sorry for the cross-posting, but this is a topic that I think is in the
+intersection between POWDER, SIOC and SKOS, thus I would like to hear
+opinions from several groups. Reply-To is tentatively set to
+public-powderwg@w3.org, but post as you see appropriate (I guess
+anti-spam measures could make this nasty...)
+I intend to support POWDER content labels on my.opera.com, since we live
+with people posting nudes and stuff. Censorship is a touchy issue.
+However, rigid taxonomies have never been popular among users, tags are
+however, so I intend that people tag their stuff, and then map that tag
+to a POWDER description. The basic infrastructure for doing this is
+allready in place:
+http://my.opera.com/semweb/blog/2007/03/08/marrying-folksonomies-and-taxonomies
+However, the current interface is now rather complex:
+http://my.opera.com/semweb/blog/2007/03/23/complexities-of-tag-to-vocabulary-mappin
+to the extent where I think it would confuse many users and thus be of
+little value. 
+So, this is how I imagine it done: A user has tags, modelled with SKOS
+concepts. Thus every tag gets a URI,
+http://my.opera.com/username/tag/nude
+for example. Then, this tag needs to be bound to a resource on one hand
+and a POWDER description on the other.
+sioc:topic comes to mind, thus
+ sioc:topic
+ .
+Since ICRA/FOSI will have created the vocabulary about nudity for us,
+all I want to do is to link to the description, that I hope Phil one
+day will create (this is just an example!):
+ ex:means
+ .
+The first obvious thing is that I don&#039;t know what predicate that should
+be used to link the SKOS concept to the description. However, that
+could be another issue for the open SKOS issue in the core guide as
+http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20051102/#secmodellingrdf
+If this approach to tag-to-URI mapping is feasible, I would be happy if
+something like that went into SKOS. The implementation I currently have
+on my.opera.com is allready a use case for this.
+The next problem is that I&#039;m not linking a resource directly to a
+description, thus making SPARQL queries and the general model more
+complex. The alternative, as I see it, is to make the UI more complex
+on the tagging services, but I don&#039;t think that&#039;s a good approach.
+Thus, I think the minimum graph to link a resource to a POWDER
+description is
+ sioc:topic
+ .
+ ex:means
+ .
+and an user agent would have to understand that. I was myself hoping to
+get away with a single triple when I started to work on this, but as
+noted in my blog, it is a matter of who gets to deal with the
+complexity. So, is this the right balance?
+Note that this approach does not at all use the content grouping that
+the POWDER group discusses at length, it just links resource to
+description. Of course, for large-scale workflows, content grouping is
+important, but I think &quot;the long tail&quot; may be more comfortable with
+this approach. It would be very interesting if we could get del.icio.us
+involved, for example.
+Cheers,
+Kjetil
+--
+Kjetil Kjernsmo
+Semantic Web Specialist
+Opera Software ASA
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-12T13:07:25+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/250" rdfs:label="Using tags for POWDER content labels" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/58%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/58" />
+</sioc:Post>
+</rdf:RDF>

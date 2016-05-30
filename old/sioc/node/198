@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/198"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/198">
+  <dc:title>Questions re. Feed to SIOC XSLT script</dc:title>
+  <sioc:content>Hi,
+Sorry - mixed up what should be a URI for sioc:Forum. Was using the
+URL of a feed but should use a URL of the blog / web page itself
+instead. Fixed now, XSLT is at the same URL [1].
+That brings up more questions:
+1. What is a sioc:Site in this case and what should be its URI ?
+In the case of WordPress SIOC export the sioc:Site gets a URL of the
+blog and sioc:Forum gets a synthesized URL. But maybe it should be the
+sioc:Forum instead and leave a sioc:Site w/o a URI (or invent one)?
+What about sites like LiveJournal? Should a sioc:Site be
+http://www.livejournal.com/ ?
+2. If an atom:Entry has both atom:id and atom:link which one should
+become a URI for sioc:Post?
+Most probably it should be the atom:id, but some sites choose
+non-resolvable URIs like &quot;urn:lj:livejournal.com:atom1:02369:31776&quot;
+and there are people who say these are a bad thing to have.
+Uldis
+[ http://captsolo.net/info/ ]
+On 11/28/06, Uldis Bojars  wrote:
+&gt; Fixed that.
+&gt;
+&gt; The code to extract feed&#039;s URL from the link rel=&quot;self&quot; element was
+&gt; already there ( thanks, Morten! ), just needed to loosen its matching
+&gt; rules because it was looking for a link of type &quot;application/atom+xml&quot;
+&gt; but there are many feeds that advertise their url as other MIME types
+&gt; such as &quot;text/xml&quot;.
+&gt;
+&gt; Uldis
+&gt;
+&gt; On 11/28/06, Andreas Harth  wrote:
+&gt; &gt;
+&gt; &gt; thanks a lot for making the feed to SIOC XSLT available!  I&#039;ve checked
+&gt; &gt; in a version of the feed-sioc.xsl script [1] that generates valid RDF/XML.
+&gt; &gt;
+&gt; &gt; One thing: currently, the URL to the feed has to be passed as a parameter
+&gt; &gt; to the XSLT.  Is it possible to get that information out of the feed
+&gt; &gt; itself?  I don&#039;t have the feed/Forum URL at hand when invoking the script.
+&gt; &gt;
+&gt; &gt; Many thanks!
+&gt; &gt;
+&gt; &gt; Regards,
+&gt; &gt; Andreas.
+&gt; &gt;
+&gt; &gt; [1] http://sw.deri.ie/svn/sw/2005/08/sioc/xslt/feed-sioc.xsl
+&gt;
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-23T10:00:09+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:09+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/198" rdfs:label="Questions re. Feed to SIOC XSLT script" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

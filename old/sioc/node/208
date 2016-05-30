@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/208"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/208">
+  <dc:title>[Fwd: Mappings between base vocabularies for ExpertFinder]</dc:title>
+  <sioc:content>maybe the mail below from ExpertFinder is also interesting for
+SIOC-dev... or let me formulate it  hte other way around: Are there
+people in SIOC willing to contribute to more formal inter-vocabulary
+mapping definitions? The below-mentioned is only a starting point. Would
+be good to get more people involved, also in order to completely and
+formally describe the opverlaps mentioned at
+  http://esw.w3.org/topic/SIOC/RelatedOntologies
+cheers and merry christmas,
+axel
+-------- Original Message --------
+Date: Fri, 22 Dec 2006 18:02:37 +0100
+From: Axel Polleres 
+To: expertfinder-dev@lists.foaf-project.org
+Subject: Mappings between base vocabularies for ExpertFinder
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Dear all,
+I started to work on the mappings mentioned in our paper.
+See
+      http://www.rdfweb.org/topic/ExpertFinder_2fmappings
+for details. Note that even for the supposedly simple case of mappings
+between vCard and FOAF, we need surprisingly expressive mappings way
+beyond OWL or RDFS subclass or subproperty definitions, but even beyond
+what is expressible in the current version of SPARQL by means of
+CONSTRUCT statements.
+Opinions welcome, I think this exercise gives quite valuable insights.
+When back from vacations, I plan to further work on these mappings,
+probably, I will provide some additional version in DLVHEX [1] rules,
+where some of the things we need can be expressed more elegantly in the
+future, but although being a very flexible framework for rules on top of
+RDF, DLVHEX cannot yet produce RDF as output. I expect to have this
+functionality in the future though, just &quot;negotiating&quot; with the developers.
+cheers &amp;amp; merry christmas,
+(you may view these first mappings as a &quot;present&quot;, feel free to
+extend/comment over christmas!!! ;-) )
+axel
+p.s.: I&#039;ll be off to christmas holidays tonite and back only january
+7th. probably without internet connection most of the time... Looks like
+a nice break, I think I won&#039;t miss it too much, the last few months were
+quite busy!
+--
+Dr. Axel Polleres
+email: axel@polleres.net  url: http://www.polleres.net/
+--
+Dr. Axel Polleres
+email: axel@polleres.net  url: http://www.polleres.net/
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-12-22T17:28:35+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/208" rdfs:label="[Fwd: Mappings between base vocabularies for ExpertFinder]" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/59%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/59" />
+</sioc:Post>
+</rdf:RDF>

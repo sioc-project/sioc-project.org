@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/60"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/60">
+  <dc:title>Revisions to the SIOC Ontology - Impact</dc:title>
+  <sioc:content>Main impact of SIOC changes:
+(1) SIOC Exporters
+Introduction of foaf:Person - changes how information about
+sioc:User(s) is represented.
+Yet this change is a welcome one as this will allow to use SIOC data
+with applications that already understand FOAF.
+sioc:title to be instead of sioc:subject for post title - impact on
+Drupal, .Clear.
+sioc:type - used in .Clear exporter, but I can&#039;t tell if there are
+exporter changes needed due to this
+sioc:name - used in all 3 exporters for things that are not User or Usergroup
+This sums up the impact noticeable on the first glance. You as
+exporter developers will know better.
+(2) Using SIOC Data (and &quot;Smushing&quot;)
+This is a more general question - how do we ensure, when RDF data from
+different sources are mixed together, that we do not loose relation
+between particular data of a person (name, surname, e-mail) and the
+account that this information has been registered for.
+While all the information is within one file or comes from one site
+everything is fine - we know that there is no external information. So
+one answer can be - while we keep the provenance (info about the
+origin) of the data we are fine.
+If not, then the link may be lost.
+While this has not been solved we are keeping sioc:email and
+sioc:email_sha1 though they could easily be replaced by appropriate
+properties of foaf:Person.
+Best regards,
+Uldis Bojars
+[ http://captsolo.net/info/ ]
+[ CaptSolo @ #foaf and #swig ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-05-12T05:34:20+01:00</dcterms:created>
+  <dcterms:modified>2006-05-12T05:34:20+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/60" rdfs:label="Revisions to the SIOC Ontology - Impact" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

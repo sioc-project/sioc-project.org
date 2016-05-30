@@ -1,0 +1,1670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/105"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>About SIOC concepts / properties | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>About SIOC concepts / properties</h2>                                                  <div class="clear-block">
+            <div id="node-105" class="node">
+
+
+
+      <span class="submitted">2006, July 14 - 13:32 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  <div class="content clear-block">
+    <p>To summarise about proposed ontology additions / changes:</p>
+<p>= Decided:</p>
+<p>1) Add sioc:Community<br />
++ properties sioc:has_part and sioc:part_of pointing to and from it.</p>
+<p>We are quite sure that a Community concept is needed.<br />
+There can still be some discussion about the property names and alternatives.</p>
+<p>= Almost there:</p>
+<p>2) sioc:Comment</p>
+<p>Initially we thought "let's make all posts generic - comments are same<br />
+as posts", but there's a need to distinguish between comments and<br />
+posts.</p>
+<p>Proposal: create a [ sioc:Comment rdfs:subClassOf sioc:Post . ]</p>
+<p>Comment is also a post, but a specific type of. That should solve the problem.</p>
+<p>= Need your input:</p>
+<p>3) Properties linking Site to Usergroup</p>
+<p>We need a property to link sioc:Site to sioc:Usergroup (and inverse of it).</p>
+<p>Proposals:<br />
+ - sioc:has_base / sioc:base_of<br />
+ - sioc:has_group / (name for inverse?)</p>
+<p>Former proposed as a neutral name by John, later used in WordPress<br />
+exporter but undocumented in the ontology .</p>
+<p>4) Property linking Site to Sub-Sites</p>
+<p>sioc:Site may consist of a number of different subsites.<br />
+How do we express that?</p>
+<p>Note: this is needed if a site consists of a number of heterogenous parts.<br />
+If a site consists of a number of forums (in a bulletin board) or<br />
+blogs (multi-user blog site), there already is a [ sioc:Site<br />
+sioc:host_of sioc:Forum . ] construct for that.</p>
+<p>5) Subtypes of Forums ?</p>
+<p>Same as for Posts/Comments we may want to express / search for a<br />
+specific type of [container of sioc:Posts].</p>
+<p>Currently such a container is sioc:Forum, which is used to express all<br />
+types of community site "containers" - in practice most instance data<br />
+describe either blogs or boards/forums.</p>
+<p>Proposal: subclasses of sioc:Forum:<br />
+ - Blog (Weblog?)<br />
+ - MailingList<br />
+ - NewsGroup<br />
+ - ... (Forum?! / Board / BulletinBoard)</p>
+<p>Issue:<br />
+ - if we use sioc:Forum for generic container (would be consistent<br />
+with existing data), how do we name a particular subclass talking<br />
+about a board/forum ?<br />
+ - if we call it sioc:Forum (warning! redefining sioc:Forum now is<br />
+BAD), how do we can the generic container?</p>
+<p>----</p>
+<p>That's it. If there are more additions, will write about them in a<br />
+separate post. Things planned to write about: threads, roles<br />
+(moderator, admin), expressing that a user subscribes to a thread, ...</p>
+<p>If there are no objections, I will add points (1) and (2) to the ontology.<br />
+For (3), (4) and (5) we need to decide.</p>
+<p>They may be described in the issues list, but first I wrote them up<br />
+here in the email and let's see - some can be solved quickly and acted<br />
+upon, those that require more discussion will be added to IssuesList.<br />
+(If you want to add them to the IssuesList now, go ahead and do it!)</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="100.html" class="topic-previous" title="Go to previous forum topic">‹ Parsing an RDFSchema file</a>
+              <a href="106.html" class="topic-next" title="Go to next forum topic">domains for created_at ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-106"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-106" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>So to update where we're at :)</p>
+<p> > 1) Add sioc:Community<br />
+ > + properties sioc:has_part and sioc:part_of pointing to and from it.</p>
+<p>I think this has been agreed on.</p>
+<p> > 2) sioc:Comment</p>
+<p>This would need to be moved to a types module, to keep the core SIOC<br />
+ontology simple.  We can then add other subtypes of Post later like<br />
+Sticky, Announcement, etc.</p>
+<p> > 3) Properties linking Site to Usergroup</p>
+<p>has_group / group_of seems to be the consensus recommendation.</p>
+<p> > 4) Property linking Site to Sub-Sites</p>
+<p>I read the reasons for not having this on the list, and agreed with them<br />
+at the time that we could just use sioc:Community.  But the more I<br />
+thought about it last night, the more I thought this property might<br />
+actually be required.  Let's say that there's a site for Semantic Web at<br />
+rdfs.org which has an associated community for SIOC at the subsite or<br />
+subsection rdfs.org/sioc.  If we say Community "SW" has_part Site<br />
+"rdfs.org", Community "SIOC" has_part "rdfs.org/sioc" and then that<br />
+Community "SW" has_part Community "SIOC", then there's nothing to say<br />
+that the Site "rdfs.org" and Site "rdfs.org/sioc" are related (since<br />
+Community "SW" will probably have other Sites like "planetrdf.com" etc.<br />
+But adding the link between the sites further describes what parts of<br />
+the community are related to each other...</p>
+<p> > 5) Subtypes of Forums ?</p>
+<p>Again, can be added to the types module at a later date.</p>
+<p> > 6) subscriber_of / has_subscriber</p>
+<p>I think this is okay.</p>
+<p> > 7) has_sibling -> sibling</p>
+<p>Would like this too :)</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-131"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-131" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>
+To summarise the issues that are still open:</p>
+<p>>  > 2) sioc:Comment<br />
+><br />
+> This would need to be moved to a types module, to keep the core SIOC<br />
+> ontology simple.  We can then add other subtypes of Post later like<br />
+> Sticky, Announcement, etc.</p>
+<p>To be handled in a module, outside the SIOC core ontology.</p>
+<p>See also discussion "Using SKOS to describe communication structures".<br />
+In general there is not much difference in using RDFS/OWL to extend<br />
+sioc:Post (in a separate "types" module) and using SKOS to define the<br />
+type hierarchy as Christoph proposed.</p>
+<p>SKOS adds another layer to the "onion" though and that may be<br />
+redundant.</p>
+<p>>  > 4) Property linking Site to Sub-Sites<br />
+><br />
+> I read the reasons for not having this on the list, and agreed with them<br />
+> at the time that we could just use sioc:Community.  But the more I<br />
+> thought about it last night, the more I thought this property might<br />
+> actually be required.  Let's say that there's a site for Semantic Web at</p>
+<p>has_part / part_of properties still need to be discussed and decided<br />
+upon.</p>
+<p>John has an argument for having these properties and Frederick has a<br />
+counter-argument that this is what Community is for.</p>
+<p>> rdfs.org which has an associated community for SIOC at the subsite or<br />
+> subsection rdfs.org/sioc.  If we say Community "SW" has_part Site<br />
+> "rdfs.org", Community "SIOC" has_part "rdfs.org/sioc" and then that<br />
+> Community "SW" has_part Community "SIOC", then there's nothing to say<br />
+> that the Site "rdfs.org" and Site "rdfs.org/sioc" are related (since<br />
+> Community "SW" will probably have other Sites like "planetrdf.com" etc.</p>
+<p>One option of solving this is to come to a situation where we really<br />
+need subsite/supersite properties and can not use existing Site and<br />
+Community. Since Community is new and with a very wide scope we should<br />
+use it first and maybe not invent new properties where a Community<br />
+might fit.</p>
+<p>The current use case is somewhat "difficult" and might not be a best<br />
+example because in reality rdfs.org is a Site which contains a page<br />
+(Post?) about SIOC. This page is also a 'canonical location' or home<br />
+page for SIOC, but it is not a SIOC site by itself.</p>
+<p>Can we come up with a better use case?</p>
+<p>>  > 5) Subtypes of Forums ?<br />
+><br />
+> Again, can be added to the types module at a later date.</p>
+<p>Agree. Same as #2.</p>
+<p>8) Replace sioc:created_at with dc:date ?</p>
+<p>And what happens to sioc:modified_at ?<br />
+Alternative: subclass both from dc:date. (but does that help in any<br />
+way?)</p>
+<p>9) Pointing to the source (original) post</p>
+<p>http://esw.w3.org/topic/SIOC/IssuesList/PointingToSourceBlog</p>
+<p>Note: Please remember that you may use the IssuesList [1] to describe<br />
+issues and proposed solutions.</p>
+<p>[1] http://esw.w3.org/topic/SIOC/IssuesList</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-132"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-132" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>
+> The current use case is somewhat "difficult" and might not be a best<br />
+> example because in reality rdfs.org is a Site which contains a page<br />
+> (Post?) about SIOC. This page is also a 'canonical location' or home<br />
+> page for SIOC, but it is not a SIOC site by itself.<br />
+><br />
+> Can we come up with a better use case?<br />
+><br />
+><br />
+A better use case are multi-forum hosting sites like www.forumwise.com,<br />
+which host many subsites containing forums.</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-134"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-134" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>John Breslin wrote:<br />
+> ><br />
+> > Can we come up with a better use case?<br />
+> ><br />
+> A better use case are multi-forum hosting sites like www.forumwise.com,<br />
+> which host many subsites containing forums.</p>
+<p>Same with *.wordpress.com which hosts many weblogs. In the case of<br />
+weblogs though we can say that each weblog is a Forum and the big<br />
+multi-blog site is a Site.</p>
+<p>Now I am starting to wonder - shall we model multi-(forum/blog/...)<br />
+sites as a single Site and multiple Forums (as we intended to do for<br />
+multi-weblog sites) or shall each forum/blog be a Site which then<br />
+belong to some bigger entity (Site, Community, ...).</p>
+<p>One argument is that a Community implies that there is something<br />
+keeping these objects (sites, people, ...) together (common interests<br />
+or activities). For sites hosting forums/blogs/wikis/... the only thing<br />
+they have in common is where they are hosted, but they might not have<br />
+any other ties. This is too little to join them in a community.</p>
+<p>Still we have to be able to say "This service (Site) contains/hosts (a<br />
+list of sites)". This could be used to point to SIOC profiles of<br />
+individual forums/weblogs.</p>
+<p>P.S. A minimal solution to the use case above is to define the hosting<br />
+as a Site which does not have any forums and have rdfs:seeAlso links<br />
+form it to individual sites:</p>
+<p><sioc:Site rdf:about="#hosting"><br />
+   <rdfs:seeAlso><br />
+      <sioc:Site rdf:about="http://captsolo.wordpress.com"/><br />
+   </sioc:site></rdfs:seealso><br />
+</sioc:site></p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-136"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-136" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>It's true that some sites may host subsites that may not be related to a<br />
+particular community, but also that the opposite my be true (there may<br />
+be something like free.boards.jp where all the subsites are related to a<br />
+community interested in Japanese culture).  So I think it is good to<br />
+have the flexibility of a has_subsite / subsite_of relationship...</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div><a id="comment-129"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-129" class="active">SIOC Ontology Update: 31-Jul-2006</a></h3>
+
+    <div class="content">
+      <p>
+Here are the changes to the SIOC ontology:</p>
+<p>>  > 1) Add sioc:Community<br />
+>  > + properties sioc:has_part and sioc:part_of pointing to and from it.</p>
+<p>See: http://rdfs.org/sioc/spec/#term_Community<br />
+http://rdfs.org/sioc/spec/#term_part_of<br />
+http://rdfs.org/sioc/spec/#term_has_part</p>
+<p>>  > 3) Properties linking Site to Usergroup<br />
+> has_group / group_of seems to be the consensus recommendation.</p>
+<p>http://rdfs.org/sioc/spec/#term_has_group<br />
+http://rdfs.org/sioc/spec/#term_group_of</p>
+<p>>  > 6) subscriber_of / has_subscriber</p>
+<p>http://rdfs.org/sioc/spec/#term_has_subscriber<br />
+http://rdfs.org/sioc/spec/#term_subscriber_of</p>
+<p>>  > 7) has_sibling -> sibling</p>
+<p>http://rdfs.org/sioc/spec/#term_sibling</p>
+<p>The ontology namespace (RDF) document [1] and the specification [2]<br />
+have been updated. The rest of the proposed changes either are still in<br />
+a discussion or require changes outside of the core SIOC namespace.</p>
+<p>[1] http://rdfs.org/sioc/ns#<br />
+[2] http://rdfs.org/sioc/spec</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-133"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-133" class="active">SIOC Ontology Update: 31-Jul-2006</a></h3>
+
+    <div class="content">
+      <p>I also made the following changes to the SIOC RDF namespace document<br />
+[1]:</p>
+<p> - added owl:DatatypeProperty and owl:ObjectProperty to indicate<br />
+property types<br />
+ - added owl:inverseOf for properties that have inverse<br />
+ - cleanup of some removed / commented out properties</p>
+<p>These changes do not automatically appear in the specification as the<br />
+specification generation script does not know about them (yet).</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-140"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-140" class="active">SIOC Ontology Update: 31-Jul-2006</a></h3>
+
+    <div class="content">
+      <p>
+See the specification [1] - now it contains information about OWL<br />
+property types (symmetric, object/datatype properties, inverse<br />
+properties, ...).</p>
+<p>[1] http://rdfs.org/sioc/spec</p>
+<p>Fixing the script was easy. :)</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>Uldis  Bojars wrote:<br />
+> I also made the following changes to the SIOC RDF namespace document:<br />
+><br />
+>  - added owl:DatatypeProperty and owl:ObjectProperty to indicate<br />
+> property types<br />
+>  - added owl:inverseOf for properties that have inverse<br />
+>  - cleanup of some removed / commented out properties<br />
+><br />
+> These changes do not automatically appear in the specification as the<br />
+> specification generation script does not know about them (yet).</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-111"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/50.html" title="View user profile.">Jack Park</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-111" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>If you construct properties for links (relationships) between<br />
+entities, e.g. communities, do you not throw away the opportunity to<br />
+make those relationships first-class citizens? After all, are not<br />
+those relationships also subjects for discussion/debate/annotation?</p>
+<p>Properties that help identify subjects are absolutely necessary.<br />
+Properties that define relationships (links) will need to be capable<br />
+of being scoped (annotated, decorated, whatever you want to call it)<br />
+with metadata that describes the nature of the specific instance of<br />
+the relationship represented.  That's a subject-mapping posture. It<br />
+would nice to think that SKOS might also support relationships as<br />
+first-class (subjects).</p>
+<p>Just a half-EURO comment.<br />
+Jack</p>
+<p>On 7/19/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> So to update where we're at :)<br />
+><br />
+>  > 1) Add sioc:Community<br />
+>  > + properties sioc:has_part and sioc:part_of pointing to and from it.<br />
+><br />
+> I think this has been agreed on.<br />
+><br />
+>  > 2) sioc:Comment<br />
+><br />
+> This would need to be moved to a types module, to keep the core SIOC<br />
+> ontology simple.  We can then add other subtypes of Post later like<br />
+> Sticky, Announcement, etc.<br />
+><br />
+>  > 3) Properties linking Site to Usergroup<br />
+><br />
+> has_group / group_of seems to be the consensus recommendation.<br />
+><br />
+>  > 4) Property linking Site to Sub-Sites<br />
+><br />
+> I read the reasons for not having this on the list, and agreed with them<br />
+> at the time that we could just use sioc:Community.  But the more I<br />
+> thought about it last night, the more I thought this property might<br />
+> actually be required.  Let's say that there's a site for Semantic Web at<br />
+> rdfs.org which has an associated community for SIOC at the subsite or<br />
+> subsection rdfs.org/sioc.  If we say Community "SW" has_part Site<br />
+> "rdfs.org", Community "SIOC" has_part "rdfs.org/sioc" and then that<br />
+> Community "SW" has_part Community "SIOC", then there's nothing to say<br />
+> that the Site "rdfs.org" and Site "rdfs.org/sioc" are related (since<br />
+> Community "SW" will probably have other Sites like "planetrdf.com" etc.<br />
+> But adding the link between the sites further describes what parts of<br />
+> the community are related to each other...<br />
+><br />
+>  > 5) Subtypes of Forums ?<br />
+><br />
+> Again, can be added to the types module at a later date.<br />
+><br />
+>  > 6) subscriber_of / has_subscriber<br />
+><br />
+> I think this is okay.<br />
+><br />
+>  > 7) has_sibling -> sibling<br />
+><br />
+> Would like this too :)<br />
+><br />
+> J.<br />
+> --<br />
+></john.breslin@deri.org></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-119"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-119" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi Jack,</p>
+<p>Thanks for comments. True, expressing relationships as first-class<br />
+citizens has to be considered. See this question mentioned in an<br />
+earlier SIOC-Dev post [1].</p>
+<p>[1]<br />
+http://groups.google.com/group/sioc-dev/browse_frm/thread/a9f1247d9bbf71f6/</p>
+<p>But when you express properties as objects the result is an explosive<br />
+growth of the dataset and it makes queries more complex. It is a<br />
+tradeoff between expressivity and complexity and so far we have aimed<br />
+at reducing complexity in SIOC ("make it as simple as possible, but not<br />
+simpler" :).</p>
+<p>There may be cases when relationships as first calls citizens are<br />
+desireable or necessary. SIOC shall allow to express (most of) the<br />
+information contained within a community site. Hence the question is -<br />
+what is the use case for using relationships as first class objects -<br />
+what significant information is there that can not be expressed by SIOC<br />
+as is now?</p>
+<p>What would be your suggestions where it is needed?<br />
+And how do you approach this question in your work?</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>Jack Park wrote:<br />
+> If you construct properties for links (relationships) between<br />
+> entities, e.g. communities, do you not throw away the opportunity to<br />
+> make those relationships first-class citizens? After all, are not<br />
+> those relationships also subjects for discussion/debate/annotation?<br />
+><br />
+> Properties that help identify subjects are absolutely necessary.<br />
+> Properties that define relationships (links) will need to be capable<br />
+> of being scoped (annotated, decorated, whatever you want to call it)<br />
+> with metadata that describes the nature of the specific instance of<br />
+> the relationship represented.  That's a subject-mapping posture. It<br />
+> would nice to think that SKOS might also support relationships as<br />
+> first-class (subjects).<br />
+><br />
+> Just a half-EURO comment.<br />
+> Jack<br />
+><br />
+> On 7/19/06, John Breslin <john.breslin@deri.org> wrote:<br />
+> ><br />
+> > So to update where we're at :)<br />
+> ><br />
+> >  > 1) Add sioc:Community<br />
+> >  > + properties sioc:has_part and sioc:part_of pointing to and from it.<br />
+> ><br />
+> > I think this has been agreed on.<br />
+> ><br />
+> >  > 2) sioc:Comment<br />
+> ><br />
+> > This would need to be moved to a types module, to keep the core SIOC<br />
+> > ontology simple.  We can then add other subtypes of Post later like<br />
+> > Sticky, Announcement, etc.<br />
+> ><br />
+> >  > 3) Properties linking Site to Usergroup<br />
+> ><br />
+> > has_group / group_of seems to be the consensus recommendation.<br />
+> ><br />
+> >  > 4) Property linking Site to Sub-Sites<br />
+> ><br />
+> > I read the reasons for not having this on the list, and agreed with them<br />
+> > at the time that we could just use sioc:Community.  But the more I<br />
+> > thought about it last night, the more I thought this property might<br />
+> > actually be required.  Let's say that there's a site for Semantic Web at<br />
+> > rdfs.org which has an associated community for SIOC at the subsite or<br />
+> > subsection rdfs.org/sioc.  If we say Community "SW" has_part Site<br />
+> > "rdfs.org", Community "SIOC" has_part "rdfs.org/sioc" and then that<br />
+> > Community "SW" has_part Community "SIOC", then there's nothing to say<br />
+> > that the Site "rdfs.org" and Site "rdfs.org/sioc" are related (since<br />
+> > Community "SW" will probably have other Sites like "planetrdf.com" etc.<br />
+> > But adding the link between the sites further describes what parts of<br />
+> > the community are related to each other...<br />
+> ><br />
+> >  > 5) Subtypes of Forums ?<br />
+> ><br />
+> > Again, can be added to the types module at a later date.<br />
+> ><br />
+> >  > 6) subscriber_of / has_subscriber<br />
+> ><br />
+> > I think this is okay.<br />
+> ><br />
+> >  > 7) has_sibling -> sibling<br />
+> ><br />
+> > Would like this too :)<br />
+> ><br />
+> > J.<br />
+> > --<br />
+> ></john.breslin@deri.org></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-120"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/50.html" title="View user profile.">Jack Park</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-120" class="active">Status  About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi Uldis,</p>
+<p>Thank you very much for this thoughtful response to my comments.<br />
+Actually, we are in violent agreement on the notion that there is this<br />
+opportunity for "explosive growth" in the database. At the moment,<br />
+using a bit of arm waving, I am willing to set that argument aside<br />
+and, as you thoughtfully query, ask what it is that drives the need<br />
+for making everything in some universe of discourse a first class<br />
+"citizen" (a "subject", in my vernacular).</p>
+<p>This will not be the most thoughtful response I can give, since, at<br />
+this time, I have a tiny hole in a busy schedule and I'd like to maybe<br />
+just tease open the door into my set of arguments I might pose in<br />
+favor of my earlier statements.</p>
+<p>Consider the simple "concept map" -- an enormously powerful<br />
+constructivist tool used everywhere on this planet in education, and<br />
+even now in the construction of ontologies. There, you have nodes and<br />
+labeled arcs. Nodes, in my vernacular, are first class citizens,<br />
+whereas labeled arcs are not the same. Drop a node in as a reification<br />
+of that relationship and now you have another subject about which you<br />
+can converse. The query is this: under which use cases would you ever<br />
+care to converse about relationships?</p>
+<p>A knee-jerk response to that question is: "almost always." Which use<br />
+case defines "almost always"?  It goes like this. Stan Ulam, one of<br />
+the famous mathematicians in the middle of the previous century<br />
+(imagine saying that and meaning just a few years back!) was once<br />
+asked what he thought about AI (artificial intelligence). His<br />
+response, in massive paraphrase, went like this: as soon as they (AI)<br />
+figure out how to represent "as" (as in "seeing as"), they will arrive<br />
+(whatever that means). We already are good at "isA", but not at "asA".<br />
+His story went like this: when we talk about some scene, say, a driver<br />
+and passenger cruising past us, we speak of two persons, one *as* a<br />
+driver and one *as* a passenger. We are speaking of them in relation<br />
+to their "roles".</p>
+<p>Now, the ontologists doing OWL have devised two ways to use OWL, one<br />
+being the traditional "slot value" approach, and the other being the<br />
+"roles" approach. In some problems, they can get away with the<br />
+slot-value approach, but in others, they are required to reify the<br />
+relationship into a role statement and then use that. That is to say,<br />
+they had a situation where a simple triple would not suffice. That<br />
+happens when you need to talk about the relationship itself. You need<br />
+to say something to the effect that this relationship happened "at<br />
+this time", or "on the occasion of" or "was caused by", or something<br />
+else. Consider "owl:sameAs". When you think about it, someone invoking<br />
+"owl:sameAs" is performing a fiat judgment. Really, "owl:sameAs"<br />
+should be reified into an instance onto which one can append reasons<br />
+for making the claim. How else will anyone else, not to forget the<br />
+computers that interpret the ontologies, be able to explain anything?</p>
+<p>The KISS principle is a good one. No argument there. The question<br />
+becomes one  that speaks in terms of just where it is that you are<br />
+simplifying things. You can get by with the slot-value idea (the nodes<br />
+and labeled arcs approach) and that is simple. But, does it always<br />
+suffice? I believe not. I also believe that as the nature of complex<br />
+situations grow in your networked communities, so will the nature of<br />
+the means by which you must represent that complexity. When you say<br />
+that X blogged Y, what does X mean? What does Y mean? In what way did<br />
+X blog Y? Did X answer a question, argue pro or con about a statement<br />
+made by Y? What, indeed, did X actually say? What subject(s) did X<br />
+raise in the blog? How are those subjects related to other events?</p>
+<p>Gordon Pask launched something called Conversation Theory (makes great<br />
+google fodder), in which he spoke about several important concepts.<br />
+One concept is the speaker's model of the listener. You don't talk<br />
+quantum mechanics to a toddler simply because your model of the<br />
+toddler strongly suggests the little snapper won't have a clue what<br />
+you are saying. Another is your model of your universe, that from<br />
+which you draw as you converse. Another is the listener's model of the<br />
+speaker, and, of course, the listener's model of the universe. And<br />
+then, there is another concept: entailment meshes.  Everything we say<br />
+carries entailments. The punch line of this paragraph entails my<br />
+earlier statements.</p>
+<p>By that, I am saying (perhaps claiming) that the SIOC charter appears<br />
+to entail a need to be ready to model (represent) very complex<br />
+situations. I would go so far as to suggest that, if that charter is<br />
+taken seriously, then the ability to model really complex situations<br />
+is the primary use case. I will then follow with the suggestion that<br />
+role modeling will almost always be required if one takes modeling<br />
+seriously. That is to say, nodes with labeled arcs probably will not<br />
+suffice.</p>
+<p>Strongish claims. I know that. The devil makes me say things like<br />
+that. Your mileage might vary, but that's how I see the nature of<br />
+modeling communities; communities are organisms. Communities respond<br />
+to feedback, they experience loss of memory (decay), in short, they<br />
+are complex adaptive systems, and they ought to be modeled as such. I<br />
+mean no disrespect to the many really great minds who think up ways to<br />
+simplify the tools that facilitate human social intercourse, but I<br />
+tend to think that the romantic and reductionist passions in us tend<br />
+to win out more often than is best for the stated mission. Strongest<br />
+claim: nothing short of holistic thinking should be applied to<br />
+modeling, representing, and facilitating social intercourse.</p>
+<p>Jack</p>
+<p>On 7/26/06, Uldis  Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+> Hi Jack,<br />
+><br />
+> Thanks for comments. True, expressing relationships as first-class<br />
+> citizens has to be considered. See this question mentioned in an<br />
+> earlier SIOC-Dev post [1].<br />
+><br />
+> [1]<br />
+> http://groups.google.com/group/sioc-dev/browse_frm/thread/a9f1247d9bbf71f6/<br />
+><br />
+> But when you express properties as objects the result is an explosive<br />
+> growth of the dataset and it makes queries more complex. It is a<br />
+> tradeoff between expressivity and complexity and so far we have aimed<br />
+> at reducing complexity in SIOC ("make it as simple as possible, but not<br />
+> simpler" :).<br />
+><br />
+> There may be cases when relationships as first calls citizens are<br />
+> desireable or necessary. SIOC shall allow to express (most of) the<br />
+> information contained within a community site. Hence the question is -<br />
+> what is the use case for using relationships as first class objects -<br />
+> what significant information is there that can not be expressed by SIOC<br />
+> as is now?<br />
+><br />
+> What would be your suggestions where it is needed?<br />
+> And how do you approach this question in your work?<br />
+><br />
+> Best,<br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]<br />
+><br />
+> Jack Park wrote:<br />
+> > If you construct properties for links (relationships) between<br />
+> > entities, e.g. communities, do you not throw away the opportunity to<br />
+> > make those relationships first-class citizens? After all, are not<br />
+> > those relationships also subjects for discussion/debate/annotation?<br />
+> ><br />
+> > Properties that help identify subjects are absolutely necessary.<br />
+> > Properties that define relationships (links) will need to be capable<br />
+> > of being scoped (annotated, decorated, whatever you want to call it)<br />
+> > with metadata that describes the nature of the specific instance of<br />
+> > the relationship represented.  That's a subject-mapping posture. It<br />
+> > would nice to think that SKOS might also support relationships as<br />
+> > first-class (subjects).<br />
+> ><br />
+> > Just a half-EURO comment.<br />
+> > Jack<br />
+> ><br />
+> > On 7/19/06, John Breslin <john.breslin@deri.org> wrote:<br />
+> > ><br />
+> > > So to update where we're at :)<br />
+> > ><br />
+> > >  > 1) Add sioc:Community<br />
+> > >  > + properties sioc:has_part and sioc:part_of pointing to and from it.<br />
+> > ><br />
+> > > I think this has been agreed on.<br />
+> > ><br />
+> > >  > 2) sioc:Comment<br />
+> > ><br />
+> > > This would need to be moved to a types module, to keep the core SIOC<br />
+> > > ontology simple.  We can then add other subtypes of Post later like<br />
+> > > Sticky, Announcement, etc.<br />
+> > ><br />
+> > >  > 3) Properties linking Site to Usergroup<br />
+> > ><br />
+> > > has_group / group_of seems to be the consensus recommendation.<br />
+> > ><br />
+> > >  > 4) Property linking Site to Sub-Sites<br />
+> > ><br />
+> > > I read the reasons for not having this on the list, and agreed with them<br />
+> > > at the time that we could just use sioc:Community.  But the more I<br />
+> > > thought about it last night, the more I thought this property might<br />
+> > > actually be required.  Let's say that there's a site for Semantic Web at<br />
+> > > rdfs.org which has an associated community for SIOC at the subsite or<br />
+> > > subsection rdfs.org/sioc.  If we say Community "SW" has_part Site<br />
+> > > "rdfs.org", Community "SIOC" has_part "rdfs.org/sioc" and then that<br />
+> > > Community "SW" has_part Community "SIOC", then there's nothing to say<br />
+> > > that the Site "rdfs.org" and Site "rdfs.org/sioc" are related (since<br />
+> > > Community "SW" will probably have other Sites like "planetrdf.com" etc.<br />
+> > > But adding the link between the sites further describes what parts of<br />
+> > > the community are related to each other...<br />
+> > ><br />
+> > >  > 5) Subtypes of Forums ?<br />
+> > ><br />
+> > > Again, can be added to the types module at a later date.<br />
+> > ><br />
+> > >  > 6) subscriber_of / has_subscriber<br />
+> > ><br />
+> > > I think this is okay.<br />
+> > ><br />
+> > >  > 7) has_sibling -> sibling<br />
+> > ><br />
+> > > Would like this too :)<br />
+> > ><br />
+> > > J.<br />
+> > > --<br />
+> > ><br />
+><br />
+><br />
+> ><br />
+></john.breslin@deri.org></captsolo@gmail.com></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div><a id="comment-102"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-102" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi ther!</p>
+<p>Okay, there are some week-end thoughts as promised.</p>
+<p>> 3) Properties linking Site to Usergroup<br />
+><br />
+> We need a property to link sioc:Site to sioc:Usergroup (and inverse of it).<br />
+><br />
+> Proposals:<br />
+>  - sioc:has_base / sioc:base_of<br />
+>  - sioc:has_group / (name for inverse?)<br />
+><br />
+> Former proposed as a neutral name by John, later used in WordPress<br />
+> exporter but undocumented in the ontology .</p>
+<p>It is true that we need such a relation. As I said earlier, I was creating a<br />
+sioc:Usergroup for yeah sioc:Forum in Talk Digger. However the relation was<br />
+implicit, and it would be nice to explicit it.</p>
+<p>Personally I would be willing to implement the sioc:has_group (does<br />
+sioc:group_of make sense if we are thinking about sioc:Site as a meta-group?).</p>
+<p>I don't think that the term "base" is well suited to describe that relation.</p>
+<p>> 1) Add sioc:Community<br />
+> + properties sioc:has_part and sioc:part_of pointing to and from it.<br />
+><br />
+> We are quite sure that a Community concept is needed.<br />
+> There can still be some discussion about the property names and<br />
+> alternatives.<br />
+><br />
+> = Almost there:</p>
+<p>> 4) Property linking Site to Sub-Sites<br />
+><br />
+> sioc:Site may consist of a number of different subsites.<br />
+> How do we express that?<br />
+><br />
+> Note: this is needed if a site consists of a number of heterogenous parts.<br />
+> If a site consists of a number of forums (in a bulletin board) or<br />
+> blogs (multi-user blog site), there already is a [ sioc:Site<br />
+> sioc:host_of sioc:Forum . ] construct for that.</p>
+<p>Could you remember me what was the "consensus" we had vis-a-vis the<br />
+sioc:Community class? In my memory, I thought that it was what you are<br />
+proposing with the #4 (A community is the aggregation of many sites of<br />
+interests). In that case, a Community is a meta-site and the sioc:Site class is<br />
+what you describe as the Sub-Site thing.</p>
+<p>> 5) Subtypes of Forums ?<br />
+><br />
+> Same as for Posts/Comments we may want to express / search for a<br />
+> specific type of [container of sioc:Posts].<br />
+><br />
+> Currently such a container is sioc:Forum, which is used to express all<br />
+> types of community site "containers" - in practice most instance data<br />
+> describe either blogs or boards/forums.<br />
+><br />
+> Proposal: subclasses of sioc:Forum:<br />
+>  - Blog (Weblog?)<br />
+>  - MailingList<br />
+>  - NewsGroup<br />
+>  - ... (Forum?! / Board / BulletinBoard)</p>
+<p>Could be a good idea, however, please tell me if I am wrong, but I think that<br />
+we are trying to cope with all social web site concepts that already exists<br />
+without caring to much about the future. What I am thinking about right now is<br />
+that we should try to make it as generic as possible to handle future concepts<br />
+that don't even exists yet.</p>
+<p>My question here is: is it valuable to know that an article have been posted on<br />
+a Forum, a Blog, a Wiki, etc? Personally I don't think so because all these<br />
+"concepts", or "technologies" are only ways to display and manage the<br />
+information. However, the articles, the people leaving comments, etc, are<br />
+always the same, always the medium change and not the content.</p>
+<p>This said, I question myself about the utility, real value, of adding such type.</p>
+<p>What do you think? I am not sure that my current thought is good, but I can't<br />
+see the real added value.</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-95"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-95" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 7/14/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+><br />
+> 2) sioc:Comment<br />
+><br />
+> Initially we thought "let's make all posts generic - comments are same<br />
+> as posts", but there's a need to distinguish between comments and<br />
+> posts.<br />
+><br />
+> Proposal: create a [ sioc:Comment rdfs:subClassOf sioc:Post . ]<br />
+><br />
+> Comment is also a post, but a specific type of. That should solve the problem.</captsolo@gmail.com></p>
+<p>At the moment, we can distinguish Posts / Comments using the has_reply<br />
+/ reply_of property, eg in SPARQL:</p>
+<p>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br />
+PREFIX sioc:   <http://rdfs.org/sioc/ns#><br />
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#></http://www.w3.org/2000/01/rdf-schema#></http://rdfs.org/sioc/ns#></http://www.w3.org/1999/02/22-rdf-syntax-ns#></p>
+<p>SELECT ?post ?title<br />
+WHERE {<br />
+  ?post sioc:title ?title .<br />
+  OPTIONAL { ?_z sioc:has_reply ?post }<br />
+  FILTER (!bound(?_z))<br />
+}<br />
+ORDER BY ?start</p>
+<p>will return all nodes that are not reply_of other, i.e. will exclude comments.<br />
+So I don't think ditinguish Post / Comments with different classes in<br />
+the model is a real need.</p>
+<p>Yet, with the current ontology, we can't distinguish Comments /<br />
+Trackbacks, so I think that could be a more interesting update at the<br />
+moment (using trackback_to/from properties, as discussed in a previous<br />
+thread)</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-100"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-100" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>On 7/14/06, Alexandre Passant <alex@passant.org> wrote:</alex@passant.org></p>
+<p>> > 2) sioc:Comment<br />
+><br />
+> At the moment, we can distinguish Posts / Comments using the has_reply<br />
+> / reply_of property, eg in SPARQL:</p>
+<p>Answered in a reply to Frederick.</p>
+<p>> Yet, with the current ontology, we can't distinguish Comments /<br />
+> Trackbacks, so I think that could be a more interesting update at the<br />
+> moment (using trackback_to/from properties, as discussed in a previous<br />
+> thread)</p>
+<p>Re. trackback see posts 6-7 in this thread [1].</p>
+<p>[GNU] is pointing to an existing property (from trackback "module")<br />
+that we could use.<br />
+Would be good to hear arguments pro-/contra- either of these options.</p>
+<p>Initially I had a strong belief we need trackback properties, but now<br />
+I am not so sure.</p>
+<p>Uldis<br />
+[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-101"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-101" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>On 7/14/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> On 7/14/06, Alexandre Passant <alex@passant.org> wrote:<br />
+><br />
+> Re. trackback see posts 6-7 in this thread [1].</alex@passant.org></captsolo@gmail.com></p>
+<p>Sorry - the link [1] was missing.<br />
+Here it is:</p>
+<p>[1] http://tinyurl.com/rejhc</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-97"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-97" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>> > Initially we thought "let's make all posts generic - comments are same<br />
+> > as posts", but there's a need to distinguish between comments and<br />
+> > posts.<br />
+> ><br />
+> > Proposal: create a [ sioc:Comment rdfs:subClassOf sioc:Post . ]<br />
+> ><br />
+> > Comment is also a post, but a specific type of. That should solve the<br />
+> problem.<br />
+><br />
+> At the moment, we can distinguish Posts / Comments using the has_reply<br />
+> / reply_of property, eg in SPARQL:<br />
+><br />
+> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br />
+> PREFIX sioc:   <http://rdfs.org/sioc/ns#><br />
+> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#><br />
+><br />
+> SELECT ?post ?title<br />
+> WHERE {<br />
+>   ?post sioc:title ?title .<br />
+>   OPTIONAL { ?_z sioc:has_reply ?post }<br />
+>   FILTER (!bound(?_z))<br />
+> }<br />
+> ORDER BY ?start<br />
+><br />
+> will return all nodes that are not reply_of other, i.e. will exclude<br />
+> comments.<br />
+> So I don't think ditinguish Post / Comments with different classes in<br />
+> the model is a real need.<br />
+><br />
+> Yet, with the current ontology, we can't distinguish Comments /<br />
+> Trackbacks, so I think that could be a more interesting update at the<br />
+> moment (using trackback_to/from properties, as discussed in a previous<br />
+> thread)</http://www.w3.org/2000/01/rdf-schema#></http://rdfs.org/sioc/ns#></http://www.w3.org/1999/02/22-rdf-syntax-ns#></p>
+<p>I agree too. Me and terraces leaved some thoughts on the #sioc channel about<br />
+that question:</p>
+<p>09:54	terraces	CaptSolo: Just got your mail re. proposals. How could we deal<br />
+with tb wich are Posts and Comments, in a way ? BTW, I'm not sure comment is<br />
+useful, as we calready now if a post is a replyy_of another or not. But maybe<br />
+there are usecases where we should get a distinct property ?</p>
+<p>09:56	fgiasson	I agree with terraces: a comment is a post. A post that links<br />
+to another post, or a comment as we know it with blogs, are the same things</p>
+<p>09:57	fgiasson	it is just a question of UI and physical data store, nothing<br />
+relevant with the ontology</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-99"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-99" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>On 7/14/06, Frederick Giasson <fred@fgiasson.com> wrote:</fred@fgiasson.com></p>
+<p>> > At the moment, we can distinguish Posts / Comments using the has_reply<br />
+> > / reply_of property, eg in SPARQL:</p>
+<p>> 09:54   terraces        CaptSolo: Just got your mail re. proposals. How could we deal<br />
+> with tb wich are Posts and Comments, in a way ? BTW, I'm not sure comment is<br />
+> useful, as we calready now if a post is a replyy_of another or not. But maybe<br />
+> there are usecases where we should get a distinct property ?<br />
+><br />
+> 09:56   fgiasson        I agree with terraces: a comment is a post. A post that links<br />
+> to another post, or a comment as we know it with blogs, are the same things<br />
+><br />
+> 09:57   fgiasson        it is just a question of UI and physical data store, nothing<br />
+> relevant with the ontology</p>
+<p>Any Post can be in has_reply relation to another post. This does not<br />
+mean that the second post automatically becomes a comment.</p>
+<p>What you and Alex are saying about reply_of and comments holds true<br />
+for the current export practice (because we do not export inter-site<br />
+relationships yet), but that might not be true for long.</p>
+<p>Thinking in future we can extend has_reply further so that we can<br />
+describe argumented discussion, say, that a reply agree or disagree<br />
+with the original post.</p>
+<p>We still need a way to say a comment is a Comment.</p>
+<p>P.S. If you wanted to formalise that the object of has_reply is a<br />
+Comment, then correct way would be to say it:<br />
+[  sioc:Comment rdfs:subClassOf sioc:Post .<br />
+   sioc:has_reply rdfs:range sioc:Comment . ]</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-103"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-103" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi Uldis!</p>
+<p>> Any Post can be in has_reply relation to another post. This does not<br />
+> mean that the second post automatically becomes a comment.<br />
+><br />
+> What you and Alex are saying about reply_of and comments holds true<br />
+> for the current export practice (because we do not export inter-site<br />
+> relationships yet), but that might not be true for long.<br />
+><br />
+> Thinking in future we can extend has_reply further so that we can<br />
+> describe argumented discussion, say, that a reply agree or disagree<br />
+> with the original post.</p>
+<p>Yes I understand your point, but my question is: what is the difference between<br />
+a comment and a post?</p>
+<p>For example, some people will reply to a blog post by another blog post. Each<br />
+"article" are Post. However, some people will reply to a blog post by leaving<br />
+comments on the original blog post.</p>
+<p>The two practices are good, but one will be a comment, and another one will be<br />
+a Post (but in the ontology, there should be a difference, but in reality there<br />
+is none).</p>
+<p>For me a sioc:Post is a thought, an idea, something new to a conversation,<br />
+wrote by someone, nonobstand of how it is displayed (a post on a forum, a blog,<br />
+a comment, a webpage, etc).</p>
+<p>My point is that I think that we are trying to stick to current "concepts" such<br />
+as blogs, wiki, webpages, comments, trackbacks (it's another story), etc, etc,<br />
+etc. So I don't see, at least yet, the real utility of a class sioc:Comment.</p>
+<p>Is it making sense?</p>
+<p>Thanks,</p>
+<p>Salutations</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-104"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/28.html" title="View user profile.">Christoph Görn</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-104" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Am 16.07.2006 um 20:22 schrieb Frederick Giasson:<br />
+> So I don't see, at least yet, the real utility of a class<br />
+> sioc:Comment.<br />
+> Is it making sense?</p>
+<p>Ehlo,<br />
+  I tried to outline some similar thoughts earlier on the list... I<br />
+dont think that there is a real need for SIOC to show relations like<br />
+"is comment of", "posting is a comment"...</p>
+<p>  Maybe we can reuse some other concepts and ontologies. What is the<br />
+mission? SIOC is trying to model a community (of people) and their<br />
+communication (by web addressable messages, like a weblog or a mp3<br />
+file).</p>
+<p>If we set up a basic set of SKOS concepts that describe the typical<br />
+weblog structure with Posts/Articles/Entries/unameit and Comments/<br />
+Sayings/... and Trackbacks/Pingbacks/...  We are able to say that a<br />
+sioc:Post is a skos:Weblogentry and a sioc:isRelatedTo is a<br />
+skos:Weblogcomment or a skos:Trackback. Maybe in 5 years weblogs are<br />
+gone and we use something that is the same from a conceptual point of<br />
+view: a thing that is published by someone and commented on by<br />
+another-one. We only need to replace or migrate the SKOS concept used<br />
+but dont need to change SIOC. Or what if a community moves from a<br />
+google mailinglist to a webbased system?</p>
+<p>And another one... what about tagging sioc:Post as tag:Comment or<br />
+tag:Opinion or tag:ibisPro?</p>
+<p> From my point of few SIOC should be use to describe communication:<br />
+Users (organized in Usergroups) publish Posts which may be related to<br />
+other Resources, that is a Community which is hosted on a Site. If<br />
+weblog terminology is used a SKOS hierarchy for that is added, if we<br />
+talk to the BBS world a other SKOS concept hierarchy is used.</p>
+<p>Good night and good luck! [GNU:]</p>
+<p>SKOS: http://www.w3.org/TR/swbp-skos-core-guide/<br />
+TAGS: http://www.holygoat.co.uk/projects/tags/<br />
+IBIS: http://purl.org/ibis/</p>
+<p>--<br />
+Christoph Görn <goern@B4mad.Net><br />
+http://B4mad.Net/FOAF/goern.rdf#goern</goern@b4mad.net></p>
+<p>Usability schmusability... where's the part where we talk about how<br />
+this helps users kick ass?</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div><a id="comment-94"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-94" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>I also want us to discuss:</p>
+<p>(6) Add subscriber_of / has_subscriber to link Users to Forums<br />
+- Rationale: A shortcut rather than having User -> has_function -> Role<br />
+(Subscriber) -> has_scope -> Forum<br />
+- Useful for blogroll links, forum subscriptions, mailing list<br />
+memberships, etc.</p>
+<p>(7) Change has_sibling to sibling<br />
+-Rationale: all has_ properties in SIOC have a _of inverse so far, so<br />
+may be confusing, and has_sibling hasn't been used yet in our exporters).</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-96"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-96" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>I will answer to the seed email this weekend, but there are some of my thoughts<br />
+about what John said:</p>
+<p>> I also want us to discuss:<br />
+><br />
+> (6) Add subscriber_of / has_subscriber to link Users to Forums<br />
+> - Rationale: A shortcut rather than having User -> has_function -> Role<br />
+> (Subscriber) -> has_scope -> Forum<br />
+> - Useful for blogroll links, forum subscriptions, mailing list<br />
+> memberships, etc.</p>
+<p>Agree with you. Currently I was creating a Usergroup for each Forum. That way I<br />
+has the possibility to say: this, this and this user belong to that Usergroup<br />
+and then I know that if they belong to that group, then they are subscribed to<br />
+the Forum.</p>
+<p>In that case, is there a place for sioc:Usergroup?</p>
+<p>> (7) Change has_sibling to sibling<br />
+> -Rationale: all has_ properties in SIOC have a _of inverse so far, so<br />
+> may be confusing, and has_sibling hasn't been used yet in our exporters).</p>
+<p>Good idea too. The only reason of sibling_of was "The other sibling can be used<br />
+as a source for any missing data.". We only have to list all sibling for each<br />
+sioc:Post, it is not a big deal and make the ontology clearer.</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-121"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-121" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Frederick Giasson wrote:</p>
+<p>> > (7) Change has_sibling to sibling<br />
+> > -Rationale: all has_ properties in SIOC have a _of inverse so far, so<br />
+> > may be confusing, and has_sibling hasn't been used yet in our exporters).<br />
+><br />
+> Good idea too. The only reason of sibling_of was "The other sibling can be used<br />
+> as a source for any missing data.". We only have to list all sibling for each<br />
+> sioc:Post, it is not a big deal and make the ontology clearer.</p>
+<p>Technically, nobody should be assuming that there is an inverse and<br />
+what its name is just based on the fact that a property is called<br />
+'has_...'.</p>
+<p>It (the inverse) either is in the ontology or it isn't. Once "..._of"<br />
+property is removed the "has_sibling" property can be defined to be a<br />
+symetric property and used in both directions. Yet, if the consensus is<br />
+to rename it to "sibling", so be it.</p>
+<p>PS I am guilty of using undefined properties myself as it was the case<br />
+with "has_group" in WordPress SIOC exporter. Sorry for that.</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-105"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-105" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>I guess I should explain my ideas of the differences between Usergroups<br />
+and Roles.  On a multi-user blogging system like Drupal or WPMU, a user<br />
+can have a particular set of permissions towards a certain blog (e.g.<br />
+owner, administrator, subscriber, editor, author, contributor, etc.)<br />
+represented by the Role->Forum relationship but then they can also be a<br />
+member of a usergroup (e.g. Bloggers) which has general permissions like<br />
+being able to reply on anyone else's blog without logging in etc.</p>
+<p>Same on bulletin boards, I can have a Role towards a particular forum<br />
+(moderator access, can add/block users etc.) but still be part of an<br />
+overall moderators Usergroup that has generic privileges like access to<br />
+a private moderators area, ability to upload custom avatars etc.</p>
+<p>I know the subscriber_of thing is a shortcut but I think it will be a<br />
+useful one.</p>
+<p>J.<br />
+><br />
+>> I also want us to discuss:<br />
+>><br />
+>> (6) Add subscriber_of / has_subscriber to link Users to Forums<br />
+>> - Rationale: A shortcut rather than having User -> has_function -> Role<br />
+>> (Subscriber) -> has_scope -> Forum<br />
+>> - Useful for blogroll links, forum subscriptions, mailing list<br />
+>> memberships, etc.<br />
+>><br />
+><br />
+> Agree with you. Currently I was creating a Usergroup for each Forum. That way I<br />
+> has the possibility to say: this, this and this user belong to that Usergroup<br />
+> and then I know that if they belong to that group, then they are subscribed to<br />
+> the Forum.<br />
+><br />
+> In that case, is there a place for sioc:Usergroup?<br />
+><br />
+>   </p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-98"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="105.html#comment-98" class="active">About SIOC concepts / properties</a></h3>
+
+    <div class="content">
+      <p>Hi again,</p>
+<p>Sorry, but I am really tired and my mind forgot some things about my last<br />
+answer:</p>
+<p>> Agree with you. Currently I was creating a Usergroup for each Forum. That way<br />
+> I<br />
+> has the possibility to say: this, this and this user belong to that Usergroup<br />
+><br />
+> and then I know that if they belong to that group, then they are subscribed<br />
+> to<br />
+> the Forum.</p>
+<p>There I was talking about the SIOC integration into Talk Digger.</p>
+<p>Check that diagram to see how Usergroup, Forum, and User are used into the<br />
+system:</p>
+<p>http://fgiasson.com/blog/media/sioc_to_talkdigger_mapping.jpg</p>
+<p>Sorry about that,</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F105%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/105?destination=node%2F105"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-MWCstI7pREKn_ABnxuzYaNyyiQ_UOULWv-2ZzzpUwI0" value="form-MWCstI7pREKn_ABnxuzYaNyyiQ_UOULWv-2ZzzpUwI0"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

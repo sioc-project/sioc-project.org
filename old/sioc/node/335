@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/335"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/335">
+  <dc:title>Prize winners visualise Irish online life in the boards.ie SIOC Data Competition</dc:title>
+  <sioc:content>The winners of the SIOC (pronounced &quot;shock&quot;) data competition being run by DERI at the National University of Ireland, Galway have been announced.  The competition ran from September to October 2008, and the brief was to produce an interesting creation based on a data set of discussion posts reflecting ten years of Irish online life from boards.ie, Ireland&#039;s largest community website.  The competition had about sixty registrants and there were eight final submissions of very high quality.
+The top winning submission was entitled &quot;SIOC.ME: A Real-Time Interactive Visualisation of boards.ie Semantic Data within a 3-D Space&quot;.  The entry illustrates how 3-D visualisations may be harnessed to not only provide an interactive means of presenting or browsing data but also to create useful data analysis tools, especially for manipulating the &quot;semantic&quot; (meaningful) data from online communities and social networking sites.  The entry was submitted by Darren Geraghty, a user interface and interaction designer, and it was praised by the judges for the huge amount of effort that went into creating it.  A video of the application may be viewed here and a demonstration of the tool can be seen at go.sioc.me.
+In second place was a visualisation application called &quot;boardsview&quot; by Stephen Dolan of Trinity College Dublin.  This is an interactive, real-time animation where one can watch the historical content from many discussion forums changing in real or compressed time.  In this application, you can zoom into a particular forum to see individual users posting messages or to see threads being created and destroyed.
+Third prize was awarded to the &quot;Forum Activity Graph&quot; by Drew Perttula from California.  This entry was a visualisation showing the popularity of forums on boards.ie as represented by coloured rivers of information, which were then rendered and displayed using Google Maps.
+Other final submissions included:
+
+&quot;Forum Map Demonstration&quot; by Tristan Webb and Ian Dickinson of HP Labs Bristol, a demonstration of self-organising maps applied to an information navigation problem in a big community site,
+&quot;WebThere: Semantic APML Profiles&quot; by Brian MacKay from Pennsylvania, a service for creating and maintaining profiles of user interests and attention preferences in social websites,
+&quot;Find Something Interesting&quot; by ITT Dublin&#039;s Alexandra Roshchina and Aleksey Kharkov, an application to provide recommendations of the most interesting posts and threads based on interest-matching and graph-mining techniques,
+&quot;ChartBoards&quot; by Martin Harrigan of TCD, a tool for examining community trends via term frequencies, and,
+&quot;Visualising the boards.ie Community Culture with Charts&quot; by Eoin McLoughlin of TCD, where various graph types were used to simplify the huge amount of available community data to something that could allow someone to easily grasp its size and depth.
+
+The competition was judged by an independent panel of three experts: Ian Davis, Chief Technology Officer with Talis; Harry Halpin, researcher at the University of Edinburgh and chair of the W3C GRDDL working group; and Peter Mika, researcher at Yahoo! Research Barcelona and author of the book &quot;Social Networks and the Semantic Web&quot;.  The first prize is an Amazon voucher for $4000; second prize is a voucher for $2000; third prize is a voucher for $1000.
+</sioc:content>
+  <dcterms:created>2008-11-26T09:45:14+00:00</dcterms:created>
+  <dcterms:modified>2009-04-05T17:23:35+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/335" rdfs:label="Prize winners visualise Irish online life in the boards.ie SIOC Data Competition" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

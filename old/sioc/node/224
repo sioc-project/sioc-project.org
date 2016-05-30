@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/224"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/224">
+  <dc:title>editing foaf files</dc:title>
+  <sioc:content>I had a conversation with Kingsley Idehen on #swig today [1], which
+reveals the following interesting problem.
+There are many foaf files out there. Some of them will be editable
+via webdav or atom app. There is currently no way for a client such
+as Beatnik [2], to know when reading a file whether or not this is an
+editable file, and how it can be edited. It does not make sense to
+try to PUT for every foaf file one encounters. Neither is this
+problem going to be limited to foaf btw. But this is a good case.
+So what seems to be needed in a foaf file is a :edit link relation to
+the resource at which the file can be edited.
+AtomOwl inherits this from APP [3]. Or rather it should: I have not
+yet added the APP relations.
+This is the xml from the APP spec
+    &amp;lt;?xml version=&quot;1.0&quot;?&gt;
+     
+       The Beach
+       urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a
+       2005-10-07T17:17:08Z
+       Daffy
+       
+       
+
+
+     
+What we need is something similar I think for RDF.
+We could adapt the above from Atom. Then a foaf file could contain
+the following
+&amp;lt;&gt; :link [ :type iana:edit  ] .
+But there are a couple of problems:
+   - currently a link is specified to have a domain of :Entry, and a
+foaf file is not really an entry
+   - one could argue that the edit relation defined above is specific
+to the atom protocol
+       + would it apply to WebDAV?
+       + would it be nice if there were a way to also specify a
+protocol that allowed ftp or scp uploads too? Does the link relation
+as defined above prohibit it?
+Another use case which I go into in my post &quot;Foaf enabling an
+enterprise&quot; [4], is one where a foaf file is cut into two sections,
+one of which is controlled by the company - probably generated from
+ldap and other information - and the other part is controlled by the
+person described in the foaf file, who has access rights to that one,
+and can use tools such as Beatnik to edit them. Again we need a way
+to let clients such as Beatnik know about this, so they can work out
+where to place the changes.
+Is there work in this area that people are aware of?
+Henry
+[1] http://chatlogs.planetrdf.com/swig/2007-02-23.html#T17-27-07
+[2] https://sommer.dev.java.net/source/browse/sommer/trunk/misc/
+AddressBook/www/
+[3] http://bitworking.org/projects/atom/draft-ietf-atompub-
+protocol-13.html#rfc.section.11.1
+[4] http://blogs.sun.com/bblfish/entry/foaf_enabling_an_enterprise
+Home page: http://bblfish.net/
+Sun Blog: http://blogs.sun.com/bblfish/
+Foaf name: http://bblfish.net/people/henry/card#me
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-23T19:03:49+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/224" rdfs:label="editing foaf files" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/66%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/66" />
+</sioc:Post>
+</rdf:RDF>

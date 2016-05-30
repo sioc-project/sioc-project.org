@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/266"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/266">
+  <dc:title>How to define Recipients of sioc:Posts/Items</dc:title>
+  <sioc:content>Hi All,
+When talking about different kinds of social spaces (e.g., email,
+skype [1], twitter [2], ...) there is a need to define recipient(s) of
+messages / items. SIOC currently can define creator (sender) of a
+post, but not recipients.
+We need to find / define a property in SIOC for defining them. Most
+straighforward approach would be to define a property has_recipient
+(inverse: recipient_of) with domain sioc:Post or sioc:Item and range
+of sioc:User.
+Questions:
+1) is sioc:User appropriate? is the recipient an online account (thus
+a sioc:User) or a person / agent (thus foaf:Person / foaf:Agent)?
+2) should we distinguish between primary recipient(s) and others?
+3) ...
+What are your suggestions and what existing work can we take examples
+and ideas from?
+How is this handled when expressing email messages in RDF?
+[1] http://groups.google.com/group/sioc-dev/browse_thread/thread/471320ab4dae37cc
+[2] http://groups.google.com/group/sioc-dev/browse_thread/thread/bd5f49aa216fddc
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-05-17T09:38:41+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:41+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/266" rdfs:label="How to define Recipients of sioc:Posts/Items" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

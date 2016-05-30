@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/138"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/138">
+  <dc:title>Latest Developments in the SIOC-o-Sphere</dc:title>
+  <sioc:content>The latest bits and pieces people have been saying and doing related to SIOC:
+
+Enabling SIOC for AI3 - Adaptive Information - Mike Bergman installs the SIOC WordPress exporter and describes his experiences
+SIOC and AtomOWL: a new way to describe content… - [GNU] remarks on bblfish&#039;s proposal to use AtomOWL&#039;s content:encoded to describe enhanced sioc:Post content
+Using SKOS to describe communication structures -  [GNU] shows us that we don&#039;t need all these sub-types of sioc:Role, sioc:Post,  sioc:Forum if we use SKOS...
+SIOC data I use to crawl - [GNU] creates a plan file for scuttering SIOC data
+seeAlso for SIOC hooked in page via RDFa - [GNU] shows how to help with SIOC autodiscovery using RDFa
+Semantic Radar for FireFox and the Semantic Web Services environment - fgiasson talks about CaptSolo&#039;s Semantic Radar plugin for autodetecting SIOC data in Firefox (as well as FOAF and DOAP)
+Ping the Semantic Web.com: a pinging service for the Semantic Web - fgiasson&#039;s excellent web service for notifying TalkDigger of new Semantic Web data, including SIOC instances
+ODS SIOC Reference - Overview of how OpenLink Data Spaces allows SPARQL queries to be performed on ODS data via SIOC ontology mappings
+
+</sioc:content>
+  <dcterms:created>2006-09-13T14:06:50+01:00</dcterms:created>
+  <dcterms:modified>2006-09-15T10:48:42+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/138" rdfs:label="Latest Developments in the SIOC-o-Sphere" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

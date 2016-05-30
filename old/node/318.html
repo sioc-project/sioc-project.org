@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/318"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>SIOC, IRC and events | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>SIOC, IRC and events</h2>                                                  <div class="clear-block">
+            <div id="node-318" class="node">
+
+
+
+      <span class="submitted">2007, November 3 - 17:02 — <a href="../user/53.html" title="View user profile.">Alexandre Passant</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi all,</p>
+<p>Having some thoughts this afternoon on how to represent a user<br />
+connecting / disconnecting channels on IRC, I thaught a sioc:Event<br />
+class might be useful.<br />
+More generally, it can help to represent subscription to<br />
+sioc:Containers, as IRC join / quit, RSS subscribing, starting<br />
+membership in a forum ...</p>
+<p>This Event class could be defined in the SIOC core itself, but we may<br />
+also reuse (or subclass) existing Event classes from other ontologies<br />
+(I didn't look yet, but I think that iCal / music ontology Events may<br />
+fit there), and use<br />
+- sioc:has_creator<br />
+- sioc:has_container<br />
+- dcterms:created<br />
+- dc:description<br />
+to define event property and link it to associated Container / User</p>
+<p>More specific event types could be then defined in SIOC core or in<br />
+external module, as, JoinEvent / QuitEvent and AwayEvent / BackEvent.<br />
+(And even some types specific to the container (as IRCJoinEvent), but<br />
+I'm afraid it will lead to a lot of event types, while the 4 first<br />
+ones should be enough to describe almost everything, combined with the<br />
+sioctypes module to define container type (IRC, Forum ...))</p>
+<p>Eg:</p>
+<p><http://example.org/freenode/channels#sioc> a sioct:ChatChannel.</http://example.org/freenode/channels#sioc></p>
+<p><http://example.org/freenode/events#200611031215_terraces> a sioc:JoinEvent ;<br />
+  sioc:has_container <http://example.org/freenode/channels#sioc> ;<br />
+  sioc:has_creator <http://example.org/freenode/user#terraces> ;<br />
+  dcterms:created "2006-11-03T12:05:00Z"^^xsd:dateTime .</http://example.org/freenode/user#terraces></http://example.org/freenode/channels#sioc></http://example.org/freenode/events#200611031215_terraces></p>
+<p><http://example.org/freenode/events#200611031210_terraces> a sioc:QuitEvent ;<br />
+  sioc:has_container <http://example.org/freenode/channels#sioc> ;<br />
+  sioc:has_creator <http://example.org/freenode/user#terraces> ;<br />
+  dc:description "Leaving" ;<br />
+  dcterms:created "2006-11-03T12:10:00Z"^^xsd:dateTime .</http://example.org/freenode/user#terraces></http://example.org/freenode/channels#sioc></http://example.org/freenode/events#200611031210_terraces></p>
+<p>Any comments ?</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="319.html" class="topic-previous" title="Go to previous forum topic">‹ sioc:reply_of in flat threads</a>
+              <a href="315.html" class="topic-next" title="Go to next forum topic">Semantic Web ideas from the DrupalCon Barcelona 2007 ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-497"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, December 12 - 10:57 — <a href="http://sioc-project.org/user/149" title="View user profile.">Yves Raimond</a></span>
+  
+  
+  
+    <h3><a href="318.html#comment-497" class="active">SIOC, IRC and events</a></h3>
+
+    <div class="content">
+      <p>Hi Alexandre!</p>
+<p>[snip]</p>
+<p>><br />
+> This Event class could be defined in the SIOC core itself, but we may<br />
+> also reuse (or subclass) existing Event classes from other ontologies<br />
+> (I didn't look yet, but I think that iCal / music ontology Events may<br />
+> fit there), and use<br />
+> - sioc:has_creator<br />
+> - sioc:has_container<br />
+> - dcterms:created<br />
+> - dc:description<br />
+> to define event property and link it to associated Container / User<br />
+></p>
+<p>Just a small comment: we published last week a documentation draft for<br />
+the event ontology we use in MO. It is available there:</p>
+<p>http://motools.sf.net/event/</p>
+<p>I hope it can indeed provide a good basis for that :-)</p>
+<p>According to your examples, it would be something like:</p>
+<p>sioc:has_creator rdfs:subPropertyOf event:agent.<br />
+sioc:has_container rdfs:subPropertyOf event:factor. ?</p>
+<p>Cheers!<br />
+y</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-499"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, December 12 - 10:57 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="318.html#comment-499" class="active">SIOC, IRC and events</a></h3>
+
+    <div class="content">
+      <p>Yves Raimond wrote:<br />
+> Hi Alexandre!<br />
+><br />
+> [snip]<br />
+><br />
+>> This Event class could be defined in the SIOC core itself, but we may<br />
+>> also reuse (or subclass) existing Event classes from other ontologies<br />
+>> (I didn't look yet, but I think that iCal / music ontology Events may<br />
+>> fit there), and use<br />
+>> - sioc:has_creator<br />
+>> - sioc:has_container<br />
+>> - dcterms:created<br />
+>> - dc:description<br />
+>> to define event property and link it to associated Container / User</p>
+<p>For referring to/annotating events: wouldn's iCal/RDF be a natural hook?<br />
+There is a translator from iCal to RDF at:<br />
+   http://www.kanzaki.com/courier/ical2rdf<br />
+equally related the hCalendar microformat version of iCal:<br />
+  http://microformats.org/wiki/hcalendar</p>
+<p>axel</p>
+<p>> Just a small comment: we published last week a documentation draft for<br />
+> the event ontology we use in MO. It is available there:<br />
+><br />
+> http://motools.sf.net/event/<br />
+><br />
+> I hope it can indeed provide a good basis for that :-)<br />
+><br />
+> According to your examples, it would be something like:<br />
+><br />
+> sioc:has_creator rdfs:subPropertyOf event:agent.<br />
+> sioc:has_container rdfs:subPropertyOf event:factor. ?<br />
+><br />
+><br />
+> Cheers!<br />
+> y<br />
+><br />
+> ><br />
+> </p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-500"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, December 12 - 10:57 — <a href="http://sioc-project.org/user/283" title="View user profile.">John Hoogstrate</a></span>
+  
+  
+  
+    <h3><a href="318.html#comment-500" class="active">SIOC, IRC and events</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>I have some experience with designing and implementing online events<br />
+which export to RSS, iCalendar and SIOC. In my case I used the<br />
+event-module for the SIOC output because it was the only one available<br />
+at that time, and it is fairly limited.<br />
+http://purl.org/rss/1.0/modules/event</p>
+<p>I don't think using an iCalendar ontology is a good idea for events.<br />
+iCalendar is a format intended to be interchangable between calendering<br />
+applications, not to describe events in the best way possible. A great<br />
+number of the properties of iCalendar belong in different ontologies. It<br />
+supports todo's and alarms and other things that have absolutely nothing<br />
+to do with events. Not to mention the fact that it allows for custom<br />
+extensions to be made that are undefined potentially making a perfectly<br />
+valid iCalendar file impossible to translate.</p>
+<p>Using a new ontology will provide more flexibility and simplicity while<br />
+it will still be possible to automatically transform it to iCalendar for<br />
+backward compatiblity.</p>
+<p>The draft at http://motools.sf.net/event/ looks good, but it definetely<br />
+needs a way to define the status of the event, since the existence of a<br />
+future event is still uncertain until it has actually happened.<br />
+iCalendar allows for an event status to be set to<br />
+ confirmed, tentative, cancelled which is very useful. Through<br />
+experience I found out that another status in the likes of  'sold out'<br />
+or 'booked full' would also be very useful.</p>
+<p>Greetings,</p>
+<p>John</p>
+<p>Axel Polleres wrote:<br />
+>  Yves Raimond wrote:<br />
+> > Hi Alexandre!<br />
+> ><br />
+> > [snip]<br />
+> ><br />
+> >> This Event class could be defined in the SIOC core itself, but we<br />
+> >>  may also reuse (or subclass) existing Event classes from other<br />
+> >> ontologies (I didn't look yet, but I think that iCal / music<br />
+> >> ontology Events may fit there), and use - sioc:has_creator -<br />
+> >> sioc:has_container - dcterms:created - dc:description to define<br />
+> >> event property and link it to associated Container / User<br />
+><br />
+><br />
+>  For referring to/annotating events: wouldn's iCal/RDF be a natural<br />
+>  hook? There is a translator from iCal to RDF at:<br />
+>  http://www.kanzaki.com/courier/ical2rdf equally related the hCalendar<br />
+>  microformat version of iCal: http://microformats.org/wiki/hcalendar<br />
+><br />
+>  axel<br />
+><br />
+><br />
+> > Just a small comment: we published last week a documentation draft<br />
+> > for the event ontology we use in MO. It is available there:<br />
+> ><br />
+> > http://motools.sf.net/event/<br />
+> ><br />
+> > I hope it can indeed provide a good basis for that :-)<br />
+> ><br />
+> > According to your examples, it would be something like:<br />
+> ><br />
+> > sioc:has_creator rdfs:subPropertyOf event:agent. sioc:has_container<br />
+> >  rdfs:subPropertyOf event:factor. ?<br />
+> ><br />
+> ><br />
+> > Cheers! y<br />
+> ><br />
+><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-501"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, December 12 - 10:57 — <a href="http://sioc-project.org/user/59" title="View user profile.">Axel Polleres</a></span>
+  
+  
+  
+    <h3><a href="318.html#comment-501" class="active">SIOC, IRC and events</a></h3>
+
+    <div class="content">
+      <p>John Hoogstrate wrote:<br />
+> Hi,<br />
+><br />
+> I have some experience with designing and implementing online events<br />
+> which export to RSS, iCalendar and SIOC. In my case I used the<br />
+> event-module for the SIOC output because it was the only one available<br />
+> at that time, and it is fairly limited.<br />
+> http://purl.org/rss/1.0/modules/event<br />
+><br />
+> I don't think using an iCalendar ontology is a good idea for events.<br />
+> iCalendar is a format intended to be interchangable between calendering<br />
+> applications, not to describe events in the best way possible. A great<br />
+> number of the properties of iCalendar belong in different ontologies. It<br />
+> supports todo's and alarms and other things that have absolutely nothing<br />
+> to do with events.</p>
+<p>A superset of what is needed is not a disadvantage, right? And as you<br />
+correctly point out: iCal IS used in applications, ie. is a de facto<br />
+standard which shouldn't be competed, but completed ;)<br />
+  I could import/export events tied to SIOC descriptions  to/from my<br />
+calendar... doesn't sound bad to me.</p>
+<p>Whatever is proposed, should thus at least foresee a mapping to iCal.</p>
+<p>For some work on ontology framweorks with mappings as I envision them,<br />
+see [1,2]</p>
+<p>best,<br />
+axel</p>
+<p>1.Boanerges Aleman-Meza, Uldis Bojars, Harold Boley, John G. Breslin,<br />
+Malgorzata Mochol, Lyndon J.B. Nixon, Axel Polleres, and Anna V.<br />
+Zhdanova. Combining RDF vocabularies for expert finding. In Enrico<br />
+Franconi, Michael Kifer, and Wolfgang May, editors,  Proceedings of the<br />
+4th European Semantic Web Conference (ESWC2007), volume 4519 of Lecture<br />
+Notes in Computer Science, pages 235-250, Innsbruck, Austria, June 2007.<br />
+Springer.<br />
+http://www.polleres.net/publications/alem-etal-2007.pdf<br />
+Slides available at<br />
+http://www.polleres.net/publications/alem-etal-2007eswc-slides.pdf.</p>
+<p>2. Axel Polleres, François Scharffe, and Roman Schindlauer. SPARQL++ for<br />
+mapping between RDF vocabularies. In OTM 2007, Part I : Proceedings of<br />
+the 6th International Conference on Ontologies, DataBases, and<br />
+Applications of Semantics (ODBASE 2007), volume 4803 of Lecture Notes in<br />
+Computer Science, pages 878-896, Vilamoura, Algarve, Portugal, November<br />
+2007. Springer.<br />
+http://www.polleres.net/publications/poll-etal-2007.pdf</p>
+<p>>  Not to mention the fact that it allows for custom<br />
+> extensions to be made that are undefined potentially making a perfectly<br />
+> valid iCalendar file impossible to translate.<br />
+><br />
+> Using a new ontology will provide more flexibility and simplicity while<br />
+> it will still be possible to automatically transform it to iCalendar for<br />
+> backward compatiblity.<br />
+><br />
+> The draft at http://motools.sf.net/event/ looks good, but it definetely<br />
+> needs a way to define the status of the event, since the existence of a<br />
+> future event is still uncertain until it has actually happened.<br />
+> iCalendar allows for an event status to be set to<br />
+>  confirmed, tentative, cancelled which is very useful. Through<br />
+> experience I found out that another status in the likes of  'sold out'<br />
+> or 'booked full' would also be very useful.<br />
+><br />
+> Greetings,<br />
+><br />
+> John<br />
+><br />
+> Axel Polleres wrote:<br />
+>>  Yves Raimond wrote:<br />
+>>> Hi Alexandre!<br />
+>>><br />
+>>> [snip]<br />
+>>><br />
+>>>> This Event class could be defined in the SIOC core itself, but we<br />
+>>>>  may also reuse (or subclass) existing Event classes from other<br />
+>>>> ontologies (I didn't look yet, but I think that iCal / music<br />
+>>>> ontology Events may fit there), and use - sioc:has_creator -<br />
+>>>> sioc:has_container - dcterms:created - dc:description to define<br />
+>>>> event property and link it to associated Container / User<br />
+>><br />
+>>  For referring to/annotating events: wouldn's iCal/RDF be a natural<br />
+>>  hook? There is a translator from iCal to RDF at:<br />
+>>  http://www.kanzaki.com/courier/ical2rdf equally related the hCalendar<br />
+>>  microformat version of iCal: http://microformats.org/wiki/hcalendar<br />
+>><br />
+>>  axel<br />
+>><br />
+>><br />
+>>> Just a small comment: we published last week a documentation draft<br />
+>>> for the event ontology we use in MO. It is available there:<br />
+>>><br />
+>>> http://motools.sf.net/event/<br />
+>>><br />
+>>> I hope it can indeed provide a good basis for that :-)<br />
+>>><br />
+>>> According to your examples, it would be something like:<br />
+>>><br />
+>>> sioc:has_creator rdfs:subPropertyOf event:agent. sioc:has_container<br />
+>>>  rdfs:subPropertyOf event:factor. ?<br />
+>>><br />
+>>><br />
+>>> Cheers! y<br />
+>>><br />
+>><br />
+><br />
+><br />
+><br />
+> ><br />
+> </p>
+<p>--<br />
+Dr. Axel Polleres<br />
+email: axel@polleres.net  url: http://www.polleres.net/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-498"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, December 12 - 10:57 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="318.html#comment-498" class="active">SIOC, IRC and events</a></h3>
+
+    <div class="content">
+      <p>Hi all,</p>
+<p>><br />
+> Just a small comment: we published last week a documentation draft for<br />
+> the event ontology we use in MO. It is available there:<br />
+><br />
+> http://motools.sf.net/event/<br />
+><br />
+> I hope it can indeed provide a good basis for that :-)<br />
+><br />
+> According to your examples, it would be something like:<br />
+><br />
+> sioc:has_creator rdfs:subPropertyOf event:agent.<br />
+> sioc:has_container rdfs:subPropertyOf event:factor. ?<br />
+>   </p>
+<p>+1</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F318%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/318?destination=node%2F318"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-KgjOoqNmmdqOixWUTuYRNdpINnonPVNxlWbaSqPhNOA" value="form-KgjOoqNmmdqOixWUTuYRNdpINnonPVNxlWbaSqPhNOA"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/306"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/306">
+  <dc:title>Human Readable s</dc:title>
+  <sioc:content>
+Hi all,
+I notice that the rdfs:label of http://rdfs.org/sioc/ns#creator_of is just
+&#039;creator_of&#039; which I don&#039;t think is very useful.
+It makes it harder to build friendly looking public-facing RDF browser
+applications.
+I think it would be good to change sioc&#039;s labels to be actually human
+readable (rather than human decipherable). So &quot;Creator of&quot; rather than
+&quot;creator_of&quot;
+It would also be good to add plural/singular labels as appropriate, using
+Morten Frederikson&#039;s label vocabulary:
+http://www.wasab.dk/morten/2004/03/label
+What do you think?
+Keith
+--
+Keith Alexander
+http://semwebdev.keithalexander.co.uk/blog/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-07-23T14:03:01+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/306" rdfs:label="Human Readable s" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/282%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/282" />
+</sioc:Post>
+</rdf:RDF>

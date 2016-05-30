@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/297"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/297">
+  <dc:title>ANN: New documents - (1) SIOC Implementations list; (2) Relations w. other ontologies; (3) Update to the SIOC Specification</dc:title>
+  <sioc:content>Dear All,
+New SIOC-related documents are here:
+1) SIOC Ontology: Applications and Implementation Status
+http://rdfs.org/sioc/applications/
+Describes all the applications which use and implement SIOC, or are
+related to this project. (Of course there can be more applications
+which we are not aware of. If you know of any, please write.)
+ 2) SIOC Ontology: Related Ontologies and RDF Vocabularies
+http://rdfs.org/sioc/related/
+Describes vocabularies / ontologies which are related to SIOC, along
+with details on what these relations are and some examples.
+---
+Also published a new version of the SIOC specification:
+3) SIOC Core Ontology Specification - 12 June 2007 - v1.26
+http://rdfs.org/sioc/spec/
+We went over the specification and improved it where possible - better
+descriptions for terms, improved SIOC ontology figure and all other
+things that could be made better. sioc:Service related properties
+moved to a separate module.
+Detailed term definitions in the specification now properly abbreviate
+all the namespaces referenced, and also include rdfs:subClassOf and
+rdfs:subPropertyOf relationships (a result of improvements to the
+SpecGen4 script).
+Renamed the main document to the &quot;SIOC Core Ontology Specification&quot; to
+account for the fact that there are also &quot;SIOC Types module&quot; and &quot;SIOC
+Services module&quot;.
+---
+This feeds into the preparation work for the SIOC member submission,
+which is now finished.
+Thanks a lot to all who contributed. Special thanks to John Breslin
+for co-ordination, to Axel Polleres and Alexandre Passant for creating
+the intial versions of the related ontologies and the implementations
+list documents respectively.
+If you have any questions, ideas or comments please write to the list
+or to the editors of these documents.
+Thanks,
+Uldis
+[ http://sioc-project.org/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:53+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:53+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/297" rdfs:label="ANN: New documents - (1) SIOC Implementations list; (2) Relations w. other ontologies; (3) Update to the SIOC Specification" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

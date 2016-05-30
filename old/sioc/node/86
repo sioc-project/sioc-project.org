@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/86"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/86">
+  <dc:title>Ontology editing - and other tools for SIOC community</dc:title>
+  <sioc:content>Now when many ontology changes have been submitted it is time to update
+and improve the SIOC Specification. In order to let everybody
+participate here is a new tool:
+&gt; SIOC Specification Template - Collaborative editing
+[http://sparql.captsolo.net/sioc/SiocSpecTemplate]
+It is a wiki page that contains latest HTML template of the spec. All
+are welcome tu use this page to &quot;polish&quot; the template and demonstrate
+proposed changes.
+Technicalities: SIOC specification is auto-generated from (1) template;
+(2) ontology; (3) term definitions. Using the wiki page you can edit a
+copy of the template and instantly see how it would look in real life.
+The generation script + components (1) and (3) can be found at:
+http://sw.deri.org/svn/sw/2005/08/sioc/spec/
+Changes to the template get regularly (once an hour) applied to a work
+copy of the specification located here:
+http://sparql.captsolo.net/spec/
+Note: the content is actually HTML, not wiki markup - please take care
+when editing. Do not delete &quot;%s&quot; or &quot;#format raw&quot; - those are
+necessary. Hope this is not too complex.
+Term definitions (1) - both updates and definitions of new terms - are
+also welcome, but it&#039;d be too complex to put that all on the wiki and
+then synch with spec generation. You can look at existing definitions
+in http://sw.deri.org/svn/sw/2005/08/sioc/spec/doc/ and send me
+additions and changes.
+&gt; Other community tools
+[GNU] asked earlier today if rdfs.org is aggregating his weblog. To my
+knowledge we are not (though Planet SIOC may be a good idea), but there
+is another thing we do - synchronise messages in the mailing list with
+forums on rdfs.org. So you can write here and see the messages over
+there.
+Also there is the IRC channel for SIOC discussions (that&#039;s where [GNU]
+asked the question) - #sioc on irc.freenode.net.
+&gt; Ontology additions
+Added a sioc:account_of property to the ontology.
+The activity on FOAF mailing list is low and it does not seem that
+there will be an inverse of foaf:holdsAccount that soon. If we want to
+switch SIOC export tools to using FOAF for person properties, this is a
+show-stopper. Hence we can use this property for now and sublcass from
+FOAF or remove it once such a change happens in FOAF.
+Best,
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-06-14T21:59:45+01:00</dcterms:created>
+  <dcterms:modified>2006-06-15T17:27:55+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/86" rdfs:label="Ontology editing - and other tools for SIOC community" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

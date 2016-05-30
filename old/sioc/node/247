@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/247"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/247">
+  <dc:title>swaml:previousByDate/nextByDate (was:  Threads?)</dc:title>
+  <sioc:content>Hi Sergio,
+That&#039;s interesting. Mind elaborating why you did this? Or do you have
+a link to an explanation?
+I&#039;m interested because when using SIOC for IRC logs, we had to figure
+out how to order IRC events that come in the same second; we hacked it
+by using the millisecond part of dcterms:created to contain a counter,
+so that you&#039;d have the event at 12:03:01 followed by the event at
+&quot;12:03:01.001&quot; followed by the event at &quot;12:03:01.002&quot;.
+Would you consider changing the definition of swaml:previousByDate and
+swaml:nextByDate not to be specific to mailing lists?
+I&#039;m wondering how it would work if the same message is in more than
+one container, though; it seems to me that SIOC allows both modelling
+these as two sioc:Posts and modelling them as one, which wouldn&#039;t be
+good for previousByDate/nextByDate :-/
+- Benja
+2007/4/10, Sergio Fdez :
+&gt;
+&gt;
+&gt; &gt; I&#039;m confused about this: Does this add information beyond what we know
+&gt; &gt; through sioc:reply_of? Or is this just an abbreviation of information
+&gt; &gt; that sioc:reply_of already gives us?
+&gt;
+&gt; I thought the same..., that a thread could be composed using
+&gt; sioc:has_reply and sioc:reply_of relationships (that is indeed what
+&gt; Buxon does). But if we want to give one more a richer description about
+&gt; thread, perhaps TDL [1] would be interesting for us.
+&gt;
+&gt; BTW, in SWAML we had to add two properties [2] to express chronological
+&gt; information between sioc:Post&#039;s, but this is another theme.
+&gt;
+&gt; Regards,
+&gt;
+&gt; [1] http://www.eyrie.org/~zednenem/2002/web-threads/
+&gt; [2] http://swaml.berlios.de/ns/0.2#
+&gt;
+&gt; --
+&gt; __      ___ _   _
+&gt; \ \    / (_) |_(_)___ _ _   Sergio Fdez
+&gt;  \ \/\/ /| | / / / -_) &#039;_|  GNU/LiNUX User: #298803
+&gt;   \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/
+&gt;
+&gt;
+&gt; &gt;
+&gt;
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-10T20:03:17+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/247" rdfs:label="swaml:previousByDate/nextByDate (was:  Threads?)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/54%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/54" />
+</sioc:Post>
+</rdf:RDF>

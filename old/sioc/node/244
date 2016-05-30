@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/244"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/244">
+  <dc:title>sioc:User, foaf:Person or baetle:Person?</dc:title>
+  <sioc:content>Should baelte:reporter relate baetle:Issue(s) to foaf:Person or to
+sioc:User ? It&#039;s not so obvious in some ways, since a sioc:User is a
+subclass of a foaf:OnlineAccount, and it seems a bit weird to make an
+online account responsible for fixing bugs.
+This makes me wonder if perhaps the EvoOnt [1] way of doing things is
+perhaps not in fact the right way of doing it. Create a baetle:Person
+that is the range of relations such as baetle:creator,
+baetle:reporter, etc... This removes the problems without closing
+down options, so people can decide whether they then want to reporter
+to be a foaf:Person or a sioc:Account
+
+    baetle:reporter [ is ;
+                      a foaf:Person, baetle:Person ];
+    baetle:assigned_to [ a sioc:User, baetle:Person;
+                         sioc:email  ] .
+is this a cop out, or is this a good way to leave the decision to a
+later time, and give people the freedom to extend the ontology as
+they see fit?
+Henry
+PS. I am just working out how much I agree and disagree with EvoOnt
+at the moment. If I completely agree, then there won&#039;t be much need
+for baetle, except perhaps as an open forum to evolve EvoOnt, or as a
+way to create software and todos  to help transform repositories to
+this ontology.
+PPS. sorry for the duplicate email. I sent this from the wrong
+account intially
+[1] http://www.ifi.unizh.ch/ddis/msr/
+Home page: http://bblfish.net/
+Sun Blog: http://blogs.sun.com/bblfish/
+Foaf name: http://bblfish.net/people/henry/card#me
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-07T11:35:15+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/244" rdfs:label="sioc:User, foaf:Person or baetle:Person?" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/66%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/66" />
+</sioc:Post>
+</rdf:RDF>

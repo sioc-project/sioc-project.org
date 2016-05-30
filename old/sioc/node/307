@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/307"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/307">
+  <dc:title>CfP: 2nd International ExpertFinder Workshop: FEWS2007 (Finding Experts on the Web with Semantics)</dc:title>
+  <sioc:content>Call for Papers
+2nd International ExpertFinder Workshop:
+FEWS2007 (Finding Experts on the Web with Semantics)
+http://fews.semanticweb.org/
+Busan, Korea, 12th November 2007
+co-located with the 6th International Semantic Web Conference (ISWC
+2007) and 2nd Asian Semantic Web Conference (ASWC 2007)
+=============================================
+ExpertFinder (http://rdfweb.org/topic/ExpertFinder) is an emerging
+collaborative initiative with the aim of devising vocabulary, rule
+extensions (for e.g. FOAF and SIOC) and best practices to annotate
+personal home pages, as well as web pages of institutions, conferences,
+publication indexes, etc. with adequate metadata to enable computer
+agents to find experts on particular topics.
+Following the 1st ExpertFinder workshop
+(http://lsdis.cs.uga.edu/~aleman/efw2007) during the Knowledge Web NoE
+general assembly in January 2007, the ExpertFinder initiative would like
+to solicit research contributions from the wider Semantic Web expert
+community.
+ExpertFinder&#039;s goal is to enable a Web-scale infrastructure for the
+creation, publication and use of experts&#039; semantic descriptions to
+support expert finding scenarios such as group management, disaster
+response, recruitment, team building, problem solving and on-the-fly
+consultation. Descriptions of such scenarios can be found at
+http://rdfweb.org/topic/ExpertFinderUseCases. We welcome all submissions
+which describe original research contributing to this goal.
+Topics of Interest
+==================
+We welcome all research contributions that address one or more of the
+following topics:
+* Specification of vocabularies to describe experts
+* Reuse of existing standards and taxonomies to describe experts
+* Extraction of expert descriptions from legacy (meta)data
+* Use of microformat data to locate experts
+* International and cross-organisational heterogeneity issues in the
+expert descriptions
+* Algorithms for expert finding and recommendation (e.g., mining of
+social networks)
+* Expressivity extensions (in logics, rules) to support expert finding
+processes
+* Tools for the intuitive creation and maintenance of expert
+descriptions and associated rules
+* Web infrastructures for the publication and sharing of expert
+descriptions (storage, access, querying, rule execution, coordination,
+communication)
+* Security, trust and privacy aspects of expert finding
+* Scalability to the Web level
+* Integrating expert finding research into legacy systems to support
+industrial uptake
+Event Information
+=================
+The workshop will take place during the 6th International Semantic Web
+Conference (ISWC2007) and 2nd Asian Semantic Web Conference (ASWC2007)
+For every accepted paper at least one of the authors must attend the
+workshop and must register for the workshop and the main conference.
+Submission Information
+=================
+We invite submissions of papers no longer than 14 pages (including
+figures, references and appendices). Paper submissions must be formatted
+in the style of the Springer Publications format for Lecture Notes in
+Computer Science (LNCS). Guidelines and templates are available at
+http://www.springer.de/comp/lncs/authors.html.
+Papers need to be submitted electronically through the conference
+submission site: https://cmt.research.microsoft.com/ISWC2007/. Papers
+will be published in accompanying online proceedings (CEUR) as well as
+in hardcopy which will be available to all workshop attendees.
+Important Dates
+================
+August 13, 2007: Submission of papers
+September 10, 2007: Notification of acceptance
+September 30, 2007: Camera - ready versions due
+November 12, 2007: Workshop
+Program Committee
+=================
+Witold Abramowicz, The Poznan University of Ecomonics, Poland
+Diego Berrueta, CTIC Foundation, Spain
+Chris Bizer, Free University of Berlin, Germany
+Uldis Bojars, DERI, NUI Galway, Ireland
+Aleman - Meza Boanerges, LSDIS Lab, University of Georgia, USA
+Irene Celino, CERIEL Politecnico di Milano, Italy
+Tom Heath, KMI, Open University, UK
+Tomasz Kaczmarek, The Poznan University of Ecomonics, Poland
+Uwe Keller, DERI Innsbruck, Austria
+Alain Leger, France Telekom, France
+Ning Li, University of Surrey, UK
+Benjamin Nowack, semsol web semantics, Germany
+Charles Petrie, Stanford Unviersity, USA
+Axel Polleres, DERI, NUI Galway, Ireland
+Leo Sauermann, DFKI, Germany
+Robert Tolksdorf, Free University of Berlin, Germany
+Holger Wache, University of Applied Sciences Northwestern Switzerland
+(FHNW), Switzerland
+Organizing Committee
+====================
+Anna V. Zhdanova, ftw. Forschungszentrum Telekommunikation Wien, Austria
+Lyndon J. B. Nixon, Free University of Berlin, Germany
+Malgorzata Mochol, Free University of Berlin, Germany
+John Breslin, DERI, NUI Galway, Ireland
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:55+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:55+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/307" rdfs:label="CfP: 2nd International ExpertFinder Workshop: FEWS2007 (Finding Experts on the Web with Semantics)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

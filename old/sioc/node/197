@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/publications"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/publications">
+  <dc:title>SIOC Publications</dc:title>
+  <sioc:content>
+
+J.G. Breslin, S. Decker, &quot;The Future of Social Networks on the Internet: The Need for Semantics &quot;, IEEE Internet Computing magazine, November 2007.
+DOI
+
+
+S. Fernández, D. Berrueta, J.E. Labra, &quot;A semantic web approach to publish and consume mailing lists&quot;, IADIS  International Journal on WWW/Internet (to appear).
+
+
+M. Hausenblas, H. Rehatschek, &quot;mle: Enhancing the Exploration of Mailing List Archives Through Making Semantics Explicit&quot;, Semantic Web Challenge 2007, 6th International Semantic Web Conference (ISWC2007), Busan, Korea, November 11-15, 2007.
+
+
+B Heitmann, E Oren, &quot;Leveraging existing Web frameworks for a SIOC explorer to browse online so cial communities&quot;, Proceedings of 3rd workshop on Scripting for the Semantic Web (SFSW2007),  ISSN 1613-0073, Innsbruck, Austria, June 6, 2007.
+[PDF]
+
+
+S. Fernández, D. Berrueta, J.E. Labra, &quot;Mailing lists meet the Semantic Web&quot;, Proceedings of workshop on Social Aspects of the Web (SAW 2007), ISBN 83-916842-4-2, pp. 45-52, Poznan, Poland, April 27, 2007.
+[PDF]
+
+
+U Bojars, J Breslin, A Passant , &quot;SIOC Browser-Towards A Richer Blog Browsing Experience&quot;, Proceedings of 4th Blogtalk Conference (Blogtalk Reloaded), Vienna, Austria, 2006.
+[PDF]
+
+
+J.G. Breslin, A. Harth, U. Bojars, S. Decker, &quot;Towards Semantically-Interlinked Online Communities&quot;, Proceedings of the 2nd European Semantic Web Conference (ESWC &#039;05), LNCS vol. 3532, pp. 500-514, Heraklion, Greece, 2005.
+[SpringerLink] [PDF]
+
+
+J.G. Breslin, S. Decker, A. Harth, &quot;An Approach to Connect Web-Based Communities&quot;, Proceedings of the 2nd IADIS International Conference on Web Based Communities (WBC 2005), pp. 272-275, Carvoeiro, Portugal, 2005.
+
+
+A. Harth, J.G. Breslin, I. O&#039;Murchu, S. Decker, &quot;Linking Semantically-Enabled Online Community Sites&quot;, Proceedings of the 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway), Galway, Ireland, pp. 19-29, September 2004.
+[HTML]
+
+
+But probably there are more publications...
+</sioc:content>
+  <dcterms:created>2007-02-06T10:54:10+00:00</dcterms:created>
+  <dcterms:modified>2007-11-05T08:05:40+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/publications" rdfs:label="SIOC Publications" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

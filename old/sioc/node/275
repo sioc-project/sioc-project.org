@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/275"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/275">
+  <dc:title>Some questions about SIOC for drupal plugin</dc:title>
+  <sioc:content>
+&gt; So I&#039;m assuming that my sioc:site is a host of 1 sioc:forum that
+&gt; consists of all the stories (sioc:post) at the site. Does anyone see
+&gt; any problems with this?
+&gt;
+&gt;
+Nope, looks fine...
+&gt; This also ignores content created by the page module. This is static
+&gt; content such as about page, contact details etc. Where does this kind
+&gt; of content fit into SIOC?
+&gt;
+&gt;
+If it&#039;s commentable content, it could just take the same form as a story...
+&gt; What urls to use?
+&gt; -----------------------
+&gt; Looking at the snippet above the uris aren&#039;t unique. So or example the
+&gt; sioc:site and the sioc:forum have the same uri which is the root url
+&gt; of my site. I was thinking of just adding #stories to the url for the
+&gt; sioc:forum. Any other suggestions?
+&gt;
+&gt;
+Sounds good...
+&gt; sioc:content and content:encoded
+&gt; --------------------------------------------
+&gt; The drupal module currently doesn&#039;t output the content of posts, just
+&gt; the title. What should sioc:content contain and content:encoded?
+&gt;
+&gt;
+This must be a bug as content was exposed...
+&gt; Drupal has a set of filters that are applied to the raw text in the
+&gt; database. So if a user has defined filters for their content they may
+&gt; never want the raw content exposed.
+&gt;
+I think the content:encoded should be HTML, as this will exposed at
+least in pages...
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/275" rdfs:label="Some questions about SIOC for drupal plugin" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

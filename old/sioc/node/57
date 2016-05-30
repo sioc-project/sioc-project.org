@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/57"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/57">
+  <dc:title>Fwd: SIOC exporter</dc:title>
+  <sioc:content>Christoph&#039;s feedback about the WP SIOC exporter with my comments.
+Note: SIOC is open source - if you find any bugs, you are also welcome
+to send patches.
+... also free to write new exporters or consumers of SIOC data altogether. :)
+---------- Forwarded message ----------
+Date: Apr 27, 2006 10:48 PM
+Subject: Re: SIOC exporter
+To: Christoph Görn
+Hi!
+&gt; Hey, thanks for the ping!!
+You&#039;re welcome! :)
+By the way - it would be cool if we could discuss the plugin online.
+In case you are wondering, it is possible to subscribe to google
+groups (e.g., SIOC-Dev) with your existing address, w/o signing up for
+GMail or GGroups: just e-mail sioc-dev-subscribe@googlegroups.com
+&gt; I just installed it and tested it a little bit, sioc autodiscovery
+&gt; seems to work, following the links arround I discovered something
+&gt; like  I think that &amp;amp; is no good,
+&gt; using curl with that url doesnt work :(
+I also had to do a bit of research about using &amp;amp; and it turns out
+it is necessary. Try to substitute &amp;amp; with &amp;amp; in the RDF file and you will get
+instantly broken RDF/XML. XML users/parsers must &quot;decode&quot; these
+entities, so if you are copying it out from RDF/XML by hand, so must
+you. :)
+&gt; rapper (of redland utils) doesnt accept it too and produces parseerrors:
+&gt; rapper: Error - URI http://b4mad.net/datenbrei/index.php?
+&gt; sioc_type=post&amp;amp;sioc_id=284:22 - XML parser error - Entity &#039;Atilde&#039;
+&gt; not defined
+I will look into this problem. Basically I know what it is, just have
+to look at the code to see how to fix it. The problem is that in XML
+(as opposed to HTML) only 4 or 5 basic entities are defined - so
+things like &amp;Atilde; which may be present in post body break XML
+validity.
+P.S. May I forward this to the mailing list as well?
+Best,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-04-28T12:54:55+01:00</dcterms:created>
+  <dcterms:modified>2006-04-28T12:54:55+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/57" rdfs:label="Fwd: SIOC exporter" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

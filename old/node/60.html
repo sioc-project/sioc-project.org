@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/60"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Revisions to the SIOC Ontology - Impact | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Revisions to the SIOC Ontology - Impact</h2>                                                  <div class="clear-block">
+            <div id="node-60" class="node">
+
+
+
+      <span class="submitted">2006, May 12 - 04:34 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  <div class="content clear-block">
+    <p>Main impact of SIOC changes:</p>
+<p>(1) SIOC Exporters</p>
+<p>Introduction of foaf:Person - changes how information about<br />
+sioc:User(s) is represented.<br />
+Yet this change is a welcome one as this will allow to use SIOC data<br />
+with applications that already understand FOAF.</p>
+<p>sioc:title to be instead of sioc:subject for post title - impact on<br />
+Drupal, .Clear.<br />
+sioc:type - used in .Clear exporter, but I can't tell if there are<br />
+exporter changes needed due to this<br />
+sioc:name - used in all 3 exporters for things that are not User or Usergroup</p>
+<p>This sums up the impact noticeable on the first glance. You as<br />
+exporter developers will know better.</p>
+<p>(2) Using SIOC Data (and "Smushing")</p>
+<p>This is a more general question - how do we ensure, when RDF data from<br />
+different sources are mixed together, that we do not loose relation<br />
+between particular data of a person (name, surname, e-mail) and the<br />
+account that this information has been registered for.</p>
+<p>While all the information is within one file or comes from one site<br />
+everything is fine - we know that there is no external information. So<br />
+one answer can be - while we keep the provenance (info about the<br />
+origin) of the data we are fine.</p>
+<p>If not, then the link may be lost.</p>
+<p>While this has not been solved we are keeping sioc:email and<br />
+sioc:email_sha1 though they could easily be replaced by appropriate<br />
+properties of foaf:Person.</p>
+<p>Best regards,<br />
+Uldis Bojars</p>
+<p>[ http://captsolo.net/info/ ]<br />
+[ CaptSolo @ #foaf and #swig ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="65.html" class="topic-previous" title="Go to previous forum topic">‹ DotClear exporter v0.2</a>
+              <a href="64.html" class="topic-next" title="Go to next forum topic">sioc:link may not be a Literal ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-19"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/27.html" title="View user profile.">cgoern@googlema...</a></span>
+  
+  
+  
+    <h3><a href="60.html#comment-19" class="active">Revisions to the SIOC Ontology - Impact</a></h3>
+
+    <div class="content">
+      <p>And here is another one...</p>
+<p>Uldis Bojars wrote:<br />
+> Main impact of SIOC changes:<br />
+> (2) Using SIOC Data (and "Smushing")<br />
+> While this has not been solved we are keeping sioc:email and<br />
+> sioc:email_sha1 though they could easily be replaced by appropriate<br />
+> properties of foaf:Person.</p>
+<p>Maybe it is an idea to have sioc mapping define sioc:email_sha1<br />
+owl:sameAs foaf:mbox_sha1 ? Or wouldnt that solve smushing problems?</p>
+<p>Christoph</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-22"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="60.html#comment-22" class="active">Revisions to the SIOC Ontology - Impact</a></h3>
+
+    <div class="content">
+      <p>On 5/18/06, cgoern@googlemail.com <cgoern@googlemail.com> wrote:<br />
+><br />
+> > Main impact of SIOC changes:<br />
+> > (2) Using SIOC Data (and "Smushing")<br />
+> > While this has not been solved we are keeping sioc:email and<br />
+> > sioc:email_sha1 though they could easily be replaced by appropriate<br />
+> > properties of foaf:Person.<br />
+><br />
+> Maybe it is an idea to have sioc mapping define sioc:email_sha1<br />
+> owl:sameAs foaf:mbox_sha1 ? Or wouldnt that solve smushing problems?</cgoern@googlemail.com></p>
+<p>That would not help. Here's why:</p>
+<p>1) According to the update to the SIOC ontology [ sioc:User<br />
+rdfs:subClassOf foaf:OnlineAccount ] because an online account is the<br />
+closes FOAF concept for a user on an online community account.</p>
+<p>Hence you may not define [ sioc:email_sha1 owl:sameAs foaf:mbox_sha1 ]<br />
+because the domain of [ foaf:mbox_sha1 ] is foaf:Agent and<br />
+foaf:OnlineAccount (and sioc:User) is not a subclass of foaf:Agent.</p>
+<p>2) But if you did define it, that would mean that sioc:User has an<br />
+inverse functional property [ sioc:email_sha1 ] (defined as IFP for<br />
+foaf:mbox_sha1) and when smushing all sioc:User(s) from different<br />
+sites would be merged together (if the person has provided same e-mail<br />
+when registering on these sites).</p>
+<p>So we will end up with the same problem - that the data we do not want<br />
+to get mixed together will be mixed together.</p>
+<p>That still leaves 2 options:</p>
+<p>a) keep sioc:email (and email_sha1) properties of sioc:User and do not<br />
+define them as IFPs. this will ensure we will know the e-mail address<br />
+that this particular account was registered with.</p>
+<p>b) assign all person's properties (including e-mail) to the<br />
+foaf:Person linked to sioc:User via foaf:holdsOnlineAccount. then it<br />
+is up to the users of SIOC data to keep the record of where the data<br />
+came from (provenance) in order to keep track of what personal<br />
+properties are accociated with a particular sioc:User.</p>
+<p>I do not have a ready solution for this (but maybe it is not a big<br />
+problem after all?) since one may say that the same problem is true<br />
+for other properties that we will use to describe a person with and<br />
+for FOAF data in general.</p>
+<p>Let's say - one site uses a first name / last name combination<br />
+'Captain' / 'Solo' and the other has 'Uldis' / 'Bojars'. After<br />
+smushing there will be a person with 2 first names and 2 last names<br />
+and no idea in what combination those shall be used.</p>
+<p>(Hmm - if we do not export a FOAF property like foaf:mbox that the<br />
+data will be smushed against, then maybe there is nothing to worry<br />
+about?)</p>
+<p>CC: RDFWeb-Dev [ http://rdfweb.org/pipermail/rdfweb-dev/ ]<br />
+CC: SIOC-Dev [ http://groups.google.com/group/SIOC-Dev/ ]</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-18"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:45 — <a href="../user/27.html" title="View user profile.">cgoern@googlema...</a></span>
+  
+  
+  
+    <h3><a href="60.html#comment-18" class="active">Revisions to the SIOC Ontology - Impact</a></h3>
+
+    <div class="content">
+      <p>Hello,</p>
+<p>> (2) Using SIOC Data (and "Smushing")<br />
+> While this has not been solved we are keeping sioc:email and<br />
+> sioc:email_sha1 though they could easily be replaced by appropriate<br />
+> properties of foaf:Person.</p>
+<p>I have been manually browsing throught what comes out of the sioc<br />
+plugin and have noticed that some information is not properly linked<br />
+(maybe, I am not that much of an RDF expert):</p>
+<p>While retrieving data from<br />
+http://b4mad.net/datenbrei/index.php?sioc_type=post&amp;sioc_id=291 it says<br />
+the Post has_containter f-1 (rdf:nodeID="f-1") f-1 is not definded in<br />
+that file, so I pulled in<br />
+http://b4mad.net/datenbrei/index.php?sioc_type=site which has a<br />
+sioc:Forum with rdf:nodeID="f-1"</p>
+<p>Letting cwm get both URL the combined graph has no relation<br />
+(has_container) for any soic:Post</p>
+<p>Shouldn't the plugin in post mode not refernce the plugin's URL in site<br />
+mode + "f-1" ? Something like</p>
+<p><sioc:has_container<br />
+rdf:ID="http://b4mad.net/datenbrei/index.php?sioc_type=site#f-1"/></sioc:has_container<br></p>
+<p>That would also require that Forums are no longer blank nodes.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-29"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="60.html#comment-29" class="active">Revisions to the SIOC Ontology - Impact</a></h3>
+
+    <div class="content">
+      <p>Fixed in v1.15.</p>
+<p>sioc:Forum is now http://...?sioc_type=site#weblog<br />
+sioc:Usergroup is now http://...?sioc_type=site#authors</p>
+<p>I would like to use nicer URLs for these, but can't find good<br />
+candidates.</p>
+<p>One option would be to use http://blog/sioc/authors for the authors<br />
+list.<br />
+For the #weblog it might be natural to use the URL of the blog itself,<br />
+but this URI is already given to sioc:Site.</p>
+<p>Uldis</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-24"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="60.html#comment-24" class="active">Revisions to the SIOC Ontology - Impact</a></h3>
+
+    <div class="content">
+      <p>
+cgoern@googlemail.com wrote:</p>
+<p>> Shouldn't the plugin in post mode not refernce the plugin's URL in site<br />
+> mode + "f-1" ? Something like<br />
+><br />
+> <sioc:has_container<br />
+> rdf:ID="http://b4mad.net/datenbrei/index.php?sioc_type=site#f-1"/></sioc:has_container<br></p>
+<p>That's a bug in exporter. Added it to the bug / to-do list [1].</p>
+<p>When we give it a URI we may as well it a real URI - for example - the<br />
+URI of main page of the blog. That, however, will create a URI "clash"<br />
+because sioc:Site already uses that URI.</p>
+<p>[1] http://esw.w3.org/topic/SIOC/ToDoList</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F60%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/60?destination=node%2F60"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-88MUUlW1QlC1mh2c6TFg7RbRbmPcBJNVg9r7RFpJUDY" value="form-88MUUlW1QlC1mh2c6TFg7RbRbmPcBJNVg9r7RFpJUDY"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

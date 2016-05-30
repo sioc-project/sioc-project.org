@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/101"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/101">
+  <dc:title>AtomOwl</dc:title>
+  <sioc:content>Hi,
+This is a quick intro from the AtomOwl list. AtomOwl is trying to do
+its best to map the atom syndication format to rdf. The idea is to
+stick as closely as possible to the intuitions of atom xml folk, so
+that one can use AtomOwl to reason about atom in a way that is
+immediately obvious to the atom folk. This should also to help explain
+how one can use other vocabularies such as sioc or foaf with atom.
+AtomOwl is now quite readable and is available here:
+http://bblfish.net/work/atom-owl/2006-06-06/
+Since SIOC has some relations with feeds it would be interesting to
+have the input of your community to how your vocabulary maps to
+AtomOwl. Also there is still space for improvements in the ontology.
+Another very interesting aspect of AtomOwl is that it should make it
+possible to create SPARQL endpoints for atom repositories, so that
+people with atom backgrounds will find it very easy to query those
+repositories.
+There is an AtomOwl google group at
+http://groups.google.com/group/atom-owl/
+Henry Story
+http://blogs.sun.com/bblfish/
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-07-14T14:00:02+01:00</dcterms:created>
+  <dcterms:modified>2006-07-12T16:04:17+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/101" rdfs:label="AtomOwl" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/44%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/44" />
+</sioc:Post>
+</rdf:RDF>

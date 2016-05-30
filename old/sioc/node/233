@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/233"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/233">
+  <dc:title>Issue #1: - subclass sioc:Community from sioc:Container</dc:title>
+  <sioc:content>Issue #1: subclass sioc:Community from ...
+Proposal: subclass sioc:Cummunity from sioc:Container
+Consequences: property names sioc:has_part / sioc:part_of can be reused.
+Decision: ...
+Discussion:
+&gt;  - subclass sioc:Community from sioc:Container (or sioc:Space?) or
+&gt; make it use the same has_container / container_of properties as
+&gt; Container does (or &quot;bump&quot; its has_part and part_of properties one
+&gt; level up to sioc:Container).
+&gt; the idea of sioc:Community was to act as a container for any kind of resources which are parts of a community.
+Now there is a nice hierarchy of things in SIOC:
+[ sioc:Space -&gt; sioc:Container -&gt; ... -&gt; sioc:Item -&gt; (contents &amp;amp;
+parts of item) ]
+sioc:Community should be able to fit into one of these categories.
+Since it is a container [for any kind of resources] it can be either
+sioc:Container or sioc:Space.
+Main question is - what things can be a part of a Container or Space?
+sioc:Community can contain any resource (URI).
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T10:54:19+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:19+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/233" rdfs:label="Issue #1: - subclass sioc:Community from sioc:Container" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

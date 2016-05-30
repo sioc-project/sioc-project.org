@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/blog/1"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioct:Weblog rdf:about="http://sioc-project.org/blog/1">
+  <dc:title>Cloud&#039;s Blog</dc:title>
+  <dc:description>Cloud&#039;s Blog at sioc-project.org</dc:description>
+  <sioc:link rdf:resource="http://sioc-project.org/blog/1" rdfs:label="Cloud's Blog" />
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/343">
+      <rdfs:label><![CDATA[DERI “SIOC” Research Wins Seven-Year Influential Paper Award]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/343" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/342">
+      <rdfs:label><![CDATA[Tales From the SIOC-O-Sphere #10]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/342" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/341">
+      <rdfs:label><![CDATA[Major change to a SIOC term: User is now called UserAccount]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/341" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/337">
+      <rdfs:label><![CDATA[Obama Administration Using Technology Developed at NUI Galway]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/337" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/336">
+      <rdfs:label><![CDATA[Tales from the SIOC-o-sphere #9]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/336" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/335">
+      <rdfs:label><![CDATA[Prize winners visualise Irish online life in the boards.ie SIOC Data Competition]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/335" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/334">
+      <rdfs:label><![CDATA[Tales from the SIOC-o-sphere #8]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/334" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/328">
+      <rdfs:label><![CDATA[Tales from the SIOC-o-sphere #7]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/328" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/311">
+      <rdfs:label><![CDATA[SIOC tutorial accepted for WWW2008]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/311" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/310">
+      <rdfs:label><![CDATA[Tales from the SIOC-o-sphere, part 6]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/310" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/294">
+      <rdfs:label><![CDATA[State of the SIOC-o-sphere (#5)]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/294" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/293">
+      <rdfs:label><![CDATA[SIOC is a W3C Submission]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/293" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/272">
+      <rdfs:label><![CDATA[State of the SIOC-o-sphere (#4)]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/272" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/185">
+      <rdfs:label><![CDATA[Microformats and SIOC]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/185" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/271">
+      <rdfs:label><![CDATA[State of the SIOC-o-sphere (number 3)]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/271" />
+    </sioc:Post>
+  </sioc:container_of>
+  <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/blog/1/15/15" rdfs:label="Posts 15 to 30" />
+</sioct:Weblog>
+</rdf:RDF>

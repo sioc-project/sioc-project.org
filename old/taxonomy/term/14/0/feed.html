@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>SIOC Ontology: Applications and Implementation Status</title>
+  <link href="http://rdfs.org/sioc/applications/img/xmlns-style.css" rel="stylesheet" type="text/css" />
+  <link href="http://rdfs.org/sioc/applications/img/style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  pre {
+    border: 1px dashed #000;
+    padding: 1em;
+    background: #ddd;
+  }
+  p.issue {
+    font-weight: bold;
+    color: #f00;
+  }
+  </style>
+</head>
+
+<body>
+
+<h1 id="title">SIOC Ontology: Applications and Implementation Status</h1>
+
+<h2>15 May 2009</h2>
+
+<dl>
+  <dt>This version:</dt>
+  <dd><a href="feed.html">http://rdfs.org/sioc/applications/</a></dd>
+  <dt>Latest version:</dt>
+  <dd><a href="feed.html">http://rdfs.org/sioc/applications/</a></dd>
+</dl>
+
+<dl>
+<dt>Editors:</dt>
+  <dd><a href="http://captsolo.net/" title="Uldis Bojārs">Uldis Bojārs</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a></dd>
+  <dd><a href="http://www.johnbreslin.com/" title="John G. Breslin">John G. Breslin</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a></dd>
+  <dd><a href="http://apassant.net/" title="Alexandre Passant">Alexandre Passant</a> - <a href="http://www.lalic.paris4.sorbonne.fr" title="LaLIC at Université Paris-Sorbonne (Paris IV)">LaLIC at Université Paris-Sorbonne</a></dd>
+<dt>Authors:</dt>
+  <dd><a href="http://www.wikier.org/" title="Sergio Fern&aacute;ndez">Sergio Fern&aacute;ndez</a> - <a href="http://www.fundacionctic.org/">Fundación CTIC</a></dd>
+  <dd><a href="http://fgiasson.com/" title="Fr&eacute;d&eacute;rick Giasson">Fr&eacute;d&eacute;rick Giasson</a> - <a href="http://www.zitgist.com/">Zitgist LLC</a></dd>
+  <dd><a href="http://www.openlinksw.com/blog/~kidehen/" title="Kingsley Idehen">Kingsley Idehen</a> - <a href="http://www.openlinksw.com/" title="OpenLink Software">OpenLink Software Inc.</a></dd>
+</dl>
+
+<p class="copyright">Copyright &copy; 2006-2007 by <a href="http://www.deri.ie/">DERI Galway</a> at the <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>, Ireland.</p>
+
+<p>Development of SIOC is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131.</p>
+
+<a href="http://creativecommons.org/licenses/by/1.0/"><img alt="Creative Commons License" style="border: 0pt none ; float: right;" src="http://rdfs.org/sioc/applications/img/somerights.gif" /></a>
+
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/1.0/">Creative Commons License</a>. This copyright applies to the <em>SIOC Ontology: Applications and Implementation Status</em> and accompanying documentation and does not apply to SIOC data formats, ontology terms, or technology.</p>
+
+<a href="http://validator.w3.org/check/referer"><img src="http://rdfs.org/sioc/applications/img/valid-xhtml10" style="float: right;" alt="Valid XHTML 1.0!" height="31" width="88"/> </a>
+
+<p>Regarding underlying technology, SIOC relies heavily on W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+
+<hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>The SIOC (Semantically-Interlinked Online Communities) Core Ontology provides the main concepts and properties required to describe information from online communities (e.g., message boards, wikis, weblogs, etc.) on the Semantic Web. This document contains a brief overview of various SIOC implementations and applications.</p>
+
+<h2 id="status">Status of this document</h2>
+
+<p><strong>NOTE:</strong> <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document.</em></p>
+
+<p>Authors welcome suggestions on the <a href="http://rdfs.org/sioc/ns#">SIOC Core Ontology Namespace</a> and this document. Please send comments to the <a href="http://groups.google.com/group/sioc-dev">SIOC developers' mailing list</a> (SIOC-Dev), <a href="http://groups.google.com/group/sioc-dev/topics">public archives</a> are available. This document may be updated or added to based on implementation experience, but no commitment is made by the authors regarding future updates.</p>
+
+<h2 id="toc">Table of contents</h2>
+<ul>
+  <li><a href="feed.html#introduction">1. Introduction</a>
+  </li>
+  <li><a href="feed.html#creating">2. Creating SIOC data</a>
+    <ul>   
+      <li><a href="feed.html#creating-api">2.1 SIOC APIs</a></li>
+      <li><a href="feed.html#creating-exporters">2.2 Weblog, forum and CMS exporters</a></li>
+      <li><a href="feed.html#creating-others">2.3 Other exporters</a></li>
+      <li><a href="feed.html#sparql_endpoints">2.4 SPARQL endpoints</a></li>
+    </ul>
+  </li>
+  <li><a href="feed.html#using">3. Using SIOC data</a>
+    <ul>
+      <li><a href="feed.html#querying">3.1 Querying SIOC data</a></li>
+      <li><a href="feed.html#crawling">3.2 Crawling SIOC data</a></li>
+      <li><a href="feed.html#browsing">3.3 Browsing SIOC data</a></li>
+      <li><a href="feed.html#newdata">3.4 Using SIOC for new data</a></li>
+      <li><a href="feed.html#reusing">3.5 Reusing SIOC data</a></li>
+    </ul>
+  </li>
+  <li><a href="feed.html#utilities">4. SIOC utilities</a></li>
+  <li><a href="feed.html#reference">5. References</a></li>
+  <li><a href="feed.html#changelog">6. Change log</a></li>
+</ul>
+
+<h2 id="introduction">1. Introduction</h2>
+
+<p>All SIOC data uses RDF as an underlying data format, and can be created and processed as such. Various applications have been designed to use SIOC by taking some of its unique aspects into account. In this document, we will outline concrete implementations and applications that use SIOC data. (A complete state-of-the-art list of SIOC implementations is maintained at the <a href="../../../../applications.html">SIOC applications</a> page).</p>
+
+<p>SIOC data can also be processed and used by many generic Semantic Web applications, capable of using RDF. A full list of these applications is outside the scope of this document. For more information about Semantic Web applications and libraries please see "<a href="http://www.w3.org/2001/sw/SW-FAQ#tools">Where do I find tools for Semantic Web development?</a>" section of the <a href="http://www.w3.org/2001/sw/SW-FAQ">Semantic Web FAQ</a>.</p>
+
+<h2 id="creating">2. Creating SIOC data</h2>
+
+<p>SIOC is designed to export information about the content and structure of online community websites in a machine-readable form. Thus, various tools, exporters and services have been created to expose SIOC data from existing online communities.</p>
+
+<h3 id="creating-api">2.1 SIOC APIs</h3>
+
+<dl>
+<dd><b>SIOC Export API for PHP.</b> In order to help people to write SIOC exporters, a <a href="../../../../phpapi.html">SIOC Export API for PHP</a> has been designed, offering an easy way to manipulate SIOC data through PHP objects and methods, and rendering content in an RDF/XML file. The API creates and exports SIOC concepts about the authors (sioc:User plus foaf:Person), posts and comments (sioc:Post and sioc_t:Comment), and the structure of the website (sioc:Site and sioc:Forum).</dd>
+</dl>
+
+<dl>
+<dd><b>SIOC API for Java.</b> A <a href="http://semweb4j.org/site/sioc-api/project-info.html">SIOC API for Java</a> has been created, based on <a href="http://semweb4j.ontoware.org/">semweb4j</a>. For each object in the SIOC ontology, this API generates classes with links between the objects realised as Java properties.</dd>
+</dl>
+
+<dl>
+<dd><b>SIOC API for Perl.</b> Version 1.0 of a SIOC API for Perl has been released on CPAN. The CPAN page for the SIOC API is <a href="http://search.cpan.org/%7Egeewiz/SIOC-v1.0.0/">here</a>. A description of the project itself is available <a href="http://sioc.socialware.at/">here</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>RDF API for Drupal.</b> An <a href="http://drupal.org/project/rdf">RDF API module for Drupal</a> has been <a href="http://groups.drupal.org/node/8930">announced</a> that includes terms from SIOC. This builds on the <a href="http://groups.drupal.org/node/9311">RDF schema proposal for Drupal</a> and <a href="http://groups.drupal.org/node/9010">potential RDF use cases for Drupal</a>.</dd>
+</dl>
+
+<h3 id="creating-exporters">2.2 Weblog, forum and CMS exporters</h3>
+
+<p>Different SIOC exporters have been written for a number of popular weblogs, forums and content management systems (CMS). All of these exporters feature RDF auto-discovery links for SIOC data, and are available via open-source licences.</p>
+
+<dl>
+<dd><b>WordPress SIOC Exporter.</b> <a href="http://www.wordpress.org/">WordPress</a> is a popular blogging platform based on PHP/MySQL. The <a href="../../../../wordpress.html">WordPress SIOC Exporter</a> allows the production of SIOC metadata from WordPress-based blogs, by simply installing two plugin files in the plugins folder and enabling the SIOC plugin from the WordPress control panel. This plugin is the most widely used SIOC exporter.</dd>
+</dl>
+
+<dl>
+<dd><b>Dotclear SIOC Exporter.</b> <a href="http://www.dotclear.net/">Dotclear</a> is a widely-used French blogging platform. The <a href="../../../../dotclear.html">Dotclear SIOC Exporter</a> produces SIOC metadata using the SIOC export API for PHP, and exports information about the blog itself, the blog users, posts and comments.</dd>
+</dl>
+
+<dl>
+<dd><b>b2evolution SIOC Exporter.</b> <a href="http://b2evolution.net/">b2evolution</a> is a multi-blog platform that evolved from the same roots as WordPress (from b2/cafelog). An early version of a <a href="http://sw.deri.org/svn/sw/2005/08/sioc/b2evolution/">b2evolution SIOC Exporter</a> has been built upon the SIOC export API for PHP.</dd> 
+</dl>
+
+<dl>
+<dd><b>Drupal SIOC Exporter.</b> There is also a <a href="../../../../drupal.html">Drupal SIOC Exporter</a>, which can be used to export SIOC data from <a href="http://www.drupal.org/">Drupal</a> sites, including blogs and forums. As Drupal can be used as a multi-user blogging platform, the plugin will export all blogs and all user accounts, so that each post can be clearly identified by its users.</dd>
+</dl>
+
+<dl>
+<dd><b>phpBB SIOC Exporter.</b> <a href="http://www.phpbb.org/">phpBB</a> is one of the most used open-source message board platforms. A <a href="../../../../phpbb.html">phpBB SIOC Exporter</a> has been written that produces SIOC metadata about forums, posts and the users that created them.</dd>
+</dl>
+
+<dl>
+<dd><b>vBulletin SIOC Exporter.</b> The <a href="http://wiki.sioc-project.org/index.php/VBSIOC">vBulletin SIOC Exporter </a> exports SIOC and FOAF data from <a href="http://www.vbulletin.com/">vBulletin</a> discussion forums. It includes a plugin that allows users to opt to export the SHA1 of their e-mail address (and other inverse functional properties) and their network of friends via vBulletin's user control panel.</dd>
+</dl>
+
+<dl>
+<dd><b>BlogEngine.NET.</b> <a href="http://www.dotnetblogengine.net/">BlogEngine.NET</a> has announced a <a href="http://johndyer.name/post/2008/02/Data-Portability-Pack-for-BlogEngineNET.aspx">DataPortability pack for BlogEngine.NET</a> that produces SIOC, APML and FOAF data.</dd>
+</dl>
+ 
+<h3 id="creating-others">2.3 Other exporters</h3>
+
+<dl>
+<dd><b>OpenLink Data Spaces Modules.</b> There are a number of modules for the <a href="http://virtuoso.openlinksw.com/wiki/main/Main/OdsIndex/">OpenLink Data Spaces</a> (ODS) platform that each export SIOC metadata, including ODS-Blog, ODS-Wiki, ODS-Bookmarks, ODS-AddressBook, ODS-Calendar, ODS-Polls, ODS-Gallery (for photos), ODS-Feeds (for feed aggregation and exposure via SIOC), and ODS-Discussion (for comments across blogs, wikis or any other data space that supports some form of commenting).</dd>
+</dl>
+
+<dl>
+<dd><b>Talk Digger.</b> <a href="http://talkdigger.com">Talk Digger</a> is a web service that helps people to find, follow and enter conversations on the Web, in order to see who is linking to a specific web page. Users can create a personal profile, define their interests, make new friends, track conversations, leave comments in conversations, etc. All data from this service is <a href="http://fgiasson.com/blog/index.php?title=implementing_the_sioc_v1_08_ontology_int&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1">exported in RDF/XML using SIOC</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>SWAML</b>. <a href="http://swaml.berlios.de">SWAML</a> is an exporter for mailing list content in Semantic Web format. SWAML reads a collection of e-mail messages stored in a mailbox (from a mailing list compatible with RFC 4155) and generates an RDF description of it. It is written in Python, using SIOC as the main ontology to represent a mailing list in RDF. SWAML is also available as a Debian package (in testing).</dd>
+</dl>
+
+<dl>
+<dd><b>Mailing List Archives</b>. A Java-based application for <a href="http://b4mad-service.net/datenbrei/archives/2006/05/30/generating-sioc-data-out-of-mailing-list-archives/">generating SIOC data from mailing list archives</a> has been developed, leveraging RSS and Atom feeds from web-based message archives. The <a href="http://b4mad.net/2006/05/30/SIOCer-20060530.tar.bz2">source code</a> uses the <a href="http://rdfreactor.ontoware.org/">RDFReactor</a> library for creating RDF APIs, and some <a href="http://b4mad.net/2006/05/30/googlegroups-sioc-dev.rdf">sample SIOC output data</a> is also available.</dd>
+</dl>
+
+<dl>
+<dd><b>Mailing List Explorer.</b> <a href="http://sw.joanneum.at/mle/xplore.php">Mailing List Explorer</a> (MLE) is a tool that allows the exploration of mailing lists via query, timeline view, etc.  It provides RDF representations (including SIOC metadata) for any valid W3C public mailing list archive.</dd>
+</dl>
+
+<dl>
+<dd><b>Twitter2RDF.</b> An <a href="http://chatlogs.planetrdf.com/swig/2007-05-04.html#T14-49-31">RDF exporter for Twitter microblogs has been created</a> that uses SIOC (for the microblog entries) and FOAF (for describing the people). For example, here are representations of <a href="http://www.twitter.com/">Twitter</a> microblogs for two users: <a href="http://tools.opiumfield.com/twitter/captsolo/rdf">captsolo</a> and <a href="http://tools.opiumfield.com/twitter/johnbreslin/rdf">johnbreslin</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>IRC2RDF.</b> An <a href="http://iki.fi/Tuukka/irclogs">RDF converter for IRC</a> has been created that exports metadata in <a href="http://tuukka.iki.fi/tmp/logindex.turtle">Turtle</a> format, and SIOC is being used as one of the main representation formats.</dd>
+</dl>
+
+<dl>
+<dd><b>Sioku.</b> <a href="http://www.jaiku.com/">Jaiku</a> is another microblogging site for which the <a href="http://sioku.sioc-project.org/">Sioku Jaiku2RDF service</a> has been created using Ruby on Rails. SIOC and FOAF are used as the main vocabularies for representing streams of microblog entries and for describing people and their contacts respectively.</dd>
+</dl>
+
+<dl>
+<dd><b>Seesmic.</b> The <a href="http://www.seesmic.com/">Seesmic</a> microvlogging service (known as "the video Twitter") has decided to <a href="http://dannyayers.com/2007/10/09/another-mainstream-online">adopt the SIOC ontology</a> as one of their <a href="http://blogs.zdnet.com/Howlett/?p=194">open platform formats</a> (along with FOAF and DC).</dd>
+</dl>
+
+<dl>
+<dd><b>gnizr.</b> <a href="http://imagemattersllc.com/">ImageMatters</a> have announced a new open source social bookmarking and mashup application called <a href="http://gnizr.googlecode.com/">gnizr</a>, that <a href="http://www.flickr.com/photos/14804582@N08/2038128741/in/photostream/">exports saved bookmarks</a> using SIOC and a <a href="http://www.holygoat.co.uk/projects/tags/">tag ontology</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>OpenQabal.</b> <a href="https://openqabal.dev.java.net/">OpenQabal</a>, an open source social networking and collaboration platform, is to include SIOC support, allowing <a href="http://rollerweblogger.org/project/">Roller</a>, <a href="http://www.javabb.org/">JavaBB</a> and other packaged component applications to become part of the SIOC-o-sphere.</dd>
+</dl>
+
+<dl>
+<dd><b>Custom exports.</b> Some sites have developed custom SIOC exports for their own applications. For example, here is some <a href="http://jongerenraadborsele.nl/forum/sioc.rdf">SIOC forum data</a> produced from a <a href="http://jongerenraadborsele.nl/forum/">Dutch community forum</a>. Here is some <a href="http://www.welzl.info/id/sioc2005.rdf">SIOC blog data</a> produced by <a href="http://oskar.twoday.net/stories/4376752/">SIOC-enabling an RSS template</a>. Some other custom blog sites are producing SIOC data in RDFa or eRDF (<a href="http://triplr.org/rdf/http://semwebdev.keithalexander.co.uk/blog/">1</a>, <a href="http://research.talis.com/2005/erdf/extract?uri=http://tom.opiumfield.com/blog/">2</a>). A custom <a href="http://b4mad-service.net/datenbrei/archives/2006/05/22/sioc-from-foafroll/">SIOC exporter for a blog aggregator</a> has also been produced. Another useful guide in French describes how to add SIOC, DC and XSD RDFa metadata to your blog in two parts: <a href="http://www.lespetitescases.net/rdfaiser-votre-blog-1-la-theorie">the theory</a> and <a href="http://www.lespetitescases.net/rdfaiser-votre-blog-2-la-pratique">the practice</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>memoQ.</b> SIOC data is now being produced by <a href="http://memoq.semanticweb.org/">memoQ</a> from the <a href="http://www.nii.ac.jp/">National Institute of Informatics, Japan</a>. memoQ allows conference participants to more easily ask their questions at academic conferences, by inputting their memos on a web page set up specifically for each presentation. SIOC terms such as Forum, Post and User are being used to export this data.</dd>
+</dl>
+
+<h3 id="sparql_endpoints">2.4 SPARQL endpoints</h3>
+
+<dl>
+<dd><b>OpenLink Data Spaces.</b> <a href="http://virtuoso.openlinksw.com/wiki/main/Main/OdsIndex/">OpenLink Data Spaces</a> (ODS) SPARQL endpoints provide access to SIOC instance data from a range of ODS application instances. The <a href="http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef">ODS SIOC reference</a> wiki page describes the SIOC data available from these applications via ODS, including blogs, wikis, aggregated feeds (RSS 1.0, 2.0 and Atom), shared bookmarks, discussions (i.e. comment threads), photo galleries, briefcases (e.g. WebDAV file servers), etc. The live <a href="http://demo.openlinksw.com/sparql/">ODS demo server</a> and <a href="http://myopenlink.net:8890/sparql/">MyOpenLink.net (alpha) service</a> are examples of ODS instances that can expose SIOC instance data to SPARQL query service clients, also in the form of real and virtual RDF graphs.</dd>
+</dl>
+
+<h2 id="using">3. Using SIOC data</h2>
+
+<h3 id="querying">3.1 Querying SIOC data</h3>
+
+<p>All SIOC data can be queried using SPARQL, once the SIOC Core Ontology and Module Namespaces are defined in the SPARQL query.</p>
+
+<dl>
+<dd><b>OpenLink Data Spaces.</b> As mentioned in <a href="feed.html#sparql_endpoints">section 2.4</a>, <a href="http://virtuoso.openlinksw.com/wiki/main/Main/OdsIndex">ODS</a> exposes all its data as real or virtual RDF graphs via its <a href="http://www.openlinksw.com/virtuoso/">Virtuoso</a>-based quad store. The <a href="http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef">ODS SIOC reference</a> wiki page describes how various application realms are mapped to SIOC, along with an extensive collection of SPARQL query examples and live demonstration links for interacting with the SIOC instance data.</dd>
+</dl>
+
+<dl>
+<dd><b>#B4mad.Net.</b> The <a href="http://b4mad.net/sparqs/">#B4mad.Net SPARQL endpoint</a> has been set up to query SIOC data from <a href="http://www.planetrdf.com/">PlanetRDF</a> and the <a href="http://groups.google.com/group/sioc-dev">SIOC-Dev</a> mailing list at Google Groups. This service uses <a href="http://arc.web-semantics.org/home">ARC</a> and the <a href="http://xmlarmyknife.org/docs/rdf/sparql/ajax.html">XMLArmyKnife SPARQL AJAX library</a>. Some <a href="http://b4mad.net/sparqs/sparql.html">demos of SIOC queries</a> are given.</dd>
+</dl>
+
+<h3 id="crawling">3.2 Crawling SIOC data</h3>
+
+<dl>
+<dd><b>SIOC Crawler.</b> SIOC data can be collected by a crawler that traverses the Web and retrieves any SIOC data it finds. The crawler starts with a list of "seed" SIOC URLs and follows rdfs:seeAlso links used to point to more SIOC and RDF data. This is a generic principle for crawling RDF documents, so a generic RDF crawler could be used. The <a href="../../../../crawler.html" title="SIOC Crawler">SIOC Crawler</a>, however, has additional knowledge about the structure of SIOC data which allowed the enhancement of this crawler with advanced functionality, e.g., incremental retrieval of new SIOC data in threads.</dd>
+</dl>
+
+<h3 id="browsing">3.3 Browsing SIOC data</h3>
+
+<dl>
+<dd><b>SIOC Browser.</b> The <a href="../../../../browser.html">SIOC Browser</a> allows people to browse and receive additional information from SIOC data sources or data stores. Browsers can work in two modes - on-the-fly mode and crawler mode - or can use a combination of both (<a href="feed.html#bojars-et-al-2006">Bojars et al., 2006</a>). The <a href="http://sparql.captsolo.net/browser/browser.py">on-the-fly or live browser</a> is a simple and effective way to explore community information available in SIOC. It gives a user-friendly look at the internal structure of the data without requiring the viewers to dive into a more complex RDF/XML syntax. A triple-store interface - that can be plugged onto any triple store that offers a SPARQL endpoint - has also been written for <a href="http://apassant.net/home/2006/06/sioc-browser/">browsing crawled SIOC data</a>, providing methods to visualise this data in both textual and graphical ways.</dd>
+</dl>
+
+<dl>
+<dd><b>Buxon.</b> <a href="http://swaml.berlios.de/#buxon">Buxon</a>, a sioc:Forum browser, was released as a part of SWAML 0.0.3 and is now available as an independent package. Written in PyGTK, it reads sioc:Forum information from RDF files and shows it as a tree of message threads. See this <a href="http://swaml.berlios.de/images/screenshots/buxon_02.png">Buxon screenshot</a> from the application. It is available as a Debian package.</dd>
+</dl>
+
+<dl>
+<dd><b>SIOC Explorer.</b> The <a href="https://launchpad.net/sioc-ex">SIOC Explorer</a> is a web application which can aggregate posts from community web sites publishing SIOC data. The SIOC Explorer allows you to view and navigate based on all exported RDF data, not just SIOC, by utilising a domain-independent faceted-browsing approach. It has been implemented in Ruby on Rails and the <a href="http://www.activerdf.org/">ActiveRDF</a> / <a href="http://wiki.activerdf.org/SWORD/">SWORD</a> Semantic Web application framework for Rails.</dd>
+</dl>
+
+<dl>
+<dd><b>Other browsers.</b> SIOC data can also be browsed using generic tools, such as <a href="http://sites.wiwiss.fu-berlin.de/suhl/bizer/ng4j/disco/">Disco</a>, the <a href="http://demo.openlinksw.com/DAV/JS/rdfbrowser/index.html">OpenLink RDF Browser</a>, <a href="http://www.w3.org/2005/ajar/tab">Tabulator</a>, <a href="http://simile.mit.edu/timeline/">Timeline</a> or <a href="http://browser.zitgist.com:8890/">Zitgist</a>, directly using SIOC data in RDF/XML or by translating it into a specific data type.</dd>
+</dl>
+
+<h3 id="newdata">3.4 Using SIOC for new data</h3>
+
+<dl>
+<dd><b>Fishtank.</b> <a href="http://www.patrickgmj.net/node/71">SIOC descriptions of fora for teaching and learning</a> demonstrate another <a href="http://www.patrickgmj.net/node/90">use for SIOC data </a> in the <a href="http://facultyacademy.org/blog07/faculty-academy-bloggers/">Fishtank</a> application for the <a href="http://facultyacademy.org/blog07/">Faculty Academy</a>. This application also aims to use the structure and searching power of RDF to fully utilise tags and feeds on blogs, by combining people's RSS feeds with SIOC data using RAP and <a href="http://triplr.org/">Triplr</a>.</dd>
+</dl>
+
+<dl>
+<dd><b>BAETLE.</b>  <a href="http://code.google.com/p/baetle/">BAETLE</a> (Bug And Enhancement Tracking LanguagE) aims to create a software bug ontology that can be used by various repositories to enable people to query for bugs across these repositories. SIOC is being used to define some of the required terms.</dd>
+</dl>
+
+<dl>
+<dd><b>RDFa on Rails.</b> <a href="http://rubyforge.org/projects/rdfa/">RDFa on Rails</a> is a library of helper methods to help Ruby on Rails developers with producing RDFa data. SIOC terms are used to describe blog posts in this library.</dd>
+</dl>
+
+<dl>
+<dd><b>IkeWiki.</b> <a href="http://ikewiki.salzburgresearch.at/">IkeWiki</a> is a semantic wiki for knowledge engineering. IkeWiki allows discussions (following a forum style with threaded views) to be attached to wiki pages. These discussions are <a href="http://sourceforge.net/mailarchive/forum.php?thread_name=4682C52A.5020307%40salzburgresearch.at&forum_name=ikewiki-users">represented using the SIOC ontology</a>, which allows one to use semantic queries to investigate the structure of any discussion.</dd>
+</dl>
+
+<dl>
+<dd><b>int.ere.st.</b> <a href="http://int.ere.st/">int.ere.st</a> provides metadata creation and sharing support across online communities that use tag data. int.ere.st aims to build a tag-mediated society based on Semantic Web technologies, and resources in the site are based on RDF vocabularies including SIOC, FOAF, and SCOT.</dd>
+</dl>
+
+<dl>
+<dd><b>OpenLink Virtuoso AMI.</b> <a href="http://www.openlinksw.com/">OpenLink</a> have released an EC2 / S3 Amazon Image-version of their Virtuoso product, which includes SIOC support: "your blogs, wikis, bookmarks, etc. are based on the SIOC ontology (think open social graph++)".</dd>
+</dl>
+
+<dl>
+<dd><b>Talis Engage.</b> <a href="http://www.talis.com/engage/">Engage</a>, the community information application from <a href="http://www.talis.com/">Talis</a>, is <a href="http://blogs.talis.com/engage/2007/11/15/engage-and-sioc/">using SIOC</a>, SKOS and FOAF.</dd>
+</dl>
+
+<dl>
+<dd><b>SIOC Comments Widget.</b> A <a href="<a href="http://kwijibo.talis.com/experiments/jsonp/comments.test.html">JavaScript SIOC-flavoured comments widget</a> has been <a href="http://blogs.talis.com/n2/archives/17">described</a> by <a href="http://www.talis.com/">Talis</a> that allows comments functionality to be added to a section of any page identified with a "sioc:has_reply" property using a short piece of embedded widget code (as <a href="http://kwijibo.talis.com/experiments/jsonp/comments.test.html#Post">shown here</a>. This is powered by Talis' <a href="http://convert.test.talis.com/">Convert</a> service, which enables the creation of client-side Semantic Web applications.</dd>
+</dl>
+
+<h3 id="reusing">3.5 Reusing SIOC data</h3>
+
+<dl>
+<dd><b>IKHarvester.</b>  <a href="http://dobrzanski.net/2007/04/13/ikharvester/">IKHarvester</a>, a component for the <a href="http://sourceforge.net/projects/didaskon">Didaskon</a> curriculum assembly framework, collects data from semantic social spaces (wikis, blogs, etc.) and provides it to Didaskon as informal learning objects (LOs). SIOC data exported from blogs and wikis is gathered and mapped to learning object metadata (LOM) with IKHarvester.</dd>
+</dl>
+ 
+<dl>
+<dd><b>notitio.us and JeromeDL.</b> <a href="http://notitio.us/">notitio.us</a>, a social bookmarking and knowledge harvesting system, provides <a href="http://wiki.corrib.org/index.php/S3B/SSCF/SIOCSupport">SIOC metadata support through SSCF</a> (social semantic collaborative filtering). The SSCF functionality can be seen in action at <a href="http://notitio.us/bookmarks">notitio.us/bookmarks</a>, which can also display the associated SIOC data from bookmarked sites, forums and posts. This functionality is also implemented in the <a href="http://www.jeromedl.org/">JeromeDL</a> semantic digital library system.</dd>
+</dl>
+
+<h2 id="utilities">4. SIOC utilities</h2>
+
+<dl>
+<dd><b>Semantic Radar.</b> To facilitate end-user access to SIOC data, the <a href="../../../../firefox.html">Semantic Radar</a> - a Firefox browser extension - detects the presence of SIOC, FOAF and DOAP data in a web page, and alerts a user who then has the possibility to browse the data in an online SIOC browser.</dd>
+</dl>
+
+<dl>
+<dd><b>PingTheSemanticWeb.</b> The Semantic Radar application can also ping the <a href="http://www.pingthesemanticweb.com">PingTheSemanticWeb</a> (PTSW) website, an online service that collects, stores and distributes links to RDF documents for every ping, and this is an efficient way to find and index SIOC data over the Web (<a href="feed.html#bojars-et-al-2007">Bojars et al., 2007</a>). Through this index, external services such as <a href="http://doapstore.org">doap:store</a> or <a href="http://sindice.com">Sindice</a> can use the PTSW service to find data.</dd>
+</dl>
+
+<dl>
+<dd><b>SpecGen4.</b>  The <a href="http://rdfs.org/sioc/spec">SIOC Core Ontology Specification</a> is generated using the <a href="../../../../specgen.html" title="SpecGen4">SpecGen4</a> Python-based ontology specification generator for RDFS/OWL. This utility identifies SIOC class and property terms from the <a href="http://rdfs.org/sioc/ns">SIOC Core Ontology Namespace in RDFS/OWL</a>, and generates a customised HTML specification file using these terms in combination with a template and some per-term definition files.</dd>
+</dl>
+
+<h2 id="reference">5. References</h2>
+
+<ul>
+  <li><a name="ref-rfc4155" id="ref-rfc4155"></a>[RFC 4155] E. Hall, "The application/mbox Media Type," RFC 4155, The Internet Society, September 2005, <a href="http://www.ietf.org/rfc/rfc4155.txt">http://www.ietf.org/rfc/rfc4155.txt</a>.</li>
+  <li><a name="bojars-et-al-2006" id="bojars-et-al-2006"></a>[Bojars et al., 2006] U. Bojars, J.G. Breslin, A. Passant, "<a href="http://sw.deri.org/~jbreslin/publications/20061003_btr_2006.pdf">SIOC Browser - Towards a Richer Blog Browsing Experience</a>", The 4th Blogtalk Conference (Blogtalk Reloaded), Vienna, Austria, October 2006.</li>
+  <li><a name="bojars-et-al-2007" id="bojars-et-al-2007"></a>[Bojars et al., 2007] U. Bojars, A. Passant, F. Giasson, J.G. Breslin, "An Architecture to Discover and Query Decentralised RDF Data", The 3rd Workshop on Scripting for the Semantic Web, The 4th European Semantic Web Conference (ESWC '07), Innsbruck, Austria, June 2007.</li>
+</ul>
+
+<h2 id="changelog">6. Change Log</h2>
+
+<ul>
+  <li>2006-10-24: Initial version of this document.</li>
+  <li>2007-05-09: Revised document, added information about Buxon, SIOC Explorer.</li>
+  <li>2007-06-12: Revisions for rdfs.org.</li>
+  <li>2007-08-09: Added ODS Modules, OpenLink RDF Browser, Zitgist, Mailing List Exporer, IkeWiki, int.ere.st.</li>
+  <li>2007-11-30: Added OpenQabal, Virtuoso AMI, Seesmic, gnizr and Talis Engage.</li>
+  <li>2009-05-15: Added first batch of new appplications described in "Tales from the SIOC-o-sphere #7" (as far as BlogEngine.NET). Still have the rest of #7, #8 and #9 to do.</li>
+</ul>
+
+<address><a href="mailto:uldis.bojars@deri.org">uldis.bojars@deri.org</a></address>
+<address><a href="mailto:john.breslin@deri.org">john.breslin@deri.org</a></address>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/210"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/210">
+  <dc:title>Fwd: CfP: Workshop on Social Aspects of the Web (SAW 2007) at BIS 2007</dc:title>
+  <sioc:content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Workshop on Social Aspects of the Web (SAW 2007)
+in conjunction
+with
+10th International Conference on Business Information Systems BIS 2007
+&amp;nbsp;
+
+&amp;nbsp;
+TOPICS OF THE WORKSHOP
+&amp;nbsp;
+
+social
+     networks analysis in weblogs, forums and comment pages
+static
+     and dynamic analysis of folksonomies
+advances
+     in social networking services
+social
+     bookmarking services paradigms and empirical analysis
+social
+     roles and leadership in Web-based communities
+static
+     and dynamic public opinion / mood analysis based on Web sources
+products
+     / places rating based on user opinions from Web sources
+trust and
+     distrust propagation in on-line communities
+on-line
+     social identity / identities and social capital
+geographical-context-aware
+     Web-based social applications
+social
+     mash-ups for existing non-social web sites / applications
+topical
+     and functional analysis of Web-based discourse
+social
+     norms, social control and deviant behaviour in Web-based communities
+conflicts
+     resolution in Web-based communities
+social,
+     evolving Web sources use in information retrieval tasks
+dynamics
+     and patterns of information propagation in social Web applications
+viral
+     marketing in Web-based communities
+detecting
+     user behaviour patterns and trends from large scale communities
+mining of
+     interaction / discourse patterns in Web-based communities
+Web-based
+     communities cohesion and stability
+
+
+&amp;nbsp;
+
+&amp;nbsp;
+SUBMISSION
+&amp;nbsp;
+
+Long
+     papers:  max. 5000 words
+Work-in-progress
+     rep.: max. 2500 words
+Position
+     papers: max. 2500 words
+
+&amp;nbsp;
+Electronic submission system available at: http://bis.kie.ae.poznan.pl
+&amp;nbsp;
+
+&amp;nbsp;
+IMPORTANT DATES
+&amp;nbsp;
+February 18, 2007       submission deadline for papers
+March 20, 2007          notification about
+acceptance/rejection
+April 4, 2007               submission of final papers
+April 25-27, 2007       the conference
+
+&amp;nbsp;
+
+&amp;nbsp;
+Organizer:
+Poznan University</sioc:content>
+  <dcterms:created>2007-02-23T10:00:12+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/210" rdfs:label="Fwd: CfP: Workshop on Social Aspects of the Web (SAW 2007) at BIS 2007" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

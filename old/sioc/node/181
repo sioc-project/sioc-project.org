@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/181"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/181">
+  <dc:title>Literal Mistake</dc:title>
+  <sioc:content>For some reason I have been thinking for a while that one could have
+literals such as
+[] :title &quot;Silly Mistake&quot;@en^^:html .
+I think it was the fact that there were two symbols (@ and ^^) that
+made me think this way.
+But of course the similarity between the N3 ^ and the literal ^^
+should have sounded the alarm bells more clearly.
+This does not affect the current ontology, but it does seem to put an
+end to some of my recent hopes of simplifying the ontology by having
+the object of the :title, :subtitle, :summary relations be a literal.
+I needed to be able to specify the language, the base url and the
+literal type for html content especially. This is because the atom
+spec specifies that text constructs are language sensitive
+[[
+3.1 Text Constructs
+A Text construct contains human-readable text, usually in small
+quantities. The content of Text constructs is Language-Sensitive.
+atomPlainTextConstruct =
+    atomCommonAttributes,
+    attribute type { &quot;text&quot; | &quot;html&quot; }?,
+    text
+atomXHTMLTextConstruct =
+    atomCommonAttributes,
+    attribute type { &quot;xhtml&quot; },
+    xhtmlDiv
+atomTextConstruct = atomPlainTextConstruct | atomXHTMLTextConstruct
+]]
+For xhtml it is possible to push the language tag onto the
+&quot;&quot; that starts the xhtml and even add a base tag on there
+to deal with relative links.
+Plain text has no use for the base attribute, and the xml:lang can be
+dealt with with the @ notation.
+It is with html that this all comes to a big crunch. Here the base
+and the language attributes make sense, but unless we do html
+rewriting, I don&#039;t know how to deal with either of those pieces of
+information using literals. We can specify the :html literal type as
+with
+[] :title &quot;Important entry&quot;^^:html .
+But where do we put the base info, or the language info? It looks
+like we are stuck with using the :Content class. And html rewriting
+is not easy thing to do using xquery. (or is it?)
+Or is there something I have not thought of?
+Henry
+Home page: http://bblfish.net/
+Sun Blog: http://blogs.sun.com/bblfish/
+Foaf name: http://bblfish.net/people/henry/card#me
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-30T22:38:46+00:00</dcterms:created>
+  <dcterms:modified>2006-11-07T14:57:41+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/181" rdfs:label="Literal Mistake" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/66%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/66" />
+</sioc:Post>
+</rdf:RDF>

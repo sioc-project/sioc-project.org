@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/310"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/310">
+  <dc:title>Tales from the SIOC-o-sphere, part 6</dc:title>
+  <sioc:content>Here are the latest happenings from the world of SIOC during the past few months, with thanks to all involved in supporting the initiative!  (Note to new readers that SIOC is an open data format for community description.)
+
+Engage, the community information application from Talis, is using SIOC, SKOS and FOAF.
+Loic Le Meur&#039;s Seesmic microvlogging service (&quot;the video Twitter&quot;) has decided to adopt the SIOC ontology as one of their open platform formats (along with FOAF and DC; see 1, 2).
+OpenLink have released an EC2 / S3 Amazon Image-version of their Virtuoso product, which includes SIOC support: &quot;your blogs, wikis, bookmarks, etc. are based on the SIOC ontology (think open social graph++)&quot;.
+PTSW&#039;s namespace statistics page lists SIOC as their fourth most used namespace out of 423.
+Planet Semantic Focus has launched, and plans to expose PSF community member discussions using SIOC and to interlink these with comments from the original blogs themselves shortly.
+Dan Brickley has published a nifty FOAF classes and properties diagram which shows the internal and external links (to SIOC, DOAP, Geo, etc.).
+Thomas Burg has received a grant from IPA&#039;s &quot;netidee&quot; funding call which will be used to develop a SIOC API for Perl.
+Oskar Welzl has SIOC-enabled the skin on his own blog and a friend&#039;s to produce combined RSS and SIOC descriptions (with an aggregate archive).  You can view this in Tabulator starting at this URL.
+Dorai Thodla has written about Doug Englebart&#039;s &quot;Networked Improvement Community&quot; idea, and he discusses the overlap between improvement communities and the interlinked communities created via SIOC.
+Phillip Rhodes tells us about OpenQabal, an open source social networking and collaboration platform that will include SIOC support, allowing Roller, JavaBB and other component applications to become part of the SIOC-o-sphere.
+ImageMatters have announced a new open source social bookmarking and mashup application called gnizr, that exports saved bookmarks using SIOC and a tag ontology.
+Finally, the forthcoming Semantic Technologies Conference 2008 has listed SIOC among their appropriate topic areas in their call for proposals.  Start writing now, the deadline has been extended to 10th December!
+
+</sioc:content>
+  <dcterms:created>2007-12-01T10:05:19+00:00</dcterms:created>
+  <dcterms:modified>2008-05-15T14:03:46+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/310" rdfs:label="Tales from the SIOC-o-sphere, part 6" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

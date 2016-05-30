@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/188"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/188">
+  <dc:title>Semantic Radar for Opera &amp;amp; Internet Explorer users !!!</dc:title>
+  <sioc:content>Semantic Radar [1] has been available as a Firefox browser extension
+for sime time now.
+[1] http://sioc-project.org/firefox/
+That brings questions from users of other browsers (Opera, IE, Safari,
+...) - can we get it for our browser. Until now the answers was no.
+Plus I decided against writing a BHO specifically for IE - that would
+not be a rational use of resources.
+Semantic Radar / JS [2] is an answer to the question. It&#039;s a JavaScipt
+user script that shall work with Opera and GreaseMonkey in Firefox.
+[2] http://sparql.captsolo.net/2006/11/semanticradarjs.user.js
+I will appreciate if someone could suggest how to adapt it with
+Internet Explorer. Checked it now with Trixie and Turnabout for IE,
+but it did not work &quot;out of the box&quot;. This means some work and
+collaborative effort is necessary to get this thing really running.
+There are 3 applications (AFAIK) that can run user javascript on IE:
+GreaseMonkeyIE, Trixie and Turnabout.
+This is (one of many places in SIOC Project) where you can get
+involved. Please test how SemRadar/JS works for you and send your
+bugreports and fixes. Testing this with many different combinations of
+browsers and web pages can be a laborous task and unfortunately there
+is only so much I can do w/o help. :)
+P.S. Ideally it would be good if someone would sign up as a &quot;module
+owner&quot; for SemRadar/JS at least for getting and keeping it working
+with Internet Explorer, Opera and other browsers (I mainly use Firefox
+and its SemRadar extension).
+P.P.S. There are other places where help is needed. Especially in
+testing how our tools work in different conditions (for different
+webpages, different versions of blog engines, browsers, ...),
+reporting back if there are problems and suggesting how to fix them.
+All such feedback can be sent to this list.
+I&#039;ve created a new wiki page HowToParticipate [3] for information like
+this. If you have any SIOC Project (or SemWeb in general) tasks that
+need help please describe them on the page. That includes new ideas
+(maybe another page is needed for that) which you think are cool but
+are not able to implement right now. Maybe there&#039;s someone out there
+looking for a cool idea to do. :)
+[3] http://wiki.sioc-project.org/HowToParticipate
+Uldis
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+ You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-11-12T04:48:40+00:00</dcterms:created>
+  <dcterms:modified>2006-11-13T20:26:01+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/188" rdfs:label="Semantic Radar for Opera &amp; Internet Explorer users !!!" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

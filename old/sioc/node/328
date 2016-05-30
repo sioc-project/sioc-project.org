@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/328"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/328">
+  <dc:title>Tales from the SIOC-o-sphere #7</dc:title>
+  <sioc:content> It&#039;s been three months since my last round-up of all things SIOC-ed, so here is entry number seven in the series:
+
+Version 1.0 of a SIOC API for Perl has been released on CPAN!  The CPAN page for the SIOC API is here.  A description of the project itself is available here.  Thanks to Jochen Lillich, Thomas N. Burg, and also to Internet Privatstiftung Austria (IPA) for funding this work.
+A new RDF API module for Drupal has been announced that will include sub-classes / sub-properties of popular terms from SIOC, DC, etc.  (Drupal creator Dries Buytaert has also said that an RDF API will appear in the core of Drupal 7; see this video.)  Stephane Corlosquet has also made an RDF Schema proposal for Drupal (which includes SIOC) and has received very positive feedback.  Some potential RDF use cases for Drupal have also been described.
+Gautier Poupeau has written a useful guide (en Français) on how to RDF-ise your blog in two parts: the theory and the practice.  It uses RDFa and vocabularies including SIOC, SIOC Types, DC Elements, DC Refinements and XSD.
+SIOC data is now being produced by memoQ by Yuki Matsuoka and Hideaki Takeda of the National Institute of Informatics, Japan.
+Keith Alexander at Talis has described (and shown) how it is possible to create client-side Semantic Web applications using their Convert service.  For example, on this page comments functionality is added to a section identified with a &quot;sioc:has_reply&quot; property using a short piece of embedded widget code.
+ASP.net developer John Dyer has written a nice post on DataPortability and its standards, talking about OpenID, FOAF, SIOC, APML, etc.  Daniel Lewis has also written a good overview of DP.  More recently, John announced the DataPortability pack for BlogEngine.NET that produces SIOC, APML and FOAF.  BlogEngine.NET founder Mads Kristensen has also written about data portability and making an API to your website.
+OpenLink&#039;s Personal Data Space Explorer now also exposes SIOC, FOAF and other RDF data.  See Kingsley&#039;s post on linked data via FOAF and SIOC.
+Uldis Bojars, Alex Passant and I will present a tutorial entitled &quot;Interlinking Online Communities and Enriching Social Software with the Semantic Web&quot; at the 14th International World Wide Web Conference (WWW2008) in Beijing this month.
+I did an interview with SemanticWeb.com called &quot;SIOC-ing the Semantic Web&quot; in January, and talked to PCWorld about data portability and SIOC. Uldis recorded a podcast with Talis in February with SIOC as one of the main topics. (Eric Miller also described in another Talis podcast how FOAF and SIOC are useful not only for getting at historical content, but for providing fine-tuned content-delivery systems connecting people interested in various aspects of a particular domain.)
+Alex has produced a universal SIOC reader widget.  The widget can query for SIOC data from any SPARQL endpoint that provides a JSON output for SELECT queries.  (Alex has also released the Meaning of a Tag ontology which links with SIOC and SCOT.)
+Phillip Rhodes has been working on the OpenQabal &quot;social software operating system&quot; which integrates a set of applications (including Roller and JavaBB ) via single sign-on (SSO), a common look-and-feel, and SIOC.
+Sean Palmer has written an interesting article entitled &quot;One Semantic Application, One UI?&quot; in which he talks about Tabulator and its interfaces, including application specific panes for FOAF, SIOC and DOAP.
+Tim Berners-Lee talked about FOAF and SIOC in an interview with Marie Boran from Silicon Republic for the Irish Independent: &quot;A project that started back in 2000 called Friend-of-a-Friend (FOAF) represents relationships between people, as well as basic contact details.  SIOC does this for groups: it extends the FOAF idea to being able to talk about whole groups of people.  Groups are a very important part of the Web because online communities are where we form our trust.  It is very useful to build tools that apply to all the online communities so they can all generate this social trust information.  I am excited about SIOC because you can use that information to determine trust, to let people in.  If someone is in a group that a friend of mine is part of, I can create another relationship based on that.&quot;
+Uldis, Tuukka Hastrup and Thomas Schandl are updating Uldis&#039; WordPress SIOC Importer, which allows you to create blog posts based on SIOC data ported from weblogs, mailing lists, forums, IRC, etc.
+Chris Bizer, Richard Cyganiak and Tom Heath have published a very useful document called &quot;How to Publish Linked Data on the Web&quot; (mentions vocabularies to use like FOAF, DC, SIOC, DOAP, SKOS, MO, Rev and CC).  See also Leo Sauermann and Richard&#039;s &quot;Cool URIs for the Semantic Web&quot;.
+In the area of collaborative work environments, SIOC is being used in the Ecospace project to export metadata from both BSCW and BC.  Here is a BSCW SIOC export service, and there is also a CWE version of the SIOC Explorer (which includes data from both BSCW and BC).
+Sören Auer&#039;s team have produced Triplify, which enables simple mapping of RDB to RDF data in a variety of web applications.  Using Triplify, SIOC and FOAF data can be produced from Drupal 5, WordPress, WackoWiki, and Open Journal Systems.
+The new version of BoardTracker will have an API to export data using SIOC.
+The Sindice group will soon release the SWPop widget for WordPress that allows you to view posts, comments, topics, etc. made by any blog commenter across the SIOC-o-sphere (as indexed by Sindice).  You can see a preview here.
+This is an interesting post by Andrew A. Peterson on how semantic standards like RSS, FOAF and SIOC (SIOD!) can provide sustainable SEO for websites, referencing the Yahoo! Search announcement regarding support for RDF and microformats.
+Ben O&#039;Steen describes a Pylons interface to carry out CRUD functionality where items are linked together semantically using SIOC.
+Leigh Dodds has a fun FOAF (and SIOC) tale about Bee Node (told using SPARQL)!
+I&#039;ve presented at WebCamp on DataPortability, web standards, SIOC and FOAF and recorded a related video on DataPortability and me.  It pales in comparison to this one from Danny Ayers!
+
+Previous SIOC-o-sphere articles:
+#6 http://sioc-project.org/node/310
+#5 http://sioc-project.org/node/294
+#4 http://sioc-project.org/node/272
+#3 http://sioc-project.org/node/271
+#2 http://sioc-project.org/node/138
+#1 http://sioc-project.org/node/79
+</sioc:content>
+  <dcterms:created>2008-04-04T14:47:26+01:00</dcterms:created>
+  <dcterms:modified>2008-05-15T14:03:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/328" rdfs:label="Tales from the SIOC-o-sphere #7" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/73"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/73">
+  <dc:title>Drive-by critique of SIOC</dc:title>
+  <sioc:content>Hi folks,
+Just a couple of notes from my attempt at modelling a blog with SIOC:
+The distinction between Site and Forum is awkward, I don&#039;t want to
+introduce a top-level pseudo-forum for the weblog. I&#039;m not convinced
+that Site and the host properties provide any value.
+sioc:container_of is awkward, sioc:post would be nicer.
+I don&#039;t like all the duplication of DC and FOAF terms. Not invented
+here syndrome? You&#039;ve even reinvented rdf:type.
+The spec talks in length about a Types module, but I can&#039;t find a
+link to it. http://rdfs.org/sioc/types/ is mentioned in the comment
+for sioc:type but is 404.
+Overall impression:
+1. SIOC is great for modelling BBs.
+2. SIOC is not very suited for modelling other types of fora.
+3. SIOC is very well-managed and documented. Applause for that!
+4. SIOC is not a good RDF citizen.
+In summary, I&#039;d use it again when I have to model a BB but not
+otherwise. Just my €0.02.
+Cheers,
+Richard
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-06-02T17:37:15+01:00</dcterms:created>
+  <dcterms:modified>2006-05-30T19:31:43+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/73" rdfs:label="Drive-by critique of SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/31%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/31" />
+</sioc:Post>
+</rdf:RDF>

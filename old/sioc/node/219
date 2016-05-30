@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/219"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/219">
+  <dc:title>Negative experiences with Wordpress and Drupal plugins</dc:title>
+  <sioc:content>I want to demonstrate the use of SIOC in Wordpress and/or Drupal for
+biomedical research purposes, so I tried out the respective SIOC
+plugins. My experience so far was quite negative -- both plugins did
+not work for me.
+I tried the newest Wordpress plugin with Wordpress 2.1, 2.0 and 1.6.
+It was the same with each version: The plugin did not show up in the
+plugin list of Wordpress. I had to add a header-section to the plugin
+files so they would appear in the plugin list. However, after
+activating the plugin, nothing changed. No additional SIOC statements;
+Semantic radar did not indicate SIOC results.
+I also tried the Drupal plugin with the newest version of Drupal
+(4.9), but once again, the plugin was not even shown in the plugin
+list, although I copied it into the correct directory.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-14T16:53:10+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:14+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/219" rdfs:label="Negative experiences with Wordpress and Drupal plugins" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/138%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/138" />
+</sioc:Post>
+</rdf:RDF>

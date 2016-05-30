@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/239"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/239">
+  <dc:title>Property issues and suggestions</dc:title>
+  <sioc:content>Hi all -
+I was awake at 3 AM a few days ago thinking of SIOC properties, and they
+were keeping me awake so I had to come up with an acronym of ones to
+remember (P-U-L-S) that I thought had some issues so that I could e-mail
+you all for comments!
+part_of
+We disconnected this from Community so it could be used with Posts, but
+I think having properties with neither domain or range may be a bit
+weird.  If we come up with a replacement way of saying what containers
+or user(groups) are in a community, I think this could be attached to post.
+usergroup_of
+At the moment, this points to a Site but I think should be changed to Space.
+location_of or something like that
+I was wondering if space_of could be replaced by something like
+location_of, so that you could say for example that a Container is
+located in a particular Space (or set of data spaces if so desired).
+subset_of or something like that
+It&#039;d be nice to be able to define subsets of Spaces and its subclasses
+Site and Community.
+Talk soon, good to hear your opinions,
+John.
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T10:54:21+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:21+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/239" rdfs:label="Property issues and suggestions" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

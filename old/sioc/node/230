@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/230"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/230">
+  <dc:title>SIOC ontology revisions</dc:title>
+  <sioc:content>Hi All,
+&gt; The list of SIOC types at [1] looks good. There may be some
+&gt; fine-tuning of SIOC types as we implement them, some properties may be
+&gt; moved up from Post to Item, but all in all it is a good start and lets
+&gt; us move forward.
+In order to finish SIOC ontology revisions that John posted about
+recently, please have a look at the changes in the SIOC ontology [1]
+and SIOC types module [2] in SVN. This is the first part of revision,
+with the second part being new properties still in discussion on a
+separate thread [3].
+[1] http://sw.deri.org/svn/sw/2005/08/sioc/ontology/ns.rdf
+[2] http://sw.deri.org/svn/sw/2005/08/sioc/ontology/types.rdf
+[3] http://groups.google.com/group/sioc-dev/browse_thread/thread/a443ae44fc9b0441
+Changes include new classes (but not properties) in the SIOC ontology
+and many new subtypes in SIOC types module. If you are OK with these
+changes, we can publish them tomorrow.
+One question which I have is how do you correctly &quot;import&quot; external
+classes into the ontology and say that, e.g., doap:Project is a
+sioc:Item? The solution currently implemented in types.rdf is [
+doap:Project rdfs:subClassOf sioc:Item ]. It avoids duplicating a
+doap:Project class within SIOC (a good thing), but might also be
+called an intrusion in the structure of another ontology. That&#039;s why I
+am asking about it.
+While writing this here are some more improvements we may do:
+ - subclass sioc:topic from a dc:subject;
+ - create sioct:InstantMessage as a subtype of sioc:Post - prompted by
+a question by Jaroslaw on how to model instant messages in SIOC.
+That&#039;s it for the types module and please write your thoughts about
+the new properties discussed in [3].
+Best regards,
+Uldis Bojars
+[ http://captsolo.net/info/ ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T10:54:19+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:19+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/230" rdfs:label="SIOC ontology revisions" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

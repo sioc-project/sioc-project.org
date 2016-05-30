@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/264"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/264">
+  <dc:title>Twitter - more info in RDF</dc:title>
+  <sioc:content>See more ideas about Twitter in RDF below:
+&gt; 4) Replies
+&gt; If a post (A) has &quot;@reply&quot; to another user/post (B) (twitter homepage
+&gt; already includes a hyperlink to a post it thinks this is in reply to)
+&gt; that can be described as:
+&gt; 
+&gt;   
+&gt; 
+Keith has a point (re. IRC discussion) that the meaning of &quot;@nick&quot; on
+twitter may not necessarily mean that one message is in response to
+another.
+That is how twitter home page interprets it when saying &quot;in response
+to &quot; and linking to the last message written by that person. But
+it is not necessarily what that person mean (determining what someone
+was thinking about may be a difficult task anyway :).
+There are different options depending on how much we can derive from a
+twitter message and how deep into detail we want to do. You could:
+a) just say &quot;person X mentioned person Y in his message (A)&quot; - but
+would probably need a new (quite specific?) property for that.
+b) say that &quot;person X replied to person Y in his message (A)&quot; without
+specifying a particular message by Y that a reply is to. you could
+model this case similar are you would model Usenet or email messages -
+by Y being a recipient of a message.
+c) say that &quot;person X in his message (A) replied to person&#039;s Y last
+message (B)&quot; - in this case you can use sioc:has_reply.
+... there can be more ways to look at it ...
+Depends on what you want to use this information for.
+&gt; 5) More possibilities ...
+&gt; have any cool ideas. E.g., you could go to person&#039;s homepage, extract
+&gt; RDF (e.g., FOAF, SIOC) autodiscovery links from it and add it to the
+&gt; exporter RDF.
+same with RDF embedded in person&#039;s homepage, of course.
+Another idea:
+Extract hyperlinks from tweet text and express them as sioc:links_to:
+</sioc:content>
+  <dcterms:created>2007-05-17T09:38:40+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:40+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/264" rdfs:label="Twitter - more info in RDF" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

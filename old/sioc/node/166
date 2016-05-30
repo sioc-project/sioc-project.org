@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/166"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/166">
+  <dc:title>[Fwd: Pathway - A vision for an RDF  browsing/editing tool]</dc:title>
+  <sioc:content>Might be a nice way to visualise conversations...
+-------- Original Message --------
+Subject: 	Pathway - A vision for an RDF browsing/editing tool
+Resent-Date: 	Wed, 27 Sep 2006 05:44:23 +0000
+Resent-From: 	semantic-web@w3.org
+Date: 	Wed, 27 Sep 2006 14:44:01 +0900
+From: 	Karl Dubost 
+To: 	Semantic Web 
+Hi,
+This tool is usable only on Wikipedia and Mac OS X, but the UI is
+exactly what I expect in terms of hiding/showing the Semantic Web. It
+would be worthwhile to contact the author and talk with him about
+RDF. We could try for example on a personal RDF IMDB, or a personal
+RDF Music list (MusicBrainz) browser/editor.
+[[[
+about pathway
+The origin
+My idea for Pathway originated when browsing Wikipedia. I would
+always start off quite focused on a certain subject. Unfortunately,
+Wikipedia articles tend to be full of distracting links, just
+screaming to be clicked on...
+Soon enough, I found myself totally lost in myriads of loosely
+related pages. I can&#039;t count the time I wasted on backtracing them,
+and if you have a bit of wiki-experience, you&#039;ve probably encountered
+it too.
+What I needed, was an application that could easily archive the path
+I follow through Wikipedia pages.
+]]]
+-- Pathway - About Pathway
+http://pathway.screenager.be/index.html
+Sun, 24 Sep 2006 20:45:28 GMT
+--
+Karl Dubost - http://www.w3.org/People/karl/
+W3C Conformance Manager, QA Activity Lead
+  QA Weblog - http://www.w3.org/QA/
+     *** Be Strict To Be Cool ***
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-06T11:35:08+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:08+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/166" rdfs:label="[Fwd: Pathway - A vision for an RDF  browsing/editing tool]" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/237"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/237">
+  <dc:title>online SIOC explorer</dc:title>
+  <sioc:content>Hi all,
+As John Breslin just described [1] on his blog, we have developed a simple
+online SIOC explorer, allowing you to read SIOC content like in a blog
+aggregator.
+The UI is still quite unfinished and importing new blogs/forums is a bit
+broken right now, but I announce it anyway in the spirit of &quot;release early
+and often&quot;, these small glitches will be fixed in the next days.  Reading
+and browsing current content works fine already and all the code is
+off-course open-source [3].  If you have any feedback (including: dude,
+this and this doesn&#039;t work) please reply or file a bug [4].
+Developing this application lead to several SIOC-related questions and
+ideas on our side, I&#039;ll elaborate on that in another email tomorrow.
+(I&#039;m by the way a PhD researcher in DERI. I have also developed ActiveRDF
+[2] which connects RDF data to Ruby-on-Rails.  The SIOC explorer is a
+showcase of data integration and semantic web application development using
+RDF, ActiveRDF, and Rails. And hopefully it will help in making SIOC data
+visible and usable to end-users.)
+ -eyal
+[1] http://www.johnbreslin.com/blog/2007/03/21/sioc-explorer-from-eyal-and-benjamin/
+[2] http://www.activerdf.org
+[3] https://code.launchpad.net/sioc-ex/
+[4] https://bugs.launchpad.net/sioc-ex/+bugs
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-21T19:16:03+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:21+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/237" rdfs:label="online SIOC explorer" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/203%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/203" />
+</sioc:Post>
+</rdf:RDF>

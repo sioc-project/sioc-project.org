@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/133"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/133">
+  <dc:title>SIOC Ontology and Specification - Seeking feedback</dc:title>
+  <sioc:content>We are preparing a W3C member submission of the SIOC ontology and
+specification, and would appreciate your feedback.
+DERI Galway is looking for partners to support the W3C member
+submisson. If your organisation is interested in supporting it, please
+send me an email to uldis.bojars@deri.org and I&#039;ll provide further
+details.
+This has been discussed among SIOC developers on #sioc
+(irc.freenode.net) and provides an opportunity to stabilise the SIOC
+ontology, receive feedback from interested parties and spread awareness
+of SIOC.
+The submission package consists of the SIOC specification (a
+description of the ontology) and document describing current
+implementation status of SIOC and relations of SIOC with other
+standards and ontologies (creation of this document was suggested in
+the feedback, we are composing it now).
+Planned schedule:
+ - partners inform DERI by sending email to Uldis Bojars
+(uldis.bojars@deri.org) about intent to participate
+ - send feedback to the specification (by September 14)
+ - DERI prepares final version of the document package (by September
+19)
+ - Partners confirm that the final version is acceptable
+ - submit to W3C (by September 30)
+Feedback phase may be extended or an additional review phase may be
+added if necessary. All the feedback may be sent to the SIOC-Dev
+mailing list or to me via e-mail. Thanks to all who have already helped
+to improve SIOC.
+Best,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-11T16:13:43+01:00</dcterms:created>
+  <dcterms:modified>2006-09-11T16:13:43+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/133" rdfs:label="SIOC Ontology and Specification - Seeking feedback" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

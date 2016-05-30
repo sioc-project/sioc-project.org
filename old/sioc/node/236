@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/236"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/236">
+  <dc:title>SABRE Conference on SOCIAL SEMANTIC WEB (CSSW 2007)</dc:title>
+  <sioc:content>________________________________________________________________________
+Call for Papers: SABRE Conference on
+        SOCIAL SEMANTIC WEB (CSSW 2007)
+        http://aksw.org/cssw
+        September 2628th, Leipzig, Germany
+________________________________________________________________________
+The concept of Social Software was coined to characterize a variety of
+software and services on the Web, which enable new ways of communication
+and exploit social interactions for creating large content bases from a
+multitude of user contributions. The Semantic Web is a extension of the
+current Web aiming at enhanced search and navigation facilities and at
+integrating information from multiple sources. A question at the moment
+actively discussed in conference panels, visionary papers and project
+proposals is how the different approaches Social Software and Semantic
+Web can be combined in a synergetic way.
+CSSW will provide a podium for the rapidly emerging field of approaches
+aiming at exploiting Social Software concepts for the bootstrapping of
+the Semantic Web and lifting Social Software to the semantic
+collaboration level. CSSW aims at combining three different perspectives
+on the Social Semantic Web:
+* the business and entrepreneurial perspective, focusing on the added
+  value of specific social semantic web applications,
+* the technical perspective, which enables and supports the exploitation
+  of the &quot;ant intelligence&quot; of social networks,
+* the social perspective, which explores motivations, benefits and
+  emergent effects.
+CSSW targets to bring these three perspectives together, to widen
+existing horizons, to create novel ideas and to find new ways of
+understanding this emerging field.
+INVITED TALK
+Kingsley Idehen will give an invited talk on &quot;Hello Data Web  Exposing
+the Data Web&quot;. Kingsley is Founder, President and CEO of OpenLink
+Software, a leading provider of high-performance Universal Data Access,
+Data Integration, Hybrid Database Engine technology and developer of the
+Virtuoso Server. With his entrepreneurial experience, his contributions
+to the technical foundations of the future Web and his backing of the
+Open Data initiatives he ideally combines the different perspectives on
+the Social Semantic Web.
+TOPICS OF INTEREST
+CSSW covers all topics related to Social Semantic Collaboration (SSC) in
+Web based environments. Typical topics of interest include (but are not
+limited to):
+Economic / Entrepreneurial Perspective
+ * Business aspects of SSC
+ * Economies of attention for semantic collaboration
+ * Business models for SSC
+ * Models measuring costs/benefits of SSC
+ * Authentication, authorization and accounting  policies, charging and
+   billing models for social software
+ * Experimental use cases in areas of telecommunication, dating,
+   recruitment, eTourism, eBusiness, eGovernment, etc.
+Technical Perspective
+ * Applying Social Software strategies such as tagging, mashups for SSC
+ * Semantic Data Web: browsers and end-points
+ * Extracting and interlinking semantic content from existing
+   information sources, e.g. Wikipedia, MusicBrainz, GeoNames
+ * Collaborative, community-driven ontology construction
+ * Combining existing ontologies and schemata, social ontology sharing
+   and matching techniques
+ * Reasoning supporting adaptive semantic collaboration, e.g.
+   instance driven learning of Description Logic concepts
+ * Storage, inference and caching for scalable SSC
+ * Exposing and interconnecting Web-APIs as light-weight
+   Semantic Web Services
+ * Social Semantic Web and Mobile services
+ * User-interface components, template languages supporting SSC
+Social Perspective
+ * Analysis, visualization, presentation of social networks
+ * Approaches combining Social Software &amp;amp; Semantic Web
+ * Group management, presence, social interaction enablers
+   in mobile service platforms
+ * Strategies for implementing architectures of semantic participation
+ * Trust and privacy issues in social software
+ * Implementation of gratification and reward systems
+ * Quality analysis of socially generated semantic content
+ * Analysis of motivations and behavior of social software users
+ * Knowledge acquisition and ontology management in SSC
+ * Analysis of emergent effects within social software
+SUBMISSIONS
+Authors are invited to submit original papers of the following types:
+ * Research papers  maximum 10 pages
+ * Posters  4 pages
+ * Demo papers  4 pages
+Submissions should be formatted according to GI-LNI style and  submitted
+in PDF format. Submission details will be found on the conference
+homepage at http://aksw.org/cssw.
+All papers will be published in GI Lecture Notes in Informatics (LNI).
+Best papers from CSSW 2007 will be considered for revision, extension,
+and publication in a special issue of the Journal of Online Engineering.
+DATES AND FORMAT
+Paper, demo, poster submission: June 1st
+The submission deadline is strict, no extensions will be given.
+Notification of acceptance: July 25th
+Conference: September 2628th
+CSSW will be a two day conference with possible workshops:
+ * First day / 26th: 3 research paper sessions, demo and poster session
+ * Second day / 27th: invited speaker, 2 research paper sessions,
+   concluding panel discussion
+ * Third day / 28th: workshops:
+   Softwiki project meeting, dbpedia.org community convention
+Paper acceptance is strictly limited to maximum 18 research papers.
+Additionally, poster and demo submissions are possible.
+CONFERENCE ORGANIZERS
+Sören Auer, Universität Leipzig and University of Pennsylvania, USA
+Chris Bizer, FU Berlin, Germany
+Claudia Mueller, Universität Potsdam, Germany
+Anna V. Zhdanova, University of Surrey, UK
+--
+Dr. John Breslin
+DERI, NUI Galway
+http://sw.deri.org/~jbreslin/
+john.breslin@deri.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-02T10:54:21+01:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:21+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/236" rdfs:label="SABRE Conference on SOCIAL SEMANTIC WEB (CSSW 2007)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

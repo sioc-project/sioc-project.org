@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/278"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>FW: [uf-discuss] Proposal: hArgument Microformat | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>FW: [uf-discuss] Proposal: hArgument Microformat</h2>                                                  <div class="clear-block">
+            <div id="node-278" class="node">
+
+
+
+      <span class="submitted">2007, June 5 - 13:46 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  <div class="content clear-block">
+    <p>
+FYI, sounds like it is related to SIOC+IBIS/RDF.</p>
+<p>J.</p>
+<p>-----Original Message-----<br />
+From: microformats-discuss-bounces@microformats.org on behalf of Costello, Roger L.<br />
+Sent: Sun 20/05/2007 22:37<br />
+To: microformats-discuss@microformats.org<br />
+Subject: [uf-discuss] Proposal: hArgument Microformat</p>
+<p>Hi Folks,</p>
+<p>Michael Crichton says: "The greatest challenge facing mankind is the<br />
+challenge of distinguishing reality from fantasy, truth from<br />
+propaganda. Perceiving the truth has always been a challenge to<br />
+mankind, but in the information age (or as I think of it, the<br />
+disinformation age) it takes on a special urgency and importance." </p>
+<p>One of the keys to distinguishing information from disinformation is to<br />
+have a clear understanding of the assumptions an author is making.<br />
+Typically, it takes a great deal of effort to distill an author's<br />
+assumptions.  Bring clearly to light the assumptions being made would<br />
+go a long way towards facilitating a web of trust.</p>
+<p>I propose an hArgument Microformat with two properties:</p>
+<p>hArgument<br />
+   assumption (repeatable): a statement of what the author assumes to<br />
+be true,<br />
+       and upon which his/her conclusion follows. [If it can be<br />
+demonstrated that<br />
+       the assumption is false, then the conclusion is invalid]</p>
+<p>   conclusion (repeatable): a statement that derives from the<br />
+assumption(s)</p>
+<p>Example: below is an example of an argument.  The argument can be<br />
+immediately discredited because the assumptions can be shown to be<br />
+fallacious:</p>
+<p class="hArgument">
+</p><p>   <span class="assumption">Microformats are a disruptive<br />
+technology</span></p>
+<p>   <span class="assumption">Microformats are attempting to supplant XML</span></p>
+<p>       documents with HTML and XHTML documents</p>
+<p>   <span class="assumption">The main benefit of Microformats is that it</span></p>
+<p>       allows graceful degradation</p>
+<p>   <span class="conclusion">Microformats go too far.</span></p>
+<p>   <span class="conclusion">It's almost better to use a more suited<br />
+       format in such cases</span>
+</p>
+<p>The advantage of this is that there is no need to "guess" what are the<br />
+author's assumptions.  They are clearly identified.</p>
+<p>Use Cases: any web page that tries to convince you of something.  The<br />
+examples are endless.</p>
+<p>Comments?</p>
+<p>/Roger </p>
+<p>_______________________________________________<br />
+microformats-discuss mailing list<br />
+microformats-discuss@microformats.org<br />
+http://microformats.org/mailman/listinfo/microformats-discuss</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="277.html" class="topic-previous" title="Go to previous forum topic">‹ New versions of phpBB and WordPress</a>
+              <a href="280.html" class="topic-next" title="Go to next forum topic">New version of drupal sioc module ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F278%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-459"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, June 5 - 13:46 — <a href="http://sioc-project.org/user/282" title="View user profile.">keith alexander</a></span>
+  
+  
+  
+    <h3><a href="278.html#comment-459" class="active">FW: [uf-discuss] Proposal: hArgument Microformat</a></h3>
+
+    <div class="content">
+      <p>Breslin, John wrote:<br />
+> FYI, sounds like it is related to SIOC+IBIS/RDF.<br />
+><br />
+> J.<br />
+><br />
+><br />
+SIOC+IBIS sounds more interesting to me.</p>
+<p>I've put up a sample of eRDF describing a blog post using sioc and ibis<br />
+on the getsemantic wiki:</p>
+<p>  http://www.getsemantic.com/wiki/A_Blog_Post_in_eRDF_with_IBIS</p>
+<p>Any suggestions or comments on how it can be improved/corrected?</p>
+<p>What is the most natural property of an ibis:Idea - dc:title?<br />
+dc:summary? rdfs:label? sioc:contents ?</p>
+<p>Could  a GRDDLable custom pattern offer a significantly cleaner syntax<br />
+over eRDF and RDFa?</p>
+<p>Keith</p>
+<p>--<br />
+Keith Alexander<br />
+http://semwebdev.keithalexander.co.uk/blog/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F278%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-458"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, June 5 - 13:46 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="278.html#comment-458" class="active">[uf-discuss] Proposal: hArgument Microformat</a></h3>
+
+    <div class="content">
+      <p>An interesting quote from Tim Berners-Lee relevant to typed replies in<br />
+discussions.</p>
+<p>"People are already experimenting with new social machines for online<br />
+peer review, while other tools such as chat rooms developed quite<br />
+independently and before the Web. [] By experimenting with these<br />
+structures, we may find a way to organise new social models that not<br />
+only scale well, but can be combined to form larger structures. [] Id<br />
+always been frustrated that the essential role of a message in an<br />
+argument was often lost information. [] We created a sub-directory<br />
+called Discussion [ that] allowed people to post questions on a given<br />
+subject, read and respond. A person couldnt just reply. He had to say<br />
+whether he was agreeing, disagreeing or asking for clarification of a<br />
+point. The idea was that the state of the discussion would be visible to<br />
+everyone involved."</p>
+<p>These links may be of interest...</p>
+<p>Eran's reply to my post about mf, SIOC and argumentative discussions:<br />
+http://hellonline.com/blog/?p=91</p>
+<p>An existing mf he referenced:<br />
+http://microformats.org/wiki/vote-links</p>
+<p>See also IBIS... The "assumption" you mentioned is more of a "question"<br />
+in IBIS that is supported or refuted, etc.</p>
+<p>Issue-Based Information Systems:<br />
+http://en.wikipedia.org/wiki/Wicked_problem#IBIS_and_successors</p>
+<p>Some terms in an IBIS vocabulary from Danny Ayers:<br />
+http://www.schemaweb.info/schema/SchemaInfo.aspx?id=4</p>
+<p>I think a hIBIS could be a good idea... We also want to include some<br />
+argumentative discussion features in SIOC.</p>
+<p>John.<br />
+--<br />
+Costello, Roger L. wrote:<br />
+> Hi Folks,<br />
+><br />
+> Michael Crichton says: "The greatest challenge facing mankind is the<br />
+> challenge of distinguishing reality from fantasy, truth from<br />
+> propaganda. Perceiving the truth has always been a challenge to<br />
+> mankind, but in the information age (or as I think of it, the<br />
+> disinformation age) it takes on a special urgency and importance."<br />
+><br />
+><br />
+...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F278%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/278?destination=node%2F278"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-NY2YMFMyS0q-cT8KrXcJ1VPS6ZGPbo6tstJxMNCe1as" value="form-NY2YMFMyS0q-cT8KrXcJ1VPS6ZGPbo6tstJxMNCe1as"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

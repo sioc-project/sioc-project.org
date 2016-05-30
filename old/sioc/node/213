@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/213"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/213">
+  <dc:title>Update: SIOC Type Modules Additions</dc:title>
+  <sioc:content>All,
+I am adding Calendars, Reviews, Resumes, Contact/Social Networks, to
+the mix re. SIOC. At first glance you might find this a little
+confusing, but it isn&#039;t when you factor in the following:
+1. Online Communities are a Distributed Collaborative Application
+Profile in Internet and Web Space
+2. Microformats are going to generate a lot of Calendar, Review,
+Resume, and Contact data on the Web in traditional Microformat and RDF
+based Microformat forms (e.g RDF/A)
+3. We need to make it nice and easy for SPARQL Query Processors (for
+instance)  to perform &quot;on the fly&quot; transformation (via GRDDL/XSLT) of
+said data sources (which are RDF Data Sources that SPARQL Processors
+treat as Graph URIs)
+4. These subclasses also provide unobtrusive extension of SIOC meaning
+that you can use SIOC in its current form without any confusion.
+Here is RDF/N3 dump of our suggestions:
+#Processed by Id: cwm.py,v 1.144 2003/09/14 20:20:20 timbl Exp
+        #    using base file:/tmp/tmpU7ROYZ-rdfconverter
+#  Notation3 generation by
+#       notation3.py,v 1.148 2003/12/04 21:20:17 timbl Exp
+#   Base was: file:/tmp/tmpU7ROYZ-rdfconverter
+     @prefix :  .
+     @prefix annotea:  .
+     @prefix atom:  .
+     @prefix calendar:  .
+     @prefix dc:  .
+     @prefix exif:  .
+     @prefix foaf:  .
+     @prefix owl:  .
+     @prefix rdf:  .
+     @prefix rdfs:  .
+     @prefix resume:  .
+     @prefix review:  .
+     @prefix sioc:  .
+     @prefix vs:  .
+     @prefix wot:  .
+
+
+	SIOC Types Module
+	Extends SIOC (Semantically Interlinked Online
+Communities) core ontology by defining subtypes and subproperties of
+SIOC concepts.
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-01-31T20:57:48+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:13+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/213" rdfs:label="Update: SIOC Type Modules Additions" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/56%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/56" />
+</sioc:Post>
+</rdf:RDF>

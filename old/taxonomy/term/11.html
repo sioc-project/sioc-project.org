@@ -1,0 +1,1797 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>SIOC Core Ontology Specification</title>
+  <link href="http://rdfs.org/sioc/spec/img/xmlns-style.css" rel="stylesheet" type="text/css" />
+  <link href="http://rdfs.org/sioc/spec/img/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1>SIOC Core Ontology Specification</h1>
+
+<h2>25 March 2010</h2>
+
+<dl>
+  <dt>This version:</dt>
+  <dd><a href="11/0/feed.html">http://rdfs.org/sioc/spec/</a></dd>
+  <dt>Latest version:</dt>
+  <dd><a href="11/0/feed.html">http://rdfs.org/sioc/spec/</a></dd>
+  <dt>Last update:</dt>
+  <dd>Date: 2010/03/25 09:09:09</dd>
+  <dt>Revision:</dt>
+  <dd>Revision: 1.35</dd>
+  <dt>Editors:</dt>
+  <dd><a href="http://captsolo.net/" title="Uldis Bojārs">Uldis Bojārs</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a><br />
+  <a href="http://www.johnbreslin.org/" title="John G. Breslin">John G. Breslin</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI</a> and the <a href="http://www.nuigalway.ie/engineering/">School of Engineering and Informatics</a>, <a href="http://www.nuigalway.ie/">NUI Galway</a></dd>
+  <dt>Authors:</dt>
+  <dd><a href="http://www.berrueta.net/">Diego Berrueta</a> - <a href="http://www.fundacionctic.org/">Fundación CTIC</a></dd>
+  <dd><a href="http://danbri.org/" title="Dan Brickley">Dan Brickley</a> - <a href="http://www.asemantics.com/">Asemantics S.R.L.</a></dd>
+  <dd><a href="http://www.stefandecker.org/" title="Stefan Decker">Stefan Decker</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a></dd>
+  <dd><a href="http://www.wikier.org/" title="Sergio Fern&aacute;ndez">Sergio Fern&aacute;ndez</a> - <a href="http://www.fundacionctic.org/">Fundación CTIC</a></dd>
+  <dd><a href="http://b4mad-service.net/datenbrei/" title="Christoph Görn">Christoph Görn</a></dd>
+  <dd><a href="http://harth.org/andreas/" title="Andreas Harth">Andreas Harth</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a></dd>
+  <dd><a href="http://kmi.open.ac.uk/people/tom/about/html" title="Tom Heath">Tom Heath</a></dd>
+  <dd><a href="http://www.openlinksw.com/blog/~kidehen/" title="Kingsley Idehen">Kingsley Idehen</a> - <a href="http://www.openlinksw.com/" title="OpenLink Software">OpenLink Software Inc.</a></dd>
+  <dd><a href="http://my.opera.com/kjetilk/about/" title="Kjetil Kjernsmo">Kjetil Kjernsmo</a> - <a href="http://www.opera.com/">Opera Software</a></dd>
+  <dd><a href="http://www.bitd.clrc.ac.uk/Person/A.J.Miles" title="Alistair Miles">Alistair Miles</a> - <a href="http://www.stfc.ac.uk/About/Find/RAL/Introduction.aspx" title="STFC Rutherford Appleton Laboratory">STFC Rutherford Appleton Laboratory</a></dd>
+  <dd><a href="http://apassant.net/" title="Alexandre Passant">Alexandre Passant</a> - <a href="http://www.lalic.paris4.sorbonne.fr" title="LaLIC at Université Paris-Sorbonne (Paris IV)">LaLIC at Universit&eacute; Paris-Sorbonne</a></dd>
+  <dd><a href="http://www.polleres.net/" title="Axel Polleres">Axel Polleres</a> - <a href="http://www.deri.ie/" title="Digital Enterprise Research Institute">DERI, NUI Galway</a></dd>
+  <dd>Luis Polo - <a href="http://www.fundacionctic.org/">Fundación CTIC</a></dd>
+  <dt>Contributors:</dt>
+  <dd>See <a href="11/0/feed.html#sec-ack">acknowledgements</a>.</dd>
+</dl>
+
+<p class="copyright">Copyright &copy; 2004-2010 by <a href="http://www.deri.ie/">DERI</a>, <a href="http://www.nuigalway.ie/">NUI Galway</a>.</p>
+
+<p>Development of SIOC has been supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant numbers SFI/02/CE1/I131 and SFI/08/CE/I1380.</p>
+
+<a href="http://creativecommons.org/licenses/by/1.0/"><img alt="Creative Commons License" style="border: 0pt none ; float: right;" src="http://rdfs.org/sioc/spec/img/somerights.gif" /></a>
+
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/1.0/">Creative Commons License</a>. This copyright applies to the <em>SIOC Core Ontology Specification</em> and accompanying documentation and does not apply to SIOC data formats, ontology terms, or technology.</p>
+
+<a href="http://validator.w3.org/check/referer"><img src="http://rdfs.org/sioc/spec/img/valid-xhtml10" style="float: right;" alt="Valid XHTML 1.0!" height="31" width="88"/> </a>
+
+<p>Regarding underlying technology, SIOC relies heavily on W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+
+<p>This visual layout and structure of the specification was adapted from the <a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary Specification</a> by Dan Brickley and Libby Miller.</p>
+
+<hr />
+
+<div>
+<h2><a name="sec-abstract" id="sec-abstract"></a>Abstract</h2>
+
+<p>The SIOC (Semantically-Interlinked Online Communities) Core Ontology provides the main concepts and properties required to describe information from online communities (e.g., message boards, wikis, weblogs, etc.) on the Semantic Web. This document contains a detailed description of the SIOC Core Ontology.</p>
+</div>
+
+<hr />
+
+<div class="status">
+<h2><a name="sec-status" id="sec-status"></a>Status of this document</h2>
+
+<p><strong>NOTE:</strong> <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document.</em></p>
+
+<p>This specification is an evolving document. This document is generated by combining a machine-readable <a href="http://rdfs.org/sioc/ns#">SIOC Core Ontology Namespace</a> expressed in RDF/XML with a specification template and a set of per-term documents.</p>
+
+<p>Authors welcome suggestions on the <a href="http://rdfs.org/sioc/ns#">SIOC Core Ontology Namespace</a> and this document. Please send comments to the <a href="http://groups.google.com/group/sioc-dev">SIOC developers' mailing list</a> (SIOC-Dev), <a href="http://groups.google.com/group/sioc-dev/topics">public archives</a> are available. This document may be updated or added to based on implementation experience, but no commitment is made by the authors regarding future updates.</p>
+</div>
+
+<h2 id="toc"><a name="sec-toc" id="sec-toc"></a>Table of contents</h2>
+<ul>
+  <li><a href="11/0/feed.html#sec-intro">1. Introduction</a>
+    <ul>
+      <li><a href="11/0/feed.html#sec-notation">1.1. Terminology and notation</a></li>
+    </ul>
+  </li>
+  <li><a href="11/0/feed.html#sec-glance">2. SIOC at a glance</a></li>
+  <li><a href="11/0/feed.html#sec-overview">3. SIOC overview</a>
+    <ul>
+  	  <li><a href="11/0/feed.html#sec-example">3.1. Example</a></li>
+  	  <li><a href="11/0/feed.html#sec-background">3.2. Background</a></li>
+    </ul>
+  </li>
+  <li><a href="11/0/feed.html#sec-vocab">4. The SIOC ontology description</a>
+    <ul>
+      <li><a href="11/0/feed.html#sec-evolution">4.1. Evolution and extension of SIOC</a></li>
+      <li><a href="11/0/feed.html#sec-modules">4.2. SIOC modules</a></li>
+      <li><a href="11/0/feed.html#sec-standards">4.3. SIOC and standards</a></li>
+      <li><a href="11/0/feed.html#sec-sioc-rdf">4.4. SIOC and RDF</a></li>
+    </ul>
+  </li>
+  <li><a href="11/0/feed.html#sec-xref">5. Cross reference for SIOC classes and properties</a></li>
+  <li><a href="11/0/feed.html#sec-external">6. External classes and properties</a></li>
+  <li><a href="11/0/feed.html#sec-ack">7. Acknowledgements</a></li>
+  <li><a href="11/0/feed.html#sec-reference">8. References</a></li>
+  <li><a href="11/0/feed.html#sec-changes">9. Change log</a></li>
+</ul>
+
+<hr />
+
+<h2><a name="sec-intro" id="sec-intro"></a>1. Introduction</h2>
+
+<p>Online community sites (weblogs, message boards, wikis, etc.) have replaced the traditional means of keeping a community informed via libraries and publishing. They are a valuable source of information and quite often it is a community site where you will end up when searching for some information. But there is a problem: online community sites are like islands without bridges connecting them. You may find some information in a forum, but not know that there are missing pieces of related information that can be found on other community sites.</p>
+
+<p>Semantically-Interlinked Online Communities, or SIOC, is an attempt to link online community sites, to use <a href="http://www.w3.org/2001/sw/">Semantic Web</a> technologies to describe the information that communities have about their structure and contents, and to find related information and new connections between content items and other community objects. SIOC is based around the use of <i>machine-readable information</i> provided by these sites.</p>
+
+<p>The SIOC Core Ontology described in this document is the foundation for Semantically-Interlinked Online Communities. Developers can use this ontology to express information contained within community sites in a simple and extensible way.</p>
+
+<p>More information about the tools and projects using SIOC can be found on the <a href="../../index.html">SIOC Project</a> page (http://sioc-project.org/).</p>
+
+<h3><a name="sec-notation" class="mozTocH3" id="sec-notation"></a>1.1. Terminology and notation</h3>
+
+<p>The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="11/0/feed.html#ref-rfc2119">RFC 2119</a>.</p>
+
+<p>Namespace URIs of the general form "http://www.example.com/" represent some application-dependent or context-dependent URI as defined in <a href="11/0/feed.html#ref-rfc2396">RFC 2396</a>.</p>
+
+<p>The XML Namespace URIs that MUST be used by implementations of this specification are:</p>
+
+<ul>
+  <li><a href="http://rdfs.org/sioc/ns#">http://rdfs.org/sioc/ns#</a> - SIOC Core Ontology Namespace</li>
+  <li><a href="http://rdfs.org/sioc/access#">http://rdfs.org/sioc/access#</a> - SIOC Access Ontology Module Namespace</li>
+  <li><a href="http://rdfs.org/sioc/types#">http://rdfs.org/sioc/types#</a> - SIOC Types Ontology Module Namespace</li>
+  <li><a href="http://rdfs.org/sioc/services#">http://rdfs.org/sioc/services#</a> - SIOC Services Ontology Module Namespace</li>
+</ul>
+
+<div class="glance">
+<h2><a name="sec-glance" id="sec-glance"></a>2. SIOC at a glance</h2>
+
+<p>An alphabetical index of SIOC terms, by class (concepts) and by property (relationships, attributes), are given below. All the terms are hyperlinked to their detailed description for quick reference.</p>
+
+<!-- The list of SIOC classes and properties goes here -->
+<div style="padding: 5px; border: dotted; background-color: #ddd;">
+<p>Classes: | <a href="11/0/feed.html#term_Community">Community</a> |  <a href="11/0/feed.html#term_Container">Container</a> |  <a href="11/0/feed.html#term_Forum">Forum</a> |  <a href="11/0/feed.html#term_Item">Item</a> |  <a href="11/0/feed.html#term_Post">Post</a> |  <a href="11/0/feed.html#term_Role">Role</a> |  <a href="11/0/feed.html#term_Site">Site</a> |  <a href="11/0/feed.html#term_Space">Space</a> |  <a href="11/0/feed.html#term_Thread">Thread</a> |  <a href="11/0/feed.html#term_UserAccount">UserAccount</a> |  <a href="11/0/feed.html#term_Usergroup">Usergroup</a> | 
+</p>
+<p>Properties: | <a href="11/0/feed.html#term_about">about</a> |  <a href="11/0/feed.html#term_account_of">account_of</a> |  <a href="11/0/feed.html#term_addressed_to">addressed_to</a> |  <a href="11/0/feed.html#term_administrator_of">administrator_of</a> |  <a href="11/0/feed.html#term_attachment">attachment</a> |  <a href="11/0/feed.html#term_avatar">avatar</a> |  <a href="11/0/feed.html#term_container_of">container_of</a> |  <a href="11/0/feed.html#term_content">content</a> |  <a href="11/0/feed.html#term_creator_of">creator_of</a> |  <a href="11/0/feed.html#term_earlier_version">earlier_version</a> |  <a href="11/0/feed.html#term_email">email</a> |  <a href="11/0/feed.html#term_email_sha1">email_sha1</a> |  <a href="11/0/feed.html#term_embeds_knowledge">embeds_knowledge</a> |  <a href="11/0/feed.html#term_feed">feed</a> |  <a href="11/0/feed.html#term_follows">follows</a> |  <a href="11/0/feed.html#term_function_of">function_of</a> |  <a href="11/0/feed.html#term_has_administrator">has_administrator</a> |  <a href="11/0/feed.html#term_has_container">has_container</a> |  <a href="11/0/feed.html#term_has_creator">has_creator</a> |  <a href="11/0/feed.html#term_has_discussion">has_discussion</a> |  <a href="11/0/feed.html#term_has_function">has_function</a> |  <a href="11/0/feed.html#term_has_host">has_host</a> |  <a href="11/0/feed.html#term_has_member">has_member</a> |  <a href="11/0/feed.html#term_has_moderator">has_moderator</a> |  <a href="11/0/feed.html#term_has_modifier">has_modifier</a> |  <a href="11/0/feed.html#term_has_owner">has_owner</a> |  <a href="11/0/feed.html#term_has_parent">has_parent</a> |  <a href="11/0/feed.html#term_has_reply">has_reply</a> |  <a href="11/0/feed.html#term_has_scope">has_scope</a> |  <a href="11/0/feed.html#term_has_space">has_space</a> |  <a href="11/0/feed.html#term_has_subscriber">has_subscriber</a> |  <a href="11/0/feed.html#term_has_usergroup">has_usergroup</a> |  <a href="11/0/feed.html#term_host_of">host_of</a> |  <a href="11/0/feed.html#term_id">id</a> |  <a href="11/0/feed.html#term_ip_address">ip_address</a> |  <a href="11/0/feed.html#term_last_activity_date">last_activity_date</a> |  <a href="11/0/feed.html#term_last_item_date">last_item_date</a> |  <a href="11/0/feed.html#term_last_reply_date">last_reply_date</a> |  <a href="11/0/feed.html#term_later_version">later_version</a> |  <a href="11/0/feed.html#term_latest_version">latest_version</a> |  <a href="11/0/feed.html#term_link">link</a> |  <a href="11/0/feed.html#term_links_to">links_to</a> |  <a href="11/0/feed.html#term_member_of">member_of</a> |  <a href="11/0/feed.html#term_moderator_of">moderator_of</a> |  <a href="11/0/feed.html#term_modifier_of">modifier_of</a> |  <a href="11/0/feed.html#term_name">name</a> |  <a href="11/0/feed.html#term_next_by_date">next_by_date</a> |  <a href="11/0/feed.html#term_next_version">next_version</a> |  <a href="11/0/feed.html#term_note">note</a> |  <a href="11/0/feed.html#term_num_authors">num_authors</a> |  <a href="11/0/feed.html#term_num_items">num_items</a> |  <a href="11/0/feed.html#term_num_replies">num_replies</a> |  <a href="11/0/feed.html#term_num_threads">num_threads</a> |  <a href="11/0/feed.html#term_num_views">num_views</a> |  <a href="11/0/feed.html#term_owner_of">owner_of</a> |  <a href="11/0/feed.html#term_parent_of">parent_of</a> |  <a href="11/0/feed.html#term_previous_by_date">previous_by_date</a> |  <a href="11/0/feed.html#term_previous_version">previous_version</a> |  <a href="11/0/feed.html#term_related_to">related_to</a> |  <a href="11/0/feed.html#term_reply_of">reply_of</a> |  <a href="11/0/feed.html#term_scope_of">scope_of</a> |  <a href="11/0/feed.html#term_sibling">sibling</a> |  <a href="11/0/feed.html#term_space_of">space_of</a> |  <a href="11/0/feed.html#term_subscriber_of">subscriber_of</a> |  <a href="11/0/feed.html#term_topic">topic</a> |  <a href="11/0/feed.html#term_usergroup_of">usergroup_of</a> | 
+</p>
+</div>
+<!-- End of the terms list -->
+</div>
+
+<h2><a name="sec-overview" id="sec-overview"></a>3. SIOC overview</h2>
+
+<p>The SIOC Core Ontology definitions presented here are written using a computer language (RDF/OWL) that makes it easy for software to process some basic facts about the terms in the SIOC Core Ontology, and consequently about the things described in SIOC documents. A SIOC document, unlike a traditional Web page, can be combined with other SIOC and RDF documents to create a unified database of information.</p>
+
+<img src="http://rdfs.org/sioc/spec/img/main_classes_properties.png" alt="The main classes and properties in SIOC"/>
+
+<h3><a name="sec-example" id="sec-example"></a>3.1. Example</h3>
+
+<p>Here is a very basic document describing a blog entry:</p>
+
+<div class="example" style="white-space: pre-wrap;">
+<pre>
+&lt;sioc:Post rdf:about="http://johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/"&gt;
+    &lt;dcterms:title&gt;Creating connections between discussion clouds with SIOC&lt;/dcterms:title&gt;
+    &lt;dcterms:created&gt;2006-09-07T09:33:30Z&lt;/dcterms:created&gt;
+    &lt;sioc:has_container rdf:resource="http://johnbreslin.com/blog/index.php?sioc_type=site#weblog"/&gt;
+    &lt;sioc:has_creator&gt;
+        &lt;sioc:UserAccount rdf:about="http://johnbreslin.com/blog/author/cloud/" rdfs:label="Cloud"&gt;
+            &lt;rdfs:seeAlso rdf:resource="http://johnbreslin.com/blog/index.php?sioc_type=user&amp;amp;sioc_id=1"/&gt;
+        &lt;/sioc:UserAccount&gt;
+    &lt;/sioc:has_creator&gt;
+    &lt;sioc:content&gt;SIOC provides a unified vocabulary for content and interaction description: a semantic layer that can co-exist with existing discussion platforms.&lt;/sioc:content&gt;
+    &lt;sioc:topic rdfs:label="Semantic Web" rdf:resource="http://johnbreslin.com/blog/category/semantic-web/"/&gt;
+    &lt;sioc:topic rdfs:label="Blogs" rdf:resource="http://johnbreslin.com/blog/category/blogs/"/&gt;
+    &lt;sioc:has_reply&gt;
+        &lt;sioc:Post rdf:about="http://johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/#comment-123928"&gt;
+            &lt;rdfs:seeAlso rdf:resource="http://johnbreslin.com/blog/index.php?sioc_type=comment&amp;amp;sioc_id=123928"/&gt;
+        &lt;/sioc:Post&gt;
+    &lt;/sioc:has_reply&gt;
+&lt;/sioc:Post&gt;
+</pre>
+</div>
+
+<p>This brief example introduces the basics of SIOC. It says:</p>
+
+<ul>
+<li>There is a <code>sioc:Post</code> object identified as <code>http://johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/</code> which has the following properties:
+<ul>
+<li><code>dcterms:title</code> property with value "Creating connections between discussion clouds with SIOC"</li>
+<li><code>dcterms:created</code> property with ISO-8601 formatted date value <code>2006-09-07T09:33:30Z</code></li>
+<li><code>sioc:has_container</code> relationship with an object identified as <code>http://johnbreslin.com/blog/index.php?sioc_type=site#weblog</code>indicates a <code>sioc:Forum</code> object (a weblog in this case) that this post belongs to</li>
+<li><code>sioc:has_creator</code> relationship with a <code>sioc:UserAccount</code> object labelled "Cloud" and identified as <code>http://johnbreslin.com/blog/author/cloud/</code> with an <code>rdfs:seeAlso </code>property pointing to more SIOC information about this object located at <code>http://johnbreslin.com/blog/index.php?sioc_type=user&amp;sioc_id=1</code></li>
+<li><code>sioc:content</code> property with a text-only representation of the content</li>
+<li><code>sioc:topic</code> properties indicating topics: "<code>Semantic Web</code>" identified as <code>http://johnbreslin.com/blog/category/semantic-web/</code> and "<code>Blogs</code>" identified as <code>http://johnbreslin.com/blog/category/blogs/</code></li>
+<li><code>sioc:has_reply</code> relationship (pointing to replies and comments of a post) with a <code>sioc:Post</code> object identified as <code>http://johnbreslin.com/blog/2006/09/07/creating-connections-between-discussion-clouds-with-sioc/#comment-123928</code> with an <code>rdfs:seeAlso </code>property pointing to more SIOC information about this reply located at <code>http://johnbreslin.com/blog/index.php?sioc_type=comment&amp;sioc_id=123928</code></li>
+</ul>
+</li>
+</ul>
+
+<p>In other words:</p>
+
+<ul>
+<li>There is a post titled "Creating connections between discussion clouds with SIOC" created at 09:33:30 on 2006-09-07 written by a user "Cloud" on topics "Blogs" and "Semantic Web" with contents described in <code>sioc:content</code>.</li>
+<li>More information about its author can be found at <code>http://johnbreslin.com/blog/index.php?sioc_type=user&amp;sioc_id=1</code></li>
+<li>The post has a reply and detailed SIOC information about this reply can be found at <code>http://johnbreslin.com/blog/index.php?sioc_type=comment&amp;sioc_id=123928</code></li>
+</ul>
+
+<p>This simple example uses only two classes of SIOC objects: <code>sioc:Post</code> and <code>sioc:UserAccount</code>. There are other classes in SIOC used to describe more information about forums, sites, communities and other objects.</p>
+
+<p>SIOC documents may use other existing ontologies to enrich the information described. Additional information about the creator of the post can be described using the <a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a>. Rich content of the post (e.g., HTML representation) can be described using <a href="http://bblfish.net/work/atom-owl/2006-06-06/AtomOwl.html">AtomOwl</a> or the <a href="http://web.resource.org/rss/1.0/modules/content/">RSS 1.0
+Content Module</a>. For more information on classes and properties from other vocabularies that are often used together with SIOC, see the section on <a href="11/0/feed.html#sec-external">external classes and properties</a>.</p>
+
+<p>You can see a full SIOC profile of the example blog post which uses FOAF for personal information and the RSS 1.0 Content Module for rich content: (a) <a href="http://johnbreslin.com/blog/index.php?sioc_type=post&amp;sioc_id=517">in RDF/XML</a>; (b) <a href="http://sparql.captsolo.net/browser/browser.py?url=http%3A//johnbreslin.com/blog/index.php%3Fsioc_type%3Dpost%26sioc_id%3D517">rendered in a SIOC Browser</a>. This profile is generated by the <a href="http://sioc-project.org/wordpress/">WordPress SIOC export plugin</a>.</p>
+
+<h3><a name="sec-background" id="sec-background"></a>3.2. Background</h3>
+
+<p>SIOC is managed as a collaborative effort amongst members of the <a href="http://sw.deri.ie/">Semantic Web Cluster</a> at <a href="http://www.deri.ie/">DERI</a>, <a href="http://www.nuigalway.ie/">NUI Galway</a> (funded by <a href="http://www.sfi.ie/">SFI</a>) and Semantic Web developers on the <a href="http://groups.google.com/group/sioc-dev">SIOC developers' mailing list</a> (SIOC-Dev). The name "SIOC" is an acronym for "Semantically-Interlinked Online Communities", and is coincidentally the Irish word for "frost".</p>
+
+<p>More resources on SIOC are available on the <a href="../../index.html">SIOC Project page</a>.</p>
+
+<p>The <a href="http://groups.google.com/group/sioc-dev/">SIOC-Dev</a> mailing list is the main discussion list for questions about SIOC. There are also two active and friendly <a href="http://esw.w3.org/topic/InternetRelayChat">IRC</a> channels on <a href="http://www.freenode.net/">freenode</a>: <a href="irc://irc.freenode.net/#sioc">#sioc</a> (for SIOC) and <a href="irc://irc.freenode.net/#swig">#swig</a> (for the Semantic Web Interest Group). There is also a wiki for SIOC at <a href="http://wiki.sioc-project.org/">wiki.sioc-project.org</a>.</p>
+
+<p>The remainder of this specification describes how to publish and interpret descriptions such as these on the Web, using RDF for syntax (file format) and terms from SIOC. It introduces a number of classes (concepts such as "Post") and properties (relationship and attribute types such as "has_creator" or "content").</p>
+
+<p>The specific contents of the SIOC Core Ontology are detailed in the <a href="http://rdfs.org/sioc/ns#">SIOC Core Ontology Namespace</a> document.</p>
+
+<p>Related publications:</p>
+<ul>
+  <li>J.G. Breslin, A. Harth, U. Bojars, S. Decker, "<a class="small" href="http://www.springerlink.com/openurl.asp?genre=article&amp;issn=0302-9743&amp;volume=3532&amp;spage=500">Towards Semantically-Interlinked Online Communities</a>", Proceedings of the 2nd European Semantic Web Conference (ESWC '05), LNCS vol. 3532, pp. 500-514, Heraklion, Greece, 2005.</li>
+  <li>U. Bojars, J.G. Breslin, A. Passant, "<a href="http://sw.deri.org/~jbreslin/publications/20061003_btr_2006.pdf">SIOC Browser - Towards a Richer Blog Browsing Experience</a>", The 4th Blogtalk Conference (Blogtalk Reloaded), Vienna, Austria, October 2006.</li>
+  <li>For more SIOC-related publications, see the <a href="http://sioc-project.org/publications/">publications</a> page.</li>
+</ul>
+
+<h2><a name="sec-vocab" id="sec-vocab"></a>4. The SIOC ontology description</h2>
+
+<p>This document presents SIOC as a <a href="http://www.w3.org/2001/sw/">Semantic Web</a> vocabulary or <em>ontology</em>. It describes the SIOC Core Ontology and the terms (<a href="http://www.w3.org/RDF/">RDF</a> classes and properties) that constitute it, so that <a href="http://www.w3.org/2001/sw/">Semantic Web</a> applications can use those terms in a variety of RDF-compatible document formats and applications. The SIOC Core Ontology is straightforward, pragmatic and designed to allow simultaneous deployment and extension, and is therefore intended for wide scale use.</p>
+
+<h3><a name="sec-evolution" class="mozTocH3" id="sec-evolution"></a>4.1. Evolution and extension of SIOC</h3>
+
+<p>The SIOC ontology is identified by the namespace URI "http://rdfs.org/sioc/ns#".</p>
+
+<p>Revisions and extensions of SIOC are conducted through edits to the namespace document, which by convention is published on the Web at the namespace URI.</p>
+
+<p>The properties and types defined here provide some basic concepts for use in SIOC descriptions. Other vocabularies (e.g. the <a href="http://dublincore.org/">Dublin Core</a> metadata terms for simple bibliographic description, <a href="http://xmlns.com/foaf/0.1/">FOAF</a>, <a href="http://purl.org/rss/1.0/spec">RSS 1.0</a>, etc.) can also be mixed in with SIOC terms, as can local extensions. SIOC is designed to be extended, and some modules have been added (see below).</p>
+
+<h3><a name="sec-modules" class="mozTocH3" id="sec-modules"></a>4.2. SIOC modules</h3>
+
+<p>SIOC modules are used to extend the available terms and to avoid making the SIOC Core Ontology too complex and unreadable. At present SIOC has 3 modules: Access, Services and Types.</p>
+
+<h4><a name="sec-modules-access"></a>SIOC Access Module</h4>
+
+<p>Sites often have a need to express information about access rights such as users' permissions and status of content Items. SIOC Access module contains classes and properties that allow to express this information. User access rights are modeled using Roles assigned to a UserAccount and Permissions on content items associated with these Roles.</p>
+
+<p>Classes defined within this module: Permission, Status.</p>
+
+<p>A full definition of these classes and related properties can be found in the namespace  of the SIOC Access module at <a href="http://rdfs.org/sioc/access">http://rdfs.org/sioc/access</a>.</p>
+
+<h4><a name="sec-modules-types"></a>SIOC Types Module</h4>
+
+<p>During the development of the SIOC ontology, the addition of multiple sub-classes for different types of Forums and Posts was starting to become unwieldy. Therefore, it was decided to move these sub-classes and sub-properties into a "Types" module of SIOC. Some of the SIOC Core Ontology classes and corresponding SIOC Types Module sub-classes include:</p>
+
+<ul>
+<li>Container: AddressBook, AnnotationSet, AudioChannel, BookmarkFolder, Briefcase, EventCalendar, ImageGallery, ProjectDirectory, ResumeBank, ReviewArea, SubscriptionList, SurveyCollection, VideoChannel, Wiki.</li>
+<li>Item: Poll.</li>
+<li>Forum: ArgumentativeDiscussion, ChatChannel, MailingList, MessageBoard, Weblog.</li>
+<li>Post: BlogPost, BoardPost, Comment, InstantMessage, MailMessage, WikiArticle.</li>
+</ul>
+
+<p>Full descriptions for the identified types are given in the SIOC Types Module at <a href="http://rdfs.org/sioc/types">http://rdfs.org/sioc/types</a>. Rather than restrict users to our pre-defined types, we also encourage flexibility whereby people can define their own sub-types of SIOC classes.</p>
+
+<h4><a name="sec-modules-services"></a>SIOC Services Module</h4>
+
+<p>Community sites typically publish web service interfaces for programmatic search and content management services (typically SOAP and/or RESTian). These services may be generic in nature (with standardised signatures covering input and output message formats) or service specific (where signatures are unique to specific offerings, &agrave; la current Web 2.0 API usage patterns).</p>
+
+<p>A sioc:Service allows us to indicate that a web service is associated with (located on) a sioc:Site or a part of it. This class and its properties are defined in the SIOC Services Module at <a href="http://rdfs.org/sioc/services">http://rdfs.org/sioc/services</a>.</p>
+
+<p>This module provides a simple way to tell others about a web service, and should not be confused with web service definitions that define the details of a web service. A sioc:service_definition property can be used to relate a sioc:Service to its full web service definition (e.g., in WSDL).</p>
+
+<h3><a name="sec-standards" class="mozTocH3" id="sec-standards"></a>4.3. SIOC and standards</h3>
+
+<p>SIOC depends heavily on W3C's standards work, specifically on XML, XML Namespaces, RDF, and OWL. All <em>SIOC documents</em> must be valid RDF documents.</p>
+
+<p>This specification contributes an ontology, "SIOC", to the Semantic Web, specifying it using W3C's <a href="http://www.w3.org/RDF/">Resource Description Framework</a> (RDF). As such, SIOC adopts by reference a syntax (using XML), a data model (RDF graphs), and a mathematically-grounded definition for the rules that underpin the RDF design.</p>
+
+<h3><a name="sec-sioc-rdf" id="sec-sioc-rdf"></a>4.4. SIOC and RDF</h3>
+
+<p>SIOC is an application of the Resource Description Framework (RDF) because the subject area we are describing - online communities - has so many competing requirements that a standalone format would not capture them or would lead to describing these requirements in a number of incompatible formats. By using RDF, SIOC gains a powerful extensibility mechanism, allowing SIOC-based descriptions to be mixed with claims made in <em>any other RDF vocabulary.</em></p>
+
+<p>SIOC as an ontology cannot incorporate everything we might want to talk about that is related to communities, about users in these communities, and about the content that users have created, or it would be as large as a full-sized dictionary. Instead of covering all topics within SIOC itself, we describe the basic topics and build into a larger framework - RDF - that allows us to take advantage of work elsewhere on more specific description vocabularies.</p>
+
+<p>RDF provides SIOC with a way to mix together different descriptive vocabularies in a consistent way. Vocabularies can be created by different communities and groups as appropriate and mixed together as required, without needing any centralised agreement on how terms from different vocabularies can be written down in XML.</p>
+
+<p>RDF represents knowledge as a simple set of assertions or triples. The basic model of RDF is a graph formed by combining multiple triples together. For more information on RDF and how to work with it see "<a href="http://www.w3.org/2001/sw/SW-FAQ#whrdf">What is RDF?</a>" and "<a href="http://www.w3.org/2001/sw/SW-FAQ#tools">Where do I find tools for Semantic Web development?</a>" in the <a href="http://www.w3.org/2001/sw/SW-FAQ">Semantic Web FAQ</a>.</p>
+
+<h2><a name="sec-xref" id="sec-xref"></a>5. Cross-reference for SIOC classes and properties</h2>
+
+<p>SIOC introduces the following classes and properties. See the <a href="http://rdfs.org/sioc/ns#">SIOC
+Core Ontology Namespace in RDFS/OWL</a> for more details.</p>
+
+<!-- The following is the script-generated list of classes and properties -->
+<div class="specterm" id="term_Community">
+<h3>Class: sioc:Community</h3>
+<p><em>Community</em> - Community is a high-level concept that defines an online community and what it consists of. <br /></p><table style="th { float: top; }">
+</table>
+<p>
+A Community may consist of different types of objects (people, sites, etc.) joined by a common topic, interests or goals. 
+</p><p>
+A Community is different from a Site: a Site describes a single community site whilst a Community can consist of a number of Sites and other resources described in SIOC or other ontologies (e.g., FOAF). Community is linked to its constituent parts using the property dcterms:hasPart.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Container">
+<h3>Class: sioc:Container</h3>
+<p><em>Container</em> - An area in which content Items are contained. <br /></p><table style="th { float: top; }">
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_has_container">sioc:has_container</a> <a href="11/0/feed.html#term_has_parent">sioc:has_parent</a> <a href="11/0/feed.html#term_parent_of">sioc:parent_of</a> <a href="11/0/feed.html#term_subscriber_of">sioc:subscriber_of</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_container_of">sioc:container_of</a> <a href="11/0/feed.html#term_has_parent">sioc:has_parent</a> <a href="11/0/feed.html#term_has_subscriber">sioc:has_subscriber</a> <a href="11/0/feed.html#term_last_item_date">sioc:last_item_date</a> <a href="11/0/feed.html#term_num_items">sioc:num_items</a> <a href="11/0/feed.html#term_parent_of">sioc:parent_of</a> </td></tr></table>
+<p>
+Container is a high-level concept used to group content Items together. The relationships between a Container and the Items that belong to it are described using sioc:container_of and sioc:has_container properties. A hierarchy of Containers can be defined in terms of parents and children using sioc:has_parent and sioc:parent_of.
+</p><p>
+Subclasses of Container can be used to further specify typed groupings of Items in online communities. Forum, a subclass of Container and one of the core classes in SIOC, is used to describe an area on a community Site (e.g., a forum or weblog) on which Posts are made. The <a href="11/0/feed.html#sec-modules-types">SIOC Types Ontology Module</a> contains additional, more specific subclasses of sioc:Container.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Forum">
+<h3>Class: sioc:Forum</h3>
+<p><em>Forum</em> - A discussion area on which Posts or entries are made. <br /></p><table style="th { float: top; }">
+	<tr><th>sub-class-of:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a> </td></tr>
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_host_of">sioc:host_of</a> <a href="11/0/feed.html#term_moderator_of">sioc:moderator_of</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_has_host">sioc:has_host</a> <a href="11/0/feed.html#term_has_moderator">sioc:has_moderator</a> <a href="11/0/feed.html#term_num_threads">sioc:num_threads</a> </td></tr></table>
+<p>
+Forums can be thought of as channels or discussion area on which Posts are made. A Forum can be linked to the Site that hosts it. Forums will usually discuss a certain topic or set of related topics, or they may contain discussions entirely devoted to a certain community group or organisation. A Forum will have a moderator who can veto or edit posts before or after they appear in the Forum.
+</p><p>
+Forums may have a set of subscribed UserAccounts who are notified when new Posts are made. The hierarchy of Forums can be defined in terms of parents and children, allowing the creation of structures conforming to topic categories as defined by the Site administrator. Examples of Forums include mailing lists, message boards, Usenet newsgroups and weblogs.
+</p><p>
+The <a href="11/0/feed.html#sec-modules-types">SIOC Types Ontology Module</a> defines come more specific subclasses of sioc:Forum.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Item">
+<h3>Class: sioc:Item</h3>
+<p><em>Item</em> - An Item is something which can be in a Container. <br /></p><table style="th { float: top; }">
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_container_of">sioc:container_of</a> <a href="11/0/feed.html#term_earlier_version">sioc:earlier_version</a> <a href="11/0/feed.html#term_has_reply">sioc:has_reply</a> <a href="11/0/feed.html#term_later_version">sioc:later_version</a> <a href="11/0/feed.html#term_latest_version">sioc:latest_version</a> <a href="11/0/feed.html#term_modifier_of">sioc:modifier_of</a> <a href="11/0/feed.html#term_next_by_date">sioc:next_by_date</a> <a href="11/0/feed.html#term_next_version">sioc:next_version</a> <a href="11/0/feed.html#term_previous_by_date">sioc:previous_by_date</a> <a href="11/0/feed.html#term_previous_version">sioc:previous_version</a> <a href="11/0/feed.html#term_reply_of">sioc:reply_of</a> <a href="11/0/feed.html#term_sibling">sioc:sibling</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_about">sioc:about</a> <a href="11/0/feed.html#term_addressed_to">sioc:addressed_to</a> <a href="11/0/feed.html#term_attachment">sioc:attachment</a> <a href="11/0/feed.html#term_content">sioc:content</a> <a href="11/0/feed.html#term_earlier_version">sioc:earlier_version</a> <a href="11/0/feed.html#term_embeds_knowledge">sioc:embeds_knowledge</a> <a href="11/0/feed.html#term_has_container">sioc:has_container</a> <a href="11/0/feed.html#term_has_discussion">sioc:has_discussion</a> <a href="11/0/feed.html#term_has_modifier">sioc:has_modifier</a> <a href="11/0/feed.html#term_has_reply">sioc:has_reply</a> <a href="11/0/feed.html#term_ip_address">sioc:ip_address</a> <a href="11/0/feed.html#term_later_version">sioc:later_version</a> <a href="11/0/feed.html#term_latest_version">sioc:latest_version</a> <a href="11/0/feed.html#term_next_by_date">sioc:next_by_date</a> <a href="11/0/feed.html#term_next_version">sioc:next_version</a> <a href="11/0/feed.html#term_previous_by_date">sioc:previous_by_date</a> <a href="11/0/feed.html#term_previous_version">sioc:previous_version</a> <a href="11/0/feed.html#term_reply_of">sioc:reply_of</a> <a href="11/0/feed.html#term_sibling">sioc:sibling</a> </td></tr></table>
+<p>
+Item is a high-level concept for container items. It has subclasses that further specify different types of Items. One of these subclasses (which plays an important role in SIOC) is sioc:Post, used to describe articles or messages created within online community Sites. The <a href="11/0/feed.html#sec-modules-types">SIOC Types Ontology Module</a> describes additional, more specific subclasses of sioc:Item.
+</p><p>
+Items can be contained within Containers.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Post">
+<h3>Class: sioc:Post</h3>
+<p><em>Post</em> - An article or message that can be posted to a Forum. <br /></p><table style="th { float: top; }">
+	<tr><th>sub-class-of:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a> <a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a> </td></tr>
+</table>
+<p>
+A Post is an article or message posted by a UserAccount to a Forum. A series of Posts may be threaded if they share a common subject and are connected by reply or by date relationships. Posts will have content and may also have attached files, which can be edited or deleted by the Moderator of the Forum that contains the Post.
+</p><p>
+The <a href="11/0/feed.html#sec-modules-types">SIOC Types Ontology Module</a> describes some additional, more specific subclasses of sioc:Post.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Role">
+<h3>Class: sioc:Role</h3>
+<p><em>Role</em> - A Role is a function of a UserAccount within a scope of a particular Forum, Site, etc. <br /></p><table style="th { float: top; }">
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_has_function">sioc:has_function</a> <a href="11/0/feed.html#term_scope_of">sioc:scope_of</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_function_of">sioc:function_of</a> <a href="11/0/feed.html#term_has_scope">sioc:has_scope</a> </td></tr></table>
+<p>
+Roles are used to express functions or access control privileges that UserAccounts may have.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Site">
+<h3>Class: sioc:Site</h3>
+<p><em>Site</em> - A Site can be the location of an online community or set of communities, with UserAccounts and Usergroups creating Items in a set of Containers. It can be thought of as a web-accessible data Space. <br /></p><table style="th { float: top; }">
+	<tr><th>sub-class-of:</th>
+	<td><a href="11/0/feed.html#term_Space">sioc:Space</a> </td></tr>
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_administrator_of">sioc:administrator_of</a> <a href="11/0/feed.html#term_has_host">sioc:has_host</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_has_administrator">sioc:has_administrator</a> <a href="11/0/feed.html#term_host_of">sioc:host_of</a> </td></tr></table>
+<p>
+A Site is the location of an online community or set of communities, with UserAccounts in Usergroups creating content therein. While an individual Forum or group of Forums are usually hosted on a centralised Site, in the future the concept of a "site" may be extended (for example, a topic Thread could be formed by Posts in a distributed Forum on a peer-to-peer environment Space).
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Space">
+<h3>Class: sioc:Space</h3>
+<p><em>Space</em> - A Space is a place where data resides, e.g. on a website, desktop, fileshare, etc. <br /></p><table style="th { float: top; }">
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_has_space">sioc:has_space</a> <a href="11/0/feed.html#term_usergroup_of">sioc:usergroup_of</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_has_usergroup">sioc:has_usergroup</a> <a href="11/0/feed.html#term_space_of">sioc:space_of</a> </td></tr></table>
+<p>
+A Space is defined as being a place where data resides. It can be the location for a set of Containers of content Items, e.g., on a Site, personal desktop, shared filespace, etc. Any data object that resides on a particular Space can be linked to it using the sioc:has_space property.  
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Thread">
+<h3>Class: sioc:Thread</h3>
+<p><em>Thread</em> - A container for a series of threaded discussion Posts or Items. <br /></p><table style="th { float: top; }">
+	<tr><th>sub-class-of:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a> </td></tr>
+</table>
+<p>
+Mailing lists, forums and blogs on community sites usually employ some threaded discussion methods, whereby discussions are initialised by a certain user and replied to by others.  The Thread container is used to group Posts from a single discussion thread together via the sioc:container_of property, especially where a sioc:has_reply / reply_of structure is absent.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_UserAccount">
+<h3>Class: sioc:UserAccount</h3>
+<p><em>User Account</em> - A user account in an online community site. <br /></p><table style="th { float: top; }">
+	<tr><th>sub-class-of:</th>
+	<td><a href="http://xmlns.com/foaf/0.1/OnlineAccount">foaf:OnlineAccount</a> </td></tr>
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_follows">sioc:follows</a> <a href="11/0/feed.html#term_has_administrator">sioc:has_administrator</a> <a href="11/0/feed.html#term_has_creator">sioc:has_creator</a> <a href="11/0/feed.html#term_has_member">sioc:has_member</a> <a href="11/0/feed.html#term_has_moderator">sioc:has_moderator</a> <a href="11/0/feed.html#term_has_modifier">sioc:has_modifier</a> <a href="11/0/feed.html#term_has_owner">sioc:has_owner</a> <a href="11/0/feed.html#term_has_subscriber">sioc:has_subscriber</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_account_of">sioc:account_of</a> <a href="11/0/feed.html#term_administrator_of">sioc:administrator_of</a> <a href="11/0/feed.html#term_avatar">sioc:avatar</a> <a href="11/0/feed.html#term_creator_of">sioc:creator_of</a> <a href="11/0/feed.html#term_email">sioc:email</a> <a href="11/0/feed.html#term_email_sha1">sioc:email_sha1</a> <a href="11/0/feed.html#term_follows">sioc:follows</a> <a href="11/0/feed.html#term_member_of">sioc:member_of</a> <a href="11/0/feed.html#term_moderator_of">sioc:moderator_of</a> <a href="11/0/feed.html#term_modifier_of">sioc:modifier_of</a> <a href="11/0/feed.html#term_owner_of">sioc:owner_of</a> <a href="11/0/feed.html#term_subscriber_of">sioc:subscriber_of</a> </td></tr></table>
+<p>
+<b>Please note that User was recently deprecated in favour of UserAccount.</b>
+</p>
+<p>
+A UserAccount is an online account of a member of an online community. It is connected to Items and Posts that a UserAccount creates or edits, to Containers and Forums that it is subscribed to or moderates and to Sites that it administers. UserAccounts can be grouped for purposes of allowing access to certain Forums or enhanced community site features (weblogs, webmail, etc.).
+</p><p>
+A <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a> will normally hold a registered UserAccount on a Site (through the property foaf:account), and will use this account to create content and interact with the community. The foaf:Person can hold multiple sioc:UserAccounts.
+</p><p>
+sioc:UserAccount describes properties of an online account, and is used in combination with a foaf:Person (using the property sioc:account_of) which describes information about the individual themselves.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_Usergroup">
+<h3>Class: sioc:Usergroup</h3>
+<p><em>Usergroup</em> - A set of UserAccounts whose owners have a common purpose or interest. Can be used for access control purposes. <br /></p><table style="th { float: top; }">
+<tr><th>in-range-of:</th><td><a href="11/0/feed.html#term_has_usergroup">sioc:has_usergroup</a> <a href="11/0/feed.html#term_member_of">sioc:member_of</a> </td></tr><tr><th>in-domain-of:</th><td><a href="11/0/feed.html#term_has_member">sioc:has_member</a> <a href="11/0/feed.html#term_usergroup_of">sioc:usergroup_of</a> </td></tr></table>
+<p>
+A Usergroup is a set of members or UserAccounts of a community who have a common Role, purpose or interest. While a group of UserAccounts may be a single community that is linked to a certain Forum, they may also be a set of UserAccounts that perform a certain Role, for example, moderators or administrators.
+</p><p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_about">
+<h3>Property: sioc:about</h3>
+<p><em>about</em> - Specifies that this Item is about a particular resource, e.g. a Post describing a book, hotel, etc. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_account_of">
+<h3>Property: sioc:account_of</h3>
+<p><em>account of</em> - Refers to the foaf:Agent or foaf:Person who owns this sioc:UserAccount. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="http://xmlns.com/foaf/0.1/account">foaf:account</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a></td></tr>
+</table>
+<p>
+Links a sioc:UserAccount to a <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a> whom it belongs to. The reverse direction - i.e. linking a foaf:Person to a UserAccount that it owns or holds - can be described using the <a href="http://xmlns.com/foaf/0.1/#term_account">foaf:account</a> property.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_addressed_to">
+<h3>Property: sioc:addressed_to</h3>
+<p><em>addressed to</em> - Refers to who (e.g. a UserAccount, e-mail address, etc.) a particular Item is addressed to. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_administrator_of">
+<h3>Property: sioc:administrator_of</h3>
+<p><em>administrator of</em> - A Site that the UserAccount is an administrator of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_administrator">sioc:has_administrator</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Site">sioc:Site</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_attachment">
+<h3>Property: sioc:attachment</h3>
+<p><em>attachment</em> - The URI of a file attached to an Item. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_avatar">
+<h3>Property: sioc:avatar</h3>
+<p><em>avatar</em> - An image or depiction used to represent this UserAccount. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://xmlns.com/foaf/0.1/depiction">foaf:depiction</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_container_of">
+<h3>Property: sioc:container_of</h3>
+<p><em>container of</em> - An Item that this Container contains. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_container">sioc:has_container</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+Containers and Forums may contain Items or Posts, and this property is used to link to these.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_content">
+<h3>Property: sioc:content</h3>
+<p><em>content</em> - The content of the Item in plain text format. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p>
+This property is for a plain-text rendering of the content of an Item. Rich content (e.g., HTML, wiki markup, BBCode, etc.) can be described using the Content class from AtomOwl or the content:encoded property from the RSS 1.0 Content Module.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_creator_of">
+<h3>Property: sioc:creator_of</h3>
+<p><em>creator of</em> - A resource that the UserAccount is a creator of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_creator">sioc:has_creator</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p>
+Links to a UserAccount that an Item was created by. Being a creator of an Item is not a Role.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_earlier_version">
+<h3>Property: sioc:earlier_version</h3>
+<p><em>earlier version</em> - Links to a previous (older) revision of this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_later_version">sioc:later_version</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>TransitiveProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+The earlier_version property links any sioc:Item to any earlier (i.e. older) version. This is a transitive property.
+<p>
+</p>
+The related non-transitive property, that links any sioc:Item to its immediately older version is previous_version.
+previous_version is a subproperty of earlier_version.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_email">
+<h3>Property: sioc:email</h3>
+<p><em>email</em> - An electronic mail address of the UserAccount. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p>
+Whereas a foaf:Person can hold multiple e-mail addresses, a sioc:UserAccount is usually associated with a primary e-mail address represented using sioc:email or sioc:email_sha1.
+</p>
+
+<p>
+Unlike foaf:mbox / foaf:mbox_sha1sum for foaf:Person, this property is not an inverse functional property as one e-mail address can be associated with multiple unique sioc:UserAccounts that should not be smushed together.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_email_sha1">
+<h3>Property: sioc:email_sha1</h3>
+<p><em>email sha1</em> - An electronic mail address of the UserAccount, encoded using SHA1. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p>
+Remember to include the "mailto:" prefix, but no trailing whitespace, when computing a sioc:email_sha1 property.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_embeds_knowledge">
+<h3>Property: sioc:embeds_knowledge</h3>
+<p><em>embeds knowledge</em> - This links Items to embedded statements, facts and structured content. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2004/03/trix/rdfg-1/Graph">http://www.w3.org/2004/03/trix/rdfg-1/:Graph</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_feed">
+<h3>Property: sioc:feed</h3>
+<p><em>feed</em> - A feed (e.g. RSS, Atom, etc.) pertaining to this resource (e.g. for a Forum, Site, UserAccount, etc.). <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_follows">
+<h3>Property: sioc:follows</h3>
+<p><em>follows</em> - Indicates that one UserAccount follows another UserAccount (e.g. for microblog posts or other content item updates). <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_function_of">
+<h3>Property: sioc:function_of</h3>
+<p><em>function of</em> - A UserAccount that has this Role. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_function">sioc:has_function</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Role">sioc:Role</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_administrator">
+<h3>Property: sioc:has_administrator</h3>
+<p><em>has administrator</em> - A UserAccount that is an administrator of this Site. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_administrator_of">sioc:administrator_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Site">sioc:Site</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_container">
+<h3>Property: sioc:has_container</h3>
+<p><em>has container</em> - The Container to which this Item belongs. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_container_of">sioc:container_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_creator">
+<h3>Property: sioc:has_creator</h3>
+<p><em>has creator</em> - This is the UserAccount that made this resource. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_creator_of">sioc:creator_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p>
+The has_creator property links an Item to its author's UserAccount. Thus, we can follow the link from the Item to the creator and locate the other Items created by the same UserAccount. Being the creator of an Item is not a Role.
+</p><p>
+The community can be seen as a network of Items with UserAccounts linked to each Item, and there is also a network of other Items created by a given UserAccount stemming from there. We can use this information in community sites to locate more contributions by the given author.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_discussion">
+<h3>Property: sioc:has_discussion</h3>
+<p><em>has discussion</em> - The discussion that is related to this Item. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+The has_discussion property links any sioc:Item to a related discussion. The discussion can be anything, for instance a sioc:Forum, a sioct:WikiArticle or simply a foaf:Document.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_function">
+<h3>Property: sioc:has_function</h3>
+<p><em>has function</em> - A Role that this UserAccount has. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_function_of">sioc:function_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Role">sioc:Role</a></td></tr>
+</table>
+<p>
+Links a UserAccount to a Role that this UserAccount has (it is a function of this UserAccount). UserAccounts can have many different Roles in different Forums. 
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_host">
+<h3>Property: sioc:has_host</h3>
+<p><em>has host</em> - The Site that hosts this Forum. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_host_of">sioc:host_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Forum">sioc:Forum</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Site">sioc:Site</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_member">
+<h3>Property: sioc:has_member</h3>
+<p><em>has member</em> - A UserAccount that is a member of this Usergroup. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_member_of">sioc:member_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Usergroup">sioc:Usergroup</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_moderator">
+<h3>Property: sioc:has_moderator</h3>
+<p><em>has moderator</em> - A UserAccount that is a moderator of this Forum. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Forum">sioc:Forum</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_modifier">
+<h3>Property: sioc:has_modifier</h3>
+<p><em>has modifier</em> - A UserAccount that modified this Item. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_modifier_of">sioc:modifier_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p>
+This property links an Item or Post to the UserAccount that modified it (e.g., contributed new content to it after its creation). Being a modifier of a Post is not a Role.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_owner">
+<h3>Property: sioc:has_owner</h3>
+<p><em>has owner</em> - A UserAccount that this resource is owned by. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_owner_of">sioc:owner_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_parent">
+<h3>Property: sioc:has_parent</h3>
+<p><em>has parent</em> - A Container or Forum that this Container or Forum is a child of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_parent_of">sioc:parent_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_reply">
+<h3>Property: sioc:has_reply</h3>
+<p><em>has reply</em> - Points to an Item or Post that is a reply or response to this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_reply_of">sioc:reply_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="11/0/feed.html#term_related_to">sioc:related_to</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+The has_reply property links an Item to other follow-up content Items made on the same topic.  Use of this property can result in a single branch of replies from the original Item, or in a tree-like structure with branches forking at different Items along the way.
+</p><p>
+For example, in Forums such as mailing lists, message boards, etc., has_reply will be used to link a starter Post to any Post that is made in response to the original message.  Also, has_reply can be used to connect any type of content Item (images, videos, etc.) to any Item or text Post that is made in response. 
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_scope">
+<h3>Property: sioc:has_scope</h3>
+<p><em>has scope</em> - A resource that this Role applies to. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_scope_of">sioc:scope_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Role">sioc:Role</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_space">
+<h3>Property: sioc:has_space</h3>
+<p><em>has space</em> - A data Space which this resource is a part of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_space_of">sioc:space_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Space">sioc:Space</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_subscriber">
+<h3>Property: sioc:has_subscriber</h3>
+<p><em>has subscriber</em> - A UserAccount that is subscribed to this Container. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_subscriber_of">sioc:subscriber_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_has_usergroup">
+<h3>Property: sioc:has_usergroup</h3>
+<p><em>has usergroup</em> - Points to a Usergroup that has certain access to this Space. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_usergroup_of">sioc:usergroup_of</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Space">sioc:Space</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Usergroup">sioc:Usergroup</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_host_of">
+<h3>Property: sioc:host_of</h3>
+<p><em>host of</em> - A Forum that is hosted on this Site. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_host">sioc:has_host</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Site">sioc:Site</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Forum">sioc:Forum</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_id">
+<h3>Property: sioc:id</h3>
+<p><em>id</em> - An identifier of a SIOC concept instance. For example, a user ID. Must be unique for instances of each type of SIOC concept within the same site. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_ip_address">
+<h3>Property: sioc:ip_address</h3>
+<p><em>ip address</em> - The IP address used when creating this Item. This can be associated with a creator. Some wiki articles list the IP addresses for the creator or modifiers when the usernames are absent. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_last_activity_date">
+<h3>Property: sioc:last_activity_date</h3>
+<p><em>last activity date</em> - The date and time of the last activity associated with a SIOC concept instance, and expressed in ISO 8601 format. This could be due to a reply Post or Comment, a modification to an Item, etc. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://purl.org/dc/terms/date">dcterms:date</a> </td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_last_item_date">
+<h3>Property: sioc:last_item_date</h3>
+<p><em>last item date</em> - The date and time of the last Post (or Item) in a Forum (or a Container), in ISO 8601 format. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://purl.org/dc/terms/date">dcterms:date</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_last_reply_date">
+<h3>Property: sioc:last_reply_date</h3>
+<p><em>last reply date</em> - The date and time of the last reply Post or Comment, which could be associated with a starter Item or Post or with a Thread, and expressed in ISO 8601 format. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://purl.org/dc/terms/date">dcterms:date</a> </td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_later_version">
+<h3>Property: sioc:later_version</h3>
+<p><em>later version</em> - Links to a later (newer) revision of this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_earlier_version">sioc:earlier_version</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>TransitiveProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+The later_version property links any sioc:Item to any later (i.e. newer) version. This is a transitive property.
+<p>
+</p>
+The related non-transitive property, that links any sioc:Item to its immediately newer version is next_version.
+next_version is a subproperty of later_version.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_latest_version">
+<h3>Property: sioc:latest_version</h3>
+<p><em>latest version</em> - Links to the latest revision of this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+The latest_version property links a sioc:Item to its latest version. This can be used to link a previous version of an item (e.g. a wiki page) to its latest version.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_link">
+<h3>Property: sioc:link</h3>
+<p><em>link</em> - A URI of a document which contains this SIOC object. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+</table>
+<p>
+Links to a URI of a document where this SIOC object is located. Usually sioc:link is not needed because it can be assigned directly as a URI of this SIOC object. It is recommended that its usage is limited only to those cases where a document's URI may not be assigned to the object itself.
+</p><p>
+For example, this may occur in a page that contains a number of objects (e.g., comments to a blog post) that can not be addressed individually.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_links_to">
+<h3>Property: sioc:links_to</h3>
+<p><em>links to</em> - Links extracted from hyperlinks within a SIOC concept, e.g. Post or Site. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://purl.org/dc/terms/references">dcterms:references</a> </td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_member_of">
+<h3>Property: sioc:member_of</h3>
+<p><em>member of</em> - A Usergroup that this UserAccount is a member of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_member">sioc:has_member</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Usergroup">sioc:Usergroup</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_moderator_of">
+<h3>Property: sioc:moderator_of</h3>
+<p><em>moderator of</em> - A Forum that a UserAccount is a moderator of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_moderator">sioc:has_moderator</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Forum">sioc:Forum</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_modifier_of">
+<h3>Property: sioc:modifier_of</h3>
+<p><em>modifier of</em> - An Item that this UserAccount has modified. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_modifier">sioc:has_modifier</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_name">
+<h3>Property: sioc:name</h3>
+<p><em>name</em> - The name of a SIOC concept instance, e.g. a username for a UserAccount, group name for a Usergroup, etc. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p>
+The name property is used to assign a name to various SIOC objects.  For example, it may be username of a UserAccount, the name of a Usergroup, the name given to a role (e.g. Moderator, Registered User), etc.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_next_by_date">
+<h3>Property: sioc:next_by_date</h3>
+<p><em>next by date</em> - Next Item or Post in a given Container sorted by date. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_previous_by_date">sioc:previous_by_date</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_next_version">
+<h3>Property: sioc:next_version</h3>
+<p><em>next version</em> - Links to the next revision of this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_previous_version">sioc:previous_version</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="11/0/feed.html#term_later_version">sioc:later_version</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_note">
+<h3>Property: sioc:note</h3>
+<p><em>note</em> - A note associated with this resource, for example, if it has been edited by a UserAccount. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_num_authors">
+<h3>Property: sioc:num_authors</h3>
+<p><em>num authors</em> - The number of unique authors (UserAccounts and unregistered posters) who have contributed to this Item, Thread, Post, etc. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_num_items">
+<h3>Property: sioc:num_items</h3>
+<p><em>num items</em> - The number of Posts (or Items) in a Forum (or a Container). <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_num_replies">
+<h3>Property: sioc:num_replies</h3>
+<p><em>num replies</em> - The number of replies that this Item, Thread, Post, etc. has. Useful for when the reply structure is absent. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_num_threads">
+<h3>Property: sioc:num_threads</h3>
+<p><em>num threads</em> - The number of Threads (AKA discussion topics) in a Forum. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Forum">sioc:Forum</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_num_views">
+<h3>Property: sioc:num_views</h3>
+<p><em>num views</em> - The number of times this Item, Thread, UserAccount profile, etc. has been viewed. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>DatatypeProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a></td></tr>
+</table>
+<p>
+The num_views property represents the number of times a particular Item, Post, Thread, UserAccount profile, etc. has been viewed. This is an example of where content is automatically created by an end user, and can increase the content's importance in terms of searching. For example, someone creates a query across a set of SIOC-enabled sites, and is returned a list of subjects and extracts from certain Posts, sorted by the popularity of the Post, as indicated by the num_views property.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_owner_of">
+<h3>Property: sioc:owner_of</h3>
+<p><em>owner of</em> - A resource owned by a particular UserAccount, for example, a weblog or image gallery. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_owner">sioc:has_owner</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_parent_of">
+<h3>Property: sioc:parent_of</h3>
+<p><em>parent of</em> - A child Container or Forum that this Container or Forum is a parent of. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_parent">sioc:has_parent</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_previous_by_date">
+<h3>Property: sioc:previous_by_date</h3>
+<p><em>previous by date</em> - Previous Item or Post in a given Container sorted by date. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_next_by_date">sioc:next_by_date</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_previous_version">
+<h3>Property: sioc:previous_version</h3>
+<p><em>previous version</em> - Links to the previous revision of this Item or Post. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_next_version">sioc:next_version</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="11/0/feed.html#term_earlier_version">sioc:earlier_version</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_related_to">
+<h3>Property: sioc:related_to</h3>
+<p><em>related to</em> - Related Posts for this Post, perhaps determined implicitly from topics or references. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_reply_of">
+<h3>Property: sioc:reply_of</h3>
+<p><em>reply of</em> - Links to an Item or Post which this Item or Post is a reply to. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_reply">sioc:has_reply</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="11/0/feed.html#term_related_to">sioc:related_to</a> </td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_scope_of">
+<h3>Property: sioc:scope_of</h3>
+<p><em>scope of</em> - A Role that has a scope of this resource. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_scope">sioc:has_scope</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Role">sioc:Role</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_sibling">
+<h3>Property: sioc:sibling</h3>
+<p><em>sibling</em> - An Item may have a sibling or a twin that exists in a different Container, but the siblings may differ in some small way (for example, language, category, etc.). The sibling of this Item should be self-describing (that is, it should contain all available information). <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>SymmetricProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Item">sioc:Item</a></td></tr>
+</table>
+<p>
+A recent development in online discussion methods is an article or Item that appears in multiple places, or has been copied from one Container to another relevant Container. In SIOC, we can treat these copies of Items as siblings of each other if we think of the Items as non-identical twins that share most characteristics but differ in some manner.
+</p><p>
+<em>For example, a post is created on one blog and categorized with the topic "TV", but has been copied to another blog with multiple topics such as "Sci-Fi" or "Arts".</em>
+</p><p>
+In the creation of siblings, the new sibling instance will be fully self-describing but will have a number of changed properties (in the example, has_container and topic would change). A sibling might also be a version of a post in another language.
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_space_of">
+<h3>Property: sioc:space_of</h3>
+<p><em>space of</em> - A resource which belongs to this data Space. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_space">sioc:has_space</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Space">sioc:Space</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_subscriber_of">
+<h3>Property: sioc:subscriber_of</h3>
+<p><em>subscriber of</em> - A Container that a UserAccount is subscribed to. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_subscriber">sioc:has_subscriber</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_UserAccount">sioc:UserAccount</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Container">sioc:Container</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_topic">
+<h3>Property: sioc:topic</h3>
+<p><em>topic</em> - A topic of interest, linking to the appropriate URI, e.g. in the Open Directory Project or of a SKOS category. <br /></p><table style="th { float: top; }">
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>sub-property-of:</th>
+	<td><a href="http://purl.org/dc/terms/subject">dcterms:subject</a> </td></tr>
+</table>
+<p>
+A topic definition applies to most of the concepts defined in this ontology, and topic metadata can be a useful way to match documents and people to each other.
+</p><p>
+While it may be more difficult to require a UserAccount to assign a topic to an Item or Post at creation time, it is more likely that a Container will have an associated topic or set of topics that can be propagated to the Items it contains. Similarly, UserAccounts or Usergroups can define topics of interest when their profiles are created or modified.
+</p><p>
+In order to enable the location of related information between the community sites, a common categorisation system has to be used. On large-scale general-interest community sites, topics may be quite broad and a general categorisation system such as the <a href="http://dmoz.org/">DMOZ</a> category hierarchy may be used.
+</p>
+<pre>:post_123 a sioc:Post ; 
+    sioc:topic &lt;http://dmoz.org/Business/Publishing_and_Printing/&gt; .
+&lt;http://dmoz.org/Business/Publishing_and_Printing/&gt; rdfs:label "Publishing and Printing" .</pre>
+<p>
+On specialised sites, which may have a very specific category hierarchy, generic categorisation systems are not suitable because they are too broad and may not have the necessary level of detail. For these sites, the category hierarchy may be defined in the <a href="http://www.w3.org/2004/02/skos/">SKOS framework</a> and mappings between these concepts and a common category system may be created.
+</p><p>
+A proper use of topics can lead to many interesting scenarios in community sites. For example, a person has defined certain topics of interest on registering a UserAccount, after which Forums matching those topics are suggested to the UserAccount owner. The UserAccount subscribes to some of these Forums, and makes Posts on these and other Forums. The Forums now associated with this UserAccount will have certain topics that can be used for purposes of social networking or automatic community creation.
+</p><p>
+This property is often used to express the information about categories or tags assigned to a Post or Item. The <a href="11/0/feed.html#sec-modules-types">SIOC Types Ontology Module</a> allows one to further specify what type of topic it is using the classes sioc_t:Category and sioc_t:Tag. 
+</p>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+<div class="specterm" id="term_usergroup_of">
+<h3>Property: sioc:usergroup_of</h3>
+<p><em>usergroup of</em> - A Space that the Usergroup has access to. <br /></p><table style="th { float: top; }">
+	<tr><th>Inverse:</th>
+	<td><a href="11/0/feed.html#term_has_usergroup">sioc:has_usergroup</a> </td></tr>
+	<tr><th>OWL Type:</th>
+	<td>ObjectProperty</td></tr>
+	<tr><th>Domain:</th>
+	<td><a href="11/0/feed.html#term_Usergroup">sioc:Usergroup</a></td></tr>
+	<tr><th>Range:</th>
+	<td><a href="11/0/feed.html#term_Space">sioc:Space</a></td></tr>
+</table>
+<p style="float: right; font-size: small;">[<a href="11/0/feed.html#sec-glance">back to top</a>]</p>
+
+
+<br/>
+</div>
+
+
+<!-- End of the terms list -->
+
+<h2><a name="sec-external" id="sec-external"></a>6. External classes and properties</h2>
+
+<p>Classes and properties from other ontologies can be used together with SIOC. During the SIOC ontology design process, some external classes and properties were identified that are suitable for reuse. Such concepts are not included inside SIOC but are used directly together with terms from SIOC to describe the information in online community sites.</p>
+
+<p>This section lists the most important external classes and properties that can be used with SIOC in a meaningful way. This list is not and cannot be exhaustive because many RDF ontologies can be used together.</p>
+
+<div class="specterm">
+  <h3>Class: foaf:Person</h3>
+  <p>Used in SIOC to represent the information about a person who holds an account (sioc:UserAccount) on a Site. Account specific information is described by sioc:UserAccount, a subclass of foaf:OnlineAccount.</p>
+  <p>foaf:Person can also be used to describe information about persons that do not have a UserAccount on a Site, e.g., for authors of comments left by visitors.</p>
+</div>
+<div class="specterm">
+  <h3>Class: skos:Concept</h3>
+  <p>May be used to represent topics or tags defined on a community site. The sioc:topic property can be used to link an Item or Post to a skos:Concept.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:subject</h3>
+  <p>Can be used for keywords describing the subject of an Item or Post. See also: <a href="11/0/feed.html#term_topic">sioc:topic</a>.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:title</h3>
+  <p>Specifies the title of a resource. Usually used to describe the title of an Item or Post.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:created</h3>
+  <p>Details the date and time when a resource was created. Usually used as a property of an Item or Post.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:hasPart</h3>
+  <p>A resource that is a part of this subject. Usually used from the domain of a Post or Community.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:isPartOf</h3>
+  <p>A resource that the subject is a part of. Usually used with the range of a Post or Community.</p>
+</div>
+<div class="specterm">
+  <h3>Property: dcterms:modified</h3>
+  <p>Details the date and time when a resource was modified. Usually used as a property of an Item or Post.</p>
+</div>
+<div class="specterm">
+  <h3>Property: foaf:account</h3>
+  <p>Used to link a foaf:Person to a sioc:UserAccount. See also: <a href="11/0/feed.html#term_account_of">sioc:account_of</a>.</p>
+</div>
+<div class="specterm">
+  <h3>Property: content:encoded</h3>
+  <p>Used to describe the encoded content of a Post, contained in CDATA areas.</p>
+</div>
+
+
+<p>These are the ontology namespaces referenced:</p>
+
+<table style="border: 1px solid black;" cellpadding="5" cellspacing="0" width="100%">
+  <tr><th>Prefix</th><th>XML Namespace</th><th>Specification</th></tr>
+  <tr>
+    <td>aowl</td>
+    <td>http://bblfish.net/work/atom-owl/2006-06-06/AtomOwl.rdf</td>
+    <td><a href="http://bblfish.net/work/atom-owl/2006-06-06/AtomOwl.html">AtomOwl Vocabulary Specification</a></td>
+  </tr>
+  <tr>
+    <td>content</td>
+    <td>http://purl.org/rss/1.0/modules/content/</td>
+    <td><a href="http://web.resource.org/rss/1.0/modules/content/">RSS 1.0 Content Module</a></td>
+  </tr>
+  <tr>
+    <td>dcterms</td>
+    <td>http://purl.org/dc/terms/</td>
+    <td><a href="http://dublincore.org/documents/dcmi-terms/#H3">Dublin Core Metadata Terms</a></td>
+  </tr>
+  <tr>
+    <td>foaf</td>
+    <td>http://xmlns.com/foaf/0.1/</td>
+    <td><a href="http://xmlns.com/foaf/0.1/">Friend of a Friend (FOAF) Vocabulary</a></td>
+  </tr>
+  <tr>
+    <td>sioc</td>
+    <td>http://rdfs.org/sioc/ns#</td>
+    <td><a href="http://rdfs.org/sioc/ns#">SIOC Core Ontology</a></td>
+  </tr>  
+  <tr>
+    <td>skos</td>
+    <td>http://www.w3.org/2004/02/skos/core#</td>
+    <td><a href="http://www.w3.org/2004/02/skos/core#">SKOS Core Vocabulary</a></td>
+  </tr>
+  <tr>
+    <td>xsd</td>
+    <td>http://www.w3.org/2001/XMLSchema#</td>
+    <td><a href="http://www.w3.org/TR/xmlschema-2/">XML Schema (Datatypes)</a></td>
+  </tr>
+</table>
+
+<hr />
+
+<h2><a name="sec-ack" id="sec-ack"></a>7. Acknowledgements</h2>
+
+<p>We would like to acknowledge the contributions of Danny Ayers, Juan Bot&iacute;a, Richard Cyganiak, Benjamin Heitmann, Ann Johnston, Charles McCathieNevile, Libby Miller, Andr&eacute;s Mu&ntilde;oz, Donncha O Caoimh, Jack Park, Thomas Schandl, and Antonio Skarmeta towards this specification. We would also like to acknowledge the many helpful suggestions from members of the <a href="http://groups.google.com/group/sioc-dev">SIOC developers' mailing list</a>, and we thank Dave Beckett for the <a href="http://librdf.org/">Redland RDF library</a> which was used in the creation of this specification.</p>
+
+<h2><a name="sec-reference" id="sec-reference"></a>8. References</h2>
+
+<ul>
+  <li><a name="ref-rfc2119" id="ref-rfc2119"></a>[RFC 2119] S. Bradner,
+"Key words for use in RFCs to Indicate Requirement Levels", RFC 2119, Harvard University, March 1997, <a
+href="http://www.ietf.org/rfc/rfc2119.txt">http://www.ietf.org/rfc/rfc2119.txt</a>.</li>
+  <li><a name="ref-rfc2396" id="ref-rfc2396"></a>[RFC 2396] T. Berners-Lee et al., "Uniform Resource Identifiers
+(URI): Generic Syntax", RFC 2396, Internet Engineering Task Force, August 1998, <a
+href="http://www.ietf.org/rfc/rfc2396.txt">http://www.ietf.org/rfc/rfc2396.txt</a>.</li>
+</ul>
+
+<h2><a name="sec-changes" id="sec-changes"></a>9. Change log</h2>
+
+<ul>
+<li>2005-04-07: Initial version of the SIOC Ontology specification.</li>
+<li>2005-06-10: Updated template and term descriptions. Removed RDF/XML from specification for XHTML validation.</li>
+<li>2005-06-24: Created SIOC-Dev mailing list. Added missing links to the template.</li>
+<li>2005-10-27: Editorial updates.</li>
+<li>2005-12-19: Fixed multiple domains problem.</li>
+<li>2006-06-07: Major revision. See <a href="http://groups.google.com/group/sioc-dev/browse_frm/thread/b8e3f8ceb73b29f5/#">a summary of changes sent to the mailing list</a>.</li>
+<li>2006-08-27: Revised descriptions of SIOC classes and properties. Updated content and layout of the specification.</li>
+<li>2006-09-14: Removed deprecated properties.</li>
+<li>2006-09-14: SIOC page moved to <a href="../../index.html">http://sioc-project.org/</a>. Updated links in the specification.</li>
+<li>2006-09-27: Updated SIOC example. Added modules section.</li>
+<li>2006-10-13: Changed range of sioc:account_of.</li>
+<li>2006-12-12: Added sioc:Webservice and its properties, sioc:moderator_of / has_moderator, num_replies, and num_views. Removed sioc:views.</li>
+<li>2007-03-12: Added sioc:Container, sioc:Item, sioc:Space, standardised rdfs:comment placements in schema, added missing domains and ranges, added sioc:has_owner / owner_of, sioc:has_space / space_of, sioc:has_container / container_of, sioc:feed, sioc:content_enhanced, sioc:embeds (the last two properties are pending approval from the SIOC developer community).</li>
+<li>2007-03-20: sioc:Community subclassed from sioc:Space. Changed descriptions, range and domain of sioc:has_part / part_of and sioc:has_space / space_of.</li> 
+<li>2007-05-11: Added sioc:Thread, sioc:next_by_date / previous_by_date. Revised section "SIOC and RDF". Added a new figure with the main SIOC classes and properties.</li>
+<li>2007-05-31: Removed mappings file; merged with main namespace. Moved service-related terms to SIOC Services module. Changed some domains and ranges from Post to Item and from Forum to Container. Update some descriptions of terms, e.g. sibling. Added sioc:has_administrator / sioc:administrator_of as follow-up to discussion with danbri last month. Changed sioc:has_group / group_of to has_usergroup / usergroup_of.</li>
+<li>2007-06-12: Revisions for rdfs.org.</li>
+<li>2008-01-31: Revised ontology description for email_sha1sum to say that "mailto:" must be part of the SHA1 encoding. Removed domain and range from related_to, domain from has_creator, and range from creator_of.</li> 
+<li>2008-04-11: Merged namespaces for dc and dcterms, now using dcterms (dc:subject becomes dcterms:subject). Changed domain of sioc:content, sioc:attachment and sioc:note to sioc:Item. Changed domain and range of sioc:sibling to sioc:Item. Removed domain of sioc:num_replies. Dropped sioc:Forum as domain and range for sioc:scope_of and sioc:has_scope respectively.</li>
+<li>2008-07-14: Created SIOC Access ontology module. Added Permission, Status class and has_permission, has_status properties. Removed domain of sioc:has_function, range of sioc:function_of.</li>
+<li>2008-09-24: Changed description of sioc:Item slightly.</li>
+<li>2008-10-13: Added OWL-DL compliance statements for SIOC Core and the Types / Access / Services modules, edited owl:disjointWith statements for some classes of SIOC Core, removed domain of sioc:note, removed domain of sioc:has_owner and range of sioc:owner_of, defined sioc:account_of as inverse property of foaf:holdsAccount, defined sioc:avatar as a subproperty of foaf:depiction.</li>
+<li>2009-01-09: Added has_discussion, earlier_version, later_version and latest_version properties, subclassing Category from skos:Concept.</li>
+<li>2009-03-20: Added follows.</li>
+<li>2009-11-09: Added num_authors, num_items, num_threads, last_item_date, last_reply_date.  Changed XMLSchema#integer to XMLSchema#nonNegativeInteger.</li>
+<li>2009-12-09: Added last_activity_date.</li>
+<li>2010-01-08: Added addressed_to.</li>
+<li>2010-03-25: Deprecated User in favour of UserAccount, and added embeds_knowledge. Updated foaf:holdsAccount to foaf:account throughout.</li>
+</ul>
+
+<address><a href="mailto:uldis.bojars@deri.org">uldis.bojars@deri.org</a></address>
+<address><a href="mailto:john.breslin@deri.org">john.breslin@deri.org</a></address>
+
+</body>
+
+</html>
+<!-- specification regenerated at 16:12:27 03/23/10 GMT -->

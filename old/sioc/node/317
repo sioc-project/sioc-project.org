@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/317"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/317">
+  <dc:title>Call for Proposals: BlogTalk 2008 - The 5th Int&amp;#039;l Conf. on Social Software - Cork, Ireland - 3-4 March 2008</dc:title>
+  <sioc:content>BlogTalk 2008
+The 5th International Conference on Social Software
+Cork, Ireland - 3-4 March 2008
+http://blogtalk.net/
+= Overview =
+Following the international success of previous BlogTalk events in 2003,
+2004, 2005 and 2006, the next BlogTalk - to be held in Cork, Ireland on
+3-4 March 2008 - is continuing with its focus on social software, while
+remaining committed to the diverse cultures, practices and tools of our
+emerging networked society. The conference is designed to maintain a
+sustainable dialog between developers, innovative academics and scholars
+who study social software, practitioners and administrators in corporate
+and educational settings, and other general members of the social
+software community.
+We invite you to submit a proposal for presentation at the BlogTalk 2008
+conference. Possible areas include, but are not limited to:
+   * Forms and consequences of emerging social software practices
+   * Social software in enterprise and educational environments
+   * The political impact of social software
+   * Applications, prototypes, concepts and standards
+= Participants and proposal categories =
+Due to the interdisciplinary nature of the conference, audiences will
+come from different fields of practice and will have different
+professional backgrounds. We strongly encourage proposals to bridge
+these cultural differences and to be understandable for all groups
+alike. Along those lines, we will offer three different submission
+categories:
+   * Academic
+   * Developer
+   * Practitioner
+For academics, BlogTalk is an ideal conference for presenting and
+exchanging research work from current and future social software
+projects at an international level. For developers, the conference is a
+great opportunity to fly ideas, visions and prototypes in front of a
+distinguished audience of peers, to discuss, to link-up and to learn
+(developers may choose to give a practical demonstration rather than a
+formal presentation if they so wish). For practitioners, this is a venue
+to discuss use cases for social software and to report on any results
+you may have with like-minded individuals.
+= Submitting your proposals =
+Please upload your submission along with some personal information at
+the http://www.easychair.org/blogtalk2008/ site. You will receive a
+confirmation of the arrival of your submission within three working
+days. The submission deadline is November 16th, 2007. The length of the
+proposal should be between two and four pages. BlogTalk is a
+peer-reviewed conference.
+= Timeline and important dates =
+Proposal submission deadline: November 16th, 2007
+Notification of acceptance or rejection: December 7th, 2007
+Paper version due: January 7th, 2008
+Presentations and abstracts on website due: February 7th, 2008
+(We will work hard to endow a fund for supporting travel costs. As soon
+as we review all of the papers we will be able to announce more details.)
+= Chairs =
+   * John Breslin
+   * Thomas N. Burg
+   * Tom Raftery
+   * Jan Schmidt
+= Programme Committee =
+   * Stowe Boyd
+   * Dan Brickley
+   * Jyri Engeström
+   * Jen Golbeck
+   * Eugene Eric Kim
+   * Kevin Marks
+   * Peter Mika
+   * José Luis Orihuela
+   * Jeremy Ruston
+   * Paolo Valdemarin
+   * David Weinberger
+Please visit our website at http://blogtalk.net for more information.
+-- 
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-12-12T10:57:10+00:00</dcterms:created>
+  <dcterms:modified>2007-12-12T10:57:10+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/317" rdfs:label="Call for Proposals: BlogTalk 2008 - The 5th Int&#039;l Conf. on Social Software - Cork, Ireland - 3-4 March 2008" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

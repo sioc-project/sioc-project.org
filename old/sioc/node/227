@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/227"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/227">
+  <dc:title>2nd CFP: Scripting for the Semantic Web, Workshop and Challenge at ESWC2007</dc:title>
+  <sioc:content>** apologies if you get multiple copies of this message **
+The deadline for full paper, short paper, and Scripting Challenge
+submissions  to the 3rd Workshop on Scripting for the Semantic Web is
+approaching (30th March). Submissions can be made via the conference
+submission system linked from 
+Update: Danny Ayers will give an invited talk at SFSW07 about &quot;Two Webs!&quot;
+-------------------------------------------------------
+CALL FOR PAPERS
+-------------------------------------------------------
+3rd Workshop on Scripting for the Semantic Web
+http://www.semanticscripting.org/SFSW2007/
+co-located with
+4th European Semantic Web Conference
+June 6 or 7 2007, Innsbruck, Austria
+-------------------------------------------------------
+Scripting languages such as PHP, JavaScript, Ruby, Python, Perl, JSP
+and ActionScript are playing a central role in current development
+towards flexible, lightweight web applications following the AJAX and
+REST design paradigms. These languages are the tools of a generation
+of web programmers who use them to quickly create server and
+client-side web applications. Many deployed Semantic Web applications
+from the FOAF, RSS/ATOM, blog and wiki communities, as well as many
+innovative mashups from the Web 2.0 and Open Data movements are using
+scripting languages and it is likely that the process of RDF-izing
+existing database-backed websites, wikis, weblogs and CMS will largely
+rely on scripting languages.
+The workshop aims to bring together developers of the RDF base
+infrastructure for scripting languages with practitioners building
+applications using these languages. Last years Scripting for the
+Semantic Web workshop in Budva, Montenegro focused on giving an
+overview about the support for Semantic Web technologies within
+scripting languages. The special focus of this year&#039;s workshop is the
+role of scripting languages in the process of populating the Web with
+linked RDF data as well as to showcase innovative scripting
+applications that consume RDF data from the Web. The second focus of
+the workshop is to show how Web 2.0 applications and mashups can
+benefit from Semantic Web technologies.
+The workshop will include a scripting challenge (conducted for the 2nd
+time) which will award a prize to the most innovative scripting
+application.
+INVITED TALK
+Danny Ayers will give an invited talk at SFSW07 about &quot;Two Webs!&quot;
+TOPICS OF INTEREST
+Topics of interest include, but are not limited to:
+Infrastructure
+* Semantic Web frameworks and APIs for scripting languages
+* RDF repositories and query languages implemented using scripting languages
+* Reasoning engines implemented using scripting languages
+* Semantic Web publishing and data syndication frameworks
+* Approaches to crawling Web data and querying distributed data on the Web
+Applications
+* Semantic Web applications using scripting languages
+* Approaches to RDF-izing existing applications, such as RDFa and GRDDL
+* Mashups that provide RDF views on Web 2.0 data sources such as Google,
+  Yahoo, Amazon or eBay
+* Wikis, weblogs and data syndication systems using RDF
+* Approaches (e.g. RDFa, microformats, GRDDL) to RDF-izing existing applications
+* Scripting applications for visualizing Web data.
+* Semantic Web Mining and Social Network Analysis
+* Mashups that demonstrate the novel capabilities of Semantic Web technologies
+Conceptual
+* Rapid development techniques for the Semantic Web
+* Employment of scripting language characteristics for Semantic Web development
+* Scalability and benchmarks of Semantic Web scripting applications
+Scripting Challenge
+The workshop includes a scripting challenge which will award a prize
+(an Apple iPod Video or alternatively Euro 200 cash) to the most
+innovative small scripting application or mashup. The application must
+be implemented using a scripting language and Semantic Web
+technologies. It should access, visualize or combine information from
+different sources in new unforeseen ways. Authors of Scripting
+Challenge submissions are not required to attend the workshop
+personally. More information at:
+http://semanticscripting.org/SFSW2007/challenge/
+IMPORTANT DATES
+Submission deadline: March 30, 2007
+Notication of acceptance: April 28, 2007
+Camera-ready paper submission: May 7, 2007
+Workshop date: June 6, 2007
+WORKSHOP CHAIRS
+* Chris Bizer, Freie Universität Berlin, Germany
+* Sören Auer, Universität Leipzig, Germany and University of Pennsylvania USA
+* Gunnar Aastrand Grimnes, DFKI Knowledge Management Lab, Germany
+* Tom Heath, Knowledge Media Institute (KMi), United Kingdom
+SUBMISSIONS
+We seek three kinds of submissions:
+* Full papers - should not exceed ten pages in length.
+* Short papers - are expected up to 5 pages.
+* Scripting Challenge Submissions - 2 page description of the
+  application, ideally accompanied with the source code and a link to an
+  online demo.
+PROGRAM COMMITTEE
+* David Aumüller, Universität Leipzig, Germany
+* Danny Ayers, Independent Author, Italy
+* Dave Beckett, Yahoo!, USA
+* Uldis Bojars, DERI, Ireland
+* Dan Brickley, Semantic Web Vapourware, UK
+* Richard Cyganiak, Freie Universität Berlin, Germany
+* Stefan Decker, DERI, Ireland
+* Leigh Dodds, Ingenta, UK
+* Edd Dumbill, Useful Information Company, UK
+* Frank Fuchs-Kittowski, Frauenhofer Gesellschaft - ISST, Germany
+* Daniel Krech, University of Maryland, USA
+* Peter Mika, Vrije Universiteit Amsterdam, The Netherlands
+* Libby Miller, @Semantics, UK
+* Claudia Müller, University of Potsdam, Germany
+* Benjamin Nowack, appmosphere web applications, Germany
+* Alberto Reggiori, @Semantics, Italy
+* Sebastian Schaffert, salzburg research, Austria
+* Vlad Tanasescu, KMi, The Open University, UK
+* Elias Torres, IBM, USA
+* Denny Vrandecic, AIFB, Universität Karlsruhe, Germany
+* Gregory Williams, University of Maryland, USA
+FURTHER INFORMATION
+Updated information about the workshop is found on the workshop
+website http://www.semanticscripting.org/SFSW2007/
+--
+Tom Heath
+PhD Student
+Knowledge Media Institute
+The Open University
+Walton Hall
+Milton Keynes
+MK7 6AA
+United Kingdom
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-08T11:45:23+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/227" rdfs:label="2nd CFP: Scripting for the Semantic Web, Workshop and Challenge at ESWC2007" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/199%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/199" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/247"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>swaml:previousByDate/nextByDate (was:  Threads?) | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>swaml:previousByDate/nextByDate (was:  Threads?)</h2>                                                  <div class="clear-block">
+            <div id="node-247" class="node">
+
+
+
+      <span class="submitted">2007, April 10 - 19:03 — <a href="../user/54.html" title="View user profile.">Benja Fallenstein</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi Sergio,</p>
+<p>That's interesting. Mind elaborating why you did this? Or do you have<br />
+a link to an explanation?</p>
+<p>I'm interested because when using SIOC for IRC logs, we had to figure<br />
+out how to order IRC events that come in the same second; we hacked it<br />
+by using the millisecond part of dcterms:created to contain a counter,<br />
+so that you'd have the event at 12:03:01 followed by the event at<br />
+"12:03:01.001" followed by the event at "12:03:01.002".</p>
+<p>Would you consider changing the definition of swaml:previousByDate and<br />
+swaml:nextByDate not to be specific to mailing lists?</p>
+<p>I'm wondering how it would work if the same message is in more than<br />
+one container, though; it seems to me that SIOC allows both modelling<br />
+these as two sioc:Posts and modelling them as one, which wouldn't be<br />
+good for previousByDate/nextByDate :-/</p>
+<p>- Benja</p>
+<p>2007/4/10, Sergio Fdez <sergio@wikier.org>:<br />
+><br />
+><br />
+> > I'm confused about this: Does this add information beyond what we know<br />
+> > through sioc:reply_of? Or is this just an abbreviation of information<br />
+> > that sioc:reply_of already gives us?<br />
+><br />
+> I thought the same..., that a thread could be composed using<br />
+> sioc:has_reply and sioc:reply_of relationships (that is indeed what<br />
+> Buxon does). But if we want to give one more a richer description about<br />
+> thread, perhaps TDL [1] would be interesting for us.<br />
+><br />
+> BTW, in SWAML we had to add two properties [2] to express chronological<br />
+> information between sioc:Post's, but this is another theme.<br />
+><br />
+> Regards,<br />
+><br />
+> [1] http://www.eyrie.org/~zednenem/2002/web-threads/<br />
+> [2] http://swaml.berlios.de/ns/0.2#<br />
+><br />
+> --<br />
+> __      ___ _   _<br />
+> \ \    / (_) |_(_)___ _ _   Sergio Fdez<br />
+>  \ \/\/ /| | / / / -_) '_|  GNU/LiNUX User: #298803<br />
+>   \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/<br />
+><br />
+><br />
+> ><br />
+></sergio@wikier.org></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="249.html" class="topic-previous" title="Go to previous forum topic">‹ [swaml-devel] Changing SWAML ontology not to be specific to mailing lists</a>
+              <a href="266.html" class="topic-next" title="Go to next forum topic">How to define Recipients of sioc:Posts/Items ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-405"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/67.html" title="View user profile.">Wikier</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-405" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>
+> That's interesting. Mind elaborating why you did this?</p>
+<p>In mailing lists always is interesting to know the chronological order<br />
+of the messages posted. Classic syntactic exporters (such as pipermail)<br />
+already provide long ago this feature.</p>
+<p>> I'm interested because when using SIOC for IRC logs, we had to figure<br />
+> out how to order IRC events that come in the same second; we hacked it<br />
+> by using the millisecond part of dcterms:created to contain a counter,<br />
+> so that you'd have the event at 12:03:01 followed by the event at<br />
+> "12:03:01.001" followed by the event at "12:03:01.002".</p>
+<p>For a mailing list it's much more simple, because it's the mailing list<br />
+manager who has made that work. Then we suppose that the messages will<br />
+go correctly ordered into the mbox file.</p>
+<p>> Would you consider changing the definition of swaml:previousByDate and<br />
+> swaml:nextByDate not to be specific to mailing lists?</p>
+<p>Sure, but I think that it's already enough generic (both properties have<br />
+sioc:Post as rdfs:domain and rdfs:range) if we ignore the comment.<br />
+Perhaps we could make more generic those descriptions.</p>
+<p>> I'm wondering how it would work if the same message is in more than<br />
+> one container, though; it seems to me that SIOC allows both modelling<br />
+> these as two sioc:Posts and modelling them as one, which wouldn't be<br />
+> good for previousByDate/nextByDate :-/</p>
+<p>Interesting question... now SWAML'll give two different URIs for same<br />
+message posted in two different mailing lists. It is left much work to<br />
+do...</p>
+<p>Best regards,</p>
+<p>--<br />
+__      ___ _   _<br />
+\ \    / (_) |_(_)___ _ _   Sergio Fdez<br />
+ \ \/\/ /| | / / / -_) '_|  GNU/LiNUX User: #298803<br />
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-435"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-435" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>On 4/10/07, Sergio Fdez <sergio@wikier.org> wrote:<br />
+><br />
+> > Would you consider changing the definition of swaml:previousByDate and<br />
+> > swaml:nextByDate not to be specific to mailing lists?<br />
+><br />
+> Sure, but I think that it's already enough generic (both properties have<br />
+> sioc:Post as rdfs:domain and rdfs:range) if we ignore the comment.<br />
+> Perhaps we could make more generic those descriptions.</sergio@wikier.org></p>
+<p>Should we include these properties in the SIOC ontology then? If they<br />
+apply to different types of sioc:Post(s) then it would make sense.</p>
+<p>The only question / problem, which applies to any "linked list"<br />
+ordering in general is what happens when data changes - e.g. - what<br />
+will happen if you remove one of the messages in this chain?</p>
+<p>(a) if you remove a message from the mailing list itself, regenerate<br />
+RDF data and put that data in a store that also contains the old<br />
+information, you may end up with confusing information - a message<br />
+pointing to two different messages as nextByDate. (maybe it's a<br />
+non-problem, who knows.)</p>
+<p>(b) if you delete information about this message only from the RDF<br />
+store, that may break the "next/previous" chain.</p>
+<p>Probably these properties are best not included in the original<br />
+"dynamic" data, but being created using rules by some application<br />
+along the data conversion chain. Such an application would look at the<br />
+original "hard" evidence (e.g., date order in dct:created) and<br />
+generate next/previous thread information.</p>
+<p>> > I'm wondering how it would work if the same message is in more than<br />
+> > one container, though; it seems to me that SIOC allows both modelling<br />
+> > these as two sioc:Posts and modelling them as one, which wouldn't be<br />
+> > good for previousByDate/nextByDate :-/<br />
+><br />
+> Interesting question... now SWAML'll give two different URIs for same<br />
+> message posted in two different mailing lists. It is left much work to<br />
+> do...</p>
+<p>Makes practical sense. These messages may also get different reply<br />
+threads in different mailing lists (depends if all mailing lists are<br />
+copied in the reply), etc. But it can also be interesting to see how<br />
+to express the fact that this is the same message (in different<br />
+mailing lists). Do you currently do that somehow?</p>
+<p>Uldis</p>
+<p>[ http://sioc-project.org/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-439"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/284" title="View user profile.">Diego Berrueta</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-439" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>Hi, Uldis, all. Please read my comments inline:</p>
+<p>El jue, 10-05-2007 a las 17:27 +0100, Uldis Bojars escribió:<br />
+> The only question / problem, which applies to any "linked list"<br />
+> ordering in general is what happens when data changes - e.g. - what<br />
+> will happen if you remove one of the messages in this chain?<br />
+><br />
+> (a) if you remove a message from the mailing list itself, regenerate<br />
+> RDF data and put that data in a store that also contains the old<br />
+> information, you may end up with confusing information - a message<br />
+> pointing to two different messages as nextByDate. (maybe it's a<br />
+> non-problem, who knows.)<br />
+><br />
+> (b) if you delete information about this message only from the RDF<br />
+> store, that may break the "next/previous" chain.</p>
+<p>Maybe you can prove me wrong, but in this scenario, I think the same<br />
+thing would happen to the "has_reply/reply_of" chain, so actually the<br />
+addition of "next_by_date/previous_by_date" properties doesn't introduce<br />
+a new issue in the ontology.</p>
+<p>By the way, from my point of view, "next/previous" shouldn't be declared<br />
+as a transitive property. In fact, if there was a need to have<br />
+transitive properties for temporal relationships (I think there isn't),<br />
+my proposal would be to call them "follows/precedes".</p>
+<p>> Makes practical sense. These messages may also get different reply<br />
+> threads in different mailing lists (depends if all mailing lists are<br />
+> copied in the reply), etc. But it can also be interesting to see how<br />
+> to express the fact that this is the same message (in different<br />
+> mailing lists). Do you currently do that somehow?</p>
+<p>That's a good point, and SWAML isn't addressing this issue at the<br />
+moment. At a first glance, I believe cross-posted messages must have the<br />
+same identity (i.e.: they must be the same instance, or have an<br />
+owl:sameAs relationship). However, I recognize that the problem requires<br />
+a deeper study.</p>
+<p>Regards,</p>
+<p>--<br />
+Diego Berrueta <diego.berrueta@fundacionctic.org><br />
+Fundación CTIC</diego.berrueta@fundacionctic.org></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-440"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-440" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>Hi Diego,</p>
+<p>Thanks for comments.</p>
+<p>On 5/10/07, Diego Berrueta <diego.berrueta@fundacionctic.org> wrote:</diego.berrueta@fundacionctic.org></p>
+<p>> Maybe you can prove me wrong, but in this scenario, I think the same<br />
+> thing would happen to the "has_reply/reply_of" chain, so actually the<br />
+> addition of "next_by_date/previous_by_date" properties doesn't introduce<br />
+> a new issue in the ontology.</p>
+<p>True, it's a generic issue (or non-issue).<br />
+Alexandre proposed transitive properties as a potential solution.</p>
+<p>> By the way, from my point of view, "next/previous" shouldn't be declared<br />
+> as a transitive property. In fact, if there was a need to have<br />
+> transitive properties for temporal relationships (I think there isn't),<br />
+> my proposal would be to call them "follows/precedes".</p>
+<p>Could you discuss with Alexandre the motivation for / against<br />
+transitivity. If there are doubts it is better to leave it out and add<br />
+at a later stage, if needed.</p>
+<p>One reason against transitivity is the literal meaning of<br />
+"next_by_date" - as only one item can be _the_next_ item after the<br />
+current one. Is there enough motivation for transitivity to make a<br />
+name / meaning change to follows[_by_date] / precedes[_by_date] ?</p>
+<p>> That's a good point, and SWAML isn't addressing this issue at the<br />
+> moment. At a first glance, I believe cross-posted messages must have the<br />
+> same identity (i.e.: they must be the same instance, or have an<br />
+> owl:sameAs relationship). However, I recognize that the problem requires<br />
+> a deeper study.</p>
+<p>We thought about this in SIOC before, but at the moment I can't recall<br />
+what was the idea.</p>
+<p>owl:sameAs seems a bit too strict as a person might reply to the<br />
+message in one mailing list without replying to it in the other list<br />
+where the original message was cross-posted. Then you may want to add<br />
+a sioc:has_reply relationship only to one of these instances of the<br />
+original message (if you wish to be precise).</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-443"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/284" title="View user profile.">Diego Berrueta</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-443" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>El jue, 10-05-2007 a las 22:13 +0100, Uldis Bojars escribió:<br />
+> Could you discuss with Alexandre the motivation for / against<br />
+> transitivity. If there are doubts it is better to leave it out and add<br />
+> at a later stage, if needed.<br />
+><br />
+> One reason against transitivity is the literal meaning of<br />
+> "next_by_date" - as only one item can be _the_next_ item after the<br />
+> current one. </p>
+<p>In addition to this reason, I'd like to propose another one: computing<br />
+if a Post "follows_by_date" another Post can be done in O(1) time by<br />
+simply comparing the date of the Posts, so it is really cheap. However,<br />
+adding a transitive relationship to make explicit this information<br />
+requires to add O(n^2) triples, where "n" is the number of Posts. Even<br />
+if most of these triples are inferred by a reasoner, this is a huge<br />
+amount of memory!</p>
+<p>On the other hand, given a collection of Posts without "next_by_date"<br />
+relationships, computing if a Post is the "next_by_date" of another one<br />
+requires O(n) time, because you have to check that no other Post was<br />
+posted between the other ones (Of course, this would be cheaper if Posts<br />
+were sorted, but this is not the case in RDF stores). At the same,<br />
+adding a non-transitive "next_by_date" relationship requires just O(n)<br />
+triples, which is an affordable amount of memory in order to make this<br />
+query time-efficient.</p>
+<p>> owl:sameAs seems a bit too strict as a person might reply to the<br />
+> message in one mailing list without replying to it in the other list<br />
+> where the original message was cross-posted. Then you may want to add<br />
+> a sioc:has_reply relationship only to one of these instances of the<br />
+> original message (if you wish to be precise).</p>
+<p>In my opinion, such precission isn't required in most scenarios. The<br />
+important information here is that you are replying to a message.<br />
+Furthermore, both messages (the original one and the reply) will have<br />
+links to the Forums they were posted to.</p>
+<p>Regarding this, if we share the same instance of Post for the copies of<br />
+a cross-posted message in several Forums, then<br />
+"next_by_date"/"previous_by_date" should not be [inverse] functional<br />
+properties, because the same instance would be a member of several<br />
+sequences.</p>
+<p>As I said before, I still have some doubts about this issue. I don't<br />
+like the idea to introduce a new property (say sioc:cross_posted) to<br />
+link different instances of Post that are "almost the same, but not<br />
+actually the same because they were posted in different Forums".<br />
+However, I agree that we should be careful and not to rush into making<br />
+them the same instance without being aware of the consequences.</p>
+<p>Any thoughts?</p>
+<p>Best regards,</p>
+<p>P.S.: I'm glad to announce that Sergio will report great news for SWAML<br />
+as soon as he comes back from Seville ;-)</p>
+<p>--<br />
+Diego Berrueta<br />
+R&amp;D Department  -  CTIC Foundation<br />
+E-mail: diego.berrueta@fundacionctic.org<br />
+Phone: +34 984 29 12 12<br />
+Parque Científico Tecnológico Gijón-Asturias-Spain<br />
+www.fundacionctic.org</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-441"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-441" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 5/10/07, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+> Hi Diego,<br />
+><br />
+> > By the way, from my point of view, "next/previous" shouldn't be declared<br />
+> > as a transitive property. In fact, if there was a need to have<br />
+> > transitive properties for temporal relationships (I think there isn't),<br />
+> > my proposal would be to call them "follows/precedes".<br />
+><br />
+> Could you discuss with Alexandre the motivation for / against<br />
+> transitivity. If there are doubts it is better to leave it out and add<br />
+> at a later stage, if needed.</captsolo@gmail.com></p>
+<p>I mentionned transitivity for nextByDate property because I think that<br />
+makes sense since the notion of "by date" involves a chronological<br />
+aspect. (so there's a transitivity regarding more recent / older<br />
+items). The main advantage is using a reasoner + OWL capabilities when<br />
+available, rather than a query with dc:date > xx to find all more<br />
+recent mails.<br />
+Yet, indeed, that's not that much useful, but I think that's cleaner.</p>
+<p>If defining a generic next / previous property (that do not involve<br />
+chronological aspect), there is yet no particular reason to use<br />
+transitivity (since there can be different semantics in the 'next'<br />
+meaning depending the platform / user)</p>
+<p>> One reason against transitivity is the literal meaning of<br />
+> "next_by_date" - as only one item can be _the_next_ item after the<br />
+> current one. Is there enough motivation for transitivity to make a<br />
+> name / meaning change to follows[_by_date] / precedes[_by_date] ?<br />
+Indeed, if by next_by_date you mention *the* next item, there must be<br />
+another name for 'any item after the current one re. date'.<br />
+But if transitivity is not needed at the moment, let's use<br />
+next_by_date, and we might find a way to deal with it - or not -<br />
+later.</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-436"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="247.html#comment-436" class="active">swaml:previousByDate/nextByDate (was:  Threads?)</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 5/10/07, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+> On 4/10/07, Sergio Fdez <sergio@wikier.org> wrote:<br />
+> ><br />
+> > > Would you consider changing the definition of swaml:previousByDate and<br />
+> > > swaml:nextByDate not to be specific to mailing lists?<br />
+> ><br />
+> > Sure, but I think that it's already enough generic (both properties have<br />
+> > sioc:Post as rdfs:domain and rdfs:range) if we ignore the comment.<br />
+> > Perhaps we could make more generic those descriptions.<br />
+><br />
+> Should we include these properties in the SIOC ontology then? If they<br />
+> apply to different types of sioc:Post(s) then it would make sense.<br />
++1<br />
+It can also apply to IRC conversations, instant messaging ...</sergio@wikier.org></captsolo@gmail.com></p>
+<p>> The only question / problem, which applies to any "linked list"<br />
+> ordering in general is what happens when data changes - e.g. - what<br />
+> will happen if you remove one of the messages in this chain?<br />
+Actually, I think that defining these properties as transitive (and<br />
+also as inverses) would help, at least theorically.</p>
+<p>> (a) if you remove a message from the mailing list itself, regenerate<br />
+> RDF data and put that data in a store that also contains the old<br />
+> information, you may end up with confusing information - a message<br />
+> pointing to two different messages as nextByDate. (maybe it's a<br />
+> non-problem, who knows.)<br />
+If nextByDate is defined as a transitive property, getting more than<br />
+one message related with nextByDate won't be a problem (BTW, in this<br />
+case using a store that differentiates original / inferred statements<br />
+would help).<br />
+The problem is more related to RDF data stores maintenance, since the<br />
+"nextByDate post" exists in the store but not in the original souce.<br />
+Cannot it be solved by using context / named graphs to add information<br />
+in the store ?</p>
+<p>><br />
+> (b) if you delete information about this message only from the RDF<br />
+> store, that may break the "next/previous" chain.<br />
+><br />
+> Probably these properties are best not included in the original<br />
+> "dynamic" data, but being created using rules by some application<br />
+> along the data conversion chain. Such an application would look at the<br />
+> original "hard" evidence (e.g., date order in dct:created) and<br />
+> generate next/previous thread information.</p>
+<p>Even if they are included in the original data, it shouldn't break<br />
+with a reasoner.<br />
+Let's say we have<br />
+a sioc:nextByDate b<br />
+b sioc:nextByDate c<br />
+=> a sioc:nextByDate c<br />
+Removing b (a sioc:Post) shouldn't break the chain, as we'll still<br />
+have a sioc:nextByDate c.<br />
+Yet, we must take care of removing both original statements, but I<br />
+think a "clean" remove of b from the store can make it (by removing<br />
+all properties associated to b)</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F247%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/247?destination=node%2F247"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-WBdv3zVb4ptU9I_Kx8PHl5WuNGVn2zYrlTG4JmwxW0o" value="form-WBdv3zVb4ptU9I_Kx8PHl5WuNGVn2zYrlTG4JmwxW0o"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

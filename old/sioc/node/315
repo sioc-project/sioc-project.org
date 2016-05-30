@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/315"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/315">
+  <dc:title>Semantic Web ideas from the DrupalCon Barcelona 2007</dc:title>
+  <sioc:content>[1] is a webpage containing ideas about combining Drupal and Semantic
+Web. An excerpt follows. Perhaps this is something the SIOC community
+is interested to take part in.
+&quot; What Drupal already offers:
+   Relationship  - need to contact dman and see if he plan to work
+more on this topic. If that&#039;s the case, we need to join forces.
+   FOAF - not up to date (4.6), walkah plans to work on it in the next months
+   SIOC - not up to date (4.7)
+   Semantic Search - alpha in Drupal 5 - would be nice to have 1.0
+release for Drupal 5/6/7 . 4 should not be supported since it doesn&#039;t
+support PHP5 (maybe I&#039;m wrong?) (- hendler) Everything Drupal needs is
+there as a proof of concept, but needs API, cleanup, and better
+community.
+What Drupal needs: a centralized and easy way of storing RDF data to
+an optimized storage. An RDF storage abstraction layer would allow to
+use any RDF store:
+- internal RDF store implemented into Drupal database (semantic search
+has this via ARC)
+- external RDF store such as Yars,Sesame, Jena, Virtuoso etc. for
+better performance and scalability (semantic search has this with
+Sesame and others - see quick UML diagram here.)&quot;
+[1] http://groups.drupal.org/node/6279
+P.S. You may search this groups for &quot;Drupal&quot; to find more info related
+to the Drupal SIOC module.
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-12-12T10:57:10+00:00</dcterms:created>
+  <dcterms:modified>2007-12-12T10:57:10+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/315" rdfs:label="Semantic Web ideas from the DrupalCon Barcelona 2007" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

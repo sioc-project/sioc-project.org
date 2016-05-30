@@ -1,0 +1,1428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/198"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Questions re. Feed to SIOC XSLT script | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Questions re. Feed to SIOC XSLT script</h2>                                                  <div class="clear-block">
+            <div id="node-198" class="node">
+
+
+
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi,</p>
+<p>Sorry - mixed up what should be a URI for sioc:Forum. Was using the<br />
+URL of a feed but should use a URL of the blog / web page itself<br />
+instead. Fixed now, XSLT is at the same URL [1].</p>
+<p>That brings up more questions:</p>
+<p>1. What is a sioc:Site in this case and what should be its URI ?</p>
+<p>In the case of WordPress SIOC export the sioc:Site gets a URL of the<br />
+blog and sioc:Forum gets a synthesized URL. But maybe it should be the<br />
+sioc:Forum instead and leave a sioc:Site w/o a URI (or invent one)?</p>
+<p>What about sites like LiveJournal? Should a sioc:Site be<br />
+http://www.livejournal.com/ ?</p>
+<p>2. If an atom:Entry has both atom:id and atom:link which one should<br />
+become a URI for sioc:Post?</p>
+<p>Most probably it should be the atom:id, but some sites choose<br />
+non-resolvable URIs like "urn:lj:livejournal.com:atom1:02369:31776"<br />
+and there are people who say these are a bad thing to have.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>On 11/28/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> Fixed that.<br />
+><br />
+> The code to extract feed's URL from the link rel="self" element was<br />
+> already there ( thanks, Morten! ), just needed to loosen its matching<br />
+> rules because it was looking for a link of type "application/atom+xml"<br />
+> but there are many feeds that advertise their url as other MIME types<br />
+> such as "text/xml".<br />
+><br />
+> Uldis<br />
+><br />
+> On 11/28/06, Andreas Harth <andreas.harth@deri.org> wrote:<br />
+> ><br />
+> > thanks a lot for making the feed to SIOC XSLT available!  I've checked<br />
+> > in a version of the feed-sioc.xsl script [1] that generates valid RDF/XML.<br />
+> ><br />
+> > One thing: currently, the URL to the feed has to be passed as a parameter<br />
+> > to the XSLT.  Is it possible to get that information out of the feed<br />
+> > itself?  I don't have the feed/Forum URL at hand when invoking the script.<br />
+> ><br />
+> > Many thanks!<br />
+> ><br />
+> > Regards,<br />
+> > Andreas.<br />
+> ><br />
+> > [1] http://sw.deri.ie/svn/sw/2005/08/sioc/xslt/feed-sioc.xsl<br />
+></andreas.harth@deri.org></captsolo@gmail.com></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="207.html" class="topic-previous" title="Go to previous forum topic">‹ Tool for Semantic MPEG-7 annotation using ontologies</a>
+              <a href="204.html" class="topic-next" title="Go to next forum topic">System for semantic annotation and retrieving of audio ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-296"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-296" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+Could anyone reply to Q1 re sioc:Site?</p>
+<p>It is a generic question - what should we choose as a URI for<br />
+sioc:Site? Should we change the way how it is generated by exporters<br />
+now? What should be the URI of sioc:Site in the case of multi-blog<br />
+systems such as LiveJournal or wordpress.com?</p>
+<p>To spark a discussion:</p>
+<p>In [1] Richard Cygniak wrote: "I like sioc:Community much more than<br />
+sioc:Site. I think it's more flexible (just about anything can be<br />
+called a community if you squint the right way) and more interesting<br />
+than sioc:Site. I'd be happy with dropping sioc:Site and using<br />
+sioc:Community instead." - and - "The distinction between Site and<br />
+Forum is awkward, I don't want to introduce a top-level pseudo-forum<br />
+for the weblog. I'm not convinced that Site and the host properties<br />
+provide any value. "</p>
+<p>[1]<br />
+http://groups.google.com/group/sioc-dev/browse_thread/thread/c0202f54b5acd30d/d0943065647c79cc#d0943065647c79cc</p>
+<p>And in [2] I was asking for suggestions re. URIs to use for weblog<br />
+(sioc:Forum) and for users group (sioc:Usergroup): "I would like to use<br />
+nicer URLs for these, but can't find good<br />
+candidates.</p>
+<p>One option would be to use http://blog/sioc/authors for the authors<br />
+list.</p>
+<p>For the #weblog it might be natural to use the URL of the blog itself,<br />
+but this URI is already given to sioc:Site. "</p>
+<p>[2]<br />
+http://groups.google.com/group/sioc-dev/browse_thread/thread/aa0b6ab56d82a1a1/f581d4c1d7cc5d55#f581d4c1d7cc5d55</p>
+<p>Choosing the URIs is a practical question and it does not seem to be<br />
+very popular in responses to SIOC-Dev, but I believe choosing the right<br />
+URIs is very important and can have a large impact.</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>Uldis Bojars wrote:<br />
+> Hi,<br />
+><br />
+> Sorry - mixed up what should be a URI for sioc:Forum. Was using the<br />
+> URL of a feed but should use a URL of the blog / web page itself<br />
+> instead. Fixed now, XSLT is at the same URL [1].<br />
+><br />
+> That brings up more questions:<br />
+><br />
+> 1. What is a sioc:Site in this case and what should be its URI ?<br />
+><br />
+> In the case of WordPress SIOC export the sioc:Site gets a URL of the<br />
+> blog and sioc:Forum gets a synthesized URL. But maybe it should be the<br />
+> sioc:Forum instead and leave a sioc:Site w/o a URI (or invent one)?<br />
+><br />
+> What about sites like LiveJournal? Should a sioc:Site be<br />
+> http://www.livejournal.com/ ?<br />
+><br />
+> 2. If an atom:Entry has both atom:id and atom:link which one should<br />
+> become a URI for sioc:Post?<br />
+><br />
+> Most probably it should be the atom:id, but some sites choose<br />
+> non-resolvable URIs like "urn:lj:livejournal.com:atom1:02369:31776"<br />
+> and there are people who say these are a bad thing to have.<br />
+><br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]<br />
+><br />
+> On 11/28/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> > Fixed that.<br />
+> ><br />
+> > The code to extract feed's URL from the link rel="self" element was<br />
+> > already there ( thanks, Morten! ), just needed to loosen its matching<br />
+> > rules because it was looking for a link of type "application/atom+xml"<br />
+> > but there are many feeds that advertise their url as other MIME types<br />
+> > such as "text/xml".<br />
+> ><br />
+> > Uldis<br />
+> ><br />
+> > On 11/28/06, Andreas Harth <andreas.harth@deri.org> wrote:<br />
+> > ><br />
+> > > thanks a lot for making the feed to SIOC XSLT available!  I've checked<br />
+> > > in a version of the feed-sioc.xsl script [1] that generates valid RDF/XML.<br />
+> > ><br />
+> > > One thing: currently, the URL to the feed has to be passed as a parameter<br />
+> > > to the XSLT.  Is it possible to get that information out of the feed<br />
+> > > itself?  I don't have the feed/Forum URL at hand when invoking the script.<br />
+> > ><br />
+> > > Many thanks!<br />
+> > ><br />
+> > > Regards,<br />
+> > > Andreas.<br />
+> > ><br />
+> > > [1] http://sw.deri.ie/svn/sw/2005/08/sioc/xslt/feed-sioc.xsl<br />
+> ></andreas.harth@deri.org></captsolo@gmail.com></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-299"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-299" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Hi Uldis,</p>
+<p>> Could anyone reply to Q1 re sioc:Site?<br />
+><br />
+> It is a generic question - what should we choose as a URI for<br />
+> sioc:Site? Should we change the way how it is generated by exporters<br />
+> now? What should be the URI of sioc:Site in the case of multi-blog<br />
+> systems such as LiveJournal or wordpress.com?</p>
+<p>The sioc:Site should be the domain name (without subdomains) of the web site<br />
+hosting the community.</p>
+<p>the URI for LiveJournal's sioc:Site would be "http://livejournal.com", etc.</p>
+<p>That way:</p>
+<p>sioc:Site: "http://www.livejournal.com"<br />
+sioc:Forum: "http://a_user.livejournal.com"<br />
+sioc:Post: "http://a_user.livejournal.com/some_post"</p>
+<p>no?</p>
+<p>> To spark a discussion:<br />
+><br />
+> In [1] Richard Cygniak wrote: "I like sioc:Community much more than<br />
+> sioc:Site. I think it's more flexible (just about anything can be<br />
+> called a community if you squint the right way) and more interesting<br />
+> than sioc:Site. I'd be happy with dropping sioc:Site and using<br />
+> sioc:Community instead." - and - "The distinction between Site and<br />
+> Forum is awkward, I don't want to introduce a top-level pseudo-forum<br />
+> for the weblog. I'm not convinced that Site and the host properties<br />
+> provide any value. "</p>
+<p>It could seems useless, however in my opinion it is really important.</p>
+<p>By example, what if I try to find all forums (users) on livejournal.com know by<br />
+an hypothetic triple store?</p>
+<p>I could certainly write something like: </p>
+<p>(in this example I consider that the URI of a forum is resolvable, so I'll not<br />
+use the sioc:link property)</p>
+<p>-----</p>
+<p>SPARQL<br />
+PREFIX sioc:  <http://rdfs.org/sioc/ns#><br />
+SELECT ?forum<br />
+WHERE<br />
+{<br />
+    ?forum a sioc:Forum.<br />
+    FILTER regex(?forum, ".*livejournal\.com.*", "i");<br />
+}</http://rdfs.org/sioc/ns#></p>
+<p>-----</p>
+<p>But what about that one:</p>
+<p>-----</p>
+<p>SPARQL<br />
+PREFIX sioc:  <http://rdfs.org/sioc/ns#><br />
+SELECT ?forum<br />
+WHERE<br />
+{<br />
+    <http://livejournal.com> a sioc:Site;<br />
+                             sioc:host_of ?forum.<br />
+    ?forum a sioc:Forum.<br />
+}</http://livejournal.com></http://rdfs.org/sioc/ns#></p>
+<p>-----</p>
+<p>Which one is faster? Intuitively I would say that the second is much faster.</p>
+<p>I think that the layers: sioc:Site, sioc:Forum and sioc:Post are essential for<br />
+categorization purposes.</p>
+<p>The problem is that this is something that I can't do with sioc:Community.</p>
+<p>Why? Because: "A sioc:Community is different from a sioc:Site - a site describes<br />
+a single community site while a community can consist of a number of sites and<br />
+other resources described in SIOC or other ontologies (e.g., FOAF)."</p>
+<p>So more than one source can belong to a sioc:Community. What if I only need<br />
+sioc:Forums from a single source (domain)? I am back at my case #1.</p>
+<p>Beware, SIOC was initially about online communities, but ultimately it can model<br />
+much more than that, and deleting the Site class could make things worse on the<br />
+long run.</p>
+<p>But it should be discussed.</p>
+<p>> Choosing the URIs is a practical question and it does not seem to be<br />
+> very popular in responses to SIOC-Dev, but I believe choosing the right<br />
+> URIs is very important and can have a large impact.</p>
+<p>Think too.</p>
+<p>This was my two pennies to the discussion,</p>
+<p>Take care,</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-307"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-307" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>I guess that a single blog or forum site will often have the same Forum<br />
+and Site URL, whereas multi-blog/forum and CMS-based sites will use the<br />
+main site portal as the URL for Site...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-303"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="http://sioc-project.org/user/146" title="View user profile.">Kristaps Kaupe</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-303" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>> The sioc:Site should be the domain name (without subdomains) of the web<br />
+> site hosting the community.<br />
+><br />
+><br />
+> the URI for LiveJournal's sioc:Site would be "http://livejournal.com", etc.<br />
+><br />
+><br />
+> That way:<br />
+><br />
+> sioc:Site: "http://www.livejournal.com"<br />
+> sioc:Forum: "http://a_user.livejournal.com"<br />
+> sioc:Post: "http://a_user.livejournal.com/some_post"<br />
+><br />
+> no?</p>
+<p>I disagree.</p>
+<p>1) What to do if we have only www.something.tld DNS record, but not<br />
+something.tld record? I don't think it is a good thing to use http: URIs with<br />
+hosts, that doesn't resolve.</p>
+<p>2) What to do if www.something.tld is "301 Moved Permantenly" HTTP redirect to<br />
+something.tld (like in blogging platform / social network Blogiem.lv I am<br />
+developing)? HTTP/1.1 specification about 301 redirect says [1]: "The<br />
+requested resource has been assigned a new permanent URI and any future<br />
+references to this resource SHOULD use one of the returned URIs. Clients with<br />
+link editing capabilities ought to automatically re-link references to the<br />
+Request-URI to one or more of the new references returned by the server,<br />
+where possible". So, IMHO it means that if http://www.blogiem.lv/ is 301<br />
+redirect to http://blogiem.lv, we could assume that "http://blogiem.lv"<br />
+owl:sameAs "http://blogiem.lv". I am wrong?</p>
+<p>[1] http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2</p>
+<p>--<br />
+Kristaps Kaupe<br />
+Mob. t. +371 29513269<br />
+Skype: kristapskaupe<br />
+http://kristaps.blogiem.lv</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-304"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="http://sioc-project.org/user/146" title="View user profile.">Kristaps Kaupe</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-304" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Sorry, I think I misread your mail.<br />
+I don't know why I though you want to specify that:<br />
+sioc:Community "http://livejournal.com"<br />
+sioc:Site "http://www.livejournal.com"</p>
+<p>(I think I should go home and sleep a few hours)</p>
+<p>On Friday 15 December 2006 00:04, Kristaps Kaupe wrote:<br />
+> > The sioc:Site should be the domain name (without subdomains) of the web<br />
+> > site hosting the community.<br />
+> ><br />
+> ><br />
+> > the URI for LiveJournal's sioc:Site would be "http://livejournal.com",<br />
+> > etc.<br />
+> ><br />
+> ><br />
+> > That way:<br />
+> ><br />
+> > sioc:Site: "http://www.livejournal.com"<br />
+> > sioc:Forum: "http://a_user.livejournal.com"<br />
+> > sioc:Post: "http://a_user.livejournal.com/some_post"<br />
+> ><br />
+> > no?<br />
+><br />
+> I disagree.<br />
+><br />
+> 1) What to do if we have only www.something.tld DNS record, but not<br />
+> something.tld record? I don't think it is a good thing to use http: URIs<br />
+> with hosts, that doesn't resolve.<br />
+><br />
+> 2) What to do if www.something.tld is "301 Moved Permantenly" HTTP redirect<br />
+> to something.tld (like in blogging platform / social network Blogiem.lv I<br />
+> am developing)? HTTP/1.1 specification about 301 redirect says [1]: "The<br />
+> requested resource has been assigned a new permanent URI and any future<br />
+> references to this resource SHOULD use one of the returned URIs. Clients<br />
+> with link editing capabilities ought to automatically re-link references to<br />
+> the Request-URI to one or more of the new references returned by the<br />
+> server, where possible". So, IMHO it means that if http://www.blogiem.lv/<br />
+> is 301 redirect to http://blogiem.lv, we could assume that<br />
+> "http://blogiem.lv" owl:sameAs "http://blogiem.lv". I am wrong?<br />
+><br />
+> [1] http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2</p>
+<p>--<br />
+Kristaps Kaupe<br />
+Mob. t. +371 29513269<br />
+Skype: kristapskaupe<br />
+http://kristaps.blogiem.lv</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-302"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-302" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Fred,</p>
+<p>For the record, my argument against the Site/Forum distinction was<br />
+that it is awkward for *single-forum sites*, such as the typical self-<br />
+hosted weblog. What's the forum then and what's the site? Both are<br />
+either the same thing, or I have to invent an  extra resource.</p>
+<p>The problem was: I have a weblog at http://dowhatimean.net/.<br />
+Modelling a weblog in SIOC should be straightforward, no?</p>
+<p>To me, my weblog is a single thing. One resource. But to describe it<br />
+properly with SIOC, I need to turn it into up to three resources: a<br />
+Forum, a Site, and a Community. Why make such a common scenario so<br />
+awkward?</p>
+<p>Returning to your post, I think that sioc:Site is unnecessary even<br />
+for multi-forum communities, and using sioc:Community instead<br />
+addresses all the needs you've presented. More inline.</p>
+<p>On 14 Dec 2006, at 20:12, Frederick Giasson wrote:<br />
+>> In [1] Richard Cygniak wrote: "I like sioc:Community much more than<br />
+>> sioc:Site. I think it's more flexible (just about anything can be<br />
+>> called a community if you squint the right way) and more interesting<br />
+>> than sioc:Site. I'd be happy with dropping sioc:Site and using<br />
+>> sioc:Community instead." - and - "The distinction between Site and<br />
+>> Forum is awkward, I don't want to introduce a top-level pseudo-forum<br />
+>> for the weblog. I'm not convinced that Site and the host properties<br />
+>> provide any value. "<br />
+><br />
+> It could seems useless, however in my opinion it is really important.<br />
+><br />
+> By example, what if I try to find all forums (users) on<br />
+> livejournal.com know by<br />
+> an hypothetic triple store?</p>
+<p>> The problem is that this is something that I can't do with<br />
+> sioc:Community.<br />
+><br />
+> Why? Because: "A sioc:Community is different from a sioc:Site - a<br />
+> site describes<br />
+> a single community site while a community can consist of a number<br />
+> of sites and<br />
+> other resources described in SIOC or other ontologies (e.g., FOAF)."<br />
+><br />
+> So more than one source can belong to a sioc:Community. What if I<br />
+> only need<br />
+> sioc:Forums from a single source (domain)? I am back at my case #1.</p>
+<p>To summarize, you say that you can't find all the forums on<br />
+livejournal.com if livejournal.com is modelled as a sioc:Community,<br />
+unless by using ugly and slow FILTER trickery.</p>
+<p>How about this:</p>
+<p>SELECT ?forum<br />
+WHERE {<br />
+     <http://livejournal.com/> a sioc:Community;<br />
+         sioc:has_part ?forum .<br />
+     ?forum a sioc:Forum .<br />
+}</http://livejournal.com/></p>
+<p>Easy, no?</p>
+<p>The only thing you can't do that way is distinguish between single-<br />
+site communities and multi-site communities. For that you would<br />
+indeed need a FILTER. Do you have a use case where this distinction<br />
+matters *and* where the lower performance of FILTER and REGEX would<br />
+be a concern?</p>
+<p>My main argument against sioc:Site is that it's redundant. You said:</p>
+<p>> The sioc:Site should be the domain name (without subdomains) of the<br />
+> web site<br />
+> hosting the community.</p>
+<p>Why duplicate information that is already in the URIs? Why not just<br />
+call it sioc:Domain then?</p>
+<p>I suppose there is some underlying thing you want to represent with<br />
+the sioc:Site, beside just the domain name. What is it?</p>
+<p>(Now the term sioc:ForumProvider is floating around in my head ...)</p>
+<p>Richard</p>
+<p>><br />
+><br />
+> Beware, SIOC was initially about online communities, but ultimately<br />
+> it can model<br />
+> much more than that, and deleting the Site class could make things<br />
+> worse on the<br />
+> long run.<br />
+><br />
+> But it should be discussed.<br />
+><br />
+><br />
+><br />
+>> Choosing the URIs is a practical question and it does not seem to be<br />
+>> very popular in responses to SIOC-Dev, but I believe choosing the<br />
+>> right<br />
+>> URIs is very important and can have a large impact.<br />
+><br />
+><br />
+> Think too.<br />
+><br />
+><br />
+><br />
+> This was my two pennies to the discussion,<br />
+><br />
+><br />
+> Take care,<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-305"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-305" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Hi Richard,</p>
+<p>> For the record, my argument against the Site/Forum distinction was<br />
+> that it is awkward for *single-forum sites*, such as the typical<br />
+self-<br />
+> hosted weblog. What's the forum then and what's the site? Both are<br />
+> either the same thing, or I have to invent an  extra resource.<br />
+><br />
+> The problem was: I have a weblog at http://dowhatimean.net/.<br />
+> Modelling a weblog in SIOC should be straightforward, no?</p>
+<p>Yeah, I talked about that with Uldis on IRC. The question we had is:<br />
+what is the implication of a resources that is defined as a Forum and<br />
+a Site. We think there are none, but who know?</p>
+<p>><br />
+> To me, my weblog is a single thing. One resource. But to describe<br />
+it<br />
+> properly with SIOC, I need to turn it into up to three resources:<br />
+a<br />
+> Forum, a Site, and a Community. Why make such a common scenario so<br />
+> awkward?</p>
+<p>You are right. But what if SIOC is used to describe bookmarks in a<br />
+bookmarking system? What if SIOC is used to model a repository of<br />
+files? What if the communities are not blogs or forums?</p>
+<p>This is the question I have, and this is why I don't agree to delete<br />
+it too quickly.</p>
+<p>> To summarize, you say that you can't find all the forums on<br />
+> livejournal.com if livejournal.com is modelled as a sioc:<br />
+Community,<br />
+> unless by using ugly and slow FILTER trickery.<br />
+><br />
+> How about this:<br />
+><br />
+> SELECT ?forum<br />
+> WHERE {<br />
+>      <http://livejournal.com/> a sioc:Community;<br />
+>          sioc:has_part ?forum .<br />
+>      ?forum a sioc:Forum .<br />
+> }<br />
+><br />
+> Easy, no?</http://livejournal.com/></p>
+<p>Yeah you are right, I made a mistake while reading it the first time.</p>
+<p>But what I like with sioc:Site is that a site can host many<br />
+communities. You will probably tell me that we can model the same<br />
+thing with something like a sioc:Community of many sioc:Community.</p>
+<p>> My main argument against sioc:Site is that it's redundant. You said:<br />
+><br />
+> > The sioc:Site should be the domain name (without subdomains) of<br />
+the<br />
+> > web site<br />
+> > hosting the community.<br />
+><br />
+> Why duplicate information that is already in the URIs? Why not<br />
+just<br />
+> call it sioc:Domain then?</p>
+<p>So in that case why no deleting sioc:Community instead of sioc:Site<br />
+if we are only talking about information duplication?</p>
+<p>There is a problem with these two classes, but I am wondering if the<br />
+solution is to delete one or the other, or just clarifying their use<br />
+andd semantic?</p>
+<p>Not sure my mind is clear at that time of the day, should take some<br />
+rest and come back on the question later ;)</p>
+<p>Take care,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-308"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-308" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+On 15 Dec 2006, at 00:02, Frederick Giasson wrote:<br />
+>> The problem was: I have a weblog at http://dowhatimean.net/.<br />
+>> Modelling a weblog in SIOC should be straightforward, no?<br />
+><br />
+> Yeah, I talked about that with Uldis on IRC. The question we had is:<br />
+> what is the implication of a resources that is defined as a Forum and<br />
+> a Site. We think there are none, but who know?</p>
+<p>This looks like glossing over sloppy modelling instead of fixing it.</p>
+<p>> But what if SIOC is used to describe bookmarks in a<br />
+> bookmarking system? What if SIOC is used to model a repository of<br />
+> files?</p>
+<p>Why would you want to do that? I think if SIOC lost its focus on the<br />
+things that almost all online communities have in common -- people,<br />
+forums and posts -- then it would lose much of its appeal. Creating<br />
+vocabularies is cheap on the Semantic Web, so you can create new ones<br />
+to augment SIOC for specific applications.</p>
+<p>(I assume that a vocabulary should do one thing and do it well.)</p>
+<p>> But what I like with sioc:Site is that a site can host many<br />
+> communities.</p>
+<p>No, not the way it is defined right now. A sioc:Site can host forums<br />
+and user groups, but not communities. (The documentation states that<br />
+a sioc:Site could be "the location of a set of online communities",<br />
+but there are no properties to model this. Sigh ...)</p>
+<p>> You will probably tell me that we can model the same<br />
+> thing with something like a sioc:Community of many sioc:Community.</p>
+<p>Being hosted at the same site doesn't imply being part of the same<br />
+community. In fact, it doesn't imply much of anything.</p>
+<p>>> My main argument against sioc:Site is that it's redundant. You said:<br />
+>><br />
+>>> The sioc:Site should be the domain name (without subdomains) of<br />
+> the<br />
+>>> web site<br />
+>>> hosting the community.<br />
+>><br />
+>> Why duplicate information that is already in the URIs? Why not<br />
+> just<br />
+>> call it sioc:Domain then?<br />
+><br />
+> So in that case why no deleting sioc:Community instead of sioc:Site<br />
+> if we are only talking about information duplication?</p>
+<p>Because sioc:Site duplicates information that is in the URIs (just<br />
+extract the second-level domain out of the URI and you have your<br />
+site, according to the practice you have proposed). sioc:Community<br />
+does not duplicate information that is in the URIs, but provides new<br />
+information. That's why I'd rather drop sioc:Site.</p>
+<p>> There is a problem with these two classes, but I am wondering if the<br />
+> solution is to delete one or the other, or just clarifying their use<br />
+> andd semantic?</p>
+<p>Yes, but then you'll have to be prepared to also clarify their names.</p>
+<p>And I wonder if this discussion has any point at all. Is it even<br />
+possible to change any of these things, given that they are now all<br />
+over the documentation and publications and deployed code?</p>
+<p>Richard</p>
+<p>><br />
+><br />
+> Not sure my mind is clear at that time of the day, should take some<br />
+> rest and come back on the question later ;)<br />
+><br />
+><br />
+> Take care,<br />
+><br />
+><br />
+> Fred<br />
+><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-310"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-310" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Hi Richard - thanks for your comments.</p>
+<p>> Because sioc:Site duplicates information that is in the URIs (just<br />
+> extract the second-level domain out of the URI and you have your<br />
+> site, according to the practice you have proposed). sioc:Community<br />
+> does not duplicate information that is in the URIs, but provides new<br />
+> information. That's why I'd rather drop sioc:Site.</p>
+<p>There are many Site properties that would not be in a Forum instance,<br />
+the description, owner, etc.</p>
+<p>Hopping back to something you said earlier...</p>
+<p>> Being hosted at the same site doesn't imply being part of the same<br />
+> community. In fact, it doesn't imply much of anything.</p>
+<p>That's at least one example of why you need sioc:Site, for when there<br />
+is no community.</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-311"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-311" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+On 15 Dec 2006, at 20:35, john.breslin@deri.org wrote:<br />
+> There are many Site properties that would not be in a Forum instance,<br />
+> the description, owner, etc.</p>
+<p>A description can be attached to a sioc:Community instance just fine.<br />
+I can't find a property for owner in the SIOC spec. If you need a new<br />
+vocabulary for those alleged "many Site properties", then put Site in<br />
+that vocabulary.</p>
+<p>>> Being hosted at the same site doesn't imply being part of the same<br />
+>> community. In fact, it doesn't imply much of anything.<br />
+><br />
+> That's at least one example of why you need sioc:Site, for when there<br />
+> is no community.</p>
+<p>No, this doesn't mean you need sioc:Site. At best it means you may<br />
+need *something else beside sioc:Community*. (I mentioned<br />
+sioc:ForumProvider earlier.)</p>
+<p>You don't need sioc:Site when it just mirrors the fact that multiple<br />
+fora are hosted at the same domain. That's already in the URIs and<br />
+can be queried just fine.</p>
+<p>(And, I could ask, if there is no community, then how can it be in<br />
+scope for SIOC? ;-)</p>
+<p>Richard</p>
+<p>><br />
+> J.<br />
+> --<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-312"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-312" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Hi Richard -</p>
+<p>I'll answer your points below, but in short, it's impossible to make<br />
+an ontology that suits everyone's sensibilities.  I also have problems<br />
+with some of our terms, but sometimes you can only do what is good<br />
+enough.  That doesn't mean that anything in SIOC is there forever; if<br />
+people aren't using Site, that's a good enough reason as any to<br />
+deprecate it.</p>
+<p>> A description can be attached to a sioc:Community instance just fine.<br />
+> I can't find a property for owner in the SIOC spec. If you need a new<br />
+> vocabulary for those alleged "many Site properties", then put Site in<br />
+> that vocabulary.</p>
+<p>Without being bitchy, we have a Role property that I allege can be<br />
+used for describing ownership.  I'm not saying the Site properties<br />
+have to be found in the SIOC vocabulary alone...</p>
+<p>> No, this doesn't mean you need sioc:Site. At best it means you may<br />
+> need *something else beside sioc:Community*. (I mentioned<br />
+> sioc:ForumProvider earlier.)</p>
+<p>Provider, Site, Host, there's lots of names you could choose.  We<br />
+chose Site.  Maybe not the most unique name and annoying for those who<br />
+think a site is just a URI, but it allows us to describe the host of a<br />
+forum / blog / mailing list archive in a way that I think is needed in<br />
+SIOC.</p>
+<p>> You don't need sioc:Site when it just mirrors the fact that multiple<br />
+> fora are hosted at the same domain. That's already in the URIs and<br />
+> can be queried just fine.</p>
+<p>I run a number of forum and blog hosting sites.  I have a need for<br />
+more than the URL of the host at least.  I also think we need a<br />
+has_subsite property to further classify sites and their subsections.<br />
+I know the blogger/blogspot example given earlier on the list might be<br />
+an unusual case, but I'd prefer to at least be able to cater for such<br />
+possibilities.</p>
+<p>> (And, I could ask, if there is no community, then how can it be in<br />
+> scope for SIOC? ;-)</p>
+<p>Hehe!  Because you can still talk about multiple communities and where<br />
+they are (on one site for example).  And, there are many sites with<br />
+communities that could be related (i.e. on the same site) - exposing<br />
+such information could create new links between these communities<br />
+(e.g. ezboard, Wordpress.com, etc.)  FOAF talks about other things<br />
+than just the friends themselves, no reason SIOC can't either.</p>
+<p>To answer the "how do you say that a site hosts a community" question<br />
+you posed earlier, I think you can use part_of (if the community only<br />
+has one part that is a site, then the site = the community).</p>
+<p>A worthwhile discussion though, I'd like more input from others...</p>
+<p>Thanks,</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-313"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-313" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+On 16 Dec 2006, at 19:53, john.breslin@deri.org wrote:<br />
+> I'll answer your points below, but in short, it's impossible to make<br />
+> an ontology that suits everyone's sensibilities.</p>
+<p>Fair enough. I think that you should be prepared to say why you chose<br />
+a certain design though, and forgive me for not being satisfied with<br />
+"we think it's better that way."</p>
+<p>>> A description can be attached to a sioc:Community instance just fine.<br />
+>> I can't find a property for owner in the SIOC spec. If you need a new<br />
+>> vocabulary for those alleged "many Site properties", then put Site in<br />
+>> that vocabulary.<br />
+><br />
+> Without being bitchy, we have a Role property that I allege can be<br />
+> used for describing ownership.</p>
+<p>I don't see how you can attach a Role to a sioc:Site without<br />
+violating the domain and range constraint expressed in the spec.<br />
+Example, please.</p>
+<p>>> No, this doesn't mean you need sioc:Site. At best it means you may<br />
+>> need *something else beside sioc:Community*. (I mentioned<br />
+>> sioc:ForumProvider earlier.)<br />
+><br />
+> Provider, Site, Host, there's lots of names you could choose.  We<br />
+> chose Site.  Maybe not the most unique name and annoying for those who<br />
+> think a site is just a URI, but it allows us to describe the host of a<br />
+> forum / blog / mailing list archive in a way that I think is needed in<br />
+> SIOC.</p>
+<p>Ok, you think it's needed, I got that. But what for?</p>
+<p>>> You don't need sioc:Site when it just mirrors the fact that multiple<br />
+>> fora are hosted at the same domain. That's already in the URIs and<br />
+>> can be queried just fine.<br />
+><br />
+> I run a number of forum and blog hosting sites.  I have a need for<br />
+> more than the URL of the host at least.</p>
+<p>What for do you need it?</p>
+<p>> I also think we need a<br />
+> has_subsite property to further classify sites and their subsections.</p>
+<p>What for do you think it is needed?</p>
+<p>>> (And, I could ask, if there is no community, then how can it be in<br />
+>> scope for SIOC? ;-)<br />
+<snip><br />
+> FOAF talks about other things<br />
+> than just the friends themselves, no reason SIOC can't either.</snip></p>
+<p>Good point.</p>
+<p>> To answer the "how do you say that a site hosts a community" question<br />
+> you posed earlier, I think you can use part_of (if the community only<br />
+> has one part that is a site, then the site = the community).</p>
+<p>Together with what you said earlier in this thread, a self-hosted<br />
+weblog that is also a community (a very common case I think) would be<br />
+described like this:</p>
+<p><http://my-weblog.com/><br />
+     a sioc:Community;<br />
+     a sioc:Site;<br />
+     a sioc:Forum;<br />
+     sioc:has_part <http://my-weblog.com/>;<br />
+     sioc:has_host <http://my-weblog.com/>;</http://my-weblog.com/></http://my-weblog.com/></http://my-weblog.com/></p>
+<p>I don't think that's an elegant solution, and would really like<br />
+something better. But I prefer it to using three distinct resources<br />
+for the one weblog.</p>
+<p>Richard</p>
+<p>><br />
+> A worthwhile discussion though, I'd like more input from others...<br />
+><br />
+> Thanks,<br />
+><br />
+> J.<br />
+> --<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-314"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-314" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>Hi -</p>
+<p> > Fair enough. I think that you should be prepared to say why you chose<br />
+ > a certain design though, and forgive me for not being satisfied with<br />
+ > "we think it's better that way."</p>
+<p>I didn't say that it was better that way, I said "sometimes you can only<br />
+do what is good enough" - take care paraphrasing!  Again, there is<br />
+always room for improvement, but I haven't been convinced of a need to<br />
+drop sioc:Site.</p>
+<p> > I don't see how you can attach a Role to a sioc:Site without<br />
+ > violating the domain and range constraint expressed in the spec.<br />
+ > Example, please.</p>
+<p>I think the domain and range were removed some time ago to allow just this.</p>
+<p> > Ok, you think it's needed, I got that. But what for?<br />
+...<br />
+ > What for do you need it?</p>
+<p>I have a blogging site called journals.ie.  Within that there are many<br />
+hosted blogs (which may be just sioc:Forums), but also a forums area for<br />
+bloggers to talk in.  So there's a site journals.ie that hosts blogs.<br />
+There's another part of that site (journals.ie Forums) that contains<br />
+forums.  I need to be able to say that the main site is powered by<br />
+WordPress MU, that the forum subsite is powered by bbPress, that maybe<br />
+they are hosted at the same domain and are related but they are also<br />
+different systems.  I also don't need to repeat for the hundreds of<br />
+hosted blogs that they are powered by WordPress if the site they are<br />
+hosted on is powered by WordPress.</p>
+<p>For my bulletin board sites, I need to say that they are powered by<br />
+vBulletin or phpBB without repeating it each time for each forum.  I<br />
+want to be able to say who to contact, a copyright blurb, what kind of<br />
+registration is required, what are related sites, what time zone is it<br />
+in, how many posts does it contain (without aggregating every forum and<br />
+thread), etc.  It's true that some of these alleged "many Site<br />
+properties" may be in another vocabulary or may not exist yet, but they<br />
+can be added later...</p>
+<p> >> I also think we need a has_subsite property to further classify<br />
+sites and their subsections.<br />
+ > What for do you think it is needed?</p>
+<p>Here's an example of a Site with subsites.  Site http://free.boards.jp<br />
+with 50 hosted subsites.  Subsite example<br />
+http://free.boards.jp/index.php?mforum=jpopforums and forums on that<br />
+subsite include<br />
+http://free.boards.jp/viewforum.php?f=17&amp;mforum=jpopforums etc.  The<br />
+structure of this isn't obvious from the URLs alone, since the subsites<br />
+are constructed via a parameter.</p>
+<p> > Together with what you said earlier in this thread, a self-hosted<br />
+ > weblog that is also a community (a very common case I think) would be<br />
+ > described like this:<br />
+ ><br />
+ > <http://my-weblog.com/><br />
+ >      a sioc:Community;<br />
+ >      a sioc:Site;<br />
+ >      a sioc:Forum;<br />
+ >      sioc:has_part <http://my-weblog.com/>;<br />
+ >      sioc:has_host <http://my-weblog.com/>;<br />
+ ><br />
+ > I don't think that's an elegant solution, and would really like<br />
+ > something better. But I prefer it to using three distinct resources<br />
+ > for the one weblog.</http://my-weblog.com/></http://my-weblog.com/></http://my-weblog.com/></p>
+<p>It is inelegant, but also I think you are creating a new notion of a<br />
+community to be associated with your blog.  It's not just the blog, but<br />
+it's the users who read and comment on your blog, the blogroll or<br />
+trackback links in to and out of your site.  Perhaps it deserves its own<br />
+URI?</p>
+<p>As for when the Site and the Forum are one and the same thing, I'd<br />
+suggest that we need to discuss whether Site needs to be used at all in<br />
+such cases.</p>
+<p>I have to end my reasons here, crazy few days ahead...  Happy Christmas all!</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-315"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-315" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>John,</p>
+<p>Ok, you've got me convinced that *something* beside sioc:Forum and<br />
+sioc:Community is needed, and that simply dropping sioc:Site is not a<br />
+good idea. More inline ...</p>
+<p>On 18 Dec 2006, at 11:59, John Breslin wrote:<br />
+>> I don't see how you can attach a Role to a sioc:Site without<br />
+>> violating the domain and range constraint expressed in the spec.<br />
+>> Example, please.<br />
+><br />
+> I think the domain and range were removed some time ago to allow<br />
+> just this.</p>
+<p>Unfortunately your spec disagrees with you ... ;-)</p>
+<p>[snip lots of good rationale for having some structure above the<br />
+level of sioc:Forum]</p>
+<p>I note that the examples you've listed deal mostly with the technical<br />
+and administrative side of hosting an online community.</p>
+<p>>> Together with what you said earlier in this thread, a self-hosted<br />
+>> weblog that is also a community (a very common case I think) would be<br />
+>> described like this:<br />
+>><br />
+>> <http://my-weblog.com/><br />
+>>      a sioc:Community;<br />
+>>      a sioc:Site;<br />
+>>      a sioc:Forum;<br />
+>>      sioc:has_part <http://my-weblog.com/>;<br />
+>>      sioc:has_host <http://my-weblog.com/>;<br />
+>><br />
+>> I don't think that's an elegant solution, and would really like<br />
+>> something better. But I prefer it to using three distinct resources<br />
+>> for the one weblog.<br />
+><br />
+> It is inelegant, but also I think you are creating a new notion of a<br />
+> community to be associated with your blog.  It's not just the blog,<br />
+> but<br />
+> it's the users who read and comment on your blog, the blogroll or<br />
+> trackback links in to and out of your site.  Perhaps it deserves<br />
+> its own<br />
+> URI?</http://my-weblog.com/></http://my-weblog.com/></http://my-weblog.com/></p>
+<p>Not every blog has a community centered on it (mine certainly not),<br />
+but many do. I don't think one should introduce new URIs for things<br />
+that exist purely on the web just for the purpose of being able to<br />
+talk about them in RDF. I'm quite ok with having both sioc:Community<br />
+and sioc:Forum as types here, both add much to a consumer's<br />
+understanding of what the URI represents.</p>
+<p>> As for when the Site and the Forum are one and the same thing, I'd<br />
+> suggest that we need to discuss whether Site needs to be used at<br />
+> all in<br />
+> such cases.</p>
+<p>Yes, good question. Maybe my complaint can be boiled down to this:</p>
+<p>While sioc:Site is essential for modelling complex sites, it doesn't<br />
+add much value for simple cases like self-hosted weblogs. Simply not<br />
+using sioc:Site in such cases seems odd -- after all, a self-hosted<br />
+weblog still *is* a web site.</p>
+<p>So maybe the question is: What does a forum at http://www.boards.jp<br />
+have that http://dowhatimean.net doesn't have? The answer is not "a<br />
+site" -- probably more something like "a hosting organization" or "a<br />
+service provider". So, maybe we should relabel sioc:Site?</p>
+<p>> I have to end my reasons here, crazy few days ahead...  Happy<br />
+> Christmas all!</p>
+<p>Thanks, and happy holidays to you too.</p>
+<p>Richard</p>
+<p>><br />
+> J.<br />
+> --<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-316"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-316" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+>> I think the domain and range were removed some time ago to allow<br />
+>> just this.<br />
+>><br />
+><br />
+> Unfortunately your spec disagrees with you ... ;-)<br />
+><br />
+><br />
+Dang, need to remove Forum as range / domain for has_scope / scope_of...</p>
+<p>Thanks Richard,</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div></div><a id="comment-309"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="http://sioc-project.org/user/146" title="View user profile.">Kristaps Kaupe</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-309" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>On Friday 15 December 2006 17:26, Richard Cyganiak wrote:<br />
+> >>> web site<br />
+> >>> hosting the community.<br />
+> >><br />
+> >> Why duplicate information that is already in the URIs? Why not<br />
+> ><br />
+> > just<br />
+> ><br />
+> >> call it sioc:Domain then?<br />
+> ><br />
+> > So in that case why no deleting sioc:Community instead of sioc:Site<br />
+> > if we are only talking about information duplication?<br />
+><br />
+> Because sioc:Site duplicates information that is in the URIs (just<br />
+> extract the second-level domain out of the URI and you have your<br />
+> site, according to the practice you have proposed). sioc:Community<br />
+> does not duplicate information that is in the URIs, but provides new<br />
+> information. That's why I'd rather drop sioc:Site.</p>
+<p>Well, not always sioc:Forum has the same domain as sioc:Site. For example, in<br />
+blogging system I am developing, Blogiem.lv, by default user blogs have host<br />
+myblog.blogiem.lv, but they can assign TLD or any other DNS hostnames to<br />
+their blogs. So we can have "something.com" hosted on "blogiem.lv". So,<br />
+actually we have two different resources - a community "blogiem.lv" and a<br />
+hosting site "blogiem.lv". But we can't have identical URIs for two different<br />
+resources, of course. The same applies for Wordpress.com, AFAIK.</p>
+<p>SIOC specification says [1] that sioc:Site is "The location of an online<br />
+community or set of communities, with Users and Groups creating Posts on a<br />
+set of Forums.", so, as I understand that, Site is physical hoster of a<br />
+sioc:Forum, and has nothing to do with DNS names.</p>
+<p>sioc:Community is [2] "a top level concept that defines an online community<br />
+and what it consists of."</p>
+<p>Interesting case also is Blogger, where you should always have<br />
+sioc:Community "blogger.com", but sioc:Site can be "blogspot.com"<br />
+or "myserver.com", where sioc:Forum can be "something.blogspot.com"<br />
+or "something.myserver.com" or even "something.com" (with<br />
+sioc:Site "myserver.com", if it hosts that Forum), because it provides you an<br />
+option to upload generated blog content via FTP/SFTP to another webserver.</p>
+<p>[1] http://rdfs.org/sioc/spec/#term_Site<br />
+[2] http://rdfs.org/sioc/spec/#term_Community</p>
+<p>--<br />
+Kristaps Kaupe<br />
+Mob. t. +371 29513269<br />
+Skype: kristapskaupe<br />
+http://kristaps.blogiem.lv</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div><a id="comment-301"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, February 23 - 10:00 — <a href="../user/67.html" title="View user profile.">Wikier</a></span>
+  
+  
+  
+    <h3><a href="198.html#comment-301" class="active">URIs for sioc:Site, etc.</a></h3>
+
+    <div class="content">
+      <p>
+> The sioc:Site should be the domain name (without subdomains) of the web site<br />
+> hosting the community.</p>
+<p>Indeed that's what SWAML does [1], for example.</p>
+<p>Regards,</p>
+<p>[1] http://swaml.berlios.de/demo/index.rdf</p>
+<p>--<br />
+__      ___ _   _<br />
+\ \    / (_) |_(_)___ _ _   Sergio Fdez<br />
+ \ \/\/ /| | / / / -_) '_|  GNU/LiNUX User: #298803<br />
+  \_/\_/ |_|_\_\_\___|_|    Web: http://www.wikier.org/</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F198%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/198?destination=node%2F198"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-3s3ForNi34yuiBaOsXgDfyinaqrePukorOPXCbWjZUA" value="form-3s3ForNi34yuiBaOsXgDfyinaqrePukorOPXCbWjZUA"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

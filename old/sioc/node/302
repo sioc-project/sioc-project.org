@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/302"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/302">
+  <dc:title>Multi-linguality in SIOC</dc:title>
+  <sioc:content>Hi All,
+Multi-linguality in SIOC is something we need to think about. Summer
+is a bit quieter season than usual on SIOC-Dev, but there&#039;s a lot to
+do and I hope this message will raise us all to some constructive
+discussion.
+Immediate reasons that made me write this post:
+ - SSSW 2007 summer school, which I am at now. It brings together an
+interesting and very multi-cultural groups of students, tutors and
+organisers (and you realise English is not the only language in the
+world);
+ - Stehanie Booth giving a talk today at Google about languages on the
+Internet [1].
+There are 2 main directions for multi-language support in SIOC:
+1) Ontology
+We can translate the ontology (labels and comments for all classes and
+properties) into other languages, similarly as it&#039;s done with DOAP.
+End-users could benefit from this, but mainly if they use generic RDF
+browsers which make use of these labels and comments.
+All the term comments and labels have xml:lang=&quot;en&quot; (thanks for the
+suggestion to add it!) and hence translations in other languages can
+be simply added. All we need is those translations. :)
+2) Data
+Establish how to express multi-language content in SIOC RDF. This
+should be entirely possible with the existing SIOC ontology, just need
+to add a property (dc:lang) to specify what language a post/item is
+in. This possibly has a larger impact than 1) but a question is how to
+get those data? Do blog engines (say, WordPress or MovableType) always
+know what language a post is in?
+Of course, it depends on our requirements. If we find out that a
+post/content can have multi-language content inside it (= there is &gt;1
+language per post) and we want to model these fragments, that may
+require a somewhat more complex solution.
+What do you think about it? What are the best approaches to solve
+this, what are the challenges?
+[1] http://climbtothestars.org/archives/2007/07/10/talk-languages-on-the-internet-at-google-tomorrow/
+Uldis
+[ http://captsolo.net/info/ | http://twitter.com/CaptSolo ]
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-08-09T13:24:54+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/302" rdfs:label="Multi-linguality in SIOC" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

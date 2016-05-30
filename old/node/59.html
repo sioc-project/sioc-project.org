@@ -1,0 +1,1939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/59"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Revisions to the SIOC Ontology | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Revisions to the SIOC Ontology</h2>                                                  <div class="clear-block">
+            <div id="node-59" class="node">
+
+
+
+      <span class="submitted">2006, May 12 - 04:04 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi, All !</p>
+<p>Below is information about proposed changes to the SIOC ontology. John<br />
+Breslin and me have made a summary of them which I am posting here to<br />
+collect your feedback.</p>
+<p>General info about SIOC: http://rdfs.org/sioc/</p>
+<p>The actual changes to RDFS/OWL "code" can be seen as the difference<br />
+between current ontology [1] and the version with proposed changes<br />
+implemented [2]. A part of these changes have been discussed on<br />
+SIOC-Dev and RDF-Web mailing lists before.</p>
+<p>In particular we will be grateful if those of you who have experience<br />
+in designing and improving the FOAF ontology would help improve SIOC.</p>
+<p>[1] http://rdfs.org/sioc/ns<br />
+[2] http://sw.deri.org/svn/sw/2005/08/sioc/ns/sioc<br />
+A detailed list of changes:<br />
+http://sw.deri.org/svn/sw/2005/08/sioc/ns/CHANGES</p>
+<p>=1= Use foaf:Person instead of sioc:User for person's data</p>
+<p>Name, surname and other personal data will be described via a<br />
+foaf:Person, which will point to the sioc:User (person's account on the<br />
+community site) using foaf:holdsAccount property.</p>
+<p>Actions:<br />
+ - deprecate sioc:first_name and sioc:last_name<br />
+Open questions:<br />
+ - how to keep the information that this _particular_ account is<br />
+associated with a given e-mail address (or hash of it)? we might also<br />
+deprecate foaf:email and foaf:email_sha1 and use FOAF properties, but<br />
+shall we not worry that when person's data are smushed together we<br />
+loose a link between OnlineAccount and an e-mail address?<br />
+ - same can be true of name (e.g., if the person has a different name<br />
+specified for each site)</p>
+<p>=2= Changes to properties representing plain/rich content</p>
+<p>sioc:content is redundant - SIOC has sioc:description (subclass of<br />
+dc:description) using which is more consistent.<br />
+sioc:content_encoded - there is already content:encoded module for RSS<br />
+1.0 that can be used to describe encoded content (e.g., HTML). let's<br />
+leave it out of SIOC ontology for now as encoding and describing rich<br />
+content can be a complex task.</p>
+<p>Actions:<br />
+ - deprecate sioc:content (use sioc:description instead) and<br />
+sioc:content_encoded (use content:encoded instead)<br />
+ - change rdfs:comment for sioc:description accordingly (TODO)</p>
+<p>=3= Cleanup</p>
+<p>Remove:<br />
+- commented out events related properties (starts_at, finished_at,<br />
+event) - events are outside scope<br />
+- sioc:is_category and sioc:is_closed<br />
+- sioc:location</p>
+<p>Change property name / fix description:<br />
+ - sioc:has_revisor to :has_modifier (modification better describes<br />
+changing the Post)<br />
+ - sioc:reference to :links_to (reference has vague meaning, also does<br />
+not fit out naming convention)<br />
+ - sioc:revisor_of to :modifier_of</p>
+<p>Change range:<br />
+ - sioc:type - range to rdfs:Resource</p>
+<p>=4= Change roles / permissions properties</p>
+<p>Change description and domain/range:<br />
+ - sioc:function_of - range to sioc:user (removes Usergroup from its<br />
+range)<br />
+ - sioc:has_scope - range to sioc:Forum<br />
+ - sioc:scope_of - range to Resource</p>
+<p>=5= Changes to subject, topic, title</p>
+<p>Separate subject information into:<br />
+ - text (e.g., keywords) described by sioc:subject<br />
+ - resources (e.g., SKOS concepts) described by sioc:topic</p>
+<p>Actions:<br />
+ - change description of sioc:subject + remove domain of sioc:Post +<br />
+subclass from dc:subject<br />
+ - change description of sioc:topic + change range to rdfs:Resource<br />
+ - add sioc:title property (take former description of sioc:subject) +<br />
+subclass from dc:title</p>
+<p>=6= Names, IDs</p>
+<p>add sioc:id - a new property to represent the ID of the SIOC object<br />
+(e.g., user ID, post ID, ...)<br />
+change description of sioc:name to use it to represent user / account<br />
+names for sioc:User(s) and sioc:Usergroup(s)</p>
+<p>=Open Questions=</p>
+<p>-?- Shall we subclass sioc:created_at and sioc:modified_at from dc:date<br />
+or dc_terms:issued and dc_terms:modified ?</p>
+<p>-?- Shall we subclass sioc:link (used to describe link to a web page<br />
+about the SIOC object - Post, User, ...) from dc:identifier ?</p>
+<p>-?- Shall we change the way we represent modifications / different<br />
+versions of the data? Currently we have rather simple next_version,<br />
+previous_version and has_modifier, modifier_of. Another option is to<br />
+introduce "modification events" that we can add more information to [at<br />
+a cost of the complexity of data/ontology]</p>
+<p>CHANGES file has slightly more details, though I've covered 95% of them<br />
+in this post.</p>
+<p>Note to developers: some of the proposed changes will have impact on<br />
+the SIOC export tools. Please come to the SIOC-Dev mailing list,<br />
+discuss and ask for more information if needed.</p>
+<p>Best regards,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]<br />
+[ CaptSolo @ #foaf and #swig ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="122.html" class="topic-previous" title="Go to previous forum topic">‹ Interaction between SIOC browsers and Talk Digger&#039;s SIOC data exporter</a>
+              <a href="116.html" class="topic-next" title="Go to next forum topic">Mailing list maintenance ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-44"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 9 - 11:28 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-44" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi all -</p>
+<p>Just some details of proposed ontology changes as commented on by Alex<br />
+below.  I'll put in my 2c.</p>
+<p> > ** Ontology<br />
+ ><br />
+ > - Post: content and content_encoded should be removed from the specs [1]</p>
+<p>Sounds fine!</p>
+<p> > - User: sioc:knows => moved to FOAF property<br />
+ > remove first+last name => sioc:name [1]<br />
+ > BTW, do we keep sioc:name ? or do we move to a new sioc:accountName /<br />
+login<br />
+ > property ?</p>
+<p>This is semantically more correct because it's not the User that knows<br />
+people or has a name, it's the associated foaf:Person.</p>
+<p> > sioc:avatar => shall we use FOAF foaf:depiction or is the avatar<br />
+local for<br />
+ > the forum ?</p>
+<p>Yeah the avatar would be local to a forum, but maybe it is too Bulletin<br />
+Board specific as pointed out by Richard?  But also this could be a<br />
+Gravatar as used in the blogosphere, and that is associated with an<br />
+e-mail address...</p>
+<p> > - sioc:link => isn't rdf:about enough to get the URL from a Post ?</p>
+<p>I don't think so - because some Posts will not have specific URLs and<br />
+their rdf:about would be the same - take comments on WordPress for<br />
+example - there's a #comment that links to all the comments but no URLs<br />
+for each comment "Post".</p>
+<p> > - sioc:related_to => The specs say "determined implicity from topics or<br />
+ > references", which means they can be infered from the topic / subject<br />
+of the<br />
+ > post. So maybe that's not useful to keep it in the ontology as we can<br />
+ > easilly infer it from other properties ?</p>
+<p>Maybe the spec needs to be changed to say that is one possibility.  I am<br />
+thinking of bulletin board systems that show you potentially related<br />
+posts, e.g. look at the end of<br />
+http://www.boards.us/forums/showthread.php?t=2124 or the similar posts<br />
+thing in WordPress.</p>
+<p> > - sioc:has_sibling / sioc:sibling_of => If I understood well, I think<br />
+ > has_sibling is a symetric property, so we don't need any inverse<br />
+relation.</p>
+<p>Yep!  Can drop the has_/_of even and just say sibling?</p>
+<p> > - sioc:type => removed [1]<br />
+ ><br />
+ > More generally, I think that "Role" is a bit obscure at the moment,<br />
+ > especially as there's no unified way to define a role. (In DC export, I<br />
+ > export the roles as defined in the tool, which are litterals, and are - I<br />
+ > think - different from the one WP has)</p>
+<p>I have a similar problem.  I want to define a subscriber to a forum.<br />
+But it's a bit "wordy" - to find all subscribers to a forum I need to<br />
+find all Users with Roles applying to Forums where the Role is of type<br />
+#moderator or something.</p>
+<p>The Role idea seemed like a good idea because you wouldn't have to<br />
+define a million properties.  I think this could be a good idea for the<br />
+modules or types file.  This types file could have:</p>
+<p>Forum: Blog, Mailing_List, USENET_Newsgroup, Bulletin_Board, ...<br />
+Role: Owner, Administrator, Moderator, Subscriber, Registered_User,</p>
+<p>I think Uldis thought of having instances rather than classes for these<br />
+types.</p>
+<p> > Regarding the version properties, what about moving it into a<br />
+ > "SIOC-versionning" vocabulary, that would be a module / extension of<br />
+ > "SIOC-core".<br />
+ > I think it would be a good way to define a core + module, so that it will<br />
+ > allow people<br />
+ > 1) to see exactly the ontology is about<br />
+ > 2) develope our / their own modules (eg: versionning module, auth module<br />
+ > ...)</p>
+<p>Yes, and also our thought too - we removed all these "extra" stuff that<br />
+we now want to put into a "types" module.</p>
+<p> > Regarding trackback, I think we should subclass it from has_reply /<br />
+ > reply_from, which will be the easiest way. (and so SPARQL get<br />
+comments will<br />
+ > return the TBs)</p>
+<p>If a reply is more general than a trackback - sounds fine.  I guess all<br />
+trackbacks are distributed replies, but all distributed replies are not<br />
+trackbacks...</p>
+<p> > Maybe some questions could be asked to sioc-dev.</p>
+<p>Here we go :)</p>
+<p> > Best,<br />
+ ><br />
+ > Alex.</p>
+<p>[1]<br />
+http://groups.google.com/group/sioc-dev/browse_frm/thread/b8e3f8ceb73b29f5/#</p>
+<p>Thanks,</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-53"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 14 - 19:18 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-53" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Thanks a lot to all who commented!<br />
+Here's my 2c and some ontology changes.</p>
+<p>>  > - Post: content and content_encoded should be removed from the specs [1]<br />
+>  > - User: sioc:knows => moved to FOAF property<br />
+>  > remove first+last name => sioc:name [1]<br />
+>  > - sioc:has_sibling / sioc:sibling_of => If I understood well, I think<br />
+>  > has_sibling is a symetric property, so we don't need any inverse relation.<br />
+>  > - sioc:type => removed [1]</p>
+<p>Done - properties used in current exporters changed to<br />
+owl:DeprecatedProperty (and won't show up in the spec), sioc:knows,<br />
+sioc:sibling_of and sioc:type removed altogether.</p>
+<p>Property sioc:has_sibling changed to owl:SymmetricProperty. It's name<br />
+does not imply any particular direction so it is be good to stay.</p>
+<p>A question related to content / content_encoded properties - what<br />
+property shall we use instead of sioc:content? potential candidates are<br />
+sioc:description or dc:description.</p>
+<p>>  > BTW, do we keep sioc:name ? or do we move to a new sioc:accountName /<br />
+> login property ?</p>
+<p>Using foaf:accountName to indicate the username of the account is a<br />
+possibility. Do we loose some semantics of sioc:name if we do so?</p>
+<p>Just one thing - description of sioc:name says "The name of a User or a<br />
+Usergroup". What will we use to indicate the name of the group? (And do<br />
+Usergroups have account names at all?)</p>
+<p>>  > sioc:avatar => shall we use FOAF foaf:depiction or is the avatar<br />
+> local for the forum ?<br />
+><br />
+> Yeah the avatar would be local to a forum, but maybe it is too Bulletin<br />
+> Board specific as pointed out by Richard?  But also this could be a<br />
+> Gravatar as used in the blogosphere, and that is associated with an<br />
+> e-mail address...</p>
+<p>Avatar is something specific to an account - quite often they have no<br />
+resemblance of the person in real life (which a depiction would<br />
+suggest). Gravatars should not require a special property as they are<br />
+associated with foaf:mbox.</p>
+<p>Suggest that we keep sioc:avatar for now - since we are trying to make<br />
+SIOC generic enough so it can describe all these different kinds of<br />
+community sites it would make sense to keep avatar if it is required<br />
+for, say, bulleting boards.</p>
+<p>BTW - when saying this - it would be good to have SIOC export from a<br />
+bulleting board (vBulletin, others). Then we would better see what is<br />
+needed and what is not.</p>
+<p>>  > - sioc:link => isn't rdf:about enough to get the URL from a Post ?<br />
+><br />
+> I don't think so - because some Posts will not have specific URLs and<br />
+> their rdf:about would be the same - take comments on WordPress for<br />
+> example - there's a #comment that links to all the comments but no URLs<br />
+> for each comment "Post".</p>
+<p>Agree to the next post by Richard: in WordPress the comments do have a<br />
+URIs though they do not have a page of their own.</p>
+<p>In most of the cases rdf:about should be enough.</p>
+<p>The idea behind sioc:link is to point to a human-readable<br />
+representation / original page containing this SIOC object. If dropping<br />
+sioc:link and assume that we want the user to be able to get to the<br />
+original post (e.g., to comment), there are 2 open questions:<br />
+1) will rdf:about always point to the original post (=can it be used to<br />
+get to the post/comment/...)?<br />
+2) how will we get to the original location for that small number of<br />
+SIOC objects who do not have a URI of their own? (imagine if WP did not<br />
+have fragment identifiers for comments).</p>
+<p>How shall we answer these questions and shall we keep or delete<br />
+sioc:link?</p>
+<p>>  > - sioc:related_to => The specs say "determined implicity from topics or<br />
+>  > references", which means they can be infered from the topic / subject<br />
+> of the<br />
+>  > post. So maybe that's not useful to keep it in the ontology as we can<br />
+>  > easilly infer it from other properties ?<br />
+><br />
+> Maybe the spec needs to be changed to say that is one possibility.  I am<br />
+> thinking of bulletin board systems that show you potentially related<br />
+> posts, e.g. look at the end of<br />
+> http://www.boards.us/forums/showthread.php?t=2124 or the similar posts<br />
+> thing in WordPress.</p>
+<p>Please suggest changes if needed.</p>
+<p>Part of the relations can be inferred from the topic / subject / ...<br />
+But even in this case it may be worthwhile to keep this inferred result<br />
+in the knowledge base. Besides, there can be other relations (e.g.,<br />
+explicitly said by the user) that can not be inferred.</p>
+<p>We are not using sioc:related_to much now, but it sounded interesting<br />
+enough to put into the ontology. It acts as a "loose" relation property<br />
+(similar foaf:knows in FOAF) - it may be useful for keeping different<br />
+type of relations, but at the same time if you want to keep more<br />
+specific information, you may want to subclass it or create a new<br />
+property (e.g., sioc:links_to).</p>
+<p>That's all for now.</p>
+<p>And thanks again to everybody for the input into developing SIOC! :)<br />
+With this speed of community effort it's even hard to keep up with the<br />
+pace.</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-62"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-62" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi Uldis,</p>
+<p>Just one point:</p>
+<p>On 14 Jun 2006, at 21:11, Uldis Bojars wrote:<br />
+>>> - sioc:link => isn't rdf:about enough to get the URL from a Post ?<br />
+...<br />
+> In most of the cases rdf:about should be enough.<br />
+><br />
+> The idea behind sioc:link is to point to a human-readable<br />
+> representation / original page containing this SIOC object. If<br />
+> dropping<br />
+> sioc:link and assume that we want the user to be able to get to the<br />
+> original post (e.g., to comment), there are 2 open questions:<br />
+> 1) will rdf:about always point to the original post (=can it be<br />
+> used to<br />
+> get to the post/comment/...)?</p>
+<p>That would be good practice for sioc:Post, because everything you say<br />
+about a sioc:Post is really about the web page where you can see the<br />
+post. So there's no need to introduce new URIs for posts -- just use<br />
+the existing URL.</p>
+<p>> 2) how will we get to the original location for that small number of<br />
+> SIOC objects who do not have a URI of their own? (imagine if WP did<br />
+> not<br />
+> have fragment identifiers for comments).</p>
+<p>Well, if it doesn't have a URL, then linking to the original location<br />
+is impossible, no matter if you keep or drop sioc:link, isn't it? In<br />
+other words, the question doesn't make that much sense.</p>
+<p>I also don't think it happens much. The vast majority of community<br />
+platform software does assign permalinks to items like comments,<br />
+because people *do* want to link to these things.</p>
+<p>That being said, sioc:content (or its replacement in the new version)<br />
+could be used to include the content directly.</p>
+<p>> How shall we answer these questions and shall we keep or delete<br />
+> sioc:link?</p>
+<p>+1 for delete. There's already rdfs:seeAlso and foaf:page if the need<br />
+arises in some special situation.</p>
+<p>Best,<br />
+Richard</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-69"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-69" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi, Richard!</p>
+<p>> > 2) how will we get to the original location for that small number of<br />
+> > SIOC objects who do not have a URI of their own? (imagine if WP did<br />
+> > not<br />
+> > have fragment identifiers for comments).<br />
+><br />
+> Well, if it doesn't have a URL, then linking to the original location<br />
+> is impossible, no matter if you keep or drop sioc:link, isn't it? In<br />
+> other words, the question doesn't make that much sense.</p>
+<p>To clarify the question - it is the situation when there is a page<br />
+(identified with a URL) that has a number of SIOC objects (e.g.,<br />
+comments) which do not have URLs of their own.</p>
+<p>In such case you can't address them individually, yet you can point to<br />
+a web page where these items are located. Using it as rdf:about would<br />
+be wrong.</p>
+<p>> I also don't think it happens much. The vast majority of community<br />
+> platform software does assign permalinks to items like comments,<br />
+> because people *do* want to link to these things.</p>
+<p>Agree. It should not happen often.</p>
+<p>> That being said, sioc:content (or its replacement in the new version)<br />
+> could be used to include the content directly.</p>
+<p>Including content is not a problem - we are already doing it. The<br />
+problem is how to provide a link to the original, human readable page -<br />
+for example, to let reader respond to a comment (or to verify that the<br />
+page actually says what he sees in SIOC data).</p>
+<p>Maybe there is a Dublin Core property that we can use.<br />
+(Update: no need any more, foaf:page mentioned below should do it)</p>
+<p>When talking about responding to comments - maybe we need a property<br />
+(re-use existing or add to SIOC) to show where the reader can respond /<br />
+provide feedback?</p>
+<p>> > How shall we answer these questions and shall we keep or delete<br />
+> > sioc:link?<br />
+><br />
+> +1 for delete. There's already rdfs:seeAlso and foaf:page if the need<br />
+> arises in some special situation.</p>
+<p>foaf:page looks like what is needed.<br />
+it must be safe to use it - its domain is owl:Thing and range -<br />
+foaf:Document.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-75"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 19 - 14:47 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-75" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>
+On 15 Jun 2006, at 15:41, Uldis Bojars wrote:<br />
+>>> 2) how will we get to the original location for that small number of<br />
+>>> SIOC objects who do not have a URI of their own? (imagine if WP did<br />
+>>> not<br />
+>>> have fragment identifiers for comments).<br />
+>><br />
+>> Well, if it doesn't have a URL, then linking to the original location<br />
+>> is impossible, no matter if you keep or drop sioc:link, isn't it? In<br />
+>> other words, the question doesn't make that much sense.<br />
+><br />
+> To clarify the question - it is the situation when there is a page<br />
+> (identified with a URL) that has a number of SIOC objects (e.g.,<br />
+> comments) which do not have URLs of their own.<br />
+><br />
+> In such case you can't address them individually, yet you can point to<br />
+> a web page where these items are located. Using it as rdf:about would<br />
+> be wrong.</p>
+<p>That's a good point, you can still point to a page containing the<br />
+items in question.</p>
+<p>As you said, it doesn't look like a common case and re-using<br />
+foaf:page should be fine.</p>
+<p>(snip)<br />
+> When talking about responding to comments - maybe we need a property<br />
+> (re-use existing or add to SIOC) to show where the reader can<br />
+> respond /<br />
+> provide feedback?</p>
+<p>The reply form is usually easily found on the post's web page. I<br />
+think a new property wouldn't add a lot of value.</p>
+<p>Richard</p>
+<p>><br />
+>>> How shall we answer these questions and shall we keep or delete<br />
+>>> sioc:link?<br />
+>><br />
+>> +1 for delete. There's already rdfs:seeAlso and foaf:page if the need<br />
+>> arises in some special situation.<br />
+><br />
+> foaf:page looks like what is needed.<br />
+> it must be safe to use it - its domain is owl:Thing and range -<br />
+> foaf:Document.<br />
+><br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]<br />
+><br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-54"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 14 - 20:12 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-54" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>> Done - properties used in current exporters changed to<br />
+> owl:DeprecatedProperty (and won't show up in the spec), sioc:knows,<br />
+> sioc:sibling_of and sioc:type removed altogether.<br />
+><br />
+> Property sioc:has_sibling changed to owl:SymmetricProperty. It's name<br />
+> does not imply any particular direction so it is be good to stay.</p>
+<p>Good choice.</p>
+<p>> A question related to content / content_encoded properties - what<br />
+> property shall we use instead of sioc:content? potential candidates are<br />
+> sioc:description or dc:description.</p>
+<p>We could use sioc:description and map dc:description. I think the question is:<br />
+how do we want people using SIOC: only with its terms or in conjunction with<br />
+other ontologies like DC and FOAF? You already make the choice vis-a-vis the<br />
+FOAF ontology, but what is the "granularity" you need/wish to have? Where do we<br />
+draw the line?</p>
+<p>> Avatar is something specific to an account - quite often they have no<br />
+> resemblance of the person in real life (which a depiction would<br />
+> suggest). Gravatars should not require a special property as they are<br />
+> associated with foaf:mbox.<br />
+><br />
+> Suggest that we keep sioc:avatar for now - since we are trying to make<br />
+> SIOC generic enough so it can describe all these different kinds of<br />
+> community sites it would make sense to keep avatar if it is required<br />
+> for, say, bulleting boards.</p>
+<p>It's good for now, but I think it would be a good idea to rely all the user's<br />
+personal information to FAOF. However, it makes sense to leave the sioc:avatar<br />
+as-is because it represent the avatar of a user-account and not an individual<br />
+(so I can have an avatar related to one of my user-account, and another one that<br />
+really depict myself (for example, an avatar for a service account for my job,<br />
+another one for my blog, etc)).</p>
+<p>> >  > - sioc:link => isn't rdf:about enough to get the URL from a Post ?<br />
+> ><br />
+> > I don't think so - because some Posts will not have specific URLs and<br />
+> > their rdf:about would be the same - take comments on WordPress for<br />
+> > example - there's a #comment that links to all the comments but no URLs<br />
+> > for each comment "Post".<br />
+><br />
+> The idea behind sioc:link is to point to a human-readable<br />
+> representation / original page containing this SIOC object. If dropping<br />
+> sioc:link and assume that we want the user to be able to get to the<br />
+> original post (e.g., to comment), there are 2 open questions:<br />
+> 1) will rdf:about always point to the original post (=can it be used to<br />
+> get to the post/comment/...)?<br />
+> 2) how will we get to the original location for that small number of<br />
+> SIOC objects who do not have a URI of their own? (imagine if WP did not<br />
+> have fragment identifiers for comments).</p>
+<p>I think it is a good idea to keep the sioc:link as-is with the definition you<br />
+just provided.</p>
+<p>I could take a simple example to explain why. Right now, as you probably know, I<br />
+implemented SIOC in Talk Digger. For now, the resources described (about=) are<br />
+real web page publicly accessable. However, it is possible that in the future I<br />
+need to change some things in the architecture of the system and change some<br />
+paths. In that case, I would have to change the URI of the resource I am<br />
+describing. But what happen if a triple store somewhere else in the World was<br />
+crawling/using my data? He will lose the reference to the resources and will not<br />
+be able to relate anything to what he have in store.</p>
+<p>By using sioc:link, I will be able to continue to describe my resources using my<br />
+old URI naming system, and I will be able to "link" to the "accessible-<br />
+resources".</p>
+<p>Does it make sense?</p>
+<p>> And thanks again to everybody for the input into developing SIOC! :)<br />
+> With this speed of community effort it's even hard to keep up with the<br />
+> pace.</p>
+<p>And thank to you for managing its development!</p>
+<p>Salutations,</p>
+<p>--<br />
+Frederick Giasson</p>
+<p>www.fgiasson.com<br />
+www.talkdigger.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-63"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-63" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi Frederick,</p>
+<p>On 14 Jun 2006, at 21:43, Frederick Giasson wrote:<br />
+> I think it is a good idea to keep the sioc:link as-is with the<br />
+> definition you<br />
+> just provided.<br />
+><br />
+> I could take a simple example to explain why. Right now, as you<br />
+> probably know, I<br />
+> implemented SIOC in Talk Digger. For now, the resources described<br />
+> (about=) are<br />
+> real web page publicly accessable.</p>
+<p>Good!</p>
+<p>> However, it is possible that in the future I<br />
+> need to change some things in the architecture of the system and<br />
+> change some<br />
+> paths. In that case, I would have to change the URI of the resource<br />
+> I am<br />
+> describing. But what happen if a triple store somewhere else in the<br />
+> World was<br />
+> crawling/using my data? He will lose the reference to the resources<br />
+> and will not<br />
+> be able to relate anything to what he have in store.</p>
+<p>Right. That's what we call a "dead link" ;-)</p>
+<p>> By using sioc:link, I will be able to continue to describe my<br />
+> resources using my<br />
+> old URI naming system, and I will be able to "link" to the<br />
+> "accessible-<br />
+> resources".<br />
+><br />
+> Does it make sense?</p>
+<p>Yes, the problem is real, but I would approach it differently. There<br />
+are two possible answers:</p>
+<p>First: You changed all your URLs and people have referenced the old<br />
+URLs? So what? Stuff breaks on the web, people get 404s, there are<br />
+dead links, that's just the way it works. Everybody is used to it and<br />
+will work around it. sioc:link wouldn't really fix that problem -- it<br />
+only means now there are *two* URIs per post that can break instead<br />
+of one. If you can't keep your links stable, then how can we expect<br />
+you to keep your resource identifiers stable?</p>
+<p>Second: Cool URIs don't change. You should have taken the time to<br />
+develop a stable URI scheme before you started. There's things like<br />
+mod_rewrite that help. And if you really have to change URIs, put<br />
+HTTP redirects in place and nobody will notice. So you can avoid the<br />
+broken link problem yourself by doing a little bit of extra<br />
+investment. Don't expect sioc:link to fix a basic property of the web<br />
+for you ;-)</p>
+<p>Sorry if I'm sounding a bit smug here -- I'm obviously talking from a<br />
+theorist's perspective here, and I know that things are rarely that<br />
+simple when you build real-world stuff. I just want to say that<br />
+changing URLs *are* a problem on the web and always were and always<br />
+will be, and SIOC won't fix that.</p>
+<p>Yours,<br />
+Richard</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-67"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 15 - 16:24 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-67" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi Richard,</p>
+<p>> Second: Cool URIs don't change. You should have taken the time to<br />
+> develop a stable URI scheme before you started. There's things<br />
+like<br />
+> mod_rewrite that help. And if you really have to change URIs, put<br />
+> HTTP redirects in place and nobody will notice. So you can avoid<br />
+the<br />
+> broken link problem yourself by doing a little bit of extra<br />
+> investment. Don't expect sioc:link to fix a basic property of the<br />
+web<br />
+> for you ;-)</p>
+<p>><br />
+> Sorry if I'm sounding a bit smug here -- I'm obviously talking from<br />
+a<br />
+> theorist's perspective here, and I know that things are rarely<br />
+that<br />
+> simple when you build real-world stuff. I just want to say that<br />
+> changing URLs *are* a problem on the web and always were and<br />
+always<br />
+> will be, and SIOC won't fix that.</p>
+<p>Hehheeh, nah, don't worry. It was an example to show how *it could*<br />
+be useful. However you are right by saying that it is the way the Web<br />
+works since the begenning and that the way the semantic web will<br />
+certainly work too.</p>
+<p>But in that case, the most beautiful and stable uri schemas is<br />
+probably one that as nothing to do with URLs, no? If so, the sioc:<br />
+link proproty would be more than essential in such a case, no?</p>
+<p>I totally agree with what you said in that email, but what would you<br />
+do? Getting rid of the sioc:link property or leaving it as it is?</p>
+<p>Thanks for the answer!</p>
+<p>Salutations,</p>
+<p>--<br />
+Frederick Giasson</p>
+<p>www.fgiasson.com<br />
+www.talkdigger.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-77"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 19 - 14:47 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-77" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi Frederick,</p>
+<p>On 15 Jun 2006, at 14:29, Frederick Giasson wrote:<br />
+>> Second: Cool URIs don't change. You should have taken the time to<br />
+>> develop a stable URI scheme before you started. There's things<br />
+> like<br />
+>> mod_rewrite that help. And if you really have to change URIs, put<br />
+>> HTTP redirects in place and nobody will notice. So you can avoid<br />
+> the<br />
+>> broken link problem yourself by doing a little bit of extra<br />
+>> investment. Don't expect sioc:link to fix a basic property of the<br />
+> web<br />
+>> for you ;-)<br />
+><br />
+>><br />
+>> Sorry if I'm sounding a bit smug here -- I'm obviously talking from<br />
+> a<br />
+>> theorist's perspective here, and I know that things are rarely<br />
+> that<br />
+>> simple when you build real-world stuff. I just want to say that<br />
+>> changing URLs *are* a problem on the web and always were and<br />
+> always<br />
+>> will be, and SIOC won't fix that.<br />
+><br />
+> Hehheeh, nah, don't worry. It was an example to show how *it could*<br />
+> be useful. However you are right by saying that it is the way the Web<br />
+> works since the begenning and that the way the semantic web will<br />
+> certainly work too.<br />
+><br />
+> But in that case, the most beautiful and stable uri schemas is<br />
+> probably one that as nothing to do with URLs, no?</p>
+<p>Ask that question to three RDF folks and you will get four different<br />
+answers. Here's mine: Yes, non-URL schemes like URNs and the tag:<br />
+scheme are more stable than HTTP URIs. But more beautiful? No. I<br />
+think the real beauty of URIs is that you can actually retrieve a<br />
+representation of the resource that the URI identifies. That's the<br />
+really important function of a URI. And you lose that with the urn:<br />
+and tag: schemes.</p>
+<p>> If so, the sioc:link proproty would be more than essential in such<br />
+> a case, no?</p>
+<p>You are right, it's possible to get the best of two worlds with<br />
+sioc:link. A stable tag: or urn: URI as the identifier, and sioc:link<br />
+for retrieving a representation. But that's additional complexity.<br />
+You need two URIs instead of just one.</p>
+<p>With HTTP URIs, you can use one URI as both name and address. If you<br />
+put a bit of care into designing and maintaining your URI space, then<br />
+you also get stability. Every publisher manages their own HTTP URI<br />
+space and can decide for themselves how much effort they want to<br />
+spend on stability. I think that's a pretty good solution.</p>
+<p>> I totally agree with what you said in that email, but what would you<br />
+> do? Getting rid of the sioc:link property or leaving it as it is?</p>
+<p>As I said in the other post, I'd be in favor of removing sioc:link.<br />
+IMO it introduces ambiguity and potential confusion. The best place<br />
+for the post's URL is as the post's identifier, not in a separate<br />
+property.</p>
+<p>Just my €0.02.</p>
+<p>Cheers,<br />
+Richard</p>
+<p>><br />
+><br />
+> Thanks for the answer!<br />
+><br />
+><br />
+> Salutations,<br />
+><br />
+><br />
+><br />
+> --<br />
+> Frederick Giasson<br />
+><br />
+> www.fgiasson.com<br />
+> www.talkdigger.com<br />
+><br />
+><br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-78"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 19 - 14:47 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-78" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>Hi Richard,</p>
+<p>> As I said in the other post, I'd be in favor of removing sioc:<br />
+link.<br />
+> IMO it introduces ambiguity and potential confusion. The best<br />
+place<br />
+> for the post's URL is as the post's identifier, not in a separate<br />
+> property.</p>
+<p>I agree with you: keep it as simple as possible, not simpler (<br />
+Einstein).</p>
+<p>I just read one blog post from someone on the mailing list (don't<br />
+remember who) that was saying that we should focus on cut-off the<br />
+redundancy with other existing ontologies. I agree with him and<br />
+deprecating the sioc:link property goes in that trend. I think we<br />
+should have a discussion about the use of properties like sioc:<br />
+description (or dc:description), etc.</p>
+<p>Salutations,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div><a id="comment-46"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 14 - 16:55 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-46" class="active">SIOC ontology</a></h3>
+
+    <div class="content">
+      <p>
+On 9 Jun 2006, at 13:17, John Breslin wrote:<br />
+>> - sioc:link => isn't rdf:about enough to get the URL from a Post ?<br />
+><br />
+> I don't think so - because some Posts will not have specific URLs and<br />
+> their rdf:about would be the same - take comments on WordPress for<br />
+> example - there's a #comment that links to all the comments but no<br />
+> URLs<br />
+> for each comment "Post".</p>
+<p>I just want to point out that each Wordpress comment does indeed have<br />
+its own URL, something like:</p>
+<p>http://dowhatimean.net/2006/06/more-cool-sparqlajax-stuff#comment-7739</p>
+<p>I agree with the original poster, the URL should be used directly to<br />
+identify the comment.</p>
+<p>In the case where a Post really doesn't have a URL, the post won't<br />
+have a sioc:link either, and you can fall back to using a blank node<br />
+or a non-resolvable URI for the comment.</p>
+<p>Cheers,<br />
+Richard</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-47"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 14 - 16:55 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-47" class="active">Potential ontology additions</a></h3>
+
+    <div class="content">
+      <p>Just want to discuss future additions to the ontology, as a followup to<br />
+the previous changes...</p>
+<p>Proposed additions...  Feel free to correct.</p>
+<p>sioc:Community<br />
+    Description: This class can be used to describe a localised or<br />
+distributed community.</p>
+<p>sioc:part_of<br />
+    Description: This property is used to link a concept to a community<br />
+that it is part of.<br />
+    Domain: (not specifed)<br />
+    Range: sioc:Community<br />
+    Inverse: has_part</p>
+<p>sioc:has_part<br />
+    Description: This property is used to link a community to its<br />
+constituent parts.<br />
+    Domain: sioc:Community<br />
+    Range: (not specified)<br />
+    Inverse: part_of</p>
+<p>sioc:trackback_to<br />
+    Description: This property links a reply post to the original post<br />
+it sent a trackback ping to.<br />
+    Domain: sioc:Post<br />
+    Range: sioc:Post<br />
+    Inverse: trackback_from<br />
+    Subproperty of: reply_of</p>
+<p>sioc:trackback_from<br />
+    Description: This property links a post to a reply from which it has<br />
+received a trackback ping from.<br />
+    Domain: sioc:Post<br />
+    Range: sioc:Post<br />
+    Inverse: trackback_to<br />
+    Subproperty of: has_reply</p>
+<p>Other ideas:</p>
+<p>Do we need caching properties for aggregated content or is this beyond<br />
+the scope of SIOC and more related to context?  A blog post is<br />
+republished by an aggregator, would it be useful to know at what<br />
+time/date the post was cached?</p>
+<p>J.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-48"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 14 - 16:55 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-48" class="active">Potential ontology additions</a></h3>
+
+    <div class="content">
+      <p>Hi John,</p>
+<p>> sioc:Community<br />
+>     Description: This class can be used to describe a localised or<br />
+> distributed community.</p>
+<p>Could be a good idea, but we should think about what is part_of and<br />
+has_part of a "community". Is it a User? a new entity? And we also<br />
+have to place that new concept in relation with all the other ones<br />
+(Site, Forum, Usergroup).</p>
+<p>In fact, my question is: what would be the difference between a<br />
+Usergroup and a Community (semantically)?</p>
+<p>Because when I read the description of a Usergroup, it looks like a<br />
+Community, doesn't it?: "A set of Users (accounts) who have a common<br />
+purpose or interest. Can be used for access control purposes."</p>
+<p>A Usergroup regroup users with commin puspose and/or interests,<br />
+Communities regroup users considering what? I think we should define<br />
+that.</p>
+<p>><br />
+> sioc:part_of<br />
+>     Description: This property is used to link a concept to a<br />
+community<br />
+> that it is part of.<br />
+>     Domain: (not specifed)<br />
+>     Range: sioc:Community<br />
+>     Inverse: has_part<br />
+><br />
+> sioc:has_part<br />
+>     Description: This property is used to link a community to its<br />
+> constituent parts.<br />
+>     Domain: sioc:Community<br />
+>     Range: (not specified)<br />
+>     Inverse: part_of<br />
+><br />
+> sioc:trackback_to<br />
+>     Description: This property links a reply post to the original<br />
+post<br />
+> it sent a trackback ping to.<br />
+>     Domain: sioc:Post<br />
+>     Range: sioc:Post<br />
+>     Inverse: trackback_from<br />
+>     Subproperty of: reply_of<br />
+><br />
+> sioc:trackback_from<br />
+>     Description: This property links a post to a reply from which<br />
+it has<br />
+> received a trackback ping from.<br />
+>     Domain: sioc:Post<br />
+>     Range: sioc:Post<br />
+>     Inverse: trackback_to<br />
+>     Subproperty of: has_reply</p>
+<p>If I understand right, the trackback thing only apply to Post that<br />
+use the "trackback" protocol? In that case, it would mostly (if not<br />
+only) apply to some blog posts, right? If so, I am not sure that it<br />
+is a good idea considering that trackbacks are dying considering the<br />
+spam problems. </p>
+<p>My question here is: what is the "added-value" of trackbacks over<br />
+normal "has_reply". Is it really useful to include two new properties<br />
+to explicit the fact that a reply (a link) have been created using a<br />
+trackback? Personally I don't think so.</p>
+<p>> Do we need caching properties for aggregated content or is this<br />
+beyond<br />
+> the scope of SIOC and more related to context?  A blog post is<br />
+> republished by an aggregator, would it be useful to know at what<br />
+> time/date the post was cached?</p>
+<p>Tell me if I am wrong, but the has_sibling and sibling_of properties<br />
+could be use to "tag" replicated posts, right? In that case, a "has_<br />
+sibling" post (the replicated one by an aggregator) could also add<br />
+the "create_at" property. This way, we would know when it have been<br />
+replicated.</p>
+<p>I hope it helps you.</p>
+<p>Take care,</p>
+<p>Salutations</p>
+<p>--<br />
+Frederick Giasson</p>
+<p>www.fgiasson.com<br />
+www.talkdigger.com</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-84"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, July 14 - 12:59 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-84" class="active">Potential ontology additions</a></h3>
+
+    <div class="content">
+      <p>On 6/9/06, Frederick Giasson <fred@fgiasson.com> wrote:<br />
+> > sioc:Community<br />
+> >     Description: This class can be used to describe a localised or<br />
+> > distributed community.<br />
+><br />
+> Could be a good idea, but we should think about what is part_of and<br />
+> has_part of a "community". Is it a User? a new entity? And we also<br />
+> have to place that new concept in relation with all the other ones<br />
+> (Site, Forum, Usergroup).<br />
+><br />
+> In fact, my question is: what would be the difference between a<br />
+> Usergroup and a Community (semantically)?</fred@fgiasson.com></p>
+<p>sioc:Community sounds like a good idea. Christoph commented earlier<br />
+that a community is something that should have been in a SIOC ontology<br />
+from the very begining..</p>
+<p>A summary from a chat with Alex and John about sioc:Community:<br />
+ - a sioc:Community acts as a container for all kinds of SIOC objects<br />
+(maybe also other, non-SIOC objects?) and groups them together as<br />
+belonging to this community.</p>
+<p>This is the difference of sioc:Community and sioc:Usergroup:<br />
+ - a usergroup keeps together a number of users (e.g., authors,<br />
+administrators, ...)<br />
+ - sioc:Community keeps together a number of different objects (Sites,<br />
+people, ...)</p>
+<p>E.g., a semantic web community may consist of a people, Planet RDF<br />
+website, #swig web channel and its web scratchpad, some mailing lists,<br />
+...</p>
+<p>> A Usergroup regroup users with commin puspose and/or interests,<br />
+> Communities regroup users considering what? I think we should define<br />
+> that.</p>
+<p>Yes, we should define what a Community is and how we will use it.</p>
+<p>Related:<br />
+ - http://b4mad.net/datenbrei/archives/2006/05/22/sioc-from-foafroll/<br />
+ - http://apassant.net/blog/2006/06/29/97-rdf-export-of-sioc-wiki-content</p>
+<p>I see that Alex already uses a sioc:Community is "RDF Export of SIOC<br />
+Wiki Content" as a container for sioc:Site(s). One could ask in this<br />
+case, though, what is the benefit from using sioc:Community and<br />
+sioc:Site here over existing ways to specify a collection of URLs (to<br />
+crawl or to import into RSS readers) using FOAF, OPML, etc...</p>
+<p>> If I understand right, the trackback thing only apply to Post that<br />
+> use the "trackback" protocol? In that case, it would mostly (if not<br />
+> only) apply to some blog posts, right? If so, I am not sure that it<br />
+> is a good idea considering that trackbacks are dying considering the<br />
+> spam problems.</p>
+<p>Trackback is used in a variety of sites (though if we look only at<br />
+community sites it's mainly blogs) - the idea is good, but the problem<br />
+is spam. This problem has solutions, I believe.</p>
+<p>A benefit of trackbacks is that it explicitly indicates a relation<br />
+between posts. Semantics of the relation might be unclear but it is<br />
+already better than nothing (and we can work on semantics of the<br />
+relation further on).</p>
+<p>One reason for adding trackbacks is to be able to express in SIOC as<br />
+much as possible of the information on an community site. Trackbacks<br />
+are part of such information (e.g., in b2evolution there are 3 types<br />
+of comment objects - 'comments', 'trackback' and 'pingback').</p>
+<p>If SIOC can keep all the details about community site it may act as a<br />
+"medium" to transfer information between community sites and even<br />
+migrate data from one site to another. This may be a tough call though<br />
+(some information might not be available in SIOC export), but why deny<br />
+ourselves the terms to express what is inside a site?</p>
+<p>> My question here is: what is the "added-value" of trackbacks over<br />
+> normal "has_reply". Is it really useful to include two new properties<br />
+> to explicit the fact that a reply (a link) have been created using a<br />
+> trackback? Personally I don't think so.</p>
+<p>See above - if we don't distinguish between them we loose some<br />
+information (and loose the ability to recreate the same structures<br />
+elsewhere).</p>
+<p>What we may think about is if we can better integrate trackbacks into<br />
+the existing SIOC model.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-85"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, July 14 - 12:59 — <a href="../user/28.html" title="View user profile.">Christoph Görn</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-85" class="active">Potential ontology additions</a></h3>
+
+    <div class="content">
+      <p>Good morning, please find my comments below...</p>
+<p>Am 05.07.2006 um 05:43 schrieb CaptSolo:<br />
+On 6/9/06, Frederick Giasson <fred@fgiasson.com> wrote:<br />
+>> If I understand right, the trackback thing only apply to Post that<br />
+>> use the "trackback" protocol?<br />
+>> My question here is: what is the "added-value" of trackbacks over<br />
+>> normal "has_reply".<br />
+> See above - if we don't distinguish between them we loose some<br />
+> information (and loose the ability to recreate the same structures<br />
+> elsewhere).</fred@fgiasson.com></p>
+<p>Keeping in mind the discussion on #swig i took a look at the rss<br />
+trackback module (http://madskills.com/public/xml/rss/module/<br />
+trackback/) and it says:<br />
+"trackback:about is a sub-element of an RSS item, and contains a<br />
+TrackBack URL that was pinged in reference to this RSS item. Each RSS<br />
+item may contain zero or more instances of trackback:about."</p>
+<p>Understanding (and defining) a sioc:Post as a rss1.0:item would<br />
+enable two things:</p>
+<p>1) semantics of trackbacks are defined by RSS1.0 trackback module, and</p>
+<p>2) SIOC goal of describing the structure of a Community (and it's<br />
+Posts) with a focus on exchangability is reached</p>
+<p>sioc:Post is already a foaf:Document, to better describe weblogs we<br />
+should make it a subclass of rss1:item and skip sioc:trackback* from<br />
+SIOC.</p>
+<p>Making statements about what protocol was used to make a comment<br />
+extends SIOC's domain from "describe community structures" to<br />
+"describe community structures and technical infrastructure used by<br />
+the community".</p>
+<p>	Christoph</p>
+<p>--<br />
+Christoph Görn <goern@B4mad.Net><br />
+http://B4mad.Net/FOAF/goern.rdf#goern</goern@b4mad.net></p>
+<p>Usability schmusability... where's the part where we talk about how<br />
+this helps users kick ass?</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-86"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, July 14 - 12:59 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-86" class="active">Potential ontology additions</a></h3>
+
+    <div class="content">
+      <p>Christoph Görn wrote:<br />
+><br />
+> Keeping in mind the discussion on #swig i took a look at the rss<br />
+> trackback module (http://madskills.com/public/xml/rss/module/<br />
+> trackback/) and it says:<br />
+> "trackback:about is a sub-element of an RSS item, and contains a<br />
+> TrackBack URL that was pinged in reference to this RSS item. Each RSS<br />
+> item may contain zero or more instances of trackback:about."<br />
+><br />
+> Understanding (and defining) a sioc:Post as a rss1.0:item would<br />
+> enable two things:<br />
+><br />
+> 1) semantics of trackbacks are defined by RSS1.0 trackback module, and<br />
+><br />
+> 2) SIOC goal of describing the structure of a Community (and it's<br />
+> Posts) with a focus on exchangability is reached</p>
+<p>We were looking at the TrackBack module before and were thinking to<br />
+reuse or invent new properties. You have good arguments for reuse.</p>
+<p>However, there are couple of issues / questions to answer:</p>
+<p>1) there is no RDF schema for RSS TrackBack module, hence no machine<br />
+readable info about the schema / its semantics</p>
+<p>2) how would you describe the other direction - that a particular post<br />
+B has received trackback from post A ?</p>
+<p>3) how would you express that the trackback was done (sent/received) at<br />
+a particular time? trackback:about only allows to point to the URL that<br />
+has been track-backed.</p>
+<p>Subclassing sioc:Post from rss:item makes sense - unless there're some<br />
+conflicts arising (which I do not see).</p>
+<p>> Making statements about what protocol was used to make a comment<br />
+> extends SIOC's domain from "describe community structures" to<br />
+> "describe community structures and technical infrastructure used by<br />
+> the community".</p>
+<p>It depends if we only want to extract information from community sites<br />
+or also "reconstruct" as much information as possible about them.</p>
+<p>Being able to use SIOC as a transport between 2 community sites is<br />
+tempting, although not the main reason why we have or need SIOC.</p>
+<p>Good thing is that in the solution you proposed we can distinguish<br />
+between comments and trackbacks - so we keep the "technical data".</p>
+<p>Best,<br />
+Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div></div><a id="comment-35"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-35" class="active">Revisions to the SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>Some comments on http://groups.google.com/group/sioc-dev/<br />
+browse_thread/thread/b8e3f8ceb73b29f5</p>
+<p>> =1= Use foaf:Person instead of sioc:User for person's data<br />
+><br />
+> Name, surname and other personal data will be described via a<br />
+> foaf:Person, which will point to the sioc:User (person's account on<br />
+> the<br />
+> community site) using foaf:holdsAccount property.<br />
+If I understand correctly, you propose this:</p>
+<p>&lt;#richard> a foaf:Person .<br />
+&lt;#richard> foaf:holdsAccount &lt;#richardInForum> .<br />
+&lt;#richardInForum> a sioc:User .</p>
+<p>That's not good, because &lt;#richardInForum> would be both a<br />
+foaf:OnlineAccount and a sioc:User, which seems wrong to me. Rename<br />
+sioc:User to sioc:UserAccount?</p>
+<p>How would you model the association between an author and her posts?</p>
+<p>&lt;#richard> sioc:creator_of &lt;#post123> .</p>
+<p>or</p>
+<p>&lt;#richardInForum> sioc:creator_of &lt;#post123> .</p>
+<p>?</p>
+<p>I think the first one is better, the association should be between<br />
+the *person* and the post, not the *account* and the post. That's how<br />
+dc:creator and foaf:maker work. Of course then you couldn't record<br />
+any more that a single person posts from multiple accounts. From my<br />
+point of view that would be acceptable.</p>
+<p>> Actions:<br />
+>  - deprecate sioc:first_name and sioc:last_name<br />
++1</p>
+<p>> Open questions:<br />
+>  - how to keep the information that this _particular_ account is<br />
+> associated with a given e-mail address (or hash of it)? we might also<br />
+> deprecate foaf:email and foaf:email_sha1 and use FOAF properties, but<br />
+> shall we not worry that when person's data are smushed together we<br />
+> loose a link between OnlineAccount and an e-mail address?<br />
+I wouldn't worry about that. When you smush, you always lose some<br />
+information. If someone cares about the association, then they<br />
+shouldn't smush, or keep the original data around to check which<br />
+source the triple is from.</p>
+<p>>  - same can be true of name (e.g., if the person has a different name<br />
+> specified for each site)<br />
+Ditto, don't worry too much.</p>
+<p>> =2= Changes to properties representing plain/rich content<br />
+><br />
+> sioc:content is redundant - SIOC has sioc:description (subclass of<br />
+> dc:description) using which is more consistent.<br />
+Is sioc:content really the same as sioc:description? FWIW,<br />
+dc:description is defined as "An account of the content of the resource.<br />
+Description may include but is not limited to: an abstract, table of<br />
+contents, reference to a graphical representation of content or a<br />
+free-text account of the content." I read this as some kind of<br />
+summary of the content.</p>
+<p>> sioc:content_encoded - there is already content:encoded module for RSS<br />
+> 1.0 that can be used to describe encoded content (e.g., HTML). let's<br />
+> leave it out of SIOC ontology for now as encoding and describing rich<br />
+> content can be a complex task.<br />
++1</p>
+<p>(snip)<br />
+> Change range:<br />
+>  - sioc:type - range to rdfs:Resource<br />
+There is rdf:type already, the most universal property in all of RDF.<br />
+Please drop sioc:type, it makes you look silly.</p>
+<p>(snip)<br />
+> =5= Changes to subject, topic, title<br />
+> Separate subject information into:<br />
+>  - text (e.g., keywords) described by sioc:subject<br />
+Please make it a subclass of rdfs:label.</p>
+<p>>  - resources (e.g., SKOS concepts) described by sioc:topic<br />
+sioc:topic is pretty useless unless there's a method of actually<br />
+defining the topics/categories/concepts. I'd say drop it. Any<br />
+external vocabulary for describing topics, e.g. SKOS, already comes<br />
+with an equivalent of sioc:topic.</p>
+<p>(snip)<br />
+> -?- Shall we subclass sioc:created_at and sioc:modified_at from<br />
+> dc:date<br />
+> or dc_terms:issued and dc_terms:modified ?<br />
++1</p>
+<p>> -?- Shall we subclass sioc:link (used to describe link to a web page<br />
+> about the SIOC object - Post, User, ...) from dc:identifier ?<br />
+I say drop it. For posts and forums, the resource URI should be the<br />
+link. For users (and anything else), there's foaf:page/foaf:homepage<br />
+already. If anybody needs more, there's still dc:identifier.</p>
+<p>Best,<br />
+Richard</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-155"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-155" class="active">Revisions to the SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>Comments about sioc:content vs. dc:description (described by Richard<br />
+in this thread and raised again by Benja on #sioc) makes me return to<br />
+this topic. See question =2=.</p>
+<p>On 6/1/06, Richard Cyganiak <richard@cyganiak.de> wrote:<br />
+><br />
+> > =1= Use foaf:Person instead of sioc:User for person's data<br />
+><br />
+> &lt;#richard> a foaf:Person .<br />
+> &lt;#richard> foaf:holdsAccount &lt;#richardInForum> .<br />
+> &lt;#richardInForum> a sioc:User .<br />
+><br />
+> That's not good, because &lt;#richardInForum> would be both a<br />
+> foaf:OnlineAccount and a sioc:User, which seems wrong to me. Rename<br />
+> sioc:User to sioc:UserAccount?</richard@cyganiak.de></p>
+<p>sioc:User concept describes an online account. It used to describe<br />
+both an account and personal information associated with it but as<br />
+person's information was moved to a foaf:Person, the name remains.</p>
+<p>> How would you model the association between an author and her posts?<br />
+><br />
+> &lt;#richard> sioc:creator_of &lt;#post123> .<br />
+> or<br />
+> &lt;#richardInForum> sioc:creator_of &lt;#post123> .<br />
+><br />
+> I think the first one is better, the association should be between<br />
+> the *person* and the post, not the *account* and the post. That's how<br />
+> dc:creator and foaf:maker work. Of course then you couldn't record<br />
+> any more that a single person posts from multiple accounts. From my<br />
+> point of view that would be acceptable.</p>
+<p>Currently we associate a post with an online account used to create<br />
+this post. That allows to keep a link between posts and accounts they<br />
+were made from. What are your suggestions and why would you want to<br />
+loose this information?</p>
+<p>> > =2= Changes to properties representing plain/rich content<br />
+> ><br />
+> > sioc:content is redundant - SIOC has sioc:description (subclass of<br />
+> > dc:description) using which is more consistent.</p>
+<p>> Is sioc:content really the same as sioc:description? FWIW,<br />
+> dc:description is defined as "An account of the content of the resource.<br />
+> Description may include but is not limited to: an abstract, table of<br />
+> contents, reference to a graphical representation of content or a<br />
+> free-text account of the content." I read this as some kind of<br />
+> summary of the content.</p>
+<p>Thanks for the comment. A number of people have already commented that<br />
+a dc:description is more appropriate for an abstract of a post than<br />
+for a full text content. Or, in other words, that by using<br />
+dc:description to describe full contents of a post we are implying<br />
+additional semantics on this property that it does not have.</p>
+<p>We should not dc:description for post content then.</p>
+<p>Where does that leave us? A simple solution is to use sioc:content.</p>
+<p>> > =5= Changes to subject, topic, title<br />
+> > Separate subject information into:<br />
+> >  - text (e.g., keywords) described by sioc:subject<br />
+> Please make it a subclass of rdfs:label.</p>
+<p>... or use dc:subject (there's no difference in their meaning).</p>
+<p>> >  - resources (e.g., SKOS concepts) described by sioc:topic<br />
+> sioc:topic is pretty useless unless there's a method of actually<br />
+> defining the topics/categories/concepts. I'd say drop it. Any<br />
+> external vocabulary for describing topics, e.g. SKOS, already comes<br />
+> with an equivalent of sioc:topic.</p>
+<p>Not sure about this. Using external vocabulary like SKOS for topics is<br />
+preferred but we can't guarantee that all SIOC data will always have<br />
+one. Currently there are no SKOS categories in the WordPress SIOC<br />
+export [yet], but if there is sioc:topic that helps already.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-156"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, September 2 - 17:57 — <a href="../user/50.html" title="View user profile.">Jack Park</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-156" class="active">Revisions to the SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>From below, Uldis said:<br />
+> We should not dc:description for post content then.<br />
+><br />
+> Where does that leave us? A simple solution is to use sioc:content.<br />
++1<br />
+then said in another context<br />
+> Not sure about this. Using external vocabulary like SKOS for topics is<br />
+> preferred but we can't guarantee that all SIOC data will always have<br />
+> one.<br />
+One what? I'll take "topic".<br />
+I interpret that to mean that some particular "topic" has been<br />
+assigned or named yet. I suppose there are other interpretations.<br />
+Maybe I'm off base here, but I cannot think of an instance of data of<br />
+any kind that doesn't exist within some context, eg, some subject or<br />
+basket of subjects. Let "subject" stand as a synonym for "topic."<br />
+That, of course, is difficult; the xml topic maps folks refer "topic"<br />
+as a kind of container that represents (proxies, stands for, whatever)<br />
+some "subject". It is my opinion that the SIOC ontology should make a<br />
+few ontological commitments to some terms, such as topic, subject, and<br />
+so forth; those commitments are necessary since the ontology is trying<br />
+to exist in several namespaces.  If it is a requirement (as implied by<br />
+the quote) that a topic must exist prior to data  being represented,<br />
+then I must be missing something.</p>
+<p>Just a half EURO for the morning. No wait!...afternoon.<br />
+Cheers<br />
+Jack</p>
+<p>On 8/11/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+><br />
+> Comments about sioc:content vs. dc:description (described by Richard<br />
+> in this thread and raised again by Benja on #sioc) makes me return to<br />
+> this topic. See question =2=.<br />
+><br />
+> On 6/1/06, Richard Cyganiak <richard@cyganiak.de> wrote:<br />
+> ><br />
+> > > =1= Use foaf:Person instead of sioc:User for person's data<br />
+> ><br />
+> > &lt;#richard> a foaf:Person .<br />
+> > &lt;#richard> foaf:holdsAccount &lt;#richardInForum> .<br />
+> > &lt;#richardInForum> a sioc:User .<br />
+> ><br />
+> > That's not good, because &lt;#richardInForum> would be both a<br />
+> > foaf:OnlineAccount and a sioc:User, which seems wrong to me. Rename<br />
+> > sioc:User to sioc:UserAccount?<br />
+><br />
+> sioc:User concept describes an online account. It used to describe<br />
+> both an account and personal information associated with it but as<br />
+> person's information was moved to a foaf:Person, the name remains.<br />
+><br />
+> > How would you model the association between an author and her posts?<br />
+> ><br />
+> > &lt;#richard> sioc:creator_of &lt;#post123> .<br />
+> > or<br />
+> > &lt;#richardInForum> sioc:creator_of &lt;#post123> .<br />
+> ><br />
+> > I think the first one is better, the association should be between<br />
+> > the *person* and the post, not the *account* and the post. That's how<br />
+> > dc:creator and foaf:maker work. Of course then you couldn't record<br />
+> > any more that a single person posts from multiple accounts. From my<br />
+> > point of view that would be acceptable.<br />
+><br />
+> Currently we associate a post with an online account used to create<br />
+> this post. That allows to keep a link between posts and accounts they<br />
+> were made from. What are your suggestions and why would you want to<br />
+> loose this information?<br />
+><br />
+> > > =2= Changes to properties representing plain/rich content<br />
+> > ><br />
+> > > sioc:content is redundant - SIOC has sioc:description (subclass of<br />
+> > > dc:description) using which is more consistent.<br />
+><br />
+> > Is sioc:content really the same as sioc:description? FWIW,<br />
+> > dc:description is defined as "An account of the content of the resource.<br />
+> > Description may include but is not limited to: an abstract, table of<br />
+> > contents, reference to a graphical representation of content or a<br />
+> > free-text account of the content." I read this as some kind of<br />
+> > summary of the content.<br />
+><br />
+> Thanks for the comment. A number of people have already commented that<br />
+> a dc:description is more appropriate for an abstract of a post than<br />
+> for a full text content. Or, in other words, that by using<br />
+> dc:description to describe full contents of a post we are implying<br />
+> additional semantics on this property that it does not have.<br />
+><br />
+> We should not dc:description for post content then.<br />
+><br />
+> Where does that leave us? A simple solution is to use sioc:content.<br />
+><br />
+> > > =5= Changes to subject, topic, title<br />
+> > > Separate subject information into:<br />
+> > >  - text (e.g., keywords) described by sioc:subject<br />
+> > Please make it a subclass of rdfs:label.<br />
+><br />
+> ... or use dc:subject (there's no difference in their meaning).<br />
+><br />
+> > >  - resources (e.g., SKOS concepts) described by sioc:topic<br />
+> > sioc:topic is pretty useless unless there's a method of actually<br />
+> > defining the topics/categories/concepts. I'd say drop it. Any<br />
+> > external vocabulary for describing topics, e.g. SKOS, already comes<br />
+> > with an equivalent of sioc:topic.<br />
+><br />
+> Not sure about this. Using external vocabulary like SKOS for topics is<br />
+> preferred but we can't guarantee that all SIOC data will always have<br />
+> one. Currently there are no SKOS categories in the WordPress SIOC<br />
+> export [yet], but if there is sioc:topic that helps already.<br />
+><br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]<br />
+><br />
+> ><br />
+></richard@cyganiak.de></captsolo@gmail.com></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-23"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-23" class="active">Revisions to the SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>Hi all,<br /><br />
+<br />A bit late, but here are a few remarks about the proposed changes:<br />
+<div><span class="gmail_quote"><br /><br />
+</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">=1= Use foaf:Person instead of sioc:User for person's data<br /><br />Name, surname and other personal data will be described via a<br />
+<br />foaf:Person, which will point to the sioc:User (person's account on the<br />community site) using foaf:holdsAccount property.</blockquote></div></p>
+<div><br /><br />
+I also think this is the best way to do mapping between FOAF and SIOC.<br />(detail: as sioc:User will be a foaf:OnlineAccount, maybe naming it sioc:Account/UserAccount would be better than sioc:User)<br /><br />
+There's also might be a sioc:owned_by property to make a<br />
+sioc:User/Account point to a foaf:Person  (as it doesn't seem<br />
+there's an inverse of foaf:holdsAccount yet).<br /><br />
+Then, there could be a sioc:accountName, to define the Account name / login, which might be a subclass/sameAs of foaf:accountName.<br />
+</div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+<br />=3= Cleanup<br /><br />Remove:<br />- commented out events related properties (starts_at, finished_at,<br />event) - events are outside scope<br />- sioc:is_category and sioc:is_closed<br />- sioc:location</blockquote></p>
+<div><br /><br />
+Regarding the location of the user, I think it's better to let FOAF manage it, eg<br />
+using Geo vocabulary [1]. And maybe keep sioc:location for the location of a post ?<br />
+</div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">=5= Changes to subject, topic, title<br /><br />Separate subject information into:<br /></blockquote></p>
+<p> - text (e.g., keywords) described by sioc:subject<br /> - resources (e.g., SKOS concepts) described by sioc:topic</p>
+<div><br />Good idea to separate both.<br />
+</div>
+<p><br /></p>
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><p>=Open Questions=<br /><br />-?- Shall we change the way we represent modifications / different<br />
+<br />versions of the data? Currently we have rather simple next_version,<br />previous_version and has_modifier, modifier_of. Another option is to<br />introduce &quot;modification events&quot; that we can add more information to [at<br />
+<br />a cost of the complexity of data/ontology]</p></blockquote>
+<div><br />If previous / next are transitive properties, and using created_at and has_creator /has_modifier for each versionned Post, I think we can get all relevant information about versions of the data.<br />
+<br />Yet, a version_comment attribute could be added to sioc:Post, so that each post may have a short description about its revision (eg: &quot;initial version&quot;, &quot;typo...&quot; as we can do in some wikis, or in CVS).<br />
+<br /></div>
+<p><br />
+<div>Best,<br /><br />
+<br /><br />
+Alex.<br />&nbsp;<br />
+<br />[1] <a href="http://www.w3.org/2003/01/geo/">http://www.w3.org/2003/01/geo/</a><br /><br />
+</div>
+</p><p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">Best regards,<br />Uldis<br /><br />[ <a href="http://captsolo.net/info/" target="_blank" onclick="return top.js.OpenExtLink(window,event,this)"><br />
+http://captsolo.net/info/<br />
+</a> ]<br />[ CaptSolo @ #foaf and #swig ]<br /><br /><br /><br /><br /></blockquote></p>
+
+<p><br /></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-31"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 31 - 21:01 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-31" class="active">sioc:owned_by OR rdfs:seeAlso ?</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<blockquote><p>
+Then, there could be a sioc:accountName, to define the Account name / login, which might be a subclass/sameAs of foaf:accountName.
+</p></blockquote>
+<p>I had the same question, but in the mean time, I would (and will: for a project I am working on right now, more information in this later) use a "rdfs:seeAlso" property to create the bridge between a sioc:User and it's personal profile (foaf:Person).</p>
+<p>I don't know if it is better then incorporating a new sioc property but considering that it is a common practice to refer a "foaf:knows" property to the "knows"'s Foaf profile, it could do the job for the moment I think. Are my assumptions good?</p>
+<p>There is what I mean:</p>
+<p>__<foaf:knows>__<br />
+  <foaf:Person><br />
+    <foaf:nick>dbrickley</foaf:nick><br />
+    <foaf:name>Dan Brickley</foaf:name><br />
+    __<rdfs:seeAlso rdf:resource="http://www.talkdigger.com/portal/user.php?nick=dbrickley" />__<br />
+  </rdfs:seealso></foaf:person><br />
+__</foaf:knows>__</p>
+<p>Thanks,</p>
+<p>Salutations,</p>
+<p>Fred</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-30"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, May 30 - 09:46 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="59.html#comment-30" class="active">Revisions to the SIOC Ontology</a></h3>
+
+    <div class="content">
+      <p>Alex,</p>
+<p>Thanks for your comments. :)</p>
+<p>On 5/22/06, Alexandre Passant <alex@passant.org> wrote:<br />
+> > =1= Use foaf:Person instead of sioc:User for person's data</alex@passant.org></p>
+<p>>  Then, there could be a sioc:accountName, to define the Account name /<br />
+> login, which might be a subclass/sameAs of foaf:accountName.</p>
+<p>A good suggestion. sioc:name was meant for this purpose (according to<br />
+changes in new ontology version when it is no longer needed for<br />
+expressing short name of something), but we did not think of<br />
+accountName property that is inherited from FOAF.</p>
+<p>Do others have suggestions which to use - sioc:name or foaf:accountName?</p>
+<p>Note: sioc:name is meant to be used for both sioc:User and Usergroup.<br />
+Although I can not remember right now what is the rationale for<br />
+account names in case of Usergroup. Maybe John knows more about this.</p>
+<p>> > =5= Changes to subject, topic, title<br />
+> > Separate subject information into:<br />
+> > - text (e.g., keywords) described by sioc:subject<br />
+> > - resources (e.g., SKOS concepts) described by sioc:topic<br />
+><br />
+> Good idea to separate both.</p>
+<p>I found some notes from our meeting with DanBri, Libby and Alistair on<br />
+describing topics of Posts (see the figure below). There you can see<br />
+different ways of describing topics. May be useful for integrating<br />
+SKOS.</p>
+<p>http://rdfs.org/2005/11/sioc-topic.jpg</p>
+<p>> > =Open Questions=<br />
+><br />
+> If previous / next are transitive properties, and using created_at and<br />
+> has_creator /has_modifier for each versionned Post, I think we can get all<br />
+> relevant information about versions of the data.<br />
+> Yet, a version_comment attribute could be added to sioc:Post, so that each<br />
+> post may have a short description about its revision (eg: "initial version",<br />
+> "typo..." as we can do in some wikis, or in CVS).</p>
+<p>We can use previous / next properties for now. Shall we make them<br />
+transitive then? And what questions does that help us to answer from<br />
+the data?</p>
+<p>We will need to develop this the future - when looking at a use case<br />
+where versions are more important than in a blog or forum posts (e.g.,<br />
+wikis).</p>
+<p>Here's a wiki page for discussion, please add your comments:<br />
+http://esw.w3.org/topic/SIOC/VersionTracking</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F59%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/59?destination=node%2F59"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-cIWt-xM-zcgPZRNnYSvoNNxhHsKbrJuKKe4N_vvTCzE" value="form-cIWt-xM-zcgPZRNnYSvoNNxhHsKbrJuKKe4N_vvTCzE"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

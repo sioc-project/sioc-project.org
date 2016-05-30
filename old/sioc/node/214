@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/214"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/214">
+  <dc:title>vCard in RDF</dc:title>
+  <sioc:content>On Thursday 01 February 2007 10:53, Axel Polleres wrote:
+&gt; Interesting! May I ask whethr also overlaps between vCard and Foaf
+&gt; were discussed?
+Yup! Harry has a document somewhere. Basically, we&#039;re thinking of vCard
+has a standard that we can&#039;t do much on, so we&#039;re taking the view that
+we pretty much just formulate it in RDF.
+The meeting was mostly minuted in #swig, it starts about here:
+http://chatlogs.planetrdf.com/swig/2007-01-26.html#T17-01-58
+Cheers,
+Kjetil
+--
+Kjetil Kjernsmo
+Semantic Web Specialist
+Opera Software ASA
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-02-01T10:25:38+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:13+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/214" rdfs:label="vCard in RDF" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/58%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/58" />
+</sioc:Post>
+</rdf:RDF>

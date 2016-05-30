@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/131"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/131">
+  <dc:title>SIOC Usecase Examples</dc:title>
+  <sioc:content>I have been assembling a collection of SIOC and SPARQL Query demos to
+further illustrate how Data Spaces will provide critical infrastructure
+for the burgeoning Semantic Web.
+Usecase Synopsis:
+Distributed Collaborative Applications such as: Weblogs, Wikis,
+Bookmark Managers, Feed Aggregators, Photo Galleries, Discussion Forums
+etc. with data stored in a SQL compliant ORDBMS that is then mapped to
+the SIOC and FOAF ontologies for exposure to SPARQL Queries  via SPARQL
+Query Language, Protocol, and Results Serialization support.
+The usecase sample queries are available at:
+http://virtuoso.openlinksw.com/wiki/main/Main/ODSSIOCRef
+Technologies in use:
+OpenLink Virtuoso (the ORDBMS
+)
+OpenLink Data Spaces (application layer that exposes data via SIOC,
+FOAF, and Atom OWL for SPARQL based data access
+)
+Kingsley Idehen
+http://www.openlinksw.com/blog/~kidehen
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-12T10:00:45+01:00</dcterms:created>
+  <dcterms:modified>2006-09-07T20:36:52+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/131" rdfs:label="SIOC Usecase Examples" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/56%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/56" />
+</sioc:Post>
+</rdf:RDF>

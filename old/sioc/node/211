@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/211"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/211">
+  <dc:title>SIOC Type Modules Contirubutions for various Data Spaces from OpenLink</dc:title>
+  <sioc:content>All,
+Here is a dump of SIOC subclasses that provide integration hooks for a
+range of Data Spaces that include:
+Shared Bookmarks (a &#039;la del.icio.us), Shared Photo Galleries (Flickr),
+Weblogs, Wikis, Shared Feed Subscriptions (e.g. Bloglines, TechMeme
+etc..), Discussion Forums (Usenet, phpBB etc..), Mailing Lists, Web
+File Servers (WebDAV), Polls &amp;amp; Surveys etc..
+Hopefully, we can use SIOC to effectively demonstrate Ontology resuse
+as part of the Semantic Web Data Generation effort (which is basically
+a global Data Integration and Generation effort [1]).
+BTW - I was going to dump this in the SIOC Wiki, but it appears to have
+moved etc..
+#Processed by Id: cwm.py,v 1.144 2003/09/14 20:20:20 timbl Exp
+#    using base file:/tmp/tmp7NHric-rdfconverter
+#  Notation3 generation by
+#       notation3.py,v 1.148 2003/12/04 21:20:17 timbl Exp
+#   Base was: file:/tmp/tmp7NHric-rdfconverter
+     @prefix :  .
+     @prefix annotea:  .
+     @prefix atom:
+ .
+     @prefix dc:  .
+     @prefix exif:  .
+     @prefix foaf:  .
+     @prefix owl:  .
+     @prefix rdf:  .
+     @prefix rdfs:  .
+     @prefix sioc:  .
+     @prefix vs:  .
+     @prefix wot:  .
+    :     a owl:Ontology;
+         dc:description &quot;Extends SIOC (Semantically Interlinked Online
+Communities) core ontology by defining subtypes and subproperties of
+SIOC concepts.&quot;;
+         dc:title &quot;SIOC Types Module&quot;;
+         rdfs:seeAlso ;
+         owl:import sioc: .
+    :Bookmark     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Bookmark&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Briefcase     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Briefcase&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Community     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Community&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Discussion     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Discussion&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Feed     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Feed&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Mail     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Mail&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Photo     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Photo&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Poll     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Poll&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Weblog     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Weblog&quot;;
+         rdfs:subClassOf sioc:Forum .
+    :Wiki     a rdfs:Class;
+         rdfs:isDefinedBy :;
+         rdfs:label &quot;Wiki&quot;;
+         rdfs:subClassOf sioc:Forum .
+    atom:Entry     rdfs:isDefinedBy atom:;
+             rdfs:subClassOf sioc:Post .
+    annotea:Bookmark     rdfs:isDefinedBy annotea:;
+         rdfs:subClassOf sioc:Post .
+    exif:IFD     rdfs:isDefinedBy exif:;
+         rdfs:subClassOf sioc:Post .
+&amp;lt;?xml version=&#039;1.0&#039; encoding=&#039;UTF-8&#039;?&gt;
+
+
+    SIOC Types Module
+    Extends SIOC (Semantically Interlinked Online
+Communities) core ontology by defining subtypes and subproperties of
+SIOC concepts.
+    
+    
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+    
+    
+</sioc:content>
+  <dcterms:created>2007-01-19T23:25:19+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:12+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/211" rdfs:label="SIOC Type Modules Contirubutions for various Data Spaces from OpenLink" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/56%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/56" />
+</sioc:Post>
+</rdf:RDF>

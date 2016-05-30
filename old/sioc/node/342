@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/342"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/342">
+  <dc:title>Tales From the SIOC-O-Sphere #10</dc:title>
+  <sioc:content>
+SIOC is a Social Semantic Web project that originated at DERI, NUI Galway (funded by SFI) and which aims to interlink online communities with semantic technologies. You can read more about SIOC on the Wikipedia page for SIOC or in this paper. But in brief, SIOC provides a set of terms that describe the main concepts in social websites: posts, user accounts, thread structures, reply counts, blogs and microblogs, forums, etc. It can be used for interoperability between social websites, for augmenting search results, for data exchange, for enhanced feed readers, and more. It&#039;s also one of the metadata formats used in the forthcoming Drupal 7 content management system, and has been deployed on hundreds of websites including Newsweek.com.
+As part of our dissemination activities, I&#039;ve tried to regularly summarise recent developments in the project so as to give an overview of what&#039;s going on and also to help in connecting interested parties. It&#039;s been much too long (over a year) since my last report, so this will be a long one! In reverse chronological order, here&#039;s a list of recent applications and websites that are using SIOC:
+
+SMOB Version 2. As you may have read on Y Combinator Hacker News yesterday, a re-architected and re-coded version of SMOB (Semantic Microblogging) has been created by Alex Passant. As with our original SMOB design, a user&#039;s SMOB site stores and shares tweets and user information using SIOC and FOAF, but the new version also exposes data via RDFa and additional vocabularies (including the Online Presence Ontology, MOAT, Common Tag). The new SMOB suggests relevant URIs from DBpedia and Sindice when #hashtags are entered, and has moved from a client-server model to a set of distributed hubs. Contact @terraces.
+on-the-wave. This script creates an enhanced browsing experience (that is SIOC-enabled) for the popular PTT bulletin board system. Contact kennyluck@csail.mit.edu.
+Newsweek.com. American news magazine Newsweek are now publishing RDFa on their main site, including DC, CommonTag, FOAF and SIOC. Contact @markcatalano.
+Linked Data from Picasa. OpenLink Software&#039;s URI Burner can now provide Linked Data views of Google Picasa photo albums. See an example here. Contact @kidehen.
+Facebook Open Graph Protocol. Facebook recently announced its Open Graph Protocol (OGP), which allows any web page to become a rich object in their social graph. While OGP defines its own set of classes and properties, the RDF schema contains direct mappings to existing concepts in FOAF, DBpedia and BIBO, and indirect mappings to concepts in Geo, vCard, SIOC and GoodRelations. OpenLink also have a data dictionary meshup of some OGP and SIOC terms (ogp:Blog is mapped to sioct:Weblog). Contact @daveman692.
+Linked Data from Slideshare. A service to produce Linked Data from the popular Slideshare presentation sharing service has been created, and is available here. Data is represented in SIOC and DC. Contact @pgroth.
+Fanhubz. FanHubz supports community building and discovery around BBC content items such as TV shows and radio programmes. It reuses the sioct:MicroblogPost term and also has some interesting additional annotation terms for in-show tweets (e.g. twitterSubtitles). Contact @ldodds.
+RDFa-enhanced FusionForge. An RDFa-enhanced version of FusionForge, a software project management and collaboration system, has been created that generates metadata about projects, users and groups using SIOC, DOAP and FOAF. You can look at the Forge ontology proposal, and also view a demo site. Contact @olberger.
+Falconer. Falconer is a Semantic Web search engine application enhanced with SIOC. It allows newly-created Social Web content to be represented in SIOC, but it also allows this content to be annotated with any semantic statements available from Falcons, and all of this data can then be indexed by the search engine to form an ecosystem of semantic data. Contact wu@seu.edu.cn.
+Django to RDF. A script is available here to turn Django data into SIOC RDF and JSON. View the full repository of related scripts on github. Contact @niklasl.
+SIOC Actions Module. A new SIOC module has been created to describe actions, with potential applications ranging from modelling actions in a developer community to tracing interactions in large-scale wikis. There is a SIOC Actions translator site for converting Activity Streams, Wikipedia interactions and Subversion actions into RDF. Contact @pchampin.
+SIOC Quotes Module. Another SIOC module has been developed for representing quotes in e-mail conversations and other social media content. You can view a presentation on this topic. Contact @terraces.
+Siocwave. Siocwave is a desktop tool for viewing and exploring SIOC data, and is based on Python, RDFLib and wxWidgets. Contact vfaronov@gmail.com.
+RDFa in Drupal 7. Following the Drupal RDF code sprint in DERI last year, RDFa support (FOAF, SIOC, SKOS, DC) in Drupal core was committed to version 7 in October, and work has been apace on refining this module. Drupal 7 is currently on its fifth alpha version, and a full release candidate is expected later this summer. Find out more about the RDFa in Drupal initiative at semantic-drupal.com. Contact @scorlosquet.
+Omeka Linked Data Plugin (Forthcoming). A plugin to produce Linked Data from the Omeka web publishing platform is in progress that will generate data using SIOC, FOAF, DOAP and other formats. Contact @patrickgmj.
+Boeing inSite. inSite is an internal social media platform for Boeing employees that provides SIOC and FOAF data services as part of its architecture. Contact @adamboyet.
+Virtuoso Sponger. Virtuoso Sponger is a middleware component of Virtuoso that generates RDF Linked Data from a variety of data sources (working as an &quot;RDFizer&quot;). It supports SIOC as an input format, and also uses SIOC as its data space &quot;glue&quot; ontology (view the slides). Contact @kidehen.
+SuRF. SuRF is a Python library for working with RDF data in an object-oriented way, with SIOC being one of the default namespaces. Contact basca@ifi.uzh.ch.
+Triplify phpBB 3. A Triplify configuration file for phpBB 3 has been created that allows RDF data (including SIOC) to be generated from this popular bulletin board system. Various other Triplify configurations are also available. Contact auer@informatik.uni-leipzig.de.
+SiocLog. SiocLog is an IRC logging application that provides discussion channels and chat user profiles as Linked Data, using SIOC and FOAF respectively. You can see a deployment and view our slides. Contact @tuukkah.
+myExperiment Ontology. myExperiment is a collaborative environment where scientists can publish their workflows and experiment plans, share them with groups and find those of others. In their model, myExperiment reuses ontologies like DC, FOAF, SIOC, CC and OAI-ORE. Contact drn@ecs.soton.ac.uk.
+aTag. The aTag generator produces snippets of HTML enriched with SIOC RDFa and DBpedia-linked tags about highlighted items of interest on any web page, but aiming at the biomedical domain. Contact @matthiassamwald.
+ELGG SID Module. A Semantically-Interlinked Data (SID) module for the ELGG educational social network system has been described that allows UGC and tags from ELGG platforms to become part of the Linked Data cloud. Contact @selvers.
+Liferay Linked Data Module. The Linked Data module for Liferay, an enterprise portal solution, supports mapping of data to the SIOC, MOAT and FOAF vocabularies. Contact @bryan_.
+ourSpaces. ourSpaces is a VRE enabling online collaboration between researchers from various disciplines. It combines FOAF and SIOC with data provenance ontologies for sharing digital artefacts. Contact r.reid@abdn.ac.uk.
+Good Relations and SIOC. This post describes nicely how the Good Relations vocabulary for e-commerce can be combined with SIOC, e.g. to link a gr:Offering (either being offered or sought by a gr:BusinessEntity) to a natural-language discussion about that thing in a sioc:Post. Contact sdmonroe@gmail.com.
+Debian BTS to RDF. Discussions from the Debian bug-tracking system (BTS) can be converted to SIOC and RDF and browsed or visualised in interesting ways, e.g. who replied to whom. Contact quang_vu.dang@it-sudparis.eu.
+RDFex. For those wishing to reuse parts of popular vocabularies in their own Semantic Web vocabularies, RDFex is a mechanism for importing snippets from other namespaces without having to copy and paste them. RDFex can be used as a proxy for various ontologies including DC, FOAF and SIOC. Contact holger@knublauch.com.
+IRC Logger with RDFa and SIOC. A fork of Dave Beckett&#039;s IRC Logger has been created to include support for RDFa and SIOC by Toby Inkster. Contact mail@tobyinkster.co.uk.
+mbox2rdf. A mbox2rdf script has been created that converts a mailing list in an mbox file to RDF (RSS, SIOC and DC). Contact mail@tobyinkster.co.uk.
+Chisimba SIOC Export Module. A SIOC Export module for the Chisimba CMS/LMS platform has been created, which allows various Chisimba modules (CMS, forum, blog, Jabberblog, Twitterizer) to export SIOC data. Contact @paulscott56.
+vBulletin SIOC Exporter. Omitted from the last report, the vBulletin SIOC plugin generates SIOC and FOAF data from vBulletin discussion forums. It includes a plugin that allows users to opt to export the SHA1 of their e-mail address (and other inverse functional properties) and their network of friends via vBulletin&#039;s user control panel. Contact @johnbreslin.
+Discuss SIOC on Google Wave. You can now chat about SIOC on our Google Wave.
+
+</sioc:content>
+  <dcterms:created>2010-06-23T20:05:00+01:00</dcterms:created>
+  <dcterms:modified>2010-06-23T14:51:41+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/342" rdfs:label="Tales From the SIOC-O-Sphere #10" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

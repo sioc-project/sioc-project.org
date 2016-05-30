@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/290"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/290">
+  <dc:title>Sioku: Jaiku to RDF translation</dc:title>
+  <sioc:content>Just wanted to say this sounds super cool. One for Twitter would also
+rock but do not know how feasible that would be.
+Regards
+Lee
+On Jun 5, 1:07 pm, aidanf  wrote:
+&gt; Hi all,
+&gt;
+&gt; I put up a service for getting translating Jaiku feeds to RDF (SIOC
+&gt; and FOAF).  You can access the service athttp://sioku.sioc-project.org.
+&gt;
+&gt; Jaiku (http://www.jaiku.com) is a micro-blogging site similar to
+&gt; twitter. The Jaiku API exports some it&#039;s data in json. Sioku
+&gt; translates the exported data to RDF using SIOC for posts and FOAF for
+&gt; friends. So for a specified jaiku user you can get a SIOC export of
+&gt; their posts and a FOAF export of their friends.
+&gt;
+&gt; For example, for user jyri, the json feed for his posts ishttp://jyri.jaiku.com/feed/jsonand the SIOC translation is athttp://sioku.sioc-project.org/tosioc/jyri
+&gt;
+&gt; The json feed for his friends is athttp://jyri.jaiku.com/jsonand the
+&gt; FOAF translation is athttp://sioku.sioc-project.org/tofoaf/jyri
+&gt;
+&gt; Please let me know if there are bugs in the SIOC or FOAF descriptions
+&gt; of if you have any suggestions on how to map the exported json to SIOC/
+&gt; FOAF.
+&gt;
+&gt; Thanks,
+&gt;
+&gt; Aidan.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-06-05T14:28:16+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:02+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/290" rdfs:label="Sioku: Jaiku to RDF translation" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/323%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/323" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/163"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/163">
+  <dc:title>New: SIOC Implementations List</dc:title>
+  <sioc:content>A document listing current implementations of SIOC will form a part of
+the SIOC W3C member submission.
+http://esw.w3.org/topic/SIOC/Implementations
+This wiki page contains a draft document where we can collect
+information. If you have implemented SIOC anywhere please add
+description and URLs of your implementation to this document.
+Currently I&#039;ve copied some content from our BlogTalk paper into it.
+Tasks that need to be done:
+ - collect all the information.
+ - format it.
+ - review and improve it
+I see somebody has added a section &quot;SPARQL Endpoints: These are
+solutions that expose SIOC Data via SPARQL Endpoints&quot; to the list. What
+can we add to this section? Most of our SPARQL endpoints are
+experimental and URLs are quite volatile - e.g., some URLs listed in
+SIOC SPARQL endpoints page no longer work. ODS can be one candidate.
+Let&#039;s get this document together! :)
+Best,
+Uldis
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-06T11:35:06+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:06+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/163" rdfs:label="New: SIOC Implementations List" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

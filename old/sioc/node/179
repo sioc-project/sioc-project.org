@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/179"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/179">
+  <dc:title>SIOC properties cardinality</dc:title>
+  <sioc:content>Hi all,
+I was thinking about adding cardinality restrictions to some of the
+SIOC properties (if so, the ontology will use OWL properties instead
+of RDFS one, but I don&#039;t think that&#039;s an issue).
+It will allow to more precisely mention what we expect from SIOC data
+(and also valid this).
+The list has been added to OntologieIssues page of the wiki [1] and
+here&#039;s a few one to discuss:
+* account_of: min = 1; max = 1 .
+If an account is shared by more that one foaf:Person, I think it&#039;s
+better to use a foaf:Group as range since sioc:account_of has
+foaf:Agent for range (not already in the specs, but seems it was
+agreed on the list [2])
+* avatar: max = 1 ?
+A foaf:Person can have many foaf:depiction, but for a give user maybe
+one avatar is enough ?
+* content: min = max = 1
+Only one content for a post (+ the encoded version)
+* email: max=1 ?
+Only on email per sioc:User ?
+Is that needed ?
+* email_sha1: same as email
+* has_container: min = 1;
+If max = 1, can we use sioc:sibling for same posts on other forums ?
+* has_creator: no min, as we can have only foaf:maker; no max (i.e.
+colaborative pages / wikis)
+* has_host: min = 1; max ?
+* id: max = 1
+Must be unique, as the spec says
+* ip_adress: max = 1
+Should be unique for a given sioc:Post
+* link: max = 1
+Only one HTML page for a sioc:Post ?
+* name: min = 1 (needed ?); max = 1 (only on name per sioc:User ?)
+Best,
+Alex.
+[1] http://esw.w3.org/topic/SIOC/OntologyIssues
+[2] http://groups.google.com/group/sioc-dev/tree/browse_frm/thread/b6a9a0b677195eed/f2bd54b7f114459b?rnum=1&amp;amp;q=hullo&amp;amp;_done=%2Fgroup%2Fsioc-dev%2Fbrowse_frm%2Fthread%2Fb6a9a0b677195eed%2F4efd8f5a4f3c8445%3Flnk%3Dgst%26q%3Dhullo%26rnum%3D1%26#doc_fed5face728281f2
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-10-20T20:35:45+01:00</dcterms:created>
+  <dcterms:modified>2006-10-20T20:35:45+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/179" rdfs:label="SIOC properties cardinality" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/12%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/12" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/215"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/215">
+  <dc:title>Update (Take-2): SIOC Types Module Additions</dc:title>
+  <sioc:content>All,
+Here is a revision of my initial post re. the above:
+Notes:
+1. foaf:Person subclass of sioc:Post dropped. Social Networks can be
+modeled in SIOC without this via sioct:SocialNetwork as a subclass of
+sioc:Forum.
+2. I have changed sioct:Photos to sioct:ImageGallery which is much
+clearer
+RDF/N3:
+#Processed by Id: cwm.py,v 1.144 2003/09/14 20:20:20 timbl Exp
+#    using base file:/tmp/tmpDd9v6I-rdfconverter
+#  Notation3 generation by
+#       notation3.py,v 1.148 2003/12/04 21:20:17 timbl Exp
+#   Base was: file:/tmp/tmpDd9v6I-rdfconverter
+     @prefix :  .
+     @prefix annotation:  .
+     @prefix annotea:  .
+     @prefix atom:  .
+     @prefix calendar:  .
+     @prefix dc:  .
+     @prefix exif:  .
+     @prefix owl:  .
+     @prefix rdf:  .
+     @prefix rdfs:  .
+     @prefix resume:  .
+     @prefix review:  .
+     @prefix sioc:  .
+     @prefix vs:  .
+     @prefix wot:  .
+
+
+	SIOC Types Module
+	Extends SIOC (Semantically Interlinked Online
+Communities) core ontology by defining subtypes and subproperties of
+SIOC concepts.
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	
+	
+
+</sioc:content>
+  <dcterms:created>2007-02-02T00:06:42+00:00</dcterms:created>
+  <dcterms:modified>2007-02-23T10:00:13+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/215" rdfs:label="Update (Take-2): SIOC Types Module Additions" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/56%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/56" />
+</sioc:Post>
+</rdf:RDF>

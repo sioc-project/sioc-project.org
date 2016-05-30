@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/forum/11"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Forum rdf:about="http://sioc-project.org/forum/11">
+  <dc:title>Ontology Forum</dc:title>
+  <dc:description>Ontology Forum at sioc-project.org</dc:description>
+  <sioc:link rdf:resource="http://sioc-project.org/forum/11" rdfs:label="Ontology Forum" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/11" rdfs:label="Ontology" />
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/158">
+      <rdfs:label><![CDATA[SIOC + FOAF + SKOS]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/158" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/158">
+      <rdfs:label><![CDATA[SIOC + FOAF + SKOS]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/158" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/158">
+      <rdfs:label><![CDATA[SIOC + FOAF + SKOS]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/158" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/158">
+      <rdfs:label><![CDATA[SIOC + FOAF + SKOS]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/158" />
+    </sioc:Post>
+  </sioc:container_of>
+  <sioc:container_of>
+    <sioc:Post rdf:about="http://sioc-project.org/node/19">
+      <rdfs:label><![CDATA[Ontology Issues]]></rdfs:label>
+      <rdfs:seeAlso rdf:resource="http://sioc-project.org/sioc/node/19" />
+    </sioc:Post>
+  </sioc:container_of>
+</sioc:Forum>
+</rdf:RDF>

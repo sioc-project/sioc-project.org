@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/282"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/282">
+  <dc:title>Ontology suggestions needed</dc:title>
+  <sioc:content>Hi all -
+Thanks for all your recent comments both on and offlist.
+A few more ontology suggestions we need your help with.
+(1)
+We have sioc:topic which can link Sites, Forums, Posts etc. to resources
+that are topics of those documents or containers...  (Also,
+unfortunately we did not use foaf:topic as the domain is a Document,
+which some of the SIOC classes are not).  We can also use dc:subject for
+free text.  But what if we want to say that a particular Post describes
+a book or is about two books, perhaps something like sioc:about or
+sioc:describes is needed.
+(2)
+We plan to add Category and Tag classes to the sioc:types module to help
+with classifying the above sioc:topics for import/export.  Suggestions
+welcome.
+(3)
+We want to add has_part/part_of as subproperties of the corresponding
+DCMI terms (hasPart/isPartOf AFAIR).
+(4)
+I am of the opinion that a Community is NOT a subclass of Space.  A
+Space is where data resides, but a community extends beyond mere data.
+(5)
+We still need a way to recommend to people looking at the SIOC Types
+module what kind of vocabularies can be used for Items contained in
+particular Container subclasses.  For example, to say that in a
+sioct:AddressBook - that you could use JohnsAddressBook (of type
+sioct:AddressBook) container_of John (of type foaf:Person or foaf:Agent)
+- without having to define millions of subproperties of container_of to
+link things, because these are only suggestions (someone may choose to
+put something else into their AddressBook).  Ideas needed :-)  This is
+related to an idea we had for a Related Ontologies ontology [1].
+[1] http://wiki.sioc-project.org/index.php/SuggestedOntologiesOntology
+At the moment we&#039;ll just have something like:
+
+    Describes a collection of personal or organisational
+addresses.
+    
+    
+    
+
+That seeAlso could be replaced by something more descriptive like...
+
+  
+    
+    
+  </sioc:content>
+  <dcterms:created>2007-06-05T14:46:01+01:00</dcterms:created>
+  <dcterms:modified>2007-06-05T14:46:01+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/282" rdfs:label="Ontology suggestions needed" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

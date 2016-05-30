@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/20"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/20">
+  <dc:title>Fixed paths in the CVS repository</dc:title>
+  <sioc:content>I took the very forward liberty of fixing a bug in the Drupal exporter concerning the paths in the menu definitions. It isn&#039;t necessary to prefix the paths (Linux style) with ./ and I removed these. The module now works nicely on CVS Drupal. Hope I haven&#039;t overstepped my bounds. Here&#039;s the link to the commit:
+cheers,
+Robert
+</sioc:content>
+  <dcterms:created>2005-08-24T12:16:59+01:00</dcterms:created>
+  <dcterms:modified>2005-08-24T12:16:59+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/20" rdfs:label="Fixed paths in the CVS repository" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/6%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/6" />
+</sioc:Post>
+</rdf:RDF>

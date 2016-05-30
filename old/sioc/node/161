@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/161"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/161">
+  <dc:title>FW: SIOC specification (CTIC)</dc:title>
+  <sioc:content>Comments from Fundación CTIC.
+________________________________
+From: Luis Polo
+Subject: SIOC specification (CTIC)
+Dear Uldis,
+I am Luis Polo from CTIC Foundation (Spain). We have received the invitation
+to participate in the SIOC Ontology specification to submit it to the W3C.
+We have analyzed the initiative and we consider it is a useful idea to
+interlink Web Communities. We would like to support the W3C member
+submission. We have two comments: 
+1) Fisrt of all, Sergio Fernandez, a researcher of our department, has
+developped an application, as a research project around the semantic web
+technologies, to publish mailing lists´s archives into an RDF format. This
+project is called SWAML. The SWAML vocabulary is built upon FOAF and Dublin
+Core and is completely compatible with SIOC specification, as you can see it
+as a subset of SIOC elements. If you consider it could be a useful
+application of SIOC, we can adapt quickly SWAML vocabulary to SIOC and
+include the software application as an actual implementation of SIOC. For
+more details, you can see http://swaml.berlios.de.
+2) About SIOC specification, we have one comment. SIOC is a RDF vocabulary
+to describe Online Communities. It has a lot of links with FOAF (and Dublin
+Core), so the domain or range of some properties is for example foaf:Person.
+Also, the class sioc:User is subclass of foaf:Person. We think this is a
+good idea: reusing concepts for another vocabularies. The problem is that
+there are some SIOC elements that are semantically identical to some FOAF
+and Dublin Core elements but with another URI. So for example, SIOC rewrites
+the property dc:creator as sioc:has_creator or foaf:mbox_sha1sum as
+sioc:email_sha1. This could be a problem, so you have two syntactic
+different elements with the same associated semantics. In SIOC, as sioc:User
+is subclass of foaf:Agent, it is also a subclass of foaf:Agent (by
+transitivity), so sioc:User would have the property foaf:mbox_sha1sum. Of
+course, it will have also sioc:email_sha1. In RDF Universe it is not
+contradictory, but redundant (like reinventing the wheel). 
+We suggest to identify these conflictive elements, eliminate them and then
+add their FOAF and Dublin Core counterparts. If you have any comments, feel
+free to contact us.
+Best Regards,
+p.
+Luis Polo Paredes
+Departamento I+D+i
+Fundación CTIC
+-Centro Tecnológico de la Información y la Comunicación-
+Parque Científico Tecnológico Gijón-Asturias-Spain www.fundacionctic.org
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2006-09-19T17:33:09+01:00</dcterms:created>
+  <dcterms:modified>2006-10-06T11:35:03+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/161" rdfs:label="FW: SIOC specification (CTIC)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/63%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/63" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/phpapi"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/phpapi">
+  <dc:title>PHP Export API</dc:title>
+  <sioc:content>
+The PHP Export API provides an easy way for developers to create SIOC exporters, as it maps SIOC Classes to PHP objects, with simple functions to export the created data.
+
+
+More informations about the API are available on this wiki page.
+
+
+API is currently used in DotClear and B2evo exporters
+
+</sioc:content>
+  <dcterms:created>2006-09-14T16:54:00+01:00</dcterms:created>
+  <dcterms:modified>2007-05-10T17:19:37+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/phpapi" rdfs:label="PHP Export API" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/12" rdfs:label="Exporters" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/12%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/12" />
+</sioc:Post>
+</rdf:RDF>

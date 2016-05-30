@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/111"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/111">
+  <dc:title>Fwd: [doap-interest] DOAP and lists of [favorite] applications?</dc:title>
+  <sioc:content>FYI---------- Forwarded message ----------From: Allen Gunn Date: Jul 20, 2006 7:28 PMSubject: Re: [doap-interest] DOAP and lists of [favorite] applications?
+To: Uldis Bojars &amp;lt;captsolo@gmail.com&amp;gt;, doap-interest@lists.gnomehack.com
+
+
+Hi Udis and DOAPers
+Aspiration
+(
+www.aspirationtech.org) is working on a tool that does some of what
+you ask about. We&#039;ve built a Flickr-like front end for tagging DOAP
+records, and coupled that with social networking features that let users
+browse &amp;quot;who&#039;s using what&amp;quot; and &amp;quot;who else is using what I&#039;m
+using&amp;quot;. We&#039;ve also added some basic social
+recommendation/collaborative filtering features as well. We don&#039;t have a
+&amp;quot;favorite&amp;quot; flag, but that is certainly an enhancement we could
+consider, especially if it was part of DOAP :^)
+The Social Source Commons platform is targeted at nonprofit techies to
+support mapping and enumerating their tools universe, but the underlying
+code is entirely general for any application space. The app is written in
+Rails, and we&#039;ll be releasing it under GPL.
+We&#039;re still in a limited beta phase and working out some kinks, but
+anyone who wants to check it out should email me and I can send you
+complete Beta Program details.
+thanks &amp;amp; peace,
+gunner
+
+At 10:46 AM 7/20/2006, Uldis Bojars wrote:
+
+
+
+
+Hi All!
+Is there a property in DOAP or other vocabulary that can be used to
+express that somebody is using an application or that this is his/her
+favorite application?
+DOAP uses that I have seen are mostly to express the information about
+applications (either for sites / application catalogues or for DOAP
+feeds), but it is as important to cover the social aspect of use of
+applications. Not sure if DOAP is suited for that but it&#039;s worth a try.
+
+Also: how does one express in DOAP that a particular application is a
+plugin/extension to another (e.g., &amp;quot;SIOC Detector&amp;quot; is an
+extension to &amp;quot;Mozilla Firefox&amp;quot;)? It might be interesting to
+merge together information from a DOAP profile and extension&#039;s RDF
+manifest as well. 
+Comments? 
+Uldis :)
+[ http://captsolo.net/info/
+]
+
+_______________________________________________
+doap-interest mailing list
+doap-interest@lists.gnomehack.com
+
+http://lists.gnomehack.com/mailman/listinfo/doap-interest
+
+
+
+
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group.  To post to this group, send email to sioc-dev@googlegroups.com  To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com  For more options, visit this group at http://groups.google.com/group/sioc-dev  -~----------~----~----~----~------~----~------~--~---
+
+</sioc:content>
+  <dcterms:created>2006-07-20T21:00:02+01:00</dcterms:created>
+  <dcterms:modified>2006-07-20T21:00:02+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/111" rdfs:label="Fwd: [doap-interest] DOAP and lists of [favorite] applications?" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

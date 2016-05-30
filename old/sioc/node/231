@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/231"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/231">
+  <dc:title>relation between a sioc:Post and an awol:Entry, doap:Version and foaf:Document</dc:title>
+  <sioc:content>Working on a few ontologies in Sun we found that the awol:Entry class
+may come in very useful, especially as we wish to use the Atom
+Protocol a lot. As we are also interested in using SIOC, we thought
+we found the need to look at how they mesh. This is also useful for
+my work on Baetle, so it is time to have a closer look. Here are some
+initial thoughts. (refs to these ontologies are available in the
+footnotes [0])
+ From looking at these three ontologies, I think we find we clearly
+need the notion of a :Version class.  A sioc:Post should inherit the
+following relations from such a xxx:Version class:
+    + xxx:next_version
+    + xxx:previous_version
+  It should also have the following which we find in Atom Owl:
+    + awol:id
+    + awol:updated
+  Ie. The id of a thing is like the social security number of a
+person in a way. Every time slice of the 4 dimensional person [3] has
+the same functional relation to that id. Every java class version has
+the same class name, for example. Every java entry that has the same
+id, can be considered to be different versions of the same entry.
+Atom does the right thing. It uses a IRI to identify the thing.
+  In doap [1] there is also a Version class, which is very close to
+what I would like to use for Baetle [2]. IE. Baetle needs to be able
+to refer to Versions of documents, usually program files of some sort
+or another. It helps to know the previous and next version of a
+document.
+So here is an initial view of the relationships.
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-14T15:01:21+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:19+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/231" rdfs:label="relation between a sioc:Post and an awol:Entry, doap:Version and foaf:Document" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/44%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/44" />
+</sioc:Post>
+</rdf:RDF>

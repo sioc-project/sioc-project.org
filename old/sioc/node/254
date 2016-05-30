@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/254"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/254">
+  <dc:title>Employing SIOC for Learning purposes (harvesting Learning Objects Metadata)</dc:title>
+  <sioc:content>Some time ago, John informed you about my post where I described how
+we use SIOC for IKHarvester (Informal Knowledge Harevster).
+To get the general idea of how IKHarvester is planned to work (already
+works as a prototype system), read my post: http://dobrzanski.net/2007/04/13/ikharvester/
+In short, it harvests metadata for online resources which can be
+learning material pieces and stores it in informal knowledge
+repository (we find blog posts a great source of informal knowledge).
+By using Web Services, client applications can retrieve this metadata
+or the content of a specific resource.  For IKHarvester at first point
+is dedicated to e-Learning services, it delivers harvested data in a
+form of Learning Object Manifest (LOM). In the above mentioned post I
+described how we map SIOC predicates to LOM attributes.
+What we see SIOC exporter lacks is quite poor information about tags.
+The only information SIOC provides is SIOC topic, which actually can
+be treated as simple keyword (we map it to LOM General.Keyword and
+Classification.Keyword). Anyway, a Learning Object manifest should
+also define some classification  rules.
+The topics are just keywords a user assigns to a post. WordPress
+allows to define a hierarchy within posts. For instance, you can
+assign a post about Galway to &quot;Galway&quot; categgory which is inside
+&quot;Ireland&quot; one. However, SIOC exporter treat them as if they where at
+the same level of the hierarchy - just flattens the hierarchy.
+Then, what about Technorati tags? I use &quot;Bunny&#039;s Technorati Tags&quot;
+plugin for defiing them. In the output RDF there is no information
+about it. Does SIOC support any other WordPress plugins for Technorati
+tags?
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-04-24T11:37:44+01:00</dcterms:created>
+  <dcterms:modified>2007-05-17T09:38:39+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/254" rdfs:label="Employing SIOC for Learning purposes (harvesting Learning Objects Metadata)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/200%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/200" />
+</sioc:Post>
+</rdf:RDF>

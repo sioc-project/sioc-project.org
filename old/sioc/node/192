@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/192"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/192">
+  <dc:title>OntoSelect - a multilingual ontology library and ontology selection service</dc:title>
+  <sioc:content>
+On 11/17/06, Paul Buitelaar &amp;lt;Paul.Buitelaar@dfki.de&amp;gt; wrote:
+
+Dear colleague, this is to inform you about the availability ofOntoSelect, a multilingual ontology library and ontology selectionservice that has been under development at DFKI since 2004:
+http://olp.dfki.de/OntoSelect/OntoSelect collects, analyzes and organizes ontologies that have beenpublished on the (Semantic) Web. You can browse ontologies according tosize (number of classes, properties), representation format (DAML, RDFS,
+OWL), connectedness (score over the number of included and referringontologies) and human languages used for class/property labels:
+http://olp.dfki.de/OntoSelect/index.php?mode=browse&amp;amp;do=ontoOntoSelect is somewhat similar to the Semantic Web search engine Swooglebut includes a more extended functionality for ontology selection that
+provides automatic support in selecting ontologies relative to a URL(i.e. a complete web document) instead of one or more keywords:http://olp.dfki.de/OntoSelect/index.php?mode=select
+You can try out this functionality with any URL. We obtained some goodresults for instance with Wikipedia pages.Please let us know about your feedback. Have fun!Paul Buitelaar, Thomas Eigner
+DFKI GmbH - Language Technology Lab &amp;amp;Competence Center Semantic WebSaarbruecken, Germanyhttp://www2.dfki.de/~paulb/
+http://semanticweb.dfki.de/
+
+
+
+--~--~---------~--~----~------------~-------~--~----~
+&amp;nbsp;You received this message because you are subscribed to the Google Groups &amp;quot;SIOC-Dev&amp;quot; group.  To post to this group, send email to sioc-dev@googlegroups.com  To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com  For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en  -~----------~----~----~----~------~----~------~--~---
+
+</sioc:content>
+  <dcterms:created>2006-11-21T08:15:10+00:00</dcterms:created>
+  <dcterms:modified>2006-11-21T08:15:10+00:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/192" rdfs:label="OntoSelect - a multilingual ontology library and ontology selection service" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/5%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/5" />
+</sioc:Post>
+</rdf:RDF>

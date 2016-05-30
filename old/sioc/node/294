@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/294"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/294">
+  <dc:title>State of the SIOC-o-sphere (#5)</dc:title>
+  <sioc:content>It&#039;s that random time of the year again where I summarise what&#039;s been going on in the world of SIOC...
+
+We now have a SIOC W3C Member Submission!  Along with W3C members Asemantics, DFKI, FZI, Fraunhofer, Fundación CTIC, OpenLink, Opera, STFC, UPM, University of Trento and other co-authors, Uldis and I edited three main documents as part of the submission describing the SIOC core ontology specification, SIOC applications and implementation status, and some ontologies and RDF vocabularies related to SIOC.  You can also read the W3C Team Comment for our submission.  Thanks again to everyone involved!
+The Semantically-Interlinked Scientific Communities project aims to improve how scientific data and knowledge is represented and communicated.  It will use SIOC, FOAF, DC, Creative and Science Commons, OBO and HCLS ontologies and technologies as its basis.
+Mark Wahl has written a useful article entitled &quot;organizing principles for identity systems: embedding SIOC in XHTML with RDFa&quot; which details how to describe blog post structures using SIOC and RDFa.
+There is a Google Summer of Code project from the Apache Software Foundation on creating plugins for embedding/producing RDF/XML and microformats in Forrest content objects, and SIOC is one of the target vocabularies.
+John Wubbel has an interesting post about how SIOC and semantic technologies can connect real estate networks.
+Lee Faus has been telling us on the #sioc IRC channel how the forthcoming Stuff project will use SIOC to facilitate searching, creating, and maintaining all kinds of &#039;stuff&#039; online (from wikis, forums, knowledge bases, IM, support tickets, e-mails, etc.).
+SIOC metadata is being used in a very cool demonstrator from OpenLink on how to inject Facebook data into the Semantic Web.  This is something I had been waiting for, so nice work!
+There are also a number of modules for the OpenLink Data Spaces (ODS) platform that each export SIOC metadata, including ODS-Blog, ODS-Wiki, ODS-Bookmarks, ODS-AddressBook, ODS-Calendar, ODS-Polls, ODS-Gallery (for photos), ODS-Feeds (for feed aggregation and exposure via SIOC), and ODS-Discussion (for comments across blogs, wikis or any other data space that supports some form of commenting).
+Another interesting SIOC-enabled application is the Mailing List Explorer.  MLE is a tool that allows the exploration of mailing lists via query, timeline view, etc.  It provides RDF representations (including SIOC metadata) for any valid W3C public mailing list archive.
+On the wiki front, IkeWiki is a semantic wiki for knowledge engineering. IkeWiki allows discussions (following a forum style with threaded views) to be attached to wiki pages. These discussions are represented using the SIOC ontology, which allows one to use semantic queries to investigate the structure of any discussion.
+SIOC is being discussed for use by the Italian workgroup for internet and web technologies.  The group already produces metadata in FOAF and OPML.
+Harry Chen has written an interesting post about how ontologies like FOAF and SIOC can play important roles in the development of a people search engine.  This post was made in relation to the forthcoming Finding Experts on the Web with Semantics workshop at ISWC 2007, for which SIOC is a major topic of interest.
+SIOC gets referenced in Mark Canter&#039;s blog post about posting to multiple social media sites, and this time it isn&#039;t referred to as STOIC!
+For Russian speakers, here&#039;s a blog conversation in Russian about the SIOC discussion clouds picture.  SIOC has also received coverage in Korean (ZDnet), Austrian (ORF, Computerwelt), and German (Computer Zeitung) media following talks by Stefan.
+Tom Morris has created a MySpace parser that produces SIOC data; unfortunately due to some web hosting issues, this is currently offline.
+In a joint collaboration between DERI, NUI Galway and BiKE, Seoul National University, int.ere.st provides metadata creation and sharing support across online communities that use tag data. int.ere.st aims to build a tag-mediated society based on Semantic Web technologies, and resources in the site are based on RDF vocabularies including SIOC, FOAF, and SCOT.  You can view a demonstration video for int.ere.st at YouTube.
+
+</sioc:content>
+  <dcterms:created>2007-08-09T13:20:39+01:00</dcterms:created>
+  <dcterms:modified>2008-05-15T14:04:15+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/294" rdfs:label="State of the SIOC-o-sphere (#5)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/10" rdfs:label="General" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/1%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/1" />
+</sioc:Post>
+</rdf:RDF>

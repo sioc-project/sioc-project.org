@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/73"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Drive-by critique of SIOC | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Drive-by critique of SIOC</h2>                                                  <div class="clear-block">
+            <div id="node-73" class="node">
+
+
+
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  <div class="content clear-block">
+    <p>Hi folks,</p>
+<p>Just a couple of notes from my attempt at modelling a blog with SIOC:</p>
+<p>The distinction between Site and Forum is awkward, I don't want to<br />
+introduce a top-level pseudo-forum for the weblog. I'm not convinced<br />
+that Site and the host properties provide any value.</p>
+<p>sioc:container_of is awkward, sioc:post would be nicer.</p>
+<p>I don't like all the duplication of DC and FOAF terms. Not invented<br />
+here syndrome? You've even reinvented rdf:type.</p>
+<p>The spec talks in length about a Types module, but I can't find a<br />
+link to it. http://rdfs.org/sioc/types/ is mentioned in the comment<br />
+for sioc:type but is 404.</p>
+<p>Overall impression:</p>
+<p>1. SIOC is great for modelling BBs.<br />
+2. SIOC is not very suited for modelling other types of fora.<br />
+3. SIOC is very well-managed and documented. Applause for that!<br />
+4. SIOC is not a good RDF citizen.</p>
+<p>In summary, I'd use it again when I have to model a BB but not<br />
+otherwise. Just my €0.02.</p>
+<p>Cheers,<br />
+Richard<br />
+--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="67.html" class="topic-previous" title="Go to previous forum topic">‹ Stuctured Blogging and SIOC</a>
+              <a href="74.html" class="topic-next" title="Go to next forum topic">PHP Exporter API ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F73%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-33"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="73.html#comment-33" class="active">Drive-by critique of SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi Richard - </p>
+<p>Great to get some more feedback - </p>
+<p>> The distinction between Site and Forum is awkward, I don't want to<br />
+> introduce a top-level pseudo-forum for the weblog. I'm not convinced<br />
+> that Site and the host properties provide any value.</p>
+<p>Of course you don't have to use the Site concept if you don't want to, but<br />
+the concept of Site can be used for multiblog sites, BBs with multiple<br />
+forums, etc.  Sites could also host different communities of blogs, and<br />
+hence the previous discussion about introducing a "Community" concept where<br />
+Sites, Forums, Posts, Users etc. could all be "part_of" a community. </p>
+<p>> sioc:container_of is awkward, sioc:post would be nicer.</p>
+<p>Yes, perhaps this is my fault.  To not confuse properties and classes , and<br />
+to avoid affording any prominence to the concept on either end of the<br />
+property, we used different names for the connecting properties.  So Forum<br />
+is container_of Post (rather than Forum -> post -> Post or Post -> forum -><br />
+Forum). </p>
+<p>> I don't like all the duplication of DC and FOAF terms. Not invented<br />
+> here syndrome? You've even reinvented rdf:type.</p>
+<p>It may not be reflected in the spec but we've eliminated some of these<br />
+duplicate terms in the NS.  But some can remain as subproperties of DC, just<br />
+as RSS does... </p>
+<p>> The spec talks in length about a Types module, but I can't find a<br />
+> link to it. http://rdfs.org/sioc/types/ is mentioned in the comment<br />
+> for sioc:type but is 404.</p>
+<p>Oops!  Not done yet...  The idea here is that you could create a sioc:Forum<br />
+and say it of type blog, mailing list, USENET group etc. </p>
+<p>> Overall impression:<br />
+><br />
+> 1. SIOC is great for modelling BBs.</p>
+<p>Great :) </p>
+<p>> 2. SIOC is not very suited for modelling other types of fora.</p>
+<p>Tell us why, apart from the comments above. </p>
+<p>> 3. SIOC is very well-managed and documented. Applause for that!</p>
+<p>Good, but some work needs to be done :) </p>
+<p>> 4. SIOC is not a good RDF citizen.</p>
+<p>We're trying to be better!  I think we also have to understand that non<br />
+Semantic Web people sometimes just don't get the fact that they have to use<br />
+three vocabularies instead of one.  We're missing the subclassing things I<br />
+mentioned above in our mappings file but doing so somewhat appeases both<br />
+sides I think. </p>
+<p>> In summary, I'd use it again when I have to model a BB but not<br />
+> otherwise. Just my �0.02.</p>
+<p>Well, hope to convince you otherwise in this thread!  Looking forward to<br />
+hearing back from you...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F73%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-36"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="73.html#comment-36" class="active">Drive-by critique of SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi John,</p>
+<p>Thanks for the reply.</p>
+<p>On 31 May 2006, at 11:39, john.breslin wrote:<br />
+>> The distinction between Site and Forum is awkward,<br />
+...<br />
+> Of course you don't have to use the Site concept if you don't want<br />
+> to, but<br />
+> the concept of Site can be used for multiblog sites, BBs with multiple<br />
+> forums, etc.  Sites could also host different communities of blogs,<br />
+> and<br />
+> hence the previous discussion about introducing a "Community"<br />
+> concept where<br />
+> Sites, Forums, Posts, Users etc. could all be "part_of" a community.</p>
+<p>As I said before, I'd much rather use Community than Site.</p>
+<p>>> sioc:container_of is awkward, sioc:post would be nicer.<br />
+><br />
+> Yes, perhaps this is my fault.  To not confuse properties and<br />
+> classes , and<br />
+> to avoid affording any prominence to the concept on either end of the<br />
+> property, we used different names for the connecting properties.<br />
+> So Forum<br />
+> is container_of Post (rather than Forum -> post -> Post or Post -><br />
+> forum -><br />
+> Forum).</p>
+<p>Yes, understandable. hasPost, inForum would have worked maybe.</p>
+<p>>> I don't like all the duplication of DC and FOAF terms. Not invented<br />
+>> here syndrome? You've even reinvented rdf:type.<br />
+><br />
+> It may not be reflected in the spec but we've eliminated some of these<br />
+> duplicate terms in the NS.  But some can remain as subproperties of<br />
+> DC, just<br />
+> as RSS does...</p>
+<p>Yes, that's great. Subproperties are fine.</p>
+<p>>> The spec talks in length about a Types module, but I can't find a<br />
+>> link to it. http://rdfs.org/sioc/types/ is mentioned in the comment<br />
+>> for sioc:type but is 404.<br />
+><br />
+> Oops!  Not done yet...  The idea here is that you could create a<br />
+> sioc:Forum<br />
+> and say it of type blog, mailing list, USENET group etc.</p>
+<p>+1.</p>
+<p>>> 2. SIOC is not very suited for modelling other types of fora.<br />
+><br />
+> Tell us why, apart from the comments above.</p>
+<p>I think the main point is that there are lots of terms that I would<br />
+want if I modelled a BB (avatar, number of views, is_closed), but no<br />
+terms at the same level of details for blogs (Weblog, comment, feed)<br />
+or mailing lists (list address, to/cc). So the vocabulary is biased<br />
+towards BBs. The bias could be removed by moving BB-specific stuff<br />
+into a separate vocabulary, and adding additional blog-specific and<br />
+list-specific and newsgroup-specific and wiki-specific vocabs. (No,<br />
+I'm not volunteering ;-)</p>
+<p>>> 4. SIOC is not a good RDF citizen.<br />
+><br />
+> We're trying to be better!  I think we also have to understand that<br />
+> non<br />
+> Semantic Web people sometimes just don't get the fact that they<br />
+> have to use<br />
+> three vocabularies instead of one.  We're missing the subclassing<br />
+> things I<br />
+> mentioned above in our mappings file but doing so somewhat appeases<br />
+> both<br />
+> sides I think.</p>
+<p>I'm happy to hear that you want SIOC to be RDF-friendly. My proposed<br />
+changes are all motivated by the desire to have interoperable RDF<br />
+data and implementations, but I'm perfectly aware that you have to<br />
+consider a number of other factors such as acceptability to non-RDF<br />
+folks and existing SIOC toolkits and your overall strategy. One has<br />
+to find a balance and compromise.</p>
+<p>Cheers,<br />
+Richard</p>
+<p>><br />
+>> In summary, I'd use it again when I have to model a BB but not<br />
+>> otherwise. Just my �0.02.<br />
+><br />
+> Well, hope to convince you otherwise in this thread!  Looking<br />
+> forward to<br />
+> hearing back from you...<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F73%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-32"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="73.html#comment-32" class="active">Drive-by critique of SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi Richard,<br /><br />John or Uldis will certainly give you more details, but here are a few answers about your remarks:<br /><br />
+<div><span class="gmail_quote">On 5/30/06, <b class="gmail_sendername">Richard Cyganiak</b> &lt;<a href="mailto:richard@cyganiak.de"><br />
+richard@cyganiak.de</a>&gt; wrote:</span><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;"><br />Hi folks,<br /><br />Just a couple of notes from my attempt at modelling a blog with SIOC:<br />
+<br /><br />The distinction between Site and Forum is awkward, I don't want to<br />introduce a top-level pseudo-forum for the weblog. I'm not convinced<br />that Site and the host properties provide any value.</blockquote></div></p>
+<div><br /><br />
+Even if it can be strange to introduce this Site / Forum distinction for a single-blog, this is useful when a site is hosting different fora. <br />Eg, when modeling a multi-user blog, you have to make the distinction between the site (sioc:Site), and users' blogs (sioc:Forum).<br />
+<br /></div>
+<p>BTW, We also think of a Community class, to represent distributed / aggregated Sites.<br /><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+sioc:container_of is awkward, sioc:post would be nicer.<br /><br />I don't like all the duplication of DC and FOAF terms. Not invented<br />here syndrome? You've even reinvented rdf:type.</blockquote></p>
+<div><br />A new version of the ontology should be published soon, where FOAF terms have been removed (and so are used directly in FOAF).<br />
+<br />Maybe we should look closer at a DC/SIOC mapping.<br /></div>
+<p><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">The spec talks in length about a Types module, but I can't find a<br />
+<br />link to it. <a href="http://rdfs.org/sioc/types/">http://rdfs.org/sioc/types/</a> is mentioned in the comment<br />for sioc:type but is 404.<br /><br />Overall impression:<br /><br />1. SIOC is great for modelling BBs.<br />2. SIOC is not very suited for modelling other types of fora.<br />
+<br />3. SIOC is very well-managed and documented. Applause for that!<br />4. SIOC is not a good RDF citizen.<br /><br />In summary, I'd use it again when I have to model a BB but not<br />otherwise. Just my €0.02.</blockquote></p>
+<div>
+<br />Well, hope you'll find the new version more &quot;RDF-friendly&quot; :)<br />There was a post previously on the ML about the changes, maybe you've got some comments / ideas about it. [1]<br /><br />But I think you'll have a better view of SIOC interest / use-cases when tools (as the browser) will be available.<br />
+<br /><br />Best,<br /><br /></div>
+<p>Alex.<br /><br />BTW: Is the SIOC data you created available anywhere ?<br /><br />[1] <a href="http://groups.google.com/group/sioc-dev/browse_thread/thread/b8e3f8ceb73b29f5">http://groups.google.com/group/sioc-dev/browse_thread/thread/b8e3f8ceb73b29f5<br />
+</a><br /><br />
+<blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">Cheers,<br />Richard<br /><br /><br />
+<br /><br />
+--~--~---------~--~----~------------~-------~--~----~<br /><br />
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group. <br /> To post to this group, send email to sioc-dev@googlegroups.com <br /> To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com <br /> For more options, visit this group at http://groups.google.com/group/sioc-dev <br /> -~----------~----~----~----~------~----~------~--~---<br /><br />
+<br /></blockquote></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F73%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-34"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, June 2 - 16:37 — <a href="../user/31.html" title="View user profile.">Richard Cyganiak</a></span>
+  
+  
+  
+    <h3><a href="73.html#comment-34" class="active">Drive-by critique of SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi Alex,</p>
+<p>Thanks for the response! Some comments inline.</p>
+<p>On 30 May 2006, at 21:06, Alexandre Passant wrote:<br />
+>> The distinction between Site and Forum is awkward, I don't want to<br />
+>> introduce a top-level pseudo-forum for the weblog. I'm not convinced<br />
+>> that Site and the host properties provide any value.<br />
+><br />
+> Even if it can be strange to introduce this Site / Forum<br />
+> distinction for a single-blog, this is useful when a site is<br />
+> hosting different fora.<br />
+> Eg, when modeling a multi-user blog, you have to make the<br />
+> distinction between the site (sioc:Site), and users' blogs<br />
+> (sioc:Forum).<br />
+> BTW, We also think of a Community class, to represent distributed /<br />
+> aggregated Sites.</p>
+<p>I like sioc:Community much more than sioc:Site. I think it's more<br />
+flexible (just about anything can be called a community if you squint<br />
+the right way) and more interesting than sioc:Site. I'd be happy with<br />
+dropping sioc:Site and using sioc:Community instead. Single-user<br />
+blogs don't have a community per se, so I don't need to create two<br />
+distinct resources in that case.</p>
+<p>> A new version of the ontology should be published soon, where FOAF<br />
+> terms have been removed (and so are used directly in FOAF).<br />
+> Maybe we should look closer at a DC/SIOC mapping.</p>
+<p>Great!</p>
+<p>> Well, hope you'll find the new version more "RDF-friendly" :)<br />
+> There was a post previously on the ML about the changes, maybe<br />
+> you've got some comments / ideas about it. [1]</p>
+<p>Thanks for the pointer, I will comment on that in a separate post.</p>
+<p>> BTW: Is the SIOC data you created available anywhere ?</p>
+<p>Not really. I'm the lead developer of D2R Server [1], a generic<br />
+database-to-RDF/SPARQL mapping tool written in Java. I've created an<br />
+RDF mapping of the Wordpress DB schema as a demo. The mapping file is<br />
+at [2]. It's mostly DC and FOAF and SKOS, with SIOC only for the bits<br />
+that are not covered by those. It's quick and dirty and could<br />
+certainly be improved, so if there are any Wordpress users here who<br />
+feel like playing a bit with a SPARQL service over their weblog<br />
+data ... ;-)</p>
+<p>I could put the RDF dump of my personal weblog online if that would<br />
+help you with interop testing.</p>
+<p>Cheers,<br />
+Richard</p>
+<p>[1] http://www.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/<br />
+[2] http://www.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/mappings/<br />
+wordpress.ttl</p>
+<p>><br />
+> [1] http://groups.google.com/group/sioc-dev/browse_thread/thread/<br />
+> b8e3f8ceb73b29f5<br />
+> Cheers,<br />
+> Richard<br />
+><br />
+><br />
+> ></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F73%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/73?destination=node%2F73"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-wO1q8g3lFnSi5FEknYv-drH_82jwRisMLze4He5rG0A" value="form-wO1q8g3lFnSi5FEknYv-drH_82jwRisMLze4He5rG0A"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

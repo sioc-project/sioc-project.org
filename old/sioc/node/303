@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/303"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/303">
+  <dc:title>ANN:  UMBEL Subject Reference Project</dc:title>
+  <sioc:content>Hi All,
+You are cordially invited to comment or participate in the UMBEL
+(Upper Mapping and Binding Exchange Layer) project.  I think it will
+be a very nice complement to SIOC.
+UMBEL is a lightweight way to describe the subject(s) of Web content,
+akin to the relationship &quot;isAbout&quot;. It is meant to work universally
+with HTML, tagging, microformats or other standard practices,
+including various RDF schemas and more formal ontologies.  Its
+reference subject &#039;backbone&#039; is derived from the intersection of
+common subjects found on popularly used Web sites and other accepted
+subject references.
+UMBEL is very simple with few ambitions.  It is merely a reference
+&#039;bag of subjects&#039; to help relate Web data sets to one another.
+UMBEL makes no presumptions to replace formal domain or upper
+ontologies, has little or no inferential power, and makes no
+assumptions about the means to describe or serialize the underlying
+data.  UMBEL is meant to work with data sets ranging from RSS and Atom
+feeds to tagging, microformats, RDF, existing schema and other data
+and metadata models.  UMBEL&#039;s development is being backed by a number
+of leading open data efforts and entities.
+In addition to its core reference subjects, the UMBEL project will be
+providing look up, query, registration, pinging, and related services.
+The project is completely open under a community process with all
+products available via Creative Commons licenses.
+The initial project site is at http://www.umbel.org, including an
+introduction (http://www.umbel.org/intro.xhtml) (the best place to
+start!) and the draft project specification (http://www.umbel.org/
+proposal.xhtml).
+A mailing list you can monitor or join is at http://groups.google.com/group/umbel-ontology.
+We welcome and invite your participation!
+Best regards,
+Mike Bergman
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+Please accept apologies in advance if you receive duplicate
+announcements; this was posted to a few appropriate mailing lists.
+In future, all announcements will be made directly from the UMBEL Web
+site.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-07-12T22:26:42+01:00</dcterms:created>
+  <dcterms:modified>2007-08-09T13:24:54+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/303" rdfs:label="ANN:  UMBEL Subject Reference Project" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/446%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/446" />
+</sioc:Post>
+</rdf:RDF>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:admin="http://webns.net/mvcb/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<foaf:Document rdf:about=''>
+  <dc:title>SIOC profile for 'sioc-project.org'</dc:title>
+  <dc:description>A SIOC profile describes the structure and contents of a community site (e.g., weblog) in a machine processable form. For more information refer to the &lt;a href=&quot;http://rdfs.org/sioc&quot;&gt;SIOC project page&lt;/a&gt;</dc:description>
+  <foaf:primaryTopic rdf:resource="http://sioc-project.org/node/228"/>
+  <admin:generatorAgent rdf:resource="http://drupal.org/project/sioc"/>
+</foaf:Document>
+<sioc:Post rdf:about="http://sioc-project.org/node/228">
+  <dc:title>Applying SIOC ontology for Social Semantic Information Spaces (SSIS)</dc:title>
+  <sioc:content>I must face the following problem: how to provide mapping for
+information that can be harvested in SSIS (blogs, wikis, social
+semantic digital libraries, semantic chats, videos available at
+youtube, google video etc).
+There&#039;s no doubt SIOC suits perfectly for blogs and forums ;) I know
+that there are some ideas to apply it to the other, abovementioned,
+SSIS. Then it would be perfect for my project.
+Recently, I had a talk to Uldis, the SIOC developer on how to apply it
+for communicators like Skype. We had some ideas which I want to
+share..
+Yet, I can use sioc:Post for each message sent during a conversetion
+and use some properties to dinstinguish them from post or forum
+entries. However, to clarify, some class like sioc:InstatntMessage
+could be also intruduced. What do you think about that? Is that needed/
+necessary?
+Then, regarding real conversatinon: it might be quite long and chaotic
+- there is a lot of messages which don&#039;t carry important information.
+I reckon I should filter that. How?! Keywords? Any ideas?
+Finally problem of connecting messages and navigating through them. Do
+it forwards (ahs reply) or backwords (is reply to)? I can group more
+messages of a user if they weren&#039;t interrupted by the other person.
+Then, maybe treat a conversatin like o single forum?
+Looking forwards for comments and ideas
+--
+best wishes
+Jaroslaw Dobrzanski
+--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups &quot;SIOC-Dev&quot; group.
+To post to this group, send email to sioc-dev@googlegroups.com
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en
+-~----------~----~----~----~------~----~------~--~---
+</sioc:content>
+  <dcterms:created>2007-03-12T16:57:37+00:00</dcterms:created>
+  <dcterms:modified>2007-04-02T10:54:18+01:00</dcterms:modified>
+  <sioc:link rdf:resource="http://sioc-project.org/node/228" rdfs:label="Applying SIOC ontology for Social Semantic Information Spaces (SSIS)" />
+  <sioc:topic rdf:resource="http://sioc-project.org/taxonomy/term/13" rdfs:label="Developers" />
+  <sioc:has_creator rdf:resource="http://sioc-project.org/sioc/user/200%2523user" rdfs:seeAlso="http://sioc-project.org/sioc/user/200" />
+</sioc:Post>
+</rdf:RDF>

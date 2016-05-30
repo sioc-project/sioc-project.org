@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/182"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Update: OpenLink Suggestion re. SIOC | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Update: OpenLink Suggestion re. SIOC</h2>                                                  <div class="clear-block">
+            <div id="node-182" class="node">
+
+
+
+      <span class="submitted">2006, November 1 - 18:20 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  <div class="content clear-block">
+    <p>All,</p>
+<p>This is a second attempt at uploading this post.</p>
+<p>Class sioc:Service:</p>
+<p>in-range-of : has_service, has_host<br />
+in-domain-of : service_of, host_of</p>
+<p>Generic Services (Site-wide):<br />
+if service is site-wide, then "has_service" and "has_host" may be<br />
+associated<br />
+with every existing forum or not at all (to be discussed further).</p>
+<p>Forum Services (Forum-specific):<br />
+When a given service is associated specifically with a given forum then<br />
+the<br />
+"has_sevice" and "has_host" predicates will be used to express such a<br />
+relationship.</p>
+<p>Literal properties :</p>
+<p>dc:title - human readable name of the service<br />
+sioc:endpointURL - service endpoint<br />
+sioc:serviceScope - generic (or site-wide), forum-specific<br />
+sioc:serviceProtocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch<br />
+sioc:resultsFormat - result format<br />
+sioc:maxResults - maximum number of results returned</p>
+<p>Integration Notes:<br />
+rdfs:seeAlso can be used to associate sioc:Service with an RDF Data Set<br />
+representing the details of a given sioc:Service should such exist.</p>
+<p>Example usage re. SAWSDL integration:<br />
+sioc:Service rdfs:seeAlso sawsdl:uri_of_wsdl_profile</p>
+<p>Kingsley</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="192.html" class="topic-previous" title="Go to previous forum topic">‹ OntoSelect - a multilingual ontology library and ontology selection service</a>
+              <a href="189.html" class="topic-next" title="Go to next forum topic">RDFa + GRDDL + Drupal ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-280"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 21 - 08:15 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-280" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Cleaner version of SIOC Enhancements for incorporation into Spec<br />
+Update:</p>
+<p>Class: sioc:Service</p>
+<p>Service - A Service is web service associated with a sioc:Site,<br />
+sioc:Forum, or sioc:Post.<br />
+in-range-of:	sioc:has_service<br />
+in-domain-of:	sioc:max_results sioc:results_format sioc:service_of<br />
+sioc:service_definition sioc:service_endpoint<br />
+sioc:service_default_endpoint sioc:service_protocol sioc:service_type<br />
+dc:description sioc_service_mode</p>
+<p>A Service provides a programmatic means of interacting with Sites,<br />
+Forums, and Posts via Service Endpoints. A Service may be SOAP or REST<br />
+oriented with regards to implementation style. Examples of typical<br />
+Service based interactions include: Search and Content Management.</p>
+<p>Property: sioc:has_service</p>
+<p>has_service - Associates a sioc:Site, sioc:Forum, or sioc:Post with a<br />
+Web Service.<br />
+Inverse: 	sioc:service_of<br />
+OWL Type: 	ObjectProperty<br />
+Range: 		sioc:Service<br />
+Domain:		sioc:Site sioc:Forum sioc:Post</p>
+<p>Property: dc:description</p>
+<p>dc:description - Blurb describing a Service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:  	http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Property: sioc:service_definition</p>
+<p>service_definition - Associates a web service definition (e.g. a WSDL<br />
+URL) with a sioc:Service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:  	http://www.w3.org/2005/10/wsdl-rdf#Description</p>
+<p>Links a Service to a wsdl-rdf:Description that describes its usage<br />
+signature formally.</p>
+<p>Property: sioc:service_protocol</p>
+<p>service_protocol - Associates a Application Protocol with a<br />
+sioc:Service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:		http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Acceptable values include: SPARQL, GData, OpenSearch, and Other.</p>
+<p>Property: sioc:service_type</p>
+<p>service_type - Identifies the type (or style) of Web Service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:		http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Acceptable values include: SOAP, XML-RPC, REST.</p>
+<p>Property: sioc:service_default_endpoint</p>
+<p>service_default_endpoint - Associates a WSDL endpoint a sioc:Service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:		xmlns:wsdl="http://www.w3.org/2005/10/wsdl-rdf#Endpoint</p>
+<p>Links a WSDL based Service to wsdl-rdf:Endpoint which is the preferred<br />
+(default) approach for this type of Service.</p>
+<p>service_endpoint - Associates a non WSDL based sioc:Service with an<br />
+endpoint.<br />
+OWL Type:       ObjectProperty<br />
+Domain:         sioc:Service<br />
+Range:          http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Links non WSDL based Service with a literal endpoint.</p>
+<p>Property: sioc:service_of</p>
+<p>service_of - Associates a sioc:Service with sioc:Site, sioc:Forum, or<br />
+sioc:Post<br />
+Inverse: 	sioc:has_service<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:     	sioc:Site sioc:Forum sioc:Post</p>
+<p>Property: sioc:results_format</p>
+<p>results_format - Format of data returned by a web service.<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:		http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Acceptable values (MIME Types): text/rdf+n3, application/rdf+xml,<br />
+application/sparql-results+json, application/sparql-results+xml,<br />
+text/xml</p>
+<p>Property: sioc:max_results</p>
+<p>max_results - A numberic value used for restricting the number of<br />
+distinct items in a web service response (result).<br />
+OWL Type: 	DatatypeProperty<br />
+Domain: 	sioc:Service<br />
+Range: 		http://www.w3.org/2001/XMLSchema#integer</p>
+<p>Property: sioc:access_mode</p>
+<p>access_mode - Operational mode of sioc:access_mode<br />
+OWL Type: 	ObjectProperty<br />
+Domain: 	sioc:Service<br />
+Range:		http://www.w3.org/2000/01/rdf-schema#Literal</p>
+<p>Acceptable values include: READ, WRITE, DELETE, ALL (meaning all modes).</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-281"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 21 - 08:15 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-281" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Sounds good, I made a suggestion on IRC that service_default_endpoint<br />
+and service_endpoint could just be done using a rdf:Alt sequence...</p>
+<p>We need an IRC bot :)</p>
+<p>So we could just have the one term service_endpoint instead...</p>
+<p>J.<br />
+--<br />
+kidehen wrote:<br />
+> Cleaner version of SIOC Enhancements for incorporation into Spec<br />
+> Update:<br />
+><br />
+> Class: sioc:Service<br />
+><br />
+> Service - A Service is web service associated with a sioc:Site,<br />
+> sioc:Forum, or sioc:Post.<br />
+> in-range-of:	sioc:has_service<br />
+> in-domain-of:	sioc:max_results sioc:results_format sioc:service_of<br />
+> sioc:service_definition sioc:service_endpoint<br />
+> sioc:service_default_endpoint sioc:service_protocol sioc:service_type<br />
+> dc:description sioc_service_mode<br />
+><br />
+> A Service provides a programmatic means of interacting with Sites,<br />
+>   </p>
+<p>...</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-282"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 21 - 08:15 — <a href="http://sioc-project.org/user/84" title="View user profile.">Dan Brickley</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-282" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 14/11/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> Sounds good, I made a suggestion on IRC that service_default_endpoint<br />
+> and service_endpoint could just be done using a rdf:Alt sequence...</john.breslin@deri.org></p>
+<p>rdf:Alt is terribly unfashionable these days. And can be annoying to<br />
+query or access via API. I'd recommend using named properties<br />
+instead...</p>
+<p>cheers,</p>
+<p>Dan</p>
+<p>> We need an IRC bot :)<br />
+><br />
+> So we could just have the one term service_endpoint instead...<br />
+><br />
+> J.<br />
+> --<br />
+> kidehen wrote:<br />
+> > Cleaner version of SIOC Enhancements for incorporation into Spec<br />
+> > Update:<br />
+> ><br />
+> > Class: sioc:Service<br />
+> ><br />
+> > Service - A Service is web service associated with a sioc:Site,<br />
+> > sioc:Forum, or sioc:Post.<br />
+> > in-range-of:  sioc:has_service<br />
+> > in-domain-of: sioc:max_results sioc:results_format sioc:service_of<br />
+> > sioc:service_definition sioc:service_endpoint<br />
+> > sioc:service_default_endpoint sioc:service_protocol sioc:service_type<br />
+> > dc:description sioc_service_mode<br />
+> ><br />
+> > A Service provides a programmatic means of interacting with Sites,<br />
+> ><br />
+><br />
+> ...<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-264"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-264" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/1/06, kidehen <kidehen@openlinksw.com> wrote:<br />
+><br />
+> Literal properties :<br />
+><br />
+> dc:title - human readable name of the service<br />
+> sioc:endpointURL - service endpoint<br />
+> sioc:serviceScope - generic (or site-wide), forum-specific<br />
+> sioc:serviceProtocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch</kidehen@openlinksw.com></p>
+<p>John and me discussed the addition of sioc:Service and here is a<br />
+proposal with some more details and refinements. Among other things we<br />
+put property names in sync with naming conventions used in SIOC.</p>
+<p>Class: sioc:Service</p>
+<p>Properties linking to other SIOC concepts:<br />
+ - sioc:has_service ( range = sioc:Service )<br />
+ - sioc:service_of ( inverse of has_service )</p>
+<p>Other properties of sioc:Service:<br />
+ - dc:title - human readable name of the service<br />
+ - sioc:service_protocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch/...<br />
+ - sioc:results_format - result format<br />
+ - sioc:service_endpoint - service endpoint URL<br />
+ - sioc:max_results - max number of results returned</p>
+<p>This includes all of properties proposed except for sioc:serviceScope.<br />
+It seems redundant because there are already properties (has_service /<br />
+service_of) that link sioc:Site and other SIOC concepts to<br />
+sioc:Service and thus define their scope. Unless there is a strong use<br />
+case where it is needed let's drop it.</p>
+<p>How has_service defines scope: if a service is a site-wide then [<br />
+sioc:Site sioc:has_service sioc:Service ]; if a service is specific to<br />
+a particular forum or other object then define has_service<br />
+relationships between all these objects and a service.</p>
+<p>> Integration Notes:<br />
+> rdfs:seeAlso can be used to associate sioc:Service with an RDF Data Set<br />
+> representing the details of a given sioc:Service should such exist.</p>
+<p>To integrate sioc:Service with its web service description we need a<br />
+stronger property than just rdfs:seeAlso - something that tells "look<br />
+for web service description there".</p>
+<p>Integration property:<br />
+ - sioc:service_description ( domain = sioc:Service; range can be left<br />
+open - usually it will be a WSDL description, but let's not restrict<br />
+w/o necessity )</p>
+<p>That concludes the list of proposed additions. If that is OK, here are<br />
+the tasks that need to be done now:</p>
+<p>1) add them to the ontology<br />
+2) describe them in the specification - * for this we need a short<br />
+text description for sioc:Service and each of the properties.<br />
+3) * define a list of potential values of sioc:protocol and add them<br />
+to the SIOC Types module.</p>
+<p>Also, relations between sioc:Service and its potential use with WSDL,<br />
+SAWSDL and other ontologies needs to be described in the<br />
+http://esw.w3.org/topic/SIOC/RelatedOntologies.</p>
+<p>I'll add the changes to the ontology and generate the specification.</p>
+<p>Who can take the tasks of describing terms for the specification,<br />
+defining list of values (and their descriptions) for sioc:protocol and<br />
+add descriptions to RelatedOntologies document?</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-266"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-266" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Does sioc:service_description not imply a Literal Object that provides<br />
+blurb describing the service? This is why I never took this route in<br />
+the first place. I think sioc:service_definition is more specific to<br />
+the purpose at hand: defining the Web Service.</p>
+<p>To conclude, we should have sioc:service_description for actual blurb<br />
+about service, and then use sioc:service_definition for the service<br />
+definition :-)</p>
+<p>Kingsley</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-267"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-267" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Yes it seems to be confusing alright; coincidentally I was thinking<br />
+about this this morning and thought that maybe "specification" or<br />
+"specifics" might be better...  But "definition" would do too...<br />
+Funnily enough, the page here (and many others) -<br />
+http://www.w3.org/TR/wsdl - says Web Service Definition Language in the<br />
+header :)</p>
+<p>Would anyone object to sioc:Webservice to separate this from wsdl:Service?</p>
+<p>> Properties linking to other SIOC concepts:<br />
+><br />
+> - sioc:has_service ( range = sioc:Service )<br />
+> - sioc:service_of ( inverse of has_service )</p>
+<p>> Other properties of sioc:Service:<br />
+> - dc:title - human readable name of the service<br />
+> - sioc:service_protocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch/...<br />
+> - sioc:results_format - result format<br />
+> - sioc:service_endpoint - service endpoint URL<br />
+> - sioc:max_results - max number of results returned</p>
+<p>In summary, I therefore propose these modifications / additions...</p>
+<p>Change name to sioc:Webservice</p>
+<p>+ dc:description - blurb about service<br />
++ sioc:service_definition - link to more specifications (e.g. in WSDL)</p>
+<p>J.<br />
+--<br />
+kidehen wrote:<br />
+> Does sioc:service_description not imply a Literal Object that provides<br />
+> blurb describing the service? This is why I never took this route in<br />
+> the first place. I think sioc:service_definition is more specific to<br />
+> the purpose at hand: defining the Web Service.<br />
+><br />
+> To conclude, we should have sioc:service_description for actual blurb<br />
+> about service, and then use sioc:service_definition for the service<br />
+> definition :-)<br />
+>   </p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-268"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-268" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/9/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> In summary, I therefore propose these modifications / additions...<br />
+><br />
+> Change name to sioc:Webservice</john.breslin@deri.org></p>
+<p>sioc:Service sounds better to me. I do not think 'name clash' with<br />
+WSDL is an issue here because classes and properties are identified by<br />
+URIs, not by what's at the end of it. But any name is fine. What do<br />
+authors of the original proposal think?</p>
+<p>> + dc:description - blurb about service<br />
+> + sioc:service_definition - link to more specifications (e.g. in WSDL)</p>
+<p>+1</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-272"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-272" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>REST should be removed from the sioc:protocol list of literal values<br />
+since it isn't a protocol :-) Thus the Literal values for this Property<br />
+would be:</p>
+<p>XML-RPC<br />
+SOAP<br />
+SPARQL<br />
+GData<br />
+OpenSearch</p>
+<p>Re. sioc:results_format we should use MIME types.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-273"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-273" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/9/06, kidehen <kidehen@openlinksw.com> wrote:<br />
+><br />
+> REST should be removed from the sioc:protocol list of literal values<br />
+> since it isn't a protocol :-) Thus the Literal values for this Property<br />
+> would be:<br />
+><br />
+> XML-RPC<br />
+> SOAP<br />
+> SPARQL<br />
+> GData<br />
+> OpenSearch</kidehen@openlinksw.com></p>
+<p>We need to come up with URIs for them (having literal values is not<br />
+great). Though that's the easy part, first we need to improve the list<br />
+of values a bit.</p>
+<p>Query protocol and transport protocol are orthogonal. There can be<br />
+many combinations of both, e.g., SPARQL over HTTP and SPARQL over<br />
+SOAP. This means we can't simply throw values "SPARQL" and "SOAP"<br />
+together.</p>
+<p>Two potential solutions:<br />
+a) "multiply" all the combinations of transport and query protocol,<br />
+resulting in different URIs for "SPARQL over HTTP" and "SPARQL over<br />
+SOAP";<br />
+b) split this property into two - transport and query.</p>
+<p>The second option seems to be more universal and allows easier<br />
+querying for, say, all SPARQL endpoints.</p>
+<p>What would be the potential list of values for each of the properties<br />
+if the 2nd options is chosen?</p>
+<p>- transport: SOAP, HTTP [though technically SOAP also uses or can use<br />
+HTTP], XML-RPC [again, it uses HTTP]<br />
+- query: SPARQL, GData, OpenSearch, ... (are there more values we need to add?)</p>
+<p>The SPARQL Protocol [ http://www.w3.org/TR/rdf-sparql-protocol/ ] also<br />
+has WSDL definitions for its SOAP and HTTP bindings.</p>
+<p>If we define protocol types (SPARQL over HTTP / over SOAP) is there a<br />
+way we can link these URIs to their WSDL definitions already in the<br />
+types module? One issue I see is that the same WSDL definition<br />
+contains both binding for HTTP and SOAP - so just linking to the WSDL<br />
+file will not specify which protocol binding do we mean.</p>
+<p>Maybe have different protocol types link directly to the binding they<br />
+implement, e.g. sparql_wsdl:queryHttpPost, :queryHttpGet or :querySoap<br />
+?</p>
+<p>This is an interesting area - how to keep a simple web service<br />
+description in SIOC and at the same time properly link it to a<br />
+detailed definition in WSDL. Well worth exploring.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-275"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-275" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 11/10/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> ><br />
+> Query protocol and transport protocol are orthogonal. There can be<br />
+> many combinations of both, e.g., SPARQL over HTTP and SPARQL over<br />
+> SOAP. This means we can't simply throw values "SPARQL" and "SOAP"<br />
+> together.<br />
+><br />
+> Two potential solutions:<br />
+> a) "multiply" all the combinations of transport and query protocol,<br />
+> resulting in different URIs for "SPARQL over HTTP" and "SPARQL over<br />
+> SOAP";<br />
+> b) split this property into two - transport and query.<br />
+><br />
+> The second option seems to be more universal and allows easier<br />
+> querying for, say, all SPARQL endpoints.<br />
+><br />
+> What would be the potential list of values for each of the properties<br />
+> if the 2nd options is chosen?</captsolo@gmail.com></p>
+<p>I think the second choice is better, especially as we won't have to<br />
+redefine new combinations when adding new transport / query values.</p>
+<p>BTW, I was also thinking in differenciating "type" of service (eg<br />
+query vs insert/update). So we might add another property for this (or<br />
+subclass Service but I think it will lead to something too complex at<br />
+the end)<br />
+So what about using the "type" property for this, "transport" for<br />
+SOAP, HTTP ... and "protocol" for SPARQL, GData ... ?</p>
+<p>I also don't think we should provide too much information (as<br />
+max_results) in sioc:Service definition. The goal is simply to let<br />
+agents know where the endpoint is, and how to access it. So maybe<br />
+getting results type (mime ?) is also too much precise for our needs ?</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-276"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-276" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Alex,</p>
+<p>What about:</p>
+<p>sioc:service_type - READONLY, READ-WRITE<br />
+sioc:service_transport - SOAP, XML-RPC, HTTP<br />
+sioc:service_protocol - SPARQL, GData, OpenSearch, Basic (basic Free<br />
+Text over HTTP)</p>
+<p>Kingsley</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-277"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-277" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>How about service_access or access_level or access_mode instead of<br />
+service_type?</p>
+<p>J.<br />
+--<br />
+kidehen wrote:<br />
+> Alex,<br />
+><br />
+> What about:<br />
+><br />
+> sioc:service_type - READONLY, READ-WRITE<br />
+> sioc:service_transport - SOAP, XML-RPC, HTTP<br />
+> sioc:service_protocol - SPARQL, GData, OpenSearch, Basic (basic Free<br />
+> Text over HTTP)<br />
+>   </p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-278"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/12.html" title="View user profile.">terraces</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-278" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 11/10/06, John Breslin <john.breslin@deri.org> wrote:<br />
+><br />
+> How about service_access or access_level or access_mode instead of<br />
+> service_type?</john.breslin@deri.org></p>
+<p>Indeed, it might be better to keep the type for what I call "protocol"<br />
+i.e. SPARQL Query, GData, plain text, as Kingsley suggested; and use<br />
+another property for the access type as access_mode (BTW, re. READONLY<br />
+/ READ-WRITE, maybe we have better to use READ / WRITE / DEL and allow<br />
+multiple properties for a single service)</p>
+<p>Alex.</p>
+<p>><br />
+> J.<br />
+> --<br />
+> kidehen wrote:<br />
+> > Alex,<br />
+> ><br />
+> > What about:<br />
+> ><br />
+> > sioc:service_type - READONLY, READ-WRITE<br />
+> > sioc:service_transport - SOAP, XML-RPC, HTTP<br />
+> > sioc:service_protocol - SPARQL, GData, OpenSearch, Basic (basic Free<br />
+> > Text over HTTP)<br />
+> ><br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div></div></div></div></div><a id="comment-265"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/56.html" title="View user profile.">kidehen</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-265" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>
+Uldis Bojars wrote:<br />
+> On 11/1/06, kidehen <kidehen@openlinksw.com> wrote:<br />
+> ><br />
+> > Literal properties :<br />
+> ><br />
+> > dc:title - human readable name of the service<br />
+> > sioc:endpointURL - service endpoint<br />
+> > sioc:serviceScope - generic (or site-wide), forum-specific<br />
+> > sioc:serviceProtocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch<br />
+><br />
+> John and me discussed the addition of sioc:Service and here is a<br />
+> proposal with some more details and refinements. Among other things we<br />
+> put property names in sync with naming conventions used in SIOC.<br />
+><br />
+> Class: sioc:Service<br />
+><br />
+> Properties linking to other SIOC concepts:<br />
+>  - sioc:has_service ( range = sioc:Service )<br />
+>  - sioc:service_of ( inverse of has_service )<br />
+><br />
+> Other properties of sioc:Service:<br />
+>  - dc:title - human readable name of the service<br />
+>  - sioc:service_protocol - SOAP/REST/SPARQL-QUERY/GData/OpenSearch/...<br />
+>  - sioc:results_format - result format<br />
+>  - sioc:service_endpoint - service endpoint URL<br />
+>  - sioc:max_results - max number of results returned<br />
+><br />
+> This includes all of properties proposed except for sioc:serviceScope.<br />
+> It seems redundant because there are already properties (has_service /<br />
+> service_of) that link sioc:Site and other SIOC concepts to<br />
+> sioc:Service and thus define their scope. Unless there is a strong use<br />
+> case where it is needed let's drop it.<br />
+><br />
+> How has_service defines scope: if a service is a site-wide then [<br />
+> sioc:Site sioc:has_service sioc:Service ]; if a service is specific to<br />
+> a particular forum or other object then define has_service<br />
+> relationships between all these objects and a service.<br />
+><br />
+> > Integration Notes:<br />
+> > rdfs:seeAlso can be used to associate sioc:Service with an RDF Data Set<br />
+> > representing the details of a given sioc:Service should such exist.<br />
+><br />
+> To integrate sioc:Service with its web service description we need a<br />
+> stronger property than just rdfs:seeAlso - something that tells "look<br />
+> for web service description there".<br />
+><br />
+> Integration property:<br />
+>  - sioc:service_description ( domain = sioc:Service; range can be left<br />
+> open - usually it will be a WSDL description, but let's not restrict<br />
+> w/o necessity )<br />
+><br />
+> That concludes the list of proposed additions. If that is OK, here are<br />
+> the tasks that need to be done now:<br />
+><br />
+> 1) add them to the ontology<br />
+> 2) describe them in the specification - * for this we need a short<br />
+> text description for sioc:Service and each of the properties.<br />
+> 3) * define a list of potential values of sioc:protocol and add them<br />
+> to the SIOC Types module.<br />
+><br />
+> Also, relations between sioc:Service and its potential use with WSDL,<br />
+> SAWSDL and other ontologies needs to be described in the<br />
+> http://esw.w3.org/topic/SIOC/RelatedOntologies.<br />
+><br />
+> I'll add the changes to the ontology and generate the specification.<br />
+><br />
+> Who can take the tasks of describing terms for the specification,<br />
+> defining list of values (and their descriptions) for sioc:protocol and<br />
+> add descriptions to RelatedOntologies document?<br />
+><br />
+> Uldis<br />
+><br />
+> [ http://captsolo.net/info/ ]</kidehen@openlinksw.com></p>
+<p>We will provide the descriptions requested re. items 2&amp;3.</p>
+<p>I agree with the redundancy conclusions re. sioc:scope.</p>
+<p>Kingsley</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-269"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-269" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/9/06, kidehen <kidehen@openlinksw.com> wrote:<br />
+><br />
+> We will provide the descriptions requested re. items 2&amp;3.<br />
+> I agree with the redundancy conclusions re. sioc:scope.</kidehen@openlinksw.com></p>
+<p>Here is a draft of the SIOC Specification (v1.11) that includes<br />
+sioc:Service and its properties:<br />
+http://sparql.captsolo.net/spec/</p>
+<p>The ontology draft (which the specification is based on) can be found in SVN:<br />
+http://sw.deri.org/svn/sw/2005/08/sioc/ontology/ns.rdf</p>
+<p>To make things easier I have added some initial descriptions. Please<br />
+look at new term definitions (taken from rdfs:comment properties in<br />
+the ontology) and descriptions (it comes after information about range<br />
+and domain) and send your suggestions.</p>
+<p>Source for term descriptions:<br />
+http://sw.deri.org/svn/sw/2005/08/sioc/ontology/spec/doc/</p>
+<p>Also added datatype definitions (xsd:integer) for properties that take<br />
+integer values. If you have experience with datatypes in RDF please<br />
+check if those are defined OK. I could have also chosen<br />
+xsd:positiveInteger, but the OWL guide says xsd:integer must be<br />
+supported by all reasoner yet does not say that about the positive<br />
+integer datatype.</p>
+<p>More questions + things to do:</p>
+<p>- is sioc:max_results really needed?<br />
+It goes deeper into specifying a web service than other properties and<br />
+seems to more belong in the web service definition than in<br />
+sioc:Service. Mainly I do not see how it can be useful w/o also<br />
+defining how the web service works, e.g., how to get the next result<br />
+set.</p>
+<p>- what is the range of sioc:results_format?<br />
+Can we use MIME types for it?</p>
+<p>- TODO - if needed, revise the section "External Classes and<br />
+Ontologies" ( http://sparql.captsolo.net/spec/#sec-external ). E.g.,<br />
+add dc:description and maybe change description of dc:title.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-271"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-271" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>Quoting Uldis Bojars <captsolo@gmail.com>:</captsolo@gmail.com></p>
+<p>> Here is a draft of the SIOC Specification (v1.11) that includes<br />
+> sioc:Service and its properties:<br />
+> http://sparql.captsolo.net/spec/</p>
+<p>Looks good - if people don't agree with my proposal for<br />
+sioc:Webservice, we can instead use has_webservice and webservice_of<br />
+as the connecting properties?  I'd like one or the other (not both)...<br />
+  I understand that URIs can be used to uniquely identify sioc:Service<br />
+from wsdl:Service, that's fine, but I'd like the property name to be<br />
+slightly different (as with the other SIOC properties linking concepts).</p>
+<p>Thanks,</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-274"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-274" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/9/06, john.breslin@deri.org <john.breslin@deri.org> wrote:<br />
+><br />
+> Quoting Uldis Bojars <captsolo@gmail.com>:<br />
+><br />
+> > Here is a draft of the SIOC Specification (v1.11) that includes<br />
+> > sioc:Service and its properties:<br />
+> > http://sparql.captsolo.net/spec/<br />
+><br />
+> Looks good - if people don't agree with my proposal for<br />
+> sioc:Webservice, we can instead use has_webservice and webservice_of<br />
+> as the connecting properties?  I'd like one or the other (not both)...</captsolo@gmail.com></john.breslin@deri.org></p>
+<p>In order to have a property name that is more specific we may choose<br />
+sioc:WebService or sioc:Webservice.</p>
+<p>>   I understand that URIs can be used to uniquely identify sioc:Service<br />
+> from wsdl:Service, that's fine, but I'd like the property name to be<br />
+> slightly different (as with the other SIOC properties linking concepts).</p>
+<p>If the aim is to try to avoid confusion then it does not really work.<br />
+Reason: according to Swoogle there are enough classes named<br />
+"Webservice" and "WebService" as well. It also makes sense - people<br />
+are choosing names that best describe what they have in mind. If we<br />
+will try to find a name that's not been used before we will probably<br />
+end up with a name that is hard to remember or has only a vague<br />
+association with what we want to describe.</p>
+<p>The aim to make the name more specific though makes perfect sense.</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>><br />
+> Thanks,<br />
+><br />
+> John.<br />
+> --<br />
+><br />
+> ><br />
+></p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-270"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2006, November 12 - 04:48 — <a href="../user/5.html" title="View user profile.">CaptSolo</a></span>
+  
+  
+  
+    <h3><a href="182.html#comment-270" class="active">Update: OpenLink Suggestion re. SIOC</a></h3>
+
+    <div class="content">
+      <p>On 11/9/06, Uldis Bojars <captsolo@gmail.com> wrote:<br />
+> - what is the range of sioc:results_format?<br />
+> Can we use MIME types for it?</captsolo@gmail.com></p>
+<p>Related: about URIs for MIME types<br />
+http://groups-beta.google.com/group/atom-owl/browse_frm/thread/468e48b8aba9771d/2f19faa1e2866e8d?lnk=gst&amp;q=iana+mime-type+&amp;rnum=1#2f19faa1e2866e8d</p>
+<p>Short URL: http://tinyurl.com/txxxj</p>
+<p>Uldis</p>
+<p>[ http://captsolo.net/info/ ]</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+ You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F182%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div></div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/182?destination=node%2F182"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-VhfdYtA978nzLpa-ChnJzK8ycUG_7L4tO0UXOnH9VyM" value="form-VhfdYtA978nzLpa-ChnJzK8ycUG_7L4tO0UXOnH9VyM"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

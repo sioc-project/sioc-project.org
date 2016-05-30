@@ -1,0 +1,920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="media" type="application/rdf+xml" title="SIOC" href="../sioc/node/251"/>
+<link rel="shortcut icon" href="http://sioc-project.org/misc/favicon.ico" type="image/x-icon" />
+    <title>Experiences with SIOC data | sioc-project.org</title>
+    <link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/node/node.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/defaults.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/system/system-menus.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/user/user.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/forum/forum.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/modules/comment/comment.css?d" />
+<link type="text/css" rel="stylesheet" media="all" href="http://sioc-project.org/themes/garland/style.css?d" />
+<link type="text/css" rel="stylesheet" media="print" href="http://sioc-project.org/themes/garland/print.css?d" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="../index.html" title=""><img src="../files/garland_logo.gif" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-82 first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="menu-81"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a></li>
+<li class="menu-85"><a href="../applications.html" title="Applications using SIOC.">Applications</a></li>
+<li class="menu-355"><a href="../blog.html" title="">Blog</a></li>
+<li class="menu-88"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a></li>
+<li class="menu-109"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="menu-356"><a href="../forum.html" title="">Forum</a></li>
+<li class="menu-103"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="menu-87"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="menu-99"><a href="../media.html" title="">Media</a></li>
+<li class="menu-100"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="menu-80"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="menu-108 last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="../forum.html">SIOC Topics</a> › <a href="../forum/13.html">Developers</a></div>                              <h2>Experiences with SIOC data</h2>                                                  <div class="clear-block">
+            <div id="node-251" class="node">
+
+
+
+      <span class="submitted">2007, April 12 - 18:34 — <a href="http://sioc-project.org/user/281" title="View user profile.">Benjamin Heitmann</a></span>
+  
+  <div class="content clear-block">
+    <p>Hello there.</p>
+<p>As Eyal Oren has announced on this list a few days ago, we developed a<br />
+SIOC explorer web application, which usually can be found at:<br />
+http://www.activerdf.org/sioc/</p>
+<p>The new version of the SIOC explorer, allows you to see all posts in<br />
+the database from all forums for one day, week or month. You can<br />
+browse all posts written by one author.<br />
+If more then one forum in the database use topics with the same label,<br />
+then you can also view all posts with that topic label.</p>
+<p>The SIOC explorer has been submitted to the Semantic Web scripting<br />
+challenge,<br />
+(http://www.semanticscripting.org/SFSW2007/)<br />
+and I have written a short 2 page description of it.</p>
+<p>During the development of the SIOC explorer I had a few insights and<br />
+ideas regarding SIOC data and how it is currently used by some<br />
+exporters:</p>
+<p>phpBB export:<br />
+========<br />
+When using the SIOC data from http://sioc-project.org/forum , I could<br />
+not help but notice, that the sioc:posts do not have any content.<br />
+Is this by design? I would strongly encourage exporting the content of<br />
+the posts by the phpBB exporter.</p>
+<p>use of inverse properties:<br />
+==============<br />
+Currently the output of the wordpress exporter often only uses one<br />
+direction in cases in which a property is available in both<br />
+directions, like: sioc:container_of and sioc:has_container.<br />
+Most non-java RDF libraries current don't support inferring of inverse<br />
+properties (AFAIK).</p>
+<p>It has been explained to me, that the decision to export only one<br />
+direction has been made on the side of the wordpress exporter, but now<br />
+imagine that every exporter chooses a different way to treat bi-<br />
+directional properties.</p>
+<p>The application developer cant make any assumption about which<br />
+direction of the property will be used, and has to handle both cases<br />
+in his application logic.</p>
+<p>I would advocate using both directions in every exporter. In the end,<br />
+humans neither create nor read or process the rdf data, and this makes<br />
+it easier for the currently sometimes primitive rdf inferencing<br />
+support of various scripting languages.</p>
+<p>use of dc:created<br />
+==========</p>
+<p>Again, this is due to non inferencing triple stores:</p>
+<p>In order to provide the basic functionality of every RSS aggregator,<br />
+the user has to be able to view the posts sorted temporaly, and he<br />
+will want to see posts which where created during a specific time<br />
+span.</p>
+<p>Currently most triple stores, even advanced ones dont support finding<br />
+dates by time period. So we had to materialize the dc:created<br />
+timestamp, like this:<br />
+siocex:month, siocex:day, siocex:year, siocex:week.</p>
+<p>I think there is no easy solution for this, except to wait for triple<br />
+stores to support xsd:date.</p>
+<p>creator of "real posts" and "replies" is different:<br />
+===========================</p>
+<p>In the output of the wordpress exporter, "real posts" have the<br />
+sioc:creator property and "comments for posts" have the foaf:maker<br />
+property, if I recall correctly.</p>
+<p>I am not sure of the motivation for this, but it might be useful to<br />
+consider using the same type of entity for both.</p>
+<p>That would enable object consolidation for creators of posts: I could<br />
+click on the creator of a post, and then see als his posts but also<br />
+all the comments he wrote.</p>
+<p>Of course the real reason for this, is the one, which I will discuss<br />
+at the end of this email.</p>
+<p>sioc:topic is always site specific:<br />
+==================</p>
+<p>Reusing sioc:topic right now across site borders is extremely<br />
+difficult.<br />
+The wordpress exporter prepends the site url in front of the category/<br />
+tag used on the blog.</p>
+<p>Currently in the SIOC explorer, we consolidate topics if their labels<br />
+are downcased similar.</p>
+<p>Of course, there is no easy solution to consolidate topics, or to come<br />
+up with shared URIs for topics.</p>
+<p>URLs in general are not shared<br />
+==================</p>
+<p>In general, the data from the wordpress exporter exhibits the problem<br />
+that all instances of concepts have global URIs, but almost no URIs<br />
+are reused between sites.</p>
+<p>To state it in a provocative manner:<br />
+The only benefit of using SIOC right now compared to RSS, is that the<br />
+modelling focus is not so much on articles/posts but also on users/<br />
+authors and their connections.</p>
+<p>Advocates of RSS can counter the argument "SIOC data enables different<br />
+types of sites to publish their content in a unified format" with the<br />
+simple argument "a lof of different sites currently also just use<br />
+RSS".</p>
+<p>So what needs to change in order for SIOC data to be useful in a way<br />
+that RSS data will never be:</p>
+<p>URIs of concept instances have to be created in a unified way, and<br />
+should be reused between sites.</p>
+<p>This of curse is one of the problems on the Semantic Web, for which no<br />
+consensus solution exists.</p>
+<p>But as this is one of the important challenges of Semantic Web<br />
+adoption on a wide scale, and because SIOC could demonstrate the<br />
+potential of the Semantic Web, I would advocate that SIOC be one of<br />
+the first Ontologies to provide for a unified naming and sharing<br />
+approach.</p>
+<p>Other ontology efforts will encounter the same problem sooner or<br />
+later, and SIOC could be a precedence here and provide a good example/<br />
+best practice.</p>
+<p>Possible Solutions:<br />
+==========</p>
+<p>Currently I can imagine two pragramatic approaches to this problem, as<br />
+far as<br />
+the wordpress exporter is concerned:</p>
+<p>a) ask the user for more information:<br />
+- what is the real foaf profile of a blog author, and if he has none,<br />
+of some simple links to sites which let the user create one.<br />
+- ask comment posters for their foaf profile<br />
+- during post creation, check if URIs for the used tags/catgeories/<br />
+topics exist, e.g. by asking technorati or a similiar site, and if<br />
+none are found, give the user some choices to create good URIs for the<br />
+categories</p>
+<p>b.) do automatic discovery:<br />
+- try to find the foaf file of the user in an autonomic way and then<br />
+ask him if the found one is the right one<br />
+- try to find URIs for the topics automatically, and ask if they<br />
+should be used</p>
+<p>(This might surpass the capabilities of wordpress plugins, but they<br />
+are non the less first tiny steps to adress this huge and important<br />
+problem.)</p>
+<p>So to close this: I hope these comments and experiences can be of use<br />
+to the SIOC community, and I hope that I did not step on anybodys<br />
+toes :)</p>
+<p>cheers, Benjamin.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="256.html" class="topic-previous" title="Go to previous forum topic">‹ ANN: Semantic Web FAQ</a>
+              <a href="252.html" class="topic-next" title="Go to next forum topic">[Fwd: How I use SIOC in IKHarvester, a component for Didaskon] ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_13 first last"><a href="../taxonomy/term/13.html" rel="tag" title="Linked to the sioc-dev mailing list on Google Groups.">Developers</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments">
+  <a id="comment-423"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/53.html" title="View user profile.">Alexandre Passant</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-423" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>Hi,</p>
+<p>On 12 avr, 20:34, "Benjamin Heitmann" <benja...@lauschangriff.org><br />
+wrote:</benja...@lauschangriff.org></p>
+<p>><br />
+> creator of "real posts" and "replies" is different:<br />
+> ===========================<br />
+><br />
+> In the output of the wordpress exporter, "real posts" have the<br />
+> sioc:creator property and "comments for posts" have the foaf:maker<br />
+> property, if I recall correctly.<br />
+><br />
+> I am not sure of the motivation for this, but it might be useful to<br />
+> consider using the same type of entity for both.<br />
+><br />
+The main reason is, while post creators are subscribed users of the<br />
+platform (i.e. sioc:User), commenters - most of the time, even if some<br />
+blog engine allow people to subscribe their blog before posting - are<br />
+not registered so are not users as in SIOC, but simply foaf:User.</p>
+<p>> That would enable object consolidation for creators of posts: I could<br />
+> click on the creator of a post, and then see als his posts but also<br />
+> all the comments he wrote.<br />
+Yet, WP exporter exports both sioc:creator and foaf:maker for the post<br />
+writer, so the foaf:maker property would be available for any post /<br />
+comment. [1]<br />
+And you also have in the sioc:User profile a link to the related<br />
+foaf:People.<br />
+BTW, the API in the future should allow people to publish comment<br />
+using their FOAF URI (in order to link SIOC data to FOAF resources)</p>
+<p>Best,</p>
+<p>Alex.</p>
+<p>[1] http://www.johnbreslin.com/blog/index.php?sioc_type=post&amp;sioc_id=1223</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-421"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/138" title="View user profile.">matthiassamwald</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-421" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+> use of inverse properties:<br />
+> ==============<br />
+> Currently the output of the wordpress exporter often only uses one<br />
+> direction in cases in which a property is available in both<br />
+> directions, like: sioc:container_of and sioc:has_container.<br />
+> Most non-java RDF libraries current don't support inferring of inverse<br />
+> properties (AFAIK).</p>
+<p>Very true, and even if your RDF data store supports such reasoning,<br />
+the inverse properties can be quite annoying to implement. Why does<br />
+SIOC contain inverse properties? I see no real reason for having them<br />
+in SIOC (e.g. no reasoning that would require such inverse<br />
+properties). It seems as if they were defined plainly because they<br />
+COULD be defined. The usability of the SIOC ontology would be much<br />
+greater without them.</p>
+<p>-- Matthias</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-424"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-424" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>Matthias Samwald wrote:<br />
+><br />
+> The usability of the SIOC ontology would be much<br />
+> greater without [inverse properties].<br />
+><br />
+><br />
+><br />
+I have a simple argument for this - and I know a lot of people believe<br />
+inverse properties are not needed and/or cause problems with reasoning<br />
+engines -</p>
+<p>The Semantic Web is designed for machines first, right? :)  But there's<br />
+no need to neglect those poor humans with just a small bit of extra<br />
+effort required.</p>
+<p>If for example you're talking about a sioc:Comment - and you only had a<br />
+reply property that points from Post to reply Posts, then you'd have to<br />
+define the Post and the Comment instances...  And even though there are<br />
+many nicer formats than RDF/XML to express RDF in, I think RDF/XML still<br />
+is the one we see in the main, and it's the one that people see most<br />
+often when they view sources...</p>
+<p>Now, as someone who has come from a non-core computer science<br />
+background, I also think that if you're trying to explain to people who<br />
+want to create some SW data that in order to describe that Comment that<br />
+they must also define some properties of the Post and Forum and whatever<br />
+else is related to it in the opposite direction, they may find that a<br />
+bit unwieldy...</p>
+<p>But that's my opinion - good to hear others...</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div><a id="comment-414"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/1.html" title="View user profile.">Cloud</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-414" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p> > The SIOC explorer has been submitted to the Semantic Web scripting<br />
+ > challenge,<br />
+ > (http://www.semanticscripting.org/SFSW2007/)<br />
+ > and I have written a short 2 page description of it.</p>
+<p>Excellent - best of luck :-)</p>
+<p> > phpBB export:<br />
+ > ========<br />
+ > When using the SIOC data from http://sioc-project.org/forum , I could<br />
+ > not help but notice, that the sioc:posts do not have any content.<br />
+ > Is this by design? I would strongly encourage exporting the content of<br />
+ > the posts by the phpBB exporter.</p>
+<p>There is content so I wonder why the SIOC explorer doesn't see it...<br />
+e.g. see:</p>
+<p>http://www.boards.co.nz/forums/sioc.php?type=post&amp;post_id=3607</p>
+<p>There's both sioc:content and rss_content:encoded in this example.</p>
+<p> > use of inverse properties:<br />
+ > ==============<br />
+ ><br />
+ > I would advocate using both directions in every exporter. In the end,<br />
+ > humans neither create nor read or process the rdf data, and this makes<br />
+ > it easier for the currently sometimes primitive rdf inferencing<br />
+ > support of various scripting languages.</p>
+<p>Good idea - actually maybe this could be integrated into the PHP API<br />
+which forms the basis for some current and future SIOC exporters.</p>
+<p> > use of dc:created<br />
+ > ==========<br />
+ ><br />
+ > Again, this is due to non inferencing triple stores:<br />
+ ><br />
+ > In order to provide the basic functionality of every RSS aggregator,<br />
+ > the user has to be able to view the posts sorted temporaly, and he<br />
+ > will want to see posts which where created during a specific time<br />
+ > span.</p>
+<p>We could of course add those specific date terms to SIOC, and ones for<br />
+times as well, but maybe there's some way of making our exporters use<br />
+both dcterms:created and some other vocab (that I'm unaware of) for<br />
+expressing date / time by parts.</p>
+<p> > creator of "real posts" and "replies" is different:<br />
+ > ===========================<br />
+ ><br />
+ > In the output of the wordpress exporter, "real posts" have the<br />
+ > sioc:creator property and "comments for posts" have the foaf:maker<br />
+ > property, if I recall correctly.</p>
+<p>I think the problem is that comments are not associated with real user<br />
+accounts in WordPress, well, some may be, but most are not...  But maybe<br />
+Uldis can explain more.</p>
+<p> > sioc:topic is always site specific:<br />
+ > ==================<br />
+ ><br />
+ > Reusing sioc:topic right now across site borders is extremely<br />
+ > difficult.</p>
+<p>We could just use one URI prefix with /tag/whatever at the end...</p>
+<p> > URLs in general are not shared<br />
+ > ==================<br />
+ ><br />
+ > In general, the data from the wordpress exporter exhibits the problem<br />
+ > that all instances of concepts have global URIs, but almost no URIs<br />
+ > are reused between sites.</p>
+<p>This is a great reason for reuse of SIOC URIs through things like the<br />
+Semantic Radar plugin, or addons for WordPress that allow you to choose<br />
+related posts when you're creating a blog post of your own (e.g. by<br />
+searching your blogroll and anything with an XFN attribute (so that<br />
+you're not just getting interesting sites)) to provide related posts<br />
+that could then be linked from your own.</p>
+<p> > Possible Solutions:<br />
+ > ==========<br />
+ ><br />
+ > Currently I can imagine two pragramatic approaches to this problem, as<br />
+ > far as<br />
+ > the wordpress exporter is concerned:<br />
+ ><br />
+ > a) ask the user for more information:<br />
+ ><br />
+ > b.) do automatic discovery:</p>
+<p>It's a pity that the Plink service is gone, as that could have been a<br />
+handy way to suggest your associated profiles :/  Maybe danbri has some<br />
+other ideas as to how this could be done.</p>
+<p>Great discussion Benjamin - let's keep the suggestion flying!</p>
+<p>John.<br />
+--</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-417"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/281" title="View user profile.">Benjamin Heitmann</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-417" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+On Apr 13, 10:16 am, John Breslin <john.bres...@deri.org> wrote:<br />
+>  > phpBB export:<br />
+>  > ========<br />
+>  > When using the SIOC data fromhttp://sioc-project.org/forum, I could<br />
+>  > not help but notice, that the sioc:posts do not have any content.<br />
+>  > Is this by design? I would strongly encourage exporting the content of<br />
+>  > the posts by the phpBB exporter.<br />
+><br />
+> There is content so I wonder why the SIOC explorer doesn't see it...<br />
+> e.g. see:<br />
+><br />
+> http://www.boards.co.nz/forums/sioc.php?type=post&amp;post_id=3607<br />
+><br />
+> There's both sioc:content and rss_content:encoded in this example.</john.bres...@deri.org></p>
+<p>Cool. I will try to use the sioc data from there.</p>
+<p>But what I meant can be seen here:</p>
+<p>this is a post from a SIOC forum:<br />
+http://sioc-project.org/node/241</p>
+<p>and its SIOC output has no content:<br />
+http://sioc-project.org/sioc/node/241</p>
+<p>But I now realize my mistake, that is actually the output of the<br />
+drupal sioc exporter,<br />
+I guess. So that could be improved a little bit.</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-415"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/282" title="View user profile.">keith alexander</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-415" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>John Breslin wrote:<br />
+>  > a) ask the user for more information:<br />
+>  ><br />
+>  > b.) do automatic discovery:<br />
+><br />
+> It's a pity that the Plink service is gone, as that could have been a<br />
+> handy way to suggest your associated profiles :/  Maybe danbri has some<br />
+> other ideas as to how this could be done.<br />
+><br />
+><br />
+What I've been thinking would be nice (though I'm a bit hazy on the<br />
+details) is an openID service that when you signup, lets you specify a<br />
+FOAF profile (or create one with a FOAF-matic style form), and the page<br />
+at your openID uri would contain that data. Then when you create a new<br />
+account on another openID-enabled web site, the openID service would use<br />
+that request to add a new foaf:holdsAccount property to the RDF on your<br />
+openid page.</p>
+<p>What would be even nicer would be if (some, at least) web apps published<br />
+(at some level), in RDF, the content created by each user at their<br />
+profile page on the web app. So if you went to my del.icio.us page for<br />
+instance, there would be a link to an RDF representation of all my<br />
+bookmarks and tags.</p>
+<p>With that in place, web apps could use your openid uri as a bridge to<br />
+read the data you've already created at other web apps, and provide you<br />
+with a more 'connected' and personalised experience.</p>
+<p>My understanding of openID is pretty superficial - I'm not sure if there<br />
+is currently a way for the openID service to know that a new account is<br />
+being created, if that operation was successful, and  what the uri of<br />
+the new account profile would be (I suspect not).</p>
+<p>At any rate, the simple act of publishing, or linking to a FOAF profile,<br />
+at an openid uri is possible, and would  help  produce  more useful SIOC<br />
+data.</p>
+<p>Are there any services out there already that do something like what I<br />
+described above (I wouldn't be surprised, but haven't found any)?</p>
+<p>Even an openID uri without any RDF would presumably help?</p>
+<p>Cheers,</p>
+<p>Keith</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-416"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/281" title="View user profile.">Benjamin Heitmann</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-416" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+On Apr 13, 11:31 am, Keith Alexander <k.j.w.alexan...@gmail.com><br />
+wrote:<br />
+> At any rate, the simple act of publishing, or linking to a FOAF profile,<br />
+> at an openid uri is possible, and would  help  produce  more useful SIOC<br />
+> data.</k.j.w.alexan...@gmail.com></p>
+<p>Yes, now that I think about it, giving incentives to create a FOAF<br />
+profile during the<br />
+creation of an open ID account would solve two problems with one<br />
+action.</p>
+<p>a.) the user gets one "identity" to use across all the sites that<br />
+support open ID<br />
+who benefits: the user</p>
+<p>b.) the user ties his "identity" directly to some reusable and machine<br />
+readable information, about him, which has been filled with data that<br />
+he himself chooses (and not some corporation)<br />
+who benefits:<br />
+the semantic web (data about one user stored in one location with one<br />
+URI)<br />
+the user (he chooses which data to reveal about himself)</p>
+<p>Sadly, I currently know nothing about</p>
+<p>- how to tie an open ID "Profile/Identity" to a FOAF profile<br />
+- how to tie a FOAF profile to an open ID identity</p>
+<p>can anybody offer some quick hints as to how this could be done?</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-420"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/282" title="View user profile.">keith alexander</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-420" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>Benjamin Heitmann wrote:<br />
+><br />
+> Sadly, I currently know nothing about<br />
+><br />
+> - how to tie an open ID "Profile/Identity" to a FOAF profile<br />
+> - how to tie a FOAF profile to an open ID identity<br />
+><br />
+> can anybody offer some quick hints as to how this could be done?<br />
+><br />
+>   </p>
+<p>I came across this post<br />
+http://danbri.org/words/2007/01/26/161<br />
+about this site<br />
+http://doxory.com/<br />
+which apparently looks for foaf at your openid uri to see what friends<br />
+you've got.</p>
+<p>For</p>
+<p>how to tie an open ID "Profile/Identity" to a FOAF profile</p>
+<p>see<br />
+http://lists.foaf-project.org/pipermail/foaf-dev/2007-February/008457.html</p>
+<p>For how to tie a FOAF profile to an open ID identity,</p>
+<p>Henry Story at<br />
+http://blogs.sun.com/bblfish/entry/openid_for_blogs_sun_com says:</p>
+<p>><br />
+> The Foaf url can simply *be* the open id. According to current OpenId<br />
+> specs the id would have to be able to return a text/html<br />
+> representation, so that the consumer (the blog that is requiring<br />
+> authentication for example), can search the html for the<br />
+> |openid.server| link relation. The foaf id would then also be able to<br />
+> return and xml/rdf representation by a client on request. This would<br />
+> save the end user from having to learn two different ids, and it would<br />
+> be a way of authenticating a foaf file on top of it. In this scenario<br />
+> the html representation should have a foaf link relation pointing back<br />
+> the the same url.</p>
+<p>My guess is that, since most of them aren't looking for it, there isn't<br />
+an established standard way to make your foaf discoverable to openid<br />
+consumers - you could bung the rdf/xml in with the html, have a  &lt;*link<br />
+rel*="meta" type="application/rdf+xml" title="*FOAF*" href="[url]" /> in<br />
+the head, or a grddl or eRDF profile, or maybe conneg?</p>
+<p>Perhaps someone else knows?</p>
+<p>Keith</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div></div><a id="comment-412"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/28.html" title="View user profile.">Christoph Görn</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-412" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>Heja,<br />
+  I really like the explorer. I wonder if there is a way to remove<br />
+some attribute from the "current filter" ?</p>
+<p>	Christoph</p>
+<p>Am 12.04.2007 um 20:34 schrieb Benjamin Heitmann:<br />
+> Hello there.<br />
+><br />
+> As Eyal Oren has announced on this list a few days ago, we developed a<br />
+> SIOC explorer web application, which usually can be found at:<br />
+> http://www.activerdf.org/sioc/</p>
+<p>--<br />
+I'l block your entire subnet you lamers... I'm root!</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<a id="comment-411"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="../user/29.html" title="View user profile.">Fred</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-411" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>Hi Benjamin,</p>
+<p>Really a good work :)</p>
+<p>I like the feeling of using it.</p>
+<p>Just a quick idea: why not adding a filter on the front page to filter<br />
+the publishing time (last hour, last day, last month). Could be use as a<br />
+sort of blog aggregation.</p>
+<p>Also, in comments, it would be interesting to be able to click on<br />
+commenters' name to see what other comments they wrote on the blog/other<br />
+blogs.</p>
+<p>Just some quick thoughts, keep-up the good work!</p>
+<p>Take care,</p>
+<p>Fred</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-418"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/281" title="View user profile.">Benjamin Heitmann</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-418" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+On Apr 12, 7:53 pm, Frederick Giasson <f...@fgiasson.com> wrote:<br />
+> Just a quick idea: why not adding a filter on the front page to filter<br />
+> the publishing time (last hour, last day, last month). Could be use as a<br />
+> sort of blog aggregation.</f...@fgiasson.com></p>
+<p>Good idea, thank you. I will think about adding this, when doing the<br />
+next changes.</p>
+<p>There probably will also be a manual or automatic updating of the<br />
+blogs/forums in the<br />
+database.</p>
+<p>> Also, in comments, it would be interesting to be able to click on<br />
+> commenters' name to see what other comments they wrote on the blog/other<br />
+> blogs.</p>
+<p>Yes, that one is pretty obvious. Should be coming soon.  :)</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-419"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/282" title="View user profile.">keith alexander</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-419" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+>> Also, in comments, it would be interesting to be able to click on<br />
+>> commenters' name to see what other comments they wrote on the blog/other<br />
+>> blogs.<br />
+>><br />
+><br />
+> Yes, that one is pretty obvious. Should be coming soon.  :)<br />
+><br />
+><br />
+><br />
+Also, I noticed the commenter's name often occurs multiple times. I can<br />
+guess at why that's happening, but would it be hard to fix?</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div></div><a id="comment-410"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">2007, May 17 - 08:38 — <a href="http://sioc-project.org/user/281" title="View user profile.">Benjamin Heitmann</a></span>
+  
+  
+  
+    <h3><a href="251.html#comment-410" class="active">Experiences with SIOC data</a></h3>
+
+    <div class="content">
+      <p>
+I forget the link to my two page short description of the SIOC<br />
+explorer, for anybody who is interested:</p>
+<p>http://eyaloren.org/pubs/sfsw2007-sioc-challenge.pdf</p>
+<p>--~--~---------~--~----~------------~-------~--~----~<br />
+You received this message because you are subscribed to the Google Groups "SIOC-Dev" group.<br />
+To post to this group, send email to sioc-dev@googlegroups.com<br />
+To unsubscribe from this group, send email to sioc-dev-unsubscribe@googlegroups.com<br />
+For more options, visit this group at http://groups.google.com/group/sioc-dev?hl=en<br />
+-~----------~----~----~----~------~----~------~--~---</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"><span><a href="../user/login@destination=comment%252Freply%252F251%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>
+  </div>
+</div>
+          </div>
+                    <div id="footer"><p>This resource is supported by <a href="http://www.sfi.ie/">Science Foundation Ireland</a> under grant number SFI/02/CE1/I131 (Líon) and SFI/08/CE/I1380 (Líon 2) at the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a>, <a href="http://www.nuigalway.ie/">National University of Ireland, Galway</a>.</p>
+
+<p><a href="http://www.sfi.ie/"><img alt="SFI" src="../files/sfi.gif" border="0" width="80" height="15"></a><a href="http://www.nuigalway.ie/"><img alt="NUI Galway" src="../files/nuigalway.gif" border="0" width="80" height="15"></a><a href="http://www.deri.ie/"><img alt="DERI Galway" src="../files/derigalway.gif" border="0" width="80" height="15"></a></p></div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2>Primary links</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../index.html" title="The SIOC Project homepage.">Home</a></li>
+<li class="expanded"><a href="../ontology.html" title="The SIOC ontology.">Ontology</a><ul class="menu"><li class="leaf first"><a href="http://rdfs.org/sioc/spec" title="The SIOC ontology specification.">Specification</a></li>
+<li class="leaf last"><a href="http://rdfs.org/sioc/ns" title="The SIOC ontology namespace.">Namespace</a></li>
+</ul></li>
+<li class="expanded"><a href="../applications.html" title="Applications using SIOC.">Applications</a><ul class="menu"><li class="leaf first"><a href="../browser.html" title="The SIOC browser.">Browser</a></li>
+<li class="leaf"><a href="../buxon.html">Buxon</a></li>
+<li class="leaf"><a href="../explorer.html" title="A SIOC explorer.">Explorer</a></li>
+<li class="leaf"><a href="../firefox.html" title="SIOC plugins for Firefox.">Firefox</a></li>
+<li class="leaf"><a href="../ods.html" title="SIOC integration with OpenLink Data Spaces.">OpenLink Data Spaces</a></li>
+<li class="leaf"><a href="../ping.html" title="Ping service for SIOC documents.">Ping</a></li>
+<li class="leaf"><a href="http://sw.deri.org/svn/sw/2005/08/sioc/" title="The SIOC subversion repository.">Repository</a></li>
+<li class="leaf last"><a href="../talkdigger.html" title="SIOC integration with TalkDigger.">TalkDigger</a></li>
+</ul></li>
+<li class="leaf"><a href="../blog.html" title="">Blog</a></li>
+<li class="expanded"><a href="../exporters.html" title="SIOC metadata exporters.">Exporters</a><ul class="menu"><li class="leaf first"><a href="../aggregators.html" title="SIOC export from aggregators.">Aggregators</a></li>
+<li class="leaf"><a href="../dotclear.html" title="SIOC exporter for DotClear.">DotClear</a></li>
+<li class="leaf"><a href="../drupal.html" title="SIOC exporter for Drupal.">Drupal</a></li>
+<li class="leaf"><a href="../mailinglists.html" title="SIOC export from mailing lists.">Mailing Lists</a></li>
+<li class="leaf"><a href="../phpapi.html" title="An API for exporting SIOC data using PHP.">PHP API</a></li>
+<li class="leaf"><a href="../wordpress.html" title="SIOC exporter for WordPress.">WordPress</a></li>
+<li class="leaf last"><a href="../phpbb.html" title="SIOC exporter for phpBB.">phpBB</a></li>
+</ul></li>
+<li class="leaf"><a href="../faq.html" title="Frequently Asked Questions about SIOC.">FAQ</a></li>
+<li class="leaf"><a href="../forum.html" title="">Forum</a></li>
+<li class="leaf"><a href="http://groups.google.com/group/sioc-dev">Mailing List</a></li>
+<li class="leaf"><a href="http://wiki.sioc-project.org/" title="The SIOC wiki pages.">Wiki</a></li>
+<li class="expanded"><a href="../media.html" title="">Media</a><ul class="menu"><li class="leaf first"><a href="../presentations.html" title="Presentations about SIOC.">Presentations</a></li>
+<li class="leaf"><a href="../publications.html" title="Publications about SIOC.">Publications</a></li>
+<li class="leaf last"><a href="../videos.html" title="">Videos</a></li>
+</ul></li>
+<li class="leaf"><a href="../vision.html" title="The SIOC vision.">Vision</a></li>
+<li class="leaf"><a href="../thanks.html" title="Thanks to supporters of the SIOC Project.">Thanks</a></li>
+<li class="leaf last"><a href="mailto:siocosphere@gmail.com" title="Contact the SIOC Project.">Contact</a></li>
+</ul></div>
+</div>
+<div id="block-node-0" class="clear-block block block-node">
+
+  <h2>Syndicate</h2>
+
+  <div class="content"><a href="../rss.xml" class="feed-icon"><img src="http://sioc-project.org/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>
+</div>
+<div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="http://sioc-project.org/node/251?destination=node%2F251"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-3gwpRuleB80DXRMkkQfbntoUBXpWXuLheSFOJOnDuLA" value="form-3gwpRuleB80DXRMkkQfbntoUBXpWXuLheSFOJOnDuLA"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>
